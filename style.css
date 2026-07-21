@@ -197,3 +197,58 @@ footer .logo { color: var(--white); margin-bottom: 10px; }
     .grid-footer { grid-template-columns: 1fr; gap: 30px; }
     .portfolio-grid { grid-template-columns: 1fr; }
 }
+/* ---- ESTILOS PARA EL BLOG ---- */
+.blog-card {
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+}
+.blog-content {
+    padding: 30px;
+}
+.blog-tag {
+    background: #DBEAFE;
+    color: var(--primary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.blog-content h3 {
+    margin: 15px 0;
+    font-size: 1.3rem;
+}
+.blog-content p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+.read-more {
+    color: var(--primary);
+    font-weight: 600;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+.article-content {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #334155;
+}
+.article-content h2 {
+    margin: 40px 0 20px 0;
+    font-size: 2rem;
+}
+.article-content p {
+    margin-bottom: 25px;
+}
+.article-content blockquote {
+    border-left: 4px solid var(--primary);
+    padding: 20px;
+    background: var(--light);
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 40px 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
