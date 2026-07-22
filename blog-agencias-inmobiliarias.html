@@ -112,5 +112,42 @@
             <p>&copy; 2026 Eidos Render. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- BANNER DE COOKIES -->
+<div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-container">
+        <div class="cookie-text">
+            Utilizamos cookies propias y de terceros (Google Analytics y GTM) para analizar el tráfico y mejorar nuestros servicios B2B. Puedes informarte más al respecto en nuestra <a href="https://eidosrender.es/cookies.html">Política de Cookies</a>.
+        </div>
+        <div class="cookie-buttons">
+            <button onclick="rejectCookies()" class="cookie-btn-reject">Rechazar</button>
+            <button onclick="acceptCookies()" class="cookie-btn-accept">Aceptar todas</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function checkCookieConsent() {
+        const consent = localStorage.getItem('eidos_cookie_consent');
+        if (!consent) {
+            document.getElementById('cookieBanner').style.display = 'block';
+        } else if (consent === 'accepted') {
+            enableTracking();
+        }
+    }
+    function acceptCookies() {
+        localStorage.setItem('eidos_cookie_consent', 'accepted');
+        document.getElementById('cookieBanner').style.display = 'none';
+        enableTracking();
+    }
+    function rejectCookies() {
+        localStorage.setItem('eidos_cookie_consent', 'rejected');
+        document.getElementById('cookieBanner').style.display = 'none';
+    }
+    function enableTracking() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'event': 'cookie_consent_granted'});
+    }
+    window.addEventListener('DOMContentLoaded', checkCookieConsent);
+</script>
 </body>
 </html>

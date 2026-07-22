@@ -27,8 +27,39 @@
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
-    
-    <!-- Landing Pages de SEO Local -->
+        <url>
+        <loc>https://eidosrender.es/faq</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+        <url>
+        <loc>https://eidosrender.es/blog</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    </url>
+        <url>
+        <loc>https://eidosrender.es/blog-agencias-inmobiliarias</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+        </url>
+        <url>
+        <loc>https://eidosrender.es/blog-house-flipping</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    </url>
+        <url>
+        <loc>https://eidosrender.es/blog-promotoras-obra-nueva</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://eidosrender.es/renders-valencia</loc>
         <lastmod>2026-07-22</lastmod>
