@@ -1,16 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Fondo técnico oscuro -->
-  <rect width="64" height="64" fill="#12181F"/>
-  
-  <!-- Patrón de cuadrícula de plano técnico sutil -->
-  <path d="M0 16h64M0 32h64M0 48h64M16 0v64M32 0v64M48 0v64" stroke="#2A3340" stroke-width="1" opacity="0.5"/>
-  
-  <!-- Letra E geométrica / Arquitectónica -->
-  <path d="M16 16h32v8H24v12h22v8H24v12h24v8H16V16z" fill="#FFFFFF"/>
-  
-  <!-- Acento característico de la marca (Ladrillo) -->
-  <rect x="40" y="36" width="8" height="8" fill="#C1502E"/>
-  
-  <!-- Marcas de esquina técnicas de plano -->
-  <path d="M4 4h8V2H2v10h2V4zM60 4h-2v8h2V6h6V4h-6zM4 60h8v2H2V52h2v8zM60 60h-2v-8h2v8h6v2h-6z" fill="#C1502E"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <rect x="0" y="0" width="64" height="64" style="fill:rgb(18,24,31);"/>
+    <use xlink:href="#_Image1" x="0" y="0" width="64px" height="64px"/>
+    <g transform="matrix(1,0,0,1,0,-8)">
+        <path d="M16,16L48,16L48,24L24,24L24,36L46,36L46,44L24,44L24,56L48,56L48,64L16,64L16,16Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,12)">
+        <rect x="40" y="36" width="8" height="8" style="fill:rgb(193,80,46);"/>
+    </g>
+    <path d="M4,4L12,4L12,2L2,2L2,12L4,12L4,4ZM4,60L12,60L12,62L2,62L2,52L4,52L4,60Z" style="fill:rgb(193,80,46);fill-rule:nonzero;"/>
+    <g transform="matrix(-1,-0,0,-1,64.417195,64)">
+        <path d="M4,4L12,4L12,2L2,2L2,12L4,12L4,4ZM4,60L12,60L12,62L2,62L2,52L4,52L4,60Z" style="fill:rgb(193,80,46);fill-rule:nonzero;"/>
+    </g>
+    <defs>
+        <image id="_Image1" width="64px" height="64px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxElEQVR4nO3YsQ2DQBAF0bXLIaUA07o7c+IKOKQnm5mEaKXRiOT+zALbfhzbfhy/ej8z81w5/gcKoAU0BdACmgJoAU0BtICmAFpAUwAtoLl9gMfic/L1/b5/9L4/YAk9aDSIXEABtICmAFpAUwAtoCmAFtAUQAtoCqAFNO0BZw9j/Hu+PeACCqAFNAXQApoCaAFNAbSApgBaQFMALaBpDzh7GOPf8+0BF1AALaApgBbQFEALaAqgBTQF0AKaAmgBze0DfABpmCDFEMV4VQAAAABJRU5ErkJggg=="/>
+    </defs>
 </svg>
