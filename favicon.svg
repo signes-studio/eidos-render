@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fondo técnico oscuro -->
+  <rect width="64" height="64" fill="#12181F"/>
+  
+  <!-- Patrón de cuadrícula de plano técnico sutil -->
+  <path d="M0 16h64M0 32h64M0 48h64M16 0v64M32 0v64M48 0v64" stroke="#2A3340" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Letra E geométrica / Arquitectónica -->
+  <path d="M16 16h32v8H24v12h22v8H24v12h24v8H16V16z" fill="#FFFFFF"/>
+  
+  <!-- Acento característico de la marca (Ladrillo) -->
+  <rect x="40" y="36" width="8" height="8" fill="#C1502E"/>
+  
+  <!-- Marcas de esquina técnicas de plano -->
+  <path d="M4 4h8V2H2v10h2V4zM60 4h-2v8h2V6h6V4h-6zM4 60h8v2H2V52h2v8zM60 60h-2v-8h2v8h6v2h-6z" fill="#C1502E"/>
+</svg>
