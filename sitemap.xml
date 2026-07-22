@@ -10,19 +10,19 @@
     
     <!-- Páginas Principales de Conversión -->
     <url>
-        <loc>https://eidosrender.es/servicios.html</loc>
+        <loc>https://eidosrender.es/servicios</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/portfolio.html</loc>
+        <loc>https://eidosrender.es/portfolio</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/contacto.html</loc>
+        <loc>https://eidosrender.es/contacto</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
@@ -30,25 +30,25 @@
     
     <!-- Landing Pages de SEO Local -->
     <url>
-        <loc>https://eidosrender.es/renders-valencia.html</loc>
+        <loc>https://eidosrender.es/renders-valencia</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/renders-madrid.html</loc>
+        <loc>https://eidosrender.es/renders-madrid</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/renders-alicante.html</loc>
+        <loc>https://eidosrender.es/renders-alicante</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/renders-malaga.html</loc>
+        <loc>https://eidosrender.es/renders-malaga</loc>
         <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
