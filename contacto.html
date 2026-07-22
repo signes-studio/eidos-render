@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Eidos Render">
     <meta property="og:title" content="Contacto y Presupuesto | Eidos Render">
-    <meta property="og:description" content="Adjunta tu PDF, CAD o croquis. Cotización cerrada en menos de 24h.">
+    <meta property="og:description" content="Envía tus planos por email. Cotización cerrada en menos de 24h.">
     <meta property="og:url" content="https://eidosrender.es/contacto">
     <meta property="og:image" content="https://eidosrender.es/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
@@ -54,7 +54,7 @@
                 <div class="contact-text">
                     <span class="eyebrow">Respuesta en menos de 24h laborables</span>
                     <h1>Hablemos de tu promoción</h1>
-                    <p>Adjunta tu PDF, CAD o croquis. Analizamos el volumen de tu proyecto y te enviamos una cotización cerrada y adaptada a tus tiempos.</p>
+                    <p>Cuéntanos los detalles de tu proyecto y envíanos tus planos directamente por email a <strong>info@eidosrender.es</strong>. Analizamos el volumen y te enviamos una cotización cerrada.</p>
                     <br>
                     <div class="contact-info">
                         <p><strong>Email directo:</strong> info@eidosrender.es</p>
@@ -64,21 +64,18 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formspree.io/f/mzdnaelg" method="POST" enctype="multipart/form-data">
+                    <form class="contact-form" action="https://formspree.io/f/mzdnaelg" method="POST">
                         <input type="text" name="nombre" placeholder="Nombre completo" required>
                         <input type="text" name="empresa" placeholder="Empresa / Inmobiliaria" required>
                         <input type="email" name="email" placeholder="Email corporativo" required>
                         <input type="tel" name="telefono" placeholder="Teléfono de contacto">
-                        <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre el proyecto (Nº de viviendas, plazos, etc.)" rows="4" style="width:100%; padding:15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; background:var(--paper);"></textarea>
-                        <div class="file-upload">
-                            <label for="planos">📁 Subir planos (PDF, DWG, ZIP)</label>
-                            <input type="file" name="archivo" id="planos" style="display:none;" accept=".pdf,.dwg,.zip,.rar">
-                        </div>
-                        <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; color:var(--slate); cursor:pointer;">
+                        <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre el proyecto (Nº de viviendas, plazos o enlace a tus planos)..." rows="5" style="width:100%; padding:15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; background:var(--paper);" required></textarea>
+                        
+                        <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; color:var(--slate); cursor:pointer; margin-top: 5px;">
                             <input type="checkbox" name="rgpd" required style="margin-top:3px;">
                             He leído y acepto la <a href="https://eidosrender.es/privacidad" style="color: var(--brick);">Política de Privacidad</a>. Mis datos se usarán únicamente para responder a esta solicitud.
                         </label>
-                        <button type="submit" class="btn-primary full-width">Enviar solicitud</button>
+                        <button type="submit" class="btn-primary full-width" style="margin-top: 10px;">Enviar solicitud</button>
                     </form>
                 </div>
             </div>
