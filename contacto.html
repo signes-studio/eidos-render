@@ -36,17 +36,19 @@
             </div>
             <div class="contact-form-wrapper" style="box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
                 <form class="contact-form" action="enviar.php" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required>
-                    <input type="text" name="empresa" placeholder="Empresa / Inmobiliaria" required>
-                    <input type="email" name="email" placeholder="Email corporativo" required>
-                    <input type="tel" name="telefono" placeholder="Teléfono de contacto">
-                    <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre el proyecto (Nº de viviendas, plazos, etc.)" rows="4" style="width:100%; padding:15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit;"></textarea>
-                    <div class="file-upload">
-                        <label for="planos">📁 Subir planos (PDF, DWG, ZIP)</label>
-                        <input type="file" name="archivo" id="planos" style="display:none;" accept=".pdf,.dwg,.zip,.rar">
-                    </div>
-                    <button type="submit" class="btn-primary full-width">Enviar solicitud</button>
-                </form>
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+    <input type="text" name="empresa" placeholder="Empresa / Inmobiliaria" required>
+    <input type="email" name="email" placeholder="Email corporativo" required>
+    <input type="tel" name="telefono" placeholder="Teléfono de contacto">
+    <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre el proyecto (Nº de viviendas, plazos, etc.)" rows="4"></textarea>
+    
+    <div class="file-upload">
+        <label for="planos">📁 Subir planos (PDF, DWG, ZIP)</label>
+        <input type="file" name="archivo" id="planos" style="display:none;" accept=".pdf,.dwg,.zip,.rar">
+    </div>
+    
+    <button type="submit" class="btn-primary full-width">Enviar solicitud</button>
+</form>
             </div>
         </div>
     </section>
