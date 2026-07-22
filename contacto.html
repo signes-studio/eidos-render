@@ -27,10 +27,11 @@
     <link rel="icon" type="image/svg+xml" href="https://eidosrender.es/favicon.svg">
 </head>
 <body>
-        <!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    
     <header class="navbar">
         <div class="container nav-container">
             <a href="https://eidosrender.es/" class="logo">Eidos<span>Render</span></a>
@@ -47,40 +48,42 @@
         </div>
     </header>
 
-    <section class="contact bg-light" style="padding-top: 60px;">
-        <div class="container contact-container">
-            <div class="contact-text">
-                <span class="eyebrow">Respuesta en menos de 24h laborables</span>
-                <h1>Hablemos de tu promoción</h1>
-                <p>Adjunta tu PDF, CAD o croquis. Analizamos el volumen de tu proyecto y te enviamos una cotización cerrada y adaptada a tus tiempos.</p>
-                <br>
-                <div class="contact-info">
-                    <p><strong>Email directo:</strong> info@eidosrender.es</p>
-                    <p><strong>Teléfono:</strong> +34 614 45 91 44</p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/34614459144" style="color: var(--brick); font-weight:600;">Escríbenos directamente →</a></p>
-                    <p><strong>Atención B2B:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+    <main>
+        <section class="contact bg-light" style="padding-top: 60px;">
+            <div class="container contact-container">
+                <div class="contact-text">
+                    <span class="eyebrow">Respuesta en menos de 24h laborables</span>
+                    <h1>Hablemos de tu promoción</h1>
+                    <p>Adjunta tu PDF, CAD o croquis. Analizamos el volumen de tu proyecto y te enviamos una cotización cerrada y adaptada a tus tiempos.</p>
+                    <br>
+                    <div class="contact-info">
+                        <p><strong>Email directo:</strong> info@eidosrender.es</p>
+                        <p><strong>Teléfono:</strong> +34 614 45 91 44</p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/34614459144" style="color: var(--brick); font-weight:600;">Escríbenos directamente →</a></p>
+                        <p><strong>Atención B2B:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/mzdnaelg" method="POST" enctype="multipart/form-data">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="text" name="empresa" placeholder="Empresa / Inmobiliaria" required>
+                        <input type="email" name="email" placeholder="Email corporativo" required>
+                        <input type="tel" name="telefono" placeholder="Teléfono de contacto">
+                        <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre el proyecto (Nº de viviendas, plazos, etc.)" rows="4" style="width:100%; padding:15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; background:var(--paper);"></textarea>
+                        <div class="file-upload">
+                            <label for="planos">📁 Subir planos (PDF, DWG, ZIP)</label>
+                            <input type="file" name="archivo" id="planos" style="display:none;" accept=".pdf,.dwg,.zip,.rar">
+                        </div>
+                        <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; color:var(--slate); cursor:pointer;">
+                            <input type="checkbox" name="rgpd" required style="margin-top:3px;">
+                            He leído y acepto la <a href="https://eidosrender.es/privacidad" style="color: var(--brick);">Política de Privacidad</a>. Mis datos se usarán únicamente para responder a esta solicitud.
+                        </label>
+                        <button type="submit" class="btn-primary full-width">Enviar solicitud</button>
+                    </form>
                 </div>
             </div>
-            <div class="contact-form-wrapper">
-                <form class="contact-form" action="enviar.php" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="nombre" placeholder="Nombre completo" required>
-                    <input type="text" name="empresa" placeholder="Empresa / Inmobiliaria" required>
-                    <input type="email" name="email" placeholder="Email corporativo" required>
-                    <input type="tel" name="telefono" placeholder="Teléfono de contacto">
-                    <textarea name="mensaje" placeholder="Cuéntanos brevemente sobre el proyecto (Nº de viviendas, plazos, etc.)" rows="4" style="width:100%; padding:15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; background:var(--paper);"></textarea>
-                    <div class="file-upload">
-                        <label for="planos">📁 Subir planos (PDF, DWG, ZIP)</label>
-                        <input type="file" name="archivo" id="planos" style="display:none;" accept=".pdf,.dwg,.zip,.rar">
-                    </div>
-                    <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; color:var(--slate); cursor:pointer;">
-                        <input type="checkbox" name="rgpd" required style="margin-top:3px;">
-                        He leído y acepto la <a href="https://eidosrender.es/privacidad" style="color: var(--brick);">Política de Privacidad</a>. Mis datos se usarán únicamente para responder a esta solicitud.
-                    </label>
-                    <button type="submit" class="btn-primary full-width">Enviar solicitud</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container grid-footer">
@@ -113,42 +116,43 @@
             <p>&copy; 2026 Eidos Render. Todos los derechos reservados. · <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · <a href="https://eidosrender.es/privacidad">Privacidad</a></p>
         </div>
     </footer>
+
     <!-- BANNER DE COOKIES -->
-<div id="cookieBanner" class="cookie-banner">
-    <div class="cookie-container">
-        <div class="cookie-text">
-            Utilizamos cookies propias y de terceros (Google Analytics y GTM) para analizar el tráfico y mejorar nuestros servicios B2B. Puedes informarte más al respecto en nuestra <a href="https://eidosrender.es/cookies.html">Política de Cookies</a>.
-        </div>
-        <div class="cookie-buttons">
-            <button onclick="rejectCookies()" class="cookie-btn-reject">Rechazar</button>
-            <button onclick="acceptCookies()" class="cookie-btn-accept">Aceptar todas</button>
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-container">
+            <div class="cookie-text">
+                Utilizamos cookies propias y de terceros (Google Analytics y GTM) para analizar el tráfico y mejorar nuestros servicios B2B. Puedes informarte más al respecto en nuestra <a href="https://eidosrender.es/cookies.html">Política de Cookies</a>.
+            </div>
+            <div class="cookie-buttons">
+                <button onclick="rejectCookies()" class="cookie-btn-reject">Rechazar</button>
+                <button onclick="acceptCookies()" class="cookie-btn-accept">Aceptar todas</button>
+            </div>
         </div>
     </div>
-</div>
 
-<script>
-    function checkCookieConsent() {
-        const consent = localStorage.getItem('eidos_cookie_consent');
-        if (!consent) {
-            document.getElementById('cookieBanner').style.display = 'block';
-        } else if (consent === 'accepted') {
+    <script>
+        function checkCookieConsent() {
+            const consent = localStorage.getItem('eidos_cookie_consent');
+            if (!consent) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            } else if (consent === 'accepted') {
+                enableTracking();
+            }
+        }
+        function acceptCookies() {
+            localStorage.setItem('eidos_cookie_consent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
             enableTracking();
         }
-    }
-    function acceptCookies() {
-        localStorage.setItem('eidos_cookie_consent', 'accepted');
-        document.getElementById('cookieBanner').style.display = 'none';
-        enableTracking();
-    }
-    function rejectCookies() {
-        localStorage.setItem('eidos_cookie_consent', 'rejected');
-        document.getElementById('cookieBanner').style.display = 'none';
-    }
-    function enableTracking() {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({'event': 'cookie_consent_granted'});
-    }
-    window.addEventListener('DOMContentLoaded', checkCookieConsent);
-</script>
+        function rejectCookies() {
+            localStorage.setItem('eidos_cookie_consent', 'rejected');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        function enableTracking() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({'event': 'cookie_consent_granted'});
+        }
+        window.addEventListener('DOMContentLoaded', checkCookieConsent);
+    </script>
 </body>
 </html>
