@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Bloquear la ejecución de scripts o carpetas internas si las hubiera en el futuro
+Disallow: /enviar.php
+
+# Indicación de la ubicación exacta del sitemap para Google Search Console
+Sitemap: https://eidosrender.es/sitemap.xml
