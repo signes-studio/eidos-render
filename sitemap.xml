@@ -81,4 +81,22 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://eidosrender.es/vivienda-unifamiliar</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/obra-nueava</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/articulo</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
