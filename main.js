@@ -1,28 +1,42 @@
-// ============================================
-// EIDOS RENDER — main.js
-// Script compartido por todas las páginas.
-// ============================================
+/**
+ * ===================================================================
+ * EIDOS RENDER — main.js (Orquestador Central Modular)
+ * ===================================================================
+ * Arquitectura modular limpia en ES6+ para máximo rendimiento y mantenibilidad.
+ */
 
-// Menú móvil: abre/cierra el panel de navegación
-document.addEventListener('DOMContentLoaded', function () {
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+import { initNavigation } from './js/navigation.js';
+import { initProjectsFilter } from './js/projects-filter.js';
+import { initContactForm } from './js/contact-form.js';
+import { initGalleryModal } from './js/gallery-modal.js';
+import { initCookieConsent } from './js/cookie-consent.js';
+import { initSeoHelper } from './js/seo-injector.js';
 
-    if (!navToggle || !navLinks) return;
+function bootEidosApp() {
+    try {
+        initNavigation();
+        initProjectsFilter();
+        initContactForm();
+        initGalleryModal();
+        initCookieConsent();
+        initSeoHelper();
+    } catch (err) {
+        console.error('[Eidos Render] Error inicializando módulos:', err);
+    }
+}
 
-    navToggle.addEventListener('click', function () {
-        const isOpen = navLinks.classList.toggle('is-open');
-        navToggle.classList.toggle('is-open', isOpen);
-        navToggle.setAttribute('aria-expanded', isOpen);
-    });
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootEidosApp);
+} else {
+    bootEidosApp();
+}
 
-    // Cierra el menú al pulsar un enlace (útil en móvil, evita que
-    // el panel se quede abierto al navegar a otra página o ancla)
-    navLinks.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-            navLinks.classList.remove('is-open');
-            navToggle.classList.remove('is-open');
-            navToggle.setAttribute('aria-expanded', 'false');
-        });
-    });
-});
+// Exportar para acceso programático si fuera necesario
+export {
+    initNavigation,
+    initProjectsFilter,
+    initContactForm,
+    initGalleryModal,
+    initCookieConsent,
+    initSeoHelper
+};

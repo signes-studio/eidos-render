@@ -8,25 +8,75 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyecto de renders para vivienda unifamiliar moderna. Infografías de exterior con piscina, salón de doble altura, cocina y dormitorios.">
+    <meta name="description" content="Caso de estudio: Renders 3D de villa unifamiliar moderna de alto standing. Infografías de exterior con piscina, salón de doble altura, cocina de diseño y suite principal.">
     <link rel="canonical" href="https://eidosrender.es/vivienda-unifamiliar">
 
-    <meta property="og:type" content="website">
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="Eidos Render">
-    <meta property="og:title" content="Renders de Vivienda Unifamiliar | Eidos Render">
-    <meta property="og:description" content="Galería de infografías 3D comerciales para promoción residencial unifamiliar.">
+    <meta property="og:title" content="Renders de Vivienda Unifamiliar de Alto Standing | Eidos Render">
+    <meta property="og:description" content="Caso de estudio de visualización arquitectónica 3D para villa unifamiliar de lujo.">
     <meta property="og:url" content="https://eidosrender.es/vivienda-unifamiliar">
-    <meta property="og:image" content="https://eidosrender.es/og-image.jpg">
+    <meta property="og:image" content="https://eidosrender.es/img/render-exterior-vivienda-unifamiliar-piscina.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
-    <title>Renders de Vivienda Unifamiliar | Eidos Render</title>
-    <link rel="stylesheet" href="https://eidosrender.es/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="https://eidosrender.es/favicon.svg">
+    <title>Renders de Vivienda Unifamiliar de Lujo | Caso de Estudio | Eidos Render</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Schema.org: BreadcrumbList & VisualArtwork -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://eidosrender.es/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Casos de Estudio",
+              "item": "https://eidosrender.es/portfolio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Vivienda Unifamiliar",
+              "item": "https://eidosrender.es/vivienda-unifamiliar"
+            }
+          ]
+        },
+        {
+          "@type": "VisualArtwork",
+          "name": "Renders de Villa Unifamiliar de Alto Standing",
+          "artMedium": "CGI 3D Render",
+          "creator": {
+            "@type": "Corporation",
+            "name": "Eidos Render",
+            "url": "https://eidosrender.es/"
+          },
+          "image": "https://eidosrender.es/img/render-exterior-vivienda-unifamiliar-piscina.jpg",
+          "description": "Visualización arquitectónica 3D de villa de lujo con piscina, salón de doble altura y cocina integrada."
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -34,145 +84,224 @@
     
     <header class="navbar">
         <div class="container nav-container">
-            <a href="https://eidosrender.es/" class="logo">Eidos<span>Render</span></a>
-            <nav>
+            <a href="https://eidosrender.es/" class="logo" aria-label="Eidos Render Inicio">
+                Eidos<span>Render</span>
+            </a>
+            
+            <nav aria-label="Navegación principal">
                 <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-                 <span></span><span></span><span></span>
-                 </button>
+                    <span></span><span></span><span></span>
+                </button>
+                
                 <ul class="nav-links" id="navLinks">
-                    <li style="color: var(--text-light); margin-right: 15px;">📞 +34 614 45 91 44</li>
-                    <li><a href="https://eidosrender.es/servicios">Servicios</a></li>
-                    <li><a href="https://eidosrender.es/portfolio" style="color: var(--primary);">Ejemplos</a></li>
-                    <li><a href="https://eidosrender.es/blog">Blog</a></li>
+                    <li><a href="https://eidosrender.es/portfolio">Casos de Estudio</a></li>
+                    <li><a href="https://eidosrender.es/servicios">Paquetes y Tarifas</a></li>
+                    <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/faq">FAQ</a></li>
-                    <li><a href="https://eidosrender.es/contacto" class="btn-secondary">Solicitar Presupuesto</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-badge" title="Visitar perfil de LinkedIn de Eidos Render">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.72 1.72 1.72 1.73-.77 1.73-1.72-.78-1.73-1.73-1.73Z"/></svg>
+                            <span>LinkedIn B2B</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eidosrender.es/contacto" class="btn-secondary">Solicitar Cotización</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="page-header bg-light">
-            <div class="container">
-                <a href="https://eidosrender.es/portfolio" style="color: var(--brick); font-size: 0.9rem; font-weight: 600; text-decoration: none;">← Volver al portfolio</a>
-                <span class="eyebrow" style="margin-top: 10px;">Proyecto Residencial</span>
-                <h1>Vivienda Unifamiliar Moderna</h1>
-                <p>Conjunto de infografías 3D comerciales diseñadas para la comercialización de promoción residencial unifamiliar.</p>
-            </div>
-        </div>
-
-        <section class="portfolio-grid container" style="padding-top: 50px; padding-bottom: 50px;">
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" alt="Exterior de vivienda unifamiliar moderna con piscina y jardín" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius);">
-                </div>
-                <h4>Fachada y Zona Exterior</h4>
-                <p>Infografía exterior de día con enfoque en volumetría, piedra natural y piscina.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/infografia-3d-salon-moderno-doble-altura.jpg" alt="Salón moderno de doble altura con grandes ventanales" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius);">
-                </div>
-                <h4>Salón de Doble Altura</h4>
-                <p>Espacio principal iluminado con grandes cristaleras y visual hacia el entorno natural.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/render-cocina-moderna-isla-madera.jpg" alt="Cocina abierta con isla revestida en madera" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius);">
-                </div>
-                <h4>Cocina Integrada</h4>
-                <p>Zona de cocina y comedor con isla central y acabados en madera cálida.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="img/infografia-dormitorio-principal-render-inmobiliario.jpg" alt="Dormitorio principal con iluminación integrada" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius);">
-                </div>
-                <h4>Dormitorio Principal</h4>
-                <p>Estética neutra y luminosa con iluminación indirecta en cabecero y textil depurado.</p>
+        <!-- CABECERA DEL CASO DE ESTUDIO -->
+        <section class="page-header hero" style="padding: 75px 0 50px 0;">
+            <div class="container hero-content">
+                <a href="https://eidosrender.es/portfolio" style="color:var(--brick); font-size:0.88rem; font-family:var(--font-mono); font-weight:600; display:inline-block; margin-bottom:14px;">← Volver al Portfolio de Casos</a>
+                <span class="eyebrow" style="display:block;">Caso de Estudio #02 // Residencial Unifamiliar</span>
+                <h1>Villa Unifamiliar de Alto Standing</h1>
+                <p class="subtitle">Desarrollo integral de infografías 3D para la preventa y captación de compradores de alto poder adquisitivo e inversores internacionales.</p>
             </div>
         </section>
 
-        <section class="bg-dark contact" style="text-align:center;">
+        <!-- FICHA TÉCNICA DEL CASO & KPIs -->
+        <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="container">
-                <h2 style="color:#fff;">¿Tienes un proyecto de vivienda unifamiliar en marcha?</h2>
-                <br>
-                <a href="https://eidosrender.es/contacto" class="btn-primary">Solicitar Cotización Cerrada</a>
+                <div class="card blueprint-card" style="background:var(--paper-dim); margin-bottom:50px;">
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px;">
+                        <div>
+                            <span class="spec-label">Tipología de Activo</span>
+                            <span class="spec-value" style="font-size:1.1rem;">Villa Unifamiliar Aislada</span>
+                        </div>
+                        <div>
+                            <span class="spec-label">Objetivo Comercial</span>
+                            <span class="spec-value" style="font-size:1.1rem;">Venta directa / Inversión</span>
+                        </div>
+                        <div>
+                            <span class="spec-label">Entregables CGI</span>
+                            <span class="spec-value" style="font-size:1.1rem;">Exterior + Salón + Cocina + Suite</span>
+                        </div>
+                        <div>
+                            <span class="spec-label">Tiempo de Producción</span>
+                            <span class="spec-value" style="font-size:1.1rem;">4 Días Hábiles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GALERÍA DE RENDERS EN ALTA RESOLUCIÓN -->
+                <div class="grid-2">
+                    
+                    <div class="case-study-card blueprint-card">
+                        <div class="case-study-media">
+                            <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
+                                 alt="Exterior de villa moderna con piscina desbordante y jardín" 
+                                 width="800" height="500"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
+                                 data-gallery-title="Villa Unifamiliar — Fachada y Zona Exterior con Piscina">
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar — Fachada y Zona Exterior con Piscina">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Fachada y Zona Exterior con Piscina</h3>
+                            <p class="case-study-desc">Visualización exterior en día despejado con integración de lámina de agua, vegetación mediterránea y texturas de piedra natural.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card blueprint-card">
+                        <div class="case-study-media">
+                            <img src="img/infografia-3d-salon-moderno-doble-altura.jpg" 
+                                 alt="Salón de doble altura con grandes ventanales y luz natural" 
+                                 width="800" height="500"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.jpg"
+                                 data-gallery-title="Villa Unifamiliar — Salón de Doble Altura">
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen" data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.jpg" data-gallery-title="Villa Unifamiliar — Salón de Doble Altura">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Salón Principal a Doble Altura</h3>
+                            <p class="case-study-desc">Interiorismo fotorrealista que resalta la escala espacial, la entrada de luz solar a través de los ventanales corridos y el mobiliario de diseño.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card blueprint-card">
+                        <div class="case-study-media">
+                            <img src="img/render-cocina-moderna-isla-madera.jpg" 
+                                 alt="Cocina de diseño contemporáneo con isla central de madera" 
+                                 width="800" height="500"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/render-cocina-moderna-isla-madera.jpg"
+                                 data-gallery-title="Villa Unifamiliar — Cocina de Diseño con Isla">
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen" data-gallery-src="img/render-cocina-moderna-isla-madera.jpg" data-gallery-title="Villa Unifamiliar — Cocina de Diseño con Isla">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Cocina Integrada con Isla Central</h3>
+                            <p class="case-study-desc">Espacio funcional con encimera porcelánica continua, panelado de madera natural e iluminación LED indirecta integrada.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card blueprint-card">
+                        <div class="case-study-media">
+                            <img src="img/infografia-dormitorio-principal-render-inmobiliario.jpg" 
+                                 alt="Dormitorio principal de villa unifamiliar con vestidor e iluminación" 
+                                 width="800" height="500"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/infografia-dormitorio-principal-render-inmobiliario.jpg"
+                                 data-gallery-title="Villa Unifamiliar — Master Bedroom Suite">
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen" data-gallery-src="img/infografia-dormitorio-principal-render-inmobiliario.jpg" data-gallery-title="Villa Unifamiliar — Master Bedroom Suite">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Master Bedroom Suite</h3>
+                            <p class="case-study-desc">Ambiente cálido y sofisticado pensado para transmitir exclusividad y confort al comprador final de vivienda premium.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="section bg-dark" style="text-align:center;">
+            <div class="container container-narrow">
+                <span class="eyebrow eyebrow-dark">Presupuesto Cerrado</span>
+                <h2>¿Estás proyectando o comercializando una vivienda unifamiliar?</h2>
+                <p class="section-desc" style="margin-bottom:32px;">Envíanos los planos y te remitiremos una cotización cerrada con plazos garantizados en menos de 24 horas.</p>
+                <a href="https://eidosrender.es/contacto" class="btn-primary">Solicitar Cotización de Vivienda</a>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER INSTITUCIONAL -->
     <footer>
         <div class="container grid-footer">
             <div>
                 <div class="logo">Eidos<span>Render</span></div>
-                <p>Estudio de Renders Comerciales para B2B.</p>
-                <p style="margin-top: 15px; color: #94A3B8;">📞 +34 614 45 91 44</p>
-                <p style="color: #94A3B8;">✉️ info@eidosrender.es</p>
+                <p style="color:var(--slate-light); font-size:0.92rem; margin-bottom:16px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
+                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-badge" style="background:rgba(255,255,255,0.08); color:var(--white); border-color:rgba(255,255,255,0.2);">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor; width:16px; height:16px;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.72 1.72 1.72 1.73-.77 1.73-1.72-.78-1.73-1.73-1.73Z"/></svg>
+                    <span>Seguir en LinkedIn</span>
+                </a>
             </div>
+
             <div>
-                <h4>Servicios</h4>
+                <h4>Casos & Especialidades</h4>
                 <ul>
-                    <li><a href="https://eidosrender.es/servicios">Renders para Inmobiliarias</a></li>
-                    <li><a href="https://eidosrender.es/servicios">Infografías 3D Promotoras</a></li>
-                    <li><a href="https://eidosrender.es/servicios">Planos 3D Comerciales</a></li>
-                    <li><a href="https://eidosrender.es/blog">Blog</a></li>
+                    <li><a href="https://eidosrender.es/obra-nueva">Edificios de Obra Nueva</a></li>
+                    <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares</a></li>
+                    <li><a href="https://eidosrender.es/reforma-de-piso">Reforma Integral & Flipping</a></li>
+                    <li><a href="https://eidosrender.es/portfolio">Portfolio de Proyectos</a></li>
                 </ul>
             </div>
+
             <div>
-                <h4>Cobertura SEO Local</h4>
+                <h4>Servicios & B2B</h4>
                 <ul>
-                    <li><a href="https://eidosrender.es/renders-valencia">Renders Inmobiliarios Valencia</a></li>
-                    <li><a href="https://eidosrender.es/renders-alicante">Renders Inmobiliarios Alicante</a></li>
-                    <li><a href="https://eidosrender.es/renders-malaga">Renders Inmobiliarios Málaga</a></li>
-                    <li><a href="https://eidosrender.es/renders-madrid">Renders Inmobiliarios Madrid</a></li>
+                    <li><a href="https://eidosrender.es/servicios">Paquetes para Promotoras</a></li>
+                    <li><a href="https://eidosrender.es/servicios">Renders para Inversores</a></li>
+                    <li><a href="https://eidosrender.es/faq">Preguntas Frecuentes</a></li>
+                    <li><a href="https://eidosrender.es/contacto">Solicitar Presupuesto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Cobertura Inmobiliaria</h4>
+                <ul>
+                    <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia</a></li>
+                    <li><a href="https://eidosrender.es/renders-madrid">Renders Madrid</a></li>
+                    <li><a href="https://eidosrender.es/renders-malaga">Renders Málaga & Costa del Sol</a></li>
+                    <li><a href="https://eidosrender.es/renders-alicante">Renders Alicante</a></li>
+                    <li><a href="https://eidosrender.es/renders-sevilla">Renders Sevilla</a></li>
+                    <li><a href="https://eidosrender.es/renders-bilbao">Renders Bilbao</a></li>
                 </ul>
             </div>
         </div>
+
         <div class="container copyright">
-            <p>&copy; 2026 Eidos Render. Todos los derechos reservados. · <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · <a href="https://eidosrender.es/privacidad">Privacidad</a></p>
+            <p>&copy; 2026 Eidos Render. Todos los derechos reservados.</p>
+            <p>
+                <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · 
+                <a href="https://eidosrender.es/privacidad">Privacidad</a> · 
+                <a href="https://eidosrender.es/cookies">Cookies</a>
+            </p>
         </div>
     </footer>
 
     <!-- BANNER DE COOKIES -->
-    <div id="cookieBanner" class="cookie-banner">
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-modal="true" aria-label="Consentimiento de cookies">
         <div class="cookie-container">
             <div class="cookie-text">
-                Utilizamos cookies propias y de terceros (Google Analytics y GTM) para analizar el tráfico y mejorar nuestros servicios B2B. Puedes informarte más al respecto en nuestra <a href="https://eidosrender.es/cookies">Política de Cookies</a>.
+                Utilizamos cookies técnicas y analíticas (Google Analytics / GTM) para optimizar la experiencia de navegación en nuestro portal B2B. Consulta nuestra <a href="https://eidosrender.es/cookies">Política de Cookies</a> para más información.
             </div>
             <div class="cookie-buttons">
-                <button onclick="rejectCookies()" class="cookie-btn-reject">Rechazar</button>
-                <button onclick="acceptCookies()" class="cookie-btn-accept">Aceptar todas</button>
+                <button type="button" class="cookie-btn-reject">Rechazar</button>
+                <button type="button" class="cookie-btn-accept">Aceptar Todas</button>
             </div>
         </div>
     </div>
 
-    <script>
-        function checkCookieConsent() {
-            const consent = localStorage.getItem('eidos_cookie_consent');
-            if (!consent) {
-                document.getElementById('cookieBanner').style.display = 'block';
-            } else if (consent === 'accepted') {
-                enableTracking();
-            }
-        }
-        function acceptCookies() {
-            localStorage.setItem('eidos_cookie_consent', 'accepted');
-            document.getElementById('cookieBanner').style.display = 'none';
-            enableTracking();
-        }
-        function rejectCookies() {
-            localStorage.setItem('eidos_cookie_consent', 'rejected');
-            document.getElementById('cookieBanner').style.display = 'none';
-        }
-        function enableTracking() {
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({'event': 'cookie_consent_granted'});
-        }
-        window.addEventListener('DOMContentLoaded', checkCookieConsent);
-    </script>
-    <script src="https://eidosrender.es/main.js" defer></script>
+    <!-- SCRIPT CENTRAL MODULAR (ES6+) -->
+    <script type="module" src="main.js"></script>
 </body>
 </html>

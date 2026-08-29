@@ -11,35 +11,133 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estudio de renders inmobiliarios y planos 3D comerciales. Soluciones estandarizadas y rentables para promotoras, agencias e inversores en toda España.">
+    <meta name="description" content="Estudio de renders inmobiliarios y visualización 3D para promotoras, fondos de inversión y comercializadoras de obra nueva en España. Precios cerrados y entregas ágiles.">
     <link rel="canonical" href="https://eidosrender.es/">
 
-    <!-- Open Graph / redes sociales -->
+    <!-- Open Graph / Redes Sociales -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Eidos Render">
-    <meta property="og:title" content="Renders Inmobiliarios y Planos 3D para Promotoras | Eidos Render">
-    <meta property="og:description" content="Infografías 3D comerciales y estandarizadas para inmobiliarias, inversores y promotoras. Precios cerrados, entregas rápidas.">
+    <meta property="og:title" content="Renders Inmobiliarios y CGI 3D para Promotoras | Eidos Render">
+    <meta property="og:description" content="Infografías 3D de alta conversión y planos comerciales para acelerar las ventas sobre plano de promociones inmobiliarias. Precios fijos y metodología ágil.">
     <meta property="og:url" content="https://eidosrender.es/">
-    <meta property="og:image" content="https://eidosrender.es/og-image.jpg">
+    <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+    <meta property="og:image:alt" content="Render de fachada de edificio de obra nueva por Eidos Render">
     <meta name="twitter:card" content="summary_large_image">
 
-    <title>Renders Inmobiliarios y Planos 3D para Promotoras | Eidos Render</title>
-    <link rel="stylesheet" href="https://eidosrender.es/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="https://eidosrender.es/favicon.svg">
+    <title>Renders Inmobiliarios y CGI 3D para Promotoras y Fondos | Eidos Render</title>
+    
+    <!-- Estilos y Tipografía -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Schema.org: negocio local orientado a B2B con cobertura multi-ciudad -->
+    <!-- Schema.org: Datos Estructurados Avanzados (B2B, Corporación, Catálogo y FAQs) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Eidos Render",
-      "description": "Estudio de renders inmobiliarios comerciales para promotoras, agencias e inversores.",
-      "url": "https://eidosrender.es/",
-      "telephone": "+34614459144",
-      "email": "info@eidosrender.es",
-      "areaServed": ["Valencia", "Madrid", "Alicante", "Málaga", "Sevilla", "Bilbao"],
-      "priceRange": "€€"
+      "@graph": [
+        {
+          "@type": "Corporation",
+          "@id": "https://eidosrender.es/#organization",
+          "name": "Eidos Render",
+          "legalName": "Eidos Render",
+          "url": "https://eidosrender.es/",
+          "logo": "https://eidosrender.es/LOGO.PNG",
+          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg",
+          "description": "Estudio especializado en renders inmobiliarios, infografías 3D y planos comerciales para promotoras, agencias y fondos de inversión inmobiliarios.",
+          "telephone": "+34614459144",
+          "email": "info@eidosrender.es",
+          "sameAs": [
+            "https://www.linkedin.com/company/eidos-render"
+          ],
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Valencia" },
+            { "@type": "AdministrativeArea", "name": "Madrid" },
+            { "@type": "AdministrativeArea", "name": "Alicante" },
+            { "@type": "AdministrativeArea", "name": "Málaga" },
+            { "@type": "AdministrativeArea", "name": "Sevilla" },
+            { "@type": "AdministrativeArea", "name": "Bilbao" },
+            { "@type": "Country", "name": "España" }
+          ],
+          "knowsAbout": [
+            "Renders inmobiliarios",
+            "Visualización arquitectónica 3D",
+            "Venta sobre plano",
+            "Planos comerciales 3D",
+            "Infografías para promotoras",
+            "House Flipping"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://eidosrender.es/#service",
+          "name": "Eidos Render - Servicios de Visualización Arquitectónica 3D",
+          "provider": { "@id": "https://eidosrender.es/#organization" },
+          "url": "https://eidosrender.es/",
+          "priceRange": "€€",
+          "telephone": "+34614459144",
+          "email": "info@eidosrender.es",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Paquetes de Renders Inmobiliarios B2B",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Pack Inversor / Flipping & BTR",
+                "description": "2 renders interiores comerciales optimizados para reformas y comercialización rápida.",
+                "price": "350",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "name": "Pack Promotora Residencial",
+                "description": "1 render exterior de fachada, 2 renders interiores y 1 plano comercial 3D para obra nueva.",
+                "price": "750",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "name": "Pack Marketing Pro & Dossier Inversor",
+                "description": "Dossier completo con exteriores, interiores, tipologías de planos 3D y metraje para comercialización.",
+                "price": "1450",
+                "priceCurrency": "EUR"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://eidosrender.es/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué documentación técnica se requiere para iniciar una infografía 3D?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Basta con los planos de distribución en formato DWG (CAD), PDF o croquis acotado, junto con la memoria de calidades o referencias estéticas deseadas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuáles son los plazos habituales de entrega para una promoción?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Entregamos los primeros borradores de volumetría e iluminación en un plazo de 3 a 5 días laborables, adaptándonos al calendario de comercialización de la promotora."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo contribuyen los renders a reducir el riesgo comercial en ventas sobre plano?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Facilitan la comprensión visual inmediata del activo por parte del comprador final, acelerando la toma de decisión, aumentando el ratio de reserva y eliminando objeciones respecto a planos técnicos 2D."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 </head>
@@ -50,232 +148,536 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
+    <!-- HEADER / NAVEGACIÓN -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="https://eidosrender.es/" class="logo">Eidos<span>Render</span></a>
-            <nav>
+            <a href="https://eidosrender.es/" class="logo" aria-label="Eidos Render Inicio">
+                Eidos<span>Render</span>
+            </a>
+            
+            <nav aria-label="Navegación principal">
                 <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-                 <span></span><span></span><span></span>
-                 </button>
-              <ul class="nav-links" id="navLinks">
-                <li style="color: var(--text-light); margin-right: 15px;">📞 +34 614 45 91 44</li>
-                <li><a href="https://eidosrender.es/servicios">Servicios</a></li>
-                <li><a href="https://eidosrender.es/portfolio">Ejemplos</a></li>
-                <li><a href="https://eidosrender.es/faq">FAQ</a></li>
-                <li><a href="https://eidosrender.es/contacto" class="btn-secondary">Solicitar Presupuesto</a></li>
-             </ul>
+                    <span></span><span></span><span></span>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="https://eidosrender.es/portfolio">Casos de Estudio</a></li>
+                    <li><a href="https://eidosrender.es/servicios">Paquetes y Tarifas</a></li>
+                    <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva</a></li>
+                    <li><a href="https://eidosrender.es/faq">FAQ</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-badge" title="Visitar perfil de LinkedIn de Eidos Render">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.72 1.72 1.72 1.73-.77 1.73-1.72-.78-1.73-1.73-1.73Z"/></svg>
+                            <span>LinkedIn B2B</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eidosrender.es/contacto" class="btn-secondary">Solicitar Cotización</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- INICIO DEL PUNTO DE REFERENCIA PRINCIPAL -->
     <main>
+        <!-- HERO SECTION (Estrategia B2B y Propuesta de Valor) -->
         <section class="hero">
             <div class="container hero-content">
-                <span class="eyebrow">Renders 3D · B2B · Entrega estandarizada</span>
-                <h1>Renders comerciales diseñados para vender tu promoción. Sin complicaciones.</h1>
-                <p class="subtitle">Infografías 3D y planos de venta estandarizados para el sector inmobiliario. Aportamos seguridad, volumen y rentabilidad a tus proyectos.</p>
+                <span class="eyebrow">Visualización 3D · Real Estate B2B · Metodología Estandarizada</span>
+                <h1>Renders Inmobiliarios y CGI 3D de Alta Conversión para Promotoras y Fondos</h1>
+                <p class="subtitle">Aceleramos la comercialización sobre plano y reducimos la incertidumbre del comprador final con infografías hiperrealistas, precios cerrados y entregas ágiles garantizadas.</p>
+                
                 <div class="cta-group">
-                    <a href="https://eidosrender.es/contacto" class="btn-primary">Solicitar Presupuesto</a>
-                    <a href="https://eidosrender.es/servicios" class="btn-outline">Ver Paquetes y Precios</a>
+                    <a href="https://eidosrender.es/contacto" class="btn-primary">
+                        <span>Solicitar Cotización de Promoción</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://eidosrender.es/portfolio" class="btn-outline">
+                        <span>Explorar Casos de Estudio</span>
+                    </a>
                 </div>
-                <p class="trust-badge">Soluciones 3D rentables para: Inversores · Agencias Inmobiliarias · Promotoras</p>
+
+                <!-- Barra de Confianza / Trust Strip -->
+                <div class="trust-strip">
+                    <span class="trust-item">🏢 Promotoras & SOCIMIs</span>
+                    <span class="trust-item">⚡ Entregas en 3-5 días</span>
+                    <span class="trust-item">💶 Tarifas Cerradas B2B</span>
+                    <span class="trust-item">📍 Cobertura Nacional</span>
+                </div>
             </div>
         </section>
 
-        <section class="benefits bg-light">
+        <!-- KPI BANNER (Impacto Financiero & Comercial en Promoción Inmobiliaria) -->
+        <section class="kpi-section" aria-label="Indicadores clave de impacto comercial">
             <div class="container">
-                <h2 class="section-title">¿Por qué perder meses enseñando planos que tu cliente final no entiende?</h2>
-                <p class="section-desc">El comprador no sabe interpretar un plano técnico ni imaginar el potencial de una vivienda. Nosotros traducimos tus proyectos a imágenes comerciales listas para captar clientes.</p>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-value">+40<span>%</span></div>
+                        <div class="kpi-title">Aceleración de Preventas</div>
+                        <div class="kpi-desc">Mayor ratio de conversión en visitas comerciales y caseta de ventas sobre plano.</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">&lt; 72<span>h</span></div>
+                        <div class="kpi-title">Primeros Borradores</div>
+                        <div class="kpi-desc">Validación ágil de volumetría, encuadres e iluminación sin frenar tu calendario.</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">100<span>%</span></div>
+                        <div class="kpi-title">Precios Fijos Cerrados</div>
+                        <div class="kpi-desc">Presupuestos transparentes sin sobrecostes ni desviaciones imprevistas.</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-value">0<span>%</span></div>
+                        <div class="kpi-title">Incertidumbre de Compra</div>
+                        <div class="kpi-desc">Traducción de planos técnicos a espacios habitables de alta deseabilidad.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CASOS DE ESTUDIO / GALERÍA DE ARTE COMERCIAL -->
+        <section class="section" id="casos-estudio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Casos de Éxito & Tipologías</span>
+                    <h2 class="section-title">Visualización Estratégica de Activos Inmobiliarios</h2>
+                    <p class="section-desc">Estructuramos cada render como un caso de estudio orientado a maximizar el valor de comercialización de cada tipología de activo.</p>
+                </div>
 
                 <div class="grid-3">
-                    <div class="card">
-                        <div class="icon">⚙️</div>
-                        <h3>Procesos Optimizados</h3>
-                        <p>Metodología de trabajo estandarizada para gestionar grandes volúmenes sin perder el enfoque comercial.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon">📈</div>
-                        <h3>Orientado a la Venta</h3>
-                        <p>Estilos decorativos neutros y luminosos, probados para funcionar en portales inmobiliarios y dossieres.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon">💶</div>
-                        <h3>Precios Sin Sorpresas</h3>
-                        <p>Tarifas y paquetes cerrados para B2B. Sabes exactamente lo que pagas desde el minuto uno.</p>
-                    </div>
+                    <!-- Caso 1: Obra Nueva Plurifamiliar -->
+                    <article class="case-study-card blueprint-card" data-category="obra-nueva">
+                        <div class="case-study-media">
+                            <img src="img/render-fachada-edificio-obra-nueva.jpg" 
+                                 alt="Render de fachada de edificio de obra nueva residencial" 
+                                 width="600" height="375"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg"
+                                 data-gallery-title="Edificio Residencial Plurifamiliar — Fachada y Volumetría">
+                            <span class="case-study-tag">Obra Nueva Plurifamiliar</span>
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen de Edificio Residencial" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio Residencial Plurifamiliar — Fachada Principal">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Edificio Residencial Plurifamiliar</h3>
+                            <p class="case-study-desc">Infografía exterior de alta resolución para lanzamiento de comercialización sobre plano, catálogos de venta y dossieres de inversión.</p>
+                            
+                            <div class="case-study-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Tipología de Activo</span>
+                                    <span class="spec-value">Residencial 24 Vvdas.</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Objetivo Comercial</span>
+                                    <span class="spec-value">Preventa sobre plano</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Entregables CGI</span>
+                                    <span class="spec-value">Fachada + Zonas Comunes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Plazo de Producción</span>
+                                    <span class="spec-value">5 días hábiles</span>
+                                </div>
+                            </div>
+
+                            <div class="case-study-footer">
+                                <a href="https://eidosrender.es/obra-nueva" class="case-study-link">
+                                    <span>Ver Caso Completo</span>
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Caso 2: Vivienda Unifamiliar de Alto Standing -->
+                    <article class="case-study-card blueprint-card" data-category="unifamiliar">
+                        <div class="case-study-media">
+                            <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
+                                 alt="Infografía 3D de villa unifamiliar moderna con piscina y jardín" 
+                                 width="600" height="375"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
+                                 data-gallery-title="Villa Unifamiliar Premium — Exterior y Piscina">
+                            <span class="case-study-tag">Residencial Unifamiliar</span>
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen de Villa Unifamiliar" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar Premium — Exterior y Piscina">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Villa Unifamiliar de Alto Standing</h3>
+                            <p class="case-study-desc">Visualización arquitectónica de lujo con integración de paisajismo, piscina, iluminación natural diurna y acabados en piedra.</p>
+                            
+                            <div class="case-study-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Tipología de Activo</span>
+                                    <span class="spec-value">Unifamiliar Aislada</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Objetivo Comercial</span>
+                                    <span class="spec-value">Venta directa / Inversor</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Entregables CGI</span>
+                                    <span class="spec-value">Exterior + Salón + Cocina</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Plazo de Producción</span>
+                                    <span class="spec-value">4 días hábiles</span>
+                                </div>
+                            </div>
+
+                            <div class="case-study-footer">
+                                <a href="https://eidosrender.es/vivienda-unifamiliar" class="case-study-link">
+                                    <span>Ver Caso Completo</span>
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Caso 3: Reforma Integral & House Flipping / BTR -->
+                    <article class="case-study-card blueprint-card" data-category="reforma">
+                        <div class="case-study-media">
+                            <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
+                                 alt="Render de dormitorio principal en reforma de piso integral para house flipping" 
+                                 width="600" height="375"
+                                 loading="lazy" 
+                                 decoding="async"
+                                 data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg"
+                                 data-gallery-title="Reforma Integral & House Flipping — Suite Principal">
+                            <span class="case-study-tag">Flipping & BTR</span>
+                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen de Reforma de Piso" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg" data-gallery-title="Reforma Integral & House Flipping — Suite Principal">🔍</button>
+                        </div>
+                        <div class="case-study-body">
+                            <h3>Reforma Integral & House Flipping</h3>
+                            <p class="case-study-desc">Interiorismo comercial neutro y cálido para revalorizar pisos urbanos y comercializarlos con antelación antes de finalizar la obra física.</p>
+                            
+                            <div class="case-study-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Tipología de Activo</span>
+                                    <span class="spec-value">Piso Urbano / BTR</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Objetivo Comercial</span>
+                                    <span class="spec-value">Venta o alquiler ágil</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Entregables CGI</span>
+                                    <span class="spec-value">Dormitorio + Estudio + Baño</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Plazo de Producción</span>
+                                    <span class="spec-value">3 días hábiles</span>
+                                </div>
+                            </div>
+
+                            <div class="case-study-footer">
+                                <a href="https://eidosrender.es/reforma-de-piso" class="case-study-link">
+                                    <span>Ver Caso Completo</span>
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div style="text-align:center; margin-top: 50px;">
+                    <a href="https://eidosrender.es/portfolio" class="btn-outline">
+                        <span>Ver Galería Completa de Proyectos</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN DE ESPECIALIDADES / HOUSE FLIPPING -->
-        <section class="benefits">
+        <!-- SECCIÓN DE VENTAJAS ESTRATÉGICAS B2B -->
+        <section class="section bg-light">
             <div class="container">
-                <span class="eyebrow" style="display:block; text-align:center;">Soluciones a medida</span>
-                <h2 class="section-title">Especialidades para maximizar tu rentabilidad</h2>
-                <p class="section-desc">Enfoques específicos orientados a las necesidades reales de comercialización de tu activo.</p>
+                <div class="section-header">
+                    <span class="eyebrow">Propuesta de Valor para Directores de Desarrollo</span>
+                    <h2 class="section-title">¿Por qué las promotoras confían en Eidos Render?</h2>
+                    <p class="section-desc">Diseñamos una experiencia de producción pensada expresamente para los requerimientos de volumen, rigor técnico y fechas límite del sector promotor.</p>
+                </div>
+
                 <div class="grid-3">
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-para-house-flipping">House Flipping y Reformas</a></h3>
-                        <p>Renders rápidos y económicos para vender o alquilar pisos reformados antes de terminar la obra física.</p>
+                    <div class="card blueprint-card">
+                        <div class="icon">📐</div>
+                        <h3>Rigor Técnico & Estandarización</h3>
+                        <p>Interpretación milimétrica de planos CAD, memorias de calidades y directrices de acabados sin interpretaciones erróneas.</p>
                     </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/planos-3d-comerciales">Planos 3D Comerciales</a></h3>
-                        <p>Plantas cenitales amuebladas que sustituyen los planos técnicos en 2D y facilitan la comprensión espacial.</p>
+                    <div class="card blueprint-card">
+                        <div class="icon">🚀</div>
+                        <h3>Comercialización Anticipada</h3>
+                        <p>Permite a tu equipo comercial arrancar la captación de clientes y reservas meses antes de iniciar los movimientos de tierra.</p>
                     </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/servicios">Packs para Promotoras</a></h3>
-                        <p>Soluciones integrales de obra nueva con exteriores, interiores y recorridos en formato cerrado.</p>
+                    <div class="card blueprint-card">
+                        <div class="icon">💼</div>
+                        <h3>Tarifas Transparentes B2B</h3>
+                        <p>Paquetes con precios fijos y número de ajustes cerrados, diseñados para presupuestar promociones enteras sin sorpresas.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN DE COBERTURA NACIONAL -->
-        <section class="benefits bg-light">
+        <!-- RESUMEN DE PAQUETES Y TARIFAS B2B -->
+        <section class="section">
             <div class="container">
-                <span class="eyebrow" style="display:block; text-align:center;">Cobertura nacional</span>
-                <h2 class="section-title">Trabajamos donde se mueve el mercado</h2>
-                <p class="section-desc">Plazas clave del mercado inmobiliario español con procesos estandarizados de máxima fiabilidad.</p>
+                <div class="section-header">
+                    <span class="eyebrow">Soluciones Tarifarias Cerradas</span>
+                    <h2 class="section-title">Paquetes de Renders Optimizados para B2B</h2>
+                    <p class="section-desc">Transparencia total desde el primer momento. Elige la solución que mejor se adapta al tamaño de tu activo.</p>
+                </div>
+
                 <div class="grid-3">
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-valencia">Valencia</a></h3>
-                        <p>Obra nueva y house flipping en Valencia capital, l'Horta y costa.</p>
+                    <div class="price-card blueprint-card">
+                        <span class="eyebrow">Inversores & Flippers</span>
+                        <h3>Pack Inversor / Flipping</h3>
+                        <p class="target">Idóneo para reformas integrales y pisos destinados a Build-to-Rent.</p>
+                        <ul class="features">
+                            <li>✓ Briefing y revisión de plano acotado</li>
+                            <li>✓ 2 Renders Interiores comerciales</li>
+                            <li>✓ Iluminación natural de alto impacto</li>
+                            <li>✓ Mobiliario comercial contemporáneo</li>
+                            <li>✓ 1 Ronda de ajustes garantizada</li>
+                        </ul>
+                        <div class="price">Desde <span>350€</span> +IVA</div>
+                        <a href="https://eidosrender.es/contacto" class="btn-outline full-width">Cotizar Proyecto</a>
                     </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-madrid">Madrid</a></h3>
-                        <p>Renders rápidos para inversores y promotoras en la capital.</p>
+
+                    <div class="price-card featured blueprint-card">
+                        <div class="badge">Recomendado Promotoras</div>
+                        <span class="eyebrow">Obra Nueva Residencial</span>
+                        <h3>Pack Promotora</h3>
+                        <p class="target">El estándar idóneo para promociones unifamiliares o plurifamiliares.</p>
+                        <ul class="features">
+                            <li>✓ 1 Render Exterior de Fachada</li>
+                            <li>✓ 2 Renders Interiores (Salón / Dormitorio)</li>
+                            <li>✓ 1 Plano 3D Comercial amueblado</li>
+                            <li>✓ Adaptación a memoria de calidades</li>
+                            <li>✓ 1 Ronda de ajustes garantizada</li>
+                        </ul>
+                        <div class="price">Desde <span>750€</span> +IVA</div>
+                        <a href="https://eidosrender.es/contacto" class="btn-primary full-width">Cotizar Promoción</a>
                     </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-alicante">Alicante · Costa Blanca</a></h3>
-                        <p>Dossieres para comprador nacional e inversor internacional.</p>
-                    </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-malaga">Málaga · Costa del Sol</a></h3>
-                        <p>Estética mediterránea para Málaga capital, Marbella y Estepona.</p>
-                    </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-sevilla">Sevilla</a></h3>
-                        <p>Infografías comerciales y apoyo a promotoras en Andalucía.</p>
-                    </div>
-                    <div class="card">
-                        <h3><a href="https://eidosrender.es/renders-bilbao">Bilbao · País Vasco</a></h3>
-                        <p>Visualización arquitectónica de alto nivel en Bizkaia y norte.</p>
+
+                    <div class="price-card blueprint-card">
+                        <span class="eyebrow">Lanzamientos & Caseta de Ventas</span>
+                        <h3>Pack Marketing Pro</h3>
+                        <p class="target">Campaña integral multiformato para caseta de ventas y dossieres de inversión.</p>
+                        <ul class="features">
+                            <li>✓ Fachadas día/noche y zonas comunes</li>
+                            <li>✓ Todas las tipologías interiores clave</li>
+                            <li>✓ Planos 3D de todas las distribuciones</li>
+                            <li>✓ Formatos para cartelería y redes</li>
+                            <li>✓ Soporte prioritario en entregas</li>
+                        </ul>
+                        <div class="price">Desde <span>1.450€</span> +IVA</div>
+                        <a href="https://eidosrender.es/contacto" class="btn-outline full-width">Cotizar Campaña</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) -->
-        <section class="benefits" style="border-top: 1px solid var(--border);">
-            <div class="container" style="max-width: 900px;">
-                <span class="eyebrow" style="display:block; text-align:center;">Resolución rápida</span>
-                <h2 class="section-title">Preguntas Frecuentes sobre nuestros renders</h2>
-                <p class="section-desc" style="margin-bottom: 40px;">Todo lo que necesitas saber antes de externalizar la visualización de tu proyecto inmobiliario.</p>
+        <!-- SECCIÓN DE COBERTURA NACIONAL (SEO LOCAL B2B) -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Cobertura Nacional & Plazas Clave</span>
+                    <h2 class="section-title">Infografía 3D en los Principales Mercados Inmobiliarios</h2>
+                    <p class="section-desc">Trabajamos de forma 100% digital y coordinada con promotoras, estudios y gestoras en toda España.</p>
+                </div>
 
-                <div style="display: flex; flex-direction: column; gap: 30px; text-align: left;">
-                    <div class="card" style="background: var(--bg); padding: 25px;">
-                        <h3 style="color: var(--dark); margin-bottom: 10px; font-size: 1.2rem;">¿Qué necesitáis para empezar a trabajar en mi promoción o reforma?</h3>
-                        <p style="color: var(--text); line-height: 1.6; font-size: 0.95rem; margin: 0;">Solo necesitamos los planos en formato PDF, DWG (CAD) o un croquis acotado junto con las indicaciones generales de acabados o estilo decorativo que buscas.</p>
+                <div class="grid-3">
+                    <div class="card blueprint-card">
+                        <h3><a href="https://eidosrender.es/renders-valencia" style="color:var(--brick);">Renders Valencia →</a></h3>
+                        <p>Especialistas en promociones de obra nueva en Valencia capital, l'Horta, Camp de Túria y costa.</p>
+                    </div>
+                    <div class="card blueprint-card">
+                        <h3><a href="https://eidosrender.es/renders-madrid" style="color:var(--brick);">Renders Madrid →</a></h3>
+                        <p>Infografías comerciales y dossieres de inversión para promociones en la capital y desarrollos del sureste.</p>
+                    </div>
+                    <div class="card blueprint-card">
+                        <h3><a href="https://eidosrender.es/renders-malaga" style="color:var(--brick);">Renders Málaga & Costa del Sol →</a></h3>
+                        <p>Visualización mediterránea de alto standing en Málaga, Marbella, Estepona y Benalmádena.</p>
+                    </div>
+                    <div class="card blueprint-card">
+                        <h3><a href="https://eidosrender.es/renders-alicante" style="color:var(--brick);">Renders Alicante & Costa Blanca →</a></h3>
+                        <p>Material de captación para comprador nacional y fondos internacionales en Levante.</p>
+                    </div>
+                    <div class="card blueprint-card">
+                        <h3><a href="https://eidosrender.es/renders-sevilla" style="color:var(--brick);">Renders Sevilla & Andalucía →</a></h3>
+                        <p>Apoyo técnico a comercializadoras y gestoras de suelo en los principales núcleos andaluces.</p>
+                    </div>
+                    <div class="card blueprint-card">
+                        <h3><a href="https://eidosrender.es/renders-bilbao" style="color:var(--brick);">Renders Bilbao & País Vasco →</a></h3>
+                        <p>Visualización arquitectónica de alta precisión para proyectos residenciales en el norte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ B2B) -->
+        <section class="section" id="faq">
+            <div class="container container-narrow">
+                <div class="section-header">
+                    <span class="eyebrow">Resolución de Dudas Frecuentes</span>
+                    <h2 class="section-title">Preguntas Frecuentes sobre el Servicio de Renders</h2>
+                    <p class="section-desc">Todo lo que necesitas conocer antes de externalizar la visualización de tu activo.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    <div class="card blueprint-card">
+                        <h3 style="margin-bottom: 8px;">¿Qué información técnica necesitáis para presupuestar y arrancar?</h3>
+                        <p>Solo requerimos los planos de planta y alzados en PDF, CAD (DWG) o croquis acotado, acompañados de una breve indicación sobre estilo decorativo o memoria de calidades.</p>
                     </div>
 
-                    <div class="card" style="background: var(--bg); padding: 25px;">
-                        <h3 style="color: var(--dark); margin-bottom: 10px; font-size: 1.2rem;">¿Cuáles son los plazos de entrega habituales?</h3>
-                        <p style="color: var(--text); line-height: 1.6; font-size: 0.95rem; margin: 0;">Gracias a nuestra metodología estandarizada para B2B, entregamos los primeros borradores y los archivos definitivos en tiempos récord, adaptándonos por completo a tu calendario de comercialización.</p>
+                    <div class="card blueprint-card">
+                        <h3 style="margin-bottom: 8px;">¿Cuáles son los plazos habituales de entrega?</h3>
+                        <p>Para la mayoría de paquetes, entregamos los primeros borradores de encuadre e iluminación en 3 a 5 días hábiles. La entrega final definitiva se realiza tras la ronda de ajustes del cliente.</p>
                     </div>
 
-                    <div class="card" style="background: var(--bg); padding: 25px;">
-                        <h3 style="color: var(--dark); margin-bottom: 10px; font-size: 1.2rem;">¿Qué incluye cada paquete de precios?</h3>
-                        <p style="color: var(--text); line-height: 1.6; font-size: 0.95rem; margin: 0;">Nuestros packs (Inversor, Promotora y Marketing Pro) incluyen un número cerrado de infografías interiores/exteriores o planos 3D, iluminación comercial optimizada y al menos una ronda de ajustes garantizada.</p>
+                    <div class="card blueprint-card">
+                        <h3 style="margin-bottom: 8px;">¿Cómo impactan los renders en las preventas sobre plano?</h3>
+                        <p>Permiten al comprador final percibir las proporciones, la luz y los materiales como si la vivienda ya estuviese construida, multiplicando el ratio de cierre y reduciendo objeciones en caseta de ventas.</p>
                     </div>
                 </div>
 
-                <div style="text-align: center; margin-top: 40px;">
-                    <a href="https://eidosrender.es/faq" class="btn-outline" style="border-color: var(--border); color: var(--dark);">Ver todas las preguntas frecuentes →</a>
+                <div style="text-align:center; margin-top: 36px;">
+                    <a href="https://eidosrender.es/faq" class="btn-outline">Ver todas las preguntas frecuentes →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO Y CAPTACIÓN DE LEADS -->
+        <section class="section bg-light" id="contacto">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <span class="eyebrow">Contacto Profesional B2B</span>
+                        <h2 class="section-title" style="text-align:left;">Solicita Cotización para tu Promoción</h2>
+                        <p class="section-desc" style="text-align:left; margin-bottom: 24px;">Envíanos tus planos o cuéntanos el alcance de tu proyecto inmobiliario. Evaluamos el volumen y te remitimos una cotización cerrada en menos de 24 horas hábiles.</p>
+                        
+                        <div class="contact-info-block blueprint-card">
+                            <p><strong>✉️ Email Corporativo:</strong> <a href="mailto:info@eidosrender.es" style="color:var(--brick);">info@eidosrender.es</a></p>
+                            <p><strong>📞 Teléfono Directo:</strong> <a href="tel:+34614459144">+34 614 45 91 44</a></p>
+                            <p><strong>💬 WhatsApp Directo:</strong> <a href="https://wa.me/34614459144" target="_blank" rel="noopener" style="color:var(--brick); font-weight:600;">Escribir por WhatsApp →</a></p>
+                            <p><strong>🔗 LinkedIn Corporativo:</strong> <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" style="color:var(--blue-linkedin); font-weight:600;">linkedin.com/company/eidos-render →</a></p>
+                            <p><strong>🕒 Horario de Atención B2B:</strong> Lunes a Viernes, 9:00 - 18:00 CET</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card blueprint-card">
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mzdnaelg" method="POST">
+                            <div class="form-group">
+                                <label for="nombre">Nombre y Apellidos *</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Martínez" required autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="empresa">Empresa / Promotora / Gestora *</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Ej. Hábitat Desarrollos S.L." required autocomplete="organization">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Corporativo *</label>
+                                <input type="email" id="email" name="email" placeholder="carlos@tuempresa.es" required autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">Teléfono de Contacto</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+34 600 00 00 00" autocomplete="tel">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Detalles de la Promoción o Enlace a Planos (WeTransfer / Dropbox / Drive) *</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente la tipología de activo, número de viviendas o incluye el enlace a tus planos CAD/PDF..." required></textarea>
+                            </div>
+
+                            <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.84rem; color:var(--slate); cursor:pointer; margin-top:4px;">
+                                <input type="checkbox" name="rgpd" required style="margin-top:3px;">
+                                <span>He leído y acepto la <a href="https://eidosrender.es/privacidad" style="color:var(--brick); text-decoration:underline;">Política de Privacidad</a>. Los datos facilitados se destinarán exclusivamente a la elaboración de la cotización B2B.</span>
+                            </label>
+
+                            <button type="submit" class="btn-primary full-width" style="margin-top:10px;">
+                                <span>Enviar Solicitud de Cotización</span>
+                                <span aria-hidden="true">→</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- FIN DEL PUNTO DE REFERENCIA PRINCIPAL -->
 
+    <!-- FOOTER INSTITUCIONAL -->
     <footer>
         <div class="container grid-footer">
             <div>
                 <div class="logo">Eidos<span>Render</span></div>
-                <p>Estudio de Renders Comerciales para B2B.</p>
-                <p style="margin-top: 15px; color: #94A3B8;">📞 +34 614 45 91 44</p>
-                <p style="color: #94A3B8;">✉️ info@eidosrender.es</p>
+                <p style="color:var(--slate-light); font-size:0.92rem; margin-bottom:16px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
+                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-badge" style="background:rgba(255,255,255,0.08); color:var(--white); border-color:rgba(255,255,255,0.2);">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor; width:16px; height:16px;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.72 1.72 1.72 1.73-.77 1.73-1.72-.78-1.73-1.73-1.73Z"/></svg>
+                    <span>Seguir en LinkedIn</span>
+                </a>
             </div>
+
             <div>
-                <h4>Servicios</h4>
+                <h4>Casos & Especialidades</h4>
                 <ul>
-                    <li><a href="https://eidosrender.es/servicios">Renders para Inmobiliarias</a></li>
-                    <li><a href="https://eidosrender.es/servicios">Infografías 3D Promotoras</a></li>
-                    <li><a href="https://eidosrender.es/servicios">Planos 3D Comerciales</a></li>
+                    <li><a href="https://eidosrender.es/obra-nueva">Edificios de Obra Nueva</a></li>
+                    <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares</a></li>
+                    <li><a href="https://eidosrender.es/reforma-de-piso">Reforma Integral & Flipping</a></li>
                     <li><a href="https://eidosrender.es/portfolio">Portfolio de Proyectos</a></li>
                 </ul>
             </div>
+
             <div>
-                <h4>Cobertura SEO Local</h4>
+                <h4>Servicios & B2B</h4>
                 <ul>
-                    <li><a href="https://eidosrender.es/renders-valencia">Renders Inmobiliarios Valencia</a></li>
-                    <li><a href="https://eidosrender.es/renders-madrid">Renders Inmobiliarios Madrid</a></li>
-                    <li><a href="https://eidosrender.es/renders-alicante">Renders Inmobiliarios Alicante</a></li>
-                    <li><a href="https://eidosrender.es/renders-malaga">Renders Inmobiliarios Málaga</a></li>
-                    <li>
-                        <details style="cursor: pointer; margin-top: 5px;">
-                            <summary style="font-weight: 600; color: var(--primary);">Otras provincias (+)</summary>
-                            <ul style="list-style: none; padding-left: 10px; margin-top: 5px; display: flex; flex-direction: column; gap: 5px;">
-                                <li><a href="https://eidosrender.es/renders-sevilla">Renders Inmobiliarios Sevilla</a></li>
-                                <li><a href="https://eidosrender.es/renders-bilbao">Renders Inmobiliarios Bilbao</a></li>
-                            </ul>
-                        </details>
-                    </li>
+                    <li><a href="https://eidosrender.es/servicios">Paquetes para Promotoras</a></li>
+                    <li><a href="https://eidosrender.es/servicios">Renders para Inversores</a></li>
+                    <li><a href="https://eidosrender.es/faq">Preguntas Frecuentes</a></li>
+                    <li><a href="https://eidosrender.es/contacto">Solicitar Presupuesto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Cobertura Inmobiliaria</h4>
+                <ul>
+                    <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia</a></li>
+                    <li><a href="https://eidosrender.es/renders-madrid">Renders Madrid</a></li>
+                    <li><a href="https://eidosrender.es/renders-malaga">Renders Málaga & Costa del Sol</a></li>
+                    <li><a href="https://eidosrender.es/renders-alicante">Renders Alicante</a></li>
+                    <li><a href="https://eidosrender.es/renders-sevilla">Renders Sevilla</a></li>
+                    <li><a href="https://eidosrender.es/renders-bilbao">Renders Bilbao</a></li>
                 </ul>
             </div>
         </div>
+
         <div class="container copyright">
-            <p>&copy; 2026 Eidos Render. Todos los derechos reservados. · <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · <a href="https://eidosrender.es/privacidad">Privacidad</a></p>
+            <p>&copy; 2026 Eidos Render. Todos los derechos reservados.</p>
+            <p>
+                <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · 
+                <a href="https://eidosrender.es/privacidad">Privacidad</a> · 
+                <a href="https://eidosrender.es/cookies">Cookies</a>
+            </p>
         </div>
     </footer>
 
-    <!-- BANNER DE COOKIES -->
-    <div id="cookieBanner" class="cookie-banner">
+    <!-- BANNER DE COOKIES (Controlado modularmente por js/cookie-consent.js) -->
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-modal="true" aria-label="Consentimiento de cookies">
         <div class="cookie-container">
             <div class="cookie-text">
-                Utilizamos cookies propias y de terceros (Google Analytics y GTM) para analizar el tráfico y mejorar nuestros servicios B2B. Puedes informarte más al respecto en nuestra <a href="https://eidosrender.es/cookies">Política de Cookies</a>.
+                Utilizamos cookies técnicas y analíticas (Google Analytics / GTM) para optimizar la experiencia de navegación en nuestro portal B2B. Consulta nuestra <a href="https://eidosrender.es/cookies">Política de Cookies</a> para más información.
             </div>
             <div class="cookie-buttons">
-                <button onclick="rejectCookies()" class="cookie-btn-reject">Rechazar</button>
-                <button onclick="acceptCookies()" class="cookie-btn-accept">Aceptar todas</button>
+                <button type="button" class="cookie-btn-reject">Rechazar</button>
+                <button type="button" class="cookie-btn-accept">Aceptar Todas</button>
             </div>
         </div>
     </div>
 
-    <script>
-        function checkCookieConsent() {
-            const consent = localStorage.getItem('eidos_cookie_consent');
-            if (!consent) {
-                document.getElementById('cookieBanner').style.display = 'block';
-            } else if (consent === 'accepted') {
-                enableTracking();
-            }
-        }
-        function acceptCookies() {
-            localStorage.setItem('eidos_cookie_consent', 'accepted');
-            document.getElementById('cookieBanner').style.display = 'none';
-            enableTracking();
-        }
-        function rejectCookies() {
-            localStorage.setItem('eidos_cookie_consent', 'rejected');
-            document.getElementById('cookieBanner').style.display = 'none';
-        }
-        function enableTracking() {
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({'event': 'cookie_consent_granted'});
-        }
-        window.addEventListener('DOMContentLoaded', checkCookieConsent);
-    </script>
-    <script src="https://eidosrender.es/main.js" defer></script>
+    <!-- SCRIPT CENTRAL MODULAR (ES6+) -->
+    <script type="module" src="main.js"></script>
 </body>
 </html>
