@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: BreadcrumbList & VisualArtwork -->
@@ -99,13 +99,12 @@
                     <li><a href="https://eidosrender.es/obra-nueva" class="active">Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/faq">FAQ</a></li>
                     <li>
-                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-badge" title="Visitar perfil de LinkedIn de Eidos Render">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.72 1.72 1.72 1.73-.77 1.73-1.72-.78-1.73-1.73-1.73Z"/></svg>
-                            <span>LinkedIn B2B</span>
+                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-quiet-link" title="Visitar LinkedIn Corporativo">
+                            <span>LinkedIn B2B</span> <span style="font-size:0.7rem;">↗</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://eidosrender.es/contacto" class="btn-secondary">Solicitar Presupuesto</a>
+                        <a href="https://eidosrender.es/contacto" class="nav-link-cta">Solicitar Presupuesto</a>
                     </li>
                 </ul>
             </nav>
@@ -114,35 +113,40 @@
 
     <main>
         <!-- CABECERA DEL CASO DE ESTUDIO -->
-        <section class="page-header hero" style="padding: 75px 0 50px 0;">
-            <div class="container hero-content">
-                <a href="https://eidosrender.es/portfolio" style="color:var(--brick); font-size:0.88rem; font-family:var(--font-mono); font-weight:600; display:inline-block; margin-bottom:14px;">← Volver al Portfolio de Casos</a>
-                <span class="eyebrow" style="display:block;">Caso de Estudio #01 // Residencial Plurifamiliar</span>
-                <h1>Edificio de Obra Nueva Residencial</h1>
-                <p class="subtitle">Infografías 3D comerciales de volumetría exterior, accesos y zonas comunes orientadas al inicio de la comercialización y preventas sobre plano.</p>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-meta-bar">
+                    <a href="https://eidosrender.es/portfolio" class="text-accent">← VOLVER AL PORTFOLIO</a>
+                    <span>CASO DE ESTUDIO #01 // PLURIFAMILIAR</span>
+                    <span>VALENCIA</span>
+                </div>
+                
+                <h1>Edificio de <span class="text-accent">Obra Nueva</span> Residencial</h1>
+                <p class="subtitle">Infografías 3D comerciales de volumetría exterior, accesos y zonas comunes orientadas a la preventa sobre plano de 24 viviendas contemporáneas.</p>
             </div>
         </section>
 
-        <!-- FICHA TÉCNICA DEL CASO & KPIs -->
-        <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+        <!-- FICHA TÉCNICA DEL CASO -->
+        <section class="section">
             <div class="container">
-                <div class="card blueprint-card" style="background:var(--paper-dim); margin-bottom:50px;">
+                
+                <div style="border: 1px solid var(--border); background-color: var(--canvas-subtle); padding: 36px; margin-bottom: 56px;">
                     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px;">
                         <div>
-                            <span class="spec-label">Tipología de Activo</span>
-                            <span class="spec-value" style="font-size:1.1rem;">Edificio Plurifamiliar (24 VVDS)</span>
+                            <span class="eyebrow" style="margin-bottom:6px;">Tipología de Activo</span>
+                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Edificio Plurifamiliar (24 VVDS)</div>
                         </div>
                         <div>
-                            <span class="spec-label">Objetivo Comercial</span>
-                            <span class="spec-value" style="font-size:1.1rem;">Preventa sobre plano / Caseta</span>
+                            <span class="eyebrow" style="margin-bottom:6px;">Objetivo Comercial</span>
+                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Preventa sobre plano / Caseta</div>
                         </div>
                         <div>
-                            <span class="spec-label">Entregables CGI</span>
-                            <span class="spec-value" style="font-size:1.1rem;">Fachada + Zonas Comunes</span>
+                            <span class="eyebrow" style="margin-bottom:6px;">Entregables CGI</span>
+                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Fachada + Zonas Comunes</div>
                         </div>
                         <div>
-                            <span class="spec-label">Tiempo de Producción</span>
-                            <span class="spec-value" style="font-size:1.1rem;">5 Días Hábiles</span>
+                            <span class="eyebrow" style="margin-bottom:6px;">Tiempo de Producción</span>
+                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">5 Días Hábiles</div>
                         </div>
                     </div>
                 </div>
@@ -150,8 +154,12 @@
                 <!-- GALERÍA DE RENDERS EN ALTA RESOLUCIÓN -->
                 <div class="grid-2">
                     
-                    <div class="case-study-card blueprint-card">
-                        <div class="case-study-media">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-figure">LÁMINA 01 // FACHADA PRINCIPAL</span>
+                            <span>PERSPECTIVA TRES CUARTOS</span>
+                        </div>
+                        <div class="project-media">
                             <img src="img/render-fachada-edificio-obra-nueva.jpg" 
                                  alt="Fachada principal de edificio de obra nueva residencial" 
                                  width="800" height="500"
@@ -159,39 +167,43 @@
                                  decoding="async"
                                  data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg"
                                  data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">
-                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen de fachada" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">🔍</button>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">AMPLIAR [+]</button>
                         </div>
-                        <div class="case-study-body">
+                        <div class="project-body">
                             <h3>Fachada Principal & Volumetría</h3>
-                            <p class="case-study-desc">Encuadre exterior en perspectiva de tres cuartos con iluminación solar natural, destacando las líneas arquitectónicas contemporáneas, terrazas y carpintería exterior.</p>
+                            <p class="project-desc">Encuadre exterior en perspectiva de tres cuartos con iluminación solar natural, destacando las líneas arquitectónicas contemporáneas, terrazas corridas y carpintería exterior.</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="case-study-card blueprint-card">
-                        <div class="case-study-media">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-figure">LÁMINA 02 // ZONAS COMUNES</span>
+                            <span>ACCESOS PEATONALES</span>
+                        </div>
+                        <div class="project-media">
                             <img src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" 
-                                 alt="Zonas comunes, accesos y entorno ajardinado de edificio de obra nueva" 
+                                 alt="Zonas comunes y accesos de edificio de obra nueva" 
                                  width="800" height="500"
                                  loading="lazy" 
                                  decoding="async"
                                  data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg"
                                  data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">
-                            <button class="gallery-zoom-trigger" aria-label="Ampliar imagen de zonas comunes" data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">🔍</button>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">AMPLIAR [+]</button>
                         </div>
-                        <div class="case-study-body">
+                        <div class="project-body">
                             <h3>Zonas Comunes & Accesos</h3>
-                            <p class="case-study-desc">Visualización a nivel de calle del entorno ajardinado, pasarelas de acceso y conexión peatonal con el núcleo de comunicaciones del edificio.</p>
+                            <p class="project-desc">Visualización a nivel de calle del entorno ajardinado, pasarelas de acceso y conexión peatonal con el núcleo de comunicaciones del edificio residencial.</p>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </div>
         </section>
 
-        <!-- LLAMADA A LA ACCIÓN PARA PROMOTORES -->
-        <section class="section bg-dark" style="text-align:center;">
-            <div class="container container-narrow">
-                <span class="eyebrow eyebrow-dark">Lanza tu Promoción con Éxito</span>
+        <!-- CTA FINAL -->
+        <section class="section" style="background-color: var(--canvas-subtle);">
+            <div class="container container-narrow" style="text-align:center;">
+                <span class="eyebrow">Lanzamiento Comercial</span>
                 <h2>¿Tienes un proyecto de obra nueva que necesitas comercializar?</h2>
                 <p class="section-desc" style="margin-bottom:32px;">Envíanos los planos CAD o memorias de tu promoción y recibe un presupuesto cerrado en menos de 24 horas.</p>
                 <a href="https://eidosrender.es/contacto" class="btn-primary">Solicitar Presupuesto de Promoción</a>
@@ -204,15 +216,15 @@
         <div class="container grid-footer">
             <div>
                 <div class="logo">Eidos<span>Render</span></div>
-                <p style="color:var(--slate-light); font-size:0.92rem; margin-bottom:16px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
-                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-badge" style="background:rgba(255,255,255,0.08); color:var(--white); border-color:rgba(255,255,255,0.2);">
-                    <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor; width:16px; height:16px;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.95 0-1.72.78-1.72 1.73s.77 1.72 1.72 1.72 1.73-.77 1.73-1.72-.78-1.73-1.73-1.73Z"/></svg>
-                    <span>Seguir en LinkedIn</span>
+                <p style="margin-bottom:16px; margin-top:12px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
+                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-quiet-link">
+                    <span>LinkedIn B2B</span>
+                    <span style="font-size:0.75rem;">↗</span>
                 </a>
             </div>
 
             <div>
-                <h4>Casos & Especialidades</h4>
+                <h4>Casos & Tipologías</h4>
                 <ul>
                     <li><a href="https://eidosrender.es/obra-nueva">Edificios de Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares</a></li>
@@ -232,7 +244,7 @@
             </div>
 
             <div>
-                <h4>Cobertura Inmobiliaria</h4>
+                <h4>Cobertura Territorial</h4>
                 <ul>
                     <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia</a></li>
                     <li><a href="https://eidosrender.es/renders-madrid">Renders Madrid</a></li>
@@ -245,7 +257,7 @@
         </div>
 
         <div class="container copyright">
-            <p>&copy; 2026 Eidos Render. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Eidos Render. Visualización Arquitectónica Profesional B2B.</p>
             <p>
                 <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · 
                 <a href="https://eidosrender.es/privacidad">Privacidad</a> · 
@@ -253,6 +265,15 @@
             </p>
         </div>
     </footer>
+
+    <!-- LIGHTBOX MODAL PARA GALERÍA EN PANTALLA COMPLETA -->
+    <div id="galleryModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" id="modalClose">CERRAR [ESC]</button>
+        <div class="lightbox-content">
+            <img id="modalImg" src="" alt="Ampliación de render arquitectónico">
+            <div id="modalCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
 
     <!-- BANNER DE COOKIES -->
     <div id="cookieBanner" class="cookie-banner" role="dialog" aria-modal="true" aria-label="Consentimiento de cookies">
