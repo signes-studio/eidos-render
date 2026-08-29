@@ -104,7 +104,7 @@ export function initContactForm() {
                 showFeedback(
                     form,
                     'success',
-                    '<strong>¡Solicitud enviada con éxito!</strong> Hemos recibido los datos de tu promoción. Analizaremos los planos y te remitiremos una cotización cerrada en menos de 24h laborables.'
+                    '<strong>¡Solicitud enviada con éxito!</strong> Hemos recibido los datos de tu promoción. Analizaremos los planos y te remitiremos un presupuesto cerrado en menos de 24h laborables.'
                 );
                 form.reset();
 
@@ -154,7 +154,7 @@ function validateField(field) {
             field.parentNode.appendChild(errorMsg);
         }
         if (field.validity.valueMissing) {
-            errorMsg.textContent = 'Este campo es obligatorio para el estudio de la cotización.';
+            errorMsg.textContent = 'Este campo es obligatorio para el estudio del presupuesto.';
         } else if (field.validity.typeMismatch && field.type === 'email') {
             errorMsg.textContent = 'Por favor, introduce un correo electrónico válido.';
         } else {
