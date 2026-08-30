@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: CollectionPage & ImageGallery -->
@@ -83,12 +83,12 @@
                     <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/faq">FAQ</a></li>
                     <li>
-                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-quiet-link" title="Visitar LinkedIn Corporativo">
-                            <span>LinkedIn B2B</span> <span style="font-size:0.7rem;">↗</span>
+                        <a href="tel:+34614459144" class="nav-phone" title="Llamar directamente">
+                            <span>📞 +34 614 45 91 44</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://eidosrender.es/contacto" class="nav-link-cta">Solicitar Presupuesto</a>
+                        <a href="https://eidosrender.es/contacto" class="btn-primary" style="padding: 10px 18px; font-size: 0.88rem;">Pedir Presupuesto</a>
                     </li>
                 </ul>
             </nav>
@@ -99,14 +99,9 @@
         <!-- HERO DE PORTFOLIO -->
         <section class="hero">
             <div class="container">
-                <div class="hero-meta-bar">
-                    <span>Catálogo General de Proyectos</span>
-                    <span>Architectural Renderings // B2B</span>
-                    <span>Resolución Nativa 4K</span>
-                </div>
-                
-                <h1>Colección de <span class="text-accent">Proyectos</span> & Casos de Estudio</h1>
-                <p class="subtitle">Fichas técnicas e infografías comerciales de promociones residenciales, unifamiliares aisladas y reformas urbanas modeladas con fidelidad constructiva.</p>
+                <span class="badge-feature">Catálogo de Proyectos</span>
+                <h1>Casos de estudio y ejemplos de <span class="text-accent">visualización 3D</span></h1>
+                <p class="subtitle">Explora cómo modelamos promociones residenciales, unifamiliares aisladas y reformas integrales para acelerar su comercialización sobre plano.</p>
             </div>
         </section>
 
@@ -114,22 +109,17 @@
         <section class="section">
             <div class="container">
                 
-                <!-- BOTONES DE FILTRADO NEO-BAUHAUS -->
                 <div class="filter-nav" role="tablist" aria-label="Filtro de proyectos por tipología">
-                    <button class="filter-btn active" data-filter="all">TODOS LOS PROYECTOS (3)</button>
-                    <button class="filter-btn" data-filter="obra-nueva">OBRA NUEVA PLURIFAMILIAR</button>
-                    <button class="filter-btn" data-filter="unifamiliar">VIVIENDAS UNIFAMILIARES</button>
-                    <button class="filter-btn" data-filter="reforma">REFORMA & HOUSE FLIPPING</button>
+                    <button class="filter-btn active" data-filter="all">Todos los proyectos (3)</button>
+                    <button class="filter-btn" data-filter="obra-nueva">Obra Nueva Plurifamiliar</button>
+                    <button class="filter-btn" data-filter="unifamiliar">Viviendas Unifamiliares</button>
+                    <button class="filter-btn" data-filter="reforma">Reforma & House Flipping</button>
                 </div>
 
                 <div class="grid-3" id="projectsGrid">
                     
                     <!-- PROYECTO 01: OBRA NUEVA -->
                     <article class="project-card project-item" data-category="obra-nueva">
-                        <div class="project-header">
-                            <span class="project-figure">FIG. 01 // OBRA NUEVA</span>
-                            <span>VALENCIA</span>
-                        </div>
                         <div class="project-media">
                             <img src="img/render-fachada-edificio-obra-nueva.jpg" 
                                  alt="Edificio Residencial de Obra Nueva"
@@ -138,39 +128,27 @@
                                  decoding="async"
                                  data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg"
                                  data-gallery-title="Edificio de Obra Nueva — Fachada Principal">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal">AMPLIAR [+]</button>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal">Ampliar</button>
                         </div>
                         <div class="project-body">
-                            <h3><a href="https://eidosrender.es/obra-nueva">Edificio de Obra Nueva Residencial</a></h3>
-                            <p class="project-desc">Modelado exterior e iluminación diurna para acelerar la preventa sobre plano de un edificio residencial de 24 viviendas.</p>
+                            <span class="project-tag">Obra Nueva · Valencia</span>
+                            <h3><a href="https://eidosrender.es/obra-nueva">Edificio Residencial Plurifamiliar</a></h3>
+                            <p class="project-desc">Modelado exterior e iluminación diurna para acelerar la preventa sobre plano de un edificio residencial de 24 viviendas contemporáneas.</p>
                             
-                            <table class="project-spec-table">
-                                <tr>
-                                    <td>Tipología</td>
-                                    <td>Plurifamiliar (24 VVDS)</td>
-                                </tr>
-                                <tr>
-                                    <td>Entregables</td>
-                                    <td>Fachada + Zonas Comunes</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo Entrega</td>
-                                    <td>5 Días Hábiles</td>
-                                </tr>
-                            </table>
+                            <ul class="project-specs-list">
+                                <li><span>Tipología:</span> <strong>Plurifamiliar (24 VVDS)</strong></li>
+                                <li><span>Entregables:</span> <strong>Fachada + Zonas Comunes</strong></li>
+                                <li><span>Plazo de Entrega:</span> <strong>5 Días Hábiles</strong></li>
+                            </ul>
 
-                            <div style="margin-top:24px;">
-                                <a href="https://eidosrender.es/obra-nueva" class="btn-outline full-width">Ver Ficha de Proyecto →</a>
+                            <div style="margin-top:20px;">
+                                <a href="https://eidosrender.es/obra-nueva" class="btn-outline full-width">Ver Caso Completo →</a>
                             </div>
                         </div>
                     </article>
 
                     <!-- PROYECTO 02: VILLA UNIFAMILIAR -->
                     <article class="project-card project-item" data-category="unifamiliar">
-                        <div class="project-header">
-                            <span class="project-figure">FIG. 02 // VILLA UNIFAMILIAR</span>
-                            <span>COSTA MEDITERRÁNEA</span>
-                        </div>
                         <div class="project-media">
                             <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
                                  alt="Villa Unifamiliar de Alto Standing con Piscina"
@@ -179,39 +157,27 @@
                                  decoding="async"
                                  data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
                                  data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">AMPLIAR [+]</button>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">Ampliar</button>
                         </div>
                         <div class="project-body">
+                            <span class="project-tag">Unifamiliar · Costa Mediterránea</span>
                             <h3><a href="https://eidosrender.es/vivienda-unifamiliar">Villa Unifamiliar de Alto Standing</a></h3>
-                            <p class="project-desc">Visualización de arquitectura contemporánea, lámina de agua y salón a doble altura para compradores internacionales.</p>
+                            <p class="project-desc">Visualización de arquitectura contemporánea, lámina de agua exterior y salón a doble altura para compradores internacionales.</p>
                             
-                            <table class="project-spec-table">
-                                <tr>
-                                    <td>Tipología</td>
-                                    <td>Villa Aislada Premium</td>
-                                </tr>
-                                <tr>
-                                    <td>Entregables</td>
-                                    <td>Ext + Salón + Cocina + Suite</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo Entrega</td>
-                                    <td>4 Días Hábiles</td>
-                                </tr>
-                            </table>
+                            <ul class="project-specs-list">
+                                <li><span>Tipología:</span> <strong>Villa Aislada Premium</strong></li>
+                                <li><span>Entregables:</span> <strong>Ext + Salón + Cocina + Suite</strong></li>
+                                <li><span>Plazo de Entrega:</span> <strong>4 Días Hábiles</strong></li>
+                            </ul>
 
-                            <div style="margin-top:24px;">
-                                <a href="https://eidosrender.es/vivienda-unifamiliar" class="btn-outline full-width">Ver Ficha de Proyecto →</a>
+                            <div style="margin-top:20px;">
+                                <a href="https://eidosrender.es/vivienda-unifamiliar" class="btn-outline full-width">Ver Caso Completo →</a>
                             </div>
                         </div>
                     </article>
 
                     <!-- PROYECTO 03: REFORMA INTEGRAL -->
                     <article class="project-card project-item" data-category="reforma">
-                        <div class="project-header">
-                            <span class="project-figure">FIG. 03 // REFORMA INTEGRAL</span>
-                            <span>CENTRO URBANO</span>
-                        </div>
                         <div class="project-media">
                             <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
                                  alt="Reforma Integral de Piso — Dormitorio Principal"
@@ -220,29 +186,21 @@
                                  decoding="async"
                                  data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg"
                                  data-gallery-title="Reforma Integral — Suite Principal">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg" data-gallery-title="Reforma Integral — Suite Principal">AMPLIAR [+]</button>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg" data-gallery-title="Reforma Integral — Suite Principal">Ampliar</button>
                         </div>
                         <div class="project-body">
+                            <span class="project-tag">Reforma & Flipping · Centro Urbano</span>
                             <h3><a href="https://eidosrender.es/reforma-de-piso">Reforma Integral & House Flipping</a></h3>
-                            <p class="project-desc">Interiorismo fotorrealista orientado a maximizar el valor de salida y cerrar la venta antes de concluir la ejecución física.</p>
+                            <p class="project-desc">Interiorismo fotorrealista orientado a maximizar el valor de salida y cerrar la venta antes de concluir la ejecución física de la obra.</p>
                             
-                            <table class="project-spec-table">
-                                <tr>
-                                    <td>Tipología</td>
-                                    <td>Piso Urbano / BTR</td>
-                                </tr>
-                                <tr>
-                                    <td>Entregables</td>
-                                    <td>Dormitorio + Estudio + Baño</td>
-                                </tr>
-                                <tr>
-                                    <td>Plazo Entrega</td>
-                                    <td>3 Días Hábiles</td>
-                                </tr>
-                            </table>
+                            <ul class="project-specs-list">
+                                <li><span>Tipología:</span> <strong>Piso Urbano / BTR</strong></li>
+                                <li><span>Entregables:</span> <strong>Dormitorio + Estudio + Baño</strong></li>
+                                <li><span>Plazo de Entrega:</span> <strong>3 Días Hábiles</strong></li>
+                            </ul>
 
-                            <div style="margin-top:24px;">
-                                <a href="https://eidosrender.es/reforma-de-piso" class="btn-outline full-width">Ver Ficha de Proyecto →</a>
+                            <div style="margin-top:20px;">
+                                <a href="https://eidosrender.es/reforma-de-piso" class="btn-outline full-width">Ver Caso Completo →</a>
                             </div>
                         </div>
                     </article>
@@ -253,12 +211,15 @@
         </section>
 
         <!-- CTA FINAL -->
-        <section class="section" style="background-color: var(--canvas-subtle);">
+        <section class="section section-warm">
             <div class="container container-narrow" style="text-align:center;">
-                <span class="eyebrow">Encargos Profesionales</span>
+                <span class="badge-feature">Encargos Profesionales</span>
                 <h2>¿Tienes un proyecto que necesita visualización fotorrealista?</h2>
-                <p class="section-desc" style="margin-bottom:32px;">Envíanos los planos CAD o PDF de tu promoción y te remitiremos una propuesta cerrada en menos de 24 horas.</p>
-                <a href="https://eidosrender.es/contacto" class="btn-primary">Solicitar Presupuesto para mi Promoción</a>
+                <p class="section-desc" style="margin-bottom:32px;">Envíanos los planos CAD o PDF de tu promoción y te remitiremos una propuesta económica cerrada en menos de 24 horas.</p>
+                <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+                    <a href="https://eidosrender.es/contacto" class="btn-primary">Pedir Presupuesto Cerrado</a>
+                    <a href="tel:+34614459144" class="btn-secondary">Llamar: +34 614 45 91 44</a>
+                </div>
             </div>
         </section>
     </main>
@@ -268,10 +229,9 @@
         <div class="container grid-footer">
             <div>
                 <div class="logo">Eidos<span>Render</span></div>
-                <p style="margin-bottom:16px; margin-top:12px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
-                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-quiet-link">
-                    <span>LinkedIn B2B</span>
-                    <span style="font-size:0.75rem;">↗</span>
+                <p style="margin-top:12px; margin-bottom:16px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
+                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-clean-link">
+                    <span>LinkedIn Corporativo ↗</span>
                 </a>
             </div>
 
@@ -320,7 +280,7 @@
 
     <!-- LIGHTBOX MODAL PARA GALERÍA EN PANTALLA COMPLETA -->
     <div id="galleryModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
-        <button class="lightbox-close" id="modalClose">CERRAR [ESC]</button>
+        <button class="lightbox-close" id="modalClose">Cerrar [ESC]</button>
         <div class="lightbox-content">
             <img id="modalImg" src="" alt="Ampliación de render arquitectónico">
             <div id="modalCaption" class="lightbox-caption"></div>
