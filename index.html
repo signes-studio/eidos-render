@@ -340,6 +340,207 @@
             </div>
         </section>
 
+        <!-- CALCULADORA DE PRESUPUESTOS INTERACTIVA (PAQUETES BASE + UPSELLS) -->
+        <section class="section section-calc" id="calculadora">
+            <div class="container">
+                
+                <div class="section-header text-center">
+                    <span class="badge-feature">Estimador Instantáneo B2B</span>
+                    <h2 class="section-title">Calculadora de Presupuestos</h2>
+                    <p class="section-desc">Selecciona tu paquete base y añade los renders o complementos específicos que requiera tu promoción para calcular el presupuesto en tiempo real.</p>
+                </div>
+
+                <div class="calculator-grid">
+                    
+                    <!-- PANEL DE CONFIGURACIÓN -->
+                    <div class="calc-config-panel">
+                        
+                        <!-- PASO 1: SELECCIÓN DE PAQUETE BASE -->
+                        <fieldset class="calc-group">
+                            <legend class="calc-legend">
+                                <span class="step-num">1</span>
+                                <span>Selecciona tu Paquete Base</span>
+                            </legend>
+
+                            <div class="packages-options">
+                                
+                                <!-- PACK 1: INVERSOR & FLIPPING -->
+                                <label class="calc-pack-card">
+                                    <input type="radio" name="basePackage" value="inversor">
+                                    <span class="pack-card-body">
+                                        <span class="pack-card-title">Pack Inversor & Flipping</span>
+                                        <div class="pack-card-price">
+                                            <span>350€</span> <small>+IVA</small>
+                                        </div>
+                                        <ul class="pack-card-features">
+                                            <li>Revisión técnica de planos</li>
+                                            <li>2 Renders Interiores fotorrealistas</li>
+                                            <li>Ambientación comercial neutra</li>
+                                            <li>1 Ronda de ajustes técnicos incluida</li>
+                                        </ul>
+                                    </span>
+                                </label>
+
+                                <!-- PACK 2: PROMOTORA RESIDENCIAL (RECOMENDADO) -->
+                                <label class="calc-pack-card is-featured">
+                                    <input type="radio" name="basePackage" value="promotora" checked>
+                                    <span class="pack-card-body">
+                                        <span class="pack-card-badge">Recomendado Obra Nueva</span>
+                                        <span class="pack-card-title">Pack Promotora Residencial</span>
+                                        <div class="pack-card-price">
+                                            <span>750€</span> <small>+IVA</small>
+                                        </div>
+                                        <ul class="pack-card-features">
+                                            <li>Revisión con arquitectos</li>
+                                            <li>1 Render Exterior de fachada</li>
+                                            <li>2 Renders Interiores (Salón y Suite)</li>
+                                            <li>1 Plano Comercial 3D amueblado</li>
+                                            <li>Resolución nativa 4K Ultra HD</li>
+                                            <li>1 Ronda de ajustes técnicos incluida</li>
+                                        </ul>
+                                    </span>
+                                </label>
+
+                                <!-- PACK 3: MARKETING PRO -->
+                                <label class="calc-pack-card">
+                                    <input type="radio" name="basePackage" value="marketing-pro">
+                                    <span class="pack-card-body">
+                                        <span class="pack-card-title">Pack Marketing Pro</span>
+                                        <div class="pack-card-price">
+                                            <span>1.450€</span> <small>+IVA</small>
+                                        </div>
+                                        <ul class="pack-card-features">
+                                            <li>Asesoría comercial personalizada</li>
+                                            <li>Múltiples exteriores (día / atardecer)</li>
+                                            <li>Todas las tipologías interiores clave</li>
+                                            <li>Zonas comunes y piscina</li>
+                                            <li>Colección completa de Planos 3D</li>
+                                            <li>Formatos optimizados para vallas y web</li>
+                                        </ul>
+                                    </span>
+                                </label>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- PASO 2: VARIABLES ADICIONALES (UPSELLS DINÁMICOS) -->
+                        <fieldset class="calc-group">
+                            <legend class="calc-legend">
+                                <span class="step-num">2</span>
+                                <span>Variables y Complementos Opcionales</span>
+                            </legend>
+
+                            <div class="upsells-container">
+                                
+                                <!-- UPSELL 1: RENDER EXTRA (+175€/ud) -->
+                                <div class="extra-render-box">
+                                    <div class="extra-render-info">
+                                        <span class="extra-render-title">Renders Adicionales (Interior / Exterior)</span>
+                                        <span class="extra-render-desc">Vistas suplementarias para abarcar más estancias o detalles constructivos.</span>
+                                        <span class="extra-render-price-tag">+175€ / unidad</span>
+                                    </div>
+                                    <div class="counter-control">
+                                        <button type="button" class="btn-counter" id="btnDecrementExtra" aria-label="Restar un render extra">−</button>
+                                        <input type="number" id="extraRendersCount" min="0" max="20" value="0" aria-label="Cantidad de renders adicionales">
+                                        <button type="button" class="btn-counter" id="btnIncrementExtra" aria-label="Sumar un render extra">+</button>
+                                    </div>
+                                </div>
+
+                                <!-- UPSELL 2: TOUR VIRTUAL 360 -->
+                                <label class="calc-checkbox-card">
+                                    <input type="checkbox" name="calcExtra" value="tour360" data-price="450">
+                                    <span class="custom-check-icon"></span>
+                                    <span class="check-content">
+                                        <span class="check-title">Tour Virtual 360º Interactivo</span>
+                                        <span class="check-desc">Paseo inmersivo panorámico de alta resolución para caseta de ventas y web.</span>
+                                    </span>
+                                    <span class="check-price">+450€</span>
+                                </label>
+
+                                <!-- UPSELL 3: DRON -->
+                                <label class="calc-checkbox-card">
+                                    <input type="checkbox" name="calcExtra" value="dron" data-price="180">
+                                    <span class="custom-check-icon"></span>
+                                    <span class="check-content">
+                                        <span class="check-title">Integración sobre Fotografía de Dron</span>
+                                        <span class="check-desc">Montaje hiperrealista del modelo 3D sobre fotografía aérea real de la parcela.</span>
+                                    </span>
+                                    <span class="check-price">+180€</span>
+                                </label>
+
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <!-- PANEL DE RESUMEN Y TOTAL (STICKY DESKTOP) -->
+                    <aside class="calc-summary-card" id="calcSummary">
+                        <div class="summary-header">
+                            <span class="eyebrow">Estimación Económica</span>
+                            <h3>Resumen de Presupuesto</h3>
+                        </div>
+
+                        <ul class="summary-breakdown" id="summaryBreakdown">
+                            <li class="breakdown-item">
+                                <span class="item-name" id="summaryPackName">Pack Promotora Residencial</span>
+                                <span class="item-val" id="summaryPackPrice">750€</span>
+                            </li>
+                            <li class="breakdown-item" id="rowExtraRenders" style="display: none;">
+                                <span class="item-name" id="summaryExtraRendersName">Renders adicionales</span>
+                                <span class="item-val" id="summaryExtraRendersVal">+0€</span>
+                            </li>
+                            <li class="breakdown-item" id="rowTour" style="display: none;">
+                                <span class="item-name">Tour Virtual 360º Interactivo</span>
+                                <span class="item-val">+450€</span>
+                            </li>
+                            <li class="breakdown-item" id="rowDron" style="display: none;">
+                                <span class="item-name">Integración sobre Dron</span>
+                                <span class="item-val">+180€</span>
+                            </li>
+                        </ul>
+
+                        <div class="summary-total-box">
+                            <span class="total-label">Subtotal Estimado</span>
+                            <div class="total-number-wrapper">
+                                <span class="total-currency">€</span>
+                                <span class="total-amount" id="totalAmount">750</span>
+                            </div>
+                            <span class="total-tax-note">+ IVA aplicable · Presupuesto 100% cerrado</span>
+                        </div>
+
+                        <ul class="summary-guarantees">
+                            <li>✓ 1 Ronda de ajustes técnicos incluida</li>
+                            <li>✓ Entrega en 4K Ultra HD</li>
+                            <li>✓ Cesión completa de derechos de explotación comercial</li>
+                        </ul>
+
+                        <div class="summary-actions">
+                            <a href="https://eidosrender.es/contacto" id="btnRequestQuote" class="btn-primary full-width">
+                                Solicitar Presupuesto Exacto →
+                            </a>
+                            <a href="#" id="btnWhatsappQuote" target="_blank" rel="noopener" class="btn-whatsapp full-width">
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+
+            <!-- BARRA FIJA MÓVIL (STICKY BOTTOM BAR) -->
+            <div class="calc-mobile-sticky-bar" id="calcMobileStickyBar">
+                <div class="mobile-sticky-info">
+                    <span class="mobile-sticky-label">Subtotal Estimado (+IVA)</span>
+                    <div class="mobile-sticky-price">
+                        <span id="mobileStickyAmount">750</span>€ <small>+IVA</small>
+                    </div>
+                </div>
+                <a href="https://eidosrender.es/contacto" id="btnMobileStickyCTA" class="btn-primary mobile-sticky-btn">
+                    Solicitar Presupuesto →
+                </a>
+            </div>
+        </section>
+
         <!-- LLAMADA A LA ACCIÓN DIRECTA -->
         <section class="section">
             <div class="container container-narrow" style="text-align:center;">

@@ -11,6 +11,7 @@ import { initContactForm } from './js/contact-form.js';
 import { initGalleryModal } from './js/gallery-modal.js';
 import { initCookieConsent } from './js/cookie-consent.js';
 import { initSeoHelper } from './js/seo-injector.js';
+import { initCalculator } from './js/calculator.js';
 
 function bootEidosApp() {
     try {
@@ -20,6 +21,7 @@ function bootEidosApp() {
         initGalleryModal();
         initCookieConsent();
         initSeoHelper();
+        initCalculator();
     } catch (err) {
         console.error('[Eidos Render] Error inicializando módulos:', err);
     }
@@ -38,5 +40,6 @@ export {
     initContactForm,
     initGalleryModal,
     initCookieConsent,
-    initSeoHelper
+    initSeoHelper,
+    initCalculator
 };

@@ -1434,3 +1434,591 @@ footer ul a:hover {
 .article-content li {
     margin-bottom: 10px;
 }
+
+/* --------------------------------------------------------------------------
+   16. CALCULADORA DE PRESUPUESTOS INTERACTIVA (PAQUETES BASE + UPSELLS)
+   -------------------------------------------------------------------------- */
+.section-calc {
+    background-color: var(--canvas);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    position: relative;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .calculator-grid {
+        grid-template-columns: 1.55fr 1fr;
+        gap: 48px;
+    }
+}
+
+.calc-config-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.calc-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.calc-legend {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 18px;
+    letter-spacing: -0.015em;
+}
+
+.step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    background-color: var(--canvas-warm);
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    font-size: 0.84rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   PASO 1: TARJETAS DE PAQUETES BASE (FORMATO SELECCIÓN ÚNICA)
+   -------------------------------------------------------------------------- */
+.packages-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+@media (min-width: 768px) {
+    .packages-options {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+.calc-pack-card {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.calc-pack-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.pack-card-body {
+    width: 100%;
+    min-height: var(--touch-min);
+    background-color: var(--canvas-card);
+    border: 1.5px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: var(--transition);
+}
+
+.pack-card-badge {
+    position: absolute;
+    top: -11px;
+    right: 16px;
+    background-color: var(--accent);
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(180, 74, 41, 0.25);
+}
+
+.pack-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    line-height: 1.25;
+}
+
+.pack-card-price {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.pack-card-price span {
+    font-size: 1.65rem;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+}
+
+.pack-card-price small {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--text-dim);
+}
+
+.pack-card-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+    flex-grow: 1;
+}
+
+.pack-card-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.pack-card-features li::before {
+    content: "✓";
+    font-weight: 800;
+    color: var(--success);
+    flex-shrink: 0;
+}
+
+/* Estados Hover y Checked */
+.calc-pack-card:hover .pack-card-body {
+    border-color: var(--border);
+    background-color: #FFFFFF;
+}
+
+.calc-pack-card input[type="radio"]:checked + .pack-card-body {
+    border-color: var(--accent);
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 24px rgba(180, 74, 41, 0.12);
+}
+
+.calc-pack-card input[type="radio"]:checked + .pack-card-body .pack-card-title {
+    color: var(--accent);
+}
+
+.calc-pack-card.is-featured .pack-card-body {
+    border-color: var(--accent-border);
+}
+
+/* --------------------------------------------------------------------------
+   PASO 2: UPSELLS Y VARIABLES ADICIONALES
+   -------------------------------------------------------------------------- */
+.upsells-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Contador de Render Extra (+175€/ud) */
+.extra-render-box {
+    background-color: var(--canvas-card);
+    border: 1.5px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: var(--transition);
+}
+
+@media (min-width: 640px) {
+    .extra-render-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.extra-render-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.extra-render-title {
+    font-family: var(--font-heading);
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.extra-render-desc {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+
+.extra-render-price-tag {
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.counter-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--touch-min);
+    height: var(--touch-min);
+    min-width: var(--touch-min);
+    min-height: var(--touch-min);
+    background-color: var(--canvas-warm);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: var(--transition);
+    touch-action: manipulation;
+    user-select: none;
+}
+
+.btn-counter:hover {
+    background-color: var(--canvas-hover);
+    border-color: var(--border-focus);
+}
+
+.btn-counter:active {
+    transform: scale(0.95);
+}
+
+.counter-control input[type="number"] {
+    width: 60px;
+    height: var(--touch-min);
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-main);
+    background-color: var(--canvas);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    outline: none;
+    -moz-appearance: textfield;
+}
+
+.counter-control input[type="number"]::-webkit-outer-spin-button,
+.counter-control input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Checkboxes de Extras */
+.calc-checkbox-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: var(--touch-min);
+    background-color: var(--canvas-card);
+    border: 1.5px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: var(--transition);
+    touch-action: manipulation;
+}
+
+.calc-checkbox-card input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.custom-check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border-radius: 4px;
+    border: 1.5px solid var(--border);
+    background-color: var(--canvas);
+    transition: var(--transition);
+}
+
+.custom-check-icon::after {
+    content: "✓";
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: none;
+}
+
+.check-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-grow: 1;
+}
+
+.check-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.check-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.check-price {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-main);
+    flex-shrink: 0;
+}
+
+.calc-checkbox-card:hover {
+    border-color: var(--border);
+}
+
+.calc-checkbox-card input[type="checkbox"]:checked ~ .custom-check-icon {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.calc-checkbox-card input[type="checkbox"]:checked ~ .custom-check-icon::after {
+    display: block;
+}
+
+.calc-checkbox-card input[type="checkbox"]:checked {
+    border-color: var(--accent-border);
+    background-color: var(--accent-light);
+}
+
+/* --------------------------------------------------------------------------
+   PANEL DE RESUMEN (DESKTOP STICKY)
+   -------------------------------------------------------------------------- */
+.calc-summary-card {
+    background-color: var(--canvas-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(24px, 4vw, 36px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 1024px) {
+    .calc-summary-card {
+        position: sticky;
+        top: calc(var(--header-h) + 24px);
+    }
+}
+
+.summary-header {
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.summary-header h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0;
+}
+
+.summary-breakdown {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.breakdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    gap: 12px;
+}
+
+.breakdown-item .item-val {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-main);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.summary-total-box {
+    background-color: var(--canvas-warm);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.total-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+}
+
+.total-number-wrapper {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.total-currency {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.total-amount {
+    font-family: var(--font-heading);
+    font-size: clamp(2.6rem, 4vw, 3.2rem);
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-variant-numeric: tabular-nums;
+    transition: transform 0.2s ease;
+}
+
+.total-amount.is-updating {
+    transform: scale(1.04);
+    color: var(--accent);
+}
+
+.total-tax-note {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-top: 8px;
+}
+
+.summary-guarantees {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+.summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   BARRA INFERIOR FIJA MÓVIL (MOBILE STICKY BOTTOM BAR)
+   -------------------------------------------------------------------------- */
+.calc-mobile-sticky-bar {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .calc-mobile-sticky-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 990;
+        background-color: rgba(250, 249, 246, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-top: 1px solid var(--border);
+        box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.07);
+        padding: 12px 20px calc(12px + env(safe-area-inset-bottom, 0px)) 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        transform: translateY(110%);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .calc-mobile-sticky-bar.is-visible {
+        transform: translateY(0);
+    }
+
+    .mobile-sticky-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-sticky-label {
+        font-size: 0.74rem;
+        color: var(--text-dim);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .mobile-sticky-price {
+        font-family: var(--font-heading);
+        font-size: 1.45rem;
+        font-weight: 800;
+        color: var(--text-main);
+        line-height: 1.1;
+    }
+
+    .mobile-sticky-price small {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-dim);
+    }
+
+    .mobile-sticky-btn {
+        flex-shrink: 0;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

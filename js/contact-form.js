@@ -44,6 +44,9 @@ export function initContactForm() {
         });
     });
 
+    // 4. Auto-rellenado desde parámetros de URL (procedente de la calculadora)
+    prefillFromUrl(form);
+
     // 4. Manejo del envío (Submit)
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -184,4 +187,42 @@ function showFeedback(form, type, message) {
 
     feedbackBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
+
+/**
+ * Rellena automáticamente los campos del formulario con los parámetros de la calculadora
+ */
+function prefillFromUrl(form) {
+    try {
+        const params = new URLSearchParams(window.location.search);
+        const paquete = params.get('paquete');
+        const tipologia = params.get('tipologia');
+        const vistas = params.get('vistas');
+        const extras = params.get('extras');
+        const estimacion = params.get('estimacion');
+
+        if (tipologia) {
+            const select = form.querySelector('select[name="tipologia"], #tipologia');
+            if (select) {
+                const opt = select.querySelector(`option[value="${tipologia}"]`);
+                if (opt) opt.selected = true;
+            }
+        }
+
+        if (paquete || vistas || estimacion || extras) {
+            const mensajeTextarea = form.querySelector('textarea[name="mensaje"], #mensaje');
+            if (mensajeTextarea && !mensajeTextarea.value.trim()) {
+                const details = [];
+                if (paquete) details.push(`Paquete: ${paquete}`);
+                if (vistas) details.push(`Volumen: ${vistas} vistas`);
+                if (extras && extras !== 'Ninguno') details.push(`Extras: ${extras}`);
+                if (estimacion) details.push(`Subtotal estimado: ${estimacion} + IVA`);
+                
+                mensajeTextarea.value = `[Configuración desde Calculadora]\n${details.join(' · ')}\n\nDetalles del proyecto / enlace a planos (WeTransfer/Drive): `;
+            }
+        }
+    } catch {
+        // Silencioso en caso de error en parseo
+    }
+}
+
 
