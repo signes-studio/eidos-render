@@ -1,6 +1,8 @@
 /**
+ * ===================================================================
  * EIDOS RENDER — js/navigation.js
  * Módulo de navegación accesible, header sticky inteligente y control de menú móvil.
+ * ===================================================================
  */
 
 export function initNavigation() {
@@ -8,10 +10,10 @@ export function initNavigation() {
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
 
-    // 1. Header Sticky con elevación y contraste en scroll
+    // 1. Header Sticky con contraste y elevación
     if (navbar) {
         const handleScroll = () => {
-            if (window.scrollY > 20) {
+            if (window.scrollY > 15) {
                 navbar.classList.add('is-scrolled');
             } else {
                 navbar.classList.remove('is-scrolled');
@@ -19,10 +21,10 @@ export function initNavigation() {
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
-        handleScroll(); // Comprobar estado inicial
+        handleScroll();
     }
 
-    // 2. Control del Menú Móvil con ARIA y accesibilidad
+    // 2. Control del Menú Móvil con ARIA y accesibilidad completa
     if (navToggle && navLinks) {
         const toggleMenu = (forceState) => {
             const isOpen = typeof forceState === 'boolean' 
@@ -32,22 +34,26 @@ export function initNavigation() {
             navLinks.classList.toggle('is-open', isOpen);
             navToggle.classList.toggle('is-open', isOpen);
             navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
 
-            // Bloquear scroll del body si el menú está abierto en móvil
+            // Bloquear scroll de la página cuando el menú móvil está abierto
             if (window.innerWidth <= 768) {
                 document.body.style.overflow = isOpen ? 'hidden' : '';
+                document.documentElement.style.overflow = isOpen ? 'hidden' : '';
             }
         };
 
-        navToggle.addEventListener('click', () => toggleMenu());
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
 
-        // Cerrar menú al hacer clic en cualquier enlace
+        // Cerrar menú al pulsar en cualquier enlace de la lista
         navLinks.querySelectorAll('a').forEach((link) => {
             link.addEventListener('click', () => toggleMenu(false));
         });
 
-        // Cerrar menú con la tecla Escape
+        // Cerrar menú con la tecla Escape y devolver el foco al botón
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && navLinks.classList.contains('is-open')) {
                 toggleMenu(false);
@@ -55,16 +61,28 @@ export function initNavigation() {
             }
         });
 
-        // Cerrar si se redimensiona a pantalla de escritorio
+        // Cerrar menú al hacer clic fuera del menú o cabecera
+        document.addEventListener('click', (e) => {
+            if (
+                navLinks.classList.contains('is-open') &&
+                !navLinks.contains(e.target) &&
+                !navToggle.contains(e.target)
+            ) {
+                toggleMenu(false);
+            }
+        });
+
+        // Restaurar estado si se redimensiona a pantalla de escritorio
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768 && navLinks.classList.contains('is-open')) {
                 toggleMenu(false);
                 document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
             }
         }, { passive: true });
     }
 
-    // 3. Marcado automático del enlace activo según la URL
+    // 3. Marcado automático del enlace activo según la URL actual
     highlightCurrentPage();
 }
 
@@ -80,7 +98,7 @@ function highlightCurrentPage() {
             const url = new URL(anchor.href, window.location.origin);
             const anchorPath = url.pathname.replace(/\/$/, '') || '/';
 
-            // Comprobar coincidencia exacta o subrutas relevantes
+            // Comprobar coincidencia exacta o coincidencia de subcarpeta relevante
             if (
                 anchorPath === currentPath ||
                 (anchorPath !== '/' && currentPath.startsWith(anchorPath))
@@ -89,8 +107,7 @@ function highlightCurrentPage() {
                 anchor.setAttribute('aria-current', 'page');
             }
         } catch {
-            // Ignorar URLs inválidas o externas
+            // Ignorar URLs externas o inválidas
         }
     });
 }
-
