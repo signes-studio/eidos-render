@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: BreadcrumbList & VisualArtwork -->
@@ -68,7 +68,7 @@
             "name": "Eidos Render",
             "url": "https://eidosrender.es/"
           },
-          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg",
+          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp",
           "description": "Visualización fotorrealista de fachada y zonas exteriores de edificio residencial plurifamiliar para comercialización inmobiliaria."
         }
       ]
@@ -99,12 +99,12 @@
                     <li><a href="https://eidosrender.es/obra-nueva" class="active">Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/faq">FAQ</a></li>
                     <li>
-                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-clean-link" title="Visitar LinkedIn Corporativo">
-                            <span>LinkedIn Corporativo</span> <span style="font-size:0.7rem;">↗</span>
+                        <a href="tel:+34614459144" class="nav-phone" title="Llamar directamente">
+                            <span>📞 +34 614 45 91 44</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://eidosrender.es/contacto" class="nav-link-cta">Solicitar Presupuesto</a>
+                        <a href="https://eidosrender.es/contacto" class="btn-primary">Pedir Presupuesto</a>
                     </li>
                 </ul>
             </nav>
@@ -134,19 +134,19 @@
                     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px;">
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Tipología de Activo</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Edificio Plurifamiliar (24 VVDS)</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Edificio Plurifamiliar (24 VVDS)</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Objetivo Comercial</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Preventa sobre plano / Caseta</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Preventa sobre plano / Caseta</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Entregables CGI</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Fachada + Zonas Comunes</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Fachada + Zonas Comunes</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Tiempo de Producción</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">5 Días Hábiles</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">5 Días Hábiles</div>
                         </div>
                     </div>
                 </div>
@@ -160,14 +160,18 @@
                             <span>PERSPECTIVA TRES CUARTOS</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/render-fachada-edificio-obra-nueva.jpg" 
-                                 alt="Fachada principal de edificio de obra nueva residencial" 
-                                 width="800" height="500"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg"
-                                 data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-fachada-edificio-obra-nueva-800.webp 800w, img/render-fachada-edificio-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-fachada-edificio-obra-nueva.jpg" 
+                                     alt="Fachada principal de edificio de obra nueva residencial" 
+                                     width="800" height="500"
+                                     loading="eager" 
+                                     fetchpriority="high"
+                                     decoding="async"
+                                     data-gallery-src="img/render-fachada-edificio-obra-nueva.webp"
+                                     data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.webp" data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Fachada Principal & Volumetría</h3>
@@ -181,14 +185,17 @@
                             <span>ACCESOS PEATONALES</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" 
-                                 alt="Zonas comunes y accesos de edificio de obra nueva" 
-                                 width="800" height="500"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg"
-                                 data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp 800w, img/infografia-exterior-zonas-comunes-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" 
+                                     alt="Zonas comunes y accesos de edificio de obra nueva" 
+                                     width="800" height="500"
+                                     loading="lazy" 
+                                     decoding="async"
+                                     data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.webp"
+                                     data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.webp" data-gallery-title="Edificio de Obra Nueva — Accesos y Zonas Comunes">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Zonas Comunes & Accesos</h3>

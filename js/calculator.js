@@ -267,7 +267,10 @@ export function initCalculator() {
                     mobileBar.classList.remove('is-visible');
                 }
             });
-        }, { threshold: 0.08 });
+        }, { 
+            threshold: 0.01,
+            rootMargin: "-20px 0px -20px 0px"
+        });
 
         observer.observe(calcSection);
     }

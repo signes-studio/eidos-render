@@ -21,35 +21,85 @@
     <meta property="og:description" content="Renders 3D comerciales y planos de venta con precios cerrados para acelerar tus promociones inmobiliarias.">
     <meta property="og:url" content="https://eidosrender.es/">
     <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eidos Render | Visualización Arquitectónica & Renders B2B">
+    <meta name="twitter:description" content="Renders 3D comerciales y planos de venta con precios cerrados para acelerar tus promociones inmobiliarias.">
+    <meta name="twitter:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
 
     <title>Eidos Render | Visualización Arquitectónica & Renders Inmobiliarios B2B</title>
     
+    <!-- Preload LCP Hero Image -->
+    <link rel="preload" as="image" href="img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp" fetchpriority="high">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Schema.org: Organization & WebSite -->
+    <!-- Schema.org: ProfessionalService & WebSite -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": "ProfessionalService",
           "@id": "https://eidosrender.es/#organization",
           "name": "Eidos Render",
+          "legalName": "Eidos Render",
           "url": "https://eidosrender.es/",
           "logo": "https://eidosrender.es/favicon.svg",
+          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg",
           "description": "Estudio especializado en visualización arquitectónica 3D, renders hiperrealistas y planos comerciales para el sector inmobiliario B2B.",
           "telephone": "+34614459144",
           "email": "info@eidosrender.es",
+          "priceRange": "€€€",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Valencia",
             "addressRegion": "Comunidad Valenciana",
             "addressCountry": "ES"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.4699,
+            "longitude": -0.3763
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "España" },
+            { "@type": "AdministrativeArea", "name": "Valencia" },
+            { "@type": "AdministrativeArea", "name": "Madrid" },
+            { "@type": "AdministrativeArea", "name": "Málaga" },
+            { "@type": "AdministrativeArea", "name": "Alicante" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Visualización Arquitectónica B2B",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Pack Promotora Residencial (Obra Nueva)",
+                  "description": "1 Render Exterior de Fachada, 2 Renders Interiores y 1 Plano Comercial 3D en 4K"
+                },
+                "price": "750",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Pack Inversor & House Flipping",
+                  "description": "2 Renders Interiores Comerciales para reformas"
+                },
+                "price": "350",
+                "priceCurrency": "EUR"
+              }
+            ]
           },
           "sameAs": [
             "https://www.linkedin.com/company/eidos-render"
@@ -170,17 +220,21 @@
 
                 <div class="grid-3">
                     
-                    <!-- PROYECTO 01: OBRA NUEVA -->
+                    <!-- PROYECTO 01: OBRA NUEVA (LCP CRÍTICO) -->
                     <article class="project-card">
                         <div class="project-media">
-                            <img src="img/render-fachada-edificio-obra-nueva.jpg" 
-                                 alt="Edificio Residencial de Obra Nueva — Fachada Principal"
-                                 width="800" height="500"
-                                 loading="lazy"
-                                 decoding="async"
-                                 data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg"
-                                 data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">Ampliar</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-fachada-edificio-obra-nueva-800.webp 800w, img/render-fachada-edificio-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-fachada-edificio-obra-nueva.jpg" 
+                                     alt="Edificio Residencial de Obra Nueva — Fachada Principal Diurna"
+                                     width="800" height="500"
+                                     loading="eager"
+                                     fetchpriority="high"
+                                     decoding="async"
+                                     data-gallery-src="img/render-fachada-edificio-obra-nueva.webp"
+                                     data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.webp" data-gallery-title="Edificio de Obra Nueva — Fachada Principal Diurna">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Obra Nueva Residencial</span>
@@ -202,14 +256,17 @@
                     <!-- PROYECTO 02: VILLA UNIFAMILIAR -->
                     <article class="project-card">
                         <div class="project-media">
-                            <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
-                                 alt="Villa Unifamiliar de Lujo con Piscina"
-                                 width="800" height="500"
-                                 loading="lazy"
-                                 decoding="async"
-                                 data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
-                                 data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">Ampliar</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.webp 800w, img/render-exterior-vivienda-unifamiliar-piscina.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
+                                     alt="Villa Unifamiliar de Lujo con Piscina"
+                                     width="800" height="500"
+                                     loading="lazy"
+                                     decoding="async"
+                                     data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp"
+                                     data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Vivienda Unifamiliar</span>
@@ -231,14 +288,17 @@
                     <!-- PROYECTO 03: REFORMA Y FLIPPING -->
                     <article class="project-card">
                         <div class="project-media">
-                            <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
-                                 alt="Reforma Integral y Flipping — Suite Principal"
-                                 width="800" height="500"
-                                 loading="lazy"
-                                 decoding="async"
-                                 data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg"
-                                 data-gallery-title="Reforma Integral — Suite Principal">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg" data-gallery-title="Reforma Integral — Suite Principal">Ampliar</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/infografia-dormitorio-principal-reforma-piso-800.webp 800w, img/infografia-dormitorio-principal-reforma-piso.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
+                                     alt="Reforma Integral y Flipping — Suite Principal"
+                                     width="800" height="500"
+                                     loading="lazy"
+                                     decoding="async"
+                                     data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.webp"
+                                     data-gallery-title="Reforma Integral — Suite Principal">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.webp" data-gallery-title="Reforma Integral — Suite Principal">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Reforma & Flipping</span>

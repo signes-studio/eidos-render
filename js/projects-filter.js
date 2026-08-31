@@ -4,7 +4,7 @@
  */
 
 export function initProjectsFilter() {
-    const filterContainer = document.querySelector('.projects-filter-nav');
+    const filterContainer = document.querySelector('.projects-filter-nav, .filter-nav');
     const projectCards = document.querySelectorAll('[data-category]');
 
     if (!filterContainer || projectCards.length === 0) return;

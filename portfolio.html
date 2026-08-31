@@ -25,10 +25,13 @@
 
     <title>Portfolio de Renders y Casos de Estudio | Eidos Render</title>
     
+    <!-- Preload LCP Portfolio Image -->
+    <link rel="preload" as="image" href="img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp" fetchpriority="high">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: CollectionPage & ImageGallery -->
@@ -43,17 +46,17 @@
         {
           "@type": "VisualArtwork",
           "name": "Renders de Edificio Residencial de Obra Nueva",
-          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg"
+          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp"
         },
         {
           "@type": "VisualArtwork",
           "name": "Renders de Villa Unifamiliar de Alto Standing",
-          "image": "https://eidosrender.es/img/render-exterior-vivienda-unifamiliar-piscina.jpg"
+          "image": "https://eidosrender.es/img/render-exterior-vivienda-unifamiliar-piscina.webp"
         },
         {
           "@type": "VisualArtwork",
           "name": "Renders de Reforma Integral & Flipping",
-          "image": "https://eidosrender.es/img/infografia-dormitorio-principal-reforma-piso.jpg"
+          "image": "https://eidosrender.es/img/infografia-dormitorio-principal-reforma-piso.webp"
         }
       ]
     }
@@ -110,10 +113,10 @@
             <div class="container">
                 
                 <div class="filter-nav" role="tablist" aria-label="Filtro de proyectos por tipología">
-                    <button class="filter-btn active" data-filter="all">Todos los proyectos (3)</button>
-                    <button class="filter-btn" data-filter="obra-nueva">Obra Nueva Plurifamiliar</button>
-                    <button class="filter-btn" data-filter="unifamiliar">Viviendas Unifamiliares</button>
-                    <button class="filter-btn" data-filter="reforma">Reforma & House Flipping</button>
+                    <button class="filter-btn active" data-filter="all">Todos los proyectos <span class="filter-count">(3)</span></button>
+                    <button class="filter-btn" data-filter="obra-nueva">Obra Nueva Plurifamiliar <span class="filter-count">(1)</span></button>
+                    <button class="filter-btn" data-filter="unifamiliar">Viviendas Unifamiliares <span class="filter-count">(1)</span></button>
+                    <button class="filter-btn" data-filter="reforma">Reforma & House Flipping <span class="filter-count">(1)</span></button>
                 </div>
 
                 <div class="grid-3" id="projectsGrid">
@@ -121,14 +124,18 @@
                     <!-- PROYECTO 01: OBRA NUEVA -->
                     <article class="project-card project-item" data-category="obra-nueva">
                         <div class="project-media">
-                            <img src="img/render-fachada-edificio-obra-nueva.jpg" 
-                                 alt="Edificio Residencial de Obra Nueva"
-                                 width="800" height="500"
-                                 loading="lazy"
-                                 decoding="async"
-                                 data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg"
-                                 data-gallery-title="Edificio de Obra Nueva — Fachada Principal">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.jpg" data-gallery-title="Edificio de Obra Nueva — Fachada Principal">Ampliar</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-fachada-edificio-obra-nueva-800.webp 800w, img/render-fachada-edificio-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-fachada-edificio-obra-nueva.jpg" 
+                                     alt="Edificio Residencial de Obra Nueva"
+                                     width="800" height="500"
+                                     loading="eager"
+                                     fetchpriority="high"
+                                     decoding="async"
+                                     data-gallery-src="img/render-fachada-edificio-obra-nueva.webp"
+                                     data-gallery-title="Edificio de Obra Nueva — Fachada Principal">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-fachada-edificio-obra-nueva.webp" data-gallery-title="Edificio de Obra Nueva — Fachada Principal">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Obra Nueva · Valencia</span>
@@ -150,14 +157,17 @@
                     <!-- PROYECTO 02: VILLA UNIFAMILIAR -->
                     <article class="project-card project-item" data-category="unifamiliar">
                         <div class="project-media">
-                            <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
-                                 alt="Villa Unifamiliar de Alto Standing con Piscina"
-                                 width="800" height="500"
-                                 loading="lazy"
-                                 decoding="async"
-                                 data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
-                                 data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">Ampliar</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.webp 800w, img/render-exterior-vivienda-unifamiliar-piscina.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
+                                     alt="Villa Unifamiliar de Alto Standing con Piscina"
+                                     width="800" height="500"
+                                     loading="lazy"
+                                     decoding="async"
+                                     data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp"
+                                     data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Unifamiliar · Costa Mediterránea</span>
@@ -179,14 +189,17 @@
                     <!-- PROYECTO 03: REFORMA INTEGRAL -->
                     <article class="project-card project-item" data-category="reforma">
                         <div class="project-media">
-                            <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
-                                 alt="Reforma Integral de Piso — Dormitorio Principal"
-                                 width="800" height="500"
-                                 loading="lazy"
-                                 decoding="async"
-                                 data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg"
-                                 data-gallery-title="Reforma Integral — Suite Principal">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg" data-gallery-title="Reforma Integral — Suite Principal">Ampliar</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/infografia-dormitorio-principal-reforma-piso-800.webp 800w, img/infografia-dormitorio-principal-reforma-piso.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
+                                     alt="Reforma Integral de Piso — Dormitorio Principal"
+                                     width="800" height="500"
+                                     loading="lazy"
+                                     decoding="async"
+                                     data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.webp"
+                                     data-gallery-title="Reforma Integral — Suite Principal">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.webp" data-gallery-title="Reforma Integral — Suite Principal">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <span class="project-tag">Reforma & Flipping · Centro Urbano</span>

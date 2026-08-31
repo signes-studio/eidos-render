@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: BreadcrumbList & VisualArtwork -->
@@ -68,7 +68,7 @@
             "name": "Eidos Render",
             "url": "https://eidosrender.es/"
           },
-          "image": "https://eidosrender.es/img/infografia-dormitorio-principal-reforma-piso.jpg",
+          "image": "https://eidosrender.es/img/infografia-dormitorio-principal-reforma-piso.webp",
           "description": "Visualización 3D fotorrealista de reforma integral de piso para acelerar la compraventa y comercialización de inversores."
         }
       ]
@@ -99,12 +99,12 @@
                     <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/faq">FAQ</a></li>
                     <li>
-                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-clean-link" title="Visitar LinkedIn Corporativo">
-                            <span>LinkedIn Corporativo</span> <span style="font-size:0.7rem;">↗</span>
+                        <a href="tel:+34614459144" class="nav-phone" title="Llamar directamente">
+                            <span>📞 +34 614 45 91 44</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://eidosrender.es/contacto" class="nav-link-cta">Solicitar Presupuesto</a>
+                        <a href="https://eidosrender.es/contacto" class="btn-primary">Pedir Presupuesto</a>
                     </li>
                 </ul>
             </nav>
@@ -134,19 +134,19 @@
                     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px;">
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Tipología de Activo</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Piso Urbano / Reforma</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Piso Urbano / Reforma</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Objetivo Comercial</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Venta anticipada / Flipping</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Venta anticipada / Flipping</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Entregables CGI</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Dormitorio + Estudio + Baño</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Dormitorio + Estudio + Baño</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Tiempo de Producción</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">3 Días Hábiles</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">3 Días Hábiles</div>
                         </div>
                     </div>
                 </div>
@@ -160,14 +160,18 @@
                             <span>LUZ INDIRECTA</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
-                                 alt="Dormitorio principal en reforma integral con iluminación cálida" 
-                                 width="600" height="375"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg"
-                                 data-gallery-title="Reforma Integral — Suite Principal">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.jpg" data-gallery-title="Reforma Integral — Suite Principal">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/infografia-dormitorio-principal-reforma-piso-800.webp 800w, img/infografia-dormitorio-principal-reforma-piso.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/infografia-dormitorio-principal-reforma-piso.jpg" 
+                                     alt="Dormitorio principal en reforma integral con iluminación cálida" 
+                                     width="600" height="375"
+                                     loading="eager" 
+                                     fetchpriority="high"
+                                     decoding="async"
+                                     data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.webp"
+                                     data-gallery-title="Reforma Integral — Suite Principal">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-reforma-piso.webp" data-gallery-title="Reforma Integral — Suite Principal">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Suite Principal</h3>
@@ -181,14 +185,17 @@
                             <span>FUNCIONALIDAD</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/render-zona-estudio-armarios-empotrados.jpg" 
-                                 alt="Zona de estudio integrada con armarios empotrados" 
-                                 width="600" height="375"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/render-zona-estudio-armarios-empotrados.jpg"
-                                 data-gallery-title="Reforma Integral — Zona de Estudio">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-zona-estudio-armarios-empotrados.jpg" data-gallery-title="Reforma Integral — Zona de Estudio">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-zona-estudio-armarios-empotrados-800.webp 800w, img/render-zona-estudio-armarios-empotrados.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-zona-estudio-armarios-empotrados.jpg" 
+                                     alt="Zona de estudio integrada con armarios empotrados" 
+                                     width="600" height="375"
+                                     loading="lazy" 
+                                     decoding="async"
+                                     data-gallery-src="img/render-zona-estudio-armarios-empotrados.webp"
+                                     data-gallery-title="Reforma Integral — Zona de Estudio">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-zona-estudio-armarios-empotrados.webp" data-gallery-title="Reforma Integral — Zona de Estudio">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Zona de Estudio & Armarios</h3>
@@ -202,14 +209,17 @@
                             <span>REVESTIMIENTO MINERAL</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/render-bano-moderno-ducha-minimalista.jpg" 
-                                 alt="Baño moderno minimalista con ducha integrada" 
-                                 width="600" height="375"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/render-bano-moderno-ducha-minimalista.jpg"
-                                 data-gallery-title="Reforma Integral — Baño Minimalista">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-bano-moderno-ducha-minimalista.jpg" data-gallery-title="Reforma Integral — Baño Minimalista">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-bano-moderno-ducha-minimalista-800.webp 800w, img/render-bano-moderno-ducha-minimalista.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-bano-moderno-ducha-minimalista.jpg" 
+                                     alt="Baño moderno minimalista con ducha integrada" 
+                                     width="600" height="375"
+                                     loading="lazy" 
+                                     decoding="async"
+                                     data-gallery-src="img/render-bano-moderno-ducha-minimalista.webp"
+                                     data-gallery-title="Reforma Integral — Baño Minimalista">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-bano-moderno-ducha-minimalista.webp" data-gallery-title="Reforma Integral — Baño Minimalista">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Baño Minimalista</h3>

@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: BreadcrumbList & VisualArtwork -->
@@ -54,7 +54,7 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Vivienda Unifamiliar",
+              "name": "Villa Unifamiliar",
               "item": "https://eidosrender.es/vivienda-unifamiliar"
             }
           ]
@@ -68,8 +68,8 @@
             "name": "Eidos Render",
             "url": "https://eidosrender.es/"
           },
-          "image": "https://eidosrender.es/img/render-exterior-vivienda-unifamiliar-piscina.jpg",
-          "description": "Visualización arquitectónica 3D de villa de lujo con piscina, salón de doble altura y cocina integrada."
+          "image": "https://eidosrender.es/img/render-exterior-vivienda-unifamiliar-piscina.webp",
+          "description": "Visualización arquitectónica 3D fotorrealista de villa contemporánea con piscina, salón a doble altura y cocina con isla."
         }
       ]
     }
@@ -99,12 +99,12 @@
                     <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva</a></li>
                     <li><a href="https://eidosrender.es/faq">FAQ</a></li>
                     <li>
-                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="linkedin-clean-link" title="Visitar LinkedIn Corporativo">
-                            <span>LinkedIn Corporativo</span> <span style="font-size:0.7rem;">↗</span>
+                        <a href="tel:+34614459144" class="nav-phone" title="Llamar directamente">
+                            <span>📞 +34 614 45 91 44</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://eidosrender.es/contacto" class="nav-link-cta">Solicitar Presupuesto</a>
+                        <a href="https://eidosrender.es/contacto" class="btn-primary">Pedir Presupuesto</a>
                     </li>
                 </ul>
             </nav>
@@ -134,19 +134,19 @@
                     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:24px;">
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Tipología de Activo</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Villa Unifamiliar Aislada</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Villa Unifamiliar Aislada</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Objetivo Comercial</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Venta directa / Inversión</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Venta directa / Inversión</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Entregables CGI</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">Ext + Salón + Cocina + Suite</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">Ext + Salón + Cocina + Suite</div>
                         </div>
                         <div>
                             <span class="eyebrow" style="margin-bottom:6px;">Tiempo de Producción</span>
-                            <div style="font-family:var(--font-display); font-size:1.15rem; font-weight:800; color:var(--ink);">4 Días Hábiles</div>
+                            <div style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--text-main);">4 Días Hábiles</div>
                         </div>
                     </div>
                 </div>
@@ -160,14 +160,18 @@
                             <span>DÍA DESPEJADO</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
-                                 alt="Exterior de villa moderna con piscina desbordante" 
-                                 width="800" height="500"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
-                                 data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.webp 800w, img/render-exterior-vivienda-unifamiliar-piscina.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
+                                     alt="Exterior de villa moderna con piscina desbordante" 
+                                     width="800" height="500"
+                                     loading="eager" 
+                                     fetchpriority="high"
+                                     decoding="async"
+                                     data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp"
+                                     data-gallery-title="Villa Unifamiliar — Fachada y Piscina">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp" data-gallery-title="Villa Unifamiliar — Fachada y Piscina">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Fachada y Zona Exterior con Piscina</h3>
@@ -181,14 +185,17 @@
                             <span>LUZ NATURAL</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/infografia-3d-salon-moderno-doble-altura.jpg" 
-                                 alt="Salón de doble altura con grandes ventanales" 
-                                 width="800" height="500"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.jpg"
-                                 data-gallery-title="Villa Unifamiliar — Salón a Doble Altura">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.jpg" data-gallery-title="Villa Unifamiliar — Salón a Doble Altura">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/infografia-3d-salon-moderno-doble-altura-800.webp 800w, img/infografia-3d-salon-moderno-doble-altura.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/infografia-3d-salon-moderno-doble-altura.jpg" 
+                                     alt="Salón de doble altura con grandes ventanales" 
+                                     width="800" height="500"
+                                     loading="lazy" 
+                                     decoding="async"
+                                     data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.webp"
+                                     data-gallery-title="Villa Unifamiliar — Salón a Doble Altura">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.webp" data-gallery-title="Villa Unifamiliar — Salón a Doble Altura">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Salón Principal a Doble Altura</h3>
@@ -202,14 +209,17 @@
                             <span>MATERIALIDAD NOBLE</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/render-cocina-moderna-isla-madera.jpg" 
-                                 alt="Cocina de diseño contemporáneo con isla de madera" 
-                                 width="800" height="500"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/render-cocina-moderna-isla-madera.jpg"
-                                 data-gallery-title="Villa Unifamiliar — Cocina con Isla">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-cocina-moderna-isla-madera.jpg" data-gallery-title="Villa Unifamiliar — Cocina con Isla">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/render-cocina-moderna-isla-madera-800.webp 800w, img/render-cocina-moderna-isla-madera.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/render-cocina-moderna-isla-madera.jpg" 
+                                     alt="Cocina de diseño contemporáneo con isla de madera" 
+                                     width="800" height="500"
+                                     loading="lazy" 
+                                     decoding="async"
+                                     data-gallery-src="img/render-cocina-moderna-isla-madera.webp"
+                                     data-gallery-title="Villa Unifamiliar — Cocina con Isla">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/render-cocina-moderna-isla-madera.webp" data-gallery-title="Villa Unifamiliar — Cocina con Isla">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Cocina Integrada con Isla Central</h3>
@@ -223,14 +233,17 @@
                             <span>SUITE PRINCIPAL</span>
                         </div>
                         <div class="project-media">
-                            <img src="img/infografia-dormitorio-principal-render-inmobiliario.jpg" 
-                                 alt="Dormitorio principal con vestidor e iluminación indirecta" 
-                                 width="800" height="500"
-                                 loading="lazy" 
-                                 decoding="async"
-                                 data-gallery-src="img/infografia-dormitorio-principal-render-inmobiliario.jpg"
-                                 data-gallery-title="Villa Unifamiliar — Master Bedroom Suite">
-                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-render-inmobiliario.jpg" data-gallery-title="Villa Unifamiliar — Master Bedroom Suite">AMPLIAR [+]</button>
+                            <picture>
+                                <source type="image/webp" srcset="img/infografia-dormitorio-principal-render-inmobiliario-800.webp 800w, img/infografia-dormitorio-principal-render-inmobiliario.webp 1600w" sizes="(max-width: 768px) 100vw, 800px">
+                                <img src="img/infografia-dormitorio-principal-render-inmobiliario.jpg" 
+                                     alt="Dormitorio principal con vestidor e iluminación indirecta" 
+                                     width="800" height="500"
+                                     loading="lazy" 
+                                     decoding="async"
+                                     data-gallery-src="img/infografia-dormitorio-principal-render-inmobiliario.webp"
+                                     data-gallery-title="Villa Unifamiliar — Master Bedroom Suite">
+                            </picture>
+                            <button class="gallery-zoom-trigger" data-gallery-src="img/infografia-dormitorio-principal-render-inmobiliario.webp" data-gallery-title="Villa Unifamiliar — Master Bedroom Suite">Ampliar</button>
                         </div>
                         <div class="project-body">
                             <h3>Master Bedroom Suite</h3>
