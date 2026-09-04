@@ -84,9 +84,9 @@ export function initGalleryModal() {
     });
 
     // Controles del modal
-    modalClose.addEventListener('click', closeModal);
-    prevBtn.addEventListener('click', showPrev);
-    nextBtn.addEventListener('click', showNext);
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+    if (prevBtn) prevBtn.addEventListener('click', showPrev);
+    if (nextBtn) nextBtn.addEventListener('click', showNext);
 
     // Cerrar al hacer clic en el fondo oscuro
     modal.addEventListener('click', (e) => {

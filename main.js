@@ -12,6 +12,7 @@ import { initGalleryModal } from './js/gallery-modal.js';
 import { initCookieConsent } from './js/cookie-consent.js';
 import { initSeoHelper } from './js/seo-injector.js';
 import { initCalculator } from './js/calculator.js';
+import { initCadSystem } from './js/cad-system.js';
 
 function bootEidosApp() {
     try {
@@ -22,6 +23,7 @@ function bootEidosApp() {
         initCookieConsent();
         initSeoHelper();
         initCalculator();
+        initCadSystem();
     } catch (err) {
         console.error('[Eidos Render] Error inicializando módulos:', err);
     }
@@ -41,5 +43,6 @@ export {
     initGalleryModal,
     initCookieConsent,
     initSeoHelper,
-    initCalculator
+    initCalculator,
+    initCadSystem
 };
