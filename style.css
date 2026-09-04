@@ -48,6 +48,7 @@
     --success-light: #EEF5F1;
     --max-w-narrow: 840px;
     --touch-min: 44px;
+    --taupe: var(--c-grey);
 }
 
 /* --------------------------------------------------------------------------
@@ -364,6 +365,7 @@ p {
 
 .dropdown-wide {
     width: 480px;
+    max-width: 92vw;
 }
 
 .dropdown-inner {
@@ -1455,6 +1457,10 @@ select.form-input-cad {
 
 @media (max-width: 1060px) {
     .main-nav {
+        display: block;
+    }
+
+    .main-nav .nav-menu {
         display: none;
     }
 
@@ -1466,7 +1472,17 @@ select.form-input-cad {
         display: flex;
     }
 
-    .nav-menu.is-open {
+    .mobile-nav-toggle.is-open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .mobile-nav-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+    .mobile-nav-toggle.is-open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .main-nav .nav-menu.is-open {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -1479,7 +1495,9 @@ select.form-input-cad {
         margin-left: 0;
         z-index: 999;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         gap: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     }
 
     .nav-menu.is-open .nav-item {
@@ -1530,20 +1548,15 @@ select.form-input-cad {
         padding-top: 1.5rem;
         border-top: 2px solid var(--c-border);
     }
-
-    .footer-grid-5 {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
     .footer-grid-5 {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 2rem;
     }
-}
 
-.hero-asymmetric-grid {
+    .hero-asymmetric-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
@@ -1581,6 +1594,11 @@ select.form-input-cad {
 }
 
 @media (max-width: 640px) {
+    .footer-grid-5 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .services-grid,
     .process-grid {
         grid-template-columns: 1fr;
@@ -3779,5 +3797,468 @@ select.form-input-cad {
 .is-featured {
     border-color: var(--c-crimson);
 }
+
+/* Bloque Destacado de Conversión B2B (Blog, FAQs, Tarifas) */
+.callout-b2b-box {
+    margin-top: clamp(36px, 6vw, 64px);
+    border: 1px solid var(--c-border);
+    padding: clamp(24px, 5vw, 48px);
+    background-color: var(--c-paper-subtle);
+    text-align: center;
+}
+
+/* ==========================================================================
+   18. SISTEMA RESPONSIVE AVANZADO & CALIBRACIÓN INDEPENDIENTE POR PÁGINA
+   Optimización específica para Móvil (<768px), Tablet (768-1023px) y Desktop (>=1024px)
+   ========================================================================== */
+
+/* --- AJUSTES GLOBALES DE CONTENCIÓN Y TIPOGRAFÍA --- */
+@media (max-width: 768px) {
+    /* Contención de viewport y márgenes de pantalla */
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    /* Jerarquía de titulares proporcionales sin cortes ni desbordes */
+    h1, .h1 {
+        font-size: clamp(1.95rem, 7.5vw, 2.75rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+    }
+
+    h2, .h2, .section-title {
+        font-size: clamp(1.6rem, 5.5vw, 2.2rem);
+        line-height: 1.15;
+    }
+
+    h3, .h3 {
+        font-size: clamp(1.2rem, 4vw, 1.45rem);
+        line-height: 1.25;
+    }
+
+    .subtitle, .section-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .section {
+        padding: clamp(40px, 7vw, 64px) 0;
+    }
+
+    /* Botones CTA en móvil ocupan todo el ancho para facilitar el toque */
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .cta-group .btn-primary,
+    .cta-group .btn-outline,
+    .cta-group .btn-secondary,
+    .cta-group .btn-cad {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Barra de metadatos superior (Casos de Estudio, FAQs, Tipologías) */
+    .hero-meta-bar {
+        gap: 10px 14px;
+        font-size: 0.6875rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 380px) {
+    /* Pantallas estrechas (iPhone SE, Galaxy A, etc.) */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1, .h1 {
+        font-size: 1.85rem;
+    }
+
+    .brand-title {
+        font-size: 0.95rem;
+    }
+
+    .brand-desc {
+        display: none;
+    }
+}
+
+/* --- PÁGINA ESPECÍFICA: SERVICIOS Y TARIFAS (servicios.html) --- */
+@media (max-width: 768px) {
+    /* Tarjetas de Paquetes en 1 sola columna */
+    .price-card {
+        padding: 24px 20px;
+    }
+
+    .price-card .target {
+        min-height: auto;
+        margin-bottom: 14px;
+    }
+
+    .price-card .price {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+    }
+
+    .price-card .price span {
+        font-size: 2.1rem;
+    }
+
+    /* Ficha Técnica Comparativa con desplazamiento suave táctil */
+    .spec-table-container {
+        margin: 2rem 0;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .spec-table-container::before {
+        content: "← Desliza horizontalmente para comparar paquetes →";
+        display: block;
+        padding: 10px 14px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--c-crimson);
+        background-color: rgba(200, 16, 46, 0.06);
+        border-bottom: 1px solid var(--c-border);
+        text-align: center;
+    }
+
+    .spec-table th,
+    .spec-table td {
+        padding: 12px 14px;
+        font-size: 0.8125rem;
+        white-space: nowrap;
+    }
+
+    /* Calculadora Interactiva en Móvil */
+    .calc-config-panel {
+        gap: 28px;
+    }
+
+    .packages-options {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .calc-pack-card .pack-card-body {
+        padding: 20px 16px;
+    }
+
+    .calc-pack-card .pack-card-badge {
+        font-size: 0.625rem;
+        top: -9px;
+        right: 12px;
+    }
+
+    .counter-control {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-counter {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 1.4rem;
+    }
+
+    .counter-control input[type="number"] {
+        height: 44px;
+        width: 60px;
+        font-size: 1.2rem;
+    }
+
+    .calc-checkbox-card {
+        padding: 14px 16px;
+        min-height: 48px;
+    }
+
+    .calc-summary-card {
+        padding: 24px 20px;
+    }
+}
+
+/* --- PÁGINA ESPECÍFICA: PORTFOLIO & VISOR LIGHTBOX (portfolio.html) --- */
+@media (max-width: 768px) {
+    /* Barra de filtros horizontal táctil sin scrollbar visible */
+    .filter-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+        scrollbar-width: none;
+    }
+
+    .filter-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+        padding: 10px 16px;
+        min-height: 44px;
+        font-size: 0.8125rem;
+    }
+
+    /* Galería en 1 columna limpia */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .project-media {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-body {
+        padding: 1.25rem;
+    }
+
+    /* Visor Lightbox optimizado para smartphones */
+    .lightbox-modal,
+    .gallery-modal-hud {
+        padding: 12px;
+    }
+
+    .lightbox-content,
+    .modal-hud-stage {
+        max-width: 98vw;
+        max-height: 80vh;
+    }
+
+    .lightbox-content img,
+    .lightbox-image,
+    .modal-hud-img {
+        max-height: 72vh;
+    }
+
+    .modal-hud-header {
+        max-width: 98vw;
+        padding-bottom: 8px;
+    }
+
+    .modal-hud-close,
+    .lightbox-close {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+}
+
+/* --- PÁGINA ESPECÍFICA: CONTACTO Y FORMULARIO (contacto.html) --- */
+.contact-form-panel {
+    background-color: #FFFFFF;
+    border: 1px solid var(--c-border);
+    padding: clamp(24px, 4vw, 36px);
+}
+
+.form-group label,
+.form-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--c-black);
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea,
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    background-color: #FAF9F6;
+    border: 1px solid var(--c-border);
+    font-family: var(--font-body);
+    font-size: 1rem; /* 16px exactos evita zoom automático en iOS */
+    color: var(--c-black);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.form-group textarea,
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--c-black);
+    background-color: #FFFFFF;
+}
+
+.contact-direct-item .label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--c-grey);
+    margin-bottom: 4px;
+}
+
+.contact-direct-item .value {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--c-black);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        gap: 28px;
+    }
+
+    .contact-info-card,
+    .contact-form-panel {
+        padding: 20px 16px;
+    }
+
+    .contact-direct-item .value {
+        font-size: 1.05rem;
+    }
+}
+
+/* --- PÁGINAS DE TIPOLOGÍAS Y CASOS DE ESTUDIO (obra-nueva.html, etc.) --- */
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* --- PÁGINAS DE CIUDADES Y SEO LOCAL (renders-*.html) --- */
+@media (max-width: 768px) {
+    .bg-dark {
+        padding: 48px 0;
+    }
+
+    .bg-dark .cta-group {
+        margin-top: 1.5rem;
+    }
+}
+
+/* --- BLOG Y ARTÍCULOS (blog/index.html y blog/*.html) --- */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .article-container {
+        padding: 2rem 1.25rem 3.5rem 1.25rem;
+    }
+
+    .article-header {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .article-header h1 {
+        font-size: clamp(1.85rem, 6.5vw, 2.4rem);
+        margin: 0.75rem 0;
+    }
+
+    .article-content {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .article-content blockquote {
+        margin: 1.5rem 0;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    .article-content ul,
+    .article-content ol {
+        margin: 1.25rem 0 1.5rem 1.25rem;
+        padding-left: 0.5rem;
+    }
+
+    .article-featured-media {
+        margin-bottom: 24px;
+    }
+}
+
+/* --- PIE DE PÁGINA INSTITUCIONAL (site-footer) --- */
+@media (max-width: 1024px) {
+    .footer-grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid-5 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        padding-top: 1.5rem;
+    }
+
+    .footer-legal-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+
+/* --- BANNER DE COOKIES (cookie-banner-cad) --- */
+@media (max-width: 640px) {
+    .cookie-cad-inner {
+        flex-direction: column;
+        gap: 14px;
+        align-items: stretch;
+    }
+
+    .cookie-cad-actions {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .cookie-cad-actions button,
+    .cookie-btn-accept,
+    .cookie-btn-reject {
+        flex: 1;
+        min-height: 44px;
+        padding: 10px 14px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
 
 
