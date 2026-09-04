@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Schema.org: ProfessionalService Alicante -->
@@ -56,32 +58,154 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="https://eidosrender.es/" class="logo" aria-label="Eidos Render Inicio">
-                Eidos<span>Render</span>
-            </a>
-            
-            <nav aria-label="Navegación principal">
-                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
+    <!-- 2. CABECERA PRINCIPAL -->
+    <header class="site-header navbar" role="banner">
+        <div class="container">
+            <div class="nav-layout">
                 
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="https://eidosrender.es/portfolio">Casos de Estudio</a></li>
-                    <li><a href="https://eidosrender.es/servicios">Paquetes y Tarifas</a></li>
-                    <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva</a></li>
-                    <li><a href="https://eidosrender.es/faq">FAQ</a></li>
-                    <li>
-                        <a href="tel:+34614459144" class="nav-phone" title="Llamar directamente">
-                            <span>📞 +34 614 45 91 44</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://eidosrender.es/contacto" class="btn-primary">Pedir Presupuesto</a>
-                    </li>
-                </ul>
-            </nav>
+                <!-- Identificador de Marca -->
+                <a href="https://eidosrender.es/" class="brand-monogram" aria-label="Eidos Render Inicio">
+                    <span class="brand-title">EIDOS RENDER</span>
+                    <span class="brand-desc">Infografía 3D · Valencia</span>
+                </a>
+
+                <!-- Navegación Principal con Dropdowns de SEO -->
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul class="nav-menu" id="navLinks">
+                        
+                        <!-- Dropdown: Servicios & Tipologías -->
+                        <li class="nav-item has-dropdown">
+                            <a href="https://eidosrender.es/servicios" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                                <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m1 1 4 4 4-4"/></svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-wide" role="menu">
+                                <div class="dropdown-inner">
+                                    <div class="dropdown-group">
+                                        <span class="dropdown-header">Tipologías de Proyecto</span>
+                                        <a href="https://eidosrender.es/obra-nueva" class="dropdown-item" role="menuitem">
+                                            <strong>Obra Nueva Plurifamiliar</strong>
+                                            <span>Edificios residenciales para venta sobre plano</span>
+                                        </a>
+                                        <a href="https://eidosrender.es/vivienda-unifamiliar" class="dropdown-item" role="menuitem">
+                                            <strong>Viviendas Unifamiliares & Villas</strong>
+                                            <span>Chalets y promociones residenciales aisladas</span>
+                                        </a>
+                                        <a href="https://eidosrender.es/reforma-de-piso" class="dropdown-item" role="menuitem">
+                                            <strong>Reformas Integrales</strong>
+                                            <span>Renders interiores previos a la obra</span>
+                                        </a>
+                                        <a href="https://eidosrender.es/renders-para-house-flipping" class="dropdown-item" role="menuitem">
+                                            <strong>House Flipping & Inversores</strong>
+                                            <span>Imágenes rápidas para acelerar la reventa</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-group dropdown-group-side">
+                                        <span class="dropdown-header">Tarifas & Catálogo</span>
+                                        <a href="https://eidosrender.es/servicios" class="dropdown-item" role="menuitem">
+                                            <strong>Paquetes de Servicios</strong>
+                                            <span>Precios cerrados para promotoras y arquitectos</span>
+                                        </a>
+                                        <a href="#calculadora" class="dropdown-item" role="menuitem">
+                                            <strong>Calculadora de Presupuestos</strong>
+                                            <span>Configura tu promoción en tiempo real</span>
+                                        </a>
+                                        <a href="#proceso" class="dropdown-item" role="menuitem">
+                                            <strong>Cómo Trabajamos</strong>
+                                            <span>Metodología en 4 pasos y entregas en 72h</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Link: Portfolio -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/portfolio" class="nav-link">Portfolio</a>
+                        </li>
+
+                        <!-- Dropdown: Ciudades (SEO Local) -->
+                        <li class="nav-item has-dropdown">
+                            <a href="#cobertura" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                                Ciudades
+                                <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m1 1 4 4 4-4"/></svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-cities" role="menu">
+                                <span class="dropdown-header">Cobertura Nacional</span>
+                                <div class="dropdown-cities-grid">
+                                    <a href="https://eidosrender.es/renders-valencia" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Valencia</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-madrid" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Madrid</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-malaga" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Málaga</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-alicante" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Alicante</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-sevilla" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Sevilla</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-bilbao" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Bilbao</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Link: Blog -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/blog" class="nav-link">Blog</a>
+                        </li>
+
+                        <!-- Link: FAQs -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/faq" class="nav-link">FAQs</a>
+                        </li>
+
+                        <!-- Link: Contacto -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/contacto" class="nav-link">Contacto</a>
+                        </li>
+
+                        <!-- Móvil: Bloque de Contacto Directo en Drawer -->
+                        <li class="mobile-contact-item">
+                            <div class="mobile-contact-box">
+                                <span class="mobile-city">Valencia · Servicio a toda España</span>
+                                <a href="mailto:info@eidosrender.es" class="mobile-email">info@eidosrender.es</a>
+                                <a href="tel:+34614459144" class="mobile-phone">+34 614 45 91 44</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Acciones Rápidas (Derecha) -->
+                <div class="nav-action">
+                    <a href="mailto:info@eidosrender.es" class="nav-email-direct" title="Enviar correo a Eidos Render">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin-right: 4px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        info@eidosrender.es
+                    </a>
+                    <a href="tel:+34614459144" class="nav-phone-direct" title="Llamar directamente al estudio">
+                        +34 614 45 91 44
+                    </a>
+                    <a href="https://eidosrender.es/contacto" class="btn-cad btn-primary">
+                        Solicitar Presupuesto
+                    </a>
+                    <button class="mobile-nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+
+            </div>
         </div>
     </header>
 
@@ -140,71 +264,105 @@
     </main>
 
     <!-- FOOTER INSTITUCIONAL -->
-    <footer>
-        <div class="container grid-footer">
-            <div>
-                <div class="logo">Eidos<span>Render</span></div>
-                <p style="color:var(--slate); font-size:0.92rem; margin-bottom:16px;">Estudio especializado en visualización arquitectónica 3D y renders comerciales para promotoras inmobiliarias, fondos de inversión y comercializadoras.</p>
-                <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" class="btn-outline" title="Visitar LinkedIn Corporativo">
-                            <span>LinkedIn</span> <span style="font-size:0.7rem;">↗</span>
+    <footer class="site-footer" id="cobertura" role="contentinfo">
+        <div class="container">
+            
+            <div class="footer-grid-5">
+                
+                <!-- Columna 1: Marca & LinkedIn -->
+                <div>
+                    <div class="footer-brand-title">EIDOS RENDER</div>
+                    <p style="font-size: 0.875rem; line-height: 1.6; max-width: 320px; color: #555861; margin-top: 10px;">
+                        Estudio de visualización arquitectónica 3D e infografía inmobiliaria. Creamos imágenes de alto impacto para comercializar promociones sobre plano antes de iniciar la obra.
+                    </p>
+                    <div style="margin-top: 1.25rem;">
+                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" style="font-size: 0.75rem; font-weight: 700; color: #0B0B0C;">
+                            LinkedIn del Estudio ↗
                         </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Tipologías de Obra (SEO) -->
+                <div class="footer-col">
+                    <h4>Tipologías</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://eidosrender.es/obra-nueva">Edificios de Obra Nueva</a></li>
+                        <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares & Villas</a></li>
+                        <li><a href="https://eidosrender.es/reforma-de-piso">Reforma Integral & Interiorismo</a></li>
+                        <li><a href="https://eidosrender.es/renders-para-house-flipping">Renders para House Flipping</a></li>
+                        <li><a href="https://eidosrender.es/portfolio">Portfolio de Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Cobertura Territorial (SEO Local) -->
+                <div class="footer-col">
+                    <h4>Ciudades</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia</a></li>
+                        <li><a href="https://eidosrender.es/renders-madrid">Renders Madrid</a></li>
+                        <li><a href="https://eidosrender.es/renders-malaga">Renders Málaga & Costa del Sol</a></li>
+                        <li><a href="https://eidosrender.es/renders-alicante">Renders Alicante</a></li>
+                        <li><a href="https://eidosrender.es/renders-sevilla">Renders Sevilla</a></li>
+                        <li><a href="https://eidosrender.es/renders-bilbao">Renders Bilbao</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Recursos & Contenido -->
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://eidosrender.es/blog">Blog Inmobiliario & Guías</a></li>
+                        <li><a href="https://eidosrender.es/servicios">Paquetes y Tarifas</a></li>
+                        <li><a href="https://eidosrender.es/faq">Preguntas Frecuentes (FAQ)</a></li>
+                        <li><a href="#calculadora">Calculadora de Presupuestos</a></li>
+                        <li><a href="#proceso">Cómo Trabajamos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 5: Contacto Directo -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="mailto:info@eidosrender.es" style="font-weight: 700; color: #0B0B0C;">info@eidosrender.es</a></li>
+                        <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
+                        <li><a href="https://wa.me/34614459144" target="_blank" rel="noopener">WhatsApp Directo</a></li>
+                        <li>Valencia, España</li>
+                        <li>Servicio a toda España</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div>
-                <h4>Casos & Especialidades</h4>
-                <ul>
-                    <li><a href="https://eidosrender.es/obra-nueva">Edificios de Obra Nueva</a></li>
-                    <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares</a></li>
-                    <li><a href="https://eidosrender.es/reforma-de-piso">Reforma Integral & Flipping</a></li>
-                    <li><a href="https://eidosrender.es/portfolio">Portfolio de Proyectos</a></li>
-                </ul>
+            <div class="footer-bottom-bar">
+                <div>
+                    &copy; 2026 Eidos Render. Infografía 3D y Renders Inmobiliarios para Promociones.
+                </div>
+                <div class="footer-legal-links">
+                    <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a>
+                    <a href="https://eidosrender.es/privacidad">Política de Privacidad</a>
+                    <a href="https://eidosrender.es/cookies">Política de Cookies</a>
+                </div>
             </div>
 
-            <div>
-                <h4>Servicios & B2B</h4>
-                <ul>
-                    <li><a href="https://eidosrender.es/servicios">Paquetes para Promotoras</a></li>
-                    <li><a href="https://eidosrender.es/servicios">Renders para Inversores</a></li>
-                    <li><a href="https://eidosrender.es/faq">Preguntas Frecuentes</a></li>
-                    <li><a href="https://eidosrender.es/contacto">Solicitar Presupuesto</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Cobertura Inmobiliaria</h4>
-                <ul>
-                    <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia</a></li>
-                    <li><a href="https://eidosrender.es/renders-madrid">Renders Madrid</a></li>
-                    <li><a href="https://eidosrender.es/renders-malaga">Renders Málaga & Costa del Sol</a></li>
-                    <li><a href="https://eidosrender.es/renders-alicante">Renders Alicante</a></li>
-                    <li><a href="https://eidosrender.es/renders-sevilla">Renders Sevilla</a></li>
-                    <li><a href="https://eidosrender.es/renders-bilbao">Renders Bilbao</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="container copyright">
-            <p>&copy; 2026 Eidos Render. Todos los derechos reservados.</p>
-            <p>
-                <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a> · 
-                <a href="https://eidosrender.es/privacidad">Privacidad</a> · 
-                <a href="https://eidosrender.es/cookies">Cookies</a>
-            </p>
         </div>
     </footer>
 
-    <!-- BANNER DE COOKIES -->
-    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-modal="true" aria-label="Consentimiento de cookies">
-        <div class="cookie-container">
-            <div class="cookie-text">
-                Utilizamos cookies técnicas y analíticas (Google Analytics / GTM) para optimizar la experiencia de navegación en nuestro portal B2B. Consulta nuestra <a href="https://eidosrender.es/cookies">Política de Cookies</a> para más información.
-            </div>
-            <div class="cookie-buttons">
-                <button type="button" class="cookie-btn-reject">Rechazar</button>
-                <button type="button" class="cookie-btn-accept">Aceptar Todas</button>
+        <!-- BANNER DE COOKIES CONFORME A RGPD -->
+    <div id="cookieBanner" class="cookie-banner-cad" role="dialog" aria-modal="true" aria-label="Consentimiento de cookies">
+        <div class="container">
+            <div class="cookie-cad-inner">
+                <div>
+                    Utilizamos cookies analíticas para mejorar la experiencia de navegación en nuestro portal. Consulta nuestra <a href="https://eidosrender.es/cookies" style="text-decoration: underline;">Política de Cookies</a>.
+                </div>
+                <div class="cookie-cad-actions">
+                    <button type="button" class="btn-cookie-reject cookie-btn-reject">Rechazar</button>
+                    <button type="button" class="btn-cookie-accept cookie-btn-accept">Aceptar Todas</button>
+                </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- SCRIPT CENTRAL MODULAR (ES6+) -->
     <script type="module" src="main.js"></script>
