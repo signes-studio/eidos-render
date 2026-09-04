@@ -11,30 +11,30 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EIDOS RENDER — Estudio de dirección de arte para visualización 3D e infografía inmobiliaria de alto valor. Rigor arquitectónico, certidumbre patrimonial y modelado PBR para fondos, promotoras y gestoras.">
+    <meta name="description" content="EIDOS RENDER — Estudio de infografía 3D y renders de alta calidad para comercializar y vender promociones inmobiliarias sobre plano. Presupuestos en 24h y entregas en 3 a 5 días.">
     <link rel="canonical" href="https://eidosrender.es/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="EIDOS RENDER">
-    <meta property="og:title" content="EIDOS RENDER | Dirección de Arte & Visualización Arquitectónica de Alto Valor">
-    <meta property="og:description" content="Estudio de dirección de arte para visualización 3D e infografía arquitectónica de alta precisión para activos inmobiliarios.">
+    <meta property="og:title" content="EIDOS RENDER | Renders 3D e Infografía para Promociones Inmobiliarias">
+    <meta property="og:description" content="Renders fotorrealistas de exteriores, interiores y zonas comunes para comercializar promociones inmobiliarias sobre plano.">
     <meta property="og:url" content="https://eidosrender.es/">
     <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_ES">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="EIDOS RENDER | Visualización Arquitectónica de Precisión">
-    <meta name="twitter:description" content="Dirección de arte 3D y certidumbre técnica para comercialización de activos inmobiliarios.">
+    <meta name="twitter:title" content="EIDOS RENDER | Renders 3D para Vender sobre Plano">
+    <meta name="twitter:description" content="Infografías de alta calidad para promotoras y agencias inmobiliarias.">
     <meta name="twitter:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
 
-    <title>EIDOS RENDER | Dirección de Arte & Visualización Arquitectónica de Alto Valor</title>
+    <title>EIDOS RENDER | Renders 3D e Infografía para Promociones Inmobiliarias</title>
     
     <!-- Preload LCP Asset -->
     <link rel="preload" as="image" href="img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp" fetchpriority="high">
 
-    <!-- Tipografía Institucional Estricta: Space Grotesk & Archivo -->
+    <!-- Tipografías: Space Grotesk & Archivo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -51,24 +51,19 @@
           "@type": "ProfessionalService",
           "@id": "https://eidosrender.es/#organization",
           "name": "Eidos Render",
-          "legalName": "Eidos Render Estudio de Dirección de Arte S.L.",
+          "legalName": "Eidos Render Estudio de Infografía 3D S.L.",
           "url": "https://eidosrender.es/",
           "logo": "https://eidosrender.es/favicon.svg",
           "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg",
-          "description": "Estudio de dirección de arte para visualización 3D e infografía inmobiliaria de alto valor para promotoras institucionales, fondos y arquitectos.",
+          "description": "Estudio de visualización 3D e infografía inmobiliaria de alta calidad para promotoras, agencias y arquitectos.",
           "telephone": "+34614459144",
           "email": "info@eidosrender.es",
-          "priceRange": "€€€€",
+          "priceRange": "€€",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Valencia",
             "addressRegion": "Comunidad Valenciana",
             "addressCountry": "ES"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.4699,
-            "longitude": -0.3763
           },
           "areaServed": [
             { "@type": "Country", "name": "España" },
@@ -89,68 +84,155 @@
     }
     </script>
 </head>
-<body class="block-black">
+<body>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <!-- CAPA DE RETÍCULA CAD FLOTANTE INTERACTIVA -->
-    <div class="cad-overlay-grid" id="cadGridOverlay" aria-hidden="true"></div>
-    <div class="cad-hud-tracker" id="cadHudTracker">X: 0000 | Y: 0000 · CAD GRID: ON</div>
+    
 
-    <!-- 1. BARRA SUPERIOR DE TELEMETRÍA INSTITUCIONAL -->
-    <aside class="top-telemetry-bar" aria-label="Telemetría técnica del estudio">
-        <div class="container">
-            <div class="top-telemetry-inner">
-                <div class="telemetry-item">
-                    <span class="status-dot" aria-hidden="true"></span>
-                    <span>ESTADO: REGISTRO OPERATIVO // DIRECCIÓN TÉCNICA 2026</span>
-                </div>
-                <div class="telemetry-item">
-                    <span>SEDE: 39°28'11"N 0°22'34"W (VALENCIA, ESPAÑA)</span>
-                </div>
-                <div class="telemetry-item">
-                    <span id="liveStudioClock">UTC+01:00 · 18:45:00</span>
-                </div>
-                <div class="telemetry-item">
-                    <button type="button" class="btn-toggle-grid" id="btnToggleCadGrid" aria-pressed="false">
-                        [+ RETÍCULA CAD: <span id="cadGridStatusText">OFF</span>]
-                    </button>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- 2. CABECERA INSTITUCIONAL TÉCNICA -->
+    <!-- 2. CABECERA PRINCIPAL -->
     <header class="site-header navbar" role="banner">
         <div class="container">
-            <div class="nav-grid">
+            <div class="nav-layout">
                 
                 <!-- Identificador de Marca -->
                 <a href="https://eidosrender.es/" class="brand-monogram" aria-label="Eidos Render Inicio">
                     <span class="brand-title">EIDOS RENDER</span>
-                    <span class="brand-desc">DIRECCIÓN DE ARTE // VISUALIZACIÓN CUANTITATIVA</span>
+                    <span class="brand-desc">Infografía 3D · Valencia</span>
                 </a>
 
-                <!-- Navegación Técnica Numerada -->
-                <nav aria-label="Navegación principal">
+                <!-- Navegación Principal con Dropdowns de SEO -->
+                <nav class="main-nav" aria-label="Navegación principal">
                     <ul class="nav-menu" id="navLinks">
-                        <li><a href="#manifiesto"><span class="nav-index">01</span>Manifiesto</a></li>
-                        <li><a href="#cartera"><span class="nav-index">02</span>Cartera de Activos</a></li>
-                        <li><a href="#protocolo"><span class="nav-index">03</span>Disciplina Técnica</a></li>
-                        <li><a href="#calculadora"><span class="nav-index">04</span>Parámetros de Inversión</a></li>
-                        <li><a href="#contacto"><span class="nav-index">05</span>Auditoría Directa</a></li>
+                        
+                        <!-- Dropdown: Servicios & Tipologías -->
+                        <li class="nav-item has-dropdown">
+                            <a href="https://eidosrender.es/servicios" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                                <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m1 1 4 4 4-4"/></svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-wide" role="menu">
+                                <div class="dropdown-inner">
+                                    <div class="dropdown-group">
+                                        <span class="dropdown-header">Tipologías de Proyecto</span>
+                                        <a href="https://eidosrender.es/obra-nueva" class="dropdown-item" role="menuitem">
+                                            <strong>Obra Nueva Plurifamiliar</strong>
+                                            <span>Edificios residenciales para venta sobre plano</span>
+                                        </a>
+                                        <a href="https://eidosrender.es/vivienda-unifamiliar" class="dropdown-item" role="menuitem">
+                                            <strong>Viviendas Unifamiliares & Villas</strong>
+                                            <span>Chalets y promociones residenciales aisladas</span>
+                                        </a>
+                                        <a href="https://eidosrender.es/reforma-de-piso" class="dropdown-item" role="menuitem">
+                                            <strong>Reformas Integrales</strong>
+                                            <span>Renders interiores previos a la obra</span>
+                                        </a>
+                                        <a href="https://eidosrender.es/renders-para-house-flipping" class="dropdown-item" role="menuitem">
+                                            <strong>House Flipping & Inversores</strong>
+                                            <span>Imágenes rápidas para acelerar la reventa</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-group dropdown-group-side">
+                                        <span class="dropdown-header">Tarifas & Catálogo</span>
+                                        <a href="https://eidosrender.es/servicios" class="dropdown-item" role="menuitem">
+                                            <strong>Paquetes de Servicios</strong>
+                                            <span>Precios cerrados para promotoras y arquitectos</span>
+                                        </a>
+                                        <a href="#calculadora" class="dropdown-item" role="menuitem">
+                                            <strong>Calculadora de Presupuestos</strong>
+                                            <span>Configura tu promoción en tiempo real</span>
+                                        </a>
+                                        <a href="#proceso" class="dropdown-item" role="menuitem">
+                                            <strong>Cómo Trabajamos</strong>
+                                            <span>Metodología en 4 pasos y entregas en 72h</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Link: Portfolio -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/portfolio" class="nav-link">Portfolio</a>
+                        </li>
+
+                        <!-- Dropdown: Ciudades (SEO Local) -->
+                        <li class="nav-item has-dropdown">
+                            <a href="#cobertura" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                                Ciudades
+                                <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m1 1 4 4 4-4"/></svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-cities" role="menu">
+                                <span class="dropdown-header">Cobertura Nacional</span>
+                                <div class="dropdown-cities-grid">
+                                    <a href="https://eidosrender.es/renders-valencia" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Valencia</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-madrid" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Madrid</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-malaga" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Málaga</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-alicante" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Alicante</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-sevilla" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Sevilla</span>
+                                    </a>
+                                    <a href="https://eidosrender.es/renders-bilbao" class="dropdown-city-item" role="menuitem">
+                                        <span class="city-dot"></span>
+                                        <span>Bilbao</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Link: Blog -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/blog" class="nav-link">Blog</a>
+                        </li>
+
+                        <!-- Link: FAQs -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/faq" class="nav-link">FAQs</a>
+                        </li>
+
+                        <!-- Link: Contacto -->
+                        <li class="nav-item">
+                            <a href="https://eidosrender.es/contacto" class="nav-link">Contacto</a>
+                        </li>
+
+                        <!-- Móvil: Bloque de Contacto Directo en Drawer -->
+                        <li class="mobile-contact-item">
+                            <div class="mobile-contact-box">
+                                <span class="mobile-city">Valencia · Servicio a toda España</span>
+                                <a href="mailto:info@eidosrender.es" class="mobile-email">info@eidosrender.es</a>
+                                <a href="tel:+34614459144" class="mobile-phone">+34 614 45 91 44</a>
+                            </div>
+                        </li>
+
                     </ul>
                 </nav>
 
-                <!-- Acciones Rápidas -->
+                <!-- Acciones Rápidas (Derecha) -->
                 <div class="nav-action">
-                    <a href="tel:+34614459144" class="nav-phone-direct" title="Línea de Dirección de Arte">
+                    <a href="mailto:info@eidosrender.es" class="nav-email-direct" title="Enviar correo a Eidos Render">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin-right: 4px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        info@eidosrender.es
+                    </a>
+                    <a href="tel:+34614459144" class="nav-phone-direct" title="Llamar directamente al estudio">
                         +34 614 45 91 44
                     </a>
-                    <a href="#contacto" class="btn-cad btn-primary">
-                        Solicitar Dossier
+                    <a href="https://eidosrender.es/contacto" class="btn-cad btn-primary">
+                        Solicitar Presupuesto
                     </a>
                     <button class="mobile-nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
                         <span></span><span></span><span></span>
@@ -164,130 +246,75 @@
     <main id="main-content">
 
         <!-- ===================================================================
-             3. HERO SECTION: BLOQUE MASIVO EN CARMESÍ INSTITUCIONAL (#C8102E)
-             Directriz estricta: Bloque 100% carmesí, contraste exclusivo blanco (#F4F3EF),
-             titular gigante asimétrico en Space Grotesk, reserva >30% de reposo visual.
+             3. HERO / CABECERA COMERCIAL
              =================================================================== -->
-        <section class="section-hero block-crimson" aria-labelledby="hero-title">
+        <section class="section-hero" aria-labelledby="hero-title">
             <div class="container">
                 
                 <div class="hero-asymmetric-grid">
                     
-                    <!-- 2/3: CONTENIDO TIPOGRÁFICO MONUMENTAL -->
+                    <!-- Contenido Principal -->
                     <div class="hero-content">
                         
-                        <div class="hero-meta-stamp">
-                            <span class="tech-label">[DOSSIER DE EMISIÓN INSTITUCIONAL // 2026]</span>
-                            <span class="tech-label">·</span>
-                            <span class="tech-label">ESPECIFICACIÓN: BIM / DWG / PBR 8K</span>
+                        <div class="badge-clean">
+                            <span class="badge-dot"></span>
+                            Estudio de Visualización 3D para Promociones Inmobiliarias
                         </div>
 
                         <h1 id="hero-title" class="hero-h1">
-                            DIRECCIÓN DE ARTE Y VISUALIZACIÓN CUANTITATIVA PARA ACTIVOS INMOBILIARIOS DE ALTO VALOR.
+                            Renders 3D fotorrealistas para comercializar y vender tu promoción sobre plano.
                         </h1>
 
                         <p class="hero-lead">
-                            Adoptamos la disciplina de un arquitecto: proporción exacta, rigor en la materia y ausencia total de ornamento blando. Transformamos planes directores, edificios residenciales y complejos singulares en instrumentos visuales de certidumbre patrimonial.
+                            Ayudamos a promotoras inmobiliarias, arquitectos y comercializadoras a cerrar reservas más rápido y transmitir la calidad real de cada vivienda antes de poner un solo ladrillo. Infografías de exteriores, interiores y zonas comunes listas para tu campaña de venta.
                         </p>
 
                         <div class="hero-actions-row">
-                            <a href="#cartera" class="btn-cad btn-primary">
-                                Inspeccionar Cartera de Activos
+                            <a href="#contacto" class="btn-cad btn-primary">
+                                Solicitar Presupuesto
                             </a>
-                            <a href="#contacto" class="btn-cad btn-secondary">
-                                Iniciar Auditoría de Planimetría
+                            <a href="#proyectos" class="btn-cad btn-secondary">
+                                Ver Proyectos Recientes
                             </a>
                         </div>
 
-                    </div>
-
-                    <!-- 1/3: ZONA DE REPOSO VISUAL & ESPACIO NEGATIVO (>30%) -->
-                    <div class="hero-negative-zone" aria-hidden="true">
-                        <div class="hero-cad-coords">
-                            PROPORCIÓN: ÁUREA // RETÍCULA 1:1<br>
-                            DISCIPLINA: ORTOGONAL<br>
-                            CALIBRACIÓN: LUZ CENITAL DIFUSA<br>
-                            TOLERANCIA ÓPTICA: 0.00%
+                        <div class="hero-email-direct">
+                            <span>¿Tienes ya los planos de tu promoción? Envíalos directamente a <a href="mailto:info@eidosrender.es" class="email-highlight">info@eidosrender.es</a> o escríbenos por <a href="https://wa.me/34614459144" target="_blank" rel="noopener" class="email-highlight">WhatsApp</a></span>
                         </div>
-                        <div class="hero-watermark-num">
-                            01
-                        </div>
+
                     </div>
 
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ===================================================================
-             4. MANIFIESTO & CIFRAS MONUMENTALES (NEGRO ABSOLUTO #0B0B0C)
-             Directriz estricta: Fondo #0B0B0C, retícula visible en Gris Señal #8A8D93,
-             texto en Archivo, cifras masivas clamp(4rem, 11vw, 9rem) en Carmesí y Blanco.
-             =================================================================== -->
-        <section class="section-manifesto block-black" id="manifiesto" aria-labelledby="manifesto-title">
-            <div class="container">
-                
-                <div class="manifesto-layout">
-                    
-                    <!-- Columna 1/3: Cabecera Técnica Fija -->
-                    <div class="manifesto-header">
-                        <span class="tech-label text-accent">[01 // MANIFIESTO DISCIPLINAR]</span>
-                        <h2 id="manifesto-title" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                            LA ARQUITECTURA NO SE DECORA.<br>
-                            <span class="text-accent">SE RIGE.</span>
-                        </h2>
-                        <p class="text-muted" style="font-size: 0.8125rem;">
-                            Documento normativo de actuación para visualización inmobiliaria corporativa.
-                        </p>
-                    </div>
-
-                    <!-- Columna 2/3: Discurso en Archivo + Métricas Monumentales -->
-                    <div class="manifesto-body">
+                    <!-- 3 Ventajas Comerciales Tangibles -->
+                    <div class="hero-benefits-stack">
                         
-                        <div class="manifesto-statement">
-                            Rechazamos la estética de catálogo decorativo y la artificiosidad de los filtros cálidos. Nuestro trabajo responde al lenguaje de los <strong>informes de inversión</strong>, la precisión del software CAD y la física real de la materia.
+                        <div class="hero-benefit-card">
+                            <div class="benefit-num">01</div>
+                            <div>
+                                <h3 class="benefit-title">Primer borrador en 72 horas</h3>
+                                <p class="benefit-desc">
+                                    Revisión rápida de cámaras, volúmenes y encuadres para que no detengas el calendario de lanzamiento comercial de la promoción.
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="manifesto-prose">
-                            <p>
-                                En operaciones de promoción inmobiliaria y desarrollo de suelo donde los activos se miden en decenas de millones de euros, una imagen 3D no es una ilustración complaciente: es la primera prueba física de viabilidad financiera y coherencia arquitectónica ante comités de inversión y compradores institucionales.
-                            </p>
-                            <p>
-                                Cada encofrado de hormigón visto, cada sillería de piedra caliza y cada sombra arrojada se calculan a partir de magnitudes físicas de reflectancia (PBR) y trazado solar milimétrico. Ningún elemento se dispone por intuición decorativa; cada píxel responde a la planimetría de origen.
-                            </p>
+                        <div class="hero-benefit-card">
+                            <div class="benefit-num">02</div>
+                            <div>
+                                <h3 class="benefit-title">Precios 100% cerrados</h3>
+                                <p class="benefit-desc">
+                                    Presupuestos transparentes desde el primer día, con ajustes técnicos incluidos y sin sobrecostes imprevistos de última hora.
+                                </p>
+                            </div>
                         </div>
 
-                        <!-- Retícula de Cifras Monumentales -->
-                        <div class="metrics-cad-grid">
-                            
-                            <div class="metric-cell accented">
-                                <span class="metric-id">[KPI 01 // VOLUMEN]</span>
-                                <span class="monumental-num">€420M</span>
-                                <div class="metric-title">Volumen Patrimonial</div>
-                                <p class="metric-desc">Valor de activos residenciales y terciarios comercializados bajo nuestra dirección de arte.</p>
+                        <div class="hero-benefit-card">
+                            <div class="benefit-num">03</div>
+                            <div>
+                                <h3 class="benefit-title">Resolución nativa 4K</h3>
+                                <p class="benefit-desc">
+                                    Imágenes de máxima definición listas para vallas de obra de gran formato, catálogos impresos y anuncios en portales inmobiliarios.
+                                </p>
                             </div>
-
-                            <div class="metric-cell">
-                                <span class="metric-id">[KPI 02 // PRECISIÓN]</span>
-                                <span class="monumental-num">1:1</span>
-                                <div class="metric-title">Fidelidad Planimétrica</div>
-                                <p class="metric-desc">Correspondencia geométrica exacta con archivos de proyecto en formato BIM y DWG.</p>
-                            </div>
-
-                            <div class="metric-cell">
-                                <span class="metric-id">[KPI 03 // MATERIA]</span>
-                                <span class="monumental-num">99.4%</span>
-                                <div class="metric-title">Calibración PBR</div>
-                                <p class="metric-desc">Cálculo de dispersión lumínica y absorción óptica en hormigón, piedra y maderas nobles.</p>
-                            </div>
-
-                            <div class="metric-cell accented">
-                                <span class="metric-id">[KPI 04 // CRITERIO]</span>
-                                <span class="monumental-num">0.00</span>
-                                <div class="metric-title">Margen Ornamental</div>
-                                <p class="metric-desc">Cero agregados ficticios. Rigor constructivo verificable por la dirección facultativa.</p>
-                            </div>
-
                         </div>
 
                     </div>
@@ -298,301 +325,445 @@
         </section>
 
         <!-- ===================================================================
-             5. PORTFOLIO / GALERÍA DE ACTIVOS (RETÍCULA VISIBLE #8A8D93)
-             Directriz estricta: Retícula visible en Gris Señal, mucho espacio negativo (>30%),
-             imágenes alineadas a los tercios, encuadres asimétricos 3/4 y texturas materiales
-             (hormigón visto, caliza, madera sin tratar), luz difusa y sombras nítidas.
+             4. BLOQUE DE SERVICIOS / QUÉ HACEMOS
              =================================================================== -->
-        <section class="section-portfolio block-black" id="cartera" aria-labelledby="portfolio-title">
+        <section class="section-services" id="servicios" aria-labelledby="services-title">
             <div class="container">
                 
                 <div class="section-title-strip">
                     <div>
-                        <span class="tech-label text-accent">[02 // CARTERA DE ACTIVOS DIRIGIDOS]</span>
-                        <h2 id="portfolio-title" style="margin-top: 0.5rem;">Índice de Proyectos Seleccionados</h2>
+                        <span class="section-label">Servicios</span>
+                        <h2 id="services-title">Qué Hacemos</h2>
                     </div>
-                    <div class="text-muted" style="font-size: 0.8125rem; max-width: 480px;">
-                        Retícula asimétrica basada en la proporción constructiva. Cada pieza cuenta con ficha de calibración material y coordenadas de orientación.
+                    <div style="max-width: 520px;">
+                        <p style="font-size: 0.9375rem; color: #555861;">
+                            Soluciones visuales completas para comercializar promociones residenciales, unifamiliares y desarrollos terciarios con la máxima efectividad.
+                        </p>
                     </div>
                 </div>
 
-                <div class="portfolio-technical-grid">
+                <div class="services-grid">
                     
-                    <!-- PROYECTO 01: SPAN 8 (ACTIVO RESIDENCIAL PLURIFAMILIAR - FACHADA DIURNA 3/4) -->
+                    <div class="service-card">
+                        <div class="service-num">01</div>
+                        <div>
+                            <h3>Renders Exteriores & Fachadas</h3>
+                            <p>
+                                Fachadas principales, perspectivas diurnas y nocturnas con integración en el entorno. Diseñadas para captar el interés inmediato del comprador en vallas de obra y portales inmobiliarios.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-num">02</div>
+                        <div>
+                            <h3>Infografías de Interiores & Calidades</h3>
+                            <p>
+                                Salones luminosos, cocinas con isla, suites y baños amueblados con las calidades reales de tu memoria. Ayudamos al cliente final a imaginarse viviendo en su futuro hogar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-num">03</div>
+                        <div>
+                            <h3>Zonas Comunes & Paisajismo</h3>
+                            <p>
+                                Piscinas comunitarias, jardines, pérgolas, terrazas y portales. Mostramos el estilo de vida que ofrece la urbanización para justificar el valor de la vivienda y acelerar la reserva.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-num">04</div>
+                        <div>
+                            <h3>Planos Comerciales 3D</h3>
+                            <p>
+                                Plantas amuebladas y acotadas en perspectiva 3D. El comprador comprende la distribución y el aprovechamiento del espacio al instante, sin la dificultad de interpretar planos técnicos en 2D.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-email-strip">
+                    <div>
+                        <strong>¿Necesitas infografías para tu dossier de ventas o catálogo de obra nueva?</strong>
+                        <p>Envíanos tus planos o memoria a <a href="mailto:info@eidosrender.es">info@eidosrender.es</a> y te responderemos con presupuesto detallado en menos de 24 horas.</p>
+                    </div>
+                    <a href="mailto:info@eidosrender.es" class="btn-cad btn-secondary">Enviar Planos por Email ↗</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             5. GALERÍA DE PROYECTOS (PORTFOLIO COMERCIAL)
+             =================================================================== -->
+        <section class="section-portfolio" id="proyectos" aria-labelledby="portfolio-title">
+            <div class="container">
+                
+                <div class="section-title-strip">
+                    <div>
+                        <span class="section-label">Portfolio</span>
+                        <h2 id="portfolio-title">Promociones Recientes</h2>
+                    </div>
+                    <div style="max-width: 520px;">
+                        <p style="font-size: 0.9375rem; color: #555861;">
+                            Una muestra de proyectos residenciales e infografías creadas para acelerar la venta sobre plano de nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid">
+                    
+                    <!-- PROYECTO 1: EDIFICIO PLURIFAMILIAR (SPAN 8) -->
                     <article class="project-item span-8" data-category="obra-nueva">
                         <div class="project-media-wrap">
-                            <span class="project-telemetry-badge">ENCUADRE: 3/4 ASIMÉTRICO · LUZ DIFUSA</span>
+                            <span class="project-tag-pill">Obra Nueva Plurifamiliar</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-fachada-edificio-obra-nueva-800.webp 800w, img/render-fachada-edificio-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 900px">
                                 <img src="img/render-fachada-edificio-obra-nueva.jpg" 
-                                     alt="Edificio Residencial Plurifamiliar — Fachada Principal Asimétrica"
+                                     alt="Edificio Residencial Plurifamiliar — Fachada Principal"
                                      width="800" height="500"
                                      loading="eager"
                                      fetchpriority="high"
                                      decoding="async"
                                      data-gallery-src="img/render-fachada-edificio-obra-nueva.webp"
-                                     data-gallery-title="Activo Residencial Plurifamiliar — Valencia (Fachada Principal)">
+                                     data-gallery-title="Edificio Residencial en Valencia Centro — 24 Viviendas">
                             </picture>
-                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-fachada-edificio-obra-nueva.webp" data-gallery-title="Activo Residencial Plurifamiliar — Fachada Principal">
-                                Inspeccionar [+ HUD]
+                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-fachada-edificio-obra-nueva.webp" data-gallery-title="Edificio Residencial en Valencia Centro">
+                                Ampliar Imagen [+]
                             </button>
                         </div>
                         <div class="project-info-block">
                             <div>
-                                <div class="project-header-meta">
-                                    <span class="project-code">REF // ED-RES-01</span>
-                                    <span class="project-type-tag">PLURIFAMILIAR OBRA NUEVA · 24 VVDS</span>
+                                <div class="project-meta-row">
+                                    <span>Residencial Urbano · 24 Viviendas</span>
+                                    <span>Valencia Centro</span>
                                 </div>
-                                <h3 class="project-name">Complejo Residencial en Trama Urbana Consolidada</h3>
-                                <p class="project-synopsis">
-                                    Encuadre asimétrico de tres cuartos con iluminación neutra diurna y sombras ortogonales nítidas. Eliminación de cielos saturados para centrar la evaluación del fondo inversor en la volumetría de fachada.
+                                <h3 class="project-name">Edificio Residencial en Trama Urbana Consolidada</h3>
+                                <p class="project-desc">
+                                    Infografía exterior diurna para el lanzamiento comercial de una promoción de 24 viviendas. Imagen principal utilizada en la valla de obra, catálogos comerciales y portales inmobiliarios para captar las primeras reservas antes del inicio de los trabajos.
                                 </p>
                             </div>
                             
-                            <div class="project-specs-table">
-                                <div class="spec-entry">
-                                    <span class="spec-k">Material Dominante</span>
-                                    <span class="spec-v">Piedra caliza natural apomazada</span>
+                            <div class="project-specs-clean">
+                                <div class="spec-item">
+                                    <span class="label">Tipología</span>
+                                    <span class="val">Plurifamiliar Obra Nueva</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Carpintería</span>
-                                    <span class="spec-v">Aluminio anodizado antracita mate</span>
+                                <div class="spec-item">
+                                    <span class="label">Ubicación</span>
+                                    <span class="val">Valencia</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Fuente Lumínica</span>
-                                    <span class="spec-v">Sol cenital 5800K difuso</span>
-                                </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Entregables</span>
-                                    <span class="spec-v">Matriz 4K + Dossier de Venta</span>
+                                <div class="spec-item">
+                                    <span class="label">Entregables</span>
+                                    <span class="val">Fachada 4K + Vistas Valla</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- ESPACIO NEGATIVO PURO (ZONA DE REPOSO 30%+) -->
-                    <div class="project-item negative-space-cell" aria-hidden="true">
-                        <div class="empty-indicator">[ZONA DE REPOSO VISUAL // 33.3% RETÍCULA VACÍA]</div>
-                        <div class="cad-stamp-quote">
-                            "LA AUSENCIA DE RUIDO ES EL ÚNICO MARCO DIGNO DEL BUEN HORMIGÓN."
-                        </div>
-                        <div class="empty-indicator">EIDOS RENDER · ARCHIVO FACULTATIVO</div>
-                    </div>
-
-                    <!-- PROYECTO 02: SPAN 4 (DETALLE MATERIAL: ESPACIO INTERIOR DOBLE ALTURA) -->
+                    <!-- PROYECTO 2: ÁTICO DÚPLEX DOBLE ALTURA (SPAN 4) -->
                     <article class="project-item span-4" data-category="interiorismo">
                         <div class="project-media-wrap">
-                            <span class="project-telemetry-badge">TEXTURA: HORMIGÓN & ROBLE</span>
+                            <span class="project-tag-pill">Interior de Calidades</span>
                             <picture>
                                 <source type="image/webp" srcset="img/infografia-3d-salon-moderno-doble-altura-800.webp 800w, img/infografia-3d-salon-moderno-doble-altura.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
                                 <img src="img/infografia-3d-salon-moderno-doble-altura.jpg" 
-                                     alt="Espacio Interior a Doble Altura con Hormigón Visto y Roble"
+                                     alt="Salón a Doble Altura con Hormigón y Roble"
                                      width="800" height="500"
                                      loading="lazy"
                                      decoding="async"
                                      data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.webp"
-                                     data-gallery-title="Espacio Interior Doble Altura — Hormigón y Madera Natural">
+                                     data-gallery-title="Salón Principal a Doble Altura">
                             </picture>
-                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.webp" data-gallery-title="Espacio Interior Doble Altura">
-                                Inspeccionar [+ HUD]
+                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/infografia-3d-salon-moderno-doble-altura.webp" data-gallery-title="Salón Principal a Doble Altura">
+                                Ampliar Imagen [+]
                             </button>
                         </div>
                         <div class="project-info-block">
                             <div>
-                                <div class="project-header-meta">
-                                    <span class="project-code">REF // ED-INT-02</span>
-                                    <span class="project-type-tag">ESPACIO RESIDENCIAL SINGULAR</span>
+                                <div class="project-meta-row">
+                                    <span>Ático Singular</span>
+                                    <span>Valencia</span>
                                 </div>
                                 <h3 class="project-name">Salón Principal a Doble Altura</h3>
-                                <p class="project-synopsis">
-                                    Composición oblicua sin frontalidad decorativa. Luz rasante que enfatiza la textura del encofrado de tabla y la calidez del roble sin tratar.
+                                <p class="project-desc">
+                                    Perspectiva interior con luz natural que destaca la altura libre de techos y las calidades de carpintería y acabados de hormigón.
                                 </p>
                             </div>
                             
-                            <div class="project-specs-table">
-                                <div class="spec-entry">
-                                    <span class="spec-k">Hormigón</span>
-                                    <span class="spec-v">Visto con textura de encofrado 12cm</span>
+                            <div class="project-specs-clean">
+                                <div class="spec-item">
+                                    <span class="label">Tipología</span>
+                                    <span class="val">Ático Dúplex</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Madera</span>
-                                    <span class="spec-v">Roble natural poro abierto</span>
+                                <div class="spec-item">
+                                    <span class="label">Ubicación</span>
+                                    <span class="val">Valencia</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="label">Entregables</span>
+                                    <span class="val">Renders Interiores 4K</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- PROYECTO 03: SPAN 4 (DETALLE MATERIAL: COCINA LINEAL & MADERA PURA) -->
+                    <!-- PROYECTO 3: COCINA DE DISEÑO CON ISLA (SPAN 4) -->
                     <article class="project-item span-4" data-category="interiorismo">
                         <div class="project-media-wrap">
-                            <span class="project-telemetry-badge">CALIBRACIÓN PBR: MICRO-REFLEXIÓN</span>
+                            <span class="project-tag-pill">Detalle de Cocina</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-cocina-moderna-isla-madera-800.webp 800w, img/render-cocina-moderna-isla-madera.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
                                 <img src="img/render-cocina-moderna-isla-madera.jpg" 
-                                     alt="Isla de Cocina en Madera de Roble y Piedra Sintética"
+                                     alt="Cocina con Isla en Madera de Roble"
                                      width="800" height="500"
                                      loading="lazy"
                                      decoding="async"
                                      data-gallery-src="img/render-cocina-moderna-isla-madera.webp"
-                                     data-gallery-title="Cocina Arquitectónica — Isla de Roble Aserrado">
+                                     data-gallery-title="Cocina Arquitectónica con Isla">
                             </picture>
-                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-cocina-moderna-isla-madera.webp" data-gallery-title="Cocina Arquitectónica">
-                                Inspeccionar [+ HUD]
+                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-cocina-moderna-isla-madera.webp" data-gallery-title="Cocina Arquitectónica con Isla">
+                                Ampliar Imagen [+]
                             </button>
                         </div>
                         <div class="project-info-block">
                             <div>
-                                <div class="project-header-meta">
-                                    <span class="project-code">REF // ED-MAT-03</span>
-                                    <span class="project-type-tag">DETALLE CONSTRUCTIVO</span>
+                                <div class="project-meta-row">
+                                    <span>Memoria de Calidades</span>
+                                    <span>Valencia</span>
                                 </div>
-                                <h3 class="project-name">Módulo de Cocina Integrada</h3>
-                                <p class="project-synopsis">
-                                    Rigor milimétrico en juntas y modulación. Transición material entre piedra sinterizada negra y madera aserrada sin barniz brillante.
+                                <h3 class="project-name">Cocina Integrada con Isla Central</h3>
+                                <p class="project-desc">
+                                    Visualización fotorrealista de materiales: piedra sintética negra y madera de roble natural. Clave para transmitir el valor de la cocina al comprador.
                                 </p>
                             </div>
                             
-                            <div class="project-specs-table">
-                                <div class="spec-entry">
-                                    <span class="spec-k">Encimera</span>
-                                    <span class="spec-v">Piedra sinterizada acabado abujardado</span>
+                            <div class="project-specs-clean">
+                                <div class="spec-item">
+                                    <span class="label">Tipología</span>
+                                    <span class="val">Interior Cocina</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Iluminación</span>
-                                    <span class="spec-v">Perfiles lineales rasantes 3000K</span>
+                                <div class="spec-item">
+                                    <span class="label">Ubicación</span>
+                                    <span class="val">Valencia</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="label">Entregables</span>
+                                    <span class="val">Renders de Detalle</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- PROYECTO 04: SPAN 4 (VOLUMETRÍA EXTERIOR: VILLA AISLADA Y LÁMINA DE AGUA) -->
+                    <!-- PROYECTO 4: VILLA UNIFAMILIAR CON PISCINA (SPAN 4) -->
                     <article class="project-item span-4" data-category="unifamiliar">
                         <div class="project-media-wrap">
-                            <span class="project-telemetry-badge">PLANIMETRÍA: VILLA CONTEMPORÁNEA</span>
+                            <span class="project-tag-pill">Vivienda Unifamiliar</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.webp 800w, img/render-exterior-vivienda-unifamiliar-piscina.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
                                 <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
-                                     alt="Villa Unifamiliar Aislada — Geometría y Lámina de Agua"
+                                     alt="Villa Unifamiliar Aislada con Piscina"
                                      width="800" height="500"
                                      loading="lazy"
                                      decoding="async"
                                      data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp"
-                                     data-gallery-title="Villa Unifamiliar Aislada — Geometría y Agua">
+                                     data-gallery-title="Villa Unifamiliar Aislada con Piscina">
                             </picture>
-                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp" data-gallery-title="Villa Unifamiliar Aislada">
-                                Inspeccionar [+ HUD]
+                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-exterior-vivienda-unifamiliar-piscina.webp" data-gallery-title="Villa Unifamiliar con Piscina">
+                                Ampliar Imagen [+]
                             </button>
                         </div>
                         <div class="project-info-block">
                             <div>
-                                <div class="project-header-meta">
-                                    <span class="project-code">REF // ED-VIL-04</span>
-                                    <span class="project-type-tag">UNIFAMILIAR AISLADA DE LUJO</span>
+                                <div class="project-meta-row">
+                                    <span>Vivienda Singular</span>
+                                    <span>Costa Blanca</span>
                                 </div>
-                                <h3 class="project-name">Residencia Privada en Pendiente</h3>
-                                <p class="project-synopsis">
-                                    Planos volados de hormigón blanco y plataforma de piedra caliza. Refracción exacta en lámina de agua tratada con sombra lineal nítida de mediodía.
+                                <h3 class="project-name">Villa Exclusiva con Piscina y Jardín</h3>
+                                <p class="project-desc">
+                                    Perspectiva exterior de arquitectura mediterránea contemporánea con lámina de agua y paisajismo, orientada a compradores internacionales.
                                 </p>
                             </div>
                             
-                            <div class="project-specs-table">
-                                <div class="spec-entry">
-                                    <span class="spec-k">Lámina de Agua</span>
-                                    <span class="spec-v">Índice IOR 1.333 sin turbidez</span>
+                            <div class="project-specs-clean">
+                                <div class="spec-item">
+                                    <span class="label">Tipología</span>
+                                    <span class="val">Unifamiliar Aislada</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Orientación</span>
-                                    <span class="spec-v">Sur-Suroeste (38° Azimut)</span>
+                                <div class="spec-item">
+                                    <span class="label">Ubicación</span>
+                                    <span class="val">Alicante</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="label">Entregables</span>
+                                    <span class="val">Exteriores Diurnos</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- PROYECTO 05: SPAN 4 (DETALLE MINERAL: ESPACIO HÚMEDO MINIMALISTA) -->
+                    <!-- PROYECTO 5: SUITE PRINCIPAL & BAÑO (SPAN 4) -->
                     <article class="project-item span-4" data-category="interiorismo">
                         <div class="project-media-wrap">
-                            <span class="project-telemetry-badge">MINERAL: MICROCEMENTO Y PIEDRA</span>
+                            <span class="project-tag-pill">Suite & Baño</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-bano-moderno-ducha-minimalista-800.webp 800w, img/render-bano-moderno-ducha-minimalista.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
                                 <img src="img/render-bano-moderno-ducha-minimalista.jpg" 
-                                     alt="Espacio de Baño Minimalista con Microcemento y Luz Cenital"
+                                     alt="Baño Moderno con Ducha Minimalista"
                                      width="800" height="500"
                                      loading="lazy"
                                      decoding="async"
                                      data-gallery-src="img/render-bano-moderno-ducha-minimalista.webp"
-                                     data-gallery-title="Espacio de Baño Minimalista">
+                                     data-gallery-title="Suite Principal con Baño Integrado">
                             </picture>
-                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-bano-moderno-ducha-minimalista.webp" data-gallery-title="Espacio de Baño Minimalista">
-                                Inspeccionar [+ HUD]
+                            <button type="button" class="project-trigger-zoom" data-gallery-src="img/render-bano-moderno-ducha-minimalista.webp" data-gallery-title="Suite Principal con Baño">
+                                Ampliar Imagen [+]
                             </button>
                         </div>
                         <div class="project-info-block">
                             <div>
-                                <div class="project-header-meta">
-                                    <span class="project-code">REF // ED-BTR-05</span>
-                                    <span class="project-type-tag">ESPACIO HÚMEDO MONOLÍTICO</span>
+                                <div class="project-meta-row">
+                                    <span>Reforma Integral</span>
+                                    <span>Valencia</span>
                                 </div>
-                                <h3 class="project-name">Suite Principal & Baño Integrado</h3>
-                                <p class="project-synopsis">
-                                    Continuidad superficial en mortero de cal y grifería de acero inoxidable cepillado. Estudio de sombras de dibujo nítidas arrojadas por lucernario superior.
+                                <h3 class="project-name">Suite Principal con Baño Integrado</h3>
+                                <p class="project-desc">
+                                    Simulación de acabados continuos de microcemento e iluminación cenital para mostrar el resultado final de la reforma y acelerar la venta.
                                 </p>
                             </div>
                             
-                            <div class="project-specs-table">
-                                <div class="spec-entry">
-                                    <span class="spec-k">Revestimiento</span>
-                                    <span class="spec-v">Cal pura continua sin juntas visibles</span>
+                            <div class="project-specs-clean">
+                                <div class="spec-item">
+                                    <span class="label">Tipología</span>
+                                    <span class="val">Reforma / Flipping</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Acabado Metal</span>
-                                    <span class="spec-v">Acero quirúrgico cepillado</span>
+                                <div class="spec-item">
+                                    <span class="label">Ubicación</span>
+                                    <span class="val">Valencia</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="label">Entregables</span>
+                                    <span class="val">Interiores en Suite</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- PROYECTO 06: SPAN 8 (ZONAS COMUNES & PÉRGOLA DE HORMIGÓN) -->
+                    <!-- PROYECTO 6: ZONAS COMUNES RESIDENCIALES (SPAN 8) -->
                     <article class="project-item span-8" data-category="obra-nueva">
                         <div class="project-media-wrap">
-                            <span class="project-telemetry-badge">PERSPECTIVA: ENFILADA ARQUITECTÓNICA</span>
+                            <span class="project-tag-pill">Zonas Comunes & Paisajismo</span>
                             <picture>
                                 <source type="image/webp" srcset="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp 800w, img/infografia-exterior-zonas-comunes-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 900px">
                                 <img src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" 
-                                     alt="Zonas Comunes y Pérgola de Hormigón Visto"
+                                     alt="Zonas Comunes con Pérgola y Jardines"
                                      width="800" height="500"
                                      loading="lazy"
                                      decoding="async"
                                      data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.webp"
-                                     data-gallery-title="Zonas Comunes Residenciales — Enfilada de Pérgola">
+                                     data-gallery-title="Zonas Comunes y Urbanización Residencial">
                             </picture>
                             <button type="button" class="project-trigger-zoom" data-gallery-src="img/infografia-exterior-zonas-comunes-obra-nueva.webp" data-gallery-title="Zonas Comunes Residenciales">
-                                Inspeccionar [+ HUD]
+                                Ampliar Imagen [+]
                             </button>
                         </div>
                         <div class="project-info-block">
                             <div>
-                                <div class="project-header-meta">
-                                    <span class="project-code">REF // ED-ZON-06</span>
-                                    <span class="project-type-tag">EQUIPAMIENTO & ZONAS COMUNES</span>
+                                <div class="project-meta-row">
+                                    <span>Urbanización Residencial</span>
+                                    <span>Valencia</span>
                                 </div>
                                 <h3 class="project-name">Plaza Comunitaria y Pérgola Estructural</h3>
-                                <p class="project-synopsis">
-                                    Perspectiva profunda a dos puntos de fuga con ritmo estructural de vigas prefabricadas de hormigón. Sombras arrojadas milimétricas proyectadas sobre el pavimento de granito flameado.
+                                <p class="project-desc">
+                                    Perspectiva de los espacios comunes y áreas ajardinadas de un complejo residencial. Un elemento clave para que el equipo comercial cierre reservas en la caseta de ventas.
                                 </p>
                             </div>
                             
-                            <div class="project-specs-table">
-                                <div class="spec-entry">
-                                    <span class="spec-k">Estructura</span>
-                                    <span class="spec-v">Pórticos de hormigón arquitectónico gris</span>
+                            <div class="project-specs-clean">
+                                <div class="spec-item">
+                                    <span class="label">Tipología</span>
+                                    <span class="val">Zonas Comunes Obra Nueva</span>
                                 </div>
-                                <div class="spec-entry">
-                                    <span class="spec-k">Pavimento</span>
-                                    <span class="spec-v">Granito Silvestre flameado 60x40cm</span>
+                                <div class="spec-item">
+                                    <span class="label">Ubicación</span>
+                                    <span class="val">Valencia</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="label">Entregables</span>
+                                    <span class="val">Paisajismo & Espacios Exteriores</span>
                                 </div>
                             </div>
                         </div>
                     </article>
+
+                </div>
+
+                <div class="section-email-strip" style="margin-top: 2.5rem;">
+                    <div>
+                        <strong>¿Quieres ver cómo lucirá tu próxima promoción antes de construirla?</strong>
+                        <p>Escríbenos a <a href="mailto:info@eidosrender.es">info@eidosrender.es</a> o llámanos al <a href="tel:+34614459144">+34 614 45 91 44</a> para estudiar tu proyecto sin compromiso.</p>
+                    </div>
+                    <a href="mailto:info@eidosrender.es" class="btn-cad btn-primary">Escribir a info@eidosrender.es</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             6. CÓMO TRABAJAMOS (PROCESO EN 4 PASOS SENCILLOS)
+             =================================================================== -->
+        <section class="section-process" id="proceso" aria-labelledby="process-title">
+            <div class="container">
+                
+                <div class="section-title-strip">
+                    <div>
+                        <span class="section-label">Proceso</span>
+                        <h2 id="process-title">Sencillo, Rápido y sin Complicaciones</h2>
+                    </div>
+                    <div style="max-width: 520px;">
+                        <p style="font-size: 0.9375rem; color: #555861;">
+                            Nos adaptamos a tu calendario para que dispongas de todo el material comercial a tiempo para el lanzamiento de tu promoción.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-grid">
+                    
+                    <div class="process-card">
+                        <div class="process-step-num">01</div>
+                        <h3>Envío de Planos</h3>
+                        <p>
+                            Nos remites los planos del proyecto (DWG, PDF o modelo 3D) por email a <a href="mailto:info@eidosrender.es" style="font-weight: 600; text-decoration: underline; color: var(--c-black);">info@eidosrender.es</a> junto con la memoria básica de calidades y acabados.
+                        </p>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-step-num">02</div>
+                        <h3>Encuadres en 72h</h3>
+                        <p>
+                            En solo 48 a 72 horas te enviamos las primeras propuestas de cámaras y puntos de vista para elegir los ángulos más comerciales y atractivos.
+                        </p>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-step-num">03</div>
+                        <h3>Materiales y Luz</h3>
+                        <p>
+                            Aplicamos las texturas reales de la obra, la luz natural adecuada y el amueblamiento para que la imagen transmita calidez y calidad de vida.
+                        </p>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-step-num">04</div>
+                        <h3>Entrega Final en 4K</h3>
+                        <p>
+                            Recibes las imágenes en alta resolución máxima, listas para imprimir en valla de obra, publicar en portales y empezar a comercializar.
+                        </p>
+                    </div>
 
                 </div>
 
@@ -600,83 +771,39 @@
         </section>
 
         <!-- ===================================================================
-             6. PROTOCOLO CONSTRUCTIVO & DASHBOARD DE ESTIMACIÓN (NEGRO ABSOLUTO)
-             Directriz estricta: Fases de disciplina arquitectónica + terminal interactiva
-             de presupuesto de activos con compatibilidad JavaScript 100% garantizada.
+             7. CALCULADORA DE TARIFAS TRANSPARENTES
              =================================================================== -->
-        <section class="section-protocol block-black" id="protocolo" aria-labelledby="protocol-title">
+        <section class="section-calculator" id="calculadora" aria-labelledby="calc-title">
             <div class="container">
                 
                 <div class="section-title-strip">
                     <div>
-                        <span class="tech-label text-accent">[03 // DISCIPLINA CONSTRUCTIVA]</span>
-                        <h2 id="protocol-title" style="margin-top: 0.5rem;">Protocolo de Ingesta & Auditoría</h2>
+                        <span class="section-label">Tarifas Transparentes</span>
+                        <h2 id="calc-title">Calcula el Presupuesto de tu Promoción</h2>
                     </div>
-                    <div class="text-muted" style="font-size: 0.8125rem; max-width: 480px;">
-                        Flujo de trabajo reglado de 4 etapas para erradicar la incertidumbre en comercialización sobre plano.
+                    <div style="max-width: 520px;">
+                        <p style="font-size: 0.9375rem; color: #555861;">
+                            Precios claros y cerrados desde el primer día. Selecciona el paquete base y añade los extras que necesites para tu campaña.
+                        </p>
                     </div>
                 </div>
 
-                <!-- 4 Fases Técnicas Ortogonales -->
-                <div class="protocol-step-grid">
-                    
-                    <div class="protocol-card">
-                        <div class="step-index">01</div>
-                        <h3>Ingesta BIM / CAD & Auditoría</h3>
-                        <p>
-                            Recepción directa de modelos IFC, Revit o archivos DWG. Comprobación geométrica de cotas, compatibilidad de secciones y revisión de memorias de calidades técnicas.
-                        </p>
-                    </div>
-
-                    <div class="protocol-card">
-                        <div class="step-index">02</div>
-                        <h3>Modelado & Calibración PBR</h3>
-                        <p>
-                            Construcción volumétrica a escala 1:1. Asignación de mapas de rugosidad, relieve y reflectancia a partir de fichas técnicas de fabricantes de materiales de obra.
-                        </p>
-                    </div>
-
-                    <div class="protocol-card">
-                        <div class="step-index">03</div>
-                        <h3>Estudio Solar & Sombra Lineal</h3>
-                        <p>
-                            Posicionamiento geográfico de la parcela. Cálculo del ángulo de incidencia solar exacto, balance de sombras nítidas y eliminación de aberraciones cromáticas.
-                        </p>
-                    </div>
-
-                    <div class="protocol-card">
-                        <div class="step-index">04</div>
-                        <h3>Matriz de Entrega 4K / 8K</h3>
-                        <p>
-                            Renderizado en granja física de alta densidad. Entrega de archivos en ultra alta resolución sin compresión destructiva, listos para gran formato y sala de ventas.
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- DASHBOARD DE ESTIMACIÓN DE INVERSIÓN (CALCULADORA TÉCNICA) -->
-                <div id="calculadora" class="calc-terminal-wrapper" aria-labelledby="calc-title">
+                <div class="calc-terminal-wrapper">
                     
                     <div class="calc-terminal-bar">
-                        <div class="terminal-dots">
-                            <span class="terminal-dot active"></span>
-                            <span class="terminal-dot"></span>
-                            <span class="terminal-dot"></span>
-                        </div>
-                        <span id="calc-title">EIDOS_TERMINAL // ESTIMADOR PARAMÉTRICO DE INVERSIÓN V4.2</span>
-                        <span>MODO: PRESUPUESTO CERRADO B2B</span>
+                        <span>Estimador de Presupuestos para Promociones Inmobiliarias</span>
+                        <span>Precios cerrados sin costes imprevistos</span>
                     </div>
 
                     <div class="calculator-terminal-grid">
                         
-                        <!-- Columna Izquierda: Parámetros del Activo -->
+                        <!-- Columna Izquierda: Opciones -->
                         <div class="calc-terminal-inputs">
                             
-                            <!-- PASO 1: SELECCIÓN DEL ACTIVO -->
+                            <!-- PASO 1: SELECCIÓN DEL PAQUETE BASE -->
                             <div class="calc-field-group">
                                 <div class="calc-field-legend">
-                                    <span class="legend-index">[01]</span>
-                                    <span>Tipología y Paquete Base de Activo</span>
+                                    <span>1. Selecciona el Paquete Base</span>
                                 </div>
 
                                 <div class="packages-cad-selector">
@@ -685,14 +812,14 @@
                                     <label class="cad-package-option">
                                         <input type="radio" name="basePackage" value="inversor">
                                         <div>
-                                            <div class="opt-badge">ACTIVO URBANO</div>
+                                            <div class="opt-badge">Vivienda Unitaria</div>
                                             <div class="opt-name">Pack Inversor & Flipping</div>
-                                            <div class="opt-price">350€ <small class="text-muted" style="font-size:0.75rem;">+IVA</small></div>
+                                            <div class="opt-price">350€ <small style="font-size:0.75rem; color:#8A8D93;">+IVA</small></div>
                                         </div>
                                         <div class="opt-meta">
                                             · 2 Renders Interiores<br>
-                                            · Revisión de distribución<br>
-                                            · Ajustes técnicos incluidos
+                                            · Amueblamiento comercial<br>
+                                            · Ajustes incluidos
                                         </div>
                                     </label>
 
@@ -700,9 +827,9 @@
                                     <label class="cad-package-option">
                                         <input type="radio" name="basePackage" value="promotora" checked>
                                         <div>
-                                            <div class="opt-badge">RECOMENDADO OBRA NUEVA</div>
+                                            <div class="opt-badge">Recomendado Obra Nueva</div>
                                             <div class="opt-name">Pack Promotora Residencial</div>
-                                            <div class="opt-price">750€ <small class="text-muted" style="font-size:0.75rem;">+IVA</small></div>
+                                            <div class="opt-price">750€ <small style="font-size:0.75rem; color:#8A8D93;">+IVA</small></div>
                                         </div>
                                         <div class="opt-meta">
                                             · 1 Fachada + 2 Interiores<br>
@@ -711,13 +838,13 @@
                                         </div>
                                     </label>
 
-                                    <!-- PACK 3: MARKETING PRO -->
+                                    <!-- PACK 3: MARKETING INTEGRAL -->
                                     <label class="cad-package-option">
                                         <input type="radio" name="basePackage" value="marketing-pro">
                                         <div>
-                                            <div class="opt-badge">GRANDES DESARROLLOS</div>
-                                            <div class="opt-name">Pack Marketing Pro</div>
-                                            <div class="opt-price">1.450€ <small class="text-muted" style="font-size:0.75rem;">+IVA</small></div>
+                                            <div class="opt-badge">Grandes Promociones</div>
+                                            <div class="opt-name">Pack Marketing Integral</div>
+                                            <div class="opt-price">1.450€ <small style="font-size:0.75rem; color:#8A8D93;">+IVA</small></div>
                                         </div>
                                         <div class="opt-meta">
                                             · Múltiples exteriores diurnos<br>
@@ -729,11 +856,10 @@
                                 </div>
                             </div>
 
-                            <!-- PASO 2: VARIABLES ADICIONALES -->
+                            <!-- PASO 2: VISTAS ADICIONALES Y EXTRAS -->
                             <div class="calc-field-group">
                                 <div class="calc-field-legend">
-                                    <span class="legend-index">[02]</span>
-                                    <span>Variables Paramétricas Complementarias</span>
+                                    <span>2. Extras Opcionales</span>
                                 </div>
 
                                 <div class="upsells-cad-list">
@@ -741,21 +867,21 @@
                                     <!-- RENDERS ADICIONALES -->
                                     <div class="cad-upsell-item">
                                         <div>
-                                            <div style="font-weight: 600; font-size: 0.875rem;">Vistas Adicionales (+175€ / unidad)</div>
-                                            <div class="text-muted" style="font-size: 0.75rem;">Perspectivas interiores o exteriores complementarias.</div>
+                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Vistas adicionales (+175€ / unidad)</div>
+                                            <div style="font-size: 0.8125rem; color: #555861; margin-top: 2px;">Perspectivas interiores o exteriores complementarias para tu catálogo.</div>
                                         </div>
                                         <div class="counter-cad-widget">
-                                            <button type="button" class="btn-counter-cad" id="btnDecrementExtra" aria-label="Restar un render">−</button>
-                                            <input type="number" class="input-counter-cad" id="extraRendersCount" min="0" max="20" value="0" aria-label="Cantidad de renders extra">
-                                            <button type="button" class="btn-counter-cad" id="btnIncrementExtra" aria-label="Sumar un render">+</button>
+                                            <button type="button" class="btn-counter-cad" id="btnDecrementExtra" aria-label="Restar una imagen">−</button>
+                                            <input type="number" class="input-counter-cad" id="extraRendersCount" min="0" max="20" value="0" aria-label="Cantidad de imágenes extra">
+                                            <button type="button" class="btn-counter-cad" id="btnIncrementExtra" aria-label="Sumar una imagen">+</button>
                                         </div>
                                     </div>
 
                                     <!-- TOUR 360 -->
                                     <label class="cad-upsell-item">
                                         <div>
-                                            <div style="font-weight: 600; font-size: 0.875rem;">Tour Virtual 360º Interactivo (+450€)</div>
-                                            <div class="text-muted" style="font-size: 0.75rem;">Panorámica esférica navegable de alta densidad para caseta de ventas.</div>
+                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Tour Virtual 360º interactivo (+450€)</div>
+                                            <div style="font-size: 0.8125rem; color: #555861; margin-top: 2px;">Recorrido esférico interactivo ideal para la caseta de ventas y web interactiva.</div>
                                         </div>
                                         <input type="checkbox" name="calcExtra" value="tour360" data-price="450">
                                     </label>
@@ -763,8 +889,8 @@
                                     <!-- DRON -->
                                     <label class="cad-upsell-item">
                                         <div>
-                                            <div style="font-weight: 600; font-size: 0.875rem;">Integración sobre Fotografía de Dron (+180€)</div>
-                                            <div class="text-muted" style="font-size: 0.75rem;">Acoplamiento de volumetría 3D sobre ortofoto o vuelo aéreo de la parcela.</div>
+                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Integración sobre foto aérea o dron (+180€)</div>
+                                            <div style="font-size: 0.8125rem; color: #555861; margin-top: 2px;">Acoplamiento realista del edificio sobre fotografía real de la parcela.</div>
                                         </div>
                                         <input type="checkbox" name="calcExtra" value="dron" data-price="180">
                                     </label>
@@ -774,13 +900,13 @@
 
                         </div>
 
-                        <!-- Columna Derecha: Resumen de Desglose Financiero -->
+                        <!-- Columna Derecha: Resumen de Presupuesto -->
                         <aside class="calc-terminal-output" id="calcSummary">
                             
                             <div>
                                 <div class="output-header-strip">
-                                    <span class="tech-label text-accent">[LIQUIDACIÓN ESTIMADA]</span>
-                                    <h3 style="margin-top: 4px; font-size: 1.25rem;">Desglose de Presupuesto</h3>
+                                    <span class="section-label" style="margin-bottom: 4px;">Resumen del Presupuesto</span>
+                                    <h3 style="font-size: 1.25rem;">Desglose Estimado</h3>
                                 </div>
 
                                 <ul class="output-items-breakdown" id="summaryBreakdown">
@@ -805,27 +931,30 @@
 
                             <div>
                                 <div class="output-total-massive">
-                                    <div class="total-meta-label">SUBTOTAL ESTIMADO (BASE IMPONIBLE)</div>
+                                    <div class="total-meta-label">Total Estimado (Base Imponible)</div>
                                     <div class="total-figure-wrap">
                                         <span class="total-currency-sym">€</span>
                                         <span class="total-figure-val" id="totalAmount">750</span>
                                     </div>
-                                    <div class="text-muted" style="font-size: 0.6875rem;">
-                                        + IVA vigente aplicable · Presupuesto cerrado garantizado sin desvíos.
+                                    <div style="font-size: 0.75rem; color: #555861;">
+                                        + IVA aplicable · Presupuesto cerrado y garantizado sin desvíos.
                                     </div>
                                 </div>
 
                                 <div style="display: flex; flex-direction: column; gap: 10px;">
                                     <a href="#contacto" id="btnRequestQuote" class="btn-cad btn-primary" style="width: 100%;">
-                                        Formalizar Presupuesto Exacto →
+                                        Solicitar Presupuesto Exacto →
                                     </a>
                                     <a href="https://wa.me/34614459144" id="btnWhatsappQuote" target="_blank" rel="noopener" class="btn-cad btn-secondary" style="width: 100%;">
-                                        Consultar por Canal Privado (WhatsApp)
+                                        Consultar por WhatsApp Directo
                                     </a>
                                 </div>
-                            </div>
-
-                        </aside>
+                                    <div class="calc-email-direct">
+                                        ¿Prefieres enviar tus planos directamente por correo?<br>
+                                        Escríbenos a <a href="mailto:info@eidosrender.es">info@eidosrender.es</a> y te responderemos en el día.
+                                    </div>
+                                </div>
+                            </aside>
 
                     </div>
                 </div>
@@ -834,79 +963,75 @@
         </section>
 
         <!-- ===================================================================
-             7. LÁMINA DE CIERRE: BLOQUE MASIVO EN CARMESÍ INSTITUCIONAL (#C8102E)
-             Directriz estricta: Bloque sólido carmesí, contraste exclusivo blanco (#F4F3EF),
-             titular monumental asimétrico, formulario técnico de auditoría.
+             8. CONTACTO / SOLICITAR PRESUPUESTO
              =================================================================== -->
-        <section class="section-closing-sheet block-crimson" id="contacto" aria-labelledby="closing-title">
+        <section class="section-contact" id="contacto" aria-labelledby="contact-title">
             <div class="container">
                 
-                <div class="closing-asymmetric-layout">
+                <div class="contact-layout">
                     
-                    <!-- Columna Asimétrica Izquierda -->
+                    <!-- Información Directa -->
                     <div>
-                        <span class="tech-label" style="display:block; margin-bottom: 1.5rem; opacity: 0.85;">
-                            [05 // PROTOCOLO DE CONTRATACIÓN & AUDITORÍA]
-                        </span>
-
-                        <h2 id="closing-title" class="closing-lead-h2">
-                            INICIE LA AUDITORÍA VISUAL DE SU PRÓXIMO ACTIVO.
+                        <span class="section-label">Contacto Directo</span>
+                        <h2 id="contact-title" class="contact-lead-h2">
+                            Pide presupuesto para tu promoción en menos de 24 horas.
                         </h2>
 
-                        <p class="closing-desc">
-                            Remita la planimetría básica de su promoción (archivos DWG, modelos BIM o PDFs de proyecto). Nuestro equipo de dirección de arte evaluará la volumetría y emitirá una propuesta formal con plazos de entrega cerrados en menos de 24 horas hábiles.
+                        <p class="contact-desc">
+                            Envíanos los planos de tu proyecto o cuéntanos qué necesitas. Te responderemos en menos de 24 horas laborables con un presupuesto cerrado, plazos garantizados y asesoramiento sobre los mejores encuadres para tu venta.
                         </p>
 
-                        <div style="border-top: 1px solid rgba(244, 243, 239, 0.35); padding-top: 2rem;">
-                            <div class="tech-label" style="margin-bottom: 0.75rem;">CANALES DIRECTOS DE DIRECCIÓN FACULTATIVA:</div>
-                            <div style="font-size: 1.125rem; font-weight: 600; line-height: 1.8;">
-                                Teléfono Directo: <a href="tel:+34614459144" style="text-decoration: underline;">+34 614 45 91 44</a><br>
-                                Correo Oficial: <a href="mailto:info@eidosrender.es" style="text-decoration: underline;">info@eidosrender.es</a><br>
-                                Sede Técnica: Valencia, España (Atención nacional e internacional)
+                        <div class="direct-channels-box">
+                            <div class="direct-channels-title">Canales Directos:</div>
+                            <div class="direct-channels-list">
+                                <div style="margin-bottom: 6px;"><strong>Email Directo:</strong> <a href="mailto:info@eidosrender.es" style="font-weight: 700; font-size: 1.05rem; color: var(--c-black); text-decoration: underline;">info@eidosrender.es</a></div>
+                                <div style="margin-bottom: 6px;"><strong>Teléfono:</strong> <a href="tel:+34614459144">+34 614 45 91 44</a></div>
+                                <div style="margin-bottom: 6px;"><strong>WhatsApp:</strong> <a href="https://wa.me/34614459144" target="_blank" rel="noopener">+34 614 45 91 44</a></div>
+                                <div><strong>Ubicación:</strong> Valencia, España (Servicio a nivel nacional)</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Columna Asimétrica Derecha: Formulario de Registro Técnico -->
+                    <!-- Formulario Limpio -->
                     <div>
-                        <form class="closing-form-panel" action="enviar.php" method="POST" id="mainContactForm">
+                        <form class="contact-form contact-form-panel" action="enviar.php" method="POST" id="contactForm">
                             
                             <div class="form-group-cad">
-                                <label for="contactName" class="form-label-cad">Nombre del Responsable / Gestora *</label>
-                                <input type="text" id="contactName" name="nombre" class="form-input-cad" placeholder="Ej. Juan Gómez (Metrovacesa / Neinor / Family Office)" required>
+                                <label for="contactName" class="form-label-cad">Nombre y Empresa / Promotora *</label>
+                                <input type="text" id="contactName" name="nombre" class="form-input-cad" placeholder="Ej. Laura Martínez (Promotora Valencia)" required>
                             </div>
 
                             <div class="form-group-cad">
-                                <label for="contactEmail" class="form-label-cad">Correo Electrónico Profesional *</label>
-                                <input type="email" id="contactEmail" name="email" class="form-input-cad" placeholder="ejemplo@promotora.es" required>
+                                <label for="contactEmail" class="form-label-cad">Correo Electrónico *</label>
+                                <input type="email" id="contactEmail" name="email" class="form-input-cad" placeholder="tu@empresa.com" required>
                             </div>
 
                             <div class="form-group-cad">
-                                <label for="contactPhone" class="form-label-cad">Teléfono Directo *</label>
+                                <label for="contactPhone" class="form-label-cad">Teléfono de Contacto *</label>
                                 <input type="tel" id="contactPhone" name="telefono" class="form-input-cad" placeholder="+34 600 000 000" required>
                             </div>
 
                             <div class="form-group-cad">
-                                <label for="projectTypeSelect" class="form-label-cad">Tipología del Activo *</label>
-                                <select id="projectTypeSelect" name="tipologia" class="form-input-cad" style="background-color: var(--c-crimson); color: var(--c-paper);">
-                                    <option value="obra-nueva">Edificación Residencial Obra Nueva (Plurifamiliar)</option>
-                                    <option value="unifamiliar">Residencia Unifamiliar Singular / Villa</option>
-                                    <option value="reforma-flipping">Reforma Integral Urbana & Flipping</option>
-                                    <option value="terciario">Activo Terciario / Hotelero / Comercial</option>
+                                <label for="projectTypeSelect" class="form-label-cad">Tipo de Proyecto *</label>
+                                <select id="projectTypeSelect" name="tipologia" class="form-input-cad">
+                                    <option value="obra-nueva">Edificio de Obra Nueva (Plurifamiliar)</option>
+                                    <option value="unifamiliar">Vivienda Unifamiliar / Villa</option>
+                                    <option value="reforma-flipping">Reforma Integral o Flipping Inmobiliario</option>
+                                    <option value="terciario">Activo Terciario, Hotelero o Comercial</option>
                                 </select>
                             </div>
 
                             <div class="form-group-cad">
-                                <label for="contactNotes" class="form-label-cad">Detalles de Planimetría & Plazos Deseados</label>
-                                <textarea id="contactNotes" name="mensaje" rows="3" class="form-input-cad" placeholder="Indique si dispone de modelos 3D (Revit/Skp) o planos en DWG/PDF, número de unidades y fecha límite de preventa..."></textarea>
+                                <label for="contactNotes" class="form-label-cad">Detalles del proyecto o enlace a planos (Drive, WeTransfer...)</label>
+                                <textarea id="contactNotes" name="mensaje" rows="3" class="form-input-cad" placeholder="Indica número de viviendas, si dispones de planos en DWG/PDF y la fecha estimada de lanzamiento..."></textarea>
                             </div>
 
                             <button type="submit" class="btn-cad btn-primary" style="width: 100%;">
-                                Emitir Solicitud de Auditoría →
+                                Solicitar Presupuesto sin Compromiso →
                             </button>
 
-                            <p style="font-size: 0.6875rem; margin-top: 14px; opacity: 0.8; line-height: 1.4;">
-                                Al enviar este formulario, acepta nuestra política de privacidad para la emisión de informes de viabilidad de visualización.
+                            <p style="font-size: 0.72rem; margin-top: 14px; color: #8A8D93; line-height: 1.4;">
+                                Respondemos a todas las solicitudes en menos de 24 horas laborables. Datos protegidos conforme a la RGPD.
                             </p>
 
                         </form>
@@ -920,49 +1045,43 @@
     </main>
 
     <!-- ===================================================================
-         8. FOOTER INSTITUCIONAL (NEGRO ABSOLUTO #0B0B0C)
+         9. FOOTER LIMPIO
          =================================================================== -->
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer" id="cobertura" role="contentinfo">
         <div class="container">
             
-            <div class="footer-grid-columns">
+            <div class="footer-grid-5">
                 
+                <!-- Columna 1: Marca & LinkedIn -->
                 <div>
                     <div class="footer-brand-title">EIDOS RENDER</div>
-                    <p style="font-size: 0.8125rem; line-height: 1.6; max-width: 380px;">
-                        Estudio especializado en dirección de arte para visualización 3D e infografía inmobiliaria de alto valor. Rigor arquitectónico, certidumbre patrimonial y modelado paramétrico sin artificios.
+                    <p style="font-size: 0.875rem; line-height: 1.6; max-width: 320px; color: #555861; margin-top: 10px;">
+                        Estudio de visualización arquitectónica 3D e infografía inmobiliaria. Creamos imágenes de alto impacto para comercializar promociones sobre plano antes de iniciar la obra.
                     </p>
-                    <div style="margin-top: 1.5rem;">
-                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" style="font-size: 0.75rem; font-weight: 600; color: var(--c-paper);">
-                            [LINKEDIN CORPORATIVO ↗]
+                    <div style="margin-top: 1.25rem;">
+                        <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" style="font-size: 0.75rem; font-weight: 700; color: #0B0B0C;">
+                            LinkedIn del Estudio ↗
                         </a>
                     </div>
                 </div>
 
+                <!-- Columna 2: Tipologías de Obra (SEO) -->
                 <div class="footer-col">
                     <h4>Tipologías</h4>
                     <ul class="footer-links-list">
-                        <li><a href="https://eidosrender.es/obra-nueva">Obra Nueva Plurifamiliar</a></li>
-                        <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares</a></li>
-                        <li><a href="https://eidosrender.es/reforma-de-piso">Reforma & Flipping</a></li>
-                        <li><a href="https://eidosrender.es/portfolio">Cartera Completa</a></li>
+                        <li><a href="https://eidosrender.es/obra-nueva">Edificios de Obra Nueva</a></li>
+                        <li><a href="https://eidosrender.es/vivienda-unifamiliar">Viviendas Unifamiliares & Villas</a></li>
+                        <li><a href="https://eidosrender.es/reforma-de-piso">Reforma Integral & Interiorismo</a></li>
+                        <li><a href="https://eidosrender.es/renders-para-house-flipping">Renders para House Flipping</a></li>
+                        <li><a href="https://eidosrender.es/portfolio">Portfolio de Proyectos</a></li>
                     </ul>
                 </div>
 
+                <!-- Columna 3: Cobertura Territorial (SEO Local) -->
                 <div class="footer-col">
-                    <h4>Protocolos</h4>
+                    <h4>Ciudades</h4>
                     <ul class="footer-links-list">
-                        <li><a href="https://eidosrender.es/servicios">Paquetes para Promotoras</a></li>
-                        <li><a href="https://eidosrender.es/servicios">Dossier para Inversores</a></li>
-                        <li><a href="https://eidosrender.es/faq">Preguntas Técnicas Frecuentes</a></li>
-                        <li><a href="#contacto">Solicitar Presupuesto</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Centros de Actuación</h4>
-                    <ul class="footer-links-list">
-                        <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia (Sede)</a></li>
+                        <li><a href="https://eidosrender.es/renders-valencia">Renders Valencia</a></li>
                         <li><a href="https://eidosrender.es/renders-madrid">Renders Madrid</a></li>
                         <li><a href="https://eidosrender.es/renders-malaga">Renders Málaga & Costa del Sol</a></li>
                         <li><a href="https://eidosrender.es/renders-alicante">Renders Alicante</a></li>
@@ -971,11 +1090,35 @@
                     </ul>
                 </div>
 
+                <!-- Columna 4: Recursos & Contenido -->
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://eidosrender.es/blog">Blog Inmobiliario & Guías</a></li>
+                        <li><a href="https://eidosrender.es/servicios">Paquetes y Tarifas</a></li>
+                        <li><a href="https://eidosrender.es/faq">Preguntas Frecuentes (FAQ)</a></li>
+                        <li><a href="#calculadora">Calculadora de Presupuestos</a></li>
+                        <li><a href="#proceso">Cómo Trabajamos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 5: Contacto Directo -->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="mailto:info@eidosrender.es" style="font-weight: 700; color: #0B0B0C;">info@eidosrender.es</a></li>
+                        <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
+                        <li><a href="https://wa.me/34614459144" target="_blank" rel="noopener">WhatsApp Directo</a></li>
+                        <li>Valencia, España</li>
+                        <li>Servicio a toda España</li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="footer-bottom-bar">
                 <div>
-                    &copy; 2026 EIDOS RENDER. VISUALIZACIÓN ARQUITECTÓNICA DE PRECISIÓN B2B.
+                    &copy; 2026 Eidos Render. Infografía 3D y Renders Inmobiliarios para Promociones.
                 </div>
                 <div class="footer-legal-links">
                     <a href="https://eidosrender.es/aviso-legal">Aviso Legal</a>
@@ -987,22 +1130,22 @@
         </div>
     </footer>
 
-    <!-- MODAL / LIGHTBOX DE TELEMETRÍA TÉCNICA (FULL SCREEN) -->
+    <!-- MODAL / LIGHTBOX PARA INSPECCIÓN DE RENDERS -->
     <div id="galleryLightbox" class="gallery-modal-hud" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal-hud-header">
-            <div class="modal-hud-title" id="hudModalTitle">INSPECCIÓN TELEMÉTRICA // RESOLUCIÓN 4K NATIVA</div>
+            <div class="modal-hud-title" id="hudModalTitle">Visor de Proyecto en Alta Resolución</div>
             <div style="display: flex; gap: 12px; align-items: center;">
-                <button type="button" class="modal-hud-close lightbox-prev" aria-label="Render anterior">← ANTERIOR</button>
-                <button type="button" class="modal-hud-close lightbox-next" aria-label="Siguiente render">SIGUIENTE →</button>
-                <button type="button" class="modal-hud-close lightbox-close" id="modalHudClose" aria-label="Cerrar visor">[ESC] CERRAR</button>
+                <button type="button" class="modal-hud-close lightbox-prev" aria-label="Render anterior">← Anterior</button>
+                <button type="button" class="modal-hud-close lightbox-next" aria-label="Siguiente render">Siguiente →</button>
+                <button type="button" class="modal-hud-close lightbox-close" id="modalHudClose" aria-label="Cerrar visor">[ESC] Cerrar</button>
             </div>
         </div>
         <div class="modal-hud-stage">
-            <img class="modal-hud-img lightbox-image" src="" alt="Inspección de render arquitectónico">
+            <img class="modal-hud-img lightbox-image" src="" alt="Ampliación de render arquitectónico">
         </div>
         <div class="modal-hud-footer">
-            <div class="lightbox-caption">RENDER ARQUITECTÓNICO CALIBRADO</div>
-            <div>EIDOS RENDER FACULTATIVE ENGINE</div>
+            <div class="lightbox-caption">Render Inmobiliario de Alta Calidad</div>
+            <div>Eidos Render Estudio</div>
         </div>
     </div>
 
@@ -1011,7 +1154,7 @@
         <div class="container">
             <div class="cookie-cad-inner">
                 <div>
-                    Utilizamos cookies analíticas y de medición para optimizar la navegación de este portal institucional. Consulte nuestra <a href="https://eidosrender.es/cookies" style="text-decoration: underline;">Política de Cookies</a>.
+                    Utilizamos cookies analíticas para mejorar la experiencia de navegación en nuestro portal. Consulta nuestra <a href="https://eidosrender.es/cookies" style="text-decoration: underline;">Política de Cookies</a>.
                 </div>
                 <div class="cookie-cad-actions">
                     <button type="button" class="btn-cookie-reject cookie-btn-reject">Rechazar</button>

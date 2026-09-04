@@ -1,52 +1,52 @@
 /* ==========================================================================
-   EIDOS RENDER — SISTEMA DE DISEÑO INSTITUCIONAL & ARQUITECTÓNICO
-   Manual de Marca Estricto: Rigor de Arquitecto, Bloques Sólidos y Precisión CAD
+   EIDOS RENDER — ESTUDIO DE INFOGRAFÍA 3D & RENDERS INMOBILIARIOS
+   Diseño Limpio, Moderno y Orientado a Promotoras y Comercializadoras
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap');
 
 /* --------------------------------------------------------------------------
-   1. SISTEMA CROMÁTICO & VARIABLES TÉCNICAS
+   1. VARIABLES DE DISEÑO (BLANCO PAPEL & LÍNEAS SUAVES)
    -------------------------------------------------------------------------- */
 :root {
-    /* Paleta Estricta del Manual de Marca */
-    --c-black: #0B0B0C;       /* Negro Absoluto: fondo dominante */
-    --c-paper: #F4F3EF;       /* Blanco Papel: superficie clara y contraste */
-    --c-grey: #8A8D93;        /* Gris Señal: retícula técnica y metadatos secundarios */
-    --c-crimson: #C8102E;     /* Carmesí Institucional: bloques completos y acento sobre negro */
+    --c-paper: #F4F3EF;          /* Blanco Papel: fondo limpio, cálido y luminoso */
+    --c-paper-subtle: #EAE8E1;   /* Gris cálido suave para detalles y fondos neutros */
+    --c-card: #FFFFFF;           /* Blanco puro para tarjetas y módulos */
+    --c-black: #0B0B0C;          /* Negro para titulares contundentes */
+    --c-text: #2A2D34;           /* Gris oscuro para lectura natural y cómoda */
+    --c-grey: #8A8D93;           /* Gris suave para líneas y metadatos */
+    --c-border: rgba(138, 141, 147, 0.28); /* Líneas divisorias finas */
+    --c-crimson: #C8102E;        /* Carmesí para el botón principal y detalles clave */
+    --c-crimson-hover: #A00C24;
 
-    /* Tipografía Estricta */
+    /* Tipografías */
     --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-body: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-mono: 'Space Grotesk', ui-monospace, SFMono-Regular, monospace;
 
-    /* Estructura & Rigor Ortogonal */
-    --header-h: 80px;
-    --topbar-h: 36px;
-    --max-w: 1540px;
-    --max-w-narrow: 980px;
-    --radius: 0px; /* Rigor constructivo: cero bordes redondeados */
+    /* Medidas */
+    --header-h: 76px;
+    --max-w: 1480px;
+    --radius: 0px;
 
-    /* Transición Rápida y Precisa */
-    --ease-cad: cubic-bezier(0.19, 1, 0.22, 1);
-    --transition: 0.18s var(--ease-cad);
+    /* Transición suave */
+    --transition: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* --------------------------------------------------------------------------
-   2. RESET MODERNO & REGLAS BASE
+   2. RESET & BASES
    -------------------------------------------------------------------------- */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border-radius: 0 !important; /* Supresión total de curvas blandas */
+    border-radius: 0 !important;
 }
 
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    background-color: var(--c-black);
-    color: var(--c-paper);
+    background-color: var(--c-paper);
+    color: var(--c-text);
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -56,14 +56,12 @@ html {
 body {
     font-family: var(--font-body);
     font-weight: 400;
-    line-height: 1.55;
-    background-color: var(--c-black);
-    color: var(--c-paper);
+    line-height: 1.6;
+    background-color: var(--c-paper);
+    color: var(--c-text);
     overflow-x: hidden;
-    position: relative;
 }
 
-/* Imágenes: Enfoque sin redondez y renderizado nítido */
 img, picture, video {
     display: block;
     max-width: 100%;
@@ -85,7 +83,6 @@ button, input, select, textarea {
     border: none;
 }
 
-/* Contenedor Macro con Aire Asimétrico */
 .container {
     width: 100%;
     max-width: var(--max-w);
@@ -95,38 +92,37 @@ button, input, select, textarea {
     padding-right: clamp(1.25rem, 4vw, 3.5rem);
 }
 
-.container-narrow {
-    max-width: var(--max-w-narrow);
-}
-
 /* --------------------------------------------------------------------------
-   3. JERARQUÍA TIPOGRÁFICA (ESPACIO GROTESK + ARCHIVO)
+   3. TIPOGRAFÍA Y ENCABEZADOS
    -------------------------------------------------------------------------- */
 h1, .h1 {
     font-family: var(--font-heading);
     font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 0.96;
+    letter-spacing: -0.025em;
+    line-height: 1.04;
     text-transform: uppercase;
-    font-size: clamp(2.75rem, 7.5vw, 6.75rem);
+    color: var(--c-black);
+    font-size: clamp(2.2rem, 5.2vw, 4.4rem);
 }
 
 h2, .h2 {
     font-family: var(--font-heading);
-    font-weight: 500;
-    letter-spacing: -0.015em;
-    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
     text-transform: uppercase;
-    font-size: clamp(1.85rem, 4.2vw, 3.75rem);
+    color: var(--c-black);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
 }
 
 h3, .h3 {
     font-family: var(--font-heading);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
     text-transform: uppercase;
-    font-size: clamp(1.25rem, 2.4vw, 1.85rem);
+    color: var(--c-black);
+    font-size: clamp(1.15rem, 1.8vw, 1.45rem);
 }
 
 h4, .h4 {
@@ -134,170 +130,41 @@ h4, .h4 {
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    font-size: 0.875rem;
-}
-
-p, .paragraph {
-    font-family: var(--font-body);
-    font-weight: 400;
-    line-height: 1.55;
-    font-size: clamp(0.95rem, 1.15vw, 1.125rem);
-}
-
-/* Cifras Monumentales */
-.monumental-num {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    line-height: 0.88;
-    font-size: clamp(3.75rem, 10vw, 8.5rem);
-    display: block;
-}
-
-/* UI, Etiquetas Técnicas & Metadatos */
-.tech-label, .spec-key, .cad-badge {
-    font-family: var(--font-body);
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-}
-
-.text-muted {
-    color: var(--c-grey);
-}
-
-/* --------------------------------------------------------------------------
-   4. RETÍCULAS TÉCNICAS & LÍNEAS EN GRIS SEÑAL (#8A8D93)
-   -------------------------------------------------------------------------- */
-.grid-line-top {
-    border-top: 1px solid var(--c-grey);
-}
-
-.grid-line-bottom {
-    border-bottom: 1px solid var(--c-grey);
-}
-
-.cad-crosshair {
-    position: relative;
-}
-
-.cad-crosshair::before {
-    content: '+';
-    position: absolute;
-    top: -9px;
-    left: -6px;
-    font-family: var(--font-heading);
-    font-size: 14px;
-    line-height: 1;
-    color: var(--c-grey);
-    font-weight: 400;
-    pointer-events: none;
-}
-
-/* Capa de Retícula CAD Interactiva (Toggleable) */
-.cad-overlay-grid {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 9998;
-    display: none;
-    background-size: 80px 80px;
-    background-image: 
-        linear-gradient(to right, rgba(138, 141, 147, 0.12) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(138, 141, 147, 0.12) 1px, transparent 1px);
-}
-
-body.show-cad-grid .cad-overlay-grid {
-    display: block;
-}
-
-/* HUD de Telemetría en Esquina */
-.cad-hud-tracker {
-    position: fixed;
-    bottom: 16px;
-    left: 20px;
-    z-index: 9999;
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.6875rem;
-    letter-spacing: 0.05em;
-    color: var(--c-grey);
-    background: var(--c-black);
-    padding: 4px 8px;
-    border: 1px solid var(--c-grey);
-    pointer-events: none;
-    display: none;
-}
-
-body.show-cad-grid .cad-hud-tracker {
-    display: block;
-}
-
-/* --------------------------------------------------------------------------
-   5. REGLAS DE BLOQUES CROMÁTICOS PUROS (MANUAL DE MARCA)
-   -------------------------------------------------------------------------- */
-
-/* BLOQUE NEGRO ABSOLUTO (#0B0B0C) */
-.block-black {
-    background-color: var(--c-black);
-    color: var(--c-paper);
-}
-
-.block-black .text-accent {
-    color: var(--c-crimson);
-}
-
-.block-black .border-grid {
-    border-color: var(--c-grey);
-}
-
-/* Regla estricta: en bloque negro, el único acento es el carmesí */
-.block-black a:hover {
-    color: var(--c-crimson);
-}
-
-/* BLOQUE CARMESÍ INSTITUCIONAL (#C8102E) */
-.block-crimson {
-    background-color: var(--c-crimson);
-    color: var(--c-paper);
-}
-
-/* Regla estricta: en bloque carmesí, el único contraste permitido es el blanco */
-.block-crimson h1,
-.block-crimson h2,
-.block-crimson h3,
-.block-crimson p,
-.block-crimson span,
-.block-crimson a,
-.block-crimson .tech-label,
-.block-crimson .monumental-num {
-    color: var(--c-paper) !important;
-}
-
-.block-crimson .border-grid {
-    border-color: rgba(244, 243, 239, 0.35);
-}
-
-.block-crimson a:hover {
-    opacity: 0.82;
-}
-
-/* BLOQUE BLANCO PAPEL (#F4F3EF) */
-.block-paper {
-    background-color: var(--c-paper);
+    font-size: 0.8125rem;
     color: var(--c-black);
 }
 
-.block-paper .border-grid {
-    border-color: var(--c-grey);
+p {
+    color: var(--c-text);
+    font-size: clamp(0.9375rem, 1.05vw, 1.0625rem);
+    line-height: 1.65;
+}
+
+.badge-clean {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-black);
+    border: 1px solid var(--c-border);
+    background-color: var(--c-card);
+    padding: 6px 14px;
+    margin-bottom: 1.5rem;
+}
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--c-crimson);
+    display: inline-block;
 }
 
 /* --------------------------------------------------------------------------
-   6. BOTONES & ELEMENTOS DE ACCIÓN TÉCNICA
+   4. BOTONES DIRECTOS
    -------------------------------------------------------------------------- */
 .btn-cad {
     display: inline-flex;
@@ -307,210 +174,307 @@ body.show-cad-grid .cad-hud-tracker {
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.8125rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 16px 28px;
+    padding: 15px 28px;
     cursor: pointer;
     border: 1px solid transparent;
     transition: background-color var(--transition), color var(--transition), border-color var(--transition);
     line-height: 1;
+    text-align: center;
 }
 
-/* Botón sobre Fondo Negro */
-.block-black .btn-primary {
+.btn-primary {
     background-color: var(--c-crimson);
-    color: var(--c-paper);
+    color: #FFFFFF;
     border-color: var(--c-crimson);
 }
 
-.block-black .btn-primary:hover {
-    background-color: var(--c-black);
-    color: var(--c-crimson);
-    border-color: var(--c-crimson);
+.btn-primary:hover {
+    background-color: var(--c-crimson-hover);
+    border-color: var(--c-crimson-hover);
+    color: #FFFFFF;
 }
 
-.block-black .btn-secondary {
+.btn-secondary {
     background-color: transparent;
-    color: var(--c-paper);
+    color: var(--c-black);
     border-color: var(--c-grey);
 }
 
-.block-black .btn-secondary:hover {
-    border-color: var(--c-crimson);
-    color: var(--c-crimson);
-}
-
-/* Botón sobre Fondo Carmesí (Solo Blanco Permitido) */
-.block-crimson .btn-primary {
-    background-color: var(--c-paper);
-    color: var(--c-crimson);
-    border-color: var(--c-paper);
-}
-
-.block-crimson .btn-primary:hover {
-    background-color: transparent;
-    color: var(--c-paper);
-    border-color: var(--c-paper);
-}
-
-.block-crimson .btn-secondary {
-    background-color: transparent;
-    color: var(--c-paper);
-    border-color: rgba(244, 243, 239, 0.45);
-}
-
-.block-crimson .btn-secondary:hover {
-    border-color: var(--c-paper);
-    background-color: rgba(244, 243, 239, 0.1);
+.btn-secondary:hover {
+    background-color: var(--c-card);
+    border-color: var(--c-black);
 }
 
 /* --------------------------------------------------------------------------
-   7. BARRA SUPERIOR INSTITUCIONAL & CABECERA
+   5. CABECERA & NAVEGACIÓN COMPLETA CON DROPDOWNS DE SEO
    -------------------------------------------------------------------------- */
-.top-telemetry-bar {
-    background-color: var(--c-black);
-    border-bottom: 1px solid var(--c-grey);
-    font-size: 0.6875rem;
-    color: var(--c-grey);
-    padding: 8px 0;
-}
-
-.top-telemetry-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.telemetry-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.status-dot {
-    width: 6px;
-    height: 6px;
-    background-color: var(--c-crimson);
-    display: inline-block;
-}
-
-.btn-toggle-grid {
-    cursor: pointer;
-    color: var(--c-grey);
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--c-grey);
-    padding-bottom: 1px;
-    font-weight: 600;
-}
-
-.btn-toggle-grid:hover {
-    color: var(--c-crimson);
-    border-color: var(--c-crimson);
-}
-
-/* NAVBAR PRINCIPAL */
 .site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--c-black);
-    border-bottom: 1px solid var(--c-grey);
-    transition: background-color var(--transition);
+    background-color: rgba(244, 243, 239, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--c-border);
+    transition: box-shadow 0.25s ease, background-color 0.25s ease;
 }
 
-.nav-grid {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+.site-header.is-scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    background-color: rgba(244, 243, 239, 0.98);
+}
+
+.nav-layout {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     height: var(--header-h);
+    gap: 20px;
 }
 
 .brand-monogram {
     display: flex;
     flex-direction: column;
-    padding-right: 2.5rem;
-    border-right: 1px solid var(--c-grey);
-    height: 100%;
-    justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
 }
 
 .brand-monogram .brand-title {
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 1.45rem;
-    letter-spacing: -0.03em;
-    color: var(--c-paper);
-    line-height: 1;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+    color: var(--c-black);
+    line-height: 1.1;
 }
 
 .brand-monogram .brand-desc {
-    font-size: 0.625rem;
+    font-size: 0.65rem;
     color: var(--c-grey);
-    letter-spacing: 0.06em;
-    margin-top: 4px;
-    font-weight: 600;
-}
-
-/* Enlaces de Navegación */
-.nav-menu {
-    display: flex;
-    list-style: none;
-    height: 100%;
-    margin-left: 2rem;
-}
-
-.nav-menu li {
-    display: flex;
-    align-items: stretch;
-    border-right: 1px solid rgba(138, 141, 147, 0.25);
-}
-
-.nav-menu a {
-    display: flex;
-    align-items: center;
-    padding: 0 1.5rem;
-    font-size: 0.75rem;
-    font-weight: 600;
     letter-spacing: 0.05em;
-    color: var(--c-paper);
+    margin-top: 3px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
-.nav-menu a span.nav-index {
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: #1E2024;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-item:hover > .nav-link,
+.nav-item:focus-within > .nav-link {
+    color: var(--c-crimson);
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nav-chevron {
+    transition: transform 0.2s ease;
+    opacity: 0.6;
+}
+
+.nav-item:hover > .nav-link .nav-chevron,
+.nav-item:focus-within > .nav-link .nav-chevron {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+/* Dropdown Menus con Hover y Focus-Within Accesible */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(138, 141, 147, 0.28);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s ease;
+    z-index: 1200;
+}
+
+.has-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    display: block;
+}
+
+.has-dropdown:hover .dropdown-menu,
+.has-dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-wide {
+    width: 480px;
+}
+
+.dropdown-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.dropdown-header {
+    display: block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--c-grey);
-    margin-right: 6px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(138, 141, 147, 0.18);
 }
 
-.nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.03);
+.dropdown-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dropdown-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+}
+
+.dropdown-item strong {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #0B0B0C;
+    transition: color 0.15s ease;
+}
+
+.dropdown-item span {
+    font-size: 0.72rem;
+    color: #6C707A;
+    line-height: 1.3;
+    margin-top: 2px;
+}
+
+.dropdown-item:hover {
+    background-color: #F7F6F3;
+}
+
+.dropdown-item:hover strong {
     color: var(--c-crimson);
 }
 
-.nav-menu a:hover span.nav-index {
+/* Ciudades Dropdown */
+.dropdown-cities {
+    width: 280px;
+}
+
+.dropdown-cities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.dropdown-city-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #1E2024;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.city-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--c-crimson);
+    flex-shrink: 0;
+}
+
+.dropdown-city-item:hover {
+    background-color: #F7F6F3;
     color: var(--c-crimson);
 }
 
+/* Acciones de Cabecera (Derecha) */
 .nav-action {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-left: 2rem;
+    flex-shrink: 0;
+}
+
+.nav-email-direct {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--c-black);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.nav-email-direct:hover {
+    color: var(--c-crimson);
 }
 
 .nav-phone-direct {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 600;
-    color: var(--c-grey);
-    letter-spacing: 0.04em;
+    color: var(--c-black);
+    text-decoration: none;
+    transition: color 0.15s ease;
+    white-space: nowrap;
 }
 
 .nav-phone-direct:hover {
     color: var(--c-crimson);
 }
 
-/* Hamburguesa Móvil */
 .mobile-nav-toggle {
     display: none;
     width: 44px;
@@ -521,73 +485,57 @@ body.show-cad-grid .cad-hud-tracker {
     gap: 6px;
     cursor: pointer;
     background: transparent;
-    border: 1px solid var(--c-grey);
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
 }
 
 .mobile-nav-toggle span {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--c-paper);
-    transition: transform var(--transition), opacity var(--transition);
+    background-color: var(--c-black);
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.mobile-nav-toggle.is-open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.mobile-nav-toggle.is-open span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-nav-toggle.is-open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+/* Footer de 5 Columnas SEO */
+.footer-grid-5 {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid var(--c-border);
 }
 
 /* --------------------------------------------------------------------------
-   8. HERO SECTION: BLOQUE MASIVO EN CARMESÍ INSTITUCIONAL (#C8102E)
+   6. HERO LIMPIO & COMERCIAL
    -------------------------------------------------------------------------- */
 .section-hero {
-    position: relative;
-    padding-top: clamp(4rem, 8vw, 7.5rem);
-    padding-bottom: clamp(4rem, 9vw, 8.5rem);
-    border-bottom: 1px solid rgba(244, 243, 239, 0.25);
-    overflow: hidden;
+    padding-top: clamp(4rem, 7.5vw, 6.5rem);
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+    border-bottom: 1px solid var(--c-border);
 }
 
-/* Asimetría Estricta: 2/3 de contenido, 1/3 de reposo visual absoluto */
 .hero-asymmetric-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: clamp(2rem, 5vw, 6rem);
-    align-items: start;
+    grid-template-columns: 1.3fr 1fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
 }
 
 .hero-content {
-    max-width: 1100px;
-}
-
-.hero-meta-stamp {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding-bottom: 1.25rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid rgba(244, 243, 239, 0.35);
-    width: 100%;
+    max-width: 720px;
 }
 
 .hero-h1 {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.5rem;
     text-wrap: balance;
 }
 
 .hero-lead {
-    font-size: clamp(1.125rem, 1.6vw, 1.45rem);
-    line-height: 1.45;
-    max-width: 780px;
-    margin-bottom: 3.25rem;
-    color: var(--c-paper);
+    font-size: clamp(1rem, 1.15vw, 1.1875rem);
+    line-height: 1.65;
+    margin-bottom: 2.25rem;
+    color: #3F4249;
 }
 
 .hero-actions-row {
@@ -597,171 +545,152 @@ body.show-cad-grid .cad-hud-tracker {
     align-items: center;
 }
 
-/* Espacio Negativo a la Derecha (30%+ sin información con marcas CAD) */
-.hero-negative-zone {
-    position: relative;
-    min-height: 380px;
-    border-left: 1px solid rgba(244, 243, 239, 0.25);
-    padding-left: clamp(1.5rem, 3vw, 3rem);
+/* 3 Tarjetas de Ventajas Tangibles */
+.hero-benefits-stack {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 16px;
 }
 
-.hero-cad-coords {
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.6875rem;
-    letter-spacing: 0.08em;
-    color: rgba(244, 243, 239, 0.7);
-    line-height: 1.8;
+.hero-benefit-card {
+    background: var(--c-card);
+    border: 1px solid var(--c-border);
+    padding: clamp(1.25rem, 2.5vw, 2rem);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: border-color var(--transition), transform var(--transition);
 }
 
-.hero-watermark-num {
+.hero-benefit-card:hover {
+    border-color: var(--c-black);
+    transform: translateY(-2px);
+}
+
+.benefit-num {
     font-family: var(--font-heading);
+    font-size: 1.5rem;
     font-weight: 700;
-    font-size: clamp(5rem, 12vw, 11rem);
-    line-height: 0.8;
-    color: rgba(244, 243, 239, 0.18);
-    user-select: none;
-}
-
-/* --------------------------------------------------------------------------
-   9. MANIFIESTO & CIFRAS MONUMENTALES (NEGRO ABSOLUTO #0B0B0C)
-   -------------------------------------------------------------------------- */
-.section-manifesto {
-    padding-top: clamp(4.5rem, 9vw, 9rem);
-    padding-bottom: clamp(4.5rem, 9vw, 9rem);
-    border-bottom: 1px solid var(--c-grey);
-    position: relative;
-}
-
-.manifesto-layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: clamp(2rem, 6vw, 7rem);
-    align-items: start;
-}
-
-.manifesto-header {
-    position: sticky;
-    top: calc(var(--header-h) + 2rem);
-}
-
-.manifesto-statement {
-    font-family: var(--font-heading);
-    font-size: clamp(1.65rem, 3vw, 2.75rem);
-    font-weight: 500;
-    line-height: 1.15;
-    text-transform: uppercase;
-    margin-bottom: 2.5rem;
-    color: var(--c-paper);
-}
-
-.manifesto-statement strong {
     color: var(--c-crimson);
+    line-height: 1;
+}
+
+.benefit-title {
+    font-family: var(--font-heading);
+    font-size: 1.0625rem;
     font-weight: 700;
-}
-
-.manifesto-prose {
-    color: var(--c-grey);
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
-    line-height: 1.6;
-    margin-bottom: 3.5rem;
-    max-width: 720px;
-}
-
-.manifesto-prose p + p {
-    margin-top: 1.5rem;
-}
-
-/* Grilla de Cifras Monumentales Superpuestas sobre Espacio Negativo */
-.metrics-cad-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-top: 1px solid var(--c-grey);
-    border-left: 1px solid var(--c-grey);
-    margin-top: 2rem;
-}
-
-.metric-cell {
-    border-right: 1px solid var(--c-grey);
-    border-bottom: 1px solid var(--c-grey);
-    padding: clamp(1.75rem, 3.5vw, 3.5rem);
-    position: relative;
-}
-
-.metric-cell .metric-id {
-    font-size: 0.6875rem;
-    color: var(--c-grey);
-    letter-spacing: 0.06em;
-    margin-bottom: 1rem;
-}
-
-.metric-cell .monumental-num {
-    color: var(--c-paper);
-    margin-bottom: 0.75rem;
-}
-
-.metric-cell.accented .monumental-num {
-    color: var(--c-crimson);
-}
-
-.metric-cell .metric-title {
-    font-family: var(--font-heading);
-    font-size: 1.125rem;
-    font-weight: 500;
+    color: var(--c-black);
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 6px;
 }
 
-.metric-cell .metric-desc {
-    font-size: 0.8125rem;
-    color: var(--c-grey);
+.benefit-desc {
+    font-size: 0.84375rem;
+    color: #555861;
     line-height: 1.5;
 }
 
 /* --------------------------------------------------------------------------
-   10. PORTFOLIO / GALERÍA DE ACTIVOS (RETÍCULA GRIS SEÑAL #8A8D93)
+   7. BLOQUE DE SERVICIOS (QUÉ HACEMOS)
    -------------------------------------------------------------------------- */
-.section-portfolio {
-    padding-top: clamp(4.5rem, 8vw, 8rem);
-    padding-bottom: clamp(4.5rem, 8vw, 8rem);
-    border-bottom: 1px solid var(--c-grey);
+.section-services {
+    padding-top: clamp(4rem, 7vw, 6.5rem);
+    padding-bottom: clamp(4rem, 7vw, 6.5rem);
+    border-bottom: 1px solid var(--c-border);
 }
 
 .section-title-strip {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--c-grey);
-    margin-bottom: 3.5rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--c-border);
+    margin-bottom: 3rem;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-/* Retícula Asimétrica de Proyectos con >30% de Espacio Negativo */
-.portfolio-technical-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--c-grey);
-    border-left: 1px solid var(--c-grey);
+.section-label {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-grey);
+    margin-bottom: 8px;
+    display: block;
 }
 
-.project-item {
-    border-right: 1px solid var(--c-grey);
-    border-bottom: 1px solid var(--c-grey);
-    position: relative;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--c-border);
+    border-left: 1px solid var(--c-border);
+    background-color: var(--c-card);
+}
+
+.service-card {
+    border-right: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+    padding: clamp(1.75rem, 3vw, 2.75rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--c-black);
+    min-height: 280px;
     transition: background-color var(--transition);
 }
 
-/* Ritmo Asimétrico en Tercios */
+.service-card:hover {
+    background-color: var(--c-paper);
+}
+
+.service-num {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--c-grey);
+    margin-bottom: 2rem;
+}
+
+.service-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    color: var(--c-black);
+}
+
+.service-card p {
+    font-size: 0.84375rem;
+    color: #555861;
+    line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   8. GALERÍA DE PROYECTOS (PORTFOLIO LIMPIO)
+   -------------------------------------------------------------------------- */
+.section-portfolio {
+    padding-top: clamp(4rem, 7vw, 6.5rem);
+    padding-bottom: clamp(4rem, 7vw, 6.5rem);
+    border-bottom: 1px solid var(--c-border);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--c-border);
+    border-left: 1px solid var(--c-border);
+    background: var(--c-card);
+}
+
+.project-item {
+    border-right: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-card);
+}
+
 .project-item.span-8 {
     grid-column: span 8;
 }
@@ -770,50 +699,10 @@ body.show-cad-grid .cad-hud-tracker {
     grid-column: span 4;
 }
 
-.project-item.span-6 {
-    grid-column: span 6;
-}
-
-.project-item.span-12 {
-    grid-column: span 12;
-}
-
-/* Célula de Espacio Negativo Puro (Zona de Reposo Visual) */
-.project-item.negative-space-cell {
-    grid-column: span 4;
-    padding: clamp(2rem, 4vw, 4rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: repeating-linear-gradient(
-        45deg,
-        rgba(138, 141, 147, 0.04),
-        rgba(138, 141, 147, 0.04) 1px,
-        transparent 1px,
-        transparent 16px
-    );
-}
-
-.negative-space-cell .empty-indicator {
-    font-size: 0.6875rem;
-    color: var(--c-grey);
-    letter-spacing: 0.08em;
-}
-
-.negative-space-cell .cad-stamp-quote {
-    font-family: var(--font-heading);
-    font-size: clamp(1.25rem, 2vw, 1.85rem);
-    font-weight: 500;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: var(--c-paper);
-}
-
-/* Contenido de Cada Activo */
 .project-media-wrap {
     position: relative;
     overflow: hidden;
-    background-color: #000;
+    background-color: var(--c-paper-subtle);
     aspect-ratio: 16 / 10;
 }
 
@@ -821,49 +710,48 @@ body.show-cad-grid .cad-hud-tracker {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(15%) contrast(105%);
-    transition: transform 0.4s var(--ease-cad), filter 0.4s var(--ease-cad);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .project-item:hover .project-media-wrap img {
-    transform: scale(1.02);
-    filter: grayscale(0%) contrast(100%);
+    transform: scale(1.025);
 }
 
-.project-telemetry-badge {
+.project-tag-pill {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    background: var(--c-black);
-    color: var(--c-paper);
-    border: 1px solid var(--c-grey);
-    font-size: 0.625rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    padding: 3px 8px;
+    top: 14px;
+    left: 14px;
+    background: #FFFFFF;
+    color: var(--c-black);
+    border: 1px solid var(--c-border);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 4px 10px;
     z-index: 2;
+    text-transform: uppercase;
 }
 
 .project-trigger-zoom {
     position: absolute;
-    bottom: 12px;
-    right: 12px;
-    background: var(--c-black);
-    color: var(--c-paper);
-    border: 1px solid var(--c-grey);
+    bottom: 14px;
+    right: 14px;
+    background: #FFFFFF;
+    color: var(--c-black);
+    border: 1px solid var(--c-border);
     font-size: 0.6875rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    padding: 6px 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 6px 14px;
     cursor: pointer;
     z-index: 2;
-    transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+    text-transform: uppercase;
+    transition: background-color var(--transition), color var(--transition);
 }
 
 .project-trigger-zoom:hover {
-    background-color: var(--c-crimson);
-    border-color: var(--c-crimson);
-    color: var(--c-paper);
+    background-color: var(--c-black);
+    color: #FFFFFF;
 }
 
 .project-info-block {
@@ -874,143 +762,129 @@ body.show-cad-grid .cad-hud-tracker {
     justify-content: space-between;
 }
 
-.project-header-meta {
+.project-meta-row {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.75rem;
-}
-
-.project-code {
-    font-size: 0.6875rem;
-    color: var(--c-crimson);
+    align-items: center;
+    font-size: 0.75rem;
     font-weight: 600;
-}
-
-.project-type-tag {
-    font-size: 0.6875rem;
     color: var(--c-grey);
-    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
 }
 
 .project-name {
     font-family: var(--font-heading);
-    font-size: clamp(1.2rem, 1.8vw, 1.6rem);
-    font-weight: 500;
+    font-size: clamp(1.125rem, 1.6vw, 1.4rem);
+    font-weight: 700;
+    color: var(--c-black);
     margin-bottom: 0.75rem;
-    line-height: 1.15;
+    line-height: 1.2;
 }
 
-.project-synopsis {
+.project-desc {
     font-size: 0.875rem;
-    color: var(--c-grey);
+    color: #4A4E58;
+    line-height: 1.55;
     margin-bottom: 1.5rem;
-    line-height: 1.5;
 }
 
-/* Tabla de Especificaciones Técnicas (CAD / PBR) */
-.project-specs-table {
-    border-top: 1px solid rgba(138, 141, 147, 0.35);
+.project-specs-clean {
+    border-top: 1px solid var(--c-border);
     padding-top: 1rem;
-    margin-top: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
     font-size: 0.75rem;
 }
 
-.spec-entry {
+.spec-item {
     display: flex;
     flex-direction: column;
 }
 
-.spec-entry .spec-k {
-    font-size: 0.625rem;
+.spec-item .label {
+    font-size: 0.6875rem;
     color: var(--c-grey);
-    letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
-.spec-entry .spec-v {
-    color: var(--c-paper);
-    font-weight: 600;
+.spec-item .val {
+    font-weight: 700;
+    color: var(--c-black);
     margin-top: 2px;
 }
 
 /* --------------------------------------------------------------------------
-   11. PROTOCOLO CONSTRUCTIVO & DASHBOARD DE ESTIMACIÓN DE ACTIVOS
+   9. CÓMO TRABAJAMOS (PROCESO EN 4 PASOS)
    -------------------------------------------------------------------------- */
-.section-protocol {
-    padding-top: clamp(4.5rem, 8vw, 8rem);
-    padding-bottom: clamp(4.5rem, 8vw, 8rem);
-    border-bottom: 1px solid var(--c-grey);
+.section-process {
+    padding-top: clamp(4rem, 7vw, 6.5rem);
+    padding-bottom: clamp(4rem, 7vw, 6.5rem);
+    border-bottom: 1px solid var(--c-border);
 }
 
-.protocol-step-grid {
+.process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid var(--c-grey);
-    border-left: 1px solid var(--c-grey);
-    margin-bottom: 5rem;
+    border-top: 1px solid var(--c-border);
+    border-left: 1px solid var(--c-border);
+    background: var(--c-card);
 }
 
-.protocol-card {
-    border-right: 1px solid var(--c-grey);
-    border-bottom: 1px solid var(--c-grey);
-    padding: clamp(1.5rem, 3vw, 2.75rem);
+.process-card {
+    border-right: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+    padding: clamp(1.75rem, 3vw, 2.75rem);
 }
 
-.protocol-card .step-index {
+.process-step-num {
     font-family: var(--font-heading);
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--c-crimson);
     line-height: 1;
     margin-bottom: 1.25rem;
 }
 
-.protocol-card h3 {
+.process-card h3 {
     font-size: 1.125rem;
     margin-bottom: 0.75rem;
+    color: var(--c-black);
 }
 
-.protocol-card p {
-    font-size: 0.8125rem;
-    color: var(--c-grey);
+.process-card p {
+    font-size: 0.84375rem;
+    color: #555861;
     line-height: 1.55;
 }
 
-/* DASHBOARD CALCULADORA (TERMINAL FINANCIERA CAD) */
+/* --------------------------------------------------------------------------
+   10. CALCULADORA DE PRESUPUESTO INTERACTIVA
+   -------------------------------------------------------------------------- */
+.section-calculator {
+    padding-top: clamp(4rem, 7vw, 6.5rem);
+    padding-bottom: clamp(4rem, 7vw, 6.5rem);
+    border-bottom: 1px solid var(--c-border);
+}
+
 .calc-terminal-wrapper {
-    border: 1px solid var(--c-grey);
-    background-color: var(--c-black);
+    border: 1px solid var(--c-border);
+    background-color: var(--c-card);
 }
 
 .calc-terminal-bar {
-    background-color: #141416;
-    border-bottom: 1px solid var(--c-grey);
-    padding: 10px 20px;
+    background-color: var(--c-paper-subtle);
+    border-bottom: 1px solid var(--c-border);
+    padding: 12px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.6875rem;
-    color: var(--c-grey);
-    letter-spacing: 0.06em;
-}
-
-.terminal-dots {
-    display: inline-flex;
-    gap: 6px;
-}
-
-.terminal-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--c-grey);
-}
-
-.terminal-dot.active {
-    background-color: var(--c-crimson);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--c-black);
+    letter-spacing: 0.04em;
 }
 
 .calculator-terminal-grid {
@@ -1020,7 +894,7 @@ body.show-cad-grid .cad-hud-tracker {
 
 .calc-terminal-inputs {
     padding: clamp(2rem, 4vw, 3.5rem);
-    border-right: 1px solid var(--c-grey);
+    border-right: 1px solid var(--c-border);
 }
 
 .calc-field-group {
@@ -1029,32 +903,24 @@ body.show-cad-grid .cad-hud-tracker {
 
 .calc-field-legend {
     font-family: var(--font-heading);
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 1.0625rem;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.legend-index {
-    color: var(--c-crimson);
-    font-size: 0.875rem;
-    font-weight: 700;
+    color: var(--c-black);
 }
 
 .packages-cad-selector {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 14px;
 }
 
 .cad-package-option {
-    border: 1px solid var(--c-grey);
-    padding: 18px 14px;
+    border: 1px solid var(--c-border);
+    padding: 20px 16px;
     cursor: pointer;
-    background: transparent;
+    background: var(--c-paper);
     transition: border-color var(--transition), background-color var(--transition);
     display: flex;
     flex-direction: column;
@@ -1068,42 +934,44 @@ body.show-cad-grid .cad-hud-tracker {
 }
 
 .cad-package-option:has(input:checked) {
-    border-color: var(--c-crimson);
-    background-color: rgba(200, 16, 46, 0.06);
+    border-color: var(--c-black);
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 0 1px var(--c-black);
 }
 
 .cad-package-option .opt-badge {
-    font-size: 0.5625rem;
+    font-size: 0.625rem;
     color: var(--c-crimson);
     font-weight: 700;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
 }
 
 .cad-package-option .opt-name {
     font-family: var(--font-heading);
     font-size: 0.9375rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 10px;
+    color: var(--c-black);
 }
 
 .cad-package-option .opt-price {
     font-family: var(--font-heading);
     font-size: 1.35rem;
     font-weight: 700;
-    color: var(--c-paper);
+    color: var(--c-black);
 }
 
 .cad-package-option .opt-meta {
-    font-size: 0.6875rem;
-    color: var(--c-grey);
-    margin-top: 6px;
-    line-height: 1.3;
+    font-size: 0.72rem;
+    color: #555861;
+    margin-top: 8px;
+    line-height: 1.4;
 }
 
-/* Upsells & Variables */
 .upsells-cad-list {
     display: flex;
     flex-direction: column;
@@ -1111,7 +979,8 @@ body.show-cad-grid .cad-hud-tracker {
 }
 
 .cad-upsell-item {
-    border: 1px solid rgba(138, 141, 147, 0.4);
+    border: 1px solid var(--c-border);
+    background-color: var(--c-paper);
     padding: 16px 20px;
     display: flex;
     justify-content: space-between;
@@ -1122,11 +991,12 @@ body.show-cad-grid .cad-hud-tracker {
 
 .cad-upsell-item:hover,
 .cad-upsell-item:has(input:checked) {
-    border-color: var(--c-crimson);
+    border-color: var(--c-black);
+    background-color: #FFFFFF;
 }
 
 .cad-upsell-item input[type="checkbox"] {
-    accent-color: var(--c-crimson);
+    accent-color: var(--c-black);
     width: 18px;
     height: 18px;
     cursor: pointer;
@@ -1135,7 +1005,8 @@ body.show-cad-grid .cad-hud-tracker {
 .counter-cad-widget {
     display: flex;
     align-items: center;
-    border: 1px solid var(--c-grey);
+    border: 1px solid var(--c-border);
+    background-color: #FFFFFF;
 }
 
 .btn-counter-cad {
@@ -1148,34 +1019,33 @@ body.show-cad-grid .cad-hud-tracker {
     cursor: pointer;
     font-weight: 700;
     font-size: 1.1rem;
-    color: var(--c-paper);
+    color: var(--c-black);
 }
 
 .btn-counter-cad:hover {
-    background-color: var(--c-crimson);
+    background-color: var(--c-paper-subtle);
 }
 
 .input-counter-cad {
     width: 48px;
     height: 38px;
     text-align: center;
-    border-left: 1px solid var(--c-grey);
-    border-right: 1px solid var(--c-grey);
+    border-left: 1px solid var(--c-border);
+    border-right: 1px solid var(--c-border);
     font-weight: 600;
-    color: var(--c-paper);
+    color: var(--c-black);
 }
 
-/* Panel de Salida / Totales */
 .calc-terminal-output {
     padding: clamp(2rem, 4vw, 3.5rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #0d0d0e;
+    background-color: var(--c-paper-subtle);
 }
 
 .output-header-strip {
-    border-bottom: 1px solid var(--c-grey);
+    border-bottom: 1px solid var(--c-border);
     padding-bottom: 1.25rem;
     margin-bottom: 2rem;
 }
@@ -1189,29 +1059,31 @@ body.show-cad-grid .cad-hud-tracker {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(138, 141, 147, 0.2);
-    font-size: 0.8125rem;
+    border-bottom: 1px solid var(--c-border);
+    font-size: 0.84375rem;
 }
 
 .breakdown-row .row-k {
-    color: var(--c-grey);
+    color: #555861;
 }
 
 .breakdown-row .row-v {
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--c-black);
 }
 
 .output-total-massive {
-    border-top: 1px solid var(--c-grey);
+    border-top: 1px solid var(--c-border);
     padding-top: 1.75rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .total-meta-label {
-    font-size: 0.6875rem;
+    font-size: 0.72rem;
     color: var(--c-grey);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .total-figure-wrap {
@@ -1223,94 +1095,148 @@ body.show-cad-grid .cad-hud-tracker {
 
 .total-currency-sym {
     font-family: var(--font-heading);
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: var(--c-crimson);
     font-weight: 700;
 }
 
 .total-figure-val {
     font-family: var(--font-heading);
-    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-size: clamp(2.75rem, 4.5vw, 4rem);
     font-weight: 700;
-    color: var(--c-paper);
+    color: var(--c-crimson);
     line-height: 1;
 }
 
 /* --------------------------------------------------------------------------
-   12. LÁMINA DE CIERRE / CONTACTO (CARMESÍ INSTITUCIONAL #C8102E)
+   11. FORMULARIO DE CONTACTO / PRESUPUESTO
    -------------------------------------------------------------------------- */
-.section-closing-sheet {
-    padding-top: clamp(4.5rem, 9vw, 9rem);
-    padding-bottom: clamp(4.5rem, 9vw, 9rem);
-    border-bottom: 1px solid rgba(244, 243, 239, 0.35);
+.section-contact {
+    padding-top: clamp(4rem, 7vw, 6.5rem);
+    padding-bottom: clamp(4rem, 7vw, 6.5rem);
+    border-bottom: 1px solid var(--c-border);
 }
 
-.closing-asymmetric-layout {
+.contact-layout {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: clamp(2.5rem, 6vw, 7rem);
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(2.5rem, 6vw, 6rem);
 }
 
-.closing-lead-h2 {
-    font-size: clamp(2.5rem, 6vw, 5.5rem);
-    line-height: 0.98;
-    margin-bottom: 2rem;
+.contact-lead-h2 {
+    font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    color: var(--c-black);
 }
 
-.closing-desc {
-    font-size: clamp(1rem, 1.35vw, 1.25rem);
-    line-height: 1.5;
-    max-width: 640px;
-    margin-bottom: 3rem;
+.contact-desc {
+    font-size: clamp(1rem, 1.15vw, 1.125rem);
+    line-height: 1.65;
+    max-width: 580px;
+    margin-bottom: 2.5rem;
+    color: #4A4E58;
 }
 
-/* Formulario Institucional en Blanco Papel sobre Carmesí */
-.closing-form-panel {
-    border: 1px solid rgba(244, 243, 239, 0.45);
+.direct-channels-box {
+    border-top: 1px solid var(--c-border);
+    padding-top: 2rem;
+}
+
+.direct-channels-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--c-grey);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.direct-channels-list {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: var(--c-black);
+}
+
+.direct-channels-list a {
+    text-decoration: underline;
+}
+
+.direct-channels-list a:hover {
+    color: var(--c-crimson);
+}
+
+.contact-form-panel {
+    border: 1px solid var(--c-border);
     padding: clamp(1.75rem, 3.5vw, 3rem);
-    background-color: transparent;
+    background-color: var(--c-card);
 }
 
 .form-group-cad {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-label-cad {
     display: block;
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--c-paper);
+    letter-spacing: 0.02em;
+    color: var(--c-black);
     margin-bottom: 8px;
 }
 
 .form-input-cad {
     width: 100%;
-    border: 1px solid rgba(244, 243, 239, 0.5);
-    background: transparent;
-    color: var(--c-paper);
+    border: 1px solid var(--c-border);
+    background: var(--c-paper);
+    color: var(--c-black);
     padding: 14px 16px;
     font-size: 0.9375rem;
     outline: none;
-    transition: border-color var(--transition);
+    transition: border-color var(--transition), background-color var(--transition);
 }
 
 .form-input-cad:focus {
-    border-color: var(--c-paper);
-    background: rgba(244, 243, 239, 0.06);
+    border-color: var(--c-black);
+    background: #FFFFFF;
 }
 
 .form-input-cad::placeholder {
-    color: rgba(244, 243, 239, 0.5);
+    color: var(--c-grey);
+}
+
+select.form-input-cad {
+    cursor: pointer;
+}
+
+/* Feedback */
+.form-feedback-message {
+    padding: 14px 18px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--c-border);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+.form-feedback-message.is-success {
+    border-color: #2E7D32;
+    background-color: rgba(46, 125, 50, 0.08);
+    color: #1B5E20;
+}
+
+.form-feedback-message.is-error {
+    border-color: var(--c-crimson);
+    background-color: rgba(200, 16, 46, 0.08);
+    color: var(--c-crimson);
 }
 
 /* --------------------------------------------------------------------------
-   13. FOOTER INSTITUCIONAL (NEGRO ABSOLUTO #0B0B0C)
+   12. FOOTER
    -------------------------------------------------------------------------- */
 .site-footer {
-    background-color: var(--c-black);
-    padding-top: 5rem;
+    background-color: var(--c-paper);
+    padding-top: 4.5rem;
     padding-bottom: 3.5rem;
     color: var(--c-grey);
 }
@@ -1318,24 +1244,23 @@ body.show-cad-grid .cad-hud-tracker {
 .footer-grid-columns {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.2fr;
-    gap: clamp(2rem, 4vw, 5rem);
-    border-bottom: 1px solid var(--c-grey);
-    padding-bottom: 4rem;
+    gap: clamp(2rem, 4vw, 4.5rem);
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: 3.5rem;
 }
 
 .footer-brand-title {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
-    color: var(--c-paper);
+    font-size: 1.35rem;
+    color: var(--c-black);
     font-weight: 700;
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
 }
 
 .footer-col h4 {
-    color: var(--c-paper);
-    margin-bottom: 1.5rem;
-    font-size: 0.75rem;
+    color: var(--c-black);
+    margin-bottom: 1.25rem;
+    font-size: 0.8125rem;
 }
 
 .footer-links-list {
@@ -1347,8 +1272,8 @@ body.show-cad-grid .cad-hud-tracker {
 }
 
 .footer-links-list a {
-    font-size: 0.8125rem;
-    color: var(--c-grey);
+    font-size: 0.84375rem;
+    color: #555861;
 }
 
 .footer-links-list a:hover {
@@ -1360,10 +1285,10 @@ body.show-cad-grid .cad-hud-tracker {
     justify-content: space-between;
     align-items: center;
     padding-top: 2rem;
-    font-size: 0.6875rem;
-    letter-spacing: 0.04em;
+    font-size: 0.75rem;
     flex-wrap: wrap;
     gap: 16px;
+    color: var(--c-grey);
 }
 
 .footer-legal-links {
@@ -1372,11 +1297,11 @@ body.show-cad-grid .cad-hud-tracker {
 }
 
 .footer-legal-links a:hover {
-    color: var(--c-paper);
+    color: var(--c-black);
 }
 
 /* --------------------------------------------------------------------------
-   14. MODAL / LIGHTBOX DE TELEMETRÍA (FULL SCREEN INSPECTION)
+   13. LIGHTBOX MODAL & COOKIES
    -------------------------------------------------------------------------- */
 .gallery-modal-hud {
     position: fixed;
@@ -1384,7 +1309,7 @@ body.show-cad-grid .cad-hud-tracker {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(11, 11, 12, 0.96);
+    background: rgba(11, 11, 12, 0.95);
     z-index: 10000;
     display: none;
     flex-direction: column;
@@ -1400,24 +1325,24 @@ body.show-cad-grid .cad-hud-tracker {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--c-grey);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 12px;
 }
 
 .modal-hud-title {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--c-paper);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 .modal-hud-close {
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
-    color: var(--c-grey);
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
     cursor: pointer;
-    border: 1px solid var(--c-grey);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 6px 14px;
 }
 
@@ -1432,41 +1357,34 @@ body.show-cad-grid .cad-hud-tracker {
     justify-content: center;
     flex-grow: 1;
     position: relative;
-    padding: 20px 0;
-    overflow: hidden;
+    padding: 1.5rem 0;
 }
 
 .modal-hud-img {
-    max-width: 100%;
     max-height: 80vh;
+    max-width: 90vw;
     object-fit: contain;
-    border: 1px solid var(--c-grey);
 }
 
 .modal-hud-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid var(--c-grey);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 12px;
     font-size: 0.75rem;
-    color: var(--c-grey);
+    color: #8A8D93;
 }
 
-/* --------------------------------------------------------------------------
-   15. BANNER DE COOKIES & CONSENTIMIENTO RGPD
-   -------------------------------------------------------------------------- */
 .cookie-banner-cad {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: var(--c-black);
-    border-top: 1px solid var(--c-grey);
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid var(--c-border);
     padding: 16px 0;
     z-index: 9990;
-    font-size: 0.75rem;
-    color: var(--c-grey);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05);
 }
 
 .cookie-cad-inner {
@@ -1474,43 +1392,55 @@ body.show-cad-grid .cad-hud-tracker {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    font-size: 0.8125rem;
     flex-wrap: wrap;
+    color: var(--c-black);
 }
 
 .cookie-cad-actions {
     display: flex;
-    gap: 12px;
-}
-
-.btn-cookie-accept {
-    background-color: var(--c-crimson);
-    color: var(--c-paper);
-    padding: 8px 18px;
-    font-weight: 600;
-    font-size: 0.6875rem;
-    letter-spacing: 0.05em;
-    cursor: pointer;
+    gap: 10px;
 }
 
 .btn-cookie-reject {
+    padding: 8px 16px;
     border: 1px solid var(--c-grey);
-    color: var(--c-paper);
-    padding: 8px 18px;
+    color: var(--c-black);
+    font-size: 0.72rem;
     font-weight: 600;
-    font-size: 0.6875rem;
-    letter-spacing: 0.05em;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
+.btn-cookie-accept {
+    padding: 8px 16px;
+    background-color: var(--c-black);
+    color: #FFFFFF;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-cookie-accept:hover {
+    background-color: var(--c-crimson);
+}
+
 /* --------------------------------------------------------------------------
-   16. RESPONSIVE DESIGN & MEDIA QUERIES ORTOGONALES
+   14. RESPONSIVE
    -------------------------------------------------------------------------- */
-@media (max-width: 1100px) {
-    .nav-grid {
-        grid-template-columns: 1fr auto;
+@media (max-width: 1200px) {
+    .nav-action .nav-email-direct {
+        display: none;
+    }
+}
+
+@media (max-width: 1060px) {
+    .main-nav {
+        display: none;
     }
 
-    .nav-menu, .nav-action {
+    .nav-action .nav-phone-direct {
         display: none;
     }
 
@@ -1518,61 +1448,96 @@ body.show-cad-grid .cad-hud-tracker {
         display: flex;
     }
 
-    /* Menú Móvil Desplegable */
     .nav-menu.is-open {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: calc(var(--header-h) + var(--topbar-h));
+        top: var(--header-h);
         left: 0;
         width: 100vw;
-        height: calc(100vh - var(--header-h) - var(--topbar-h));
-        background-color: var(--c-black);
-        padding: 2rem clamp(1.25rem, 4vw, 3.5rem);
+        height: calc(100vh - var(--header-h));
+        background-color: var(--c-paper);
+        padding: 1.5rem clamp(1.25rem, 4vw, 2.5rem);
         margin-left: 0;
         z-index: 999;
         overflow-y: auto;
+        gap: 0;
     }
 
-    .nav-menu.is-open li {
-        border-right: none;
-        border-bottom: 1px solid var(--c-grey);
+    .nav-menu.is-open .nav-item {
+        width: 100%;
+        border-bottom: 1px solid var(--c-border);
     }
 
-    .nav-menu.is-open a {
-        padding: 1.25rem 0;
-        font-size: 1.15rem;
+    .nav-menu.is-open .nav-link {
+        padding: 1rem 0;
+        font-size: 1.05rem;
+        width: 100%;
+        justify-content: space-between;
     }
 
-    .hero-asymmetric-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-negative-zone {
-        min-height: auto;
-        border-left: none;
-        border-top: 1px solid rgba(244, 243, 239, 0.25);
-        padding-left: 0;
-        padding-top: 2rem;
-    }
-
-    .manifesto-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .manifesto-header {
+    .nav-menu.is-open .dropdown-menu {
         position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        padding: 0 0 1rem 0.5rem;
+        width: 100%;
+    }
+
+    .nav-menu.is-open .dropdown-inner {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .nav-menu.is-open .dropdown-cities-grid {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .nav-menu.is-open .dropdown-item {
+        padding: 6px 0;
+    }
+
+    .nav-menu.is-open .dropdown-city-item {
+        padding: 6px 0;
+    }
+
+    .mobile-contact-item {
+        display: block;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 2px solid var(--c-border);
+    }
+
+    .footer-grid-5 {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid-5 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero-asymmetric-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .services-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .project-item.span-8,
-    .project-item.span-4,
-    .project-item.span-6,
-    .project-item.negative-space-cell {
+    .project-item.span-4 {
         grid-column: span 12;
-    }
-
-    .protocol-step-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .calculator-terminal-grid {
@@ -1581,14 +1546,14 @@ body.show-cad-grid .cad-hud-tracker {
 
     .calc-terminal-inputs {
         border-right: none;
-        border-bottom: 1px solid var(--c-grey);
+        border-bottom: 1px solid var(--c-border);
     }
 
     .packages-cad-selector {
         grid-template-columns: 1fr;
     }
 
-    .closing-asymmetric-layout {
+    .contact-layout {
         grid-template-columns: 1fr;
     }
 
@@ -1598,11 +1563,8 @@ body.show-cad-grid .cad-hud-tracker {
 }
 
 @media (max-width: 640px) {
-    .metrics-cad-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .protocol-step-grid {
+    .services-grid,
+    .process-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1610,9 +1572,133 @@ body.show-cad-grid .cad-hud-tracker {
         grid-template-columns: 1fr;
     }
 
-    .top-telemetry-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
+    .project-specs-clean {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Email directo en cabecera y enlaces de contacto */
+.nav-email-direct {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--c-black);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.nav-email-direct:hover {
+    color: var(--c-crimson);
+}
+
+.mobile-contact-item {
+    display: none;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--c-border);
+}
+
+.mobile-contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mobile-city {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--c-grey);
+}
+
+.mobile-email {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--c-black);
+    text-decoration: underline;
+}
+
+.mobile-phone {
+    font-size: 0.95rem;
+    color: var(--c-black);
+    text-decoration: none;
+}
+
+.hero-email-direct {
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    color: #555861;
+}
+
+.hero-email-direct .email-highlight {
+    font-weight: 700;
+    color: var(--c-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.15s ease;
+}
+
+.hero-email-direct .email-highlight:hover {
+    color: var(--c-crimson);
+}
+
+.section-email-strip {
+    margin-top: 2.5rem;
+    padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--c-border);
+    background-color: var(--c-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.section-email-strip strong {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--c-black);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.section-email-strip p {
+    font-size: 0.875rem;
+    color: #555861;
+    margin: 0;
+}
+
+.section-email-strip a {
+    color: var(--c-black);
+    font-weight: 600;
+}
+
+.section-email-strip a:hover {
+    color: var(--c-crimson);
+}
+
+.calc-email-direct {
+    margin-top: 12px;
+    font-size: 0.8125rem;
+    color: #555861;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.calc-email-direct a {
+    font-weight: 700;
+    color: var(--c-black);
+    text-decoration: underline;
+}
+
+.calc-email-direct a:hover {
+    color: var(--c-crimson);
+}
+
+@media (max-width: 1100px) {
+    .mobile-contact-item {
+        display: block;
     }
 }
