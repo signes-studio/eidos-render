@@ -1277,10 +1277,15 @@ select.form-input-cad {
     margin-bottom: 0.75rem;
 }
 
-.footer-col h4 {
+.footer-col h4,
+.footer-col-title {
     color: var(--c-black);
     margin-bottom: 1.25rem;
     font-size: 0.8125rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .footer-links-list {
@@ -1692,7 +1697,8 @@ select.form-input-cad {
     gap: 16px;
 }
 
-.section-email-strip strong {
+.section-email-strip strong,
+.section-email-strip .strip-title {
     font-family: var(--font-heading);
     font-size: 1.05rem;
     color: var(--c-black);
@@ -1953,12 +1959,14 @@ select.form-input-cad {
 }
 
 .city-mesh-card {
+    position: relative;
     background-color: #FFFFFF;
     border: 1px solid var(--c-border);
     padding: 1.5rem;
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -1979,7 +1987,8 @@ select.form-input-cad {
     font-size: 1rem;
 }
 
-.city-card-header h3 {
+.city-card-header h3,
+.city-card-header .city-title {
     font-family: var(--font-heading);
     font-size: 1.1rem;
     font-weight: 700;
@@ -1999,6 +2008,15 @@ select.form-input-cad {
     font-weight: 700;
     color: var(--c-crimson);
     margin-top: auto;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.city-card-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
 }
 
 @media (max-width: 1024px) {
