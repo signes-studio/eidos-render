@@ -1598,7 +1598,7 @@ select.form-input-cad {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .footer-grid-5 {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -2026,7 +2026,7 @@ select.form-input-cad {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .investors-grid,
     .cities-mesh-grid {
         grid-template-columns: 1fr;
@@ -3832,36 +3832,130 @@ select.form-input-cad {
 
 /* --- AJUSTES GLOBALES DE CONTENCIÓN Y TIPOGRAFÍA --- */
 @media (max-width: 768px) {
-    /* Contención de viewport y márgenes de pantalla */
-    .container {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+    /* Contención estricta de viewport y márgenes de pantalla */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
     }
 
-    /* Jerarquía de titulares proporcionales sin cortes ni desbordes */
+    .container {
+        padding-left: clamp(14px, 4vw, 20px) !important;
+        padding-right: clamp(14px, 4vw, 20px) !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Jerarquía de titulares proporcionales con respiro para lectura natural */
     h1, .h1 {
-        font-size: clamp(1.95rem, 7.5vw, 2.75rem);
-        line-height: 1.1;
-        letter-spacing: -0.02em;
+        font-size: clamp(1.8rem, 6.8vw, 2.35rem);
+        line-height: 1.22;
+        letter-spacing: -0.015em;
+        margin-bottom: 1.25rem;
+        text-wrap: balance;
+        overflow-wrap: break-word;
     }
 
     h2, .h2, .section-title {
-        font-size: clamp(1.6rem, 5.5vw, 2.2rem);
-        line-height: 1.15;
+        font-size: clamp(1.45rem, 5.2vw, 1.95rem);
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.875rem;
+        overflow-wrap: break-word;
     }
 
     h3, .h3 {
-        font-size: clamp(1.2rem, 4vw, 1.45rem);
-        line-height: 1.25;
+        font-size: clamp(1.1rem, 3.8vw, 1.3rem);
+        line-height: 1.3;
+        overflow-wrap: break-word;
     }
 
     .subtitle, .section-desc {
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 0.9375rem;
+        line-height: 1.62;
+        color: #555861;
     }
 
     .section {
-        padding: clamp(40px, 7vw, 64px) 0;
+        padding: clamp(38px, 6.5vw, 56px) 0;
+    }
+
+    /* Cabecera compacta y segura sin desbordes horizontales */
+    .site-header {
+        height: 68px;
+    }
+
+    :root {
+        --header-h: 68px;
+    }
+
+    .nav-layout {
+        height: 100%;
+    }
+
+    .nav-action .btn-cad {
+        display: none !important;
+    }
+
+    .nav-action {
+        gap: 10px;
+    }
+
+    .brand-monogram .brand-title {
+        font-size: 1.05rem;
+        letter-spacing: -0.01em;
+    }
+
+    .brand-monogram .brand-desc {
+        font-size: 0.6875rem;
+    }
+
+    /* Cajón de navegación móvil a pantalla completa */
+    .main-nav .nav-menu.is-open {
+        top: 68px;
+        height: calc(100vh - 68px);
+        height: calc(100dvh - 68px);
+        padding: 1.25rem 1.25rem 3rem 1.25rem;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    .nav-menu.is-open .nav-link {
+        padding: 0.875rem 0;
+        font-size: 1.05rem;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-contact-item {
+        display: block !important;
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--c-border);
+    }
+
+    .mobile-contact-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-drawer-cta {
+        width: 100%;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--c-crimson);
+        color: #FFFFFF;
+        font-family: var(--font-body);
+        font-weight: 700;
+        font-size: 0.8125rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: 12px;
     }
 
     /* Botones CTA en móvil ocupan todo el ancho para facilitar el toque */
@@ -3881,32 +3975,615 @@ select.form-input-cad {
         text-align: center;
     }
 
-    /* Barra de metadatos superior (Casos de Estudio, FAQs, Tipologías) */
+    /* Barra de metadatos superior */
     .hero-meta-bar {
         gap: 10px 14px;
         font-size: 0.6875rem;
         padding-bottom: 1rem;
         margin-bottom: 1.25rem;
     }
+
+    /* --- HOME: SECCIÓN HERO --- */
+    .section-hero {
+        padding-top: clamp(2.5rem, 6vw, 3.75rem);
+        padding-bottom: clamp(2.75rem, 6.5vw, 4.25rem);
+    }
+
+    .hero-asymmetric-grid {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+    }
+
+    .badge-clean {
+        font-size: 0.65rem;
+        padding: 6px 10px;
+        white-space: normal;
+        line-height: 1.35;
+        max-width: 100%;
+        margin-bottom: 1.25rem;
+        text-align: left;
+    }
+
+    .hero-lead {
+        font-size: 1rem;
+        line-height: 1.68;
+        margin-bottom: 1.75rem;
+        color: #3F4249;
+    }
+
+    .hero-actions-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-actions-row .btn-cad {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+    .hero-email-direct {
+        font-size: 0.84375rem;
+        line-height: 1.55;
+        word-break: break-word;
+        padding-top: 0.25rem;
+    }
+
+    .hero-benefits-stack {
+        gap: 12px;
+        margin-top: 0.5rem;
+    }
+
+    .hero-benefit-card {
+        padding: 1.25rem 1rem;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .benefit-num {
+        font-size: 1.3rem;
+        min-width: 28px;
+    }
+
+    .benefit-title {
+        font-size: 0.95rem;
+        line-height: 1.25;
+        margin-bottom: 4px;
+    }
+
+    .benefit-desc {
+        font-size: 0.8125rem;
+        line-height: 1.5;
+        color: #555861;
+    }
+
+    /* --- HOME: SERVICIOS Y PROCESO --- */
+    .section-services,
+    .section-process {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .section-title-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 2rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .section-title-strip > div:last-child {
+        max-width: 100% !important;
+    }
+
+    .services-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+        border-top: 1px solid var(--c-border);
+        border-left: 1px solid var(--c-border);
+    }
+
+    .service-card,
+    .process-card {
+        min-height: auto;
+        padding: 1.5rem 1.25rem;
+        border-right: 1px solid var(--c-border);
+        border-bottom: 1px solid var(--c-border);
+    }
+
+    .service-num,
+    .process-step-num {
+        font-size: 1.15rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .service-card h3,
+    .process-card h3 {
+        font-size: 1.125rem;
+        line-height: 1.25;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-card p,
+    .process-card p {
+        font-size: 0.84375rem;
+        line-height: 1.55;
+    }
+
+    /* --- HOME: TIRA DE CORREO / CONVERSIÓN --- */
+    .section-email-strip {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        padding: 1.35rem 1.15rem;
+        margin-top: 2rem;
+    }
+
+    .section-email-strip .strip-title {
+        font-size: 0.95rem;
+        line-height: 1.35;
+        margin-bottom: 6px;
+    }
+
+    .section-email-strip p {
+        font-size: 0.84375rem;
+        line-height: 1.55;
+    }
+
+    .section-email-strip .btn-cad {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    /* --- HOME: SECCIÓN INVERSORES --- */
+    .section-investors {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .investors-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .investor-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .investor-card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .investor-card p {
+        font-size: 0.84375rem;
+        line-height: 1.55;
+        margin-bottom: 1.25rem;
+    }
+
+    .investor-highlights {
+        gap: 6px;
+        font-size: 0.8125rem;
+        margin-bottom: 1.25rem;
+    }
+
+    /* --- HOME: GALERÍA / PORTFOLIO --- */
+    .section-portfolio {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-item.span-8,
+    .project-item.span-4 {
+        grid-column: 1 / -1;
+    }
+
+    .project-media-wrap {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-info-block {
+        padding: 1.25rem 1rem;
+    }
+
+    .project-name {
+        font-size: 1.125rem;
+        line-height: 1.25;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-desc {
+        font-size: 0.84375rem;
+        line-height: 1.55;
+        margin-bottom: 1rem;
+    }
+
+    .project-specs-clean {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding-top: 0.75rem;
+    }
+
+    .project-tag-pill {
+        top: 10px;
+        left: 10px;
+        font-size: 0.625rem;
+        padding: 4px 8px;
+    }
+
+    .project-trigger-zoom {
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.625rem;
+        padding: 6px 12px;
+        min-height: 36px;
+    }
+
+    /* --- HOME: CALCULADORA CAD TERMINAL --- */
+    .section-calculator {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .calc-terminal-wrapper {
+        border: 1px solid var(--c-border);
+    }
+
+    .calc-terminal-bar {
+        padding: 10px 14px;
+        font-size: 0.6875rem;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .calculator-terminal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calc-terminal-inputs {
+        padding: 1.25rem 1rem;
+        border-right: none;
+        border-bottom: 1px solid var(--c-border);
+    }
+
+    .calc-field-group {
+        margin-bottom: 1.75rem;
+    }
+
+    .calc-field-legend {
+        font-size: 0.9375rem;
+        margin-bottom: 1rem;
+    }
+
+    .packages-cad-selector {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .cad-package-option {
+        padding: 16px 14px;
+    }
+
+    .cad-package-option .opt-name {
+        font-size: 0.9375rem;
+        margin-bottom: 6px;
+    }
+
+    .cad-package-option .opt-price {
+        font-size: 1.25rem;
+    }
+
+    .cad-package-option .opt-meta {
+        font-size: 0.72rem;
+        line-height: 1.45;
+        margin-top: 6px;
+    }
+
+    .upsells-cad-list {
+        gap: 10px;
+    }
+
+    .cad-upsell-item {
+        padding: 14px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .cad-upsell-item:has(input[type="checkbox"]) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .cad-upsell-item input[type="checkbox"] {
+        min-width: 22px;
+        min-height: 22px;
+        flex-shrink: 0;
+    }
+
+    .counter-cad-widget {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid var(--c-border);
+    }
+
+    .btn-counter-cad {
+        width: 46px;
+        height: 44px;
+        min-width: 46px;
+        min-height: 44px;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-counter-cad {
+        flex: 1;
+        max-width: 70px;
+        height: 44px;
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .calc-terminal-output {
+        padding: 1.5rem 1rem;
+    }
+
+    .output-header-strip {
+        padding-bottom: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .calc-breakdown-title {
+        font-size: 1.125rem !important;
+    }
+
+    .output-items-breakdown {
+        margin-bottom: 1.5rem;
+    }
+
+    .breakdown-row {
+        padding: 8px 0;
+        font-size: 0.8125rem;
+    }
+
+    .output-total-massive {
+        padding-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .total-figure-val {
+        font-size: 2.5rem;
+    }
+
+    #btnRequestQuote,
+    #btnWhatsappQuote {
+        min-height: 48px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.8125rem;
+    }
+
+    .calc-email-direct {
+        font-size: 0.8125rem;
+        line-height: 1.5;
+        margin-top: 14px;
+    }
+
+    /* --- HOME: PREGUNTAS FRECUENTES (FAQ) --- */
+    .section-faq {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .faq-summary {
+        padding: 1rem 0;
+        font-size: 0.9375rem;
+        line-height: 1.35;
+        gap: 12px;
+    }
+
+    .faq-icon {
+        font-size: 1.2rem;
+        min-width: 20px;
+        text-align: right;
+    }
+
+    .faq-answer {
+        font-size: 0.875rem;
+        line-height: 1.65;
+        padding-bottom: 1.25rem;
+    }
+
+    .faq-more-bar {
+        margin-top: 2rem;
+        padding: 1.25rem 1rem;
+        font-size: 0.8125rem;
+        line-height: 1.55;
+    }
+
+    /* --- HOME: FORMULARIO Y CONTACTO DIRECTO --- */
+    .section-contact {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info-panel {
+        margin-bottom: 0;
+    }
+
+    .contact-desc {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .direct-channels-box {
+        padding-top: 1.25rem;
+    }
+
+    .direct-channels-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .direct-channels-list {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .contact-form-panel {
+        padding: 1.5rem 1rem;
+    }
+
+    .form-group-cad {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-label-cad {
+        font-size: 0.72rem;
+        margin-bottom: 6px;
+    }
+
+    .form-input-cad {
+        min-height: 48px;
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
+
+    .btn-cad.btn-primary[type="submit"] {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.8125rem;
+    }
+
+    /* --- HOME: MALLA DE CIUDADES (SEO LOCAL) --- */
+    .section-cities-mesh {
+        padding: clamp(2.75rem, 6vw, 4rem) 0;
+    }
+
+    .cities-mesh-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .city-mesh-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .city-title {
+        font-size: 1.05rem;
+    }
+
+    .city-mesh-card p {
+        font-size: 0.8125rem;
+        line-height: 1.55;
+        margin-bottom: 0.875rem;
+    }
+
+    .city-card-link {
+        font-size: 0.75rem;
+        min-height: 38px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    /* --- PIE DE PÁGINA GLOBAL --- */
+    .site-footer {
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer-grid-5 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-col-title {
+        margin-bottom: 0.875rem;
+        font-size: 0.8125rem;
+    }
+
+    .footer-links-list li {
+        margin-bottom: 8px;
+    }
+
+    .footer-links-list a {
+        font-size: 0.84375rem;
+        line-height: 1.5;
+        display: inline-block;
+        padding: 3px 0;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+        padding-top: 1.5rem;
+        font-size: 0.8125rem;
+    }
+
+    .footer-legal-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 16px;
+    }
 }
 
+/* --- AJUSTES ESPECÍFICOS PARA PANTALLAS ULTRA-ESTRECHAS (<= 380px) --- */
 @media (max-width: 380px) {
-    /* Pantallas estrechas (iPhone SE, Galaxy A, etc.) */
     .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 
     h1, .h1 {
-        font-size: 1.85rem;
+        font-size: 1.65rem;
+        line-height: 1.25;
     }
 
-    .brand-title {
+    .brand-monogram .brand-title {
         font-size: 0.95rem;
     }
 
-    .brand-desc {
+    .brand-monogram .brand-desc {
         display: none;
+    }
+
+    .calc-terminal-inputs,
+    .calc-terminal-output,
+    .contact-form-panel,
+    .hero-benefit-card,
+    .service-card,
+    .process-card,
+    .investor-card,
+    .city-mesh-card {
+        padding: 1rem 0.75rem;
+    }
+
+    .btn-cad {
+        padding: 12px 14px;
+        font-size: 0.75rem;
     }
 }
 
@@ -4163,10 +4840,169 @@ select.form-input-cad {
 }
 
 /* --- PÁGINAS DE TIPOLOGÍAS Y CASOS DE ESTUDIO (obra-nueva.html, etc.) --- */
+.case-spec-panel {
+    border: 1px solid var(--c-border);
+    background-color: var(--c-paper-subtle);
+    padding: clamp(20px, 4vw, 36px);
+    margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.case-spec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.faq-list-block {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(28px, 4vw, 48px);
+}
+
+.faq-item-block {
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: clamp(20px, 3.5vw, 36px);
+}
+
+.faq-item-block:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.center-cta-wrap {
+    text-align: center;
+    margin-top: clamp(28px, 5vw, 50px);
+}
+
+.page-header {
+    padding: clamp(3rem, 5.5vw, 4.5rem) 0;
+}
+
+.section-legal {
+    padding-top: clamp(24px, 4vw, 40px);
+}
+
 @media (max-width: 768px) {
     .grid-2 {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .case-spec-panel {
+        padding: 1.25rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .case-spec-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .center-cta-wrap .btn-outline,
+    .center-cta-wrap .btn-primary {
+        width: 100%;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-header {
+        padding: clamp(2rem, 5vw, 3rem) 0;
+    }
+
+    .hero {
+        padding: clamp(2.5rem, 6vw, 3.75rem) 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.8rem, 6.8vw, 2.35rem) !important;
+        line-height: 1.22 !important;
+        letter-spacing: -0.015em;
+        margin: 0.875rem 0 1.15rem 0;
+        text-wrap: balance;
+        overflow-wrap: break-word;
+    }
+
+    .hero .subtitle {
+        font-size: 0.95rem;
+        line-height: 1.62;
+    }
+
+    /* Modal / Lightbox Header & Controls */
+    .modal-hud-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+        max-width: 96vw;
+    }
+
+    .modal-hud-header > div:last-child {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 8px !important;
+    }
+
+    .modal-hud-close,
+    .lightbox-prev,
+    .lightbox-next,
+    .lightbox-close {
+        flex: 1;
+        text-align: center;
+        padding: 10px 8px;
+        font-size: 0.75rem;
+        min-height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-hud-title {
+        font-size: 0.8125rem;
+        text-align: center;
+    }
+
+    /* Dropdown inside Mobile Drawer */
+    .nav-menu.is-open .dropdown-wide,
+    .nav-menu.is-open .dropdown-cities,
+    .nav-menu.is-open .dropdown-menu {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Upsells inside CAD calculator */
+    div.cad-upsell-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    label.cad-upsell-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    /* Footer Columna 1 full width */
+    .footer-grid-5 > div:first-child p {
+        max-width: 100% !important;
+    }
+
+    .project-specs-list li {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+}
+
+/* Tablet (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid,
+    .process-grid,
+    .investors-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
@@ -4178,6 +5014,16 @@ select.form-input-cad {
 
     .bg-dark .cta-group {
         margin-top: 1.5rem;
+    }
+
+    .bg-dark .btn-primary,
+    .bg-dark .btn-outline {
+        width: 100%;
+        max-width: 400px;
+        min-height: 48px;
+        margin: 0 auto;
+        display: inline-flex;
+        justify-content: center;
     }
 }
 

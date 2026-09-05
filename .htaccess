@@ -2,21 +2,25 @@
 # EIDOS RENDER (.htaccess) — Optimización de Servidor, Seguridad y SEO Técnico
 # ==============================================================================
 
-# 1. MOTOR DE REESCRITURA Y FORZADO HTTPS
+# 1. MOTOR DE REESCRITURA Y FORZADO HTTPS CANÓNICO 301
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Redirección Permanente 301: HTTP -> HTTPS
-    RewriteCond %{HTTPS} off [OR]
-    RewriteCond %{HTTP:X-Forwarded-Proto} =http
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # Redirección Permanente 301: www -> no-www (Canónico: https://eidosrender.es/)
+    # A. Redirección canónica permanente 301: www -> sin-www (https://eidosrender.es)
     RewriteCond %{HTTP_HOST} ^www\.eidosrender\.es$ [NC]
-    RewriteRule ^(.*)$ https://eidosrender.es/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://eidosrender.es/$1 [R=301,L]
 
-    # Eliminar barra final innecesaria en archivos estándar si existe
+    # B. Forzado permanente 301: HTTP -> HTTPS (Directo a https://eidosrender.es)
+    # Cubre Apache nativo (%{HTTPS} off), proxies inversos (X-Forwarded-Proto),
+    # terminadores SSL (X-Forwarded-SSL) y Cloudflare (CF-Visitor)
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+    RewriteCond %{HTTP:X-Forwarded-SSL} =off [OR]
+    RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
+    RewriteRule ^(.*)$ https://eidosrender.es/$1 [R=301,L]
+
+    # C. Eliminar barra final innecesaria en archivos estándar si existe
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 </IfModule>
