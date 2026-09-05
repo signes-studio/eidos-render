@@ -1,0 +1,55 @@
+# Eidos Render
+
+> Eidos Render es un estudio de visualización arquitectónica 3D e infografía inmobiliaria fotorrealista en España. Especializado en servicios B2B para promotoras inmobiliarias, estudios de arquitectura, comercializadoras e inversores (family offices y house flipping), orientado a acelerar la preventa sobre plano (off-plan) con entregas rápidas en 72 horas y tarifas con precios cerrados.
+
+Eidos Render diseña y produce renders 3D de exteriores (fachadas y volumetrías), infografías de interiores con amueblamiento y memorias de calidades reales, zonas comunes y paisajismo, planos comerciales 3D y recorridos virtuales interactivos. Su metodología técnica sustituye los planos 2D abstractos por herramientas visuales de alta conversión que reducen la incertidumbre del comprador final, aceleran la liberación de préstamos promotores bancarios y acortan los periodos de comercialización.
+
+## Datos Clave del Estudio
+
+- **Propuesta de valor**: Venta sobre plano sin fricción comercial mediante infografías 3D hiperrealistas de alta fidelidad arquitectónica.
+- **Público objetivo**: Promotoras de obra nueva, comercializadoras inmobiliarias, arquitectos, gestoras de cooperativas, fondos de inversión inmobiliaria y empresas de reforma y house flipping.
+- **Plazos de entrega**: Primeros borradores de volumetría, cámara y encuadre en 48 a 72 horas. Entrega del paquete final de alta resolución en 3 a 5 días hábiles.
+- **Garantía comercial**: Precios 100% cerrados desde el primer día, con rondas de ajustes técnicos incluidas y sin costes imprevistos.
+- **Tarifas base**: Paquetes estandarizados desde 350€ + IVA (Pack Inversor) y 750€ + IVA (Pack Promotora Residencial).
+- **Cobertura geográfica**: Sede central en Valencia con servicio y capacidad técnica para proyectos en toda España (Madrid, Málaga, Costa del Sol, Alicante, Sevilla, Bilbao y resto del territorio).
+- **Canales de contacto**:
+  - Web: https://eidosrender.es
+  - Correo electrónico: info@eidosrender.es
+  - Teléfono / WhatsApp: +34 614 45 91 44
+  - Formulario de contacto: https://eidosrender.es/contacto
+
+## Servicios Principales & Catálogo B2B
+
+- [Servicios y Tarifas B2B](https://eidosrender.es/servicios): Catálogo completo de paquetes de infografía con precios cerrados y comparativa de especificaciones técnicas.
+- [Calculadora de Presupuestos](https://eidosrender.es/#calculadora): Estimador interactivo en tiempo real para cotizar paquetes residenciales y vistas adicionales al instante.
+- [Renders para Promotoras & Obra Nueva](https://eidosrender.es/obra-nueva): Infografías exteriores diurnas y atardecer, zonas comunitarias (piscinas, terrazas, portales) para preventa sobre plano de edificios residenciales.
+- [Renders para Villas & Unifamiliares Prime](https://eidosrender.es/vivienda-unifamiliar): Modelado de chalets y villas exclusivas de alta gama con paisajismo mediterráneo para compradores internacionales.
+- [Renders para Reforma Integral & Interiorismo](https://eidosrender.es/reforma-de-piso): Infografías de salones, cocinas abiertas y suites contemporáneas para vender viviendas antes de iniciar o concluir la obra física.
+- [Renders para House Flipping & Inversores](https://eidosrender.es/renders-para-house-flipping): Soluciones CGI ultra rápidas (borradores en 72h) para comercializar en Idealista o Fotocasa desde el día de adquisición del activo.
+
+## Portfolio & Casos de Estudio
+
+- [Portfolio de Proyectos](https://eidosrender.es/portfolio): Galería interactiva categorizada de proyectos ejecutados con visor en alta definición.
+- [Metodología de Trabajo en 4 Pasos](https://eidosrender.es/#proceso): Flujo transparente (1. Recepción de planos CAD/PDF, 2. Borradores en 72h, 3. Iluminación y acabados, 4. Entrega final en 4K Ultra HD).
+
+## Cobertura Territorial (Hubs Inmobiliarios en España)
+
+- [Renders en Valencia](https://eidosrender.es/renders-valencia): Hub principal en Valencia, l'Horta y costa levantina.
+- [Renders en Madrid](https://eidosrender.es/renders-madrid): Infografía inmobiliaria para el mercado residencial prime y promociones en la Comunidad de Madrid.
+- [Renders en Málaga & Costa del Sol](https://eidosrender.es/renders-malaga): Visualización arquitectónica para inversores y compradores internacionales en Marbella, Estepona y Málaga capital.
+- [Renders en Alicante](https://eidosrender.es/renders-alicante): Renders de obra nueva y unifamiliares en la Costa Blanca.
+- [Renders en Sevilla](https://eidosrender.es/renders-sevilla): Visualización comercial para promociones residenciales en Sevilla y Andalucía occidental.
+- [Renders en Bilbao](https://eidosrender.es/renders-bilbao): Infografías 3D de alta precisión técnica para promociones en Bizkaia y el norte de España.
+
+## Recursos, Preguntas Frecuentes y Legal
+
+- [Preguntas Frecuentes (FAQ)](https://eidosrender.es/faq): Respuestas sobre documentación técnica admitida (DWG, PDF, croquis), rondas de cambios, facturación y derechos de uso.
+- [Blog de Estrategia Inmobiliaria](https://eidosrender.es/blog): Guías sobre cómo vender sobre plano, cálculo de ROI de infografía y estrategias de marketing inmobiliario.
+- [Contacto Directo](https://eidosrender.es/contacto): Vía directa para envío de documentación técnica y obtención de propuesta económica en menos de 24h.
+- [Aviso Legal](https://eidosrender.es/aviso-legal): Información legal corporativa.
+- [Política de Privacidad](https://eidosrender.es/privacidad): Tratamiento de datos de contacto comercial conforme al RGPD.
+- [Política de Cookies](https://eidosrender.es/cookies): Información sobre gestión de cookies técnicas y analíticas.
+
+## Documentación Completa para Agentes y LLMs
+
+- [Base de Conocimiento Expandida (llms-full.txt)](https://eidosrender.es/llms-full.txt): Archivo completo con el detalle de paquetes, precios desglosados, especificaciones técnicas, preguntas frecuentes ampliadas y metodología de trabajo.

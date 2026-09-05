@@ -1,0 +1,157 @@
+# Eidos Render — Base de Conocimiento Completa para LLMs y Agentes de IA
+
+> Documento exhaustivo de referencia técnica, comercial y operativa sobre Eidos Render (eidosrender.es), estudio de visualización arquitectónica 3D e infografía inmobiliaria fotorrealista en España.
+
+---
+
+## 1. Perfil Corporativo y Propuesta de Valor
+
+- **Nombre comercial**: Eidos Render
+- **Sitio web oficial**: https://eidosrender.es
+- **Ubicación sede**: Valencia, España (con servicio y cobertura nacional para toda España)
+- **Actividad principal**: Estudio de visualización arquitectónica 3D, renders comerciales e infografía inmobiliaria fotorrealista.
+- **Enfoque de negocio**: Exclusivamente B2B (Business-to-Business) orientado a promotoras inmobiliarias, comercializadoras de obra nueva, gestoras de suelo y cooperativas, estudios de arquitectura, fondos de inversión inmobiliaria y operadores de house flipping.
+- **Misión de negocio**: Reducir la incertidumbre visual del comprador particular mediante imágenes hiperrealistas de máxima definición para acelerar el ritmo de reservas en preventa sobre plano (off-plan), justificar el valor de mercado de cada vivienda, facilitar la liberación del préstamo promotor bancario y acortar los plazos de comercialización.
+- **Pilares diferenciales**:
+  1. **Velocidad de entrega**: Primeros borradores de volumetría, cámara y encuadre en 48 a 72 horas para que el promotor no detenga su calendario de lanzamiento comercial. Entrega de paquetes finales en 3 a 5 días hábiles.
+  2. **Precios 100% cerrados**: Tarifas transparentes por paquete sin sobrecostes imprevistos de última hora y con rondas de ajustes técnicos incluidas.
+  3. **Calidad nativa 4K Ultra HD**: Archivos de máxima resolución preparados para vallas de obra de gran formato, catálogos impresos de ventas, portales inmobiliarios (Idealista, Fotocasa) y campañas en redes sociales.
+  4. **Compromiso técnico riguroso**: Modelado fiel sobre planos CAD (DWG) o PDF y memorias de calidades reales (materiales, iluminación, paisajismo y mobiliario contemporáneo neutro).
+
+---
+
+## 2. Tarifas y Paquetes de Servicios Estandarizados
+
+Eidos Render estructura su oferta en paquetes cerrados pensados para proporcionar certidumbre presupuestaria desde el primer día:
+
+### Pack 01: Inversor & House Flipping (350 € + IVA)
+- **Público objetivo**: Inversores particulares, empresas de house flipping, agencias de compraventa y arquitectos que gestionan reformas integrales.
+- **Objetivo comercial**: Publicar el piso reformado en portales inmobiliarios desde el día en que se adquiere el inmueble, vendiéndolo mientras se ejecutan las obras físicas para acortar el tiempo de tenencia del activo y maximizar la TIR anual de la operación.
+- **Entregables incluidos**:
+  - Revisión y cotejo técnico de planos o croquis acotados.
+  - 2 Renders interiores fotorrealistas en alta resolución (ej. Salón-comedor y Suite principal).
+  - Ambientación contemporánea, luminosa y comercialmente neutra.
+  - 1 Ronda completa de ajustes técnicos de iluminación y mobiliario.
+- **Plazo de entrega**: Primeros borradores en 72h; entrega final en 3-4 días hábiles.
+
+### Pack 02: Promotora Residencial (750 € + IVA) — Paquete Recomendado Obra Nueva
+- **Público objetivo**: Promotoras de obra nueva residencial, arquitectos y comercializadoras inmobiliarias de edificios plurifamiliares y urbanizaciones.
+- **Objetivo comercial**: Alcanzar el porcentaje de preventas exigido por la entidad bancaria para liberar el préstamo promotor, equipar la caseta de ventas y vestir el dossier comercial y valla de obra.
+- **Entregables incluidos**:
+  - Modelado 3D integral del edificio a partir de planos CAD (DWG) de arquitectura.
+  - 1 Render exterior principal de fachada (perspectiva diurna o al atardecer con integración de accesos y vegetación).
+  - 2 Renders interiores fotorrealistas (ej. Salón con ventanales a terraza y Dormitorio principal / Cocina de diseño).
+  - 1 Plano comercial 3D acotado y amueblado para que el comprador entienda la distribución espacial de un vistazo.
+  - Resolución nativa 4K Ultra HD lista para gran formato.
+  - 1 Ronda completa de revisiones y ajustes técnicos incluida.
+- **Plazo de entrega**: Primeros borradores en 72h; entrega final en 4-5 días hábiles.
+
+### Pack 03: Marketing Integral & Gran Promoción (1.450 € + IVA)
+- **Público objetivo**: Grandes promociones residenciales, complejos plurifamiliares con zonas comunitarias y desarrollos de alto valor.
+- **Objetivo comercial**: Campaña omnicanal completa de preventa sobre plano para comercializadoras líderes, catálogos premium y vallas gigantes.
+- **Entregables incluidos**:
+  - Múltiples perspectivas exteriores (fachada frontal, perspectiva tres cuartos, vista diurna y crepuscular).
+  - Colección de renders interiores de todas las tipologías clave de vivienda.
+  - Infografías de zonas comunes completas (piscina comunitaria, jardines, pistas deportivas, club social, portales).
+  - Colección completa de planos comerciales 3D de todas las distribuciones.
+  - Resolución 4K / 8K nativa para vallas y catálogos de lujo.
+  - Rondas de ajuste continuas durante el proceso de producción.
+- **Plazo de entrega**: Calendario acordado por fases según necesidades del promotor.
+
+### Complementos y Servicios Opcionales (Upsells CAD)
+- **Vistas adicionales interiores o exteriores**: +175 € / imagen adicional.
+- **Tour virtual 360º esférico interactivo**: +450 € por vivienda o estancia comunitaria, optimizado para caseta de ventas y visualización web.
+- **Integración fotográfica sobre fotografía aérea o dron**: +180 € por imagen, acoplando el edificio tridimensional sobre la parcela real y su entorno urbano o paisajístico consolidado.
+- **Acuerdos Marco B2B por Volumen**: Tarifas especiales negociadas para promotoras con múltiples fases anuales o comercializadoras con cartera continuada.
+
+---
+
+## 3. Metodología de Trabajo en 4 Fases
+
+Eidos Render opera con un proceso digital estandarizado, ágil y transparente:
+
+1. **Fase 1: Envío y Auditoría de Planos (Día 0)**
+   - El cliente envía la documentación técnica disponible: planos CAD (DWG), planos en PDF o croquis acotados, junto con la memoria de calidades (materiales, carpintería, acabados) o fotos de referencia.
+   - El estudio revisa la viabilidad técnica y emite presupuesto cerrado en menos de 24 horas laborables.
+2. **Fase 2: Modelado 3D y Primeros Borradores (48 a 72 Horas)**
+   - Construcción de la geometría tridimensional precisa y posicionamiento de cámaras virtuales.
+   - Envío de borradores en baja resolución con los ángulos, encuadres y volúmenes propuestos para que el cliente elija las mejores perspectivas de venta.
+3. **Fase 3: Iluminación, Materiales y Ajustes Técnicos**
+   - Configuración de iluminación solar natural, texturas de alta resolución (hormigón, madera, porcelánicos, vidrio) y amueblamiento contemporáneo.
+   - El cliente revisa la composición y se aplica la ronda de ajustes técnicos incluida.
+4. **Fase 4: Renderizado Final y Entrega en 4K**
+   - Procesamiento en alta definición (4K Ultra HD / 3840x2160 píxeles o superior) en formato WebP optimizado y JPG/TIFF de máxima calidad.
+   - Envío mediante enlace de descarga directa con cesión total de derechos comerciales para uso publicitario sin límites temporales.
+
+---
+
+## 4. Tipologías Arquitectónicas Desarrolladas
+
+### Edificios de Obra Nueva Plurifamiliar (https://eidosrender.es/obra-nueva)
+- Modelado de fachadas principales, balcones, terrazas y volúmenes urbanos.
+- Zonas comunes: accesos peatonales, portales de diseño, piscina comunitaria, solárium y garajes.
+- Planos comerciales 3D para catálogos y folletos comerciales en caseta.
+
+### Viviendas Unifamiliares, Chalets y Villas Prime (https://eidosrender.es/vivienda-unifamiliar)
+- Arquitectura contemporánea aislada de alto standing.
+- Paisajismo mediterráneo, láminas de agua, pérgolas bioclimáticas y zonas chill-out.
+- Vistas a doble altura en salones, cocinas con isla y dormitorios en suite con vestidor.
+- Enfoque orientado a captar compradores e inversores internacionales en enclaves prime.
+
+### Reforma Integral & Interiorismo (https://eidosrender.es/reforma-de-piso)
+- Revalorización visual de pisos urbanos antiguos o desactualizados.
+- Espacios diáfanos con unión de salón y cocina americana, maximización de la luz natural y carpintería en madera cálida.
+- Herramienta para estudios de interiorismo, contratistas y agentes inmobiliarios.
+
+### Operaciones de House Flipping (https://eidosrender.es/renders-para-house-flipping)
+- Renders orientados exclusivamente a la velocidad de desinversión.
+- Presupuesto ajustado desde 350€ para garantizar que el coste CGI represente una fracción mínima del margen de beneficio de la reforma.
+- Publicación inmediata en portales inmobiliarios (Idealista, Fotocasa, Habitaclia) desde la firma de arras o compra.
+
+---
+
+## 5. Cobertura Territorial en España
+
+Eidos Render opera de forma 100% digitalizada y eficiente en todo el territorio nacional español, con especial penetración en los principales polos de desarrollo inmobiliario:
+
+- **Valencia (https://eidosrender.es/renders-valencia)**: Sede del estudio. Proyectos en Valencia capital, Ensanche, Campanar, Patraix, l'Horta Nord, l'Horta Sud y municipios de costa (Sagunto, Cullera, Gandía).
+- **Madrid (https://eidosrender.es/renders-madrid)**: Cobertura en Madrid capital (Barrio de Salamanca, Chamartín, Chamberí, Valdebebas, Madrid Nuevo Norte) y municipios residenciales (Pozuelo de Alarcón, Las Rozas, Majadahonda, Alcobendas, Boadilla del Monte).
+- **Málaga & Costa del Sol (https://eidosrender.es/renders-malaga)**: Renders para villas prime, complejos residenciales y desarrollos de lujo en Marbella, Benahavís, Estepona, Mijas, Fuengirola y Málaga capital.
+- **Alicante & Costa Blanca (https://eidosrender.es/renders-alicante)**: Infografías para promociones residenciales y chalets de alto standing en Alicante ciudad, Playa de San Juan, Benidorm, Jávea, Altea, Dénia y Torrevieja.
+- **Sevilla (https://eidosrender.es/renders-sevilla)**: Renders 3D para el mercado residencial en Sevilla capital (Nervión, Triana, Los Remedios), Dos Hermanas, Mairena del Aljarafe y Tomares.
+- **Bilbao & País Vasco (https://eidosrender.es/renders-bilbao)**: Infografía arquitectónica con rigor técnico para proyectos en Bilbao (Abandoibarra, Zorrotzaurre), Getxo, San Sebastián (Donostia) y Vitoria-Gasteiz.
+
+---
+
+## 6. Preguntas Frecuentes Técnicas y Operativas (FAQ)
+
+### ¿Qué documentación técnica mínima se necesita para iniciar un proyecto?
+Únicamente se precisan los planos de distribución y alzados en formato CAD (DWG) o en formato PDF acotado. En el caso de reformas sencillas o house flipping, un croquis acotado con medidas generales es suficiente. Si se dispone de memoria de calidades, fotos de acabados o especificaciones de carpintería, se incorporan directamente al modelo.
+
+### ¿Cuáles son los plazos habituales de entrega?
+Los primeros borradores de cámara, volumetría y encuadre se entregan en **48 a 72 horas hábiles**. Tras la revisión del cliente y la selección de ángulos, las imágenes finales en resolución 4K se entregan habitualmente en un plazo total de **3 a 5 días hábiles**.
+
+### ¿Qué incluye exactamente el precio de los paquetes cerrados?
+El modelado tridimensional completo según planos, la configuración de iluminación fotorrealista (diurna o atardecer), la ambientación con mobiliario comercial contemporáneo neutro, al menos 1 ronda completa de ajustes técnicos y la entrega de archivos en resolución nativa 4K sin marcas de agua.
+
+### ¿Se pueden solicitar rondas de cambio adicionales?
+Todos los paquetes incluyen una ronda técnica completa sin coste añadido. En caso de requerir cambios sustanciales sobre proyecto que modifiquen la arquitectura aprobada (por ejemplo, cambios estructurales de distribución o modificación de tabiquería posterior a la aprobación del borrador), se presupuestan de forma transparente y cerrada antes de ejecutarlos.
+
+### ¿Cómo se gestionan proyectos fuera de Valencia?
+El 100% de la gestión, recepción de planos, envío de borradores interactivos y entrega de imágenes finales se realiza de manera telemática mediante correo electrónico, teléfono, WhatsApp y plataformas de transferencia en la nube (WeTransfer, Dropbox, Google Drive), sin necesidad de desplazamientos físicos.
+
+### ¿Cuáles son las condiciones de pago y contratación?
+Para paquetes estándar, se abona un 50% en concepto de reserva y arranque de producción tras la aceptación del presupuesto, y el 50% restante a la aprobación y entrega de los archivos finales en alta resolución. Se emite factura oficial con IVA desglosado.
+
+### ¿Quién posee los derechos de las imágenes generadas?
+El cliente adquiere la **propiedad total de los derechos de explotación comercial y publicitaria** de las imágenes sin límite temporal ni geográfico, pudiendo utilizarlas libremente en vallas publicitarias, dossiers de venta, prensa, catálogos impresos, portales inmobiliarios y campañas digitales.
+
+---
+
+## 7. Contacto y Vías de Comunicación
+
+- **Página de contacto**: https://eidosrender.es/contacto
+- **Correo electrónico general**: info@eidosrender.es
+- **Atención telefónica / WhatsApp**: +34 614 45 91 44
+- **Horario de atención**: Lunes a Viernes, de 09:00 a 18:00 h (CET)
+- **Tiempo de respuesta a presupuestos**: Menos de 24 horas laborables con propuesta económica detallada y cerrada.

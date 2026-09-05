@@ -23,3 +23,7 @@ Disallow: /enviar.php
 
 # Indicación de la ubicación exacta del sitemap para indexación
 Sitemap: https://eidosrender.es/sitemap.xml
+
+# Especificación LLMs.txt para agentes autónomos y modelos de lenguaje (https://llmstxt.org)
+# LLMs: https://eidosrender.es/llms.txt
+# LLMs-Full: https://eidosrender.es/llms-full.txt
