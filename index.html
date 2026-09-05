@@ -647,7 +647,9 @@
                             <span class="project-tag-pill">Obra Nueva Plurifamiliar</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-fachada-edificio-obra-nueva-800.webp 800w, img/render-fachada-edificio-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 900px">
-                                <img src="img/render-fachada-edificio-obra-nueva.jpg" 
+                                <img src="img/render-fachada-edificio-obra-nueva.jpg"
+                                     srcset="img/render-fachada-edificio-obra-nueva-800.jpg 800w, img/render-fachada-edificio-obra-nueva.jpg 1600w"
+                                     sizes="(max-width: 768px) 100vw, 900px" 
                                      alt="Edificio Residencial Plurifamiliar — Fachada Principal"
                                      width="800" height="500"
                                      loading="eager"
@@ -695,7 +697,9 @@
                             <span class="project-tag-pill">Interior de Calidades</span>
                             <picture>
                                 <source type="image/webp" srcset="img/infografia-3d-salon-moderno-doble-altura-800.webp 800w, img/infografia-3d-salon-moderno-doble-altura.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
-                                <img src="img/infografia-3d-salon-moderno-doble-altura.jpg" 
+                                <img src="img/infografia-3d-salon-moderno-doble-altura.jpg"
+                                     srcset="img/infografia-3d-salon-moderno-doble-altura-800.jpg 800w, img/infografia-3d-salon-moderno-doble-altura.jpg 1600w"
+                                     sizes="(max-width: 768px) 100vw, 500px" 
                                      alt="Salón a Doble Altura con Hormigón y Roble"
                                      width="800" height="500"
                                      loading="lazy"
@@ -742,7 +746,9 @@
                             <span class="project-tag-pill">Detalle de Cocina</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-cocina-moderna-isla-madera-800.webp 800w, img/render-cocina-moderna-isla-madera.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
-                                <img src="img/render-cocina-moderna-isla-madera.jpg" 
+                                <img src="img/render-cocina-moderna-isla-madera.jpg"
+                                     srcset="img/render-cocina-moderna-isla-madera-800.jpg 800w, img/render-cocina-moderna-isla-madera.jpg 1600w"
+                                     sizes="(max-width: 768px) 100vw, 500px" 
                                      alt="Cocina con Isla en Madera de Roble"
                                      width="800" height="500"
                                      loading="lazy"
@@ -789,7 +795,9 @@
                             <span class="project-tag-pill">Vivienda Unifamiliar</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.webp 800w, img/render-exterior-vivienda-unifamiliar-piscina.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
-                                <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg" 
+                                <img src="img/render-exterior-vivienda-unifamiliar-piscina.jpg"
+                                     srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.jpg 800w, img/render-exterior-vivienda-unifamiliar-piscina.jpg 1600w"
+                                     sizes="(max-width: 768px) 100vw, 500px" 
                                      alt="Villa Unifamiliar Aislada con Piscina"
                                      width="800" height="500"
                                      loading="lazy"
@@ -836,7 +844,9 @@
                             <span class="project-tag-pill">Suite & Baño</span>
                             <picture>
                                 <source type="image/webp" srcset="img/render-bano-moderno-ducha-minimalista-800.webp 800w, img/render-bano-moderno-ducha-minimalista.webp 1600w" sizes="(max-width: 768px) 100vw, 500px">
-                                <img src="img/render-bano-moderno-ducha-minimalista.jpg" 
+                                <img src="img/render-bano-moderno-ducha-minimalista.jpg"
+                                     srcset="img/render-bano-moderno-ducha-minimalista-800.jpg 800w, img/render-bano-moderno-ducha-minimalista.jpg 1600w"
+                                     sizes="(max-width: 768px) 100vw, 500px" 
                                      alt="Baño Moderno con Ducha Minimalista"
                                      width="800" height="500"
                                      loading="lazy"
@@ -883,7 +893,9 @@
                             <span class="project-tag-pill">Zonas Comunes & Paisajismo</span>
                             <picture>
                                 <source type="image/webp" srcset="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp 800w, img/infografia-exterior-zonas-comunes-obra-nueva.webp 1600w" sizes="(max-width: 768px) 100vw, 900px">
-                                <img src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg" 
+                                <img src="img/infografia-exterior-zonas-comunes-obra-nueva.jpg"
+                                     srcset="img/infografia-exterior-zonas-comunes-obra-nueva-800.jpg 800w, img/infografia-exterior-zonas-comunes-obra-nueva.jpg 1600w"
+                                     sizes="(max-width: 768px) 100vw, 900px" 
                                      alt="Zonas Comunes con Pérgola y Jardines"
                                      width="800" height="500"
                                      loading="lazy"
@@ -1310,6 +1322,11 @@
                     <div>
                         <form class="contact-form contact-form-panel" action="enviar.php" method="POST" id="contactForm">
                             
+                            <div class="honeypot-field visually-hidden" aria-hidden="true">
+                                <label for="_gotcha_b2b">Dejar este campo vacío si eres humano</label>
+                                <input type="text" id="_gotcha_b2b" name="_gotcha_b2b" tabindex="-1" autocomplete="off" aria-hidden="true">
+                            </div>
+
                             <div class="form-group-cad">
                                 <label for="contactName" class="form-label-cad">Nombre y Empresa / Promotora *</label>
                                 <input type="text" id="contactName" name="nombre" class="form-input-cad" placeholder="Ej. Laura Martínez (Promotora Valencia)" required>
@@ -1384,7 +1401,7 @@
                     
                     <div class="city-mesh-card">
                         <div class="city-card-header">
-                            <span class="city-pin">📍</span>
+                            <span class="city-pin" aria-hidden="true"><svg class="city-pin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
                             <div class="city-title">Renders Madrid</div>
                         </div>
                         <p>Obra nueva en la capital, promociones prime en Barrio de Salamanca, Chamberí y nuevos desarrollos urbanísticos.</p>
@@ -1393,7 +1410,7 @@
 
                     <div class="city-mesh-card">
                         <div class="city-card-header">
-                            <span class="city-pin">📍</span>
+                            <span class="city-pin" aria-hidden="true"><svg class="city-pin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
                             <div class="city-title">Renders Valencia</div>
                         </div>
                         <p>Infografías de obra nueva en Valencia centro, residenciales en l'Horta y promociones costeras con alta demanda inversora.</p>
@@ -1402,7 +1419,7 @@
 
                     <div class="city-mesh-card">
                         <div class="city-card-header">
-                            <span class="city-pin">📍</span>
+                            <span class="city-pin" aria-hidden="true"><svg class="city-pin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
                             <div class="city-title">Renders Málaga & Costa del Sol</div>
                         </div>
                         <p>Villas de lujo en Marbella, Benahavís y Estepona, y torres residenciales en Málaga capital para compradores internacionales.</p>
@@ -1411,7 +1428,7 @@
 
                     <div class="city-mesh-card">
                         <div class="city-card-header">
-                            <span class="city-pin">📍</span>
+                            <span class="city-pin" aria-hidden="true"><svg class="city-pin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
                             <div class="city-title">Renders Alicante & Costa Blanca</div>
                         </div>
                         <p>Residenciales turísticos y chalets de diseño en Jávea, Altea, Calpe, Benidorm y Playa de San Juan.</p>
@@ -1420,7 +1437,7 @@
 
                     <div class="city-mesh-card">
                         <div class="city-card-header">
-                            <span class="city-pin">📍</span>
+                            <span class="city-pin" aria-hidden="true"><svg class="city-pin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
                             <div class="city-title">Renders Sevilla & Andalucía</div>
                         </div>
                         <p>Promociones de vivienda plurifamiliar, rehabilitaciones de palacetes y casas señoriales para inversores patrimoniales.</p>
@@ -1429,7 +1446,7 @@
 
                     <div class="city-mesh-card">
                         <div class="city-card-header">
-                            <span class="city-pin">📍</span>
+                            <span class="city-pin" aria-hidden="true"><svg class="city-pin-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
                             <div class="city-title">Renders Bilbao & País Vasco</div>
                         </div>
                         <p>Arquitectura residencial contemporánea, proyectos de regeneración urbana y promociones unifamiliares en Bizkaia.</p>

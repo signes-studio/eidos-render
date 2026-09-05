@@ -23,11 +23,11 @@ export function initContactForm() {
     let honeypot = form.querySelector('input[name="_gotcha_b2b"]');
     if (!honeypot) {
         const hpContainer = document.createElement('div');
-        hpContainer.className = 'visually-hidden';
+        hpContainer.className = 'honeypot-field visually-hidden';
         hpContainer.setAttribute('aria-hidden', 'true');
         hpContainer.innerHTML = `
             <label for="_gotcha_b2b">Dejar este campo vacío si eres humano</label>
-            <input type="text" id="_gotcha_b2b" name="_gotcha_b2b" tabindex="-1" autocomplete="off">
+            <input type="text" id="_gotcha_b2b" name="_gotcha_b2b" tabindex="-1" autocomplete="off" aria-hidden="true">
         `;
         form.prepend(hpContainer);
         honeypot = hpContainer.querySelector('input');
