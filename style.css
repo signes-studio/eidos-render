@@ -887,8 +887,10 @@ p {
     margin-bottom: 1.25rem;
 }
 
-.process-card h3 {
+.process-card h3,
+.process-card-title {
     font-size: 1.125rem;
+    font-weight: 700;
     margin-bottom: 0.75rem;
     color: var(--c-black);
 }
@@ -4139,7 +4141,8 @@ select.form-input-cad {
     }
 
     .service-card h3,
-    .process-card h3 {
+    .process-card h3,
+    .process-card-title {
         font-size: 1.125rem;
         line-height: 1.25;
         margin-bottom: 0.5rem;
