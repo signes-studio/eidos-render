@@ -208,16 +208,16 @@ function prefillFromUrl(form) {
             }
         }
 
-        if (paquete || vistas || estimacion || extras) {
+        if (paquete || vistas || extras) {
             const mensajeTextarea = form.querySelector('textarea[name="mensaje"], #mensaje');
             if (mensajeTextarea && !mensajeTextarea.value.trim()) {
                 const details = [];
                 if (paquete) details.push(`Paquete: ${paquete}`);
                 if (vistas) details.push(`Volumen: ${vistas} vistas`);
-                if (extras && extras !== 'Ninguno') details.push(`Extras: ${extras}`);
-                if (estimacion) details.push(`Subtotal estimado: ${estimacion} + IVA`);
+                if (extras && extras !== 'Ninguno' && extras !== 'Estándar') details.push(`Extras: ${extras}`);
+                if (estimacion && estimacion !== 'A Medida' && !estimacion.includes('NaN')) details.push(`Detalle: ${estimacion}`);
                 
-                mensajeTextarea.value = `[Configuración desde Calculadora]\n${details.join(' · ')}\n\nDetalles del proyecto / enlace a planos (WeTransfer/Drive): `;
+                mensajeTextarea.value = `[Configuración del Proyecto]\n${details.join(' · ')}\n\nDetalles del proyecto / enlace a planos (WeTransfer/Drive): `;
             }
         }
     } catch {

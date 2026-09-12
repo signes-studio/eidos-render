@@ -1,7 +1,7 @@
 /**
  * ===================================================================
  * EIDOS RENDER — js/calculator.js
- * Calculadora de Presupuestos B2B basada en Paquetes Base + Upsells Dinámicos
+ * Configurador de Proyecto y Presupuesto B2B basado en Paquetes Base + Extras
  * ===================================================================
  */
 
@@ -35,51 +35,38 @@ export function initCalculator() {
     const btnWhatsappQuote = document.getElementById('btnWhatsappQuote');
     const btnMobileStickyCTA = document.getElementById('btnMobileStickyCTA');
 
-    // Tarifas del Sistema
+    // Paquetes y Soluciones del Sistema
     const PACKAGES = {
         'inversor': {
-            price: 350,
             name: 'Pack Inversor & Flipping',
             selectValue: 'reforma-flipping',
             desc: '2 Renders Interiores + Plano'
         },
         'promotora': {
-            price: 750,
             name: 'Pack Promotora Residencial',
             selectValue: 'obra-nueva',
             desc: '1 Ext + 2 Int + 1 Plano 3D (4K)'
         },
         'marketing-pro': {
-            price: 1450,
             name: 'Pack Marketing Pro',
             selectValue: 'obra-nueva',
             desc: 'Kit Integral Multiformato'
         }
     };
 
-    const EXTRA_RENDER_UNIT_PRICE = 175;
-    const EXTRA_TOUR_PRICE = 450;
-    const EXTRA_DRON_PRICE = 180;
-
-    let currentTotal = 0;
-    let animationFrameId = null;
-
     /**
-     * Calcula los importes según la selección
+     * Actualiza el alcance según la selección
      */
     function calculate() {
         // A. Paquete Base Seleccionado
         const selectedPackageKey = document.querySelector('input[name="basePackage"]:checked')?.value || 'promotora';
         const packageData = PACKAGES[selectedPackageKey] || PACKAGES['promotora'];
-        const basePrice = packageData.price;
 
-        // B. Renders Adicionales (+175€/ud)
+        // B. Renders Adicionales
         let extraRenders = parseInt(extraRendersInput ? extraRendersInput.value : 0, 10);
         if (isNaN(extraRenders) || extraRenders < 0) extraRenders = 0;
         if (extraRenders > 20) extraRenders = 20;
         if (extraRendersInput) extraRendersInput.value = extraRenders;
-
-        const extraRendersCost = extraRenders * EXTRA_RENDER_UNIT_PRICE;
 
         // C. Checkboxes de Extras Fijos
         let hasTour = false;
@@ -92,34 +79,22 @@ export function initCalculator() {
             }
         });
 
-        const tourCost = hasTour ? EXTRA_TOUR_PRICE : 0;
-        const dronCost = hasDron ? EXTRA_DRON_PRICE : 0;
-
-        // D. Total Final
-        const finalTotal = basePrice + extraRendersCost + tourCost + dronCost;
-
-        // E. Lista de extras para texto
+        // D. Lista de extras para texto
         const extrasList = [];
         if (extraRenders > 0) {
-            extrasList.push(`${extraRenders} render(s) extra (+${formatCurrency(extraRendersCost)}€)`);
+            extrasList.push(`${extraRenders} ${extraRenders === 1 ? 'render adicional' : 'renders adicionales'}`);
         }
-        if (hasTour) extrasList.push('Tour Virtual 360º (+450€)');
-        if (hasDron) extrasList.push('Integración Dron (+180€)');
+        if (hasTour) extrasList.push('Tour Virtual 360º');
+        if (hasDron) extrasList.push('Integración sobre Dron');
 
-        // F. Actualizar UI
+        // E. Actualizar UI
         updateSummaryUI({
             packageData,
-            basePrice,
             extraRenders,
-            extraRendersCost,
             hasTour,
             hasDron,
-            finalTotal,
             extrasList
         });
-
-        // G. Animar número
-        animateTotal(finalTotal);
     }
 
     /**
@@ -128,14 +103,14 @@ export function initCalculator() {
     function updateSummaryUI(data) {
         // Paquete Base
         if (summaryPackName) summaryPackName.textContent = data.packageData.name;
-        if (summaryPackPrice) summaryPackPrice.textContent = `${formatCurrency(data.basePrice)}€`;
+        if (summaryPackPrice) summaryPackPrice.textContent = 'Incluido';
 
         // Renders Adicionales
-        if (rowExtraRenders && summaryExtraRendersName && summaryExtraRendersVal) {
+        if (rowExtraRenders && summaryExtraRendersName) {
             if (data.extraRenders > 0) {
                 rowExtraRenders.style.display = 'flex';
-                summaryExtraRendersName.textContent = `${data.extraRenders} ${data.extraRenders === 1 ? 'Render adicional' : 'Renders adicionales'} (+175€/ud)`;
-                summaryExtraRendersVal.textContent = `+${formatCurrency(data.extraRendersCost)}€`;
+                summaryExtraRendersName.textContent = `${data.extraRenders} ${data.extraRenders === 1 ? 'Render adicional' : 'Renders adicionales'}`;
+                if (summaryExtraRendersVal) summaryExtraRendersVal.textContent = 'A medida';
             } else {
                 rowExtraRenders.style.display = 'none';
             }
@@ -144,19 +119,26 @@ export function initCalculator() {
         // Tour 360
         if (rowTour) {
             rowTour.style.display = data.hasTour ? 'flex' : 'none';
+            const val = rowTour.querySelector('.row-v, .item-val');
+            if (val) val.textContent = 'A medida';
         }
 
         // Dron
         if (rowDron) {
             rowDron.style.display = data.hasDron ? 'flex' : 'none';
+            const val = rowDron.querySelector('.row-v, .item-val');
+            if (val) val.textContent = 'A medida';
         }
+
+        // Totales textuales a medida
+        if (totalAmountEl) totalAmountEl.textContent = 'A Medida';
+        if (mobileStickyAmountEl) mobileStickyAmountEl.textContent = 'A Medida';
 
         // Parámetros para URL de Contacto
         const params = new URLSearchParams({
             paquete: data.packageData.name,
             tipologia: data.packageData.selectValue,
-            extras: data.extrasList.join(' · ') || 'Ninguno',
-            estimacion: `${formatCurrency(data.finalTotal)}€`
+            extras: data.extrasList.join(' · ') || 'Estándar'
         });
 
         const contactUrl = `https://eidosrender.es/contacto?${params.toString()}`;
@@ -166,62 +148,13 @@ export function initCalculator() {
         // Mensaje directo para WhatsApp
         if (btnWhatsappQuote) {
             const waText = encodeURIComponent(
-                `Hola Eidos Render, he configurado un presupuesto en vuestra web:\n` +
-                `• Paquete Base: ${data.packageData.name} (${formatCurrency(data.basePrice)}€)\n` +
-                `• Extras seleccionados: ${data.extrasList.join(', ') || 'Sin extras'}\n` +
-                `• Total Estimado: ${formatCurrency(data.finalTotal)}€ + IVA\n\n` +
-                `¿Podemos revisar los planos de mi proyecto?`
+                `Hola Eidos Render, he configurado un proyecto en vuestra web:\n` +
+                `• Paquete Base: ${data.packageData.name}\n` +
+                `• Extras seleccionados: ${data.extrasList.join(', ') || 'Sin extras'}\n\n` +
+                `¿Podemos revisar los planos para darme presupuesto cerrado?`
             );
             btnWhatsappQuote.href = `https://wa.me/34614459144?text=${waText}`;
         }
-    }
-
-    /**
-     * Animación de conteo suave con requestAnimationFrame
-     */
-    function animateTotal(target) {
-        if (currentTotal === target) return;
-
-        const start = currentTotal;
-        const duration = 260; // ms
-        const startTime = performance.now();
-
-        if (totalAmountEl) totalAmountEl.classList.add('is-updating');
-        if (mobileStickyAmountEl) mobileStickyAmountEl.classList.add('is-updating');
-
-        if (animationFrameId) cancelAnimationFrame(animationFrameId);
-
-        function step(now) {
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const easeOut = 1 - Math.pow(1 - progress, 3);
-            const value = Math.round(start + (target - start) * easeOut);
-            const formatted = formatCurrency(value);
-
-            if (totalAmountEl) totalAmountEl.textContent = formatted;
-            if (mobileStickyAmountEl) mobileStickyAmountEl.textContent = formatted;
-
-            if (progress < 1) {
-                animationFrameId = requestAnimationFrame(step);
-            } else {
-                currentTotal = target;
-                const finalFormatted = formatCurrency(target);
-                if (totalAmountEl) {
-                    totalAmountEl.textContent = finalFormatted;
-                    setTimeout(() => totalAmountEl.classList.remove('is-updating'), 100);
-                }
-                if (mobileStickyAmountEl) {
-                    mobileStickyAmountEl.textContent = finalFormatted;
-                    setTimeout(() => mobileStickyAmountEl.classList.remove('is-updating'), 100);
-                }
-            }
-        }
-
-        animationFrameId = requestAnimationFrame(step);
-    }
-
-    function formatCurrency(num) {
-        return new Intl.NumberFormat('es-ES').format(num);
     }
 
     // -------------------------------------------------------------------------
@@ -260,7 +193,6 @@ export function initCalculator() {
     if (mobileBar && 'IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                // Mostrar barra fija cuando la calculadora entra en viewport
                 if (entry.isIntersecting) {
                     mobileBar.classList.add('is-visible');
                 } else {

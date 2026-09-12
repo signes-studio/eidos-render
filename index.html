@@ -1014,12 +1014,12 @@
                 
                 <div class="section-title-strip">
                     <div>
-                        <span class="section-label">Tarifas Transparentes</span>
-                        <h2 id="calc-title">Calcula el Presupuesto de tu Promoción</h2>
+                        <span class="section-label">Configuración del Proyecto</span>
+                        <h2 id="calc-title">Configura el Presupuesto de tu Promoción</h2>
                     </div>
                     <div style="max-width: 520px;">
                         <p style="font-size: 0.9375rem; color: #555861;">
-                            Precios claros y cerrados desde el primer día. Selecciona el paquete base y añade los extras que necesites para tu campaña.
+                            Selecciona las necesidades de tu proyecto y recibe una propuesta cerrada y adaptada a tus planos en menos de 24 horas.
                         </p>
                     </div>
                 </div>
@@ -1027,8 +1027,8 @@
                 <div class="calc-terminal-wrapper">
                     
                     <div class="calc-terminal-bar">
-                        <span>Estimador de Presupuestos para Promociones Inmobiliarias</span>
-                        <span>Precios cerrados sin costes imprevistos</span>
+                        <span>Configurador de Servicios para Promociones Inmobiliarias</span>
+                        <span>Presupuestos a medida y entregas garantizadas</span>
                     </div>
 
                     <div class="calculator-terminal-grid">
@@ -1050,7 +1050,7 @@
                                         <div>
                                             <div class="opt-badge">Vivienda Unitaria</div>
                                             <div class="opt-name">Pack Inversor & Flipping</div>
-                                            <div class="opt-price">350€ <small style="font-size:0.75rem; color:#8A8D93;">+IVA</small></div>
+                                            <div class="opt-price"><span style="font-size:0.875rem; font-weight:600; color:var(--c-black);">A Medida</span></div>
                                         </div>
                                         <div class="opt-meta">
                                             · 2 Renders Interiores<br>
@@ -1065,7 +1065,7 @@
                                         <div>
                                             <div class="opt-badge">Recomendado Obra Nueva</div>
                                             <div class="opt-name">Pack Promotora Residencial</div>
-                                            <div class="opt-price">750€ <small style="font-size:0.75rem; color:#8A8D93;">+IVA</small></div>
+                                            <div class="opt-price"><span style="font-size:0.875rem; font-weight:600; color:var(--c-black);">A Medida</span></div>
                                         </div>
                                         <div class="opt-meta">
                                             · 1 Fachada + 2 Interiores<br>
@@ -1080,7 +1080,7 @@
                                         <div>
                                             <div class="opt-badge">Grandes Promociones</div>
                                             <div class="opt-name">Pack Marketing Integral</div>
-                                            <div class="opt-price">1.450€ <small style="font-size:0.75rem; color:#8A8D93;">+IVA</small></div>
+                                            <div class="opt-price"><span style="font-size:0.875rem; font-weight:600; color:var(--c-black);">A Medida</span></div>
                                         </div>
                                         <div class="opt-meta">
                                             · Múltiples exteriores diurnos<br>
@@ -1103,7 +1103,7 @@
                                     <!-- RENDERS ADICIONALES -->
                                     <div class="cad-upsell-item">
                                         <div>
-                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Vistas adicionales (+175€ / unidad)</div>
+                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Vistas adicionales (Interior / Exterior)</div>
                                             <div style="font-size: 0.8125rem; color: #555861; margin-top: 2px;">Perspectivas interiores o exteriores complementarias para tu catálogo.</div>
                                         </div>
                                         <div class="counter-cad-widget">
@@ -1116,19 +1116,19 @@
                                     <!-- TOUR 360 -->
                                     <label class="cad-upsell-item">
                                         <div>
-                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Tour Virtual 360º interactivo (+450€)</div>
+                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Tour Virtual 360º interactivo</div>
                                             <div style="font-size: 0.8125rem; color: #555861; margin-top: 2px;">Recorrido esférico interactivo ideal para la caseta de ventas y web interactiva.</div>
                                         </div>
-                                        <input type="checkbox" name="calcExtra" value="tour360" data-price="450">
+                                        <input type="checkbox" name="calcExtra" value="tour360">
                                     </label>
 
                                     <!-- DRON -->
                                     <label class="cad-upsell-item">
                                         <div>
-                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Integración sobre foto aérea o dron (+180€)</div>
+                                            <div style="font-weight: 700; font-size: 0.9375rem; color: #0B0B0C;">Integración sobre foto aérea o dron</div>
                                             <div style="font-size: 0.8125rem; color: #555861; margin-top: 2px;">Acoplamiento realista del edificio sobre fotografía real de la parcela.</div>
                                         </div>
-                                        <input type="checkbox" name="calcExtra" value="dron" data-price="180">
+                                        <input type="checkbox" name="calcExtra" value="dron">
                                     </label>
 
                                 </div>
@@ -1141,45 +1141,44 @@
                             
                             <div>
                                 <div class="output-header-strip">
-                                    <span class="section-label" style="margin-bottom: 4px;">Resumen del Presupuesto</span>
-                                    <div class="calc-breakdown-title" style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700; color: var(--c-black); margin: 0;">Desglose Estimado</div>
+                                    <span class="section-label" style="margin-bottom: 4px;">Resumen del Proyecto</span>
+                                    <div class="calc-breakdown-title" style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700; color: var(--c-black); margin: 0;">Entregables Seleccionados</div>
                                 </div>
 
                                 <ul class="output-items-breakdown" id="summaryBreakdown">
                                     <li class="breakdown-row">
                                         <span class="row-k" id="summaryPackName">Pack Promotora Residencial</span>
-                                        <span class="row-v" id="summaryPackPrice">750€</span>
+                                        <span class="row-v" id="summaryPackPrice">Incluido</span>
                                     </li>
                                     <li class="breakdown-row" id="rowExtraRenders" style="display: none;">
                                         <span class="row-k" id="summaryExtraRendersName">Renders adicionales</span>
-                                        <span class="row-v" id="summaryExtraRendersVal">+0€</span>
+                                        <span class="row-v" id="summaryExtraRendersVal">A medida</span>
                                     </li>
                                     <li class="breakdown-row" id="rowTour" style="display: none;">
                                         <span class="row-k">Tour Virtual 360º</span>
-                                        <span class="row-v">+450€</span>
+                                        <span class="row-v">A medida</span>
                                     </li>
                                     <li class="breakdown-row" id="rowDron" style="display: none;">
                                         <span class="row-k">Integración sobre Dron</span>
-                                        <span class="row-v">+180€</span>
+                                        <span class="row-v">A medida</span>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
                                 <div class="output-total-massive">
-                                    <div class="total-meta-label">Total Estimado (Base Imponible)</div>
-                                    <div class="total-figure-wrap">
-                                        <span class="total-currency-sym">€</span>
-                                        <span class="total-figure-val" id="totalAmount">750</span>
+                                    <div class="total-meta-label">Propuesta Económica</div>
+                                    <div class="total-figure-wrap" style="font-size: clamp(1.6rem, 2.2vw, 2.1rem); font-weight: 700; color: var(--c-black); letter-spacing: -0.02em;">
+                                        <span class="total-figure-val" id="totalAmount">A Medida</span>
                                     </div>
-                                    <div style="font-size: 0.75rem; color: #555861;">
-                                        + IVA aplicable · Presupuesto cerrado y garantizado sin desvíos.
+                                    <div style="font-size: 0.75rem; color: #555861; margin-top: 6px;">
+                                        Presupuesto cerrado sin costes imprevistos tras revisar planos.
                                     </div>
                                 </div>
 
                                 <div style="display: flex; flex-direction: column; gap: 10px;">
                                     <a href="#contacto" id="btnRequestQuote" class="btn-cad btn-primary" style="width: 100%;">
-                                        Solicitar Presupuesto Exacto →
+                                        Solicitar Presupuesto para este Proyecto →
                                     </a>
                                     <a href="https://wa.me/34614459144" id="btnWhatsappQuote" target="_blank" rel="noopener" class="btn-cad btn-secondary" style="width: 100%;">
                                         Consultar por WhatsApp Directo

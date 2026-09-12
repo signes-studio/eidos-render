@@ -14,17 +14,17 @@
 - **Misión de negocio**: Reducir la incertidumbre visual del comprador particular mediante imágenes hiperrealistas de máxima definición para acelerar el ritmo de reservas en preventa sobre plano (off-plan), justificar el valor de mercado de cada vivienda, facilitar la liberación del préstamo promotor bancario y acortar los plazos de comercialización.
 - **Pilares diferenciales**:
   1. **Velocidad de entrega**: Primeros borradores de volumetría, cámara y encuadre en 48 a 72 horas para que el promotor no detenga su calendario de lanzamiento comercial. Entrega de paquetes finales en 3 a 5 días hábiles.
-  2. **Precios 100% cerrados**: Tarifas transparentes por paquete sin sobrecostes imprevistos de última hora y con rondas de ajustes técnicos incluidas.
+  2. **Presupuestos 100% cerrados**: Propuestas a medida transparentes por proyecto sin sobrecostes imprevistos y con rondas de ajustes técnicos incluidas.
   3. **Calidad nativa 4K Ultra HD**: Archivos de máxima resolución preparados para vallas de obra de gran formato, catálogos impresos de ventas, portales inmobiliarios (Idealista, Fotocasa) y campañas en redes sociales.
   4. **Compromiso técnico riguroso**: Modelado fiel sobre planos CAD (DWG) o PDF y memorias de calidades reales (materiales, iluminación, paisajismo y mobiliario contemporáneo neutro).
 
 ---
 
-## 2. Tarifas y Paquetes de Servicios Estandarizados
+## 2. Paquetes de Servicios y Alcance de Proyecto
 
-Eidos Render estructura su oferta en paquetes cerrados pensados para proporcionar certidumbre presupuestaria desde el primer día:
+Eidos Render estructura su oferta en paquetes con alcance definido y presupuestos a medida según las necesidades de cada proyecto:
 
-### Pack 01: Inversor & House Flipping (350 € + IVA)
+### Pack 01: Inversor & House Flipping (Presupuesto a Medida)
 - **Público objetivo**: Inversores particulares, empresas de house flipping, agencias de compraventa y arquitectos que gestionan reformas integrales.
 - **Objetivo comercial**: Publicar el piso reformado en portales inmobiliarios desde el día en que se adquiere el inmueble, vendiéndolo mientras se ejecutan las obras físicas para acortar el tiempo de tenencia del activo y maximizar la TIR anual de la operación.
 - **Entregables incluidos**:
@@ -34,7 +34,7 @@ Eidos Render estructura su oferta en paquetes cerrados pensados para proporciona
   - 1 Ronda completa de ajustes técnicos de iluminación y mobiliario.
 - **Plazo de entrega**: Primeros borradores en 72h; entrega final en 3-4 días hábiles.
 
-### Pack 02: Promotora Residencial (750 € + IVA) — Paquete Recomendado Obra Nueva
+### Pack 02: Promotora Residencial (Presupuesto a Medida) — Paquete Recomendado Obra Nueva
 - **Público objetivo**: Promotoras de obra nueva residencial, arquitectos y comercializadoras inmobiliarias de edificios plurifamiliares y urbanizaciones.
 - **Objetivo comercial**: Alcanzar el porcentaje de preventas exigido por la entidad bancaria para liberar el préstamo promotor, equipar la caseta de ventas y vestir el dossier comercial y valla de obra.
 - **Entregables incluidos**:
@@ -46,7 +46,7 @@ Eidos Render estructura su oferta en paquetes cerrados pensados para proporciona
   - 1 Ronda completa de revisiones y ajustes técnicos incluida.
 - **Plazo de entrega**: Primeros borradores en 72h; entrega final en 4-5 días hábiles.
 
-### Pack 03: Marketing Integral & Gran Promoción (1.450 € + IVA)
+### Pack 03: Marketing Integral & Gran Promoción (Presupuesto a Medida)
 - **Público objetivo**: Grandes promociones residenciales, complejos plurifamiliares con zonas comunitarias y desarrollos de alto valor.
 - **Objetivo comercial**: Campaña omnicanal completa de preventa sobre plano para comercializadoras líderes, catálogos premium y vallas gigantes.
 - **Entregables incluidos**:
@@ -58,11 +58,11 @@ Eidos Render estructura su oferta en paquetes cerrados pensados para proporciona
   - Rondas de ajuste continuas durante el proceso de producción.
 - **Plazo de entrega**: Calendario acordado por fases según necesidades del promotor.
 
-### Complementos y Servicios Opcionales (Upsells CAD)
-- **Vistas adicionales interiores o exteriores**: +175 € / imagen adicional.
-- **Tour virtual 360º esférico interactivo**: +450 € por vivienda o estancia comunitaria, optimizado para caseta de ventas y visualización web.
-- **Integración fotográfica sobre fotografía aérea o dron**: +180 € por imagen, acoplando el edificio tridimensional sobre la parcela real y su entorno urbano o paisajístico consolidado.
-- **Acuerdos Marco B2B por Volumen**: Tarifas especiales negociadas para promotoras con múltiples fases anuales o comercializadoras con cartera continuada.
+### Complementos y Servicios Opcionales
+- **Vistas adicionales interiores o exteriores**: Perspectivas suplementarias adaptadas al alcance del proyecto.
+- **Tour virtual 360º esférico interactivo**: Experiencia inmersiva por vivienda o estancia comunitaria, optimizada para caseta de ventas y visualización web.
+- **Integración fotográfica sobre fotografía aérea o dron**: Acoplamiento del edificio tridimensional sobre la parcela real y su entorno urbano o paisajístico consolidado.
+- **Acuerdos Marco B2B por Volumen**: Condiciones preferentes negociadas para promotoras con múltiples fases anuales o comercializadoras con cartera continuada.
 
 ---
 
@@ -105,7 +105,7 @@ Eidos Render opera con un proceso digital estandarizado, ágil y transparente:
 
 ### Operaciones de House Flipping (https://eidosrender.es/renders-para-house-flipping)
 - Renders orientados exclusivamente a la velocidad de desinversión.
-- Presupuesto ajustado desde 350€ para garantizar que el coste CGI represente una fracción mínima del margen de beneficio de la reforma.
+- Presupuesto ajustado a medida para garantizar que el coste CGI represente una fracción mínima del margen de beneficio de la reforma.
 - Publicación inmediata en portales inmobiliarios (Idealista, Fotocasa, Habitaclia) desde la firma de arras o compra.
 
 ---
@@ -131,7 +131,7 @@ Eidos Render opera de forma 100% digitalizada y eficiente en todo el territorio 
 ### ¿Cuáles son los plazos habituales de entrega?
 Los primeros borradores de cámara, volumetría y encuadre se entregan en **48 a 72 horas hábiles**. Tras la revisión del cliente y la selección de ángulos, las imágenes finales en resolución 4K se entregan habitualmente en un plazo total de **3 a 5 días hábiles**.
 
-### ¿Qué incluye exactamente el precio de los paquetes cerrados?
+### ¿Qué incluye exactamente cada paquete de servicio?
 El modelado tridimensional completo según planos, la configuración de iluminación fotorrealista (diurna o atardecer), la ambientación con mobiliario comercial contemporáneo neutro, al menos 1 ronda completa de ajustes técnicos y la entrega de archivos en resolución nativa 4K sin marcas de agua.
 
 ### ¿Se pueden solicitar rondas de cambio adicionales?

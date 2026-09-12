@@ -10,7 +10,7 @@ Eidos Render diseña y produce renders 3D de exteriores (fachadas y volumetrías
 - **Público objetivo**: Promotoras de obra nueva, comercializadoras inmobiliarias, arquitectos, gestoras de cooperativas, fondos de inversión inmobiliaria y empresas de reforma y house flipping.
 - **Plazos de entrega**: Primeros borradores de volumetría, cámara y encuadre en 48 a 72 horas. Entrega del paquete final de alta resolución en 3 a 5 días hábiles.
 - **Garantía comercial**: Precios 100% cerrados desde el primer día, con rondas de ajustes técnicos incluidas y sin costes imprevistos.
-- **Tarifas base**: Paquetes estandarizados desde 350€ + IVA (Pack Inversor) y 750€ + IVA (Pack Promotora Residencial).
+- **Propuestas y tarifas**: Paquetes adaptados según tipología (Pack Inversor, Pack Promotora Residencial, Pack Marketing Pro) con presupuestos cerrados a medida tras revisar planos.
 - **Cobertura geográfica**: Sede central en Valencia con servicio y capacidad técnica para proyectos en toda España (Madrid, Málaga, Costa del Sol, Alicante, Sevilla, Bilbao y resto del territorio).
 - **Canales de contacto**:
   - Web: https://eidosrender.es
@@ -20,8 +20,8 @@ Eidos Render diseña y produce renders 3D de exteriores (fachadas y volumetrías
 
 ## Servicios Principales & Catálogo B2B
 
-- [Servicios y Tarifas B2B](https://eidosrender.es/servicios): Catálogo completo de paquetes de infografía con precios cerrados y comparativa de especificaciones técnicas.
-- [Calculadora de Presupuestos](https://eidosrender.es/#calculadora): Estimador interactivo en tiempo real para cotizar paquetes residenciales y vistas adicionales al instante.
+- [Servicios y Tarifas B2B](https://eidosrender.es/servicios): Catálogo completo de paquetes de infografía con presupuestos a medida y comparativa de especificaciones técnicas.
+- [Configurador de Proyectos](https://eidosrender.es/#calculadora): Configurador interactivo en tiempo real para estructurar paquetes residenciales y vistas adicionales.
 - [Renders para Promotoras & Obra Nueva](https://eidosrender.es/obra-nueva): Infografías exteriores diurnas y atardecer, zonas comunitarias (piscinas, terrazas, portales) para preventa sobre plano de edificios residenciales.
 - [Renders para Villas & Unifamiliares Prime](https://eidosrender.es/vivienda-unifamiliar): Modelado de chalets y villas exclusivas de alta gama con paisajismo mediterráneo para compradores internacionales.
 - [Renders para Reforma Integral & Interiorismo](https://eidosrender.es/reforma-de-piso): Infografías de salones, cocinas abiertas y suites contemporáneas para vender viviendas antes de iniciar o concluir la obra física.
