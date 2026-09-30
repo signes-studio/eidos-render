@@ -26,8 +26,9 @@
 
     # D. Redirección 301 de portfolio a proyectos
     RewriteRule ^portfolio/?$ /proyectos [R=301,L]
+    RewriteRule ^proyectos/(rozafa|madbit|gare-des-mines)(\.html)?$ /proyectos [R=301,L]
 
-    # E. Reescribir URLs limpias sin .html (ej. /proyectos/madbit -> /proyectos/madbit.html)
+    # E. Reescribir URLs limpias sin .html (ej. /servicios/video-3d -> /servicios/video-3d.html)
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{DOCUMENT_ROOT}/$1.html -f [OR]

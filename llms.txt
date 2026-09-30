@@ -22,26 +22,23 @@ Eidos Render convierte proyectos inmobiliarios en experiencias visuales y comerc
 - **Sede**: Valencia, España (cobertura nacional e internacional).
 - **Contacto**:
   - Web: https://eidosrender.es
-  - Correo electrónico: hola@eidosrender.es / info@eidosrender.es
+  - Correo electrónico: info@eidosrender.es
   - Teléfono: +34 614 45 91 44
-  - Formulario de contacto: https://eidosrender.es/contacto
+  - Contacto: https://eidosrender.es/contacto
 
 ## Estructura Web & Recursos
 
 - [Página Principal](https://eidosrender.es/): Visión general, servicios, portfolio editorial, vídeo, proceso, escala, inversión y contacto.
-- [Proyectos & Casos de Estudio](https://eidosrender.es/proyectos): Portfolio de promociones residenciales, villas, flex living y regeneración urbana.
-  - [Residencial Rozafa](https://eidosrender.es/proyectos/rozafa): Obra nueva plurifamiliar en Valencia.
-  - [Madbit Innovation Campus & Living](https://eidosrender.es/proyectos/madbit): Flex living y zonas comunes en Madrid.
+- [Proyectos & Archivo de Producción](https://eidosrender.es/proyectos): Portfolio de promociones residenciales, villas, zonas comunes y paisajismo.
   - [Villa Altea Hills](https://eidosrender.es/proyectos/altea-hills): Villa unifamiliar de alto standing en Alicante.
-  - [Gare des Mines](https://eidosrender.es/proyectos/gare-des-mines): Corredor verde y regeneración urbana en París.
 - [Servicios](https://eidosrender.es/servicios): Detalle de las 6 fases de la propuesta de lanzamiento.
-  - [Infografía 3D](https://eidosrender.es/servicios/infografia-3d): Renders exteriores, interiores y zonas comunes 4K.
+  - [Infografía 3D](https://eidosrender.es/servicios/infografia-3d): Renders exteriores, interiores y zonas comunes.
   - [Vídeo 3D](https://eidosrender.es/servicios/video-3d): Recorridos virtuales cinemáticos y reels verticales 9:16.
   - [Branding](https://eidosrender.es/servicios/branding): Naming, identidad y aplicaciones comerciales.
   - [Material Comercial](https://eidosrender.es/servicios/material-comercial): Dossier de ventas, planos 2D/3D texturizados y mapas.
   - [Web de Promoción](https://eidosrender.es/servicios/web-real-estate): Plataforma digital con selector de tipologías.
   - [Captación Digital](https://eidosrender.es/servicios/captacion): Campañas en Google Ads y Meta Ads.
-- [Contacto](https://eidosrender.es/contacto): Formulario de cualificación de proyecto y reserva de producción.
+- [Contacto](https://eidosrender.es/contacto): Vía directa por email o teléfono para valoración de proyectos.
 - [Aviso Legal](https://eidosrender.es/aviso-legal)
 - [Política de Privacidad](https://eidosrender.es/privacidad)
 - [Política de Cookies](https://eidosrender.es/cookies)
