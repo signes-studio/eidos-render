@@ -1,25 +1,16 @@
-# Permitir el acceso general a todos los crawlers y bots de IA
+# Permitir el acceso general a todos los crawlers y bots de IA con exclusión de dossiers privados
 User-agent: *
-Allow: /
-
-# Permitir específicamente a los bots de IA rastrear todo el contenido público
+User-agent: Googlebot
 User-agent: GPTBot
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: Google-Extended
-Allow: /
-
-# Bloquear la ejecución de scripts o carpetas internas
 Disallow: /enviar.php
+Disallow: /real-estate-launch
+Disallow: /real-estate-launch.html
+Disallow: /img/dossier/
+Allow: /
 
 # Indicación de la ubicación exacta del sitemap para indexación
 Sitemap: https://eidosrender.es/sitemap.xml

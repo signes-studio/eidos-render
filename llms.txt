@@ -41,7 +41,6 @@ Eidos Render convierte proyectos inmobiliarios en experiencias visuales y comerc
   - [Material Comercial](https://eidosrender.es/servicios/material-comercial): Dossier de ventas, planos 2D/3D texturizados y mapas.
   - [Web de Promoción](https://eidosrender.es/servicios/web-real-estate): Plataforma digital con selector de tipologías.
   - [Captación Digital](https://eidosrender.es/servicios/captacion): Campañas en Google Ads y Meta Ads.
-- [Real Estate Launch (Landing Específica)](https://eidosrender.es/real-estate-launch): Propuesta integral para promotoras.
 - [Contacto](https://eidosrender.es/contacto): Formulario de cualificación de proyecto y reserva de producción.
 - [Aviso Legal](https://eidosrender.es/aviso-legal)
 - [Política de Privacidad](https://eidosrender.es/privacidad)

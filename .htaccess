@@ -47,6 +47,11 @@
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     # Prevenir ataques XSS reflejados
     Header always set X-XSS-Protection "1; mode=block"
+
+    # Prevenir indexación de dossier privado real-estate-launch
+    <Files "real-estate-launch.html">
+        Header always set X-Robots-Tag "noindex, nofollow"
+    </Files>
 </IfModule>
 
 # 3. COMPRESIÓN GZIP / DEFLATE
