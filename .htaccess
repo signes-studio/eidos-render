@@ -23,6 +23,16 @@
     # C. Eliminar barra final innecesaria en archivos estándar si existe
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # D. Redirección 301 de portfolio a proyectos
+    RewriteRule ^portfolio/?$ /proyectos [R=301,L]
+
+    # E. Reescribir URLs limpias sin .html (ej. /proyectos/madbit -> /proyectos/madbit.html)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/$1.html -f [OR]
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
 </IfModule>
 
 # 2. CABECERAS DE SEGURIDAD HTTP

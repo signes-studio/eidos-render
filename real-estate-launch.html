@@ -155,12 +155,25 @@ video{
   overflow:hidden;
 }
 
-.hero-media img,
-.hero-media video{
+.hero-bg-poster{
+  position:absolute;
+  inset:0;
   width:100%;
   height:100%;
   object-fit:cover;
+  filter:blur(16px) brightness(.32);
+  transform:scale(1.1);
   display:block;
+}
+
+.hero-video{
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:right 8% center;
+  display:block;
+  z-index:1;
 }
 
 .hero-overlay{
@@ -168,11 +181,18 @@ video{
   inset:0;
   background:
     linear-gradient(
+      to right,
+      rgba(11,11,12,.92) 0%,
+      rgba(11,11,12,.72) 48%,
+      rgba(11,11,12,.15) 100%
+    ),
+    linear-gradient(
       to bottom,
-      rgba(0,0,0,.25) 0%,
-      rgba(0,0,0,.15) 35%,
-      rgba(0,0,0,.8) 100%
+      rgba(11,11,12,.2) 0%,
+      transparent 40%,
+      rgba(11,11,12,.85) 100%
     );
+  z-index:2;
 }
 
 .hero-content{
@@ -381,8 +401,8 @@ video{
 
 .video-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:100px;
+  grid-template-columns:1fr 1.15fr;
+  gap:70px;
   align-items:center;
 }
 
@@ -398,12 +418,25 @@ video{
   max-width:570px;
 }
 
+.video-showcase{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:22px;
+}
+
+.video-card{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
 .video-frame{
-  aspect-ratio:16/10;
+  aspect-ratio:9/16;
   background:#0B0B0C;
   position:relative;
   overflow:hidden;
-  border:1px solid rgba(244,243,239,.3);
+  border:1px solid rgba(244,243,239,.35);
+  box-shadow:0 20px 45px rgba(0,0,0,.4);
 }
 
 .video-frame video{
@@ -411,6 +444,23 @@ video{
   height:100%;
   object-fit:cover;
   display:block;
+}
+
+.video-badge{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:rgba(244,243,239,.85);
+}
+
+.video-badge span:last-child{
+  opacity:.65;
+  font-weight:400;
 }
 
 /* =====================================================
@@ -933,6 +983,20 @@ video{
     min-height:450px;
   }
 
+  .hero-video{
+    object-position:center center;
+    object-fit:cover;
+  }
+
+  .hero-overlay{
+    background:linear-gradient(
+      to bottom,
+      rgba(11,11,12,.35) 0%,
+      rgba(11,11,12,.45) 40%,
+      rgba(11,11,12,.92) 100%
+    );
+  }
+
   .video-section{
     padding:100px 0;
   }
@@ -940,6 +1004,11 @@ video{
   .video-grid{
     grid-template-columns:1fr;
     gap:55px;
+  }
+
+  .video-showcase{
+    grid-template-columns:repeat(2, 1fr);
+    gap:18px;
   }
 
   .phases{
@@ -1065,6 +1134,13 @@ video{
     font-size:3.2rem;
   }
 
+  .video-showcase{
+    grid-template-columns:1fr;
+    max-width:320px;
+    margin:0 auto;
+    gap:25px;
+  }
+
   .phase{
     grid-template-columns:55px 1fr;
   }
@@ -1148,7 +1224,8 @@ video{
 <header class="hero">
 
   <div class="hero-media">
-    <video autoplay muted loop playsinline poster="img/dossier/2517-ALTEA%20HILLS-01-Aerea%20mar.jpg">
+    <img src="img/dossier/2517-ALTEA%20HILLS-01-Aerea%20mar.jpg" alt="" class="hero-bg-poster" aria-hidden="true">
+    <video autoplay muted loop playsinline class="hero-video" poster="img/dossier/2517-ALTEA%20HILLS-01-Aerea%20mar.jpg">
       <source src="img/dossier/2519_MADBIT-10-Patio%20B.mp4" type="video/mp4">
       <img src="img/dossier/2517-ALTEA%20HILLS-01-Aerea%20mar.jpg" alt="Eidos Render — Real Estate Launch">
     </video>
@@ -1403,18 +1480,43 @@ video{
         </h2>
 
         <p class="video-copy">
-          Desarrollamos vídeo y animación 3D para presentar
-          el proyecto, construir atmósfera y ampliar sus
-          posibilidades de comunicación en web, redes y campañas.
+          Desarrollamos vídeo y animación 3D en formato vertical 9:16 y cinematográfico para presentar el proyecto, construir atmósfera y potenciar el rendimiento en campañas de captación, Reels y presentaciones comerciales.
         </p>
+
+        <div class="phase-tags" style="margin-top: 30px;">
+          <span class="tag" style="border-color: rgba(244,243,239,.35); color: var(--paper);">Formato 9:16</span>
+          <span class="tag" style="border-color: rgba(244,243,239,.35); color: var(--paper);">Reels & Social Ads</span>
+          <span class="tag" style="border-color: rgba(244,243,239,.35); color: var(--paper);">Animación 3D</span>
+        </div>
 
       </div>
 
-      <div class="video-frame">
-        <video autoplay muted loop playsinline controls poster="img/dossier/2437-GARE%20DES%20MINES-02-Green%20corridor.jpg">
-          <source src="img/dossier/2519_MADBIT-10-Patio%20B%20v02.mp4" type="video/mp4">
-          <source src="img/dossier/2519_MADBIT-10-Patio%20B.mp4" type="video/mp4">
-        </video>
+      <div class="video-showcase">
+
+        <div class="video-card">
+          <div class="video-frame">
+            <video autoplay muted loop playsinline controls poster="img/dossier/2437-GARE%20DES%20MINES-02-Green%20corridor.jpg">
+              <source src="img/dossier/2519_MADBIT-10-Patio%20B.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-badge">
+            <span>Patio Central · Toma 01</span>
+            <span>9:16 Reel</span>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-frame">
+            <video autoplay muted loop playsinline controls poster="img/dossier/2519_MADBIT-07-Piscina.jpg">
+              <source src="img/dossier/2519_MADBIT-10-Patio%20B%20v02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-badge">
+            <span>Patio Central · Toma 02</span>
+            <span>9:16 Reel</span>
+          </div>
+        </div>
+
       </div>
 
     </div>
