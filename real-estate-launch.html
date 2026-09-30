@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Eidos Render — Real Estate Launch</title>
-<meta name="description" content="Eidos Render — Imagen, identidad, material comercial, web y captación para proyectos inmobiliarios.">
+<meta name="description" content="Eidos Render — Dirección visual, imagen 3D, identidad, material comercial, web y captación para el lanzamiento de proyectos inmobiliarios.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Archivo:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -18,8 +18,9 @@
   --signal:#8A8D93;
   --crimson:#C8102E;
   --soft:#DADADA;
-  --line:rgba(11,11,12,.18);
-  --max:1440px;
+  --line:rgba(11,11,12,.14);
+  --line-light:rgba(244,243,239,.18);
+  --max:1400px;
 }
 
 *{
@@ -37,6 +38,8 @@ body{
   color:var(--ink);
   font-family:'Archivo',sans-serif;
   overflow-x:hidden;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
 }
 
 a{
@@ -51,7 +54,7 @@ video{
 }
 
 .container{
-  width:min(var(--max), calc(100% - 80px));
+  width:min(var(--max), calc(100% - 96px));
   margin:0 auto;
 }
 
@@ -60,13 +63,15 @@ video{
 ===================================================== */
 
 .kicker{
+  font-family:'Space Grotesk',sans-serif;
   font-size:.72rem;
-  font-weight:600;
+  font-weight:700;
   text-transform:uppercase;
-  letter-spacing:.1em;
+  letter-spacing:.12em;
+  margin-bottom:20px;
 }
 
-.kicker.red{
+.kicker.crimson{
   color:var(--crimson);
 }
 
@@ -74,17 +79,22 @@ video{
   color:var(--signal);
 }
 
+.kicker.paper{
+  color:rgba(244,243,239,.7);
+}
+
 .display{
   font-family:'Space Grotesk',sans-serif;
   font-weight:700;
-  line-height:.96;
-  letter-spacing:-.055em;
+  line-height:.95;
+  letter-spacing:-.05em;
+  text-transform:uppercase;
 }
 
 .body-large{
-  font-size:1.08rem;
-  line-height:1.5;
-  max-width:620px;
+  font-size:1.15rem;
+  line-height:1.55;
+  color:rgba(11,11,12,.8);
 }
 
 /* =====================================================
@@ -97,13 +107,13 @@ video{
   left:0;
   right:0;
   z-index:100;
-  padding:22px 0;
+  padding:26px 0;
   mix-blend-mode:difference;
-  color:white;
+  color:#FFFFFF;
 }
 
 .nav-inner{
-  width:min(var(--max), calc(100% - 80px));
+  width:min(var(--max), calc(100% - 96px));
   margin:auto;
   display:flex;
   justify-content:space-between;
@@ -112,16 +122,17 @@ video{
 
 .logo{
   font-family:'Space Grotesk',sans-serif;
-  font-size:.9rem;
+  font-size:.95rem;
   font-weight:700;
   letter-spacing:-.02em;
 }
 
 .nav-links{
   display:flex;
-  gap:28px;
-  font-size:.68rem;
-  font-weight:600;
+  gap:36px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.72rem;
+  font-weight:700;
   text-transform:uppercase;
   letter-spacing:.08em;
 }
@@ -131,11 +142,11 @@ video{
 }
 
 .nav-links a:hover{
-  opacity:.5;
+  opacity:.6;
 }
 
 /* =====================================================
-   HERO
+   01. HERO
 ===================================================== */
 
 .hero{
@@ -161,7 +172,7 @@ video{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:blur(16px) brightness(.32);
+  filter:blur(20px) brightness(.3);
   transform:scale(1.1);
   display:block;
 }
@@ -171,7 +182,7 @@ video{
   width:100%;
   height:100%;
   object-fit:contain;
-  object-position:right 8% center;
+  object-position:right 6% center;
   display:block;
   z-index:1;
 }
@@ -182,43 +193,60 @@ video{
   background:
     linear-gradient(
       to right,
-      rgba(11,11,12,.92) 0%,
-      rgba(11,11,12,.72) 48%,
-      rgba(11,11,12,.15) 100%
+      rgba(11,11,12,.94) 0%,
+      rgba(11,11,12,.76) 46%,
+      rgba(11,11,12,.2) 100%
     ),
     linear-gradient(
       to bottom,
-      rgba(11,11,12,.2) 0%,
-      transparent 40%,
-      rgba(11,11,12,.85) 100%
+      rgba(11,11,12,.25) 0%,
+      transparent 35%,
+      rgba(11,11,12,.88) 100%
     );
   z-index:2;
 }
 
 .hero-content{
   position:relative;
-  z-index:2;
-  width:min(var(--max), calc(100% - 80px));
+  z-index:3;
+  width:min(var(--max), calc(100% - 96px));
   margin:0 auto;
-  padding:0 0 70px;
-}
-
-.hero-kicker{
-  margin-bottom:28px;
-  opacity:.7;
+  padding:0 0 80px;
 }
 
 .hero-title{
-  font-size:clamp(4rem,8vw,8.5rem);
-  max-width:1100px;
+  font-size:clamp(3.8rem,7.5vw,8.5rem);
+  max-width:1150px;
+  line-height:.92;
 }
 
 .hero-description{
-  margin-top:34px;
-  font-size:1.05rem;
-  line-height:1.45;
-  max-width:550px;
-  color:rgba(244,243,239,.8);
+  margin-top:36px;
+  font-size:1.15rem;
+  line-height:1.5;
+  max-width:580px;
+  color:rgba(244,243,239,.82);
+}
+
+.hero-actions{
+  margin-top:44px;
+}
+
+.btn-hero{
+  display:inline-block;
+  background:var(--crimson);
+  color:var(--paper);
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.86rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:18px 36px;
+  transition:background .2s ease;
+}
+
+.btn-hero:hover{
+  background:#A50D24;
 }
 
 .hero-bottom{
@@ -226,143 +254,137 @@ video{
   display:flex;
   justify-content:space-between;
   align-items:flex-end;
-  font-size:.7rem;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.72rem;
+  font-weight:700;
   text-transform:uppercase;
-  letter-spacing:.08em;
-  opacity:.65;
+  letter-spacing:.1em;
+  color:var(--signal);
+  border-top:1px solid rgba(244,243,239,.14);
+  padding-top:22px;
 }
 
 /* =====================================================
-   INTRO
+   02. INTRO
 ===================================================== */
 
 .intro{
-  padding:150px 0;
+  padding:160px 0;
   background:var(--paper);
 }
 
 .intro-grid{
   display:grid;
-  grid-template-columns:1fr 1.2fr;
-  gap:100px;
+  grid-template-columns:1fr 1.25fr;
+  gap:90px;
   align-items:start;
 }
 
 .intro-title{
-  font-size:clamp(3rem,5vw,5.5rem);
-  max-width:700px;
+  font-size:clamp(2.8rem,5vw,5.5rem);
   color:var(--crimson);
-}
-
-.intro-copy{
-  padding-top:12px;
+  line-height:.96;
 }
 
 .intro-copy p{
-  font-size:1.2rem;
-  line-height:1.5;
-  max-width:650px;
+  font-size:1.25rem;
+  line-height:1.55;
+  color:var(--ink);
+  margin-bottom:28px;
 }
 
-.intro-line{
-  width:100%;
-  height:1px;
-  background:var(--line);
+.intro-copy p:last-child{
+  margin-bottom:0;
+  color:var(--signal);
+}
+
+.intro-image-wrap{
   margin-top:80px;
+  border:1px solid var(--line);
+  background:#0B0B0C;
+}
+
+.intro-image-wrap img{
+  height:580px;
+  object-fit:cover;
 }
 
 /* =====================================================
-   SERVICES
+   03. LO QUE HACEMOS (SERVICIOS EDITORIAL)
 ===================================================== */
 
 .services{
   background:var(--ink);
   color:var(--paper);
-  padding:130px 0;
+  padding:160px 0;
 }
 
-.section-header{
+.services-header{
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
-  gap:40px;
-  margin-bottom:80px;
+  align-items:flex-end;
+  margin-bottom:100px;
+  border-bottom:1px solid var(--line-light);
+  padding-bottom:30px;
 }
 
-.section-title{
+.services-title{
   font-size:clamp(3rem,6vw,6.5rem);
-  max-width:900px;
+  line-height:.94;
 }
 
-.section-number{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:.75rem;
-  color:var(--crimson);
-  font-weight:700;
-}
-
-.service-list{
-  border-top:1px solid rgba(244,243,239,.25);
-}
-
-.service{
+.service-row{
   display:grid;
-  grid-template-columns:100px 1fr 1fr;
+  grid-template-columns:120px 1.4fr 1.6fr;
   gap:40px;
-  padding:38px 0;
-  border-bottom:1px solid rgba(244,243,239,.25);
-  transition:padding .25s ease;
+  padding:50px 0;
+  border-bottom:1px solid var(--line-light);
+  align-items:baseline;
 }
 
-.service:hover{
-  padding-left:15px;
-  padding-right:15px;
-}
-
-.service-number{
+.service-num{
   font-family:'Space Grotesk',sans-serif;
   color:var(--crimson);
+  font-size:1.8rem;
   font-weight:700;
 }
 
-.service-title{
+.service-name{
   font-family:'Space Grotesk',sans-serif;
   font-size:2rem;
   font-weight:700;
   letter-spacing:-.035em;
+  text-transform:uppercase;
+  line-height:1;
 }
 
-.service-description{
-  font-size:.9rem;
-  line-height:1.55;
-  color:rgba(244,243,239,.65);
-  max-width:450px;
+.service-desc{
+  font-size:1.02rem;
+  line-height:1.6;
+  color:rgba(244,243,239,.7);
 }
 
 /* =====================================================
-   VISUAL BREAK
+   04. VISUAL BREAK
 ===================================================== */
 
 .visual-break{
-  height:75vh;
-  min-height:550px;
+  height:80vh;
+  min-height:600px;
   position:relative;
   overflow:hidden;
-  background:#222;
+  background:#0B0B0C;
 }
 
 .visual-break-media{
   position:absolute;
   inset:0;
-  background:#111;
-  overflow:hidden;
 }
 
 .visual-break-media img{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
 }
 
 .visual-break-overlay{
@@ -370,8 +392,9 @@ video{
   inset:0;
   background:linear-gradient(
     to bottom,
-    transparent 30%,
-    rgba(0,0,0,.75)
+    rgba(11,11,12,.15) 0%,
+    transparent 40%,
+    rgba(11,11,12,.85) 100%
   );
 }
 
@@ -380,104 +403,91 @@ video{
   z-index:2;
   left:0;
   right:0;
-  bottom:55px;
+  bottom:70px;
   color:var(--paper);
 }
 
 .visual-break-title{
-  font-size:clamp(3rem,6vw,6rem);
+  font-size:clamp(3rem,5.5vw,5.8rem);
   max-width:1000px;
+  line-height:.95;
 }
 
 /* =====================================================
-   VIDEO
+   05. VÍDEO & ANIMACIÓN
 ===================================================== */
 
 .video-section{
   background:var(--crimson);
   color:var(--paper);
-  padding:140px 0;
+  padding:160px 0;
 }
 
 .video-grid{
   display:grid;
   grid-template-columns:1fr 1.15fr;
-  gap:70px;
+  gap:80px;
   align-items:center;
 }
 
 .video-title{
-  font-size:clamp(3.2rem,5vw,6rem);
+  font-size:clamp(3rem,5vw,5.5rem);
+  line-height:.95;
 }
 
 .video-copy{
-  margin-top:30px;
-  color:rgba(244,243,239,.8);
-  font-size:1rem;
-  line-height:1.5;
-  max-width:570px;
+  margin-top:32px;
+  font-size:1.1rem;
+  line-height:1.6;
+  color:rgba(244,243,239,.88);
+  max-width:540px;
 }
 
 .video-showcase{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
-  gap:22px;
-}
-
-.video-card{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
+  gap:24px;
 }
 
 .video-frame{
   aspect-ratio:9/16;
   background:#0B0B0C;
-  position:relative;
   overflow:hidden;
-  border:1px solid rgba(244,243,239,.35);
-  box-shadow:0 20px 45px rgba(0,0,0,.4);
+  border:1px solid rgba(244,243,239,.3);
+  box-shadow:0 30px 60px rgba(0,0,0,.35);
 }
 
 .video-frame video{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
-}
-
-.video-badge{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-family:'Space Grotesk',sans-serif;
-  font-size:.72rem;
-  font-weight:700;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  color:rgba(244,243,239,.85);
-}
-
-.video-badge span:last-child{
-  opacity:.65;
-  font-weight:400;
 }
 
 /* =====================================================
-   PHASES
+   06. PROCESO (EDITORIAL PHASES)
 ===================================================== */
 
 .phases{
   background:var(--paper);
-  padding:150px 0;
+  padding:160px 0;
+}
+
+.phases-header{
+  margin-bottom:90px;
+}
+
+.phases-title{
+  font-size:clamp(3rem,5vw,5.2rem);
+  line-height:.95;
 }
 
 .phase{
   display:grid;
-  grid-template-columns:180px 1fr 1fr;
-  gap:50px;
-  padding:70px 0;
+  grid-template-columns:160px 1.1fr 1.3fr;
+  gap:48px;
+  padding:80px 0;
   border-top:1px solid var(--line);
+  align-items:baseline;
 }
 
 .phase:last-child{
@@ -487,122 +497,120 @@ video{
 .phase-number{
   font-family:'Space Grotesk',sans-serif;
   color:var(--crimson);
-  font-size:5.5rem;
+  font-size:5rem;
   line-height:.8;
   font-weight:700;
-  letter-spacing:-.07em;
+  letter-spacing:-.06em;
 }
 
 .phase-title{
   font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(2.5rem,4vw,4.5rem);
-  line-height:.98;
-  letter-spacing:-.05em;
-  font-weight:700;
-}
-
-.phase-content{
-  padding-top:5px;
+  font-size:clamp(2.4rem,3.8vw,4.2rem);
+  line-height:.96;
+  letter-spacing:-.045em;
+  text-transform:uppercase;
 }
 
 .phase-content p{
-  font-size:.95rem;
-  line-height:1.55;
-  max-width:500px;
-  margin-bottom:25px;
+  font-size:1.08rem;
+  line-height:1.6;
+  color:var(--ink);
+  margin-bottom:20px;
+  max-width:560px;
 }
 
-.phase-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-}
-
-.tag{
-  border:1px solid var(--line);
-  padding:9px 12px;
-  font-size:.66rem;
-  font-weight:600;
+.editorial-note{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.08em;
   text-transform:uppercase;
-  letter-spacing:.06em;
+  color:var(--signal);
 }
 
-.phase-gallery{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-  margin-top:35px;
+/* Phase 02 Gallery */
+.gallery-grid{
   grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:20px;
+  margin-top:50px;
 }
 
-.phase-img-card{
+.gallery-card{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.gallery-media{
   background:#0B0B0C;
   overflow:hidden;
-  position:relative;
   aspect-ratio:4/3;
   border:1px solid var(--line);
 }
 
-.phase-img-card img{
+.gallery-media img{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
-  transition:transform .4s ease;
+  transition:transform .5s ease;
 }
 
-.phase-img-card:hover img{
-  transform:scale(1.04);
+.gallery-media:hover img{
+  transform:scale(1.03);
 }
 
-.phase-img-caption{
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  padding:8px 12px;
-  background:rgba(11,11,12,.8);
-  color:#FFFFFF;
-  font-size:.65rem;
-  font-weight:600;
-  text-transform:uppercase;
+.gallery-caption{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.75rem;
+  font-weight:700;
   letter-spacing:.08em;
-  display:flex;
-  justify-content:space-between;
+  text-transform:uppercase;
+  color:var(--ink);
 }
 
-.phase-media-wide{
+/* Phase 03 Wide Image */
+.wide-media-wrap{
   grid-column:1 / -1;
-  margin-top:35px;
+  margin-top:50px;
 }
 
-.phase-wide-card{
+.wide-media{
   background:#0B0B0C;
   overflow:hidden;
-  position:relative;
-  max-height:480px;
   border:1px solid var(--line);
+  max-height:560px;
 }
 
-.phase-wide-card img{
+.wide-media img{
   width:100%;
-  height:480px;
+  height:560px;
   object-fit:cover;
-  display:block;
+}
+
+.wide-caption{
+  margin-top:14px;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--signal);
 }
 
 /* =====================================================
-   METHOD
+   07. METHOD & OBJECTIVE
 ===================================================== */
 
 .method{
   display:grid;
   grid-template-columns:1fr 1fr;
-  min-height:650px;
+  min-height:680px;
 }
 
 .method-half{
-  padding:100px 8%;
+  padding:120px 10%;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -619,52 +627,54 @@ video{
 }
 
 .method-label{
-  font-size:.7rem;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.75rem;
   font-weight:700;
-  letter-spacing:.1em;
+  letter-spacing:.12em;
   text-transform:uppercase;
   opacity:.65;
-  margin-bottom:25px;
+  margin-bottom:30px;
 }
 
 .method-title{
   font-family:'Space Grotesk',sans-serif;
   font-size:clamp(2.5rem,4vw,4.5rem);
   line-height:1;
-  letter-spacing:-.05em;
-  max-width:650px;
+  letter-spacing:-.045em;
+  text-transform:uppercase;
+  max-width:620px;
 }
 
 /* =====================================================
-   TIMELINE + INVESTMENT
+   08. PLANNING & INVESTMENT
 ===================================================== */
 
 .planning{
-  padding:150px 0;
+  padding:160px 0;
   background:var(--paper);
 }
 
 .planning-grid{
   display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:120px;
+  grid-template-columns:1.15fr .85fr;
+  gap:110px;
 }
 
 .planning-title{
-  font-size:clamp(3rem,5vw,5rem);
-  margin-top:25px;
+  font-size:clamp(2.8rem,4.8vw,5rem);
+  line-height:.96;
 }
 
 .timeline{
-  margin-top:55px;
+  margin-top:60px;
 }
 
 .timeline-item{
   display:grid;
-  grid-template-columns:60px 1fr 100px;
-  gap:20px;
+  grid-template-columns:60px 1fr 110px;
+  gap:24px;
   align-items:center;
-  padding:22px 0;
+  padding:26px 0;
   border-top:1px solid var(--line);
 }
 
@@ -676,84 +686,140 @@ video{
   font-family:'Space Grotesk',sans-serif;
   color:var(--crimson);
   font-weight:700;
+  font-size:1.1rem;
 }
 
 .timeline-title{
   font-family:'Space Grotesk',sans-serif;
   font-weight:700;
+  font-size:1.05rem;
+  text-transform:uppercase;
 }
 
 .timeline-time{
   text-align:right;
   color:var(--signal);
-  font-size:.72rem;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.78rem;
+  font-weight:700;
 }
 
+/* Editorial Inversión Dossier Block */
 .investment{
   background:var(--ink);
   color:var(--paper);
-  padding:55px;
-  min-height:430px;
+  padding:64px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  border:1px solid rgba(11,11,12,.8);
+}
+
+.investment-header{
+  margin-bottom:40px;
 }
 
 .investment-title{
   font-family:'Space Grotesk',sans-serif;
-  font-size:1.2rem;
+  font-size:1.15rem;
   font-weight:700;
-}
-
-.price{
-  font-family:'Space Grotesk',sans-serif;
-  font-weight:700;
-  font-size:clamp(3.5rem,5vw,6rem);
-  line-height:.9;
-  letter-spacing:-.06em;
+  letter-spacing:.08em;
+  text-transform:uppercase;
   color:var(--crimson);
+  margin-bottom:8px;
 }
 
-.price-note{
-  font-size:.75rem;
-  line-height:1.45;
-  color:rgba(244,243,239,.55);
-  max-width:400px;
+.investment-sub{
+  font-size:.85rem;
+  color:rgba(244,243,239,.6);
+  line-height:1.4;
 }
 
-.payment{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:8px;
-  margin-top:25px;
+.price-wrap{
+  margin-bottom:48px;
 }
 
-.payment-box{
-  border:1px solid rgba(244,243,239,.3);
-  padding:15px;
-}
-
-.payment-number{
+.price-prefix{
   font-family:'Space Grotesk',sans-serif;
-  font-size:1.8rem;
+  font-size:.9rem;
   font-weight:700;
-}
-
-.payment-label{
-  font-size:.65rem;
-  line-height:1.3;
-  margin-top:7px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
   color:rgba(244,243,239,.65);
 }
 
+.price-main{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;
+  font-size:clamp(3.8rem,5.5vw,6rem);
+  line-height:.92;
+  letter-spacing:-.05em;
+  color:var(--paper);
+  margin:10px 0 16px;
+}
+
+.price-main span{
+  color:var(--crimson);
+}
+
+.price-detail{
+  font-size:.85rem;
+  line-height:1.5;
+  color:rgba(244,243,239,.65);
+  max-width:440px;
+}
+
+/* Forma de pago editorial */
+.payment-section{
+  border-top:1px solid var(--line-light);
+  padding-top:32px;
+}
+
+.payment-title{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--crimson);
+  margin-bottom:20px;
+}
+
+.payment-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.payment-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.9rem;
+  border-bottom:1px solid rgba(244,243,239,.1);
+  padding-bottom:12px;
+}
+
+.payment-pct{
+  font-weight:700;
+  font-size:1.15rem;
+}
+
+.payment-desc{
+  font-family:'Archivo',sans-serif;
+  font-size:.82rem;
+  color:rgba(244,243,239,.7);
+}
+
 /* =====================================================
-   MONTHLY
+   09. CONTINUIDAD
 ===================================================== */
 
 .monthly{
   background:var(--crimson);
   color:var(--paper);
-  padding:130px 0;
+  padding:150px 0;
 }
 
 .monthly-grid{
@@ -764,136 +830,184 @@ video{
 }
 
 .monthly-title{
-  font-size:clamp(3rem,5vw,5.5rem);
+  font-size:clamp(2.8rem,5vw,5.5rem);
+  line-height:.95;
 }
 
 .monthly-price{
   font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(3rem,5vw,5rem);
+  font-size:clamp(3.2rem,5vw,5rem);
   font-weight:700;
-  letter-spacing:-.06em;
+  letter-spacing:-.05em;
+  line-height:1;
 }
 
 .monthly-note{
-  margin-top:8px;
-  font-size:.75rem;
-  opacity:.7;
+  margin-top:12px;
+  font-size:.85rem;
+  color:rgba(244,243,239,.8);
 }
 
-.monthly-list{
-  margin-top:45px;
+.monthly-editorial-line{
+  margin-top:40px;
+  padding-top:24px;
   border-top:1px solid rgba(244,243,239,.35);
-}
-
-.monthly-item{
-  padding:20px 0;
-  border-bottom:1px solid rgba(244,243,239,.35);
-  display:flex;
-  justify-content:space-between;
   font-family:'Space Grotesk',sans-serif;
+  font-size:.9rem;
   font-weight:700;
-}
-
-.monthly-item span:last-child{
-  opacity:.5;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
 
 /* =====================================================
-   REFERENCE
+   10. REFERENCIA EXTERNA (KORA LUMEN)
 ===================================================== */
 
 .reference{
   background:var(--ink);
   color:var(--paper);
-  padding:140px 0;
+  padding:150px 0;
 }
 
 .reference-grid{
   display:grid;
-  grid-template-columns:.75fr 1.25fr;
+  grid-template-columns:.8fr 1.2fr;
   gap:90px;
   align-items:center;
 }
 
 .reference-title{
-  font-size:clamp(3rem,5vw,5.5rem);
+  font-size:clamp(2.8rem,5vw,5.2rem);
+  line-height:.96;
 }
 
 .reference-copy{
-  margin-top:25px;
-  color:rgba(244,243,239,.65);
-  line-height:1.5;
-  max-width:500px;
+  margin-top:28px;
+  color:rgba(244,243,239,.7);
+  font-size:1.05rem;
+  line-height:1.6;
+}
+
+.reference-disclaimer{
+  margin-top:14px;
+  font-size:.85rem;
+  color:var(--signal);
+  line-height:1.45;
 }
 
 .reference-link{
   display:inline-block;
-  margin-top:35px;
+  margin-top:36px;
   color:var(--crimson);
   font-family:'Space Grotesk',sans-serif;
   font-weight:700;
-  font-size:.9rem;
+  font-size:.88rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  border-bottom:1px solid var(--crimson);
+  padding-bottom:3px;
 }
 
 .reference-image{
   aspect-ratio:16/10;
   background:#0B0B0C;
-  position:relative;
   overflow:hidden;
-  border:1px solid var(--line);
+  border:1px solid rgba(244,243,239,.2);
 }
 
 .reference-image img{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
 }
 
 /* =====================================================
-   CTA
+   11. CTA FINAL EDITORIAL
 ===================================================== */
 
 .cta{
   background:var(--paper);
-  padding:180px 0;
+  padding:180px 0 140px;
 }
 
 .cta-title{
   font-family:'Space Grotesk',sans-serif;
-  font-size:clamp(4rem,9vw,10rem);
-  line-height:.88;
-  letter-spacing:-.07em;
+  font-size:clamp(3.8rem,8.5vw,9.5rem);
+  line-height:.9;
+  letter-spacing:-.06em;
   font-weight:700;
-  max-width:1200px;
+  max-width:1250px;
+  text-transform:uppercase;
 }
 
 .cta-title span{
   color:var(--crimson);
 }
 
-.cta-bottom{
-  margin-top:70px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-top:1px solid var(--line);
-  padding-top:25px;
+.cta-copy{
+  margin-top:40px;
+  font-size:1.25rem;
+  line-height:1.55;
+  max-width:700px;
+  color:rgba(11,11,12,.75);
 }
 
-.cta-button{
-  display:inline-flex;
+.cta-actions{
+  margin-top:50px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
   align-items:center;
-  gap:18px;
+}
+
+.btn-contact{
+  display:inline-block;
+  background:var(--crimson);
+  color:var(--paper);
   font-family:'Space Grotesk',sans-serif;
   font-size:1rem;
   font-weight:700;
-  color:var(--crimson);
-  transition:gap .25s ease;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  padding:22px 42px;
+  transition:background .2s ease;
 }
 
-.cta-button:hover{
-  gap:28px;
+.btn-contact:hover{
+  background:#A50D24;
+}
+
+.cta-direct-block{
+  margin-top:70px;
+  padding-top:40px;
+  border-top:1px solid var(--line);
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:36px;
+  align-items:start;
+}
+
+.direct-label{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--signal);
+  margin-bottom:6px;
+}
+
+.direct-value{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:1.15rem;
+  font-weight:700;
+  color:var(--ink);
+}
+
+.direct-value a{
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1px solid var(--crimson);
 }
 
 /* =====================================================
@@ -903,37 +1017,38 @@ video{
 .footer{
   background:var(--ink);
   color:var(--paper);
-  padding:35px 0;
+  padding:40px 0;
+  border-top:1px solid rgba(244,243,239,.1);
 }
 
 .footer-inner{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  font-size:.68rem;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:.72rem;
+  font-weight:700;
   text-transform:uppercase;
   letter-spacing:.08em;
 }
 
-.footer-brand{
-  font-family:'Space Grotesk',sans-serif;
-  font-weight:700;
+.footer-muted{
+  color:var(--signal);
 }
 
-.footer-muted{
-  color:rgba(244,243,239,.45);
+.footer-inner a:hover{
+  color:var(--crimson);
 }
 
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 
-@media(max-width:900px){
-
+@media(max-width:960px){
   .container,
   .nav-inner,
   .hero-content{
-    width:calc(100% - 40px);
+    width:calc(100% - 48px);
   }
 
   .nav-links{
@@ -941,93 +1056,71 @@ video{
   }
 
   .hero-content{
-    padding-bottom:45px;
+    padding-bottom:50px;
   }
 
   .hero-title{
-    font-size:clamp(3.4rem,13vw,6rem);
-  }
-
-  .hero-description{
-    font-size:.95rem;
+    font-size:clamp(3.4rem,11vw,6rem);
   }
 
   .intro{
-    padding:100px 0;
+    padding:110px 0;
   }
 
   .intro-grid{
     grid-template-columns:1fr;
-    gap:45px;
+    gap:40px;
+  }
+
+  .intro-image-wrap{
+    margin-top:50px;
+  }
+
+  .intro-image-wrap img{
+    height:380px;
   }
 
   .services{
-    padding:100px 0;
+    padding:110px 0;
   }
 
-  .section-header{
-    margin-bottom:55px;
-  }
-
-  .service{
-    grid-template-columns:55px 1fr;
+  .service-row{
+    grid-template-columns:60px 1fr;
     gap:20px;
+    padding:36px 0;
   }
 
-  .service-description{
+  .service-desc{
     grid-column:2;
   }
 
   .visual-break{
     height:60vh;
-    min-height:450px;
-  }
-
-  .hero-video{
-    object-position:center center;
-    object-fit:cover;
-  }
-
-  .hero-overlay{
-    background:linear-gradient(
-      to bottom,
-      rgba(11,11,12,.35) 0%,
-      rgba(11,11,12,.45) 40%,
-      rgba(11,11,12,.92) 100%
-    );
+    min-height:420px;
   }
 
   .video-section{
-    padding:100px 0;
+    padding:110px 0;
   }
 
   .video-grid{
     grid-template-columns:1fr;
-    gap:55px;
+    gap:50px;
   }
 
   .video-showcase{
     grid-template-columns:repeat(2, 1fr);
-    gap:18px;
+    gap:16px;
   }
 
   .phases{
-    padding:100px 0;
+    padding:110px 0;
   }
 
   .phase{
     grid-template-columns:80px 1fr;
-    gap:25px;
+    gap:24px;
     padding:50px 0;
-  }
-
-  .phase-gallery{
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-  }
-
-  .phase-wide-card img{
-    height:280px;
   }
 
   .phase-content{
@@ -1035,7 +1128,16 @@ video{
   }
 
   .phase-number{
-    font-size:4rem;
+    font-size:3.8rem;
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:16px;
+  }
+
+  .wide-media img{
+    height:360px;
   }
 
   .method{
@@ -1043,12 +1145,12 @@ video{
   }
 
   .method-half{
-    min-height:400px;
-    padding:80px 10%;
+    padding:80px 8%;
+    min-height:360px;
   }
 
   .planning{
-    padding:100px 0;
+    padding:110px 0;
   }
 
   .planning-grid{
@@ -1056,41 +1158,38 @@ video{
     gap:70px;
   }
 
+  .investment{
+    padding:45px 36px;
+  }
+
   .monthly{
-    padding:100px 0;
+    padding:110px 0;
   }
 
   .monthly-grid{
     grid-template-columns:1fr;
-    gap:60px;
+    gap:50px;
   }
 
   .reference{
-    padding:100px 0;
+    padding:110px 0;
   }
 
   .reference-grid{
     grid-template-columns:1fr;
-    gap:55px;
+    gap:50px;
   }
 
   .cta{
-    padding:110px 0;
-  }
-
-  .cta-bottom{
-    align-items:flex-start;
-    flex-direction:column;
-    gap:30px;
+    padding:120px 0 80px;
   }
 }
 
-@media(max-width:560px){
-
+@media(max-width:600px){
   .container,
   .nav-inner,
   .hero-content{
-    width:calc(100% - 28px);
+    width:calc(100% - 32px);
   }
 
   .hero{
@@ -1098,63 +1197,38 @@ video{
   }
 
   .hero-title{
-    font-size:3.3rem;
-  }
-
-  .hero-description{
-    font-size:.9rem;
-    margin-top:25px;
-  }
-
-  .hero-bottom{
-    margin-top:45px;
+    font-size:3.2rem;
   }
 
   .intro-title{
-    font-size:3rem;
+    font-size:2.8rem;
   }
 
-  .intro-copy p{
-    font-size:1rem;
+  .services-title{
+    font-size:2.8rem;
   }
 
-  .service{
+  .service-row{
     grid-template-columns:40px 1fr;
+    gap:16px;
   }
 
-  .service-title{
-    font-size:1.55rem;
-  }
-
-  .service-description{
-    font-size:.82rem;
-  }
-
-  .section-title{
-    font-size:3.2rem;
+  .service-name{
+    font-size:1.5rem;
   }
 
   .video-showcase{
     grid-template-columns:1fr;
     max-width:320px;
     margin:0 auto;
-    gap:25px;
   }
 
-  .phase{
-    grid-template-columns:55px 1fr;
-  }
-
-  .phase-gallery{
+  .gallery-grid{
     grid-template-columns:1fr;
   }
 
-  .phase-title{
-    font-size:2.45rem;
-  }
-
-  .phase-content p{
-    font-size:.88rem;
+  .wide-media img{
+    height:260px;
   }
 
   .timeline-item{
@@ -1164,29 +1238,38 @@ video{
   .timeline-time{
     grid-column:2;
     text-align:left;
-    margin-top:-10px;
+    margin-top:-8px;
   }
 
   .investment{
-    padding:35px 25px;
+    padding:35px 24px;
   }
 
-  .payment{
-    grid-template-columns:1fr;
+  .price-main{
+    font-size:3.5rem;
+  }
+
+  .payment-row{
+    flex-direction:column;
+    gap:4px;
   }
 
   .monthly-title{
-    font-size:3.2rem;
+    font-size:2.8rem;
+  }
+
+  .monthly-price{
+    font-size:3rem;
   }
 
   .cta-title{
-    font-size:4.1rem;
+    font-size:3.8rem;
   }
 
   .footer-inner{
-    align-items:flex-start;
     flex-direction:column;
-    gap:10px;
+    align-items:flex-start;
+    gap:14px;
   }
 }
 </style>
@@ -1197,30 +1280,26 @@ video{
 <!-- =====================================================
      NAV
 ===================================================== -->
-
-<nav class="nav">
+<nav class="nav" role="navigation" aria-label="Navegación secundaria">
   <div class="nav-inner">
-
-    <a href="#" class="logo">
+    <a href="index.html" class="logo" aria-label="Eidos Render Inicio">
       EIDOS RENDER
     </a>
 
     <div class="nav-links">
-      <a href="#approach">Enfoque</a>
-      <a href="#services">Servicios</a>
-      <a href="#process">Proceso</a>
-      <a href="#investment">Inversión</a>
-      <a href="#contact">Contacto</a>
+      <a href="#enfoque">Enfoque</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#inversion">Inversión</a>
+      <a href="#contacto">Contacto</a>
     </div>
-
   </div>
 </nav>
 
 
 <!-- =====================================================
-     HERO
+     01. HERO
 ===================================================== -->
-
 <header class="hero">
 
   <div class="hero-media">
@@ -1234,7 +1313,7 @@ video{
 
   <div class="hero-content">
 
-    <div class="hero-kicker kicker">
+    <div class="kicker paper">
       Eidos Render / Real Estate Launch
     </div>
 
@@ -1245,9 +1324,14 @@ video{
     </h1>
 
     <p class="hero-description">
-      Imagen, identidad, material comercial, web y captación
-      para proyectos inmobiliarios.
+      Imagen, identidad, material comercial, web y captación para proyectos inmobiliarios.
     </p>
+
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-hero">
+        HABLEMOS DEL PROYECTO →
+      </a>
+    </div>
 
     <div class="hero-bottom">
       <span>Imagen · Identidad · Comercial · Digital · Captación</span>
@@ -1260,50 +1344,40 @@ video{
 
 
 <!-- =====================================================
-     APPROACH
+     02. INTRODUCCIÓN
 ===================================================== -->
-
-<section class="intro" id="approach">
+<section class="intro" id="enfoque">
 
   <div class="container">
 
     <div class="intro-grid">
 
       <div>
-        <div class="kicker gray">
+        <div class="kicker crimson">
           El lanzamiento
         </div>
 
         <h2 class="intro-title display">
-          Una promoción
+          Una promoción<br>
           necesita una historia.
         </h2>
       </div>
 
       <div class="intro-copy">
-
         <p>
-          Una promoción no necesita simplemente imágenes.
-          Necesita una dirección visual capaz de conectar
-          arquitectura, marca, comunicación y comercialización.
+          Una promoción no necesita simplemente imágenes. Necesita una dirección visual capaz de conectar arquitectura, marca, comunicación y comercialización.
         </p>
 
-        <br>
-
         <p>
-          En Eidos Render desarrollamos ese sistema desde
-          la primera imagen hasta la activación digital del proyecto.
+          En Eidos Render desarrollamos ese sistema desde la primera imagen hasta la activación digital del proyecto.
         </p>
-
       </div>
 
     </div>
 
-    <div style="margin-top: 60px; border: 1px solid var(--line); overflow: hidden; max-height: 520px; background: #0B0B0C;">
-      <img src="img/dossier/2519_MADBIT-04-Acceso.jpg" alt="Render de atrio y acceso principal — Eidos Render" style="width: 100%; height: 520px; object-fit: cover; display: block;" loading="lazy">
+    <div class="intro-image-wrap">
+      <img src="img/dossier/2519_MADBIT-04-Acceso.jpg" alt="Render de atrio y acceso principal — Eidos Render" loading="lazy">
     </div>
-
-    <div class="intro-line"></div>
 
   </div>
 
@@ -1311,114 +1385,76 @@ video{
 
 
 <!-- =====================================================
-     SERVICES
+     03. LO QUE HACEMOS
 ===================================================== -->
-
-<section class="services" id="services">
+<section class="services" id="servicios">
 
   <div class="container">
 
-    <div class="section-header">
-
+    <div class="services-header">
       <div>
-        <div class="kicker red">
+        <div class="kicker crimson">
           Lo que hacemos
         </div>
 
-        <h2 class="section-title display">
-          Una misma visión.
+        <h2 class="services-title display">
+          Una misma visión.<br>
           Todas las piezas.
         </h2>
       </div>
 
-      <div class="section-number">
+      <div class="kicker paper" style="margin-bottom:0;">
         01 / 06
       </div>
-
     </div>
 
     <div class="service-list">
 
-      <div class="service">
-        <div class="service-number">01</div>
-
-        <div class="service-title">
-          Dirección & identidad
-        </div>
-
-        <div class="service-description">
-          Concepto creativo, identidad visual, tipografía,
-          color, recursos gráficos y sistema de marca.
+      <div class="service-row">
+        <div class="service-num">01</div>
+        <div class="service-name">Dirección & identidad</div>
+        <div class="service-desc">
+          Concepto creativo, identidad visual, tipografía, color, recursos gráficos y sistema de marca.
         </div>
       </div>
 
-
-      <div class="service">
-        <div class="service-number">02</div>
-
-        <div class="service-title">
-          Imagen arquitectónica
-        </div>
-
-        <div class="service-description">
-          Exteriores, interiores, zonas comunes, lifestyle
-          y adaptaciones para los diferentes canales.
+      <div class="service-row">
+        <div class="service-num">02</div>
+        <div class="service-name">Imagen arquitectónica</div>
+        <div class="service-desc">
+          Exteriores, interiores, zonas comunes, lifestyle y adaptaciones para los diferentes canales.
         </div>
       </div>
 
-
-      <div class="service">
-        <div class="service-number">03</div>
-
-        <div class="service-title">
-          Vídeo & animación
-        </div>
-
-        <div class="service-description">
-          Vídeo 3D y piezas en movimiento para presentar
-          el proyecto, generar contenido y potenciar campañas.
+      <div class="service-row">
+        <div class="service-num">03</div>
+        <div class="service-name">Vídeo & animación</div>
+        <div class="service-desc">
+          Vídeo 3D y piezas en movimiento para presentar el proyecto, generar atmósfera y potenciar campañas.
         </div>
       </div>
 
-
-      <div class="service">
-        <div class="service-number">04</div>
-
-        <div class="service-title">
-          Material comercial
-        </div>
-
-        <div class="service-description">
-          Dossier, planos, infografías, mapas, tipologías
-          y soportes comerciales preparados para la venta.
+      <div class="service-row">
+        <div class="service-num">04</div>
+        <div class="service-name">Material comercial</div>
+        <div class="service-desc">
+          Dossier, planos, infografías, mapas, tipologías y soportes comerciales preparados para la venta.
         </div>
       </div>
 
-
-      <div class="service">
-        <div class="service-number">05</div>
-
-        <div class="service-title">
-          Web de promoción
-        </div>
-
-        <div class="service-description">
-          UX/UI, desarrollo responsive, contenido, formularios,
-          analítica y estructura preparada para captación.
+      <div class="service-row">
+        <div class="service-num">05</div>
+        <div class="service-name">Web de promoción</div>
+        <div class="service-desc">
+          UX/UI, desarrollo responsive, contenido, analítica y plataforma orientada a la comercialización.
         </div>
       </div>
 
-
-      <div class="service">
-        <div class="service-number">06</div>
-
-        <div class="service-title">
-          Lanzamiento & captación
-        </div>
-
-        <div class="service-description">
-          Google Ads, Meta Ads, creatividades, tracking,
-          audiencias y optimización continua.
+      <div class="service-row">
+        <div class="service-num">06</div>
+        <div class="service-name">Lanzamiento & captación</div>
+        <div class="service-desc">
+          Google Ads, Meta Ads, creatividades, tracking, audiencias y optimización continua.
         </div>
       </div>
 
@@ -1430,37 +1466,33 @@ video{
 
 
 <!-- =====================================================
-     VISUAL BREAK
+     04. VISUAL BREAK
 ===================================================== -->
-
 <section class="visual-break">
 
   <div class="visual-break-media">
-    <img src="img/dossier/2517-ALTEA%20HILLS-04-Fachada%20A.jpg" alt="Render de fachada de villa moderna con piscina en Altea Hills" loading="lazy">
+    <img src="img/dossier/2517-ALTEA%20HILLS-04-Fachada%20A.jpg" alt="Render de fachada contemporánea en Altea Hills" loading="lazy">
   </div>
   <div class="visual-break-overlay"></div>
 
   <div class="container visual-break-content">
-
-    <div class="kicker">
+    <div class="kicker paper">
       Imagen arquitectónica
     </div>
 
     <h2 class="visual-break-title display">
-      La primera impresión
-      empieza mucho antes
+      La primera impresión<br>
+      empieza mucho antes<br>
       de la visita.
     </h2>
-
   </div>
 
 </section>
 
 
 <!-- =====================================================
-     VIDEO
+     05. VÍDEO & ANIMACIÓN
 ===================================================== -->
-
 <section class="video-section">
 
   <div class="container">
@@ -1468,53 +1500,33 @@ video{
     <div class="video-grid">
 
       <div>
-
-        <div class="kicker">
+        <div class="kicker paper">
           Imagen en movimiento
         </div>
 
         <h2 class="video-title display">
-          Del render estático
-          a una experiencia
+          Del render estático<br>
+          a una experiencia<br>
           en movimiento.
         </h2>
 
         <p class="video-copy">
           Desarrollamos vídeo y animación 3D en formato vertical 9:16 y cinematográfico para presentar el proyecto, construir atmósfera y potenciar el rendimiento en campañas de captación, Reels y presentaciones comerciales.
         </p>
-
-        <div class="phase-tags" style="margin-top: 30px;">
-          <span class="tag" style="border-color: rgba(244,243,239,.35); color: var(--paper);">Formato 9:16</span>
-          <span class="tag" style="border-color: rgba(244,243,239,.35); color: var(--paper);">Reels & Social Ads</span>
-          <span class="tag" style="border-color: rgba(244,243,239,.35); color: var(--paper);">Animación 3D</span>
-        </div>
-
       </div>
 
       <div class="video-showcase">
 
-        <div class="video-card">
-          <div class="video-frame">
-            <video autoplay muted loop playsinline controls poster="img/dossier/2437-GARE%20DES%20MINES-02-Green%20corridor.jpg">
-              <source src="img/dossier/2519_MADBIT-10-Patio%20B.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="video-badge">
-            <span>Patio Central · Toma 01</span>
-            <span>9:16 Reel</span>
-          </div>
+        <div class="video-frame">
+          <video autoplay muted loop playsinline controls poster="img/dossier/2437-GARE%20DES%20MINES-02-Green%20corridor.jpg">
+            <source src="img/dossier/2519_MADBIT-10-Patio%20B.mp4" type="video/mp4">
+          </video>
         </div>
 
-        <div class="video-card">
-          <div class="video-frame">
-            <video autoplay muted loop playsinline controls poster="img/dossier/2519_MADBIT-07-Piscina.jpg">
-              <source src="img/dossier/2519_MADBIT-10-Patio%20B%20v02.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="video-badge">
-            <span>Patio Central · Toma 02</span>
-            <span>9:16 Reel</span>
-          </div>
+        <div class="video-frame">
+          <video autoplay muted loop playsinline controls poster="img/dossier/2519_MADBIT-07-Piscina.jpg">
+            <source src="img/dossier/2519_MADBIT-10-Patio%20B%20v02.mp4" type="video/mp4">
+          </video>
         </div>
 
       </div>
@@ -1527,227 +1539,163 @@ video{
 
 
 <!-- =====================================================
-     PHASES
+     06. PROCESO EDITORIAL (DEL CONCEPTO AL LANZAMIENTO)
 ===================================================== -->
-
-<section class="phases" id="process">
+<section class="phases" id="proceso">
 
   <div class="container">
 
-    <div class="kicker gray">
-      El proceso
-    </div>
-
-    <h2 class="planning-title display">
-      Del concepto
-      al primer lead.
-    </h2>
-
-
-    <!-- PHASE 01 -->
-
-    <div class="phase">
-
-      <div class="phase-number">
-        01
+    <div class="phases-header">
+      <div class="kicker crimson">
+        El proceso
       </div>
 
+      <h2 class="phases-title display">
+        Del concepto<br>
+        al lanzamiento.
+      </h2>
+    </div>
+
+
+    <!-- FASE 01 -->
+    <div class="phase">
+      <div class="phase-number">01</div>
+
       <h3 class="phase-title">
-        Dirección
+        Dirección<br>
         & identidad
       </h3>
 
       <div class="phase-content">
-
         <p>
-          Definimos el lenguaje visual de la promoción
-          antes de trasladarlo al resto de piezas.
+          Definimos el lenguaje visual de la promoción antes de trasladarlo al resto de piezas: concepto, sistema tipográfico, paleta cromática y aplicaciones de marca.
         </p>
-
-        <div class="phase-tags">
-          <span class="tag">Concepto</span>
-          <span class="tag">Branding</span>
-          <span class="tag">Dirección visual</span>
-          <span class="tag">Aplicaciones</span>
+        <div class="editorial-note">
+          Concepto · Branding · Dirección visual · Aplicaciones
         </div>
-
       </div>
-
     </div>
 
 
-    <!-- PHASE 02 -->
-
+    <!-- FASE 02 -->
     <div class="phase">
-
-      <div class="phase-number">
-        02
-      </div>
+      <div class="phase-number">02</div>
 
       <h3 class="phase-title">
-        Imagen
+        Imagen<br>
         arquitectónica
       </h3>
 
       <div class="phase-content">
-
         <p>
-          Representamos el proyecto de forma que no solo
-          muestre arquitectura, sino que construya deseo
-          y comunique un estilo de vida.
+          Representamos el proyecto de forma que no solo muestre arquitectura, sino que construya deseo y comunique un estilo de vida.
         </p>
-
-        <div class="phase-tags">
-          <span class="tag">Exteriores</span>
-          <span class="tag">Interiores</span>
-          <span class="tag">Zonas comunes</span>
-          <span class="tag">Lifestyle</span>
-        </div>
-
-      </div>
-
-      <div class="phase-gallery">
-        <div class="phase-img-card">
-          <img src="img/dossier/2435-ROZAFA-02%20Calle%20Este.jpg" alt="Render exterior de fachada urbana Residencial Rozafa" loading="lazy">
-          <div class="phase-img-caption">
-            <span>Exteriores</span>
-            <span>4K UHD</span>
-          </div>
-        </div>
-
-        <div class="phase-img-card">
-          <img src="img/dossier/2508-03-Interior.jpeg" alt="Render interiorismo penthouse salón comedor con luz natural" loading="lazy">
-          <div class="phase-img-caption">
-            <span>Interiores</span>
-            <span>Luz Natural</span>
-          </div>
-        </div>
-
-        <div class="phase-img-card">
-          <img src="img/dossier/2519_MADBIT-07-Piscina.jpg" alt="Render zonas comunes piscina solarium en cubierta" loading="lazy">
-          <div class="phase-img-caption">
-            <span>Zonas Comunes</span>
-            <span>Amenity</span>
-          </div>
-        </div>
-
-        <div class="phase-img-card">
-          <img src="img/dossier/2519_MADBIT-19-Yoga%20interior.jpg" alt="Render espacio wellness y sala de yoga" loading="lazy">
-          <div class="phase-img-caption">
-            <span>Lifestyle</span>
-            <span>Wellness</span>
-          </div>
+        <div class="editorial-note">
+          Exteriores · Interiores · Zonas comunes · Lifestyle
         </div>
       </div>
 
+      <!-- Galería Editorial de Imágenes -->
+      <div class="gallery-grid">
+
+        <div class="gallery-card">
+          <div class="gallery-media">
+            <img src="img/dossier/2435-ROZAFA-02%20Calle%20Este.jpg" alt="Exteriores de fachada residencial de obra nueva" loading="lazy">
+          </div>
+          <div class="gallery-caption">Exteriores</div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-media">
+            <img src="img/dossier/2508-03-Interior.jpeg" alt="Interiores de salón y cocina con luz natural" loading="lazy">
+          </div>
+          <div class="gallery-caption">Interiores</div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-media">
+            <img src="img/dossier/2519_MADBIT-07-Piscina.jpg" alt="Zonas comunes de piscina y solárium en cubierta" loading="lazy">
+          </div>
+          <div class="gallery-caption">Zonas Comunes</div>
+        </div>
+
+        <div class="gallery-card">
+          <div class="gallery-media">
+            <img src="img/dossier/2519_MADBIT-19-Yoga%20interior.jpg" alt="Interiorismo y espacio de relax y yoga" loading="lazy">
+          </div>
+          <div class="gallery-caption">Lifestyle</div>
+        </div>
+
+      </div>
     </div>
 
 
-    <!-- PHASE 03 -->
-
+    <!-- FASE 03 -->
     <div class="phase">
-
-      <div class="phase-number">
-        03
-      </div>
+      <div class="phase-number">03</div>
 
       <h3 class="phase-title">
-        Material
+        Material<br>
         comercial
       </h3>
 
       <div class="phase-content">
-
         <p>
-          Convertimos la información técnica del proyecto
-          en herramientas comerciales claras, visuales
-          y coherentes.
+          Convertimos la información técnica del proyecto en herramientas comerciales claras, visuales y coherentes para el equipo de ventas.
         </p>
-
-        <div class="phase-tags">
-          <span class="tag">Dossier</span>
-          <span class="tag">Planos</span>
-          <span class="tag">Infografías</span>
-          <span class="tag">Soportes</span>
-        </div>
-
-      </div>
-
-      <div class="phase-media-wide">
-        <div class="phase-wide-card">
-          <img src="img/dossier/2435-ROZAFA-05%20Contrapicado.jpg" alt="Perspectiva en contrapicado de gran formato para vallas de obra y dossiers" loading="lazy">
-          <div class="phase-img-caption">
-            <span>Soportes de Gran Formato · Dossier & Vallas de Obra</span>
-            <span>4K Ultra-HD</span>
-          </div>
+        <div class="editorial-note">
+          Dossier · Planos · Infografías · Soportes
         </div>
       </div>
 
+      <div class="wide-media-wrap">
+        <div class="wide-media">
+          <img src="img/dossier/2435-ROZAFA-05%20Contrapicado.jpg" alt="Perspectiva de gran formato para vallas de obra y dossiers editoriales" loading="lazy">
+        </div>
+        <div class="wide-caption">
+          Dossier · Planos · Infografías · Soportes
+        </div>
+      </div>
     </div>
 
 
-    <!-- PHASE 04 -->
-
+    <!-- FASE 04 -->
     <div class="phase">
-
-      <div class="phase-number">
-        04
-      </div>
+      <div class="phase-number">04</div>
 
       <h3 class="phase-title">
-        Web de
+        Web de<br>
         promoción
       </h3>
 
       <div class="phase-content">
-
         <p>
-          Una experiencia digital diseñada para presentar
-          el proyecto y convertir el interés en contactos.
+          Una experiencia digital diseñada para presentar el proyecto, poner en valor la arquitectura y facilitar el contacto comercial.
         </p>
-
-        <div class="phase-tags">
-          <span class="tag">UX / UI</span>
-          <span class="tag">Desarrollo</span>
-          <span class="tag">Contenido</span>
-          <span class="tag">Leads</span>
+        <div class="editorial-note">
+          UX / UI · Desarrollo · Contenido
         </div>
-
       </div>
-
     </div>
 
 
-    <!-- PHASE 05 -->
-
+    <!-- FASE 05 -->
     <div class="phase">
-
-      <div class="phase-number">
-        05
-      </div>
+      <div class="phase-number">05</div>
 
       <h3 class="phase-title">
-        Lanzamiento
+        Lanzamiento<br>
         & captación
       </h3>
 
       <div class="phase-content">
-
         <p>
-          Activamos los canales digitales para llevar
-          la promoción hasta potenciales compradores
-          y medir el comportamiento de las campañas.
+          Activamos los canales digitales para llevar la promoción hasta potenciales compradores e inversores, optimizando las creatividades en función del rendimiento.
         </p>
-
-        <div class="phase-tags">
-          <span class="tag">Google Ads</span>
-          <span class="tag">Meta Ads</span>
-          <span class="tag">Creatividades</span>
-          <span class="tag">Tracking</span>
+        <div class="editorial-note">
+          Google Ads · Meta Ads · Creatividades · Tracking · Optimización
         </div>
-
       </div>
-
     </div>
 
   </div>
@@ -1756,62 +1704,53 @@ video{
 
 
 <!-- =====================================================
-     METHOD
+     07. ENFOQUE & OBJETIVO
 ===================================================== -->
-
 <section class="method">
 
   <div class="method-half method-black">
-
     <div class="method-label">
       Nuestro enfoque
     </div>
 
     <h2 class="method-title">
-      Una misma dirección
-      visual desde el primer
-      render hasta el primer lead.
+      Una misma dirección visual desde el primer render hasta el lanzamiento.
     </h2>
-
   </div>
 
-
   <div class="method-half method-red">
-
     <div class="method-label">
       El objetivo
     </div>
 
     <h2 class="method-title">
-      Presentar.
-      Diferenciar.
+      Presentar.<br>
+      Diferenciar.<br>
       Comercializar.
     </h2>
-
   </div>
 
 </section>
 
 
 <!-- =====================================================
-     PLANNING + INVESTMENT
+     08. PLANIFICACIÓN & INVERSIÓN
 ===================================================== -->
-
-<section class="planning" id="investment">
+<section class="planning" id="inversion">
 
   <div class="container">
 
     <div class="planning-grid">
 
+      <!-- Planificación Editorial Timeline -->
       <div>
-
-        <div class="kicker gray">
+        <div class="kicker crimson">
           Planificación
         </div>
 
         <h2 class="planning-title display">
-          Un proyecto
-          pensado desde
+          Un proyecto<br>
+          pensado desde<br>
           el lanzamiento.
         </h2>
 
@@ -1819,114 +1758,77 @@ video{
 
           <div class="timeline-item">
             <div class="timeline-number">01</div>
-            <div class="timeline-title">
-              Dirección + identidad
-            </div>
-            <div class="timeline-time">
-              1–2 sem.
-            </div>
+            <div class="timeline-title">Dirección + identidad</div>
+            <div class="timeline-time">1–2 sem.</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-number">02</div>
-            <div class="timeline-title">
-              Imagen + vídeo
-            </div>
-            <div class="timeline-time">
-              2–4 sem.
-            </div>
+            <div class="timeline-title">Imagen + vídeo</div>
+            <div class="timeline-time">2–4 sem.</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-number">03</div>
-            <div class="timeline-title">
-              Material comercial
-            </div>
-            <div class="timeline-time">
-              1–2 sem.
-            </div>
+            <div class="timeline-title">Material comercial</div>
+            <div class="timeline-time">1–2 sem.</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-number">04</div>
-            <div class="timeline-title">
-              Web
-            </div>
-            <div class="timeline-time">
-              3–5 sem.
-            </div>
+            <div class="timeline-title">Web</div>
+            <div class="timeline-time">3–5 sem.</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-number">05</div>
-            <div class="timeline-title">
-              Preparación campañas
-            </div>
-            <div class="timeline-time">
-              1 sem.
-            </div>
+            <div class="timeline-title">Preparación campañas</div>
+            <div class="timeline-time">1 sem.</div>
           </div>
 
         </div>
-
       </div>
 
-
+      <!-- Inversión Dossier Block -->
       <div>
-
         <div class="investment">
 
-          <div class="investment-title">
-            PROYECTO INTEGRAL
+          <div>
+            <div class="investment-header">
+              <div class="investment-title">Proyecto Integral</div>
+              <div class="investment-sub">Real Estate Launch</div>
+            </div>
+
+            <div class="price-wrap">
+              <div class="price-prefix">Desde</div>
+              <div class="price-main">12.000 € <span>+ IVA</span></div>
+              <div class="price-detail">
+                Presupuesto definitivo según alcance, escala de la promoción y volumen de producción. Punto de partida orientativo dimensionado a las necesidades de cada proyecto.
+              </div>
+            </div>
           </div>
 
-          <div>
-            <div class="price">
-              Desde<br>
-              12.000 €
-            </div>
+          <!-- Forma de Pago Editorial -->
+          <div class="payment-section">
+            <div class="payment-title">Forma de pago</div>
 
-            <div class="price-note">
-              + IVA · Presupuesto definitivo según alcance,
-              escala de la promoción y volumen de producción.
-            </div>
-          </div>
-
-          <div>
-
-            <div class="kicker" style="color:var(--crimson);margin-bottom:15px;">
-              Forma de pago
-            </div>
-
-            <div class="payment">
-
-              <div class="payment-box">
-                <div class="payment-number">40%</div>
-                <div class="payment-label">
-                  Confirmación y reserva
-                </div>
+            <div class="payment-list">
+              <div class="payment-row">
+                <span class="payment-pct">40%</span>
+                <span class="payment-desc">Confirmación y reserva</span>
               </div>
-
-              <div class="payment-box">
-                <div class="payment-number">30%</div>
-                <div class="payment-label">
-                  Durante el desarrollo
-                </div>
+              <div class="payment-row">
+                <span class="payment-pct">30%</span>
+                <span class="payment-desc">Durante el desarrollo</span>
               </div>
-
-              <div class="payment-box">
-                <div class="payment-number">30%</div>
-                <div class="payment-label">
-                  Entrega final
-                </div>
+              <div class="payment-row">
+                <span class="payment-pct">30%</span>
+                <span class="payment-desc">Entrega final</span>
               </div>
-
             </div>
-
           </div>
 
         </div>
-
       </div>
 
     </div>
@@ -1937,9 +1839,8 @@ video{
 
 
 <!-- =====================================================
-     MONTHLY
+     09. CONTINUIDAD
 ===================================================== -->
-
 <section class="monthly">
 
   <div class="container">
@@ -1947,54 +1848,29 @@ video{
     <div class="monthly-grid">
 
       <div>
-
-        <div class="kicker">
-          Fase 06 / Continuidad
+        <div class="kicker paper">
+          Fase 06 · Continuidad
         </div>
 
         <h2 class="monthly-title display">
-          El lanzamiento
-          no termina cuando
+          El lanzamiento<br>
+          no termina cuando<br>
           la web está publicada.
         </h2>
-
       </div>
 
-
       <div>
-
         <div class="monthly-price">
           Desde 600 €/mes
         </div>
 
         <div class="monthly-note">
-          + IVA · Inversión publicitaria aparte
+          + IVA · Inversión publicitaria aparte · Tarifa orientativa según alcance
         </div>
 
-        <div class="monthly-list">
-
-          <div class="monthly-item">
-            <span>Google Ads</span>
-            <span>01</span>
-          </div>
-
-          <div class="monthly-item">
-            <span>Meta Ads</span>
-            <span>02</span>
-          </div>
-
-          <div class="monthly-item">
-            <span>Optimización</span>
-            <span>03</span>
-          </div>
-
-          <div class="monthly-item">
-            <span>Reporting</span>
-            <span>04</span>
-          </div>
-
+        <div class="monthly-editorial-line">
+          Google Ads · Meta Ads · Optimización · Reporting
         </div>
-
       </div>
 
     </div>
@@ -2005,9 +1881,8 @@ video{
 
 
 <!-- =====================================================
-     REFERENCE
+     10. REFERENCIA EXTERNA (KORA LUMEN)
 ===================================================== -->
-
 <section class="reference">
 
   <div class="container">
@@ -2015,19 +1890,21 @@ video{
     <div class="reference-grid">
 
       <div>
-
-        <div class="kicker red">
-          Referencia
+        <div class="kicker crimson">
+          Referencia Externa
         </div>
 
         <h2 class="reference-title display">
-          Un proyecto
+          Un proyecto<br>
           de escala.
         </h2>
 
         <p class="reference-copy">
-          Como referencia del tipo de enfoque y nivel de desarrollo
-          al que nos referimos, puedes consultar Kora Lumen, de Kategora.
+          Como referencia externa del tipo de enfoque, dimensión visual y rigor al que nos referimos en promociones de envergadura, puedes consultar Kora Lumen de la promotora Kategora.
+        </p>
+
+        <p class="reference-disclaimer">
+          Referencia de mercado para ilustrar la escala y estructuración del despliegue comercial.
         </p>
 
         <a
@@ -2036,16 +1913,14 @@ video{
           target="_blank"
           rel="noopener"
         >
-          VER PROYECTO →
+          CONSULTAR PROYECTO DE REFERENCIA ↗
         </a>
-
       </div>
-
 
       <div class="reference-image">
         <img
           src="img/dossier/2363-UNIVERSIDAD%20ROSARIO-Ext%2002_A%C3%A9rea%20General.jpg"
-          alt="Proyecto de gran escala — Eidos Render"
+          alt="Kora Lumen Kategora — Referencia externa de escala"
           loading="lazy"
         >
       </div>
@@ -2058,14 +1933,13 @@ video{
 
 
 <!-- =====================================================
-     CTA
+     11. CTA FINAL EDITORIAL & CONTACTO DIRECTO
 ===================================================== -->
-
-<section class="cta" id="contact">
+<section class="cta" id="contacto">
 
   <div class="container">
 
-    <div class="kicker gray">
+    <div class="kicker crimson">
       Eidos Render
     </div>
 
@@ -2076,17 +1950,46 @@ video{
       <span>Un lanzamiento.</span>
     </h2>
 
-    <div class="cta-bottom">
+    <p class="cta-copy">
+      Trabajamos junto al equipo del proyecto para convertir arquitectura en imagen, imagen en marca y marca en oportunidades comerciales.
+    </p>
 
-      <div class="body-large">
-        Trabajamos junto al equipo del proyecto para convertir
-        arquitectura en imagen, imagen en marca y marca en
-        oportunidades comerciales.
-      </div>
-
-      <a href="mailto:hola@eidosrender.es" class="cta-button">
+    <div class="cta-actions">
+      <a href="mailto:info@eidosrender.es?subject=Consulta%20sobre%20Real%20Estate%20Launch" class="btn-contact">
         HABLEMOS DEL PROYECTO →
       </a>
+    </div>
+
+    <!-- Bloque de Contacto Directo Minimalista -->
+    <div class="cta-direct-block">
+
+      <div>
+        <div class="direct-label">Email Directo</div>
+        <div class="direct-value">
+          <a href="mailto:info@eidosrender.es">info@eidosrender.es</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="direct-label">Teléfono</div>
+        <div class="direct-value">
+          <a href="tel:+34614459144">+34 614 45 91 44</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="direct-label">WhatsApp Directo</div>
+        <div class="direct-value">
+          <a href="https://wa.me/34614459144" target="_blank" rel="noopener">Iniciar Conversación ↗</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="direct-label">Estudio</div>
+        <div class="direct-value" style="font-size:1rem;color:var(--signal);font-weight:500;">
+          Valencia, España · Cobertura Internacional
+        </div>
+      </div>
 
     </div>
 
@@ -2098,21 +2001,23 @@ video{
 <!-- =====================================================
      FOOTER
 ===================================================== -->
-
-<footer class="footer">
+<footer class="footer" role="contentinfo">
 
   <div class="container footer-inner">
 
-    <div class="footer-brand">
-      Eidos Render
-    </div>
-
-    <div class="footer-muted">
-      Real Estate Launch
+    <div>
+      <a href="index.html" style="font-weight:700;">EIDOS RENDER</a>
+      <span class="footer-muted" style="margin-left:12px;">Real Estate Launch</span>
     </div>
 
     <div class="footer-muted">
       Imagen · Identidad · Comercial · Digital · Captación
+    </div>
+
+    <div style="display:flex;gap:20px;">
+      <a href="index.html">Web Principal</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
     </div>
 
   </div>
