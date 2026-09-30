@@ -151,21 +151,16 @@ video{
 .hero-media{
   position:absolute;
   inset:0;
-  background:
-    linear-gradient(135deg,#171717 0%,#464646 45%,#181818 100%);
+  background:#0B0B0C;
+  overflow:hidden;
 }
 
-.hero-media::after{
-  content:"IMAGEN / REEMPLAZAR";
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%) rotate(-7deg);
-  color:rgba(255,255,255,.3);
-  font-family:'Space Grotesk',sans-serif;
-  font-size:1rem;
-  font-weight:700;
-  letter-spacing:.1em;
+.hero-media img,
+.hero-media video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 .hero-overlay{
@@ -339,21 +334,15 @@ video{
 .visual-break-media{
   position:absolute;
   inset:0;
-  background:
-    linear-gradient(135deg,#292929,#777,#1b1b1b);
+  background:#111;
+  overflow:hidden;
 }
 
-.visual-break-media::after{
-  content:"RENDER / REEMPLAZAR";
-  position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:rgba(255,255,255,.3);
-  font-family:'Space Grotesk',sans-serif;
-  font-weight:700;
-  letter-spacing:.08em;
+.visual-break-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 .visual-break-overlay{
@@ -411,37 +400,17 @@ video{
 
 .video-frame{
   aspect-ratio:16/10;
-  background:
-    linear-gradient(135deg,#171717,#5b5b5b,#171717);
+  background:#0B0B0C;
   position:relative;
   overflow:hidden;
   border:1px solid rgba(244,243,239,.3);
 }
 
-.video-frame::before{
-  content:"VIDEO / 3D ANIMATION";
-  position:absolute;
-  top:25px;
-  left:25px;
-  font-size:.68rem;
-  font-weight:600;
-  letter-spacing:.1em;
-  z-index:2;
-}
-
-.play{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  width:74px;
-  height:74px;
-  border:2px solid var(--paper);
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:1.2rem;
+.video-frame video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 /* =====================================================
@@ -506,6 +475,70 @@ video{
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.06em;
+}
+
+.phase-gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:35px;
+  grid-column:1 / -1;
+}
+
+.phase-img-card{
+  background:#0B0B0C;
+  overflow:hidden;
+  position:relative;
+  aspect-ratio:4/3;
+  border:1px solid var(--line);
+}
+
+.phase-img-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .4s ease;
+}
+
+.phase-img-card:hover img{
+  transform:scale(1.04);
+}
+
+.phase-img-caption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:8px 12px;
+  background:rgba(11,11,12,.8);
+  color:#FFFFFF;
+  font-size:.65rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  display:flex;
+  justify-content:space-between;
+}
+
+.phase-media-wide{
+  grid-column:1 / -1;
+  margin-top:35px;
+}
+
+.phase-wide-card{
+  background:#0B0B0C;
+  overflow:hidden;
+  position:relative;
+  max-height:480px;
+  border:1px solid var(--line);
+}
+
+.phase-wide-card img{
+  width:100%;
+  height:480px;
+  object-fit:cover;
+  display:block;
 }
 
 /* =====================================================
