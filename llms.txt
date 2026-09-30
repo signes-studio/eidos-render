@@ -29,8 +29,7 @@ Eidos Render convierte proyectos inmobiliarios en experiencias visuales y comerc
 ## Estructura Web & Recursos
 
 - [Página Principal](https://eidosrender.es/): Visión general, servicios, portfolio editorial, vídeo, proceso, escala, inversión y contacto.
-- [Proyectos & Archivo de Producción](https://eidosrender.es/proyectos): Portfolio de promociones residenciales, villas, zonas comunes y paisajismo.
-  - [Villa Altea Hills](https://eidosrender.es/proyectos/altea-hills): Villa unifamiliar de alto standing en Alicante.
+- [Proyectos & Archivo de Producción](https://eidosrender.es/proyectos): Portfolio de promociones residenciales, villas contemporáneas, zonas comunes y paisajismo.
 - [Servicios](https://eidosrender.es/servicios): Detalle de las 6 fases de la propuesta de lanzamiento.
   - [Infografía 3D](https://eidosrender.es/servicios/infografia-3d): Renders exteriores, interiores y zonas comunes.
   - [Vídeo 3D](https://eidosrender.es/servicios/video-3d): Recorridos virtuales cinemáticos y reels verticales 9:16.
