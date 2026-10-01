@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion Piece 02 — Sombra Proyectada | Eidos Render</title>
+  <link rel="stylesheet" href="../../assets/fonts.css">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body {
+      background-color: var(--charcoal);
+      color: var(--cream);
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-text);
+      overflow-x: hidden;
+    }
+
+    .test-header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line-dark);
+      background-color: var(--charcoal-2);
+      position: relative;
+      z-index: 100;
+    }
+
+    .test-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .test-controls {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-test {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      border: 1px solid var(--line-dark);
+      background: transparent;
+      color: var(--cream);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-test:hover, .btn-test.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--cream);
+    }
+
+    /* ==========================================================================
+       COMPONENTE: SOMBRA PROYECTADA (Motion Graphic 02)
+       ========================================================================== */
+    .motion-shadow-stage {
+      background-color: var(--cream);
+      color: var(--charcoal);
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Capa SVG de Sombra Proyectada con bordes duros (Cero desenfoque) */
+    .projected-shadow-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .shadow-polygon {
+      fill: var(--charcoal);
+      opacity: 0.055; /* Contraste comedido de alta gama */
+      will-change: transform;
+    }
+
+    /* Línea de arista de sombra proyectada (1px datum line) */
+    .shadow-edge-line {
+      stroke: rgba(30, 28, 26, 0.12);
+      stroke-width: 1;
+      stroke-dasharray: 4 4;
+    }
+
+    .stage-content {
+      position: relative;
+      z-index: 2;
+      width: min(var(--max), calc(100% - 120px));
+      margin: 0 auto;
+      padding: 100px 0;
+    }
+
+    .manifesto-kicker {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .manifesto-lead {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 5.8vw, 5.2rem);
+      line-height: 0.96;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin: 0 0 36px 0;
+      max-width: 1100px;
+    }
+
+    .manifesto-body-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 980px;
+    }
+
+    .manifesto-p {
+      font-size: 1.18rem;
+      line-height: 1.65;
+      color: rgba(30, 28, 26, 0.82);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="test-header">
+    <div class="test-title">
+      <span style="color: var(--accent); font-weight: 700;">02</span>
+      <span>Motion Graphics: Sombra Proyectada (Geometría Solar)</span>
+    </div>
+
+    <div class="test-controls">
+      <button class="btn-test" id="btn-morning">Mañana (Ángulo 35°)</button>
+      <button class="btn-test" id="btn-noon">Mediodía (Corte Corto 70°)</button>
+      <button class="btn-test" id="btn-afternoon">Tarde (Ángulo Rasante 20°)</button>
+    </div>
+  </header>
+
+  <main class="motion-shadow-stage">
+    
+    <!-- Lienzo SVG con polígono de sombra plana y bordes duros -->
+    <svg class="projected-shadow-canvas" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <!-- Polígono de sombra simulando un alero o voladizo arquitectónico -->
+      <polygon id="shadow-poly" class="shadow-polygon" points="0,0 850,0 350,900 0,900" />
+      <line id="shadow-line" class="shadow-edge-line" x1="850" y1="0" x2="350" y2="900" />
+    </svg>
+
+    <div class="stage-content">
+      <span class="manifesto-kicker">MANIFIESTO ARQUITECTÓNICO</span>
+      <h1 class="manifesto-lead">
+        UN RENDER NO ES UNA IMAGEN TÉCNICA.<br>
+        ES EL PRIMER ACTIVO COMERCIAL.
+      </h1>
+
+      <div class="manifesto-body-grid">
+        <p class="manifesto-p">
+          En el mercado inmobiliario actual, el comprador adquiere una emoción antes de que se coloque la primera piedra. Tratamos la visualización con rigor arquitectónico y sentido comercial: encuadres intencionados y dirección lumínica precisa.
+        </p>
+        <p class="manifesto-p">
+          La sombra no es un adorno: es el elemento que mide la profundidad espacial de una fachada. Proyectamos volúmenes limpios donde cada cota constructiva aporta claridad a la comercialización.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../../assets/vendor/gsap.min.js"></script>
+  <script>
+    const poly = document.getElementById('shadow-poly');
+    const line = document.getElementById('shadow-line');
+
+    const states = {
+      morning: { p: "0,0 600,0 200,900 0,900", l: { x1: 600, y1: 0, x2: 200, y2: 900 } },
+      noon: { p: "0,0 950,0 520,900 0,900", l: { x1: 950, y1: 0, x2: 520, y2: 900 } },
+      afternoon: { p: "0,0 1350,0 800,900 0,900", l: { x1: 1350, y1: 0, x2: 800, y2: 900 } }
+    };
+
+    function setShadowState(stateName, duration = 1.0) {
+      const target = states[stateName];
+      if (!target) return;
+
+      // Animate polygon points via GSAP attr plugin
+      gsap.to(poly, {
+        attr: { points: target.p },
+        duration: duration,
+        ease: 'expo.out'
+      });
+
+      gsap.to(line, {
+        attr: target.l,
+        duration: duration,
+        ease: 'expo.out'
+      });
+    }
+
+    document.getElementById('btn-morning').addEventListener('click', () => setShadowState('morning'));
+    document.getElementById('btn-noon').addEventListener('click', () => setShadowState('noon'));
+    document.getElementById('btn-afternoon').addEventListener('click', () => setShadowState('afternoon'));
+
+    // Set initial
+    setShadowState('noon', 0);
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('state') === 'morning') setShadowState('morning', 0);
+    else if (params.get('state') === 'afternoon') setShadowState('afternoon', 0);
+  </script>
+</body>
+</html>

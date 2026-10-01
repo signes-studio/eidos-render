@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion Piece 05 — Sección que se Dibuja (Completada) | Eidos Render</title>
+  <link rel="stylesheet" href="../../assets/fonts.css">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body {
+      background-color: var(--cream);
+      color: var(--charcoal);
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-text);
+      overflow-x: hidden;
+    }
+
+    .test-header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background-color: var(--cream-2);
+      position: relative;
+      z-index: 100;
+    }
+
+    .motion-section-stage {
+      min-height: calc(100vh - 80px);
+      padding: 80px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: var(--cream);
+    }
+
+    .section-draw-container {
+      width: min(var(--max), calc(100% - 120px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .section-copy-col {
+      max-width: 540px;
+    }
+
+    .section-kicker {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .section-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin: 0 0 28px 0;
+    }
+
+    .section-body {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: rgba(30, 28, 26, 0.85);
+      margin: 0 0 32px 0;
+    }
+
+    .arch-section-svg {
+      width: 100%;
+      height: 480px;
+      background-color: var(--cream-2);
+      border: 1px solid var(--line);
+      box-sizing: border-box;
+      display: block;
+    }
+
+    .path-section-outline {
+      fill: none;
+      stroke: var(--charcoal);
+      stroke-width: 2.25;
+      stroke-linecap: square;
+      stroke-linejoin: miter;
+    }
+
+    .path-structural-datum {
+      fill: none;
+      stroke: rgba(30, 28, 26, 0.25);
+      stroke-width: 1;
+      stroke-dasharray: 4 4;
+    }
+
+    .accent-focal-point {
+      fill: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="test-header">
+    <div style="font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.1em; text-transform: uppercase;">
+      <span style="color: var(--accent); font-weight: 700;">05</span>
+      <span>Motion Graphics: Sección que se Dibuja — Fotograma Completo (100%)</span>
+    </div>
+  </header>
+
+  <main class="motion-section-stage">
+    
+    <div class="section-draw-container">
+      
+      <div class="section-copy-col">
+        <span class="section-kicker">RIGOR CONSTRUCTIVO</span>
+        <h1 class="section-headline">
+          DE LA SECCIÓN<br>AL ESPACIO VIVIDO.
+        </h1>
+        <p class="section-body">
+          No generamos imágenes superficiales: comprendemos la estructura portante, los vanos y el encuentro entre forjados para plasmar la intención original del arquitecto.
+        </p>
+        <div style="font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone-text);">
+          ESCALA 1:100 · SECCIÓN LONGITUDINAL ABSTRACTA
+        </div>
+      </div>
+
+      <div>
+        <svg class="arch-section-svg" viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Líneas guía de cota estructural -->
+          <line class="path-structural-datum" x1="40" y1="120" x2="660" y2="120" />
+          <line class="path-structural-datum" x1="40" y1="240" x2="660" y2="240" />
+          <line class="path-structural-datum" x1="40" y1="360" x2="660" y2="360" />
+
+          <!-- Rasante del terreno -->
+          <line x1="20" y1="360" x2="680" y2="360" stroke="rgba(30,28,26,0.6)" stroke-width="2" />
+
+          <!-- Sección arquitectónica continua abstracta -->
+          <path id="section-path" class="path-section-outline" d="
+            M 60,360 
+            L 60,120 
+            L 220,120 
+            L 220,160 
+            L 340,160 
+            L 340,80 
+            L 500,80 
+            L 500,240 
+            L 420,240 
+            L 420,360 
+            L 580,360 
+            L 580,200 
+            L 640,200 
+            L 640,360
+          " />
+
+          <!-- Punto focal final en Frambuesa -->
+          <circle id="accent-dot" class="accent-focal-point" cx="640" cy="360" r="6" />
+          
+          <!-- Texto técnico integrado en el alzado -->
+          <text x="70" y="112" font-family="'Special Gothic Condensed', sans-serif" font-size="11" letter-spacing="1.5" fill="var(--stone-text)">NIVEL +08.40 · CUBIERTA</text>
+          <text x="230" y="152" font-family="'Special Gothic Condensed', sans-serif" font-size="11" letter-spacing="1.5" fill="var(--stone-text)">DOBLE ALTURA</text>
+          <text x="350" y="72" font-family="'Special Gothic Condensed', sans-serif" font-size="11" letter-spacing="1.5" fill="var(--accent)">COTA SINGULAR</text>
+        </svg>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

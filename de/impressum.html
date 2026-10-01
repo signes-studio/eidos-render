@@ -6,16 +6,106 @@
   <title>Impressum — Eidos Render</title>
   <link rel="canonical" href="https://eidosrender.es/de/impressum">
   <link rel="stylesheet" href="../style.css">
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/fonts.css">
 </head>
 <body class="bg-paper">
-  <header class="nav-header nav-light" role="banner">
+    <!-- =====================================================
+       00. CABECERA DINÁMICA CENTRADA:
+       Isotipo grande a dos tintas + Nombre centrado debajo
+       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
+       ===================================================== -->
+  <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
-      <a href="./" class="logo"><span>EIDOS RENDER</span><span class="logo-dot"></span></a>
-      <a href="kontakt.html" class="nav-cta">PROJEKT BESPRECHEN →</a>
+      <div class="nav-center-brand">
+        <a href="../de/index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+          <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
+            <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
+            <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
+        </a>
+      </div>
     </div>
   </header>
-  <main style="padding-top: var(--nav-h);">
+
+  <!-- =====================================================
+       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
+       ===================================================== -->
+  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
+    <span class="menu-btn-label">MENÜ</span>
+    <span class="menu-btn-icon">
+      <span class="line line-top"></span>
+      <span class="line line-bottom"></span>
+    </span>
+  </button>
+
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
+    </div>
+
+    <nav aria-label="Navigation">
+      <ul class="app-nav-list">
+        <li class="app-nav-item">
+          <a href="../de/index.html" class="app-link">
+            <span><span class="app-nav-num">01</span>Startseite</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../de/leistungen.html" class="app-link">
+            <span><span class="app-nav-num">02</span>Leistungen & Kompetenzen</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../de/projekte.html" class="app-link">
+            <span><span class="app-nav-num">03</span>Projektportfolio</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../de/index.html#branding" class="app-link">
+            <span><span class="app-nav-num">04</span>Markenidentität</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../de/index.html#proceso" class="app-link">
+            <span><span class="app-nav-num">05</span>Methodik</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../de/kontakt.html" class="app-link">
+            <span><span class="app-nav-num">06</span>Direktkontakt</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
+    <div class="app-lang-segmented" aria-label="Language selector">
+      <a href="../index.html" data-lang="es" class="" onclick="window.setLang('es')">ES</a>
+      <a href="../en/" data-lang="en" class="" onclick="window.setLang('en')">EN</a>
+      <a href="../de/" data-lang="de" class="active" onclick="window.setLang('de')">DE</a>
+      <a href="../fr/" data-lang="fr" class="" onclick="window.setLang('fr')">FR</a>
+    </div>
+
+    <div class="app-panel-footer">
+      <a href="../de/kontakt.html" class="app-cta-btn">
+        PROJEKT BESPRECHEN →
+      </a>
+      <div class="app-contact-sub">Valencia · Europaweiter Service</div>
+    </div>
+  </div>
+  <main style="padding-top: 140px;">
     <section class="section bg-paper">
       <div class="container container-narrow">
         <h1 class="display-title" style="margin-bottom: 32px;">Impressum</h1>
@@ -27,7 +117,10 @@
   </main>
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom">
+      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
+          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+        </div>
+        <div class="footer-bottom">
         <div>© 2026 Eidos Render. Alle Rechte vorbehalten.</div>
         <div style="display: flex; gap: 24px;">
           <a href="impressum.html">Impressum</a>

@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Eidos Render — Du Projet Architectural au Lancement Commercial</title>
-  <meta name="description" content="Eidos Render transforme les programmes immobiliers en expériences visuelles et commerciales d'exception. Rendu 3D, film, identité de marque, supports commerciaux, site web et acquisition pour promoteurs immobiliers.">
+  <meta name="description" content="Agence clé en main pour promoteurs immobiliers : direction de marque, rendu 3D photoréaliste, vidéo, dossiers éditoriaux, sites web et acquisition d'acheteurs.">
   <link rel="canonical" href="https://eidosrender.es/fr/">
 
   <!-- International SEO / Hreflang -->
@@ -30,42 +30,36 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
   <meta property="og:title" content="Eidos Render — Du Projet Architectural au Lancement Commercial">
-  <meta property="og:description" content="Partenaire créatif et visuel pour le lancement commercial de programmes immobiliers en Europe.">
+  <meta property="og:description" content="Agence clé en main pour promoteurs immobiliers : direction de marque, rendu 3D photoréaliste, vidéo, dossiers éditoriaux, sites web et acquisition d'acheteurs.">
   <meta property="og:url" content="https://eidosrender.es/fr/">
   <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
   <meta property="og:locale" content="fr_FR">
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eidos Render — Du Projet Architectural au Lancement Commercial">
-  <meta name="twitter:description" content="Rendus 3D, film architectural, branding, site web et acquisition pour programmes immobiliers.">
-  <meta name="twitter:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
-
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
-  <link rel="shortcut icon" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="../img/render-fachada-edificio-obra-nueva.webp" fetchpriority="high">
 
-  <link rel="preload" as="image" href="../img/render-fachada-edificio-obra-nueva-800.webp" fetchpriority="high">
+  <!-- Typography & Stylesheets -->
+  <link rel="stylesheet" href="../assets/fonts.css">
   <link rel="stylesheet" href="../style.css">
 
+  <!-- Schema.org Data (Zero Prices) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://eidosrender.es/fr/#organization",
+        "@id": "https://eidosrender.es/#organization",
         "name": "Eidos Render",
         "url": "https://eidosrender.es/fr/",
-        "logo": "https://eidosrender.es/favicon.png",
+        "logo": "https://eidosrender.es/favicon.svg",
         "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg",
-        "description": "Partenaire créatif et visuel pour le lancement commercial de projets immobiliers en Europe. Visualisation 3D, film, identité de marque, supports commerciaux, site web et acquisition.",
+        "description": "Agence clé en main pour promoteurs immobiliers : direction de marque, rendu 3D photoréaliste, vidéo, dossiers éditoriaux, sites web et acquisition d'acheteurs.",
         "telephone": "+34614459144",
         "email": "info@eidosrender.es",
         "address": {
@@ -75,225 +69,259 @@
         },
         "sameAs": [
           "https://www.linkedin.com/company/eidos-render"
-        ],
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "EUR",
-          "lowPrice": "12000",
-          "description": "Systèmes intégrés de lancement commercial pour programmes immobiliers à partir de 12 000 €"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://eidosrender.es/fr/#website",
-        "url": "https://eidosrender.es/fr/",
-        "name": "Eidos Render",
-        "publisher": { "@id": "https://eidosrender.es/fr/#organization" }
+        ]
       }
     ]
   }
   </script>
 </head>
-<body>
+<body style="background-color: var(--cream); color: var(--charcoal);">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Header -->
-  <header class="nav-header" role="banner">
+  <!-- =====================================================
+       00. CABECERA DINÁMICA CENTRADA:
+       Isotipo grande a dos tintas + Nombre centrado debajo
+       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
+       ===================================================== -->
+  <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
-      <a href="./" class="logo" aria-label="Eidos Render Accueil">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
-      </a>
-
-      <nav aria-label="Navigation principale">
-        <ul class="nav-links">
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#processus">Processus</a></li>
-          <li><a href="#eidos">À propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-right-group">
-        <div class="lang-switcher" aria-label="Sélecteur de langue">
-          <a href="../" data-lang="es" onclick="window.setLang('es')">ES</a>
-          <span class="lang-divider">/</span>
-          <a href="../en/" data-lang="en" onclick="window.setLang('en')">EN</a>
-          <span class="lang-divider">/</span>
-          <a href="../de/" data-lang="de" onclick="window.setLang('de')">DE</a>
-          <span class="lang-divider">/</span>
-          <span class="active" data-lang="fr">FR</span>
-        </div>
-
-        <a href="#contact" class="nav-cta">
-          ÉCHANGEONS SUR LE PROJET →
+      <div class="nav-center-brand">
+        <a href="index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+          <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
+            <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
+            <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
         </a>
       </div>
-
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-nav-overlay" aria-hidden="true">
-    <div>
-      <div class="mobile-lang-switcher" aria-label="Sélecteur de langue">
-        <a href="../" data-lang="es" onclick="window.setLang('es')">ES</a>
-        <a href="../en/" data-lang="en" onclick="window.setLang('en')">EN</a>
-        <a href="../de/" data-lang="de" onclick="window.setLang('de')">DE</a>
-        <span class="active" data-lang="fr">FR</span>
-      </div>
+  <!-- =====================================================
+       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
+       ===================================================== -->
+  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Open menu" aria-expanded="false">
+    <span class="menu-btn-label">MENU</span>
+    <span class="menu-btn-icon">
+      <span class="line line-top"></span>
+      <span class="line line-bottom"></span>
+    </span>
+  </button>
 
-      <span class="kicker crimson">Navigation</span>
-      <ul class="mobile-nav-links">
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#processus">Processus</a></li>
-        <li><a href="#eidos">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
-    <div class="mobile-nav-footer">
-      <div><strong>EIDOS RENDER</strong> — Real Estate Launch</div>
-      <div>Valence · Rayonnement national et européen</div>
-      <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
+
+    <nav aria-label="Main navigation">
+      <ul class="app-nav-list">
+        <li class="app-nav-item">
+          <a href="#hero" class="app-link">
+            <span><span class="app-nav-num">01</span>Accueil</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="#servicios" class="app-link">
+            <span><span class="app-nav-num">02</span>Services & Capacités</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="#proyectos" class="app-link">
+            <span><span class="app-nav-num">03</span>Portfolio de Projets</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="#branding" class="app-link">
+            <span><span class="app-nav-num">04</span>Identité & Branding</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="#proceso" class="app-link">
+            <span><span class="app-nav-num">05</span>Méthodologie</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="#contacto" class="app-link">
+            <span><span class="app-nav-num">06</span>Contact Direct</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
+    <div class="app-lang-segmented" aria-label="Language selector">
+      <a href="../" data-lang="es" onclick="window.setLang('es')">ES</a>
+      <a href="../en/" data-lang="en" class="" onclick="window.setLang('en')">EN</a>
+      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
+      <a href="../fr/" data-lang="fr" class="active" onclick="window.setLang('fr')">FR</a>
+    </div>
+
+    <div class="app-panel-footer">
+      <a href="#contacto" class="app-cta-btn">
+        PARLONS DU PROJET →
+      </a>
+      <div class="app-contact-sub">Valence · Service Européen et International</div>
     </div>
   </div>
 
   <main>
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero-media">
-        <picture>
-          <source srcset="../img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
-          <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Rendu de façade résidentielle neuve — Eidos Render" class="hero-poster" fetchpriority="high">
-        </picture>
-        <video class="hero-video" autoplay muted loop playsinline poster="../img/render-fachada-edificio-obra-nueva.webp">
-          <source src="../img/video-reel-patio.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-      </div>
+    <!-- =====================================================
+         01. HERO EDITORIAL CON TEXTO INMEDIATO
+         ===================================================== -->
+    <section class="section hero-editorial-wrap" id="hero" style="background-color: var(--cream); border-bottom: 1px solid var(--line);">
+      <div class="container">
 
-      <div class="container hero-content">
-        <div class="hero-subconcept">
-          Direction Visuelle · Image 3D · Identité de Marque · Supports Commerciaux · Site Web · Acquisition
+        <div class="kicker text-reveal-flow" style="color: var(--granate); margin-bottom: 24px;">
+          <span class="kicker-dot" style="background-color: var(--granate);"></span>
+          Agence Clé en Main pour Promoteurs Immobiliers
         </div>
 
-        <h1 class="hero-title display-hero">
-          Du projet<br>
-          architectural au<br>
-          lancement.
-        </h1>
+        <div class="hero-statement-grid">
+          <div>
+            <h1 class="hero-main-title text-reveal-flow">
+              Du projet<br>
+              <span class="text-prata-accent">architectural</span><br>
+              au lancement commercial.
+            </h1>
 
-        <div class="hero-bottom-grid">
-          <p class="hero-desc">
-            Direction visuelle, rendus 3D, branding, supports commerciaux, site web et acquisition d'acheteurs qualifiés pour promoteurs immobiliers.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-crimson">
-              ÉCHANGEONS SUR LE PROJET →
-            </a>
+            <p class="text-reveal-flow" style="font-family: var(--font-special); font-size: 1.25rem; line-height: 1.6; color: var(--warm-gray); max-width: 58ch; margin-bottom: 36px;">
+              Direction de marque, rendus 3D photoréalistes, vidéo cinématographique, dossiers éditoriaux, plateformes web interactives et campagnes d'acquisition. Une vision cohérente de l'esquisse au marché.
+            </p>
+
+            <div class="text-reveal-flow" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+              <a href="#contacto" class="btn btn-editorial" style="background-color: var(--granate); color: var(--cream); border: none; padding: 16px 32px; font-family: var(--font-syncopate); font-size: 11px; letter-spacing: 0.14em; border-radius: 6px !important;">
+                PARLONS DU PROJET →
+              </a>
+              <a href="#servicios" class="link-arrow" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700; color: var(--charcoal); letter-spacing: 0.12em;">
+                EXPLORER LES SERVICES ↓
+              </a>
+            </div>
+          </div>
+
+          <div class="text-reveal-flow">
+            <div class="hero-supporting-media" style="border-radius: 12px !important; overflow: hidden;">
+              <picture>
+                <source srcset="../img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+                <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="CGI Real Estate Architecture — Eidos Render" loading="eager" fetchpriority="high">
+              </picture>
+              <div style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-syncopate); font-size: 10px; letter-spacing: 0.12em; color: var(--warm-gray); background-color: var(--cream);">
+                <span>01 · RÉSIDENTIEL COLLECTIF NEUF</span>
+                <span style="color: var(--granate); font-weight: 700;">VALENCE, ES</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- NARRATIVE -->
-    <section class="section intro-section bg-paper">
+    <!-- =====================================================
+         02. INTRODUCCIÓN EDITORIAL (Fondo: Crema)
+         ===================================================== -->
+    <section class="section intro-section" style="background-color: var(--cream); color: var(--charcoal);">
       <div class="container">
-        <div class="kicker crimson">
-          Vision Intégrée
+        <div class="kicker text-reveal-flow" style="color: var(--granate);">
+          <span class="kicker-dot" style="background-color: var(--granate);"></span>
+          Vision Globale
         </div>
 
         <div class="intro-grid">
-          <h2 class="display-title intro-title">
-            Un programme<br>
-            doit raconter<br>
-            une histoire.
+          <h2 class="display-title intro-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: 0.98;">
+            Un programme<br>a besoin<br><span class="text-prata-accent">d’une histoire.</span>
           </h2>
 
-          <div class="intro-copy">
-            <p>
-              Architecture, identité, images 3D, brochures commerciales, site web et campagnes digitales doivent opérer comme les rouages d'un système unique et cohérent.
+          <div class="intro-copy text-reveal-flow" style="font-family: var(--font-special); font-size: 1.15rem; line-height: 1.65;">
+            <p style="margin-bottom: 20px;">
+              Architecture, identité, images 3D, supports de vente, site internet et campagnes publicitaires doivent fonctionner comme les rouages d’un même système.
             </p>
-            <p>
-              Chez Eidos Render, nous développons ce système de la première esquisse visuelle jusqu'à l'activation commerciale sur le marché.
+            <p style="color: var(--warm-gray);">
+              Chez Eidos Render, nous bâtissons ce système de la première image jusqu’à l’activation commerciale en ligne.
             </p>
             <div style="margin-top: 36px;">
-              <a href="#services" class="link-arrow">
+              <a href="#servicios" class="link-arrow" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700; color: var(--granate); letter-spacing: 0.14em;">
                 DÉCOUVRIR LE SYSTÈME DE LANCEMENT →
               </a>
             </div>
           </div>
         </div>
 
-        <div class="intro-divider"></div>
+        <div class="intro-divider" style="background-color: var(--line); margin-top: 80px; height: 1px;"></div>
       </div>
     </section>
 
-    <!-- POSITIONING -->
-    <section class="section bg-paper-card" style="border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: clamp(64px, 10vw, 120px) 0;">
+    <!-- =====================================================
+         03. POSICIONAMIENTO (Fondo: Crema Secundaria #E8E1D3)
+         ===================================================== -->
+    <section class="section" style="background-color: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: clamp(70px, 10vw, 130px) 0; color: var(--charcoal);">
       <div class="container">
-        <div class="kicker crimson" style="margin-bottom: 24px;">Positionnement</div>
-        <h2 class="display-title" style="font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1.05; max-width: 1100px; text-transform: uppercase; letter-spacing: -0.02em;">
-          Nous partons de l'architecture.<br>
-          Nous créons son identité.<br>
-          <span style="color: var(--crimson);">Et nous la projetons sur le marché.</span>
+        <div class="kicker text-reveal-flow" style="color: var(--granate); margin-bottom: 24px;">
+          <span class="kicker-dot" style="background-color: var(--granate);"></span>
+          Positionnement
+        </div>
+        <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.4rem, 5.2vw, 4.8rem); line-height: 1.02; max-width: 1100px; text-transform: uppercase;">
+          NOUS PARTONS DE L’ARCHITECTURE.<br>NOUS FORGEONS SON IMAGE.<br><span class="text-prata-accent" style="text-transform: none;">ET NOUS LA PORTONS JUSQU’AU MARCHÉ.</span>
         </h2>
-        <p class="body-large body-muted" style="max-width: 720px; margin-top: 32px;">
-          Eidos Render est un studio créatif et visuel spécialisé dans les programmes immobiliers. Nous accompagnons les promoteurs et architectes depuis la définition esthétique jusqu'au lancement commercial actif.
+        <p class="body-large text-reveal-flow" style="max-width: 720px; margin-top: 32px; font-family: var(--font-special); color: var(--warm-gray); font-size: 1.15rem; line-height: 1.65;">
+          Eidos Render est une agence visuelle et créative spécialisée dans la promotion immobilière. Nous accompagnons promoteurs et architectes de la définition visuelle jusqu’à la vente.
         </p>
       </div>
     </section>
 
-    <!-- CAPABILITIES -->
-    <section class="section bg-ink" id="services">
+    <!-- =====================================================
+         04. CAPACIDADES / SERVICIOS (Fondo: Granate Vivo #A31A33)
+         ===================================================== -->
+    <section class="section" id="servicios" style="background-color: var(--granate); color: var(--cream);">
       <div class="container">
-        <div class="services-header">
+        <div class="services-header" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; margin-bottom: 60px; align-items: flex-end;">
           <div>
-            <div class="kicker crimson">
+            <div class="kicker text-reveal-flow" style="color: var(--cream);">
+              <span class="kicker-dot" style="background-color: var(--cream);"></span>
               Service Intégral
             </div>
-            <h2 class="display-title" style="color: var(--paper);">
-              Une même vision.<br>
-              Toutes les pièces.
+            <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.4rem, 4.8vw, 4.4rem); color: var(--cream); line-height: 0.98;">
+              Une vision unique.<br><span class="text-prata-accent" style="color: var(--cream-2);">Toutes les pièces.</span>
             </h2>
           </div>
-          <div style="max-width: 440px;" class="body-muted">
-            De la direction artistique initiale jusqu'à la captation directe des acquéreurs pour votre programme.
+          <div class="text-reveal-flow" style="font-family: var(--font-special); font-size: 1.1rem; color: rgba(241,235,223,0.85); line-height: 1.6;">
+            De la direction artistique initiale jusqu’à la captation directe d’acquéreurs qualifiés.
           </div>
         </div>
 
         <div class="service-accordion">
 
           <!-- 01 -->
-          <div class="service-item active">
+          <div class="service-item active text-reveal-flow" style="border-top: 1px solid var(--line-on-granate);">
             <div class="service-summary">
-              <span class="service-num">01</span>
-              <h3 class="service-name">Direction & Identité</h3>
-              <p class="service-short">Concept créatif, positionnement visuel, naming et système graphique sur mesure pour le projet.</p>
-              <div class="service-toggle-icon">+</div>
+              <span class="service-num" style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream);">01</span>
+              <h3 class="service-name" style="font-family: var(--font-special); font-size: 1.6rem; color: var(--cream);">Direction & Identité</h3>
+              <p class="service-short" style="font-family: var(--font-special); color: rgba(241,235,223,0.8);">Concept créatif, positionnement visuel, naming et système graphique complet pour le programme.</p>
+              <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner">
+              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
                 <div>
-                  <p class="body-large" style="color: rgba(244,243,239,0.85); margin-bottom: 16px;">
-                    Nous définissons l'univers conceptuel du programme avant toute production 3D. Naming, typographies, univers chromatique et charte de ton pour garantir une cohérence absolue sur tous les supports.
+                  <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
+                    Nous définissons l’univers de la promotion avant même de modéliser la première image : naming, palette de couleurs, typographie, ton éditorial et chartes de style.
                   </p>
                 </div>
                 <div>
-                  <ul class="service-deliverables">
-                    <li>Charte d'identité de marque immobilière</li>
-                    <li>Système typographique et palette de couleurs</li>
-                    <li>Déclinaisons pour palissades de chantier et bulles de vente</li>
-                    <li>Modèles pour réseaux de commercialisation et courtiers</li>
+                  <ul class="service-deliverables" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: var(--font-special); font-size: 0.95rem; color: var(--cream);">
+                    <li>— Guide de marque immobilière</li>
+<li>— Systèmes typographiques et colorimétriques</li>
+<li>— Habillage de bulle de vente et palissades de chantier</li>
+<li>— Modèles pour agences de commercialisation</li>
                   </ul>
                 </div>
               </div>
@@ -301,26 +329,26 @@
           </div>
 
           <!-- 02 -->
-          <div class="service-item">
+          <div class="service-item text-reveal-flow" style="border-top: 1px solid var(--line-on-granate);">
             <div class="service-summary">
-              <span class="service-num">02</span>
-              <h3 class="service-name">Image Architecturale 3D</h3>
-              <p class="service-short">Façades, intérieurs, espaces communs, lifestyle et rendus photoréalistes en haute résolution.</p>
-              <div class="service-toggle-icon">+</div>
+              <span class="service-num" style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream);">02</span>
+              <h3 class="service-name" style="font-family: var(--font-special); font-size: 1.6rem; color: var(--cream);">Image Architecturale 3D</h3>
+              <p class="service-short" style="font-family: var(--font-special); color: rgba(241,235,223,0.8);">Rendus 3D photoréalistes extérieurs, intérieurs, parties communes et lifestyle haut de gamme.</p>
+              <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner">
+              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
                 <div>
-                  <p class="body-large" style="color: rgba(244,243,239,0.85); margin-bottom: 16px;">
-                    Notre savoir-faire fondamental : des perspectives photoréalistes qui construisent une atmosphère, capturent la lumière naturelle et suscitent l'émotion de l'acquéreur avant le début des travaux.
+                  <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
+                    Notre référence majeure. Des perspectives 3D qui transcendent la simple géométrie : elles créent une atmosphère, simulent la lumière naturelle et déclenchent le coup de cœur avant le premier coup de pioche.
                   </p>
                 </div>
                 <div>
-                  <ul class="service-deliverables">
-                    <li>Rendus photoréalistes pour grands formats et presse éditoriale</li>
-                    <li>Photomontages par drone dans l'environnement réel</li>
-                    <li>Gestion pointue de l'éclairage et des volumes</li>
-                    <li>Focus sur les matières nobles, boiseries et végétalisation</li>
+                  <ul class="service-deliverables" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: var(--font-special); font-size: 0.95rem; color: var(--cream);">
+                    <li>— Visualisations ultra-haute résolution pour grands formats et dossiers d'exception</li>
+<li>— Intégration par drone sur site réel</li>
+<li>— Études d’ensoleillement et d’ambiances lumineuses</li>
+<li>— Soin extrême porté aux matériaux nobles et à la végétation</li>
                   </ul>
                 </div>
               </div>
@@ -328,26 +356,26 @@
           </div>
 
           <!-- 03 -->
-          <div class="service-item">
+          <div class="service-item text-reveal-flow" style="border-top: 1px solid var(--line-on-granate);">
             <div class="service-summary">
-              <span class="service-num">03</span>
-              <h3 class="service-name">Vidéo & Animation 3D</h3>
-              <p class="service-short">Film 3D cinématographique, visites virtuelles, transitions fluides et formats dynamiques pour réseaux sociaux.</p>
-              <div class="service-toggle-icon">+</div>
+              <span class="service-num" style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream);">03</span>
+              <h3 class="service-name" style="font-family: var(--font-special); font-size: 1.6rem; color: var(--cream);">Vidéo & Animation</h3>
+              <p class="service-short" style="font-family: var(--font-special); color: rgba(241,235,223,0.8);">Film 3D cinématographique, visites virtuelles fluides et formats dynamiques pour les réseaux sociaux.</p>
+              <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner">
+              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
                 <div>
-                  <p class="body-large" style="color: rgba(244,243,239,0.85); margin-bottom: 16px;">
-                    Le mouvement révèle les volumes, traduit l'échelle réelle des espaces partagés et multiplie l'engagement lors des présentations aux investisseurs et campagnes digitales.
+                  <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
+                    Le mouvement permet d’apprécier la fluidité des espaces, de révéler l’envergure des prestations et de décupler l’impact auprès des investisseurs.
                   </p>
                 </div>
                 <div>
-                  <ul class="service-deliverables">
-                    <li>Étalonnage cinématographique et conception sonore immersive</li>
-                    <li>Formats verticaux optimisés pour Meta et YouTube</li>
-                    <li>Films de présentation commerciale pour bureaux de vente</li>
-                    <li>Clips dynamiques pour écrans d'exposition</li>
+                  <ul class="service-deliverables" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: var(--font-special); font-size: 0.95rem; color: var(--cream);">
+                    <li>— Montage avec étalonnage professionnel et habillage sonore immersif</li>
+<li>— Formats optimisés pour Meta, Reels Instagram et YouTube</li>
+<li>— Vidéos de présentation commerciale</li>
+<li>— Éléments dynamiques pour écrans d'espace de vente</li>
                   </ul>
                 </div>
               </div>
@@ -355,26 +383,26 @@
           </div>
 
           <!-- 04 -->
-          <div class="service-item">
+          <div class="service-item text-reveal-flow" style="border-top: 1px solid var(--line-on-granate);">
             <div class="service-summary">
-              <span class="service-num">04</span>
-              <h3 class="service-name">Supports Commerciaux</h3>
-              <p class="service-short">Brochure commerciale éditoriale, plans de vente 2D/3D meublés, cartes de situation et fiches typologiques.</p>
-              <div class="service-toggle-icon">+</div>
+              <span class="service-num" style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream);">04</span>
+              <h3 class="service-name" style="font-family: var(--font-special); font-size: 1.6rem; color: var(--cream);">Supports Commerciaux</h3>
+              <p class="service-short" style="font-family: var(--font-special); color: rgba(241,235,223,0.8);">Dossiers de vente éditoriaux, plans 2D/3D meublés et texturés, cartes de situation et fiches typologiques.</p>
+              <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner">
+              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
                 <div>
-                  <p class="body-large" style="color: rgba(244,243,239,0.85); margin-bottom: 16px;">
-                    Nous transformons les plans techniques en outils d'aide à la vente clairs, élégants et rassurants pour les commerciaux et les acquéreurs finaux.
+                  <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
+                    Nous transformons les plans d’architecte en outils d’aide à la vente clairs, luxueux et performants pour les commerciaux et les acquéreurs.
                   </p>
                 </div>
                 <div>
-                  <ul class="service-deliverables">
-                    <li>Brochures imprimées de prestige et dossiers PDF interactifs</li>
-                    <li>Plans d'étage texturés et meublés à l'échelle</li>
-                    <li>Cartes de situation détaillant transports, écoles et commodités</li>
-                    <li>Fiches par appartement avec surfaces exactes et orientation</li>
+                  <ul class="service-deliverables" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: var(--font-special); font-size: 0.95rem; color: var(--cream);">
+                    <li>— Brochures interactives en PDF haute résolution et beaux livres imprimés</li>
+<li>— Plans de vente meublés et texturés</li>
+<li>— Infographies de situation et réseau de transport</li>
+<li>— Supports d’affichage pour espace de vente</li>
                   </ul>
                 </div>
               </div>
@@ -382,26 +410,26 @@
           </div>
 
           <!-- 05 -->
-          <div class="service-item">
+          <div class="service-item text-reveal-flow" style="border-top: 1px solid var(--line-on-granate);">
             <div class="service-summary">
-              <span class="service-num">05</span>
-              <h3 class="service-name">Site Web de Promotion</h3>
-              <p class="service-short">UX/UI architecturale, développement sur mesure, sélecteur d'appartements, vitesse extrême et génération de leads.</p>
-              <div class="service-toggle-icon">+</div>
+              <span class="service-num" style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream);">05</span>
+              <h3 class="service-name" style="font-family: var(--font-special); font-size: 1.6rem; color: var(--cream);">Site Web de Promotion</h3>
+              <p class="service-short" style="font-family: var(--font-special); color: rgba(241,235,223,0.8);">UX/UI, développement sur mesure, sélecteur d'appartements interactif, vitesse de chargement instantanée.</p>
+              <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner">
+              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
                 <div>
-                  <p class="body-large" style="color: rgba(244,243,239,0.85); margin-bottom: 16px;">
-                    Le quartier général digital du lancement. Une plateforme conçue sur mesure pour immerger l'internaute dans l'architecture, filtrer les lots et acheminer les demandes vers l'équipe commerciale.
+                  <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
+                    Nous concevons la vitrine digitale du programme. Un outil commercial de vente pensé pour expliquer l’architecture, filtrer les lots et qualifier les acheteurs.
                   </p>
                 </div>
                 <div>
-                  <ul class="service-deliverables">
-                    <li>Design responsive avec typographie éditoriale</li>
-                    <li>Visualiseur interactif de plans et disponibilités</li>
-                    <li>Optimisation poussée de la vitesse (Core Web Vitals)</li>
-                    <li>Interfaçage CRM et traçabilité des conversions</li>
+                  <ul class="service-deliverables" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: var(--font-special); font-size: 0.95rem; color: var(--cream);">
+                    <li>— Design responsive avec typographie éditoriale</li>
+<li>— Sélecteur interactif d’appartements et de plans de niveaux</li>
+<li>— Vitesse extrême et conformité Core Web Vitals</li>
+<li>— Connexion directe aux outils CRM des commercialisateurs</li>
                   </ul>
                 </div>
               </div>
@@ -409,26 +437,26 @@
           </div>
 
           <!-- 06 -->
-          <div class="service-item">
+          <div class="service-item text-reveal-flow" style="border-top: 1px solid var(--line-on-granate); border-bottom: 1px solid var(--line-on-granate);">
             <div class="service-summary">
-              <span class="service-num">06</span>
-              <h3 class="service-name">Lancement & Acquisition</h3>
-              <p class="service-short">Google Ads, Meta Ads ciblées, tests continus de visuels 3D, suivi analytique et qualification hebdomadaire.</p>
-              <div class="service-toggle-icon">+</div>
+              <span class="service-num" style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream);">06</span>
+              <h3 class="service-name" style="font-family: var(--font-special); font-size: 1.6rem; color: var(--cream);">Lancement & Acquisition</h3>
+              <p class="service-short" style="font-family: var(--font-special); color: rgba(241,235,223,0.8);">Google Ads, Meta Ads, créations publicitaires 3D, tracking précis et optimisation continue des leads.</p>
+              <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner">
+              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
                 <div>
-                  <p class="body-large" style="color: rgba(244,243,239,0.85); margin-bottom: 16px;">
-                    Une fois les visuels et le site opérationnels, nous activons la captation ciblée d'acheteurs potentiels, en ajustant les messages et perspectives en fonction des retours réels.
+                  <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
+                    Une fois l’image et le site en place, nous déployons la visibilité auprès des acheteurs et investisseurs. Nous testons les visuels pour maximiser les conversions.
                   </p>
                 </div>
                 <div>
-                  <ul class="service-deliverables">
-                    <li>Ciblage ultra-local et intentions d'achat vérifiées</li>
-                    <li>A/B testing continu d'angles 3D et d'accroches</li>
-                    <li>Rapports réguliers axés sur les contacts qualifiés</li>
-                    <li>Optimisation constante du taux de transformation</li>
+                  <ul class="service-deliverables" style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-family: var(--font-special); font-size: 0.95rem; color: var(--cream);">
+                    <li>— Ciblage géographique par intention d’achat en France et en Europe</li>
+<li>— Tests A/B sur plusieurs angles de rendu et messages</li>
+<li>— Rapports réguliers de contacts acheteurs qualifiés</li>
+<li>— Optimisation continue du parcours d'acquisition</li>
                   </ul>
                 </div>
               </div>
@@ -438,142 +466,107 @@
         </div>
 
         <div style="margin-top: 56px; text-align: center;">
-          <a href="#contact" class="btn btn-crimson">
-            ÉCHANGEONS SUR LE PROJET →
+          <a href="#contacto" class="btn btn-editorial" style="background-color: var(--cream); color: var(--granate); border: none; font-family: var(--font-syncopate); font-size: 11px; letter-spacing: 0.14em; border-radius: 8px !important;">
+            PARLONS DU PROJET →
           </a>
         </div>
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section class="section bg-paper" id="projets">
+    <!-- =====================================================
+         05. PORTFOLIO DE CASOS (Fondo: Crema)
+         ===================================================== -->
+    <section class="section" id="proyectos" style="background-color: var(--cream); color: var(--charcoal);">
       <div class="container">
-        <div class="portfolio-header">
+        <div class="portfolio-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px;">
           <div>
-            <div class="kicker crimson">
-              Archive Sélectionnée
+            <div class="kicker text-reveal-flow" style="color: var(--granate);">
+              <span class="kicker-dot" style="background-color: var(--granate);"></span>
+              Portfolio
             </div>
-            <h2 class="display-title">
-              Projets Réalisés.
+            <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.4rem, 5vw, 4.4rem); line-height: 0.98;">
+              Projets <span class="text-prata-accent">Remarquables.</span>
             </h2>
           </div>
-          <div class="body-regular body-muted" style="max-width: 440px;">
-            Visualisation 3D de haute précision pour programmes résidentiels, ensembles d'envergure et villas d'exception en Europe.
+          <div class="text-reveal-flow" style="font-family: var(--font-special); color: var(--warm-gray); font-size: 1.05rem; max-width: 440px;">
+            Visualisation 3D de haute précision pour programmes résidentiels, villas d’architecte et projets d'envergure.
           </div>
         </div>
 
         <div class="editorial-portfolio">
 
-          <!-- 01 -->
-          <article class="project-card span-8">
+          <!-- Proyecto 01 -->
+          <article class="project-card span-8 text-reveal-flow">
             <div class="project-card-link">
-              <div class="project-media-wrap">
+              <div class="project-media-wrap" style="border-radius: 12px !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
                   <source srcset="../img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
-                  <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Rendu de façade résidentielle collective" loading="lazy">
+                  <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Render exterior de fachada de edificio residencial de obra nueva" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
+              <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
-                  <h3 class="project-name">Ensemble Résidentiel</h3>
-                  <div class="project-services-line">Logements Collectifs Neufs · Direction Visuelle · Insertion Urbaine</div>
+                  <h3 class="project-name" style="font-family: var(--font-special); font-size: 1.4rem;">Résidence Contemporaine</h3>
+                  <div class="project-services-line" style="font-family: var(--font-syncopate); font-size: 10px; color: var(--warm-gray); letter-spacing: 0.1em; text-transform: uppercase;">Logement Collectif · Direction Visuelle · Insertion Urbaine</div>
                 </div>
-                <div class="project-meta">Valence, ES</div>
+                <div class="project-meta" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700;">Valencia, ES</div>
               </div>
             </div>
           </article>
 
-          <!-- 02 -->
-          <article class="project-card span-4 tall">
+          <!-- Proyecto 02 -->
+          <article class="project-card span-4 tall text-reveal-flow">
             <div class="project-card-link">
-              <div class="project-media-wrap">
+              <div class="project-media-wrap" style="border-radius: 12px !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
                   <source srcset="../img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
-                  <img src="../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Espaces communs et piscine" loading="lazy">
+                  <img src="../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Render exterior de piscina y zonas comunes de obra nueva" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
+              <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
-                  <h3 class="project-name">Espaces Communs & Paysagisme</h3>
-                  <div class="project-services-line">Visualisation 3D · Piscines & Jardins · Vidéo</div>
+                  <h3 class="project-name" style="font-family: var(--font-special); font-size: 1.4rem;">Espaces Communs & Parc</h3>
+                  <div class="project-services-line" style="font-family: var(--font-syncopate); font-size: 10px; color: var(--warm-gray); letter-spacing: 0.1em; text-transform: uppercase;">Rendu 3D · Piscines & Jardins · Film</div>
                 </div>
-                <div class="project-meta">Madrid, ES</div>
+                <div class="project-meta" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700;">Madrid, ES</div>
               </div>
             </div>
           </article>
 
-          <!-- 03 -->
-          <article class="project-card span-4 tall">
+          <!-- Proyecto 03 -->
+          <article class="project-card span-4 tall text-reveal-flow">
             <div class="project-card-link">
-              <div class="project-media-wrap">
+              <div class="project-media-wrap" style="border-radius: 12px !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
                   <source srcset="../img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
-                  <img src="../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Villa moderne avec piscine" loading="lazy">
+                  <img src="../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Render exterior de villa unifamiliar con piscina de diseño" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
+              <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
-                  <h3 class="project-name">Villa Contemporaine</h3>
-                  <div class="project-services-line">Villa Individuelle · Terrasses & Piscine · Vue Mer</div>
+                  <h3 class="project-name" style="font-family: var(--font-special); font-size: 1.4rem;">Villa Méditerranéenne</h3>
+                  <div class="project-services-line" style="font-family: var(--font-syncopate); font-size: 10px; color: var(--warm-gray); letter-spacing: 0.1em; text-transform: uppercase;">Villa Individuelle · Piscine Débordante · Vue Mer</div>
                 </div>
-                <div class="project-meta">Alicante, ES</div>
+                <div class="project-meta" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700;">Alicante, ES</div>
               </div>
             </div>
           </article>
 
-          <!-- 04 -->
-          <article class="project-card span-8">
+          <!-- Proyecto 04 -->
+          <article class="project-card span-8 text-reveal-flow">
             <div class="project-card-link">
-              <div class="project-media-wrap">
+              <div class="project-media-wrap" style="border-radius: 12px !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
                   <source srcset="../img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
-                  <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Penthouse en duplex séjour double hauteur" loading="lazy">
+                  <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Infografía 3D de salón moderno de doble altura con grandes ventanales" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
+              <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
-                  <h3 class="project-name">Penthouse en Duplex</h3>
-                  <div class="project-services-line">Architecture d'Intérieur · Rendu 3D Haute Définition · Direction Artistique</div>
+                  <h3 class="project-name" style="font-family: var(--font-special); font-size: 1.4rem;">Penthouse Double Hauteur</h3>
+                  <div class="project-services-line" style="font-family: var(--font-syncopate); font-size: 10px; color: var(--warm-gray); letter-spacing: 0.1em; text-transform: uppercase;">Design Intérieur · Rendu Intérieur · Éclairage Soigné</div>
                 </div>
-                <div class="project-meta">Prime Living</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- 05 -->
-          <article class="project-card span-6">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
-                <picture>
-                  <source srcset="../img/render-cocina-moderna-isla-madera.webp" type="image/webp">
-                  <img src="../img/render-cocina-moderna-isla-madera-1600.jpg" alt="Cuisine contemporaine avec îlot central" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Cuisine d'Auteur</h3>
-                  <div class="project-services-line">Matériaux Nobles · Ébénisterie · Lumière Naturelle</div>
-                </div>
-                <div class="project-meta">Détail</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- 06 -->
-          <article class="project-card span-6">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
-                <picture>
-                  <source srcset="../img/infografia-dormitorio-principal-render-inmobiliario.webp" type="image/webp">
-                  <img src="../img/infografia-dormitorio-principal-render-inmobiliario-1600.jpg" alt="Suite parentale contemporaine" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Suite Parentale</h3>
-                  <div class="project-services-line">Atmosphère Sereine · Textures Textiles · Mobilier sur Mesure</div>
-                </div>
-                <div class="project-meta">Suite</div>
+                <div class="project-meta" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700;">Interior Prime</div>
               </div>
             </div>
           </article>
@@ -581,630 +574,206 @@
         </div>
 
         <div style="margin-top: 56px; text-align: center;">
-          <a href="projets.html" class="btn btn-outline-ink">
-            DÉCOUVRIR TOUS LES PROJETS →
+          <a href="#contacto" class="btn btn-editorial" style="background-color: transparent; border: 1px solid var(--charcoal); color: var(--charcoal); font-family: var(--font-syncopate); font-size: 11px; letter-spacing: 0.14em; border-radius: 8px !important;">
+            VOIR TOUS LES PROJETS →
           </a>
         </div>
       </div>
     </section>
 
-    <!-- 3D SHOWCASE -->
-    <section class="section bg-ink" id="visualisation">
+    <!-- =====================================================
+         06. VÍDEO & MOVIMIENTO (Fondo: Granate Vivo #A31A33)
+         ===================================================== -->
+    <section class="section" id="video" style="background-color: var(--granate); color: var(--cream);">
       <div class="container">
-        <div class="kicker crimson">
-          Visualisation 3D
-        </div>
-        
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: flex-end; margin-bottom: 50px;">
-          <h2 class="display-title" style="color: var(--paper);">
-            L'image avant<br>
-            la construction.
-          </h2>
-          <div class="body-large" style="color: rgba(244,243,239,0.8);">
-            Nous visualisons l'architecture avant qu'elle ne prenne forme.<br>
-            Des visuels capables d'expliquer le programme, d'installer une atmosphère et de déclencher l'acte d'achat.
-          </div>
-        </div>
-
-        <div class="image-showcase-grid">
-          <div class="image-showcase-item large">
-            <picture>
-              <source srcset="../img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
-              <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Rendu séjour cathédrale lumière naturelle" loading="lazy">
-            </picture>
-            <div class="image-showcase-caption">
-              <span>Intérieurs · Atmosphère Lumineuse</span>
-              <span>Espace Ouvert</span>
-            </div>
-          </div>
-
-          <div class="image-showcase-item">
-            <picture>
-              <source srcset="../img/render-cocina-moderna-isla-madera.webp" type="image/webp">
-              <img src="../img/render-cocina-moderna-isla-madera-1600.jpg" alt="Cuisine avec îlot bois" loading="lazy">
-            </picture>
-            <div class="image-showcase-caption">
-              <span>Lifestyle & Cuisines</span>
-              <span>Matières Nobles</span>
-            </div>
-          </div>
-
-          <div class="image-showcase-item">
-            <picture>
-              <source srcset="../img/render-bano-moderno-ducha-minimalista.webp" type="image/webp">
-              <img src="../img/render-bano-moderno-ducha-minimalista-1600.jpg" alt="Salle de bain minimaliste" loading="lazy">
-            </picture>
-            <div class="image-showcase-caption">
-              <span>Détails & Finitions</span>
-              <span>Béton Ciré</span>
-            </div>
-          </div>
-
-          <div class="image-showcase-item large">
-            <picture>
-              <source srcset="../img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
-              <img src="../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Extérieurs espaces paysagers et piscine" loading="lazy">
-            </picture>
-            <div class="image-showcase-caption">
-              <span>Extérieurs · Espaces Communs</span>
-              <span>Piscine & Jardins</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- VIDEO -->
-    <section class="section bg-crimson" id="video">
-      <div class="container">
-        <div class="kicker paper">
+        <div class="kicker text-reveal-flow" style="color: var(--cream);">
+          <span class="kicker-dot" style="background-color: var(--cream);"></span>
           Vidéo & Mouvement
         </div>
 
-        <div class="video-section-grid">
+        <div class="video-section-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; margin-top: 40px; align-items: center;">
           <div>
-            <h2 class="display-title" style="color: var(--paper); margin-bottom: 28px;">
-              Du rendu statique<br>
-              à l'expérience<br>
-              cinématique.
+            <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.2rem, 4.4vw, 4.2rem); color: var(--cream); line-height: 0.98; margin-bottom: 28px;">
+              Du rendu statique<br>à l’expérience<br><span class="text-prata-accent" style="color: var(--cream-2);">en mouvement.</span>
             </h2>
-            <p class="body-large" style="color: rgba(244,243,239,0.9); margin-bottom: 32px;">
-              Le mouvement révèle les circulations intérieures, donne l'échelle réelle des pièces et prolonge l'impact commercial d'un programme immobilier.
+            <p class="body-large text-reveal-flow" style="font-family: var(--font-special); font-size: 1.15rem; color: rgba(241,235,223,0.9); margin-bottom: 32px; line-height: 1.65;">
+              Le mouvement révèle les volumes, capture la lumière au fil de la journée et suscite une émotion durable que l’image fixe seule ne peut transmettre.
             </p>
           </div>
 
           <div>
-            <div class="reels-grid">
-              <div class="reel-card">
-                <video autoplay muted loop playsinline controls poster="../img/infografia-exterior-zonas-comunes-obra-nueva-800.webp">
+            <div class="reels-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+              <div class="reel-card text-reveal-flow" style="border: 1px solid var(--line-on-granate); border-radius: 12px !important; overflow: hidden;">
+                <video autoplay muted loop playsinline controls poster="../img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" style="width: 100%; aspect-ratio: 9/16; object-fit: cover;">
                   <source src="../img/video-reel-patio.mp4" type="video/mp4">
                 </video>
               </div>
-              <div class="reel-card">
-                <video autoplay muted loop playsinline controls poster="../img/render-fachada-edificio-obra-nueva-800.webp">
+
+              <div class="reel-card text-reveal-flow" style="border: 1px solid var(--line-on-granate); border-radius: 12px !important; overflow: hidden;">
+                <video autoplay muted loop playsinline controls poster="../img/render-fachada-edificio-obra-nueva-800.webp" style="width: 100%; aspect-ratio: 9/16; object-fit: cover;">
                   <source src="../img/video-recorrido-patio.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- BRANDING -->
-    <section class="section bg-paper" id="branding">
+    <!-- =====================================================
+         07. BRANDING INMOBILIARIO (Fondo: Crema)
+         ===================================================== -->
+    <section class="section" id="branding" style="background-color: var(--cream); color: var(--charcoal);">
       <div class="container">
-        <div class="feature-split">
+        <div class="feature-split" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: flex-start;">
           <div>
-            <div class="kicker crimson">Identité de Programme</div>
-            <h2 class="display-title" style="margin-bottom: 24px;">
-              Un programme<br>
-              doit posséder sa<br>
-              propre identité.
+            <div class="kicker text-reveal-flow" style="color: var(--granate);">
+              <span class="kicker-dot" style="background-color: var(--granate);"></span>
+              Identité de Programme
+            </div>
+            <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.2rem, 4.4vw, 4.2rem); margin-bottom: 24px; line-height: 1.02;">
+              Un programme<br>a aussi besoin<br><span class="text-prata-accent">d’une identité.</span>
             </h2>
-            <p class="body-large body-muted" style="margin-bottom: 32px;">
-              Une marque immobilière ne se résume pas à un logo. C'est le positionnement stratégique qui justifie le prix au mètre carré, la voix qui parle à l'acquéreur cible et la cohérence graphique enveloppant chaque support commercial.
+            <p class="body-large text-reveal-flow" style="font-family: var(--font-special); color: var(--warm-gray); font-size: 1.1rem; line-height: 1.65; margin-bottom: 32px;">
+              Le branding immobilier va bien au-delà d’un logo. C’est le positionnement qui justifie la valeur au mètre carré, séduit l’acquéreur cible et sublime l’expérience de vente.
             </p>
-            <a href="contact.html" class="link-arrow">
-              CONSULTER UN PROJET D'IDENTITÉ →
+            <a href="#contacto" class="link-arrow text-reveal-flow" style="font-family: var(--font-syncopate); font-size: 11px; font-weight: 700; color: var(--granate); letter-spacing: 0.14em;">
+              CONSULTER NOS SERVICES DE BRANDING →
             </a>
           </div>
 
-          <div class="feature-cards-grid">
-            <div class="feature-card">
-              <div class="feature-card-num">01</div>
-              <h3 class="feature-card-title">Naming & Concept</h3>
-              <p class="feature-card-copy">Recherche de nom porteuse de sens, facile à mémoriser et juridiquement protégeable.</p>
+          <div class="feature-cards-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="feature-card text-reveal-flow" style="background-color: var(--cream-2); padding: 32px; border: 1px solid var(--line); border-radius: 12px !important;">
+              <div class="feature-card-num" style="font-family: var(--font-prata); font-size: 1.6rem; color: var(--granate); margin-bottom: 12px;">01</div>
+              <h3 class="feature-card-title" style="font-family: var(--font-special); font-size: 1.2rem; margin-bottom: 10px;">Naming & Concept</h3>
+              <p class="feature-card-copy" style="font-family: var(--font-special); font-size: 0.95rem; color: var(--warm-gray); line-height: 1.55;">Recherche de nom évocateur, porteur de sens et vérifié juridiquement sur le marché immobilier.</p>
             </div>
-            <div class="feature-card">
-              <div class="feature-card-num">02</div>
-              <h3 class="feature-card-title">Système Graphique</h3>
-              <p class="feature-card-copy">Typographies, grilles éditoriales et palettes chromatiques en accord avec les matériaux de l'architecture.</p>
+            <div class="feature-card text-reveal-flow" style="background-color: var(--cream-2); padding: 32px; border: 1px solid var(--line); border-radius: 12px !important;">
+              <div class="feature-card-num" style="font-family: var(--font-prata); font-size: 1.6rem; color: var(--granate); margin-bottom: 12px;">02</div>
+              <h3 class="feature-card-title" style="font-family: var(--font-special); font-size: 1.2rem; margin-bottom: 10px;">Système Graphique</h3>
+              <p class="feature-card-copy" style="font-family: var(--font-special); font-size: 0.95rem; color: var(--warm-gray); line-height: 1.55;">Typographies, palettes chromatiques et grilles éditoriales adaptées au profil de l’acheteur.</p>
             </div>
-            <div class="feature-card">
-              <div class="feature-card-num">03</div>
-              <h3 class="feature-card-title">Direction Visuelle</h3>
-              <p class="feature-card-copy">Directives de cadrage, de stylisme et de température de lumière appliquées à toutes les images 3D.</p>
+            <div class="feature-card text-reveal-flow" style="background-color: var(--cream-2); padding: 32px; border: 1px solid var(--line); border-radius: 12px !important;">
+              <div class="feature-card-num" style="font-family: var(--font-prata); font-size: 1.6rem; color: var(--granate); margin-bottom: 12px;">03</div>
+              <h3 class="feature-card-title" style="font-family: var(--font-special); font-size: 1.2rem; margin-bottom: 10px;">Direction Visuelle</h3>
+              <p class="feature-card-copy" style="font-family: var(--font-special); font-size: 0.95rem; color: var(--warm-gray); line-height: 1.55;">Lignes directrices d’ambiance, cadrage, mobilier et éclairage appliquées à l’ensemble des rendus 3D.</p>
             </div>
-            <div class="feature-card">
-              <div class="feature-card-num">04</div>
-              <h3 class="feature-card-title">Déclinaisons Sur Site</h3>
-              <p class="feature-card-copy">Palissades de chantier, drapeaux, habillage de bureau de vente et coffrets de remise des clés.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COLLATERAL -->
-    <section class="section bg-ink" id="supports">
-      <div class="container">
-        <div class="feature-split reverse">
-          <div>
-            <div class="kicker crimson">Supports Commerciaux</div>
-            <h2 class="display-title" style="color: var(--paper); margin-bottom: 24px;">
-              Du plan technique<br>
-              à l'outil de vente<br>
-              efficace.
-            </h2>
-            <p class="body-large" style="color: rgba(244,243,239,0.8); margin-bottom: 32px;">
-              Nous transformons des plans d'architecte complexes en supports commerciaux clairs, esthétiques et convaincants.
-            </p>
-            <p class="body-regular" style="color: rgba(244,243,239,0.65);">
-              Des documents qui renforcent l'efficacité des commercialisateurs et inspirent une totale confiance aux acquéreurs.
-            </p>
-          </div>
-
-          <div class="feature-cards-grid">
-            <div class="feature-card">
-              <div class="feature-card-num">A</div>
-              <h3 class="feature-card-title">Dossier de Vente</h3>
-              <p class="feature-card-copy">Brochures imprimées haut de gamme et PDF interactifs présentant la notice descriptive et la philosophie du projet.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-card-num">B</div>
-              <h3 class="feature-card-title">Plans Commerciaux</h3>
-              <p class="feature-card-copy">Plans 2D/3D meublés, texturés et mis à l'échelle pour une compréhension spatiale immédiate.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-card-num">C</div>
-              <h3 class="feature-card-title">Cartes & Environnement</h3>
-              <p class="feature-card-copy">Infographies géographiques situant les accès, transports en commun, écoles et espaces verts.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-card-num">D</div>
-              <h3 class="feature-card-title">Fiches Typologiques</h3>
-              <p class="feature-card-copy">Feuillets par lot avec surfaces habitables, terrasses, orientation solaire et perspectives associées.</p>
+            <div class="feature-card text-reveal-flow" style="background-color: var(--cream-2); padding: 32px; border: 1px solid var(--line); border-radius: 12px !important;">
+              <div class="feature-card-num" style="font-family: var(--font-prata); font-size: 1.6rem; color: var(--granate); margin-bottom: 12px;">04</div>
+              <h3 class="feature-card-title" style="font-family: var(--font-special); font-size: 1.2rem; margin-bottom: 10px;">Déclinaisons</h3>
+              <p class="feature-card-copy" style="font-family: var(--font-special); font-size: 0.95rem; color: var(--warm-gray); line-height: 1.55;">Palissades de chantier, panneaux promotionnels, bulle de vente, signalétique et coffrets de remise de clés.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WEB -->
-    <section class="section bg-paper" id="web">
+    <!-- =====================================================
+         08. METODOLOGÍA / PROCESO (Fondo: Granate Vivo #A31A33)
+         ===================================================== -->
+    <section class="section" id="proceso" style="background-color: var(--granate); color: var(--cream);">
       <div class="container">
-        <div class="feature-split">
-          <div>
-            <div class="kicker crimson">Présence Digitale</div>
-            <h2 class="display-title" style="margin-bottom: 24px;">
-              Un site qui ne fait<br>
-              pas que présenter.<br>
-              Il concrétise le lancement.
-            </h2>
-            <p class="body-large body-muted" style="margin-bottom: 32px;">
-              Le site web du programme est le centre névralgique de la commercialisation. Il concentre l'attention du marché, informe les prospects avec clarté et achemine les demandes d'achat qualifiées directement vers votre équipe de vente.
-            </p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; font-size: 0.95rem;">
-              <li><strong>— UX / UI Architecturale :</strong> Immersion visuelle totale sans lenteur technique ni friction.</li>
-              <li><strong>— Développement Sur Mesure :</strong> Code sémantique, affichage ultrarapide et ergonomie mobile irréprochable.</li>
-              <li><strong>— Lots & Prestations :</strong> Plans de masse, notice de finitions et brochure éditoriale téléchargeable.</li>
-              <li><strong>— Analyse & Connexion CRM :</strong> Mesure granulaire des interactions et routage instantané des contacts.</li>
-            </ul>
-            <a href="contact.html" class="btn btn-crimson">
-              PLANIFIER LE SITE DU PROGRAMME →
+        <div class="kicker text-reveal-flow" style="color: var(--cream);">
+          <span class="kicker-dot" style="background-color: var(--cream);"></span>
+          Méthodologie
+        </div>
+        <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.2rem, 4.4vw, 4.2rem); color: var(--cream); line-height: 1.02; margin-bottom: 40px;">
+          De l’architecture<br><span class="text-prata-accent" style="color: var(--cream-2);">au marché.</span>
+        </h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <div class="text-reveal-flow" style="border: 1px solid var(--line-on-granate); padding: 32px; border-radius: 12px !important;">
+            <div style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream); margin-bottom: 12px;">PHASE 01</div>
+            <div style="font-family: var(--font-syncopate); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px;">Briefing & Stratégie</div>
+            <p style="font-family: var(--font-special); font-size: 0.95rem; color: rgba(241,235,223,0.85); line-height: 1.6;">Réception des plans CAD/BIM, étude du site, de la cible d'acquéreurs et du calendrier commercial.</p>
+          </div>
+          <div class="text-reveal-flow" style="border: 1px solid var(--line-on-granate); padding: 32px; border-radius: 12px !important;">
+            <div style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream); margin-bottom: 12px;">PHASE 02</div>
+            <div style="font-family: var(--font-syncopate); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px;">Identité & Naming</div>
+            <p style="font-family: var(--font-special); font-size: 0.95rem; color: rgba(241,235,223,0.85); line-height: 1.6;">Création du nom de la promotion, de l’identité visuelle et du manuel de style complet.</p>
+          </div>
+          <div class="text-reveal-flow" style="border: 1px solid var(--line-on-granate); padding: 32px; border-radius: 12px !important;">
+            <div style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream); margin-bottom: 12px;">PHASE 03</div>
+            <div style="font-family: var(--font-syncopate); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px;">Rendu 3D & Vidéo</div>
+            <p style="font-family: var(--font-special); font-size: 0.95rem; color: rgba(241,235,223,0.85); line-height: 1.6;">Modélisation photoréaliste, cadrages photographiques d’auteur, lumières d’ambiance et film 3D.</p>
+          </div>
+          <div class="text-reveal-flow" style="border: 1px solid var(--line-on-granate); padding: 32px; border-radius: 12px !important;">
+            <div style="font-family: var(--font-prata); font-size: 1.8rem; color: var(--cream); margin-bottom: 12px;">PHASE 04</div>
+            <div style="font-family: var(--font-syncopate); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px;">Dossier de Vente & Web</div>
+            <p style="font-family: var(--font-special); font-size: 0.95rem; color: rgba(241,235,223,0.85); line-height: 1.6;">Mise en page de la brochure commerciale, plans de vente texturés et mise en ligne du site interactif.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         09. CONTACTO DIRECTO (Fondo: Crema)
+         ===================================================== -->
+    <section class="section" id="contacto" style="background-color: var(--cream); color: var(--charcoal); padding: clamp(80px, 12vw, 150px) 0;">
+      <div class="container">
+        <div style="max-width: 900px;">
+          <div class="kicker text-reveal-flow" style="color: var(--granate);">
+            <span class="kicker-dot" style="background-color: var(--granate);"></span>
+            Contact Direct
+          </div>
+
+          <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.8rem, 6vw, 5.6rem); line-height: 0.95; margin-bottom: 32px;">
+            Du projet<br>au lancement.<br><span class="text-prata-accent">Parlons-en.</span>
+          </h2>
+
+          <p class="body-large text-reveal-flow" style="font-family: var(--font-special); color: var(--warm-gray); font-size: 1.25rem; line-height: 1.6; margin-bottom: 48px; max-width: 60ch;">
+            Si vous préparez une opération immobilière et souhaitez définir son image, ses outils de vente et son lancement commercial avec rigueur architecturale, parlons de votre projet.
+          </p>
+
+          <div class="text-reveal-flow" style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+            <a href="mailto:info@eidosrender.es" class="btn btn-editorial" style="background-color: var(--granate); color: var(--cream); border: none; padding: 18px 36px; font-family: var(--font-syncopate); font-size: 11.5px; letter-spacing: 0.14em; border-radius: 8px !important;">
+              ENVOYER UN EMAIL →
+            </a>
+            <a href="https://wa.me/34614459144" target="_blank" rel="noopener" class="btn btn-editorial" style="background-color: transparent; border: 1px solid var(--charcoal); color: var(--charcoal); padding: 18px 36px; font-family: var(--font-syncopate); font-size: 11.5px; letter-spacing: 0.14em; border-radius: 8px !important;">
+              WHATSAPP DIRECT : +34 614 45 91 44
             </a>
           </div>
-
-          <div>
-            <div style="background-color: var(--ink); color: var(--paper); padding: 48px; border-left: 4px solid var(--crimson);">
-              <span class="kicker crimson">Écosystème Connecté</span>
-              <h3 class="display-sub" style="margin-bottom: 20px;">Conçu pour soutenir la vente en VEFA.</h3>
-              <p class="body-regular" style="color: rgba(244,243,239,0.75); margin-bottom: 24px;">
-                Nous bannissons les modèles génériques. Chaque site est développé avec un code épuré respectant les Core Web Vitals, et une hiérarchie visuelle qui guide l'acquéreur vers la compréhension du projet ou le téléchargement de la brochure.
-              </p>
-              <div style="border-top: 1px solid var(--line-dark); padding-top: 20px; font-family: 'Space Grotesk', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--signal);">
-                Analytics · Meta Pixel · Google Tag · Connexion CRM
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACQUISITION -->
-    <section class="section bg-ink" id="acquisition">
-      <div class="container">
-        <div class="kicker crimson">Trafic & Leads Qualifiés</div>
-
-        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; margin-bottom: 60px;">
-          <h2 class="display-title" style="color: var(--paper);">
-            Quand l'image est prête,<br>
-            le lancement débute.
-          </h2>
-          <div class="body-large" style="color: rgba(244,243,239,0.8);">
-            Nous refusons les promesses creuses de volume non qualifié. Nous opérons l'acquisition par un ciblage pointu et une optimisation hebdomadaire des créations.
-          </div>
-        </div>
-
-        <div class="feature-cards-grid">
-          <div class="feature-card">
-            <div class="feature-card-num">01</div>
-            <h3 class="feature-card-title">Google Search Ads</h3>
-            <p class="feature-card-copy">Captation active des personnes recherchant des programmes neufs, appartements avec terrasse ou villas dans votre commune exacte.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-num">02</div>
-            <h3 class="feature-card-title">Meta Ads Ciblées</h3>
-            <p class="feature-card-copy">Campagnes sur Instagram et Facebook segmentées par niveau de patrimoine, centres d'intérêt d'investissement et profil résidentiel.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-num">03</div>
-            <h3 class="feature-card-title">Visuels Évolutifs</h3>
-            <p class="feature-card-copy">Renouvellement permanent des formats stories, reels et carrousels selon les résultats observés en direct.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-num">04</div>
-            <h3 class="feature-card-title">Tracking & Qualification</h3>
-            <p class="feature-card-copy">Mesure précise des appels et téléchargements de dossiers, avec exclusion stricte des requêtes hors cible.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section bg-paper" id="processus">
-      <div class="container">
-        <div class="kicker crimson">Méthodologie Éprouvée</div>
-        <h2 class="display-title" style="margin-bottom: 24px;">
-          Du concept initial<br>
-          au lancement.
-        </h2>
-        <p class="body-large body-muted" style="max-width: 720px; margin-bottom: 56px;">
-          Une direction artistique unique coordonne chaque phase, des plans architecturaux d'origine jusqu'à l'activation sur le marché.
-        </p>
-
-        <div class="process-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-          <div class="process-card">
-            <div class="process-card-num">01</div>
-            <h3 class="process-card-title">Direction & Identité</h3>
-            <p class="process-card-desc">Concept créatif, positionnement visuel, naming et système graphique sur mesure.</p>
-          </div>
-          <div class="process-card">
-            <div class="process-card-num">02</div>
-            <h3 class="process-card-title">Image 3D & Film</h3>
-            <p class="process-card-desc">Perspectives extérieures, intérieurs représentatifs, espaces paysagers et vidéo cinématique.</p>
-          </div>
-          <div class="process-card">
-            <div class="process-card-num">03</div>
-            <h3 class="process-card-title">Supports Commerciaux</h3>
-            <p class="process-card-desc">Brochure éditoriale, plans de vente texturés et fiches de lots pour l'équipe commerciale.</p>
-          </div>
-          <div class="process-card">
-            <div class="process-card-num">04</div>
-            <h3 class="process-card-title">Site Web Dédié</h3>
-            <p class="process-card-desc">Plateforme digitale avec sélecteur de typologies et recueil direct des demandes d'achat.</p>
-          </div>
-          <div class="process-card">
-            <div class="process-card-num">05</div>
-            <h3 class="process-card-title">Lancement & Campagnes</h3>
-            <p class="process-card-desc">Activation publicitaire coordonnée sur Google et Meta auprès d'acquéreurs vérifiés.</p>
-          </div>
-        </div>
-
-        <div style="margin-top: 56px; text-align: center;">
-          <a href="#contact" class="btn btn-crimson">
-            PLANIFIONS LE LANCEMENT →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCALE -->
-    <section class="section bg-paper" id="envergure">
-      <div class="container">
-        <div class="kicker crimson">Dimension du Programme</div>
-        <h2 class="display-title" style="margin-bottom: 24px;">
-          Chaque programme a<br>
-          sa propre échelle.
-        </h2>
-
-        <div class="scale-box">
-          <p class="body-large" style="margin-bottom: 20px;">
-            Accompagner le lancement d'une résidence intimiste de 20 logements implique une stratégie différente de celle d'un macro-complexe multifonctionnel comprenant plusieurs bâtiments et équipements exclusifs.
-          </p>
-          <p class="body-regular body-muted">
-            Le périmètre d'intervention est précisément calibré selon le nombre de lots, la typologie architecturale, le volume d'images 3D, les besoins vidéo, le site web et la date cible de commercialisation.
-          </p>
-
-          <div class="scale-comparison-grid">
-            <div>
-              <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 12px; color: var(--crimson);">
-                Programme Résidentiel Standard
-              </h4>
-              <p class="body-regular body-muted">
-                15 à 40 lots. Façade principale, espaces communs paysagers, intérieurs témoins, brochure digitale et site de lancement.
-              </p>
-            </div>
-            <div>
-              <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 12px; color: var(--ink);">
-                Grands Ensembles & Hospitality
-              </h4>
-              <p class="body-regular body-muted">
-                Projets multi-phases ou résidences services. Masterplans d'ensemble, parcours filmés immersifs, multiples typologies et déploiement omnicanal.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INVESTMENT -->
-    <section class="section bg-ink" id="investissement" style="color: var(--paper);">
-      <div class="container">
-        <div style="padding-bottom: 64px; border-bottom: 1px solid var(--line-dark);">
-          <div class="kicker crimson">Repères d'Investissement</div>
-          <h2 class="display-title" style="color: var(--paper); margin-bottom: 24px;">
-            Projets complets de lancement.
-          </h2>
-          <div style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.8rem, 6vw, 4.8rem); font-weight: 700; color: var(--paper); line-height: 1; letter-spacing: -0.03em; margin-bottom: 16px;">
-            À PARTIR DE 12 000 € <span style="font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 500; color: var(--signal);">HT</span>
-          </div>
-          <p class="body-large" style="color: rgba(244,243,239,0.75); max-width: 680px;">
-            Base de référence pour les programmes requérant une direction visuelle complète, des rendus 3D, des supports imprimés et une plateforme web. Devis sur mesure après analyse des plans.
-          </p>
-        </div>
-
-        <div style="padding-top: 64px;">
-          <div class="kicker crimson">Continuité Commerciale</div>
-          <h2 class="display-sub" style="color: var(--paper); margin-bottom: 16px;">
-            Le lancement ne s'arrête pas à la mise en ligne du site.
-          </h2>
-          <div style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 700; color: var(--paper); line-height: 1; letter-spacing: -0.02em; margin-bottom: 16px;">
-            À PARTIR DE 600 €/MOIS <span style="font-size: clamp(1.1rem, 1.8vw, 1.5rem); font-weight: 500; color: var(--signal);">HT</span>
-          </div>
-          <p class="body-regular" style="color: rgba(244,243,239,0.75); max-width: 680px; margin-bottom: 20px;">
-            Budget média en sus. Gestion suivie des campagnes publicitaires, renouvellement des créations 3D et optimisation du flux de leads qualifiés.
-          </p>
-          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--signal);">
-            Google Ads · Meta Ads · Optimisation Continue · Rapports Détaillés
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TIMELINE -->
-    <section class="section bg-ink" style="border-top: 1px solid var(--line-dark);" id="calendrier">
-      <div class="container">
-        <div class="kicker crimson">Planification Temporelle</div>
-        <h2 class="display-title" style="color: var(--paper); margin-bottom: 24px;">
-          Un lancement se planifie<br>
-          à rebours.
-        </h2>
-        
-        <p class="body-large" style="color: rgba(244,243,239,0.85); max-width: 720px; margin-bottom: 16px;">
-          Un projet intégral s'exécute généralement en <strong>6 à 10 semaines</strong> pour un périmètre standard, en menant les étapes en parallèle.
-        </p>
-        <p class="body-regular" style="color: var(--signal); max-width: 700px;">
-          Votre date cible de commercialisation est le paramètre clé guidant notre engagement et nos réservations de production.
-        </p>
-
-        <div class="timeline-bars">
-          <div class="timeline-row">
-            <div class="timeline-phase" style="color: var(--paper);">01 Direction & Identité</div>
-            <div class="timeline-progress-track">
-              <div class="timeline-progress-fill" style="width: 25%; left: 0%;"></div>
-            </div>
-            <div class="timeline-duration">1–2 semaines</div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-phase" style="color: var(--paper);">02 Images 3D & Vidéo</div>
-            <div class="timeline-progress-track">
-              <div class="timeline-progress-fill" style="width: 50%; left: 15%;"></div>
-            </div>
-            <div class="timeline-duration">2–4 semaines</div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-phase" style="color: var(--paper);">03 Supports Commerciaux</div>
-            <div class="timeline-progress-track">
-              <div class="timeline-progress-fill" style="width: 30%; left: 45%;"></div>
-            </div>
-            <div class="timeline-duration">1–2 semaines</div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-phase" style="color: var(--paper);">04 Site Web du Programme</div>
-            <div class="timeline-progress-track">
-              <div class="timeline-progress-fill" style="width: 55%; left: 40%;"></div>
-            </div>
-            <div class="timeline-duration">3–5 semaines</div>
-          </div>
-
-          <div class="timeline-row">
-            <div class="timeline-phase" style="color: var(--paper);">05 Lancement des Campagnes</div>
-            <div class="timeline-progress-track">
-              <div class="timeline-progress-fill" style="width: 20%; left: 80%;"></div>
-            </div>
-            <div class="timeline-duration">1 semaine</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section bg-paper" id="eidos">
-      <div class="container">
-        <div class="kicker crimson">Le Studio</div>
-        <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 70px; align-items: flex-start; margin-bottom: 64px;">
-          <div>
-            <h2 class="display-title" style="margin-bottom: 24px;">
-              Eidos Render
-            </h2>
-            <div class="body-large" style="color: var(--crimson); font-weight: 600; line-height: 1.45;">
-              Visualisation architecturale, direction visuelle et outils commerciaux digitaux pour programmes immobiliers.
-            </div>
-          </div>
-
-          <div class="body-large body-muted">
-            <p style="margin-bottom: 20px;">
-              Nous partons de l'architecture. Nous créons son identité. Et nous la projetons sur le marché.
-            </p>
-            <p style="font-size: 1rem; line-height: 1.6; color: var(--ink);">
-              Nous collaborons avec des promoteurs, fonds d'investissement et cabinets d'architecture en France, Belgique, Suisse, Espagne et à l'international. Nous allions la rigueur géométrique à l'élégance de l'image et à l'efficacité commerciale.
-            </p>
-            <div style="margin-top: 28px; display: flex; gap: 32px; font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; text-transform: uppercase;">
-              <div><strong>Siège :</strong> Valence, Espagne</div>
-              <div><strong>Rayonnement :</strong> France & Europe</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="section bg-paper" style="border-top: 1px solid var(--line); padding: clamp(80px, 12vw, 160px) 0;" id="contact">
-      <div class="container">
-        <div style="max-width: 1040px;">
-          <div class="kicker crimson" style="margin-bottom: 24px;">Un programme · Une identité · Une expérience · Un lancement réussi</div>
-          
-          <h2 class="display-title" style="margin-bottom: 32px; font-size: clamp(2.8rem, 6.5vw, 6.2rem); line-height: 0.94;">
-            DU PROJET<br>
-            AU LANCEMENT.<br>
-            <span style="color: var(--crimson);">PARLONS-EN.</span>
-          </h2>
-          
-          <p class="body-large body-muted" style="max-width: 720px; font-size: clamp(1.2rem, 2.2vw, 1.55rem); line-height: 1.45; margin-bottom: 48px;">
-            Si vous préparez un programme immobilier et souhaitez en définir l'image, les supports de vente et le lancement commercial, présentez-nous votre projet.
-          </p>
-
-          <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 60px;">
-            <a href="mailto:info@eidosrender.es?subject=Demande%20de%20projet%20immobilier" class="btn btn-crimson" style="padding: 20px 38px; font-size: 1rem;">
-              ÉCHANGEONS SUR LE PROJET →
-            </a>
-          </div>
-
-          <div style="padding-top: 48px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px; align-items: start;">
-            <div>
-              <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; text-transform: uppercase;">
-                EIDOS RENDER
-              </div>
-              <div style="font-family: 'Archivo', sans-serif; font-size: 0.88rem; color: var(--signal); line-height: 1.5;">
-                Image · Identité · Vente · Web · Acquisition
-              </div>
-            </div>
-
-            <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Courriel Direct</span>
-              <a href="mailto:info@eidosrender.es" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--crimson); padding-bottom: 2px;">
-                info@eidosrender.es
-              </a>
-            </div>
-
-            <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Téléphone</span>
-              <a href="tel:+34614459144" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none;">
-                +34 614 45 91 44
-              </a>
-            </div>
-
-            <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Studio</span>
-              <span style="font-family: 'Archivo', sans-serif; font-size: 0.95rem; color: var(--ink); line-height: 1.5;">
-                Valence, Espagne<br>
-                <span style="color: var(--signal); font-size: 0.85rem;">Service France & Europe</span>
-              </span>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <!-- =====================================================
+       PIE DE PÁGINA (Fondo: Granate Vivo #A31A33)
+       ===================================================== -->
+  <footer style="background-color: var(--granate); color: var(--cream); border-top: 1px solid var(--line-on-granate); padding: 80px 0 40px;">
     <div class="container">
-      <div class="footer-grid">
-
-        <div>
-          <div class="footer-brand" style="margin-bottom: 14px;">EIDOS RENDER</div>
-          <p style="font-size: 0.88rem; color: rgba(244,243,239,0.7); max-width: 320px; line-height: 1.6; margin-bottom: 20px;">
-            Partenaire créatif et visuel pour le lancement commercial de programmes immobiliers en Europe.
-          </p>
-          <div style="font-size: 0.82rem; color: var(--signal);">
-            Image · Identité · Vente · Web · Acquisition
-          </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line-on-granate); padding-bottom: 40px; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <svg class="isotype-icon" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
+            <path fill="var(--cream)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect fill="var(--cream)" x="6" y="40" width="52" height="5" />
+            <rect fill="var(--cream)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span style="font-family: var(--font-syncopate); font-weight: 700; font-size: 14px; letter-spacing: 0.16em;">EIDOS RENDER</span>
         </div>
-
-        <div>
-          <div class="footer-col-title">Navigation</div>
-          <ul class="footer-links">
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="#processus">Processus</a></li>
-            <li><a href="#envergure">Échelle</a></li>
-            <li><a href="#eidos">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div style="font-family: var(--font-special); font-size: 13px; color: rgba(241,235,223,0.8);">
+          Agence Intégrale d’Image, d’Identité et de Lancement pour la Promotion Immobilière
         </div>
-
-        <div>
-          <div class="footer-col-title">Services</div>
-          <ul class="footer-links">
-            <li><a href="services/branding.html">Direction & Identité</a></li>
-            <li><a href="services/rendu-3d.html">Image Architecturale 3D</a></li>
-            <li><a href="services/video-3d.html">Vidéo & Animation 3D</a></li>
-            <li><a href="services/supports-commerciaux.html">Supports Commerciaux</a></li>
-            <li><a href="services/site-web-immobilier.html">Site Web de Promotion</a></li>
-            <li><a href="services/acquisition.html">Lancement & Acquisition</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Contact</div>
-          <ul class="footer-links">
-            <li><a href="mailto:info@eidosrender.es">info@eidosrender.es</a></li>
-            <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
-            <li>Valence, Espagne</li>
-            <li style="margin-top: 14px;">
-              <a href="https://www.linkedin.com/company/eidos-render" target="_blank" rel="noopener" style="color: var(--crimson); font-weight: 600;">
-                LinkedIn ↗
-              </a>
-            </li>
-          </ul>
-        </div>
-
       </div>
 
-      <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Tous droits réservés.</div>
-        <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
-            <a href="../" onclick="window.setLang('es')">ES</a> ·
-            <a href="../en/" onclick="window.setLang('en')">EN</a> ·
-            <a href="../de/" onclick="window.setLang('de')">DE</a> ·
-            <span style="color: var(--crimson); font-weight: 700;">FR</span>
-          </div>
-          <a href="mentions-legales.html">Mentions Légales</a>
-          <a href="politique-de-confidentialite.html">Confidentialité</a>
-          <a href="politique-des-cookies.html">Cookies</a>
+      <div style="display: flex; justify-content: space-between; align-items: center; font-family: var(--font-syncopate); font-size: 10px; letter-spacing: 0.1em; color: rgba(241,235,223,0.65); flex-wrap: wrap; gap: 16px;">
+        <div>© 2026 Eidos Render. Valence · Présence en France et en Europe.</div>
+        <div style="display: flex; gap: 24px;">
+          <a href="mentions-legales.html" style="color: inherit;">Mentions Légales</a>
+          <a href="politique-de-confidentialite.html" style="color: inherit;">Politique de Confidentialité</a>
+          <a href="politique-des-cookies.html" style="color: inherit;">Cookies</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="../main.js" defer></script>
+  <!-- Scripts -->
+  <script src="../assets/vendor/lenis.min.js"></script>
+  <script src="../assets/vendor/gsap.min.js"></script>
+  <script src="../assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="../main.js"></script>
 </body>
 </html>

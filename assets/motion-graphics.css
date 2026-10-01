@@ -1,0 +1,366 @@
+/* ==========================================================================
+   EIDOS RENDER — MOTION GRAPHICS ABSTRACTOS (LENGUAJE VISUAL PROPIO)
+   Vocabulario: Arquitectura y Luz. Solo tokens: --charcoal, --cream, --accent.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. PIEZA 01: LAMAS BRISE-SOLEIL (Hero Reveal & Page Transition)
+   -------------------------------------------------------------------------- */
+.motion-lamas-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.motion-lama-col {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  transform-origin: left center;
+  background-color: var(--charcoal);
+  border-right: 1px solid rgba(239, 233, 220, 0.08);
+  will-change: transform;
+}
+
+.motion-lama-col.lama-datum {
+  border-right: 1.5px solid var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   02. PIEZA 02: SOMBRA PROYECTADA (Geometría Solar en Secciones Claras)
+   -------------------------------------------------------------------------- */
+.motion-shadow-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.motion-shadow-polygon {
+  fill: var(--charcoal);
+  opacity: 0.052;
+  will-change: transform;
+}
+
+.motion-shadow-edge {
+  stroke: rgba(30, 28, 26, 0.12);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+/* --------------------------------------------------------------------------
+   03. PIEZA 03: SOL Y HORIZONTE (Transición Lumínica Día / Noche)
+   -------------------------------------------------------------------------- */
+.motion-solar-track {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.solar-track-axis {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 1px;
+  background-color: var(--line-strong);
+  transform: translateX(-50%);
+}
+
+.solar-track-tick {
+  position: absolute;
+  left: 50%;
+  width: 16px;
+  height: 1px;
+  background-color: var(--line);
+  transform: translateX(-50%);
+}
+
+.solar-track-tick-label {
+  position: absolute;
+  left: calc(50% + 20px);
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone-text);
+  white-space: nowrap;
+}
+
+.solar-track-horizon-line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 2px;
+  background-color: var(--accent);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.solar-track-horizon-label {
+  position: absolute;
+  left: calc(50% + 32px);
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.solar-track-sun-disk {
+  width: 64px;
+  height: 64px;
+  border-radius: 50% !important;
+  background-color: var(--charcoal);
+  position: absolute;
+  left: calc(50% - 32px);
+  top: calc(50% - 32px);
+  z-index: 3;
+  will-change: transform;
+  transition: background-color 0.4s ease;
+}
+
+/* --------------------------------------------------------------------------
+   04. PIEZA 04: FORJADOS (Capas Tectónicas que se Apilan)
+   -------------------------------------------------------------------------- */
+.motion-forjados-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  padding-left: 36px;
+}
+
+.motion-forjados-wrap::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: -8px;
+  bottom: -8px;
+  width: 1px;
+  background-color: var(--line-dark);
+}
+
+.motion-forjado-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.motion-forjado-level {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  color: var(--stone);
+  width: 20px;
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+
+.motion-forjado-bar {
+  height: 5px;
+  background-color: var(--cream);
+  transform-origin: left center;
+  transform: scaleX(0);
+  will-change: transform;
+}
+
+.motion-forjado-item.is-datum .motion-forjado-bar {
+  height: 7px;
+  background-color: var(--accent-on-dark);
+}
+
+.motion-forjado-item.is-datum .motion-forjado-level {
+  color: var(--accent-on-dark);
+  font-weight: 700;
+}
+
+.motion-forjado-tag {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  opacity: 0;
+  white-space: nowrap;
+}
+
+/* Variante sobre fondo claro (crema / paper) */
+.motion-forjados-wrap.forjados-on-light::before {
+  background-color: var(--line);
+}
+
+.motion-forjados-wrap.forjados-on-light .motion-forjado-bar {
+  background-color: var(--charcoal);
+}
+
+.motion-forjados-wrap.forjados-on-light .motion-forjado-item.is-datum .motion-forjado-bar {
+  background-color: var(--accent);
+}
+
+.motion-forjados-wrap.forjados-on-light .motion-forjado-item.is-datum .motion-forjado-level {
+  color: var(--accent);
+}
+
+.motion-forjados-wrap.forjados-on-light .motion-forjado-tag {
+  color: var(--stone-text);
+}
+
+/* --------------------------------------------------------------------------
+   05. PIEZA 05: SECCIÓN QUE SE DIBUJA (Trazo Tectónico Continuo)
+   -------------------------------------------------------------------------- */
+.motion-arch-section-svg {
+  width: 100%;
+  height: 380px;
+  background-color: var(--cream-2);
+  border: 1px solid var(--line);
+  box-sizing: border-box;
+  display: block;
+}
+
+.motion-section-path {
+  fill: none;
+  stroke: var(--charcoal);
+  stroke-width: 2;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.motion-section-datum {
+  fill: none;
+  stroke: rgba(30, 28, 26, 0.2);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.motion-section-accent-dot {
+  fill: var(--accent);
+  transform-origin: center;
+}
+
+/* --------------------------------------------------------------------------
+   06. PIEZA 06: PLANOS DE COLOR DESPLAZADOS (Paralaje Tectónico)
+   -------------------------------------------------------------------------- */
+.motion-planes-sculpture {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.motion-planes-frame {
+  position: absolute;
+  width: 320px;
+  height: 340px;
+  border: 1px solid var(--line-dark);
+}
+
+.motion-plane-rect {
+  position: absolute;
+  box-sizing: border-box;
+  will-change: transform;
+}
+
+.m-plane-1 {
+  width: 240px;
+  height: 280px;
+  background-color: var(--charcoal-2);
+  border: 1px solid var(--line-dark);
+  top: 40px;
+  left: 20px;
+  z-index: 1;
+}
+
+.m-plane-2 {
+  width: 190px;
+  height: 210px;
+  background-color: #383531;
+  border: 1px solid rgba(239, 233, 220, 0.12);
+  top: 90px;
+  left: 100px;
+  z-index: 2;
+}
+
+.m-plane-3 {
+  width: 160px;
+  height: 140px;
+  background-color: var(--cream);
+  top: 150px;
+  left: 50px;
+  z-index: 3;
+}
+
+.m-plane-accent {
+  width: 100px;
+  height: 60px;
+  background-color: var(--accent);
+  top: 120px;
+  left: 170px;
+  z-index: 4;
+}
+
+.m-plane-line-h {
+  position: absolute;
+  height: 1px;
+  width: 340px;
+  top: 180px;
+  left: 10px;
+  background-color: var(--accent-on-dark);
+  opacity: 0.6;
+  z-index: 5;
+}
+
+.m-plane-line-v {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  top: 30px;
+  left: 170px;
+  background-color: var(--accent-on-dark);
+  opacity: 0.4;
+  z-index: 5;
+}
+
+/* --------------------------------------------------------------------------
+   ACCESIBILIDAD: PREFERS-REDUCED-MOTION
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .motion-lama-col {
+    transform: scaleX(0) !important;
+  }
+  .motion-forjado-bar {
+    transform: scaleX(1) !important;
+  }
+  .motion-forjado-tag {
+    opacity: 1 !important;
+  }
+  .motion-section-path {
+    stroke-dashoffset: 0 !important;
+  }
+  .motion-plane-rect {
+    transform: none !important;
+  }
+  .solar-track-sun-disk {
+    transform: none !important;
+  }
+}

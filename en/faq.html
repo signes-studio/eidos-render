@@ -35,15 +35,10 @@
   <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
-  <link rel="shortcut icon" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
+<!-- Typography -->
   <link rel="stylesheet" href="../style.css">
 
   <!-- Schema.org FAQPage -->
@@ -87,6 +82,7 @@
     ]
   }
   </script>
+  <link rel="stylesheet" href="../assets/fonts.css">
 </head>
 <body class="bg-paper">
 
@@ -95,71 +91,106 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Header -->
-  <header class="nav-header nav-light" role="banner">
+    <!-- =====================================================
+       00. CABECERA DINÁMICA CENTRADA:
+       Isotipo grande a dos tintas + Nombre centrado debajo
+       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
+       ===================================================== -->
+  <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
-      <a href="./" class="logo" aria-label="Eidos Render Home">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
-      </a>
-
-      <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="./#proceso">Process</a></li>
-          <li><a href="./#eidos">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-right-group">
-        <div class="lang-switcher" aria-label="Language selector">
-          <a href="../faq.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-          <span class="lang-divider">/</span>
-          <span class="active" data-lang="en">EN</span>
-          <span class="lang-divider">/</span>
-          <a href="../de/faq.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-          <span class="lang-divider">/</span>
-          <a href="../fr/faq.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
-        </div>
-
-        <a href="contact.html" class="nav-cta">
-          LET'S DISCUSS THE PROJECT →
+      <div class="nav-center-brand">
+        <a href="../en/index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+          <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
+            <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
+            <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
         </a>
       </div>
-
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-nav-overlay" aria-hidden="true">
-    <div>
-      <div class="mobile-lang-switcher" aria-label="Language selector">
-        <a href="../faq.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-        <span class="active" data-lang="en">EN</span>
-        <a href="../de/faq.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-        <a href="../fr/faq.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
-      </div>
+  <!-- =====================================================
+       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
+       ===================================================== -->
+  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
+    <span class="menu-btn-label">MENU</span>
+    <span class="menu-btn-icon">
+      <span class="line line-top"></span>
+      <span class="line line-bottom"></span>
+    </span>
+  </button>
 
-      <span class="kicker crimson">Navigation</span>
-      <ul class="mobile-nav-links">
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="./#proceso">Process</a></li>
-        <li><a href="./#eidos">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
+
+    <nav aria-label="Navigation">
+      <ul class="app-nav-list">
+        <li class="app-nav-item">
+          <a href="../en/index.html" class="app-link">
+            <span><span class="app-nav-num">01</span>Home</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/services.html" class="app-link">
+            <span><span class="app-nav-num">02</span>Services & Capabilities</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/projects.html" class="app-link">
+            <span><span class="app-nav-num">03</span>Case Portfolio</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/index.html#branding" class="app-link">
+            <span><span class="app-nav-num">04</span>Brand Identity</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/index.html#proceso" class="app-link">
+            <span><span class="app-nav-num">05</span>Methodology</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/contact.html" class="app-link">
+            <span><span class="app-nav-num">06</span>Direct Contact</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
+    <div class="app-lang-segmented" aria-label="Language selector">
+      <a href="../index.html" data-lang="es" class="" onclick="window.setLang('es')">ES</a>
+      <a href="../en/" data-lang="en" class="active" onclick="window.setLang('en')">EN</a>
+      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
+      <a href="../fr/" data-lang="fr" class="" onclick="window.setLang('fr')">FR</a>
+    </div>
+
+    <div class="app-panel-footer">
+      <a href="../en/contact.html" class="app-cta-btn">
+        DISCUSS YOUR PROJECT →
+      </a>
+      <div class="app-contact-sub">Valencia · Operating Across Europe</div>
+    </div>
+  </div>
     <div class="mobile-nav-footer">
       <div><strong>EIDOS RENDER</strong> — Real Estate Launch</div>
       <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
     </div>
   </div>
 
-  <main style="padding-top: var(--nav-h);">
+  <main style="padding-top: 140px;">
 
     <!-- Section Header -->
     <section class="section-sm bg-paper" style="border-bottom: 1px solid var(--line);">
@@ -182,7 +213,7 @@
           
           <div style="padding-bottom: 36px; border-bottom: 1px solid var(--line);">
             <div class="kicker gray" style="margin-bottom: 8px;">Technical Input</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
+            <h3 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
               What architectural documentation is required to estimate and launch a project?
             </h3>
             <p class="body-regular body-muted" style="line-height: 1.65;">
@@ -192,7 +223,7 @@
 
           <div style="padding-bottom: 36px; border-bottom: 1px solid var(--line);">
             <div class="kicker gray" style="margin-bottom: 8px;">Timelines & Milestones</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
+            <h3 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
               What are the standard delivery timeframes?
             </h3>
             <p class="body-regular body-muted" style="line-height: 1.65;">
@@ -202,7 +233,7 @@
 
           <div style="padding-bottom: 36px; border-bottom: 1px solid var(--line);">
             <div class="kicker gray" style="margin-bottom: 8px;">Modular Capabilities</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
+            <h3 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
               Can individual service phases be commissioned separately?
             </h3>
             <p class="body-regular body-muted" style="line-height: 1.65;">
@@ -212,7 +243,7 @@
 
           <div style="padding-bottom: 36px; border-bottom: 1px solid var(--line);">
             <div class="kicker gray" style="margin-bottom: 8px;">European Operations</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
+            <h3 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
               Do you work with developments across Europe?
             </h3>
             <p class="body-regular body-muted" style="line-height: 1.65;">
@@ -222,7 +253,7 @@
 
           <div style="padding-bottom: 36px; border-bottom: 1px solid var(--line);">
             <div class="kicker gray" style="margin-bottom: 8px;">Terms & Engagement</div>
-            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
+            <h3 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.35rem; font-weight: 700; margin-bottom: 14px;">
               What are the contractual and payment terms?
             </h3>
             <p class="body-regular body-muted" style="line-height: 1.65;">
@@ -235,7 +266,7 @@
         <!-- Editorial CTA Box -->
         <div style="margin-top: 70px; padding: 48px; background-color: var(--ink); color: var(--paper);">
           <div class="kicker crimson">Direct Contact</div>
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.1; margin-bottom: 16px;">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.1; margin-bottom: 16px;">
             Planning an upcoming development?
           </h2>
           <p style="color: rgba(244,243,239,0.75); font-size: 1.05rem; line-height: 1.5; max-width: 600px; margin-bottom: 32px;">
@@ -253,7 +284,10 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-bottom">
+      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
+          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+        </div>
+        <div class="footer-bottom">
         <div>© 2026 Eidos Render. Frequently Asked Questions.</div>
         <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
           <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">

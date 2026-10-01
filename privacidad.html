@@ -17,24 +17,23 @@
   <link rel="canonical" href="https://eidosrender.es/privacidad">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-  <!-- Tipografías -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fonts.css">
 </head>
 <body class="bg-paper">
 
   <header class="nav-header nav-light" role="banner">
     <div class="nav-inner">
       <a href="index.html" class="logo" aria-label="Eidos Render Inicio">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
+        <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+        <span class="logo-text">EIDOS RENDER</span>
       </a>
 
       <nav aria-label="Navegación principal">
@@ -70,14 +69,14 @@
       <div class="container" style="max-width: 900px; margin: 0 auto;">
         
         <div style="background-color: var(--paper-pure); padding: 48px; border: 1px solid var(--line); line-height: 1.7;">
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             1. Responsable del Tratamiento
           </h2>
           <p style="margin-bottom: 24px;">
             En cumplimiento del Reglamento General de Protección de Datos (RGPD UE 2016/679) y la Ley Orgánica 3/2018 (LOPDGDD), se informa que los datos personales que nos facilites a través de los formularios del sitio web serán tratados por Eidos Render, con domicilio en Valencia y correo electrónico de contacto: <strong>hola@eidosrender.es / info@eidosrender.es</strong>.
           </p>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             2. Finalidad del Tratamiento de Datos
           </h2>
           <p style="margin-bottom: 12px;">Los datos recogidos a través del formulario de contacto (nombre, empresa, email, teléfono, detalles de la promoción y archivos adjuntos) se utilizarán exclusivamente para:</p>
@@ -86,21 +85,21 @@
             <li>Mantener la comunicación directa para la planificación, ejecución y entrega de los servicios profesionales contratados.</li>
           </ul>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             3. Legitimación
           </h2>
           <p style="margin-bottom: 24px;">
             La base legal para el tratamiento de tus datos es el consentimiento explícito prestado al rellenar y enviar el formulario de contacto aceptando las condiciones de la web, así como la relación precontractual y comercial posterior.
           </p>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             4. Destinatarios y Conservación
           </h2>
           <p style="margin-bottom: 24px;">
             Los datos no se cederán a terceros, salvo obligación legal. Los datos proporcionados se conservarán mientras se mantenga la relación comercial o durante los años necesarios para cumplir con las obligaciones legales aplicables.
           </p>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             5. Derechos del Usuario
           </h2>
           <p>
@@ -115,7 +114,10 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-bottom">
+      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
+          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+        </div>
+        <div class="footer-bottom">
         <div>© 2026 Eidos Render. Todos los derechos reservados.</div>
         <div style="display: flex; gap: 24px;">
           <a href="index.html">Inicio</a>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body { padding-top: 0; }
+    .feature-test-bar {
+      background: var(--charcoal-2);
+      border-bottom: 1px solid var(--line-dark);
+      padding: 12px 24px;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--stone);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10001;
+    }
+    .feature-test-bar span.accent {
+      color: var(--accent-on-dark);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-paper">
+
+  <div class="feature-test-bar">
+    <div>EIDOS RENDER · RECURSO ESPECIAL 07: <span class="accent">GALERÍA HORIZONTAL FIJADA</span></div>
+    <div>DESPLAZAMIENTO HORIZONTAL + BARRA DE PROGRESO 1PX</div>
+  </div>
+
+  <section class="pinned-gallery-section" aria-label="Galería horizontal">
+    <div class="container">
+      <div class="pinned-gallery-header" style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--line-dark); padding-bottom: 28px;">
+        <div>
+          <span class="kicker kicker-accent"><span class="kicker-dot"></span> Perspectivas Clave</span>
+          <h2 class="display-title" style="color: var(--cream); font-size: clamp(2.2rem, 4.5vw, 3.8rem);">
+            Atmósfera & Geometría.
+          </h2>
+        </div>
+        <div style="font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone);">
+          Desplaza horizontalmente →
+        </div>
+      </div>
+
+      <div class="pinned-gallery-container" data-cursor="VER">
+        <article class="pinned-gallery-card">
+          <div class="img-wrap">
+            <img src="../../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Fachada" loading="lazy">
+          </div>
+          <div class="card-num">01 / 04</div>
+          <h3 class="card-title">Fachada Norte & Entrada Principal</h3>
+          <div class="card-meta">Residencial Plurifamiliar · Valencia</div>
+        </article>
+
+        <article class="pinned-gallery-card">
+          <div class="img-wrap">
+            <img src="../../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Villa" loading="lazy">
+          </div>
+          <div class="card-num">02 / 04</div>
+          <h3 class="card-title">Integración Topográfica & Solárium</h3>
+          <div class="card-meta">Villa Unifamiliar · Alicante</div>
+        </article>
+
+        <article class="pinned-gallery-card">
+          <div class="img-wrap">
+            <img src="../../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Penthouse" loading="lazy">
+          </div>
+          <div class="card-num">03 / 04</div>
+          <h3 class="card-title">Espacio Diáfano & Luz Cenital</h3>
+          <div class="card-meta">Interiorismo de Gran Altura · Madrid</div>
+        </article>
+
+        <article class="pinned-gallery-card">
+          <div class="img-wrap">
+            <img src="../../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Piscina" loading="lazy">
+          </div>
+          <div class="card-num">04 / 04</div>
+          <h3 class="card-title">Piscina Infinity & Paisajismo</h3>
+          <div class="card-meta">Áreas Comunitarias · Costa Blanca</div>
+        </article>
+      </div>
+
+      <div class="pinned-gallery-progress-bar">
+        <div class="pinned-gallery-progress-fill"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../../main.js"></script>
+</body>
+</html>

@@ -12,8 +12,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contact — Eidos Render | Du Projet au Lancement Commercial</title>
-  <meta name="description" content="Présentez-nous votre programme immobilier. Nous évaluons l'image 3D, le film, l'identité, les brochures, le site web et l'acquisition d'acquéreurs.">
+  <title>Contact — Eidos Render | Du Projet au Lancement</title>
+  <meta name="description" content="Contact direct avec le studio. Partagez les détails de votre programme immobilier pour définir votre direction visuelle, imagerie 3D et supports de vente.">
   <link rel="canonical" href="https://eidosrender.es/fr/contact">
 
   <!-- International SEO / Hreflang -->
@@ -29,149 +29,220 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
-  <meta property="og:title" content="Contact — Eidos Render | Du Projet au Lancement Commercial">
-  <meta property="og:description" content="Présentez-nous votre programme immobilier. Nous planifions la production visuelle et le lancement commercial.">
+  <meta property="og:title" content="Contact — Eidos Render | Du Projet au Lancement">
+  <meta property="og:description" content="Contact direct avec le studio. Partagez les détails de votre programme immobilier pour définir votre direction visuelle, imagerie 3D et supports de vente.">
   <meta property="og:url" content="https://eidosrender.es/fr/contact">
   <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
-  <link rel="shortcut icon" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/fonts.css">
 </head>
 <body class="bg-paper">
 
-  <header class="nav-header nav-light" role="banner">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header Fijo y Discreto con Isotipo C -->
+    <!-- =====================================================
+       00. CABECERA DINÁMICA CENTRADA:
+       Isotipo grande a dos tintas + Nombre centrado debajo
+       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
+       ===================================================== -->
+  <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
-      <a href="./" class="logo" aria-label="Eidos Render Accueil">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
-      </a>
-
-      <nav aria-label="Navigation principale">
-        <ul class="nav-links">
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="./#processus">Processus</a></li>
-          <li><a href="./#eidos">À propos</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-right-group">
-        <div class="lang-switcher" aria-label="Sélecteur de langue">
-          <a href="../contacto.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-          <span class="lang-divider">/</span>
-          <a href="../en/contact.html" data-lang="en" onclick="window.setLang('en')">EN</a>
-          <span class="lang-divider">/</span>
-          <a href="../de/kontakt.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-          <span class="lang-divider">/</span>
-          <span class="active" data-lang="fr">FR</span>
-        </div>
-
-        <a href="contact.html" class="nav-cta">
-          ÉCHANGEONS SUR LE PROJET →
+      <div class="nav-center-brand">
+        <a href="../fr/index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+          <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
+            <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
+            <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
         </a>
       </div>
-
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-nav-overlay" aria-hidden="true">
-    <div>
-      <div class="mobile-lang-switcher" aria-label="Sélecteur de langue">
-        <a href="../contacto.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-        <a href="../en/contact.html" data-lang="en" onclick="window.setLang('en')">EN</a>
-        <a href="../de/kontakt.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-        <span class="active" data-lang="fr">FR</span>
-      </div>
+  <!-- =====================================================
+       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
+       ===================================================== -->
+  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
+    <span class="menu-btn-label">MENU</span>
+    <span class="menu-btn-icon">
+      <span class="line line-top"></span>
+      <span class="line line-bottom"></span>
+    </span>
+  </button>
 
-      <span class="kicker crimson">Navigation</span>
-      <ul class="mobile-nav-links">
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="./#processus">Processus</a></li>
-        <li><a href="./#eidos">À propos</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
+
+    <nav aria-label="Navigation">
+      <ul class="app-nav-list">
+        <li class="app-nav-item">
+          <a href="../fr/index.html" class="app-link">
+            <span><span class="app-nav-num">01</span>Accueil</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/services.html" class="app-link">
+            <span><span class="app-nav-num">02</span>Services & Capacités</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/projets.html" class="app-link">
+            <span><span class="app-nav-num">03</span>Portfolio de Projets</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/index.html#branding" class="app-link">
+            <span><span class="app-nav-num">04</span>Identité & Branding</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/index.html#proceso" class="app-link">
+            <span><span class="app-nav-num">05</span>Méthodologie</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/contact.html" class="app-link">
+            <span><span class="app-nav-num">06</span>Contact Direct</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
+    <div class="app-lang-segmented" aria-label="Language selector">
+      <a href="../index.html" data-lang="es" class="" onclick="window.setLang('es')">ES</a>
+      <a href="../en/" data-lang="en" class="" onclick="window.setLang('en')">EN</a>
+      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
+      <a href="../fr/" data-lang="fr" class="active" onclick="window.setLang('fr')">FR</a>
+    </div>
+
+    <div class="app-panel-footer">
+      <a href="../fr/contact.html" class="app-cta-btn">
+        PARLONS DU PROJET →
+      </a>
+      <div class="app-contact-sub">Valence · Service Européen et International</div>
+    </div>
+  </div>
     <div class="mobile-nav-footer">
-      <div><strong>EIDOS RENDER</strong> — Real Estate Launch</div>
+      <div><strong>EIDOS RENDER</strong> — Architectural Visualisation</div>
       <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
     </div>
   </div>
 
-  <main style="padding-top: var(--nav-h);">
+  <main style="padding-top: 140px;">
 
-    <section class="section bg-paper" style="padding: clamp(80px, 12vw, 160px) 0;">
+    <!-- Sección de Contacto Editorial (Cero formularios, Contacto Directo) -->
+    <section class="section bg-paper" style="padding: clamp(90px, 12vw, 160px) 0; min-height: 80vh; display: flex; align-items: center;">
       <div class="container">
         
-        <div style="max-width: 980px;">
-          <div class="kicker crimson" style="margin-bottom: 24px;">Contact Direct</div>
+        <div class="grid-12" style="align-items: start; gap: clamp(32px, 5vw, 64px);">
           
-          <h1 class="display-title" style="margin-bottom: 32px; font-size: clamp(2.8rem, 6.5vw, 6.2rem); line-height: 0.94;">
-            DU PROJET<br>
-            AU LANCEMENT.<br>
-            <span style="color: var(--crimson);">PARLONS-EN.</span>
-          </h1>
-          
-          <p class="body-large body-muted" style="max-width: 720px; font-size: clamp(1.2rem, 2.2vw, 1.55rem); line-height: 1.45; margin-bottom: 48px;">
-            Si vous préparez un programme immobilier et souhaitez en définir l'image, les supports de vente et le lancement commercial, faites-nous part de votre projet.
-          </p>
+          <!-- Columna Izquierda: Mensaje Central y Contacto Inmediato -->
+          <div style="grid-column: 1 / 8;">
+            <div class="kicker crimson" style="margin-bottom: 24px;">
+              <span class="kicker-dot"></span>
+              Contact Direct avec le Studio
+            </div>
+            
+            <h1 class="display-title" style="margin-bottom: 28px; line-height: 1.05; letter-spacing: -0.02em;">
+              DU PROJET<br>AU LANCEMENT.<br><span style="color: var(--accent);">PARLONS-EN.</span>
+            </h1>
 
-          <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 64px;">
-            <a href="mailto:info@eidosrender.es?subject=Demande%20de%20projet%20immobilier" class="btn btn-crimson" style="padding: 20px 38px; font-size: 1rem;">
-              ÉCHANGEONS SUR LE PROJET →
-            </a>
-            <a href="mailto:info@eidosrender.es?subject=Pr%C3%A9sentation%20de%20programme" class="btn btn-outline-ink" style="padding: 20px 38px; font-size: 1rem;">
-              TRANSMETTRE VOS PLANS →
-            </a>
+            <div style="font-family: var(--font-display); font-size: clamp(0.92rem, 1.2vw, 1.15rem); letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone-text); margin-bottom: 36px;">
+              Image · Identité · Commercial · Digital · Acquisition
+            </div>
+            
+            <p class="body-large" style="margin-bottom: 48px; max-width: 620px; color: var(--charcoal); opacity: 0.9; font-size: 1.2rem; line-height: 1.6;">
+              Si vous préparez une opération immobilière et souhaitez concevoir son image, ses outils commerciaux et sa stratégie de lancement, présentez-nous votre projet. Nous coordonnons direction artistique, rendus 3D et outils de commercialisation.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 28px; align-items: flex-start;">
+              <a href="mailto:info@eidosrender.es?subject=Demande%20Projet%20Immobilier" class="btn-editorial btn-crimson" style="font-size: 1.05rem; padding: 20px 38px;">
+                PARLONS DE VOTRE PROJET →
+              </a>
+              
+              <div style="display: flex; gap: 36px; flex-wrap: wrap; align-items: baseline; margin-top: 12px; border-top: 1px solid var(--line); padding-top: 24px; width: 100%;">
+                <div>
+                  <span class="kicker" style="color: var(--stone-text); display: block; margin-bottom: 4px; font-size: 0.76rem;">Email direct</span>
+                  <a href="mailto:info@eidosrender.es" class="link-draw" style="font-size: 1.25rem; font-family: var(--font-display); letter-spacing: 0.04em;">
+                    info@eidosrender.es
+                  </a>
+                </div>
+                <div>
+                  <span class="kicker" style="color: var(--stone-text); display: block; margin-bottom: 4px; font-size: 0.76rem;">Téléphone direct</span>
+                  <a href="tel:+34614459144" class="link-draw" style="font-size: 1.2rem; font-family: var(--font-display); letter-spacing: 0.04em;">
+                    +34 614 45 91 44
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div style="padding-top: 48px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px; align-items: start;">
-            
-            <div>
-              <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; text-transform: uppercase;">
-                EIDOS RENDER
+          <!-- Columna Derecha: Protocolo Editorial de Recepción -->
+          <div style="grid-column: 8 / 13;">
+            <div style="background-color: var(--cream-2); border: 1px solid var(--line-strong); padding: clamp(32px, 4vw, 48px);">
+              <div class="kicker" style="color: var(--stone-text); margin-bottom: 18px;">
+                Protocole de Travail
               </div>
-              <div style="font-family: 'Archivo', sans-serif; font-size: 0.9rem; color: var(--signal); line-height: 1.5;">
-                Image · Identité · Vente · Web · Acquisition
+              
+              <h2 class="display-sub" style="font-size: 1.45rem; margin-bottom: 20px; color: var(--charcoal); line-height: 1.2;">
+                Éléments utiles pour évaluer votre projet
+              </h2>
+
+              <p class="body-regular" style="color: var(--stone-text); margin-bottom: 28px; line-height: 1.6;">
+                Pour établir une estimation précise des délais et de la direction visuelle, il suffit généralement de nous transmettre par email :
+              </p>
+
+              <ul style="list-style: none; padding: 0; margin: 0 0 32px 0; display: flex; flex-direction: column; gap: 16px;">
+                <li style="display: flex; gap: 12px; align-items: baseline;">
+                  <span style="color: var(--accent); font-weight: 700;">—</span>
+                  <span class="body-regular" style="color: var(--charcoal);">Plans d’architecture préliminaires (plans de niveaux, façades, coupes ou maquette 3D).</span>
+                </li>
+                <li style="display: flex; gap: 12px; align-items: baseline;">
+                  <span style="color: var(--accent); font-weight: 700;">—</span>
+                  <span class="body-regular" style="color: var(--charcoal);">Typologie du programme (résidentiel collectif, villa haut de gamme, neuf ou réhabilitation).</span>
+                </li>
+                <li style="display: flex; gap: 12px; align-items: baseline;">
+                  <span style="color: var(--accent); font-weight: 700;">—</span>
+                  <span class="body-regular" style="color: var(--charcoal);">Calendrier commercial envisagé et date estimée de lancement commercial.</span>
+                </li>
+              </ul>
+
+              <div style="border-top: 1px solid var(--line); padding-top: 24px; display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+                  <span style="color: var(--stone-text);">Délai de réponse :</span>
+                  <strong style="color: var(--charcoal);">Sous 24 heures ouvrées</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+                  <span style="color: var(--stone-text);">Confidentialité :</span>
+                  <strong style="color: var(--charcoal);">Accord de confidentialité (NDA) sur demande</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+                  <span style="color: var(--stone-text);">Siège :</span>
+                  <strong style="color: var(--charcoal);">Valence, Espagne · Couverture Européenne</strong>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <span class="kicker gray" style="margin-bottom: 8px; display: block;">Courriel Direct</span>
-              <a href="mailto:info@eidosrender.es" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--crimson); padding-bottom: 2px;">
-                info@eidosrender.es
-              </a>
             </div>
-
-            <div>
-              <span class="kicker gray" style="margin-bottom: 8px; display: block;">Téléphone Direct</span>
-              <a href="tel:+34614459144" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none;">
-                +34 614 45 91 44
-              </a>
-            </div>
-
-            <div>
-              <span class="kicker gray" style="margin-bottom: 8px; display: block;">Atelier</span>
-              <span style="font-family: 'Archivo', sans-serif; font-size: 0.95rem; color: var(--ink); line-height: 1.5;">
-                Valence, Espagne<br>
-                <span style="color: var(--signal); font-size: 0.85rem;">Service France & Europe</span>
-              </span>
-            </div>
-
           </div>
 
         </div>
@@ -181,24 +252,78 @@
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Contact direct.</div>
-        <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
-            <a href="../contacto.html" onclick="window.setLang('es')">ES</a> ·
-            <a href="../en/contact.html" onclick="window.setLang('en')">EN</a> ·
-            <a href="../de/kontakt.html" onclick="window.setLang('de')">DE</a> ·
-            <span style="color: var(--crimson); font-weight: 700;">FR</span>
+  <!-- Footer Editorial Tipo Cortina -->
+  <div class="curtain-footer-wrap">
+    <footer class="curtain-footer" role="contentinfo">
+      <div class="container">
+        
+        <div class="footer-top">
+          <div>
+            <a href="../fr/" class="logo" style="margin-bottom: 20px;" aria-label="Eidos Render">
+              <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+              <span class="logo-text">EIDOS RENDER</span>
+            </a>
+            <p class="body-regular" style="color: rgba(239, 233, 220, 0.65); max-width: 380px;">
+              Partenaire visuel et créatif pour programmes immobiliers. Du projet architectural au lancement commercial.
+            </p>
           </div>
-          <a href="projets.html">Projets</a>
-          <a href="services.html">Services</a>
-          <a href="mentions-legales.html">Mentions Légales</a>
+
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <ul class="footer-links">
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="../fr/#estudio">Studio</a></li>
+              <li><a href="../fr/#proceso">Processus</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Expertises</div>
+            <ul class="footer-links">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="mailto:info@eidosrender.es">Email direct</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Contact Direct</div>
+            <ul class="footer-links">
+              <li><a href="mailto:info@eidosrender.es">info@eidosrender.es</a></li>
+              <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
+              <li><span style="color: rgba(239, 233, 220, 0.5);">Valencia · Europa</span></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="curtain-brand-banner" aria-hidden="true">
+          <span>EIDOS RENDER</span>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 Eidos Render. Tous droits réservés.</div>
+          <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
+              <span style="color: inherit; font-weight: 400;"><a href="../contacto.html">ES</a></span> ·
+              <span style="color: inherit; font-weight: 400;"><a href="../en/contact.html">EN</a></span> ·
+              <span style="color: inherit; font-weight: 400;"><a href="../de/kontakt.html">DE</a></span> ·
+              <span style="color: var(--accent-on-dark); font-weight: 700;"><a href="#">FR</a></span>
+            </div>
+            <a href="mentions-legales.html">Mentions Légales</a>
+            <a href="politique-de-confidentialite.html">Politique de Confidentialité</a>
+            <a href="politique-des-cookies.html">Cookies</a>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="../main.js" defer></script>
 </body>

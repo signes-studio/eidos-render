@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  
+  <!-- Corner Top-Left -->
+  <path d="M 4 11 L 4 4 L 11 4" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="iso-path iso-tl"/>
+  <!-- Corner Top-Right -->
+  <path d="M 21 4 L 28 4 L 28 11" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="iso-path iso-tr"/>
+  <!-- Corner Bottom-Left -->
+  <path d="M 4 21 L 4 28 L 11 28" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="iso-path iso-bl"/>
+  <!-- Corner Bottom-Right -->
+  <path d="M 21 28 L 28 28 L 28 21" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="iso-path iso-br"/>
+  <!-- Center Focal Point -->
+  <circle cx="16" cy="16" r="2.5" fill="#8E1B2E" class="iso-dot"/>
+</svg>

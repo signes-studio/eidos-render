@@ -17,24 +17,23 @@
   <link rel="canonical" href="https://eidosrender.es/cookies">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-  <!-- Tipografías -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fonts.css">
 </head>
 <body class="bg-paper">
 
   <header class="nav-header nav-light" role="banner">
     <div class="nav-inner">
       <a href="index.html" class="logo" aria-label="Eidos Render Inicio">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
+        <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+        <span class="logo-text">EIDOS RENDER</span>
       </a>
 
       <nav aria-label="Navegación principal">
@@ -70,14 +69,14 @@
       <div class="container" style="max-width: 900px; margin: 0 auto;">
         
         <div style="background-color: var(--paper-pure); padding: 48px; border: 1px solid var(--line); line-height: 1.7;">
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             1. ¿Qué son las cookies?
           </h2>
           <p style="margin-bottom: 24px;">
             Una cookie es un pequeño archivo de texto que se almacena en tu navegador cuando visitas casi cualquier página web. Su utilidad es permitir que la web recuerde tu visita cuando vuelvas a navegar por ella, optimizando la experiencia y guardando preferencias técnicas.
           </p>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             2. Cookies utilizadas en este sitio web
           </h2>
           <p style="margin-bottom: 12px;">
@@ -88,7 +87,7 @@
             <li style="margin-bottom: 8px;"><strong>Cookies de análisis (Google Analytics / Google Tag Manager):</strong> Recogen métricas estadísticas anónimas sobre el comportamiento de navegación para optimizar nuestros servicios B2B.</li>
           </ul>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             3. Gestión y desactivación de cookies
           </h2>
           <p style="margin-bottom: 14px;">
@@ -101,7 +100,7 @@
             <li style="margin-bottom: 6px;">Microsoft Edge: Configuración &gt; Permisos del sitio &gt; Cookies y datos de sitios.</li>
           </ul>
 
-          <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
+          <h2 style="font-family: var(--font-bodoni), Georgia, serif; letter-spacing: -0.015em; font-weight: 400; font-size: 1.4rem; text-transform: uppercase; margin-bottom: 14px; color: var(--crimson);">
             4. Actualización de la política
           </h2>
           <p>
@@ -116,7 +115,10 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-bottom">
+      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
+          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+        </div>
+        <div class="footer-bottom">
         <div>© 2026 Eidos Render. Todos los derechos reservados.</div>
         <div style="display: flex; gap: 24px;">
           <a href="index.html">Inicio</a>

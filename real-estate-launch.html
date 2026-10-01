@@ -8,19 +8,29 @@
 <meta name="description" content="Eidos Render — Dirección visual, imagen 3D, identidad, material comercial, web y captación para el lanzamiento de proyectos inmobiliarios.">
 <meta name="robots" content="noindex, nofollow">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/fonts.css">
 
 <style>
 :root{
-  --ink:#0B0B0C;
-  --paper:#F4F3EF;
-  --signal:#8A8D93;
-  --crimson:#C8102E;
-  --soft:#DADADA;
-  --line:rgba(11,11,12,.14);
-  --line-light:rgba(244,243,239,.18);
+  --night:#1F1114;
+  --bone:#EEE6DA;
+  --accent:#8E1B2E;
+  --charcoal:var(--night);
+  --cream:var(--bone);
+  --ink:var(--night);
+  --paper:var(--bone);
+  --font-syncopate:'Syncopate',sans-serif;
+  --font-bodoni:'Bodoni Moda',serif;
+  --font-prata:'Prata',serif;
+  --font-jost:'Jost',sans-serif;
+  --signal:#5F5A51;
+  --crimson:var(--accent);
+  --soft:#E6DFD0;
+  --line:rgba(30,28,26,.14);
+  --line-light:rgba(239,233,220,.18);
   --max:1400px;
 }
 
@@ -37,7 +47,7 @@ html{
 body{
   background:var(--paper);
   color:var(--ink);
-  font-family:'Archivo',sans-serif;
+  font-family:var(--font-jost), sans-serif;
   overflow-x:hidden;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
@@ -64,7 +74,7 @@ video{
 ===================================================== */
 
 .kicker{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.72rem;
   font-weight:700;
   text-transform:uppercase;
@@ -85,7 +95,7 @@ video{
 }
 
 .display{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-weight:700;
   line-height:.95;
   letter-spacing:-.05em;
@@ -122,7 +132,7 @@ video{
 }
 
 .logo{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.95rem;
   font-weight:700;
   letter-spacing:-.02em;
@@ -131,7 +141,7 @@ video{
 .nav-links{
   display:flex;
   gap:36px;
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.72rem;
   font-weight:700;
   text-transform:uppercase;
@@ -237,7 +247,7 @@ video{
   display:inline-block;
   background:var(--crimson);
   color:var(--paper);
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.86rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -255,7 +265,7 @@ video{
   display:flex;
   justify-content:space-between;
   align-items:flex-end;
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.72rem;
   font-weight:700;
   text-transform:uppercase;
@@ -344,14 +354,14 @@ video{
 }
 
 .service-num{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   color:var(--crimson);
   font-size:1.8rem;
   font-weight:700;
 }
 
 .service-name{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:2rem;
   font-weight:700;
   letter-spacing:-.035em;
@@ -496,7 +506,7 @@ video{
 }
 
 .phase-number{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   color:var(--crimson);
   font-size:5rem;
   line-height:.8;
@@ -505,7 +515,7 @@ video{
 }
 
 .phase-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:clamp(2.4rem,3.8vw,4.2rem);
   line-height:.96;
   letter-spacing:-.045em;
@@ -521,7 +531,7 @@ video{
 }
 
 .editorial-note{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.78rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -563,7 +573,7 @@ video{
 }
 
 .gallery-caption{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.75rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -592,7 +602,7 @@ video{
 
 .wide-caption{
   margin-top:14px;
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.75rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -628,7 +638,7 @@ video{
 }
 
 .method-label{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.75rem;
   font-weight:700;
   letter-spacing:.12em;
@@ -638,7 +648,7 @@ video{
 }
 
 .method-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:clamp(2.5rem,4vw,4.5rem);
   line-height:1;
   letter-spacing:-.045em;
@@ -684,14 +694,14 @@ video{
 }
 
 .timeline-number{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   color:var(--crimson);
   font-weight:700;
   font-size:1.1rem;
 }
 
 .timeline-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-weight:700;
   font-size:1.05rem;
   text-transform:uppercase;
@@ -700,7 +710,7 @@ video{
 .timeline-time{
   text-align:right;
   color:var(--signal);
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.78rem;
   font-weight:700;
 }
@@ -721,7 +731,7 @@ video{
 }
 
 .investment-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:1.15rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -741,7 +751,7 @@ video{
 }
 
 .price-prefix{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.9rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -750,7 +760,7 @@ video{
 }
 
 .price-main{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-weight:700;
   font-size:clamp(3.8rem,5.5vw,6rem);
   line-height:.92;
@@ -777,7 +787,7 @@ video{
 }
 
 .payment-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.75rem;
   font-weight:700;
   letter-spacing:.1em;
@@ -796,7 +806,7 @@ video{
   display:flex;
   justify-content:space-between;
   align-items:baseline;
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.9rem;
   border-bottom:1px solid rgba(244,243,239,.1);
   padding-bottom:12px;
@@ -808,7 +818,7 @@ video{
 }
 
 .payment-desc{
-  font-family:'Archivo',sans-serif;
+  font-family:var(--font-jost), sans-serif;
   font-size:.82rem;
   color:rgba(244,243,239,.7);
 }
@@ -836,7 +846,7 @@ video{
 }
 
 .monthly-price{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:clamp(3.2rem,5vw,5rem);
   font-weight:700;
   letter-spacing:-.05em;
@@ -853,7 +863,7 @@ video{
   margin-top:40px;
   padding-top:24px;
   border-top:1px solid rgba(244,243,239,.35);
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.9rem;
   font-weight:700;
   letter-spacing:.08em;
@@ -870,7 +880,7 @@ video{
 }
 
 .cta-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:clamp(3.8rem,8.5vw,9.5rem);
   line-height:.9;
   letter-spacing:-.06em;
@@ -903,7 +913,7 @@ video{
   display:inline-block;
   background:var(--crimson);
   color:var(--paper);
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:1rem;
   font-weight:700;
   letter-spacing:.06em;
@@ -927,7 +937,7 @@ video{
 }
 
 .direct-label{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.72rem;
   font-weight:700;
   letter-spacing:.1em;
@@ -937,7 +947,7 @@ video{
 }
 
 .direct-value{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:1.15rem;
   font-weight:700;
   color:var(--ink);
@@ -964,7 +974,7 @@ video{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  font-family:'Space Grotesk',sans-serif;
+  font-family:var(--font-syncopate), sans-serif;
   font-size:.72rem;
   font-weight:700;
   text-transform:uppercase;
@@ -1221,8 +1231,13 @@ video{
 ===================================================== -->
 <nav class="nav" role="navigation" aria-label="Navegación secundaria">
   <div class="nav-inner">
-    <a href="index.html" class="logo" aria-label="Eidos Render Inicio">
-      EIDOS RENDER
+    <a href="index.html" class="logo" aria-label="Eidos Render Inicio" style="display:flex;align-items:center;gap:12px;">
+      <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+      <span>EIDOS RENDER</span>
     </a>
 
     <div class="nav-links">
@@ -1739,10 +1754,10 @@ video{
             </div>
 
             <div class="price-wrap">
-              <div class="price-prefix">Desde</div>
-              <div class="price-main">12.000 € <span>+ IVA</span></div>
+              <div class="price-prefix">Presupuesto</div>
+              <div class="price-main">A Medida</div>
               <div class="price-detail">
-                Presupuesto definitivo según alcance, escala de la promoción y volumen de producción. Punto de partida orientativo dimensionado a las necesidades de cada proyecto.
+                Presupuesto individual según alcance, escala de la promoción y volumen de producción arquitectónica. Cada proyecto se dimensiona de forma personalizada.
               </div>
             </div>
           </div>
@@ -1800,11 +1815,11 @@ video{
 
       <div>
         <div class="monthly-price">
-          Desde 600 €/mes
+          Gestión Activa
         </div>
 
         <div class="monthly-note">
-          + IVA · Inversión publicitaria aparte · Tarifa orientativa según alcance
+          Inversión publicitaria aparte · Dimensionado según ritmo de ventas y mercados objetivo
         </div>
 
         <div class="monthly-editorial-line">

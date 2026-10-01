@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    body { padding-top: 0; }
+    .feature-test-bar {
+      background: var(--charcoal-2);
+      border-bottom: 1px solid var(--line-dark);
+      padding: 12px 24px;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--stone);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10001;
+    }
+    .feature-test-bar span.accent {
+      color: var(--accent-on-dark);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-paper">
+
+  <div class="feature-test-bar">
+    <div>EIDOS RENDER · RECURSO ESPECIAL 03: <span class="accent">HERO CON REVELADO EN MÁSCARA & HEADER DINÁMICO</span></div>
+    <div>ISOTIPO C + FRAMBUESA #B5294E</div>
+  </div>
+
+  <header class="nav-header" role="banner">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Eidos Render Inicio">
+        <svg class="isotype-icon" viewBox="0 0 32 32" width="22" height="22" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2"/>
+          <line x1="2" y1="16" x2="30" y2="16" stroke="var(--accent)" stroke-width="2" stroke-linecap="square" class="iso-line"/>
+        </svg>
+        <span class="logo-text">EIDOS RENDER</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#estudio">Estudio</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right-group">
+        <div class="lang-switcher">
+          <span class="active">ES</span>
+          <span class="lang-divider">/</span>
+          <span>EN</span>
+          <span class="lang-divider">/</span>
+          <span>DE</span>
+          <span class="lang-divider">/</span>
+          <span>FR</span>
+        </div>
+        <a href="#contacto" class="nav-cta">HABLEMOS DEL PROYECTO →</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div>
+      <div class="mobile-lang-switcher">
+        <span class="active">ES</span>
+        <span>EN</span>
+        <span>DE</span>
+        <span>FR</span>
+      </div>
+      <span class="kicker kicker-accent">Navegación</span>
+      <ul class="mobile-nav-links">
+        <li><a href="#"><span>Proyectos</span></a></li>
+        <li><a href="#"><span>Servicios</span></a></li>
+        <li><a href="#"><span>Estudio</span></a></li>
+        <li><a href="#"><span>Proceso</span></a></li>
+        <li><a href="#"><span>Contacto</span></a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <div>EIDOS RENDER — Visualización & Lanzamiento</div>
+      <div>info@eidosrender.es</div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section-hero bg-ink">
+      <div style="position: absolute; inset: 0; overflow: hidden; z-index: 1;">
+        <img src="../../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Render Hero" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.52;" fetchpriority="high">
+        <div style="position: absolute; inset: 0; background-color: rgba(30, 28, 26, 0.52);"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2; margin-top: auto; padding-bottom: 80px;">
+        <div class="kicker kicker-accent">
+          <span class="kicker-dot"></span>
+          Dirección Visual & Lanzamiento Comercial
+        </div>
+
+        <h1 class="display-hero mask-reveal-title" style="color: var(--cream); max-width: 1300px; margin-bottom: 28px;">
+          Del proyecto<br>
+          arquitectónico<br>
+          al lanzamiento.
+        </h1>
+
+        <div class="hero-bottom-grid">
+          <p class="body-large" style="color: rgba(239, 233, 220, 0.88);">
+            Partimos de la arquitectura. Construimos su imagen. Y la llevamos hasta el mercado con un sistema visual integral diseñado para promotoras, estudios de arquitectura e inversión inmobiliaria.
+          </p>
+          <div class="hero-cta-group">
+            <a href="mailto:info@eidosrender.es" class="btn-editorial btn-accent-fill">
+              HABLEMOS DEL PROYECTO →
+            </a>
+            <a href="#proyectos" class="link-draw" style="color: var(--cream);">
+              PROYECTOS ↓
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../main.js"></script>
+</body>
+</html>

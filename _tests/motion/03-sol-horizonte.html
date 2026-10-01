@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion Piece 03 — Sol y Horizonte (Composición Asimétrica) | Eidos Render</title>
+  <link rel="stylesheet" href="../../assets/fonts.css">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    :root {
+      --stage-bg: var(--cream);
+      --stage-fg: var(--charcoal);
+      --stage-line: rgba(30, 28, 26, 0.16);
+      --stage-line-strong: rgba(30, 28, 26, 0.35);
+      --sun-fill: var(--charcoal);
+      --datum-color: var(--accent);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-text);
+      background-color: var(--charcoal);
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    .test-header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line-dark);
+      background-color: var(--charcoal-2);
+      position: relative;
+      z-index: 100;
+    }
+
+    .test-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .test-controls {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-test {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      border: 1px solid var(--line-dark);
+      background: transparent;
+      color: var(--cream);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-test:hover, .btn-test.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--cream);
+    }
+
+    /* ==========================================================================
+       COMPONENTE: SOL Y HORIZONTE (Motion Graphic 03 - Layout Editorial)
+       ========================================================================== */
+    .motion-sun-stage {
+      min-height: calc(100vh - 80px);
+      position: relative;
+      background-color: var(--stage-bg);
+      color: var(--stage-fg);
+      transition: background-color 0.8s var(--easing-editorial), color 0.8s var(--easing-editorial);
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+    }
+
+    /* Línea de horizonte de 1px a lo largo de todo el ancho */
+    .horizon-full-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: var(--stage-line);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .sun-stage-container {
+      width: min(var(--max), calc(100% - 120px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 80px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Columna de Texto Editorial (Completamente despejada) */
+    .sun-copy-col {
+      max-width: 660px;
+    }
+
+    .sun-kicker {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--datum-color);
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .sun-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 5.5vw, 5rem);
+      line-height: 0.96;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin: 0 0 28px 0;
+    }
+
+    .sun-body {
+      font-size: 1.18rem;
+      line-height: 1.65;
+      opacity: 0.85;
+      margin: 0 0 36px 0;
+    }
+
+    .sun-status-bar {
+      display: flex;
+      gap: 32px;
+      border-top: 1px solid var(--stage-line);
+      padding-top: 24px;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    /* Columna de Track Solar Geométrico */
+    .solar-track-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 480px;
+    }
+
+    /* Eje vertical de medición solar */
+    .solar-axis-line {
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 50%;
+      width: 1px;
+      background-color: var(--stage-line-strong);
+      transform: translateX(-50%);
+    }
+
+    /* Marcas de graduación arquitectónica */
+    .solar-tick {
+      position: absolute;
+      left: 50%;
+      width: 16px;
+      height: 1px;
+      background-color: var(--stage-line);
+      transform: translateX(-50%);
+    }
+
+    .solar-tick-label {
+      position: absolute;
+      left: calc(50% + 24px);
+      transform: translateY(-50%);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      white-space: nowrap;
+    }
+
+    /* Intersección horizonte (Cota 0.00) */
+    .solar-tick-horizon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 48px;
+      height: 2px;
+      background-color: var(--datum-color);
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+
+    .solar-tick-horizon-label {
+      position: absolute;
+      left: calc(50% + 36px);
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      color: var(--datum-color);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* Disco solar geométrico plano */
+    .sun-disk {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: var(--sun-fill);
+      position: absolute;
+      left: calc(50% - 36px);
+      top: calc(50% - 36px);
+      z-index: 4;
+      will-change: transform;
+      transition: background-color 0.5s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Modos temáticos aplicados por el cruce del horizonte */
+    .theme-night {
+      --stage-bg: var(--charcoal);
+      --stage-fg: var(--cream);
+      --stage-line: var(--line-dark);
+      --stage-line-strong: var(--line-dark-strong);
+      --sun-fill: var(--accent-on-dark);
+      --datum-color: var(--accent-on-dark);
+    }
+
+    .theme-day {
+      --stage-bg: var(--cream);
+      --stage-fg: var(--charcoal);
+      --stage-line: var(--line);
+      --stage-line-strong: var(--line-strong);
+      --sun-fill: var(--charcoal);
+      --datum-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="test-header">
+    <div class="test-title">
+      <span style="color: var(--accent); font-weight: 700;">03</span>
+      <span>Motion Graphics: Sol y Horizonte (Layout Asimétrico)</span>
+    </div>
+
+    <div class="test-controls">
+      <button class="btn-test" id="btn-day">Modo Día (+180px Zenit)</button>
+      <button class="btn-test" id="btn-crossing">Cruce de Horizonte (Cota 0.00)</button>
+      <button class="btn-test" id="btn-night">Modo Noche (-180px Ocaso)</button>
+    </div>
+  </header>
+
+  <main class="motion-sun-stage theme-day" id="stage">
+    
+    <!-- Línea de horizonte de 1px pasante -->
+    <div class="horizon-full-line" aria-hidden="true"></div>
+
+    <div class="sun-stage-container">
+      
+      <!-- Columna Izquierda: Mensaje Arquitectónico Despejado -->
+      <div class="sun-copy-col">
+        <span class="sun-kicker" id="state-kicker">Atmósfera Lumínica · Soleamiento Real</span>
+        <h1 class="sun-headline" id="state-title">
+          LA LUZ CONSTRUYE<br>LA ARQUITECTURA.
+        </h1>
+        <p class="sun-body">
+          La precisión del azimut solar y la temperatura de color definen la veracidad de un espacio. Cada render se calibra según las coordenadas geográficas exactas de la parcela para reproducir la luz auténtica de cada estación.
+        </p>
+
+        <div class="sun-status-bar">
+          <div>Coordenadas: <strong>39° 28' N · 0° 22' O</strong></div>
+          <div id="status-elevation">Elevación Solar: <strong>+52° Cenit</strong></div>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Cuadrante de Medición Solar -->
+      <div class="solar-track-col" aria-hidden="true">
+        
+        <div class="solar-axis-line"></div>
+
+        <!-- Marcas de altura solar -->
+        <div class="solar-tick" style="top: 40px;"></div>
+        <span class="solar-tick-label" style="top: 40px;">+60° Cenit</span>
+
+        <div class="solar-tick" style="top: 130px;"></div>
+        <span class="solar-tick-label" style="top: 130px;">+30° Luz Diurna</span>
+
+        <!-- Horizonte Datum -->
+        <div class="solar-tick-horizon"></div>
+        <span class="solar-tick-horizon-label">Cota 0.00 · Horizonte</span>
+
+        <div class="solar-tick" style="bottom: 130px;"></div>
+        <span class="solar-tick-label" style="bottom: 130px;">-30° Atardecer</span>
+
+        <div class="solar-tick" style="bottom: 40px;"></div>
+        <span class="solar-tick-label" style="bottom: 40px;">-60° Nocturna</span>
+
+        <!-- Disco Solar Puro -->
+        <div class="sun-disk" id="sun-disk"></div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="../../assets/vendor/gsap.min.js"></script>
+  <script>
+    const stage = document.getElementById('stage');
+    const sun = document.getElementById('sun-disk');
+    const kicker = document.getElementById('state-kicker');
+    const elev = document.getElementById('status-elevation');
+
+    function setDay() {
+      stage.classList.remove('theme-night');
+      stage.classList.add('theme-day');
+      gsap.to(sun, { y: -160, duration: 0.9, ease: 'expo.out' });
+      kicker.textContent = 'Atmósfera Lumínica · Día';
+      elev.innerHTML = 'Elevación Solar: <strong>+52° Cenit</strong>';
+    }
+
+    function setCrossing() {
+      gsap.to(sun, { y: 0, duration: 0.9, ease: 'expo.out' });
+      kicker.textContent = 'Transición Crepuscular · Cota 0.00';
+      elev.innerHTML = 'Elevación Solar: <strong>0° Ocaso</strong>';
+    }
+
+    function setNight() {
+      stage.classList.remove('theme-day');
+      stage.classList.add('theme-night');
+      gsap.to(sun, { y: 160, duration: 0.9, ease: 'expo.out' });
+      kicker.textContent = 'Atmósfera Lumínica · Noche';
+      elev.innerHTML = 'Elevación Solar: <strong>-48° Nocturna</strong>';
+    }
+
+    document.getElementById('btn-day').addEventListener('click', setDay);
+    document.getElementById('btn-crossing').addEventListener('click', setCrossing);
+    document.getElementById('btn-night').addEventListener('click', setNight);
+
+    setDay();
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('state') === 'crossing') setCrossing();
+    else if (params.get('state') === 'night') setNight();
+  </script>
+</body>
+</html>

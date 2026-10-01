@@ -12,8 +12,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Services — Eidos Render | Une Même Vision. Toutes les Pièces.</title>
-  <meta name="description" content="Services visuels et commerciaux pour programmes immobiliers : Direction & identité, image 3D, film, supports de vente, site web et acquisition d'acquéreurs.">
+  <title>Services & Système de Lancement | Eidos Render</title>
+  <meta name="description" content="Écosystème visuel et commercial complet pour programmes immobiliers et agences d'architecture en Europe.">
   <link rel="canonical" href="https://eidosrender.es/fr/services">
 
   <!-- International SEO / Hreflang -->
@@ -29,308 +29,308 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
-  <meta property="og:title" content="Services — Eidos Render | Une Même Vision. Toutes les Pièces.">
-  <meta property="og:description" content="Offre intégrée de services pour le lancement commercial de programmes immobiliers en Europe.">
+  <meta property="og:title" content="Services & Système de Lancement | Eidos Render">
+  <meta property="og:description" content="Écosystème visuel et commercial complet pour programmes immobiliers et agences d'architecture en Europe.">
   <meta property="og:url" content="https://eidosrender.es/fr/services">
   <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
-  <link rel="shortcut icon" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/fonts.css">
 </head>
 <body class="bg-paper">
 
-  <header class="nav-header nav-light" role="banner">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+    <!-- =====================================================
+       00. CABECERA DINÁMICA CENTRADA:
+       Isotipo grande a dos tintas + Nombre centrado debajo
+       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
+       ===================================================== -->
+  <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
-      <a href="./" class="logo" aria-label="Eidos Render Accueil">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
-      </a>
-
-      <nav aria-label="Navigation principale">
-        <ul class="nav-links">
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="./#processus">Processus</a></li>
-          <li><a href="./#eidos">À propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-right-group">
-        <div class="lang-switcher" aria-label="Sélecteur de langue">
-          <a href="../servicios.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-          <span class="lang-divider">/</span>
-          <a href="../en/services.html" data-lang="en" onclick="window.setLang('en')">EN</a>
-          <span class="lang-divider">/</span>
-          <a href="../de/leistungen.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-          <span class="lang-divider">/</span>
-          <span class="active" data-lang="fr">FR</span>
-        </div>
-
-        <a href="contact.html" class="nav-cta">
-          ÉCHANGEONS SUR LE PROJET →
+      <div class="nav-center-brand">
+        <a href="../fr/index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+          <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
+            <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
+            <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
         </a>
       </div>
-
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-nav-overlay" aria-hidden="true">
-    <div>
-      <div class="mobile-lang-switcher" aria-label="Sélecteur de langue">
-        <a href="../servicios.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-        <a href="../en/services.html" data-lang="en" onclick="window.setLang('en')">EN</a>
-        <a href="../de/leistungen.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-        <span class="active" data-lang="fr">FR</span>
-      </div>
+  <!-- =====================================================
+       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
+       ===================================================== -->
+  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
+    <span class="menu-btn-label">MENU</span>
+    <span class="menu-btn-icon">
+      <span class="line line-top"></span>
+      <span class="line line-bottom"></span>
+    </span>
+  </button>
 
-      <span class="kicker crimson">Navigation</span>
-      <ul class="mobile-nav-links">
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="./#processus">Processus</a></li>
-        <li><a href="./#eidos">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
+
+    <nav aria-label="Navigation">
+      <ul class="app-nav-list">
+        <li class="app-nav-item">
+          <a href="../fr/index.html" class="app-link">
+            <span><span class="app-nav-num">01</span>Accueil</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/services.html" class="app-link">
+            <span><span class="app-nav-num">02</span>Services & Capacités</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/projets.html" class="app-link">
+            <span><span class="app-nav-num">03</span>Portfolio de Projets</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/index.html#branding" class="app-link">
+            <span><span class="app-nav-num">04</span>Identité & Branding</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/index.html#proceso" class="app-link">
+            <span><span class="app-nav-num">05</span>Méthodologie</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../fr/contact.html" class="app-link">
+            <span><span class="app-nav-num">06</span>Contact Direct</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
+    <div class="app-lang-segmented" aria-label="Language selector">
+      <a href="../index.html" data-lang="es" class="" onclick="window.setLang('es')">ES</a>
+      <a href="../en/" data-lang="en" class="" onclick="window.setLang('en')">EN</a>
+      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
+      <a href="../fr/" data-lang="fr" class="active" onclick="window.setLang('fr')">FR</a>
+    </div>
+
+    <div class="app-panel-footer">
+      <a href="../fr/contact.html" class="app-cta-btn">
+        PARLONS DU PROJET →
+      </a>
+      <div class="app-contact-sub">Valence · Service Européen et International</div>
+    </div>
+  </div>
     <div class="mobile-nav-footer">
       <div><strong>EIDOS RENDER</strong> — Real Estate Launch</div>
       <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
     </div>
   </div>
 
-  <main style="padding-top: var(--nav-h);">
+  <main style="padding-top: 140px;">
 
+    <!-- Section Header -->
     <section class="section-sm bg-paper" style="border-bottom: 1px solid var(--line);">
       <div class="container">
-        <div class="kicker crimson">Catalogue de Compétences</div>
-        <h1 class="display-title" style="margin-bottom: 24px;">
-          Une même vision.<br>Toutes les pièces.
+        <div class="kicker crimson">
+          <span class="kicker-dot"></span>
+          Prestation Globale
+        </div>
+        <h1 class="display-title" style="margin-bottom: 20px;">
+          Une même vision.<br>Toutes les dimensions.
         </h1>
-        <p class="body-large body-muted" style="max-width: 760px;">
-          Nous développons le système visuel et commercial complet nécessaire pour présenter, valoriser et vendre un programme immobilier. Nos interventions s'adaptent au calendrier exact de votre opération.
+        <p class="body-large body-muted" style="max-width: 720px;">
+          Nous concevons l'ensemble des composantes visuelles et commerciales nécessaires au rayonnement et au succès d'un programme immobilier. Une démarche dimensionnée à l'exigence de chaque projet.
         </p>
       </div>
     </section>
 
-    <!-- FASES DETALLADAS -->
+    <!-- DETAILED SERVICE BLOCKS -->
     <section class="section bg-paper">
       <div class="container">
-
-        <!-- 01 -->
-        <article class="service-block-row" id="direction" style="padding: 70px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
-          <div class="display-num" style="color: var(--crimson);">01</div>
+        <article class="service-block-row" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+          <div class="display-num" style="color: var(--signal-text);">01</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px; text-transform: uppercase;">Direction & Identité</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Direction Artistique & Identité</h2>
             <div style="margin-bottom: 16px;">
-              <a href="services/branding.html" class="link-arrow" style="font-size: 0.75rem;">PAGE SPÉCIFIQUE →</a>
+              <a href="services/branding.html" class="link-draw">VOIR LA PAGE DÉDIÉE →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Notre Rôle</span>
-              <p class="body-regular body-muted">
-                Définir le concept créatif, le positionnement et l'univers visuel du programme avant toute production graphique.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Notre Intervention</span>
+              <p class="body-regular body-muted">Nous définissons le récit de marque, le positionnement et l'univers visuel du programme avant d'entamer la production 3D.</p>
             </div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Livrables</span>
-              <p class="body-regular body-muted">
-                Naming commercial, charte d'identité graphique, systèmes typographiques et chromatiques, et directives pour espaces de vente.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Ce Que Nous Livrons</span>
+              <p class="body-regular body-muted">Naming du programme, charte graphique, règles typographiques, palettes chromatiques et habillage de bulle de vente et palissades.</p>
             </div>
             <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Impact Commercial</span>
-              <p class="body-regular body-muted">
-                Construire une marque immobilière qui justifie la valeur du mètre carré et garantit une cohérence sur tous les supports.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Valeur Ajoutée</span>
+              <p class="body-regular body-muted">Créer une marque immobilière forte qui valorise le prix au mètre carré et assure une élégance sans faille sur tous les supports.</p>
             </div>
           </div>
         </article>
 
-        <!-- 02 -->
-        <article class="service-block-row" id="image" style="padding: 70px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
-          <div class="display-num" style="color: var(--crimson);">02</div>
+        <article class="service-block-row" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+          <div class="display-num" style="color: var(--signal-text);">02</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px; text-transform: uppercase;">Image Architecturale 3D</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Perspectives 3D Architecturales</h2>
             <div style="margin-bottom: 16px;">
-              <a href="services/rendu-3d.html" class="link-arrow" style="font-size: 0.75rem;">PAGE SPÉCIFIQUE →</a>
+              <a href="services/rendu-3d.html" class="link-draw">VOIR LA PAGE DÉDIÉE →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Notre Rôle</span>
-              <p class="body-regular body-muted">
-                Perspectives 3D photoréalistes pour façades, aménagements extérieurs, intérieurs témoins et terrasses panoramiques.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Notre Intervention</span>
+              <p class="body-regular body-muted">Modélisation rigoureuse et rendu photoréaliste à partir des plans d'architecte et fichiers BIM. Réalisation de séries complètes : façades diurnes et crépusculaires, intérieurs épurés, jardins et détails de matières.</p>
             </div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Livrables</span>
-              <p class="body-regular body-muted">
-                Rendus en très haute résolution pour palissades de chantier, campagnes digitales et dossiers de vente imprimés.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Ce Que Nous Livrons</span>
+              <p class="body-regular body-muted">Rendus en résolution native 4K pour éditions d'art et panneaux de chantier, bénéficiant d'un éclairage géographique rigoureux.</p>
             </div>
             <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Impact Commercial</span>
-              <p class="body-regular body-muted">
-                Donne une matérialité tangible au projet non bâti et suscite le coup de cœur de l'acquéreur avant le démarrage des travaux.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Valeur Ajoutée</span>
+              <p class="body-regular body-muted">Donner vie au projet avant l'ouverture du chantier, valider les volumes et convaincre acquéreurs et comités d'investissement.</p>
             </div>
           </div>
         </article>
 
-        <!-- 03 -->
-        <article class="service-block-row" id="video" style="padding: 70px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
-          <div class="display-num" style="color: var(--crimson);">03</div>
+        <article class="service-block-row" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+          <div class="display-num" style="color: var(--signal-text);">03</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px; text-transform: uppercase;">Vidéo & Animation 3D</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Film 3D & Animation Cinématographique</h2>
             <div style="margin-bottom: 16px;">
-              <a href="services/video-3d.html" class="link-arrow" style="font-size: 0.75rem;">PAGE SPÉCIFIQUE →</a>
+              <a href="services/video-3d.html" class="link-draw">VOIR LA PAGE DÉDIÉE →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Notre Rôle</span>
-              <p class="body-regular body-muted">
-                Animation 3D cinématographique, visites virtuelles immersives et formats courts adaptés aux réseaux sociaux.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Notre Intervention</span>
+              <p class="body-regular body-muted">Animations architecturales cinématiques, parcours virtuels continus et formats verticaux (9:16) et horizontaux (16:9).</p>
             </div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Livrables</span>
-              <p class="body-regular body-muted">
-                Films étalonnés avec habillage sonore sur mesure, livrés en formats horizontaux et verticaux (reels/stories).
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Ce Que Nous Livrons</span>
+              <p class="body-regular body-muted">Fichiers haute définition avec étalonnage soigné, bande sonore immersive et déclinaisons optimisées pour l'espace de vente et le digital.</p>
             </div>
             <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Impact Commercial</span>
-              <p class="body-regular body-muted">
-                Permet aux investisseurs et futurs résidents de comprendre instantanément les volumes et les circulations de la résidence.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Valeur Ajoutée</span>
+              <p class="body-regular body-muted">Révéler la volumétrie réelle de l'opération, susciter l'émotion et prolonger l'attention des acquéreurs potentiels.</p>
             </div>
           </div>
         </article>
 
-        <!-- 04 -->
-        <article class="service-block-row" id="supports" style="padding: 70px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
-          <div class="display-num" style="color: var(--crimson);">04</div>
+        <article class="service-block-row" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+          <div class="display-num" style="color: var(--signal-text);">04</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px; text-transform: uppercase;">Supports Commerciaux</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Supports Commerciaux & Plaquettes</h2>
             <div style="margin-bottom: 16px;">
-              <a href="services/supports-commerciaux.html" class="link-arrow" style="font-size: 0.75rem;">PAGE SPÉCIFIQUE →</a>
+              <a href="services/supports-commerciaux.html" class="link-draw">VOIR LA PAGE DÉDIÉE →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Notre Rôle</span>
-              <p class="body-regular body-muted">
-                Brochures commerciales imprimées et digitales, plans de vente 2D/3D meublés, cartes de quartier et fiches de lots.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Notre Intervention</span>
+              <p class="body-regular body-muted">Nous transformons les plans techniques en outils d'aide à la vente clairs, séduisants et valorisants pour les commercialisateurs.</p>
             </div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Livrables</span>
-              <p class="body-regular body-muted">
-                Fichiers d'impression haute définition et documents interactifs optimisés pour tablettes de vente et envoi par courriel.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Ce Que Nous Livrons</span>
+              <p class="body-regular body-muted">Plaquettes de prestige (PDF interactif et mise en page d'impression), plans 2D/3D meublés et texturés, plans de situation et fiches typologiques.</p>
             </div>
             <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Impact Commercial</span>
-              <p class="body-regular body-muted">
-                Fournit à votre réseau commercial des outils rigoureux et raffinés qui valorisent les prestations architecturales.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Valeur Ajoutée</span>
+              <p class="body-regular body-muted">Faciliter la vente et offrir aux acquéreurs un dossier complet et prestigieux qui conforte leur décision d'achat.</p>
             </div>
           </div>
         </article>
 
-        <!-- 05 -->
-        <article class="service-block-row" id="site" style="padding: 70px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
-          <div class="display-num" style="color: var(--crimson);">05</div>
+        <article class="service-block-row" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+          <div class="display-num" style="color: var(--signal-text);">05</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px; text-transform: uppercase;">Site Web de Promotion</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Sites Web de Promotion</h2>
             <div style="margin-bottom: 16px;">
-              <a href="services/site-web-immobilier.html" class="link-arrow" style="font-size: 0.75rem;">PAGE SPÉCIFIQUE →</a>
+              <a href="services/site-web-immobilier.html" class="link-draw">VOIR LA PAGE DÉDIÉE →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Notre Rôle</span>
-              <p class="body-regular body-muted">
-                Développement d'un site sur mesure dédié au programme, intégrant la sélection de lots, une vitesse de chargement instantanée et la captation de leads.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Notre Intervention</span>
+              <p class="body-regular body-muted">Conception et développement sur mesure de la plateforme web du programme, optimisée pour la présentation architecturale et la conversion de leads.</p>
             </div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Livrables</span>
-              <p class="body-regular body-muted">
-                Plateforme web clé en main connectée à vos outils de mesure analytique et à vos outils de gestion de la relation client.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Ce Que Nous Livrons</span>
+              <p class="body-regular body-muted">Site ultra-rapide avec sélecteur interactif de logements par étage, plans téléchargeables et synchronisation CRM.</p>
             </div>
             <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Impact Commercial</span>
-              <p class="body-regular body-muted">
-                Transforme l'audience publicitaire en prises de contact qualifiées pour vos conseillers commerciaux.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Valeur Ajoutée</span>
+              <p class="body-regular body-muted">Constituer le navire amiral digital de l'opération et capter les demandes qualifiées nationales et internationales.</p>
             </div>
           </div>
         </article>
 
-        <!-- 06 -->
-        <article class="service-block-row" id="acquisition" style="padding: 70px 0; display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
-          <div class="display-num" style="color: var(--crimson);">06</div>
+        <article class="service-block-row" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+          <div class="display-num" style="color: var(--signal-text);">06</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px; text-transform: uppercase;">Lancement & Acquisition</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Acquisition d'Acquéreurs Qualifiés</h2>
             <div style="margin-bottom: 16px;">
-              <a href="services/acquisition.html" class="link-arrow" style="font-size: 0.75rem;">PAGE SPÉCIFIQUE →</a>
+              <a href="services/acquisition.html" class="link-draw">VOIR LA PAGE DÉDIÉE →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Notre Rôle</span>
-              <p class="body-regular body-muted">
-                Campagnes ciblées sur Google et Meta exploitant les rendus 3D et vidéos pour capter des acquéreurs potentiels qualifiés.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Notre Intervention</span>
+              <p class="body-regular body-muted">Ciblage précis d'acquéreurs résidents et d'investisseurs via Google Ads et Meta Ads au moyen des perspectives 3D conçues pour l'opération.</p>
             </div>
             <div style="margin-bottom: 24px;">
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Livrables</span>
-              <p class="body-regular body-muted">
-                Paramétrage publicitaire, rotation continue des visuels, suivi hebdomadaire et comptes rendus réguliers sur les leads générés.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Ce Que Nous Livrons</span>
+              <p class="body-regular body-muted">Stratégie par bassin géographique et profil patrimonial, tests créatifs et reporting transparent des contacts qualifiés.</p>
             </div>
             <div>
-              <span class="kicker gray" style="margin-bottom: 6px; display: block;">Impact Commercial</span>
-              <p class="body-regular body-muted">
-                Génère un flux d'intérêt continu dès le lancement de la commercialisation pour atteindre rapidement les seuils de réservation.
-              </p>
+              <span class="kicker signal" style="margin-bottom: 6px; display: block;">Valeur Ajoutée</span>
+              <p class="body-regular body-muted">Accélérer le rythme de commercialisation dès le premier jour de lancement et atteindre rapidement le seuil de pré-commercialisation.</p>
             </div>
           </div>
         </article>
-
       </div>
     </section>
 
-    <!-- Bottom Callout -->
-    <section class="section-sm bg-ink" style="color: var(--paper);">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 32px;">
+    <!-- Closing Callout -->
+    <section class="section-sm bg-ink" style="color: var(--paper); border-top: 1px solid var(--line-dark);">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap;">
         <div>
-          <h3 class="display-sub" style="color: var(--paper); margin-bottom: 8px;">Vous préparez un programme immobilier ?</h3>
+          <span class="kicker crimson">
+            <span class="kicker-dot"></span>
+            Dimension Sur Mesure
+          </span>
+          <h2 class="display-sub" style="margin-bottom: 8px;">Chaque opération possède sa propre échelle.</h2>
           <p class="body-regular" style="color: rgba(244,243,239,0.7); max-width: 580px;">
-            Examinons vos plans pour dimensionner le dispositif visuel et commercial adapté à votre calendrier de vente.
+            Nous ajustons notre accompagnement selon l'envergure architecturale, le volume de production et les impératifs commerciaux de chaque opération.
           </p>
         </div>
-        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-crimson">
-            ÉCHANGEONS SUR LE PROJET →
+        <div>
+          <a href="contact.html" class="btn-editorial btn-crimson">
+            PARLONS DU PROJET →
           </a>
         </div>
       </div>
@@ -338,20 +338,57 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Services.</div>
+      <div class="footer-top">
+        <div>
+          <a href="../" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
+            <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+            <span class="logo-text">EIDOS RENDER</span>
+          </a>
+          <p class="body-regular" style="color: rgba(244,243,239,0.65); max-width: 380px;">
+            Visual partner for real estate developments. From architectural project to commercial market launch.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="./#prozess">Méthode</a></li>
+            <li><a href="./#estudio">Studio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@eidosrender.es">info@eidosrender.es</a></li>
+            <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
+            <li>Valencia, Spain</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
+          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+        </div>
+        <div class="footer-bottom">
+        <div>© 2026 Eidos Render. All rights reserved.</div>
         <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
           <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
             <a href="../servicios.html" onclick="window.setLang('es')">ES</a> ·
             <a href="../en/services.html" onclick="window.setLang('en')">EN</a> ·
             <a href="../de/leistungen.html" onclick="window.setLang('de')">DE</a> ·
-            <span style="color: var(--crimson); font-weight: 700;">FR</span>
+            <span style="color: var(--crimson-on-dark); font-weight: 700;">FR</span>
           </div>
-          <a href="projets.html">Projets</a>
-          <a href="contact.html">Contact</a>
-          <a href="mentions-legales.html">Mentions Légales</a>
         </div>
       </div>
     </div>

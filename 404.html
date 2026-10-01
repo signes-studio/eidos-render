@@ -13,12 +13,10 @@
     <meta name="description" content="Página no encontrada. Regresa al sitio principal de Eidos Render.">
     <title>Página no encontrada (404) | Eidos Render</title>
     <link rel="stylesheet" href="https://eidosrender.es/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://eidosrender.es/favicon.png">
-    <link rel="shortcut icon" href="https://eidosrender.es/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://eidosrender.es/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/fonts.css">
 </head>
 <body>
 
@@ -32,10 +30,14 @@
             <div class="nav-layout">
                 
                 <!-- Identificador de Marca -->
-                <a href="https://eidosrender.es/" class="brand-monogram" aria-label="Eidos Render Inicio">
-                    <span class="brand-title">EIDOS RENDER</span>
-                    <span class="brand-desc">Infografía 3D · Valencia</span>
-                </a>
+                <a href="index.html" class="logo" aria-label="Eidos Render Inicio">
+        <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+        <span class="logo-text">EIDOS RENDER</span>
+      </a>
 
                 <!-- Navegación Principal con Dropdowns de SEO -->
                 <nav class="main-nav" aria-label="Navegación principal">
@@ -69,10 +71,10 @@
                                         </a>
                                     </div>
                                     <div class="dropdown-group dropdown-group-side">
-                                        <span class="dropdown-header">Tarifas & Catálogo</span>
+                                        <span class="dropdown-header">Servicios & Alcance</span>
                                         <a href="https://eidosrender.es/servicios" class="dropdown-item" role="menuitem">
                                             <strong>Paquetes de Servicios</strong>
-                                            <span>Precios cerrados para promotoras y arquitectos</span>
+                                            <span>Soluciones integrales para promotoras y arquitectos</span>
                                         </a>
                                         <a href="#calculadora" class="dropdown-item" role="menuitem">
                                             <strong>Calculadora de Presupuestos</strong>
@@ -179,7 +181,7 @@
     </header>
 
     <section class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 70vh; padding: 40px 20px;">
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 6rem; font-weight: 800; color: var(--primary); line-height: 1; margin-bottom: 20px;">404</span>
+        <span style="font-family: var(--font-prata), Georgia, serif; font-size: 6rem; font-weight: 800; color: var(--primary); line-height: 1; margin-bottom: 20px;">404</span>
         <h1 style="font-size: 2.2rem; margin-bottom: 15px; letter-spacing: -1px; color: var(--dark);">Esta vista no está en los planos</h1>
         <p style="color: var(--text-light); max-width: 500px; margin-bottom: 35px; line-height: 1.6;">La página que buscas no existe o ha sido movida. Vuelve al inicio para continuar revisando nuestras soluciones de renderizado B2B.</p>
         <div class="cta-group" style="display: flex; gap: 15px; justify-content: center;">
@@ -236,7 +238,7 @@
                     <div class="footer-col-title">Recursos</div>
                     <ul class="footer-links-list">
                         <li><a href="https://eidosrender.es/blog">Blog Inmobiliario & Guías</a></li>
-                        <li><a href="https://eidosrender.es/servicios">Paquetes y Tarifas</a></li>
+                        <li><a href="https://eidosrender.es/servicios">Servicios de Lanzamiento</a></li>
                         <li><a href="https://eidosrender.es/faq">Preguntas Frecuentes (FAQ)</a></li>
                         <li><a href="#calculadora">Calculadora de Presupuestos</a></li>
                         <li><a href="#proceso">Cómo Trabajamos</a></li>

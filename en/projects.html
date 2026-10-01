@@ -12,8 +12,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Projects & Case Studies — Eidos Render</title>
-  <meta name="description" content="Portfolio of architectural 3D visualization, video, and commercial brand assets for residential developments and landmark schemes across Europe.">
+  <title>Curated 3D Projects | Eidos Render</title>
+  <meta name="description" content="Selected 3D architectural visualisations, villas, and residential developments across Europe.">
   <link rel="canonical" href="https://eidosrender.es/en/projects">
 
   <!-- International SEO / Hreflang -->
@@ -29,22 +29,18 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
-  <meta property="og:title" content="Projects & Case Studies — Eidos Render">
-  <meta property="og:description" content="Portfolio of architectural 3D visualization, film, and commercial launch assets.">
+  <meta property="og:title" content="Curated 3D Projects | Eidos Render">
+  <meta property="og:description" content="Selected 3D architectural visualisations, villas, and residential developments across Europe.">
   <meta property="og:url" content="https://eidosrender.es/en/projects">
   <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
-  <link rel="shortcut icon" href="../favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" href="../favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/fonts.css">
 </head>
 <body class="bg-paper">
 
@@ -53,213 +49,362 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Header -->
-  <header class="nav-header nav-light" role="banner">
+    <!-- =====================================================
+       00. CABECERA DINÁMICA CENTRADA:
+       Isotipo grande a dos tintas + Nombre centrado debajo
+       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
+       ===================================================== -->
+  <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
-      <a href="./" class="logo" aria-label="Eidos Render Home">
-        <span>EIDOS RENDER</span>
-        <span class="logo-dot"></span>
-      </a>
-
-      <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="projects.html" class="active">Projects</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="./#proceso">Process</a></li>
-          <li><a href="./#eidos">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-right-group">
-        <div class="lang-switcher" aria-label="Language selector">
-          <a href="../proyectos.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-          <span class="lang-divider">/</span>
-          <span class="active" data-lang="en">EN</span>
-          <span class="lang-divider">/</span>
-          <a href="../de/projekte.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-          <span class="lang-divider">/</span>
-          <a href="../fr/projets.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
-        </div>
-
-        <a href="contact.html" class="nav-cta">
-          LET'S DISCUSS THE PROJECT →
+      <div class="nav-center-brand">
+        <a href="../en/index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+          <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
+            <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+            <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
+            <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
+          </svg>
+          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
         </a>
       </div>
-
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-nav-overlay" aria-hidden="true">
-    <div>
-      <div class="mobile-lang-switcher" aria-label="Language selector">
-        <a href="../proyectos.html" data-lang="es" onclick="window.setLang('es')">ES</a>
-        <span class="active" data-lang="en">EN</span>
-        <a href="../de/projekte.html" data-lang="de" onclick="window.setLang('de')">DE</a>
-        <a href="../fr/projets.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
-      </div>
+  <!-- =====================================================
+       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
+       ===================================================== -->
+  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
+    <span class="menu-btn-label">MENU</span>
+    <span class="menu-btn-icon">
+      <span class="line line-top"></span>
+      <span class="line line-bottom"></span>
+    </span>
+  </button>
 
-      <span class="kicker crimson">Navigation</span>
-      <ul class="mobile-nav-links">
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="./#proceso">Process</a></li>
-        <li><a href="./#eidos">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
+
+    <nav aria-label="Navigation">
+      <ul class="app-nav-list">
+        <li class="app-nav-item">
+          <a href="../en/index.html" class="app-link">
+            <span><span class="app-nav-num">01</span>Home</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/services.html" class="app-link">
+            <span><span class="app-nav-num">02</span>Services & Capabilities</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/projects.html" class="app-link">
+            <span><span class="app-nav-num">03</span>Case Portfolio</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/index.html#branding" class="app-link">
+            <span><span class="app-nav-num">04</span>Brand Identity</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/index.html#proceso" class="app-link">
+            <span><span class="app-nav-num">05</span>Methodology</span>
+            <span>→</span>
+          </a>
+        </li>
+        <li class="app-nav-item">
+          <a href="../en/contact.html" class="app-link">
+            <span><span class="app-nav-num">06</span>Direct Contact</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
+    <div class="app-lang-segmented" aria-label="Language selector">
+      <a href="../index.html" data-lang="es" class="" onclick="window.setLang('es')">ES</a>
+      <a href="../en/" data-lang="en" class="active" onclick="window.setLang('en')">EN</a>
+      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
+      <a href="../fr/" data-lang="fr" class="" onclick="window.setLang('fr')">FR</a>
+    </div>
+
+    <div class="app-panel-footer">
+      <a href="../en/contact.html" class="app-cta-btn">
+        DISCUSS YOUR PROJECT →
+      </a>
+      <div class="app-contact-sub">Valencia · Operating Across Europe</div>
+    </div>
+  </div>
     <div class="mobile-nav-footer">
       <div><strong>EIDOS RENDER</strong> — Real Estate Launch</div>
       <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
     </div>
   </div>
 
-  <main style="padding-top: var(--nav-h);">
+  <!-- Floating Hover Preview (List View) -->
+  <div class="project-hover-preview" aria-hidden="true">
+    <img src="" alt="Project Preview">
+  </div>
+
+  <main style="padding-top: 140px;">
 
     <!-- Section Header -->
     <section class="section-sm bg-paper" style="border-bottom: 1px solid var(--line);">
       <div class="container">
-        <div class="kicker crimson">Production Archive</div>
-        <h1 class="display-title" style="margin-bottom: 24px;">
-          Selected projects.
-        </h1>
-        <p class="body-large body-muted" style="max-width: 760px;">
-          Rigorous 3D visualization, visual direction, and commercial assets for residential developments, villas, and landmark real estate schemes across Europe.
-        </p>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 32px;">
+          <div>
+            <div class="kicker crimson">
+              <span class="kicker-dot"></span>
+              Production Archive
+            </div>
+            <h1 class="display-title" style="margin-bottom: 16px;">
+              Selected Projects.
+            </h1>
+            <p class="body-large body-muted" style="max-width: 680px;">
+              A curated selection of residential developments, signature villas, and landmark spaces. Each commission approached with uncompromising architectural fidelity.
+            </p>
+          </div>
+
+          <!-- Dual View Switcher -->
+          <div class="view-switcher" aria-label="Toggle view mode">
+            <span style="font-family: var(--font-condensed); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--signal-text);">View:</span>
+            <button class="view-btn active" data-view="list">Typographic List</button>
+            <button class="view-btn" data-view="grid">Editorial Grid</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- EDITORIAL ARCHIVE GRID -->
-    <section class="section bg-paper">
+    <!-- 01. TYPOGRAPHIC LIST VIEW (Active by default) -->
+    <section class="section bg-paper projects-list-view" style="padding-top: 60px;">
       <div class="container">
-        <div class="editorial-portfolio">
+        <div class="editorial-list">
+          <div class="editorial-row" data-image="../img/render-fachada-edificio-obra-nueva-800.webp">
+            <span class="row-num">01</span>
+            <div>
+              <h2 class="row-title">Urban Residential Building</h2>
+            </div>
+            <div class="row-meta">New Multi-Family Scheme · Main Facade</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">VALENCIA, ES</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/infografia-exterior-zonas-comunes-obra-nueva-800.webp">
+            <span class="row-num">02</span>
+            <div>
+              <h2 class="row-title">Communal Amenities & Infinity Pool</h2>
+            </div>
+            <div class="row-meta">Landscaping · Sun Deck · Golden Hour</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">MADRID, ES</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/render-exterior-vivienda-unifamiliar-piscina-800.webp">
+            <span class="row-num">03</span>
+            <div>
+              <h2 class="row-title">Hillside Coastal Villa</h2>
+            </div>
+            <div class="row-meta">Single-Family Villa · Infinity Pool · Coastal Integration</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">ALICANTE, ES</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/infografia-3d-salon-moderno-doble-altura-800.webp">
+            <span class="row-num">04</span>
+            <div>
+              <h2 class="row-title">Double-Height Penthouse</h2>
+            </div>
+            <div class="row-meta">Prime Residential Interior · Daylight Atmosphere</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">MADRID, ES</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/render-cocina-moderna-isla-madera-800.webp">
+            <span class="row-num">05</span>
+            <div>
+              <h2 class="row-title">Architectural Kitchen & Island</h2>
+            </div>
+            <div class="row-meta">Natural Oak · Continuous Surfaces · Warm Light</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">VALENCIA, ES</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/infografia-dormitorio-principal-render-inmobiliario-800.webp">
+            <span class="row-num">06</span>
+            <div>
+              <h2 class="row-title">Master Suite & Dressing Room</h2>
+            </div>
+            <div class="row-meta">Refined Finishes · Serene Atmosphere · Morning Light</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">PRIME SUITE</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/render-bano-moderno-ducha-minimalista-800.webp">
+            <span class="row-num">07</span>
+            <div>
+              <h2 class="row-title">Minimalist Master Bath</h2>
+            </div>
+            <div class="row-meta">Flush Walk-in Shower · Concealed Brassware</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">DETAIL</div>
+            <div class="row-arrow">↗</div>
+          </div>
+          <div class="editorial-row" data-image="../img/render-zona-estudio-armarios-empotrados-800.webp">
+            <span class="row-num">08</span>
+            <div>
+              <h2 class="row-title">Study & Library Nook</h2>
+            </div>
+            <div class="row-meta">Bespoke Joinery · Integrated Architectural Solutions</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">INTERIOR</div>
+            <div class="row-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- 01 -->
-          <article class="project-card span-8">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
-                <picture>
-                  <source srcset="../img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
-                  <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Residential Building Facade CGI" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-info">
+    <!-- 02. ARCHITECTURAL GRID VIEW (Asymmetrical layout matching Spanish version) -->
+    <section class="section bg-paper projects-grid-view" style="display: none; padding-top: 60px;">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; gap: 80px;">
+
+          <!-- 01 Full Bleed 21:9 -->
+          <article class="project-card">
+            <div class="project-media-wrap ratio-21-9">
+              <picture>
+                <source srcset="../img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+                <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Urban Residential Building" loading="lazy">
+              </picture>
+            </div>
+            <div class="project-meta-row">
+              <div style="display: flex; gap: 20px; align-items: baseline;">
+                <span class="project-num">01</span>
                 <div>
-                  <h3 class="project-name">Residential Complex</h3>
-                  <div class="project-services-line">Multi-Family Residential · Visual Direction · Urban Context</div>
+                  <h3 class="project-title">Urban Residential Building</h3>
+                  <div class="project-specs">Multi-Family New Build · Visual Direction · Urban Integration</div>
                 </div>
-                <div class="project-meta">Valencia, ES</div>
               </div>
+              <div class="project-specs">Valencia, ES</div>
             </div>
           </article>
 
-          <!-- 02 -->
-          <article class="project-card span-4 tall">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
+          <!-- 02 & 03 Split Asimétrico (4:5 + 16:9) -->
+          <div class="grid-12">
+            <article class="project-card" style="grid-column: span 5;">
+              <div class="project-media-wrap ratio-4-5">
                 <picture>
                   <source srcset="../img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
-                  <img src="../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Communal Swimming Pool and Gardens CGI" loading="lazy">
+                  <img src="../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Communal Amenities & Infinity Pool" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Amenities & Landscaping</h3>
-                  <div class="project-services-line">3D Visualization · Pools & Gardens · Cinematic Film</div>
+              <div class="project-meta-row">
+                <div style="display: flex; gap: 16px; align-items: baseline;">
+                  <span class="project-num">02</span>
+                  <div>
+                    <h3 class="project-title" style="font-size: 1.4rem;">Communal Amenities & Infinity Pool</h3>
+                    <div class="project-specs">Rooftop Pool · Solarium</div>
+                  </div>
                 </div>
-                <div class="project-meta">Madrid, ES</div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- 03 -->
-          <article class="project-card span-4 tall">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
+            <article class="project-card" style="grid-column: span 7; align-self: flex-end;">
+              <div class="project-media-wrap ratio-16-9">
                 <picture>
                   <source srcset="../img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
-                  <img src="../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Contemporary Detached Villa CGI" loading="lazy">
+                  <img src="../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Hillside Coastal Villa" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Contemporary Villa</h3>
-                  <div class="project-services-line">Single-Family Villa · Infinity Pool · Coastal Integration</div>
+              <div class="project-meta-row">
+                <div style="display: flex; gap: 16px; align-items: baseline;">
+                  <span class="project-num">03</span>
+                  <div>
+                    <h3 class="project-title" style="font-size: 1.4rem;">Hillside Coastal Villa</h3>
+                    <div class="project-specs">Single-Family Villa · Topographic Integration</div>
+                  </div>
                 </div>
-                <div class="project-meta">Alicante, ES</div>
               </div>
+            </article>
+          </div>
+
+          <!-- 04 Full Bleed 21:9 -->
+          <article class="project-card">
+            <div class="project-media-wrap ratio-21-9">
+              <picture>
+                <source srcset="../img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
+                <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Double-Height Penthouse" loading="lazy">
+              </picture>
+            </div>
+            <div class="project-meta-row">
+              <div style="display: flex; gap: 20px; align-items: baseline;">
+                <span class="project-num">04</span>
+                <div>
+                  <h3 class="project-title">Double-Height Penthouse</h3>
+                  <div class="project-specs">Prime Residential Interior · Daylight Atmosphere</div>
+                </div>
+              </div>
+              <div class="project-specs">Madrid, ES</div>
             </div>
           </article>
 
-          <!-- 04 -->
-          <article class="project-card span-8">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
-                <picture>
-                  <source srcset="../img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
-                  <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Double Height Penthouse Interior CGI" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Double-Height Penthouse</h3>
-                  <div class="project-services-line">Interior Architecture · High-End CGI · Art Direction</div>
-                </div>
-                <div class="project-meta">Prime Living</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- 05 -->
-          <article class="project-card span-6">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
+          <!-- 05 & 06 Split 6-6 -->
+          <div class="grid-12">
+            <article class="project-card" style="grid-column: span 6;">
+              <div class="project-media-wrap ratio-16-9">
                 <picture>
                   <source srcset="../img/render-cocina-moderna-isla-madera.webp" type="image/webp">
-                  <img src="../img/render-cocina-moderna-isla-madera-1600.jpg" alt="Bespoke Kitchen Island Render" loading="lazy">
+                  <img src="../img/render-cocina-moderna-isla-madera-1600.jpg" alt="Architectural Kitchen & Island" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Central Island Kitchen</h3>
-                  <div class="project-services-line">Natural Materials · Wood Craftsmanship · Warm Illumination</div>
+              <div class="project-meta-row">
+                <div style="display: flex; gap: 16px; align-items: baseline;">
+                  <span class="project-num">05</span>
+                  <div>
+                    <h3 class="project-title" style="font-size: 1.4rem;">Architectural Kitchen & Island</h3>
+                    <div class="project-specs">Natural Oak · Continuous Surfaces</div>
+                  </div>
                 </div>
-                <div class="project-meta">Detail</div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- 06 -->
-          <article class="project-card span-6">
-            <div class="project-card-link">
-              <div class="project-media-wrap">
+            <article class="project-card" style="grid-column: span 6;">
+              <div class="project-media-wrap ratio-16-9">
                 <picture>
                   <source srcset="../img/infografia-dormitorio-principal-render-inmobiliario.webp" type="image/webp">
-                  <img src="../img/infografia-dormitorio-principal-render-inmobiliario-1600.jpg" alt="Contemporary Master Suite Interior Render" loading="lazy">
+                  <img src="../img/infografia-dormitorio-principal-render-inmobiliario-1600.jpg" alt="Master Suite & Dressing" loading="lazy">
                 </picture>
               </div>
-              <div class="project-info">
-                <div>
-                  <h3 class="project-name">Residential Master Suite</h3>
-                  <div class="project-services-line">Serene Ambience · Tactile Finishes · Custom Furniture</div>
+              <div class="project-meta-row">
+                <div style="display: flex; gap: 16px; align-items: baseline;">
+                  <span class="project-num">06</span>
+                  <div>
+                    <h3 class="project-title" style="font-size: 1.4rem;">Master Suite & Dressing</h3>
+                    <div class="project-specs">Serene Atmosphere · Custom Textures</div>
+                  </div>
                 </div>
-                <div class="project-meta">Suite</div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
 
         </div>
+      </div>
+    </section>
 
-        <div style="margin-top: 80px; text-align: center; border-top: 1px solid var(--line); padding-top: 60px;">
-          <h2 class="display-title" style="margin-bottom: 20px;">Let's discuss your next project.</h2>
-          <p class="body-large body-muted" style="max-width: 600px; margin: 0 auto 32px;">
-            We calibrate each engagement to your project's milestones, commercial targets, and target buyer demographic.
+    <!-- Closing Callout -->
+    <section class="section-sm bg-ink" style="color: var(--paper); border-top: 1px solid var(--line-dark);">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap;">
+        <div>
+          <span class="kicker crimson">
+            <span class="kicker-dot"></span>
+            Direct Engagement
+          </span>
+          <h2 class="display-sub" style="margin-bottom: 8px;">From the drawing board to launch.</h2>
+          <p class="body-regular" style="color: rgba(244,243,239,0.7); max-width: 580px;">
+            A curated selection of residential developments, signature villas, and landmark spaces. Each commission approached with uncompromising architectural fidelity.
           </p>
-          <a href="contact.html" class="btn btn-crimson">
-            HAVE A PROJECT IN MIND? LET'S TALK →
+        </div>
+        <div>
+          <a href="contact.html" class="btn-editorial btn-crimson">
+            LET'S DISCUSS THE PROJECT →
           </a>
         </div>
       </div>
@@ -267,20 +412,57 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Portfolio.</div>
+      <div class="footer-top">
+        <div>
+          <a href="../" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
+            <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
+          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
+          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
+        </svg>
+            <span class="logo-text">EIDOS RENDER</span>
+          </a>
+          <p class="body-regular" style="color: rgba(244,243,239,0.65); max-width: 380px;">
+            Visual partner for real estate developments. From architectural project to commercial market launch.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="./#proceso">Process</a></li>
+            <li><a href="./#estudio">Studio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@eidosrender.es">info@eidosrender.es</a></li>
+            <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
+            <li>Valencia, Spain</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
+          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+        </div>
+        <div class="footer-bottom">
+        <div>© 2026 Eidos Render. All rights reserved.</div>
         <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
           <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
             <a href="../proyectos.html" onclick="window.setLang('es')">ES</a> ·
-            <span style="color: var(--crimson); font-weight: 700;">EN</span> ·
+            <span style="color: var(--crimson-on-dark); font-weight: 700;">EN</span> ·
             <a href="../de/projekte.html" onclick="window.setLang('de')">DE</a> ·
             <a href="../fr/projets.html" onclick="window.setLang('fr')">FR</a>
           </div>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-          <a href="legal-notice.html">Legal Notice</a>
         </div>
       </div>
     </div>

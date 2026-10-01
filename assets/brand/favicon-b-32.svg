@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  
+  <!-- Vertical Spine -->
+  <line x1="6" y1="5" x2="6" y2="27" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" class="iso-path iso-spine"/>
+  <!-- Cantilever 1 (Top - 20px) -->
+  <line x1="6" y1="6" x2="26" y2="6" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" class="iso-path iso-slab-1"/>
+  <!-- Cantilever 2 (Upper Mid - 15px) -->
+  <line x1="6" y1="13" x2="21" y2="13" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" class="iso-path iso-slab-2"/>
+  <!-- Cantilever 3 (Lower Mid - 10px) -->
+  <line x1="6" y1="20" x2="16" y2="20" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" class="iso-path iso-slab-3"/>
+  <!-- Cantilever 4 (Base Anchor - 5px with Accent dot) -->
+  <line x1="6" y1="26" x2="11" y2="26" stroke="#1E1C1A" stroke-width="2" stroke-linecap="square" class="iso-path iso-slab-4"/>
+  <circle cx="12.5" cy="26" r="1.5" fill="#8E1B2E" class="iso-dot"/>
+</svg>
