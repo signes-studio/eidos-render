@@ -220,7 +220,7 @@ const htmlContent = `<!DOCTYPE html>
               Dirección de marca, visualización 3D fotorrealista, vídeo cinematográfico, dossiers editoriales, plataformas web interactivas y campañas de captación. Una visión unificada desde el boceto hasta el mercado.
             </p>
 
-            <div class="text-reveal-flow" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <div class="contact-buttons-group text-reveal-flow">
               <a href="#contacto" class="btn btn-editorial" style="background-color: var(--granate); color: var(--cream); border: none; padding: 16px 32px; font-family: var(--font-syncopate); font-size: 11px; letter-spacing: 0.14em; border-radius: 6px !important;">
                 HABLEMOS DEL PROYECTO →
               </a>
@@ -312,7 +312,7 @@ const htmlContent = `<!DOCTYPE html>
          ===================================================== -->
     <section class="section" id="servicios" style="background-color: var(--granate); color: var(--cream);">
       <div class="container">
-        <div class="services-header" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; margin-bottom: 60px; align-items: flex-end;">
+        <div class="services-header">
           <div>
             <div class="kicker text-reveal-flow" style="color: var(--cream);">
               <span class="kicker-dot" style="background-color: var(--cream);"></span>
@@ -339,7 +339,7 @@ const htmlContent = `<!DOCTYPE html>
               <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
+              <div class="service-details-inner">
                 <div>
                   <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
                     Definimos el universo conceptual de la promoción antes de producir cualquier imagen. Naming, paleta cromática, tipografías, tono de comunicación y directrices de estilo para garantizar coherencia en todos los soportes.
@@ -366,7 +366,7 @@ const htmlContent = `<!DOCTYPE html>
               <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
+              <div class="service-details-inner">
                 <div>
                   <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
                     Nuestra credencial fundamental. Renders fotorrealistas que no se limitan a mostrar geometría: construyen atmósfera, iluminan espacios con rigor y despiertan el deseo del comprador antes del inicio de obra.
@@ -393,7 +393,7 @@ const htmlContent = `<!DOCTYPE html>
               <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
+              <div class="service-details-inner">
                 <div>
                   <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
                     El movimiento permite recorrer los espacios de la promoción, transmitir la escala real de las zonas comunes y multiplicar el engagement en presentaciones a inversores y campañas digitales.
@@ -420,7 +420,7 @@ const htmlContent = `<!DOCTYPE html>
               <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
+              <div class="service-details-inner">
                 <div>
                   <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
                     Transformamos planos técnicos en herramientas de venta comprensibles, elegantes y eficaces para los equipos comerciales y los clientes finales.
@@ -447,7 +447,7 @@ const htmlContent = `<!DOCTYPE html>
               <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
+              <div class="service-details-inner">
                 <div>
                   <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
                     Construimos la plataforma digital del lanzamiento. No una web corporativa genérica, sino una herramienta comercial orientada a explicar la arquitectura, filtrar tipologías y orientar al comprador cualificado.
@@ -474,7 +474,7 @@ const htmlContent = `<!DOCTYPE html>
               <div class="service-toggle-icon" style="color: var(--cream);">+</div>
             </div>
             <div class="service-details">
-              <div class="service-details-inner" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 24px 0 40px;">
+              <div class="service-details-inner">
                 <div>
                   <p style="font-family: var(--font-special); font-size: 1.05rem; line-height: 1.65; color: rgba(241,235,223,0.9);">
                     Con la imagen y la web preparadas, activamos la difusión dirigida a compradores e inversores. Adaptamos los mensajes visuales según los datos de respuesta para conectar con compradores afines.
@@ -508,7 +508,7 @@ const htmlContent = `<!DOCTYPE html>
          ===================================================== -->
     <section class="section" id="proyectos" style="background-color: var(--cream); color: var(--charcoal);">
       <div class="container">
-        <div class="portfolio-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px;">
+        <div class="portfolio-header">
           <div>
             <div class="kicker text-reveal-flow" style="color: var(--granate);">
               <span class="kicker-dot" style="background-color: var(--granate);"></span>
@@ -621,7 +621,7 @@ const htmlContent = `<!DOCTYPE html>
           Vídeo & Movimiento
         </div>
 
-        <div class="video-section-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; margin-top: 40px; align-items: center;">
+        <div class="video-section-grid">
           <div>
             <h2 class="display-title text-reveal-flow" style="font-family: var(--font-special); font-size: clamp(2.2rem, 4.4vw, 4.2rem); color: var(--cream); line-height: 0.98; margin-bottom: 28px;">
               Del render estático<br>
@@ -634,7 +634,7 @@ const htmlContent = `<!DOCTYPE html>
           </div>
 
           <div>
-            <div class="reels-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <div class="reels-grid">
               <div class="reel-card text-reveal-flow" style="border: 1px solid var(--line-on-granate); border-radius: 12px !important; overflow: hidden;">
                 <video autoplay muted loop playsinline controls poster="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" style="width: 100%; aspect-ratio: 9/16; object-fit: cover;">
                   <source src="img/video-reel-patio.mp4" type="video/mp4">
@@ -658,7 +658,7 @@ const htmlContent = `<!DOCTYPE html>
          ===================================================== -->
     <section class="section" id="branding" style="background-color: var(--cream); color: var(--charcoal);">
       <div class="container">
-        <div class="feature-split" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: flex-start;">
+        <div class="feature-split">
           <div>
             <div class="kicker text-reveal-flow" style="color: var(--granate);">
               <span class="kicker-dot" style="background-color: var(--granate);"></span>
@@ -677,7 +677,7 @@ const htmlContent = `<!DOCTYPE html>
             </a>
           </div>
 
-          <div class="feature-cards-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="feature-cards-grid">
             <div class="feature-card text-reveal-flow" style="background-color: var(--cream-2); padding: 32px; border: 1px solid var(--line); border-radius: 12px !important;">
               <div class="feature-card-num" style="font-family: var(--font-prata); font-size: 1.6rem; color: var(--granate); margin-bottom: 12px;">01</div>
               <h3 class="feature-card-title" style="font-family: var(--font-special); font-size: 1.2rem; margin-bottom: 10px;">Naming & Concepto</h3>
@@ -764,7 +764,7 @@ const htmlContent = `<!DOCTYPE html>
             Si estás preparando una promoción y quieres definir su imagen, materiales y lanzamiento comercial con criterio arquitectónico, cuéntanos el proyecto.
           </p>
 
-          <div class="text-reveal-flow" style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+          <div class="contact-buttons-group text-reveal-flow">
             <a href="mailto:info@eidosrender.es" class="btn btn-editorial" style="background-color: var(--granate); color: var(--cream); border: none; padding: 18px 36px; font-family: var(--font-syncopate); font-size: 11.5px; letter-spacing: 0.14em; border-radius: 8px !important;">
               ENVIAR CONSULTA POR EMAIL →
             </a>
