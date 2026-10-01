@@ -16,6 +16,17 @@
   <meta name="description" content="Cuéntanos tu proyecto inmobiliario. Valoramos la imagen 3D, vídeo, identidad, material comercial, web y captación de tu próxima promoción.">
   <link rel="canonical" href="https://eidosrender.es/contacto">
 
+  <!-- International SEO / Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://eidosrender.es/contacto">
+  <link rel="alternate" hreflang="en" href="https://eidosrender.es/en/contact">
+  <link rel="alternate" hreflang="de" href="https://eidosrender.es/de/kontakt">
+  <link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/contact">
+  <link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/contact">
+
+  <!-- Multilingual & Geo-routing -->
+  <script src="../js/i18n.js"></script>
+
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
@@ -60,9 +71,21 @@
         </ul>
       </nav>
 
-      <a href="../contacto.html" class="nav-cta">
-        HABLEMOS DEL PROYECTO →
-      </a>
+            <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <span class="active" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <a href="../en/contact.html" data-lang="en" onclick="window.setLang('en')">EN</a>
+          <span class="lang-divider">/</span>
+          <a href="../de/kontakt.html" data-lang="de" onclick="window.setLang('de')">DE</a>
+          <span class="lang-divider">/</span>
+          <a href="../fr/contact.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+        </div>
+
+        <a href="../contacto.html" class="nav-cta">
+          HABLEMOS DEL PROYECTO →
+        </a>
+      </div>
 
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -71,8 +94,13 @@
   </header>
 
   <!-- Mobile Overlay -->
-  <div class="mobile-nav-overlay" aria-hidden="true">
-    <div>
+      <div>
+      <div class="mobile-lang-switcher" aria-label="Selector de idioma">
+        <span class="active" data-lang="es">ES</span>
+        <a href="../en/contact.html" data-lang="en" onclick="window.setLang('en')">EN</a>
+        <a href="../de/kontakt.html" data-lang="de" onclick="window.setLang('de')">DE</a>
+        <a href="../fr/contact.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+      </div>
       <span class="kicker crimson">Navegación</span>
       <ul class="mobile-nav-links">
         <li><a href="../proyectos.html">Proyectos</a></li>
@@ -188,7 +216,13 @@
     <div class="container">
       <div class="footer-bottom">
         <div>© 2026 Eidos Render. Contacto.</div>
-        <div style="display: flex; gap: 24px;">
+                <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
+            <span style="color: var(--crimson); font-weight: 700;">ES</span> ·
+            <a href="../en/contact.html" onclick="window.setLang('en')">EN</a> ·
+            <a href="../de/kontakt.html" onclick="window.setLang('de')">DE</a> ·
+            <a href="../fr/contact.html" onclick="window.setLang('fr')">FR</a>
+          </div>
           <a href="../index.html">Inicio</a>
           <a href="../proyectos.html">Proyectos</a>
           <a href="../servicios.html">Servicios</a>

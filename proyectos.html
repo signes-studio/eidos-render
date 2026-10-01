@@ -16,6 +16,16 @@
   <meta name="description" content="Portfolio de visualización arquitectónica 3D, vídeo e identidad para promociones inmobiliarias y complejos singulares. Casos de estudio reales.">
   <link rel="canonical" href="https://eidosrender.es/proyectos">
 
+  <!-- International SEO / Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://eidosrender.es/proyectos">
+  <link rel="alternate" hreflang="en" href="https://eidosrender.es/en/projects">
+  <link rel="alternate" hreflang="de" href="https://eidosrender.es/de/projekte">
+  <link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/projets">
+  <link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/projects">
+
+  <!-- Multilingual & Geo-routing -->
+  <script src="js/i18n.js"></script>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
@@ -60,9 +70,21 @@
         </ul>
       </nav>
 
-      <a href="contacto.html" class="nav-cta">
-        HABLEMOS DEL PROYECTO →
-      </a>
+      <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <span class="active" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <a href="en/projects.html" data-lang="en" onclick="window.setLang('en')">EN</a>
+          <span class="lang-divider">/</span>
+          <a href="de/projekte.html" data-lang="de" onclick="window.setLang('de')">DE</a>
+          <span class="lang-divider">/</span>
+          <a href="fr/projets.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+        </div>
+
+        <a href="contacto.html" class="nav-cta">
+          HABLEMOS DEL PROYECTO →
+        </a>
+      </div>
 
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
@@ -75,6 +97,13 @@
   <!-- Mobile Overlay -->
   <div class="mobile-nav-overlay" aria-hidden="true">
     <div>
+      <div class="mobile-lang-switcher" aria-label="Selector de idioma">
+        <span class="active" data-lang="es">ES</span>
+        <a href="en/projects.html" data-lang="en" onclick="window.setLang('en')">EN</a>
+        <a href="de/projekte.html" data-lang="de" onclick="window.setLang('de')">DE</a>
+        <a href="fr/projets.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+      </div>
+
       <span class="kicker crimson">Navegación</span>
       <ul class="mobile-nav-links">
         <li><a href="proyectos.html" class="active">Proyectos</a></li>

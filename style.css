@@ -422,6 +422,111 @@ button {
   color: var(--paper);
 }
 
+.nav-right-group {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lang-switcher a,
+.lang-switcher span {
+  color: rgba(244, 243, 239, 0.6);
+  padding: 2px 4px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1;
+}
+
+.nav-light .lang-switcher a,
+.nav-light .lang-switcher span {
+  color: rgba(11, 11, 12, 0.55);
+}
+
+.nav-header.scrolled .lang-switcher a {
+  color: rgba(244, 243, 239, 0.65);
+}
+
+.nav-header.nav-light.scrolled .lang-switcher a {
+  color: rgba(11, 11, 12, 0.6);
+}
+
+.lang-switcher a:hover {
+  color: var(--crimson);
+}
+
+.lang-switcher .active,
+.lang-switcher a.active {
+  color: var(--paper) !important;
+  font-weight: 700;
+  border-bottom: 2px solid var(--crimson);
+}
+
+.nav-light .lang-switcher .active,
+.nav-light .lang-switcher a.active,
+.nav-header.nav-light.scrolled .lang-switcher .active,
+.nav-header.nav-light.scrolled .lang-switcher a.active {
+  color: var(--ink) !important;
+  border-bottom: 2px solid var(--crimson);
+}
+
+.lang-divider {
+  color: rgba(244, 243, 239, 0.25);
+  font-size: 0.68rem;
+  user-select: none;
+}
+
+.nav-light .lang-divider,
+.nav-header.nav-light.scrolled .lang-divider {
+  color: rgba(11, 11, 12, 0.25);
+}
+
+/* Mobile language switcher in drawer */
+.mobile-lang-switcher {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.mobile-lang-switcher a,
+.mobile-lang-switcher span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(244, 243, 239, 0.65);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid rgba(244, 243, 239, 0.2);
+  transition: all 0.2s ease;
+}
+
+.mobile-lang-switcher a:hover {
+  color: var(--paper);
+  border-color: rgba(244, 243, 239, 0.5);
+}
+
+.mobile-lang-switcher .active,
+.mobile-lang-switcher a.active {
+  color: var(--paper) !important;
+  background-color: var(--crimson);
+  border-color: var(--crimson);
+  font-weight: 700;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -523,7 +628,7 @@ button {
 }
 
 @media (max-width: 991px) {
-  .nav-links, .nav-cta {
+  .nav-links, .nav-cta, .lang-switcher {
     display: none;
   }
   .nav-toggle {

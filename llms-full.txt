@@ -1,72 +1,105 @@
-# Eidos Render — Documentación Completa para Agentes y LLMs
+# Eidos Render — International Real Estate Launch Studio & Agency
+## Full Documentation for Agents, Search Engines & LLMs
 
-> Eidos Render es un partner creativo y visual especializado en el lanzamiento comercial de proyectos inmobiliarios. Cubre la totalidad del proceso: dirección visual, branding e identidad, infografía arquitectónica 3D fotorrealista, vídeo 3D y animación, material comercial, web de promoción a medida y gestión de captación digital en Google Ads y Meta Ads.
+> Eidos Render is an international creative and visual partner specialized in the commercial launch of real estate developments across Europe (Spain, Germany, France, Switzerland, Austria, United Kingdom, and Benelux). It covers the full lifecycle from architectural project to buyer acquisition: visual direction, branding & identity, photorealistic 3D rendering, 3D film & animation, sales collateral, custom development websites, and qualified lead acquisition across Google Ads and Meta Ads.
 
-## 1. Filosofía & Posicionamiento
+---
 
-Concepto central: **Del proyecto arquitectónico al lanzamiento.**
-Subconcepto: **Imagen · Identidad · Comercial · Digital · Captación.**
+## 1. Brand Philosophy & Core Positioning
 
-Eidos Render defiende que una promoción no necesita piezas visuales aisladas, sino un sistema integrado:
-ARQUITECTURA → IMAGEN → MARCA → COMUNICACIÓN → DIGITAL → CAPTACIÓN
+- **Core concept**: From architectural project to market launch.
+- **Tagline**: One unified vision. Every asset covered.
+- **System**:
+  ARCHITECTURE → IMAGERY → BRAND IDENTITY → COMMERCIAL ASSETS → DIGITAL ECOSYSTEM → BUYER ACQUISITION
 
-El render fotorrealista en resolución 4K sigue siendo la máxima credencial de autoridad técnica y visual del estudio, pero se integra dentro de una estrategia global que acompaña a la promotora hasta la captación de sus compradores finales o inversores.
+Eidos Render is not a generic marketing agency, not a low-cost 3D shop, and not a SaaS platform. It acts as an elite visual partner for property developers, ensuring absolute chromatic, narrative, and aesthetic continuity across all marketing touchpoints.
 
-## 2. Servicios & Fases de Lanzamiento (Real Estate Launch)
+---
 
-### 01 — Dirección & Identidad
-- **Objetivo**: Establecer el universo visual y el relato de la promoción antes de producir renders.
-- **Entregables**: Naming de la promoción, concepto creativo, logotipo e imagotipo, sistema tipográfico, paleta cromática, manual de marca y directrices de atrezo e iluminación.
-- **Aplicaciones**: Vallas perimetrales de obra, banderolas, rotulación de caseta de ventas y carpetas para entrega de contratos.
-- **Plazos orientativos**: 1–2 semanas.
+## 2. Integrated Services (The 6-Phase Real Estate Launch Framework)
 
-### 02 — Imagen Arquitectónica 3D
-- **Objetivo**: Visualizar la arquitectura antes de que exista con máximo rigor fotorrealista y sensibilidad estética.
-- **Tipologías**: Edificios de obra nueva plurifamiliar, villas unifamiliares de alto standing, macrocomplejos residenciales, flex living, build to rent y proyectos singulares.
-- **Entregables**: Renders exteriores diurnos, atardeceres y nocturnos; interiorismo de viviendas (salones, cocinas, dormitorios, baños) con luz natural; zonas comunes y amenities (piscinas en cubierta, soláriums, gimnasios, salas coworking, jardines).
-- **Resolución**: 4K UHD nativo listo para gran formato e impresión editorial.
-- **Plazos orientativos**: 2–4 semanas.
+### 01 — Visual Direction & Brand Identity
+- **Purpose**: Define the creative concept, visual positioning, and brand narrative before initiating visual production.
+- **Deliverables**: Development naming, creative narrative, brand guidelines, typographic and chromatic systems, hoardings, flags, sales suite signage, contract folders.
+- **Timeline**: 1–2 weeks.
 
-### 03 — Vídeo & Animación 3D
-- **Objetivo**: Generar una experiencia inmersiva en movimiento para explicar la espacialidad y elevar la emoción del comprador.
-- **Formatos**: Teasers cinemáticos de 30-45s, recorridos virtuales continuos de 90-120s, clips en ratio 9:16 para Instagram Reels / TikTok y loops de alta definición para pantallas en salas de venta.
-- **Plazos orientativos**: 2–3 semanas.
+### 02 — 3D Architectural Imagery
+- **Purpose**: High-fidelity visualization of the architecture with editorial photographic sensitivity.
+- **Scope**: Multi-family residential buildings, contemporary luxury villas, masterplans, hospitality, BTR & flex-living.
+- **Deliverables**: Daytime, dusk, and night exteriors; naturally-lit residential interiors; common amenities (rooftop pools, solariums, wellness facilities, co-working).
+- **Resolution**: 4K UHD native output prepared for large-format site hoardings and editorial print.
+- **Timeline**: 2–4 weeks.
 
-### 04 — Material Comercial
-- **Objetivo**: Transformar planos técnicos en herramientas comerciales claras y atractivas para la fuerza de ventas.
-- **Entregables**: Dossier de venta editorial (PDF interactivo y maquetación para imprenta), planos comerciales 2D y 3D amueblados y texturizados, mapas vectoriales de entorno e hitos urbanos, y fichas individuales de cada tipología de vivienda.
-- **Plazos orientativos**: 1–2 semanas.
+### 03 — 3D Film & Animation
+- **Purpose**: Cinematic motion conveying spatial scale and emotional resonance for prospective buyers and investors.
+- **Formats**: 30–45s cinematic teasers, 90–120s full virtual tours, 9:16 vertical reels for Instagram & TikTok, 4K loops for sales showroom video walls.
+- **Timeline**: 2–3 weeks.
 
-### 05 — Web de Promoción
-- **Objetivo**: Construir el epicentro digital del lanzamiento, optimizado para resolver dudas arquitectónicas y convertir tráfico en visitas cualificadas.
-- **Funcionalidades**: UI/UX arquitectónica, visualizador y selector interactivo de tipologías y viviendas por planta, planos descargables, formularios de cualificación segmentados, medición de eventos y conexión directa con CRM comercial.
-- **Rendimiento**: Core Web Vitals optimizados (carga inferior a 1,5s en móvil).
-- **Plazos orientativos**: 3–5 semanas.
+### 04 — Marketing Collateral
+- **Purpose**: Transform technical blueprints into refined, accessible sales instruments for commercial teams.
+- **Deliverables**: Editorial sales brochures (interactive PDF + print-ready files), 2D & 3D furnished and textured floor plans, vectorized regional/neighborhood maps, individual typology unit sheets.
+- **Timeline**: 1–2 weeks.
 
-### 06 — Lanzamiento & Captación
-- **Objetivo**: Atraer compradores finales e inversores mediante publicidad digital precisa.
-- **Canales**: Google Ads (búsqueda de alta intención por zona y producto) y Meta Ads (Instagram y Facebook con audiencias segmentadas por nivel socioeconómico y perfil inversor).
-- **Creatividades**: Adaptación y testeo continuo de anuncios basados en los renders y vídeos de la promoción.
-- **Tracking**: Medición exhaustiva de conversiones, formularios y llamadas con informes periódicos de coste por lead cualificado.
+### 05 — Development Website
+- **Purpose**: The digital centerpiece of the launch, engineered to resolve buyer inquiries and convert interest into qualified private appointments.
+- **Features**: Architectural UI/UX, interactive floor-by-floor apartment selector, downloadable brochures, direct CRM lead integration, GDPR/RGPD compliance.
+- **Performance**: Optimized Core Web Vitals (<1.5s mobile load speed).
+- **Timeline**: 3–5 weeks.
 
-## 3. Escala del Proyecto & Inversión
+### 06 — Buyer Acquisition & Campaign Management
+- **Purpose**: Attract qualified homebuyers and domestic/international investors through segmented digital advertising.
+- **Channels**: Google Ads (high-intent location and typology search) & Meta Ads (Instagram/Facebook hyper-targeted by wealth indicators and investor profiles).
+- **Deliverables**: Ongoing creative optimization, conversion rate tracking, monthly reporting with clear cost-per-qualified-lead (CPL) benchmarks.
 
-- **Escala**: El alcance se dimensiona según el número de unidades, complejidad volumétrica, tipologías a representar y mercados objetivo. No se aplica un tarifario cerrado fijo.
-- **Inversión orientativa**:
-  - Proyectos integrales de lanzamiento comercial: desde 12.000 € + IVA.
-  - Gestión mensual de captación: desde 600 €/mes + IVA (inversión publicitaria en plataformas aparte).
-- **Plazos de entrega**: Proyecto integral en 6 a 10 semanas de promedio, solapando fases en paralelo.
+---
 
-## 4. Archivo de Producción & Tipologías
+## 3. Engagement Scope & Indicative Investment
 
-1. **Edificio Residencial (Valencia, España)**: Obra nueva plurifamiliar urbana. Dirección visual, exteriores fotorrealistas e integración con el entorno urbano.
-2. **Zonas Comunes & Paisajismo (Madrid, España)**: Visualización fotorrealista de zonas comunes (piscina rooftop, solarium, zonas de descanso) y piezas dinámicas para redes.
-3. **Villa Contemporánea (Alicante, España)**: Arquitectura unifamiliar con integración topográfica en ladera, piscina infinity y vistas panorámicas a la costa.
-4. **Penthouse Doble Altura**: Visualización interior de alta gama con atmósfera lumínica y dirección artística.
+- **Scalable Engagement**: Dimensioned according to total development units, architectural complexity, typology variants, and target markets.
+- **Indicative Investment**:
+  - Full Commercial Launch Program: from €12,000 + VAT.
+  - Monthly Acquisition Management: from €600/month + VAT (media budget billed separately).
+- **Production Delivery**: 6 to 10 weeks average for complete launch programs through synchronized parallel workflows.
 
-## 5. Contacto
+---
 
-- **Ubicación**: Valencia, España (cobertura en todo el territorio español y proyectos internacionales).
-- **Email**: info@eidosrender.es
-- **Teléfono**: +34 614 45 91 44
-- **Web**: https://eidosrender.es
+## 4. Multilingual Ecosystem & International Coverage
+
+Eidos Render operates seamlessly in four major European languages with dedicated canonical structures:
+
+### Spanish (`/`)
+- Portal: `https://eidosrender.es/`
+- Servicios: `https://eidosrender.es/servicios`
+- Proyectos: `https://eidosrender.es/proyectos`
+- Contacto: `https://eidosrender.es/contacto`
+- FAQ: `https://eidosrender.es/faq`
+
+### English (`/en/`)
+- Home: `https://eidosrender.es/en/`
+- Services: `https://eidosrender.es/en/services`
+- Projects: `https://eidosrender.es/en/projects`
+- Contact: `https://eidosrender.es/en/contact`
+- FAQ: `https://eidosrender.es/en/faq`
+
+### German (`/de/`)
+- Startseite: `https://eidosrender.es/de/`
+- Leistungen: `https://eidosrender.es/de/leistungen`
+- Projekte: `https://eidosrender.es/de/projekte`
+- Kontakt: `https://eidosrender.es/de/kontakt`
+- FAQ: `https://eidosrender.es/de/faq`
+
+### French (`/fr/`)
+- Accueil: `https://eidosrender.es/fr/`
+- Services: `https://eidosrender.es/fr/services`
+- Projets: `https://eidosrender.es/fr/projets`
+- Contact: `https://eidosrender.es/fr/contact`
+- FAQ: `https://eidosrender.es/fr/faq`
+
+---
+
+## 5. Direct Studio Contact
+
+- **Headquarters**: Valencia, Spain (Serving clients across Europe)
+- **Direct Email**: [info@eidosrender.es](mailto:info@eidosrender.es)
+- **Phone**: [+34 614 45 91 44](tel:+34614459144)
+- **Zero Forms Policy**: Direct contact only. Potential clients engage directly with senior creative directors via email or phone.

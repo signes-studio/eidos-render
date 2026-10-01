@@ -16,6 +16,17 @@
   <meta name="description" content="Diseño editorial de dossiers de venta inmobiliaria, planos comerciales 2D y 3D texturizados y fichas de tipología de viviendas.">
   <link rel="canonical" href="https://eidosrender.es/servicios/material-comercial">
 
+  <!-- International SEO / Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/material-comercial">
+  <link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/marketing-collateral">
+  <link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/vermarktungsunterlagen">
+  <link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/supports-commerciaux">
+  <link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/marketing-collateral">
+
+  <!-- Multilingual & Geo-routing -->
+  <script src="../js/i18n.js"></script>
+
+
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="Material Comercial & Dossier de Ventas — Eidos Render">
@@ -52,9 +63,21 @@
         </ul>
       </nav>
 
-      <a href="../contacto.html" class="nav-cta">
-        HABLEMOS DEL PROYECTO →
-      </a>
+            <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <span class="active" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <a href="../en/services/marketing-collateral.html" data-lang="en" onclick="window.setLang('en')">EN</a>
+          <span class="lang-divider">/</span>
+          <a href="../de/leistungen/vermarktungsunterlagen.html" data-lang="de" onclick="window.setLang('de')">DE</a>
+          <span class="lang-divider">/</span>
+          <a href="../fr/services/supports-commerciaux.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+        </div>
+
+        <a href="../contacto.html" class="nav-cta">
+          HABLEMOS DEL PROYECTO →
+        </a>
+      </div>
 
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -132,7 +155,13 @@
     <div class="container">
       <div class="footer-bottom">
         <div>© 2026 Eidos Render. Material Comercial.</div>
-        <div style="display: flex; gap: 24px;">
+                <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
+            <span style="color: var(--crimson); font-weight: 700;">ES</span> ·
+            <a href="../en/services/marketing-collateral.html" onclick="window.setLang('en')">EN</a> ·
+            <a href="../de/leistungen/vermarktungsunterlagen.html" onclick="window.setLang('de')">DE</a> ·
+            <a href="../fr/services/supports-commerciaux.html" onclick="window.setLang('fr')">FR</a>
+          </div>
           <a href="../proyectos.html">Proyectos</a>
           <a href="../servicios.html">Servicios</a>
           <a href="../contacto.html">Contacto</a>

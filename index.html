@@ -16,6 +16,16 @@
   <meta name="description" content="Eidos Render convierte proyectos inmobiliarios en experiencias visuales y comerciales. Imagen 3D, vídeo, identidad, material comercial, web y captación para promotoras.">
   <link rel="canonical" href="https://eidosrender.es/">
 
+  <!-- International SEO / Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://eidosrender.es/">
+  <link rel="alternate" hreflang="en" href="https://eidosrender.es/en/">
+  <link rel="alternate" hreflang="de" href="https://eidosrender.es/de/">
+  <link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/">
+
+  <!-- Multilingual & Geo-routing -->
+  <script src="js/i18n.js"></script>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
@@ -114,9 +124,21 @@
         </ul>
       </nav>
 
-      <a href="#contacto" class="nav-cta">
-        HABLEMOS DEL PROYECTO →
-      </a>
+      <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <span class="active" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <a href="en/" data-lang="en" onclick="window.setLang('en')">EN</a>
+          <span class="lang-divider">/</span>
+          <a href="de/" data-lang="de" onclick="window.setLang('de')">DE</a>
+          <span class="lang-divider">/</span>
+          <a href="fr/" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+        </div>
+
+        <a href="#contacto" class="nav-cta">
+          HABLEMOS DEL PROYECTO →
+        </a>
+      </div>
 
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
@@ -129,6 +151,13 @@
   <!-- Menú Móvil Fullscreen -->
   <div class="mobile-nav-overlay" aria-hidden="true">
     <div>
+      <div class="mobile-lang-switcher" aria-label="Selector de idioma">
+        <span class="active" data-lang="es">ES</span>
+        <a href="en/" data-lang="en" onclick="window.setLang('en')">EN</a>
+        <a href="de/" data-lang="de" onclick="window.setLang('de')">DE</a>
+        <a href="fr/" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+      </div>
+
       <span class="kicker crimson">Navegación</span>
       <ul class="mobile-nav-links">
         <li><a href="#proyectos">Proyectos</a></li>
@@ -1005,20 +1034,6 @@
       </div>
     </section>
 
-
-    <!-- =====================================================
-         14. INVERSIÓN
-         Inversión de referencia discreta (sin tarifario).
-         ===================================================== -->
-    <section class="section bg-ink" id="inversion">
-      <div class="container">
-        <div class="kicker crimson">Inversión Estimada</div>
-        <h2 class="display-title" style="color: var(--paper); margin-bottom: 20px;">
-          Inversión de referencia.
-        </h2>
-        <p class="body-large" style="color: rgba(244,243,239,0.7); max-width: 680px;">
-          Estructuramos propuestas a medida adaptadas a las fases de desarrollo y necesidades concretas de cada promoción inmobiliaria.
-        </p>
 
     <!-- =====================================================
          12. INVERSIÓN & CONTINUIDAD

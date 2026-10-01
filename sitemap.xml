@@ -1,243 +1,773 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <!-- ================================================================== -->
-    <!-- 1. PÁGINA PRINCIPAL & CORE                                        -->
+    <!-- 1. MULTILINGUAL CORE & LAUNCH PAGES (ES / EN / DE / FR)           -->
     <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/</loc>
-        <lastmod>2026-08-31</lastmod>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/"/>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- ================================================================== -->
-    <!-- ================================================================== -->
     <url>
-        <loc>https://eidosrender.es/proyectos</loc>
-        <lastmod>2026-09-30</lastmod>
+        <loc>https://eidosrender.es/servicios</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services"/>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios</loc>
-        <lastmod>2026-09-30</lastmod>
+        <loc>https://eidosrender.es/en/services</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services"/>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/infografia-3d</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
+        <loc>https://eidosrender.es/de/leistungen</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/video-3d</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
+        <loc>https://eidosrender.es/fr/services</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/proyectos</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/proyectos"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/projects"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/projekte"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/projets"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/projects"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/branding</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
+        <loc>https://eidosrender.es/en/projects</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/proyectos"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/projects"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/projekte"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/projets"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/projects"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/material-comercial</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
+        <loc>https://eidosrender.es/de/projekte</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/proyectos"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/projects"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/projekte"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/projets"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/projects"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/web-real-estate</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
+        <loc>https://eidosrender.es/fr/projets</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/proyectos"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/projects"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/projekte"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/projets"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/projects"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
     </url>
-    <url>
-        <loc>https://eidosrender.es/servicios/captacion</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/portfolio</loc>
-        <lastmod>2026-09-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+
     <url>
         <loc>https://eidosrender.es/contacto</loc>
-        <lastmod>2026-08-31</lastmod>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/contacto"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/contact"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/contact"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/contact"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/contact</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/contacto"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/contact"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/contact"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/contact"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/kontakt</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/contacto"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/contact"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/contact"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/contact"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/contact</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/contacto"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/contact"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/contact"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/contact"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/faq</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/faq"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/faq"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/faq"/>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/faq</loc>
-        <lastmod>2026-08-31</lastmod>
+        <loc>https://eidosrender.es/en/faq</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/faq"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/faq"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/faq"/>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/faq</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/faq"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/faq"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/faq"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/faq</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/faq"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/faq"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/faq"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/servicios/branding</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/branding"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/branding"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/branding"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/services/branding</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/branding"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/branding"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/branding"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/leistungen/branding</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/branding"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/branding"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/branding"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/services/branding</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/branding"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/branding"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/branding"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/branding"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/servicios/infografia-3d</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/infografia-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/rendu-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/services/3d-rendering</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/infografia-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/rendu-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/leistungen/3d-rendering</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/infografia-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/rendu-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/services/rendu-3d</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/infografia-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-rendering"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/rendu-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-rendering"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/servicios/video-3d</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-video"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/services/3d-video</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-video"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/leistungen/3d-video</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-video"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/services/video-3d</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/3d-video"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/video-3d"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/3d-video"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/servicios/material-comercial</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/material-comercial"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/vermarktungsunterlagen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/supports-commerciaux"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/services/marketing-collateral</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/material-comercial"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/vermarktungsunterlagen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/supports-commerciaux"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/leistungen/vermarktungsunterlagen</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/material-comercial"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/vermarktungsunterlagen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/supports-commerciaux"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/services/supports-commerciaux</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/material-comercial"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/vermarktungsunterlagen"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/supports-commerciaux"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/marketing-collateral"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/servicios/web-real-estate</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/web-real-estate"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/projekt-website"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/site-web-immobilier"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/services/real-estate-web</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/web-real-estate"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/projekt-website"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/site-web-immobilier"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/leistungen/projekt-website</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/web-real-estate"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/projekt-website"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/site-web-immobilier"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/services/site-web-immobilier</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/web-real-estate"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/projekt-website"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/site-web-immobilier"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/real-estate-web"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/servicios/captacion</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/captacion"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/digitale-vermarktung"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/acquisition"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/services/acquisition</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/captacion"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/digitale-vermarktung"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/acquisition"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/leistungen/digitale-vermarktung</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/captacion"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/digitale-vermarktung"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/acquisition"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/services/acquisition</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/captacion"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/digitale-vermarktung"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/acquisition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/acquisition"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/aviso-legal</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/aviso-legal"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/legal-notice"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/impressum"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/mentions-legales"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/legal-notice"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/legal-notice</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/aviso-legal"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/legal-notice"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/impressum"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/mentions-legales"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/legal-notice"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/impressum</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/aviso-legal"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/legal-notice"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/impressum"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/mentions-legales"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/legal-notice"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/mentions-legales</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/aviso-legal"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/legal-notice"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/impressum"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/mentions-legales"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/legal-notice"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/privacidad</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/privacidad"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/datenschutz"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-de-confidentialite"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/privacy-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/privacy-policy</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/privacidad"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/datenschutz"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-de-confidentialite"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/privacy-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/datenschutz</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/privacidad"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/datenschutz"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-de-confidentialite"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/privacy-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/politique-de-confidentialite</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/privacidad"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/privacy-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/datenschutz"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-de-confidentialite"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/privacy-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+
+    <url>
+        <loc>https://eidosrender.es/cookies</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/cookies"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/cookie-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/cookies"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-des-cookies"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/cookie-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/en/cookie-policy</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/cookies"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/cookie-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/cookies"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-des-cookies"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/cookie-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/de/cookies</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/cookies"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/cookie-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/cookies"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-des-cookies"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/cookie-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/fr/politique-des-cookies</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://eidosrender.es/cookies"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://eidosrender.es/en/cookie-policy"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://eidosrender.es/de/cookies"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/politique-des-cookies"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/cookie-policy"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.30</priority>
     </url>
 
     <!-- ================================================================== -->
-    <!-- 3. TIPOLOGÍAS Y ESPECIALIZACIONES ARQUITECTÓNICAS B2B              -->
+    <!-- 2. SPANISH ARCHITECTURAL TYPOLOGIES & LOCAL SEO                   -->
     <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/obra-nueva</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/vivienda-unifamiliar</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/reforma-de-piso</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/promociones-inmobiliarias</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-para-house-flipping</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.85</priority>
     </url>
-
-    <!-- ================================================================== -->
-    <!-- 4. COBERTURA GEOGRÁFICA & SEO LOCAL                               -->
-    <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/renders-valencia</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-madrid</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-malaga</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-alicante</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-sevilla</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-bilbao</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
-
-    <!-- ================================================================== -->
-    <!-- 5. BLOG EDITORIAL & ARTÍCULOS GUÍA                                -->
-    <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/blog</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/promotoras-obra-nueva</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/vender-pisos-sobre-plano</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/house-flipping</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/como-elegir-estudio-render</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/estrategias-visuales-promociones</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/home-staging-virtual</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/agencias-inmobiliarias</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/planos-3d-vs-planos-tecnicos</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/renders-fotorealistas-vs-comerciales</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/reducir-stock-inmobiliario-visualizacion-3d</loc>
-        <lastmod>2026-08-31</lastmod>
+        <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
-
-    <!-- ================================================================== -->
-    <!-- 6. PÁGINAS LEGALES & CUMPLIMIENTO RGPD                             -->
-    <!-- ================================================================== -->
-    <url>
-        <loc>https://eidosrender.es/aviso-legal</loc>
-        <lastmod>2026-08-31</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/privacidad</loc>
-        <lastmod>2026-08-31</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/cookies</loc>
-        <lastmod>2026-08-31</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-
 </urlset>

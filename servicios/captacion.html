@@ -16,6 +16,17 @@
   <meta name="description" content="Campañas de Google Ads y Meta Ads con creatividades basadas en renders y vídeo 3D para el lanzamiento de promociones inmobiliarias.">
   <link rel="canonical" href="https://eidosrender.es/servicios/captacion">
 
+  <!-- International SEO / Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://eidosrender.es/servicios/captacion">
+  <link rel="alternate" hreflang="en" href="https://eidosrender.es/en/services/acquisition">
+  <link rel="alternate" hreflang="de" href="https://eidosrender.es/de/leistungen/digitale-vermarktung">
+  <link rel="alternate" hreflang="fr" href="https://eidosrender.es/fr/services/acquisition">
+  <link rel="alternate" hreflang="x-default" href="https://eidosrender.es/en/services/acquisition">
+
+  <!-- Multilingual & Geo-routing -->
+  <script src="../js/i18n.js"></script>
+
+
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="Lanzamiento & Captación Digital — Eidos Render">
@@ -52,9 +63,21 @@
         </ul>
       </nav>
 
-      <a href="../contacto.html" class="nav-cta">
-        HABLEMOS DEL PROYECTO →
-      </a>
+            <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <span class="active" data-lang="es">ES</span>
+          <span class="lang-divider">/</span>
+          <a href="../en/services/acquisition.html" data-lang="en" onclick="window.setLang('en')">EN</a>
+          <span class="lang-divider">/</span>
+          <a href="../de/leistungen/digitale-vermarktung.html" data-lang="de" onclick="window.setLang('de')">DE</a>
+          <span class="lang-divider">/</span>
+          <a href="../fr/services/acquisition.html" data-lang="fr" onclick="window.setLang('fr')">FR</a>
+        </div>
+
+        <a href="../contacto.html" class="nav-cta">
+          HABLEMOS DEL PROYECTO →
+        </a>
+      </div>
 
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -142,7 +165,13 @@
     <div class="container">
       <div class="footer-bottom">
         <div>© 2026 Eidos Render. Captación Digital.</div>
-        <div style="display: flex; gap: 24px;">
+                <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
+            <span style="color: var(--crimson); font-weight: 700;">ES</span> ·
+            <a href="../en/services/acquisition.html" onclick="window.setLang('en')">EN</a> ·
+            <a href="../de/leistungen/digitale-vermarktung.html" onclick="window.setLang('de')">DE</a> ·
+            <a href="../fr/services/acquisition.html" onclick="window.setLang('fr')">FR</a>
+          </div>
           <a href="../proyectos.html">Proyectos</a>
           <a href="../servicios.html">Servicios</a>
           <a href="../contacto.html">Contacto</a>
