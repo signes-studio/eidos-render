@@ -53,11 +53,12 @@
   --font-poiret: 'Poiret One', sans-serif;
 
   /* Mapeo Jerárquico Oficial */
-  --font-special: var(--font-josefin);
+  --font-special: var(--font-poiret);
+  --font-display: var(--font-poiret);
+  --font-heading: var(--font-poiret);
   --font-primary: var(--font-josefin);
   --font-body: var(--font-josefin);
   --font-text: var(--font-josefin);
-  --font-display: var(--font-josefin);
   --font-jost: var(--font-josefin);
 
   --font-prata: var(--font-newsreader);
@@ -66,9 +67,9 @@
   --font-serif: var(--font-newsreader);
   --font-numeral: var(--font-newsreader);
 
-  --font-syncopate: var(--font-poiret);
+  --font-syncopate: var(--font-josefin);
   --font-wordmark: var(--font-poiret);
-  --font-condensed: var(--font-poiret);
+  --font-condensed: var(--font-josefin);
 
   /* Escala Fluida (clamp) */
   --text-hero: clamp(3.2rem, 7.5vw, 7.2rem);
@@ -267,13 +268,18 @@ button {
 
 /* --------------------------------------------------------------------------
    04. TIPOGRAFÍA Y JERARQUÍA EDITORIAL
-   Josefin Sans (Regular 400) + Newsreader (Bold 700 Italic Minúscula) + Poiret One (Regular 400)
+   1. Titulares: Poiret One en MAYÚSCULAS
+   2. Acentos: Newsreader Cursiva Bold Minúscula (Rojo en crema, Negro en rojo)
+   3. Resto de textos: TODOS en Josefin Sans
    -------------------------------------------------------------------------- */
-h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub, .hero-main-title {
-  font-family: var(--font-josefin);
+h1, h2, h3, h4, h5, h6,
+.font-display, .display-hero, .display-title, .display-sub,
+.hero-main-title, .editorial-headline, .section-title, .section-heading,
+.intro-title, .editorial-title, .service-name, .europe-card-hubs, .project-name {
+  font-family: var(--font-poiret) !important;
   font-weight: 400;
-  text-transform: none;
-  letter-spacing: -0.02em;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em;
   color: inherit;
   text-wrap: balance;
 }
@@ -281,30 +287,30 @@ h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub, .hero-ma
 .display-hero {
   font-size: var(--text-hero);
   line-height: 0.95;
-  letter-spacing: -0.02em;
-  text-transform: none;
-  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase !important;
+  font-family: var(--font-poiret) !important;
 }
 
 .display-title {
   font-size: var(--text-title);
   line-height: 0.98;
-  letter-spacing: -0.02em;
-  text-transform: none;
-  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase !important;
+  font-family: var(--font-poiret) !important;
 }
 
 .display-sub {
   font-size: var(--text-sub);
   line-height: 1.12;
-  letter-spacing: -0.015em;
-  text-transform: none;
-  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase !important;
+  font-family: var(--font-poiret) !important;
 }
 
-/* Manifiesto y entradillas en Josefin Sans Regular 400 */
+/* Manifiesto y entradillas en Josefin Sans */
 .manifesto-text {
-  font-family: var(--font-josefin);
+  font-family: var(--font-josefin) !important;
   font-size: var(--text-manifesto);
   font-weight: 400;
   line-height: 1.35;
@@ -314,13 +320,52 @@ h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub, .hero-ma
 }
 
 /* Frases y acentos editoriales en Newsreader (cursiva, bold 700 y minúscula) */
+/* SIEMPRE en color de acento: rojo (#A31A33) en fondo crema y NEGRO (#1B1918) en fondo rojo */
 .manifesto-phrase, .text-prata-accent, .font-prata, em, .display-italic, .newsreader-accent {
   font-family: var(--font-newsreader) !important;
   font-style: italic !important;
   font-weight: 700 !important;
   text-transform: lowercase !important;
   letter-spacing: normal;
-  color: inherit;
+  color: var(--granate) !important;
+}
+
+/* En titulares en mayúsculas, los acentos en Newsreader se mantienen estrictamente en minúsculas */
+h1 .text-prata-accent, h1 em,
+h2 .text-prata-accent, h2 em,
+h3 .text-prata-accent, h3 em,
+.display-hero em, .display-hero .text-prata-accent,
+.display-title em, .display-title .text-prata-accent,
+.hero-main-title em, .hero-main-title .text-prata-accent {
+  font-family: var(--font-newsreader) !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  text-transform: lowercase !important;
+  color: var(--granate) !important;
+}
+
+/* En fondo rojo / granate: acento Newsreader SIEMPRE en color NEGRO (#1B1918) */
+.section-granate .text-prata-accent,
+.section-granate .font-prata,
+.section-granate .font-newsreader,
+.section-granate em,
+.section-granate .display-italic,
+.section-granate .newsreader-accent,
+[data-bg="granate"] em,
+[data-bg="granate"] .text-prata-accent,
+.bg-granate em,
+.bg-granate .text-prata-accent,
+#servicios em,
+#servicios .text-prata-accent,
+#proceso em,
+#proceso .text-prata-accent,
+section[style*="var(--granate)"] em,
+section[style*="var(--granate)"] .text-prata-accent,
+section[style*="#A31A33"] em,
+section[style*="#A31A33"] .text-prata-accent,
+section[style*="background-color: var(--granate)"] em,
+section[style*="background-color: var(--granate)"] .text-prata-accent {
+  color: #1B1918 !important;
 }
 
 /* Cifras grandes en Newsreader */
@@ -334,14 +379,17 @@ h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub, .hero-ma
   font-variant-numeric: tabular-nums;
 }
 
-/* Poiret One: Navegación, botones, etiquetas y metadatos (Primera letra mayúscula, resto minúscula) */
-.kicker, .tag-meta, .nav-links a, .nav-cta, .btn-editorial, .project-num, .lang-switcher,
-.project-specs, .row-type, .row-num, .card-num, .card-meta, .footer-col-title, .logo-text, .wordmark,
-.app-panel-title, .app-lang-segmented a, .europe-card-region, .europe-card-tag, .app-cta-btn {
-  font-family: var(--font-poiret);
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0.06em;
+/* EL RESTO DE TEXTOS DE LA WEB DEBEN IR TODOS EN JOSEFIN SANS */
+body, p, a, button, input, textarea, select,
+.body-large, .body-regular, .hero-supporting-text,
+.btn, .btn-editorial, .cta-primary, .cta-secondary, .link-arrow,
+.tag-meta, .nav-links a, .nav-cta, .project-num, .lang-switcher,
+.project-specs, .row-type, .row-num, .card-num, .card-meta, .footer-col-title, .footer-desc,
+.app-panel-title, .app-lang-segmented a, .app-lang-segmented span, .europe-card-region,
+.europe-card-tag, .app-cta-btn, .app-nav-item a, .app-link,
+.service-short, .service-item-spec, .service-toggle-icon, .europe-card-desc,
+.project-services-line, .project-meta, .faq-question, .faq-answer, .footer-meta {
+  font-family: var(--font-josefin) !important;
 }
 
 .kicker {
@@ -1242,26 +1290,16 @@ p, .body-large, .body-regular {
 /* --------------------------------------------------------------------------
    11. ANIMACIONES & REVELADOS EDITORIALES
    -------------------------------------------------------------------------- */
-@media (prefers-reduced-motion: no-preference) {
-  .reveal-on-scroll {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity var(--transition-slow), transform var(--transition-slow);
-  }
-
-  .reveal-on-scroll.is-revealed {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.reveal-on-scroll.is-revealed,
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* --------------------------------------------------------------------------
@@ -1473,9 +1511,17 @@ p, .body-large, .body-regular {
   will-change: transform;
 }
 
-.line-mask-revealed .line-mask-inner {
+.line-mask-revealed .line-mask-inner,
+.revealed .line-mask-inner,
+.is-revealed .line-mask-inner {
   transform: translateY(0);
 }
+
+.line-mask:nth-child(1) .line-mask-inner { transition-delay: 0s; }
+.line-mask:nth-child(2) .line-mask-inner { transition-delay: 0.12s; }
+.line-mask:nth-child(3) .line-mask-inner { transition-delay: 0.24s; }
+.line-mask:nth-child(4) .line-mask-inner { transition-delay: 0.36s; }
+.line-mask:nth-child(5) .line-mask-inner { transition-delay: 0.48s; }
 
 /* Revelado de imagen con clip-path y des-escalado 1.15 -> 1 */
 .img-reveal-wrap {
@@ -1879,17 +1925,19 @@ p, .body-large, .body-regular {
 
 
 /* ==========================================================================
-   HEADER SUPERIOR CENTRAL: 100% TRANSPARENTE + SOLO LOGO
-   En reposo: centrado a dos tintas.
-   Al scrollear: pasa a pequeño y a una sola tinta (la negra #1B1918)
+   HEADER SUPERIOR CENTRAL: 100% TRANSPARENTE
+   En reposo: Isotipo a dos tintas + Nombre "EIDOS RENDER" centrado debajo
+   Al scrollear: Isotipo pasa a pequeño a una sola tinta (la negra #1B1918)
+                y el texto EIDOS RENDER se disuelve.
+   El botón de menú (3 líneas) se mantiene siempre alineado con el logo.
    ========================================================================== */
 .nav-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
-  z-index: 1000;
+  height: 96px;
+  z-index: 1200;
   background: transparent !important;
   background-color: transparent !important;
   pointer-events: none;
@@ -1898,14 +1946,14 @@ p, .body-large, .body-regular {
   border: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  transition: height 0.45s var(--easing-editorial);
+  transition: height 0.4s var(--easing-editorial);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav-header.scrolled {
-  height: 60px;
+  height: 58px;
   background: transparent !important;
   background-color: transparent !important;
   backdrop-filter: none !important;
@@ -1917,6 +1965,10 @@ p, .body-large, .body-regular {
 
 .nav-inner {
   width: 100%;
+  height: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 56px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1930,25 +1982,49 @@ p, .body-large, .body-regular {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .brand-lockup-vertical {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: var(--charcoal);
+  position: relative;
 }
 
-/* Solo se ve el logo: nombre textual oculto */
-.brand-name-scroll {
-  display: none !important;
+/* Nombre EIDOS RENDER centrado debajo del logo inicial en Poiret One bold */
+.brand-name-initial {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-poiret) !important;
+  font-weight: 700 !important;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Al scrollear: el texto EIDOS RENDER se disuelve */
+.nav-header.scrolled .brand-name-initial {
+  opacity: 0 !important;
+  transform: translate(-50%, -6px) !important;
+  pointer-events: none !important;
 }
 
 /* Isotipo grande a dos tintas centrado en reposo */
 .isotype-hero {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   overflow: visible;
   transition: width 0.4s var(--easing-editorial),
               height 0.4s var(--easing-editorial),
@@ -1968,8 +2044,8 @@ p, .body-large, .body-regular {
 
 /* Al scrollear: pasa a pequeño y a UNA SOLA TINTA: LA NEGRA (#1B1918) */
 .nav-header.scrolled .isotype-hero {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 .nav-header.scrolled .isotype-hero .iso-sun,
@@ -1982,13 +2058,14 @@ p, .body-large, .body-regular {
 }
 
 /* ==========================================================================
-   BOTÓN FLOTANTE DERECHO: SOLO DOS LÍNEAS EN NEGRO, SIN TEXTO, SIN CÍRCULO
+   BOTÓN FLOTANTE DERECHO: 3 LÍNEAS EN NEGRO, ALINEADO CONTINUAMENTE CON EL LOGO
    ========================================================================== */
 .floating-menu-btn {
-  position: fixed;
-  top: 32px;
-  right: 36px;
-  z-index: 1200;
+  position: absolute;
+  right: clamp(24px, 4vw, 56px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1300;
   pointer-events: auto;
   display: inline-flex;
   align-items: center;
@@ -2007,7 +2084,7 @@ p, .body-large, .body-regular {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  transform: scale(1.08);
+  transform: translateY(-50%) scale(1.08);
 }
 
 .floating-menu-btn .menu-btn-label {
@@ -2017,8 +2094,11 @@ p, .body-large, .body-regular {
 .floating-menu-btn .menu-btn-icon {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   width: 26px;
+  height: 18px;
 }
 
 .floating-menu-btn .menu-btn-icon span {
@@ -2027,21 +2107,70 @@ p, .body-large, .body-regular {
   height: 2px;
   background-color: #1B1918 !important;
   border-radius: 0 !important;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.25s ease,
+              background-color 0.35s ease;
 }
 
-.floating-menu-btn.active .line-top {
-  transform: translateY(4px) rotate(45deg);
+/* Morphing de 3 líneas a "X" cuando el menú está abierto */
+.floating-menu-btn.active .line-1 {
+  transform: translateY(7px) rotate(45deg);
 }
 
-.floating-menu-btn.active .line-bottom {
-  transform: translateY(-4px) rotate(-45deg);
+.floating-menu-btn.active .line-2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.floating-menu-btn.active .line-3 {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
+  .nav-header {
+    height: 84px;
+  }
+  .nav-header.scrolled {
+    height: 52px;
+  }
+  .nav-inner {
+    padding: 0 20px;
+  }
+  .isotype-hero {
+    width: 38px;
+    height: 38px;
+  }
+  .nav-header.scrolled .isotype-hero {
+    width: 24px;
+    height: 24px;
+  }
+  .brand-name-initial {
+    font-size: 9.5px;
+    letter-spacing: 0.2em;
+    top: calc(100% + 4px);
+  }
   .floating-menu-btn {
-    top: 22px;
     right: 20px;
+    padding: 6px !important;
+  }
+  .floating-menu-btn .menu-btn-icon {
+    width: 24px;
+    height: 16px;
+    gap: 4px;
+  }
+  .floating-menu-btn .menu-btn-icon span {
+    width: 24px;
+    height: 2px;
+  }
+  .floating-menu-btn.active .line-1 {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .floating-menu-btn.active .line-2 {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .floating-menu-btn.active .line-3 {
+    transform: translateY(-6px) rotate(-45deg);
   }
 }
 
@@ -2248,7 +2377,12 @@ p, .body-large, .body-regular {
 /* Animaciones y Efectos Visuales en Textos y Elementos (Bidireccional) */
 .text-reveal-flow,
 .reveal-on-scroll,
-.editorial-reveal {
+.editorial-reveal,
+.europe-card,
+.feature-cards-grid > div,
+.service-item,
+.project-card,
+.faq-item {
   opacity: 0;
   transform: translateY(32px);
   filter: blur(4px);
@@ -2260,7 +2394,12 @@ p, .body-large, .body-regular {
 
 .text-reveal-flow.revealed,
 .reveal-on-scroll.revealed,
-.editorial-reveal.revealed {
+.editorial-reveal.revealed,
+.europe-card.revealed,
+.feature-cards-grid > div.revealed,
+.service-item.revealed,
+.project-card.revealed,
+.faq-item.revealed {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -2695,10 +2834,11 @@ html, body {
     max-height: 20px;
   }
 
-  /* Botón Flotante Móvil: solo dos líneas en negro, sin texto, sin círculo */
+  /* Botón Flotante Móvil: 3 líneas en negro alineado con el logo */
   .floating-menu-btn {
-    top: 18px;
     right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 6px !important;
     background: transparent !important;
     border: none !important;
@@ -2706,9 +2846,14 @@ html, body {
     box-shadow: none !important;
   }
 
+  .floating-menu-btn:hover {
+    transform: translateY(-50%) scale(1.08);
+  }
+
   .floating-menu-btn .menu-btn-icon {
     width: 24px;
-    gap: 5px;
+    height: 16px;
+    gap: 4px;
   }
 
   .floating-menu-btn .menu-btn-icon span {

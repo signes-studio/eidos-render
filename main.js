@@ -7,7 +7,8 @@
 (function () {
   'use strict';
 
-  const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Forzar animaciones siempre activas en escritorio y móvil según especificación de diseño
+  const isReducedMotion = false;
   const isTouchDevice = window.matchMedia('(hover: none) or (pointer: coarse)').matches;
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -15,10 +16,10 @@
       initLenis();
       initPreloader();
       initFloatingMenu();
+      initMaskedReveals();
       initScrollReveals();
       initPageTransitions();
       initHeaderBehavior();
-      initMaskedReveals();
       initCustomCursor();
       initMagneticButtons();
       initLayerScrub();
@@ -79,29 +80,30 @@
      ========================================================================== */
   let lenisInstance = null;
   function initLenis() {
-    if (isReducedMotion || !window.Lenis) return;
+    if (!window.Lenis) return;
 
     try {
       lenisInstance = new window.Lenis({
-        duration: 1.15,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Expo-out de alta precisión
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Expo-out de alta precisión editorial
         orientation: 'vertical',
         smoothWheel: true,
         wheelMultiplier: 0.95
       });
+      window.__lenis = lenisInstance;
 
-      function raf(time) {
-        lenisInstance.raf(time);
-        requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
-
-      if (window.ScrollTrigger) {
+      if (window.gsap && window.ScrollTrigger) {
         lenisInstance.on('scroll', window.ScrollTrigger.update);
         window.gsap.ticker.add((time) => {
           lenisInstance.raf(time * 1000);
         });
         window.gsap.ticker.lagSmoothing(0);
+      } else {
+        function raf(time) {
+          lenisInstance.raf(time);
+          requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
       }
     } catch (e) {
       console.warn('Lenis falló al iniciar:', e);
@@ -278,15 +280,8 @@
      06. REVELADO LÍNEA A LÍNEA CON MÁSCARA (Line-by-Line Reveals)
      ========================================================================== */
   function initMaskedReveals() {
-    if (isReducedMotion) {
-      document.querySelectorAll('.line-mask, .img-reveal-wrap').forEach(el => {
-        el.classList.add('line-mask-revealed', 'is-revealed');
-      });
-      return;
-    }
-
-    // Convertir titulares a máscaras de línea
-    const targets = document.querySelectorAll('.mask-reveal-title, .display-hero, .display-title');
+    // Convertir titulares a máscaras de línea (Kategora Style)
+    const targets = document.querySelectorAll('.hero-main-title, .mask-reveal-title, .display-hero, .display-title');
     targets.forEach(el => {
       if (el.dataset.masked) return;
       el.dataset.masked = 'true';
@@ -315,14 +310,14 @@
           entry.target.classList.add('line-mask-revealed', 'is-revealed');
         } else {
           const rect = entry.boundingClientRect;
-          if (rect.bottom < 0 || rect.top > window.innerHeight) {
+          if (rect.bottom < -30 || rect.top > window.innerHeight + 30) {
             entry.target.classList.remove('line-mask-revealed', 'is-revealed');
           }
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -30px 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -15px 0px'
     });
 
     document.querySelectorAll('.line-mask, .img-reveal-wrap, .reveal-on-scroll').forEach(el => {
@@ -698,7 +693,7 @@
      ========================================================================== */
   function initScrollReveals() {
     const elements = document.querySelectorAll(
-      '.text-reveal-flow, .scroll-reveal, .editorial-reveal, .europe-card, .feature-cards-grid > div, .service-item, .project-card, .faq-item'
+      '.text-reveal-flow, .scroll-reveal, .editorial-reveal, .europe-card, .feature-cards-grid > div, .service-item, .project-card, .faq-item, .display-title, .line-mask, .img-reveal-wrap'
     );
     if (!elements.length) return;
 
@@ -706,19 +701,19 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
+            entry.target.classList.add('revealed', 'line-mask-revealed', 'is-revealed');
           } else {
             // Fuera de vista: resetear si el elemento ha salido por arriba o por abajo
             // para permitir que vuelva a animarse al scrollear hacia arriba o hacia abajo
             const rect = entry.boundingClientRect;
-            if (rect.bottom < -40 || rect.top > window.innerHeight + 40) {
-              entry.target.classList.remove('revealed');
+            if (rect.bottom < -30 || rect.top > window.innerHeight + 30) {
+              entry.target.classList.remove('revealed', 'line-mask-revealed', 'is-revealed');
             }
           }
         });
       }, {
-        threshold: 0.12,
-        rootMargin: '0px 0px -20px 0px'
+        threshold: 0.08,
+        rootMargin: '0px 0px -15px 0px'
       });
 
       elements.forEach(el => {
@@ -728,11 +723,11 @@
       // Animación suave de entrada inicial para los elementos del hero visibles en pantalla
       requestAnimationFrame(() => {
         setTimeout(() => {
-          const heroElements = document.querySelectorAll('#hero .text-reveal-flow, #hero .line-mask');
+          const heroElements = document.querySelectorAll('#hero .text-reveal-flow, #hero .line-mask, #hero .hero-main-title');
           heroElements.forEach((el, idx) => {
             setTimeout(() => {
               el.classList.add('revealed', 'line-mask-revealed');
-            }, idx * 90);
+            }, idx * 100);
           });
         }, 120);
       });
