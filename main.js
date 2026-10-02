@@ -62,7 +62,7 @@
       // Ajustar ruta si estamos en subdirectorios
       const depth = (window.location.pathname.match(/\//g) || []).length;
       let prefix = '';
-      if (window.location.pathname.includes('/servicios/') || window.location.pathname.includes('/_tests/')) {
+      if (window.location.pathname.includes('/servicios/')) {
         prefix = '../';
       }
       const s = document.createElement('script');
