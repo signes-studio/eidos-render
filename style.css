@@ -43,23 +43,32 @@
   --crimson-hover: var(--granate-hover);
 
   /* ==========================================================================
-     02. TIPOGRAFÍAS OFICIALES
-     Special Gothic como principal, Syncopate + Prata en textos
+     02. TIPOGRAFÍAS OFICIALES (Autoalojadas)
+     Josefin Sans como principal (Regular 400),
+     Newsreader en acentos (Cursiva, Bold 700, Minúscula),
+     Poiret One en navegación, botones y metadatos (Primera mayúscula, resto minúscula)
      ========================================================================== */
-  --font-special: 'Special Gothic', sans-serif;
-  --font-syncopate: 'Syncopate', sans-serif;
-  --font-bodoni: 'Bodoni Moda', Georgia, serif;
-  --font-prata: 'Prata', Georgia, serif;
-  --font-jost: 'Jost', sans-serif;
+  --font-josefin: 'Josefin Sans', sans-serif;
+  --font-newsreader: 'Newsreader', Georgia, serif;
+  --font-poiret: 'Poiret One', sans-serif;
 
-  /* Mapeo Jerárquico */
-  --font-display: var(--font-special);
-  --font-wordmark: var(--font-syncopate);
-  --font-serif: var(--font-prata);
-  --font-body: var(--font-special);
-  --font-text: var(--font-special);
-  --font-condensed: var(--font-syncopate);
-  --font-numeral: var(--font-prata);
+  /* Mapeo Jerárquico Oficial */
+  --font-special: var(--font-josefin);
+  --font-primary: var(--font-josefin);
+  --font-body: var(--font-josefin);
+  --font-text: var(--font-josefin);
+  --font-display: var(--font-josefin);
+  --font-jost: var(--font-josefin);
+
+  --font-prata: var(--font-newsreader);
+  --font-bodoni: var(--font-newsreader);
+  --font-accent: var(--font-newsreader);
+  --font-serif: var(--font-newsreader);
+  --font-numeral: var(--font-newsreader);
+
+  --font-syncopate: var(--font-poiret);
+  --font-wordmark: var(--font-poiret);
+  --font-condensed: var(--font-poiret);
 
   /* Escala Fluida (clamp) */
   --text-hero: clamp(3.2rem, 7.5vw, 7.2rem);
@@ -257,10 +266,11 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   04. TIPOGRAFÍA Y JERARQUÍA (Syncopate 700 + Bodoni Moda + Prata + Jost)
+   04. TIPOGRAFÍA Y JERARQUÍA EDITORIAL
+   Josefin Sans (Regular 400) + Newsreader (Bold 700 Italic Minúscula) + Poiret One (Regular 400)
    -------------------------------------------------------------------------- */
-h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub {
-  font-family: var(--font-bodoni);
+h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub, .hero-main-title {
+  font-family: var(--font-josefin);
   font-weight: 400;
   text-transform: none;
   letter-spacing: -0.02em;
@@ -292,75 +302,67 @@ h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub {
   font-weight: 400;
 }
 
-/* Manifiesto y entradillas en Prata (20-40px) */
+/* Manifiesto y entradillas en Josefin Sans Regular 400 */
 .manifesto-text {
-  font-family: var(--font-prata);
+  font-family: var(--font-josefin);
   font-size: var(--text-manifesto);
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.35;
   letter-spacing: normal;
   max-width: 1100px;
   text-wrap: pretty;
 }
 
-.manifesto-phrase {
-  font-family: var(--font-prata);
-  font-style: italic;
-  font-weight: 400;
-  text-transform: none;
+/* Frases y acentos editoriales en Newsreader (cursiva, bold 700 y minúscula) */
+.manifesto-phrase, .text-prata-accent, .font-prata, em, .display-italic, .newsreader-accent {
+  font-family: var(--font-newsreader) !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  text-transform: lowercase !important;
   letter-spacing: normal;
   color: inherit;
 }
 
-/* Cifras grandes en Prata */
+/* Cifras grandes en Newsreader */
 .display-num, .stat-num {
-  font-family: var(--font-prata);
+  font-family: var(--font-newsreader);
   font-size: clamp(2.4rem, 4.2vw, 3.8rem);
-  font-weight: 400;
+  font-style: italic;
+  font-weight: 700;
   line-height: 0.95;
   letter-spacing: normal;
   font-variant-numeric: tabular-nums;
 }
 
-/* Syncopate 700: Wordmark, navegación, botones, etiquetas y metadatos (MAYÚSCULAS 10-12px) */
+/* Poiret One: Navegación, botones, etiquetas y metadatos (Primera letra mayúscula, resto minúscula) */
 .kicker, .tag-meta, .nav-links a, .nav-cta, .btn-editorial, .project-num, .lang-switcher,
-.project-specs, .row-type, .row-num, .card-num, .card-meta, .footer-col-title, .logo-text, .wordmark {
-  font-family: var(--font-syncopate);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+.project-specs, .row-type, .row-num, .card-num, .card-meta, .footer-col-title, .logo-text, .wordmark,
+.app-panel-title, .app-lang-segmented a, .europe-card-region, .europe-card-tag, .app-cta-btn {
+  font-family: var(--font-poiret);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.06em;
 }
 
 .kicker {
-  font-size: 10.5px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.08em;
   display: block;
   line-height: 1.5;
   margin-bottom: 24px;
 }
 
+/* Eliminación total de puntos decorativos al lado de kickers */
 .kicker-dot {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: currentColor;
-  border-radius: 50% !important;
-  vertical-align: 0.12em;
-  margin-right: 8px;
+  display: none !important;
 }
 
 .kicker.crimson, .kicker-red, .kicker-accent {
   color: var(--accent);
 }
 
-/* Sobre fondo oscuro, acento en superficies o accent-on-dark en líneas; nunca texto pequeño en acento */
 .bg-ink .kicker.crimson, .bg-ink .kicker-red, .bg-ink .kicker-accent {
   color: var(--bone);
-}
-
-.bg-ink .kicker.crimson .kicker-dot,
-.bg-ink .kicker-accent .kicker-dot {
-  background-color: var(--accent-on-dark);
 }
 
 .kicker.signal, .kicker-gray {
@@ -371,9 +373,10 @@ h1, h2, h3, .font-display, .display-hero, .display-title, .display-sub {
   color: var(--clay);
 }
 
-/* Jost 300/400: Texto corrido 16-18px, máx. 60-70 caracteres por línea */
+/* Josefin Sans: Texto corrido 16-18px */
 p, .body-large, .body-regular {
-  font-family: var(--font-jost);
+  font-family: var(--font-josefin);
+  font-weight: 400;
   text-wrap: pretty;
 }
 
@@ -401,35 +404,42 @@ p, .body-large, .body-regular {
 }
 
 /* --------------------------------------------------------------------------
-   05. HEADER & NAVEGACIÓN DISCRETA (Compacting, Auto-hide & Dynamic Theme)
+   05. HEADER & NAVEGACIÓN DISCRETA (100% Transparente, Cero Fondos, Cero Sombras)
    -------------------------------------------------------------------------- */
 .nav-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--nav-h);
+  height: 90px;
   z-index: 1000;
-  transition: height 0.35s var(--easing-editorial),
-              transform 0.4s var(--easing-editorial),
-              background-color 0.4s ease,
-              border-color 0.4s ease,
-              color 0.4s ease;
-  background-color: rgba(31, 17, 20, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line-dark);
-  color: var(--bone);
+  pointer-events: none;
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  color: var(--charcoal);
+  transition: height 0.45s var(--easing-editorial);
 }
 
-.nav-header.nav-scrolled {
-  height: var(--nav-h-compact);
+.nav-header.nav-scrolled,
+.nav-header.scrolled {
+  height: 60px;
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .nav-header.nav-light {
-  background-color: rgba(238, 230, 218, 0.95);
-  border-bottom: 1px solid var(--line);
-  color: var(--charcoal);
+  background: transparent !important;
+  border: none !important;
 }
 
 .nav-header.nav-hidden {
@@ -759,11 +769,11 @@ p, .body-large, .body-regular {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  font-family: var(--font-syncopate);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: var(--font-poiret);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: none;
   padding: 16px 32px;
   border: 1px solid var(--line-strong);
   color: var(--charcoal);
@@ -1869,34 +1879,40 @@ p, .body-large, .body-regular {
 
 
 /* ==========================================================================
-   HEADER SUPERIOR CENTRAL: LOGOTIPO A DOS TINTAS + NOMBRE DINÁMICO
+   HEADER SUPERIOR CENTRAL: 100% TRANSPARENTE + SOLO LOGO
+   En reposo: centrado a dos tintas.
+   Al scrollear: pasa a pequeño y a una sola tinta (la negra #1B1918)
    ========================================================================== */
 .nav-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 124px;
+  height: 90px;
   z-index: 1000;
-  background-color: transparent;
+  background: transparent !important;
+  background-color: transparent !important;
   pointer-events: none;
-  transition: height 0.45s var(--easing-editorial),
-              background-color 0.4s ease,
-              border-color 0.4s ease,
-              backdrop-filter 0.4s ease,
-              box-shadow 0.4s ease;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  transition: height 0.45s var(--easing-editorial);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav-header.scrolled {
-  height: 64px;
-  background-color: rgba(241, 235, 223, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 4px 20px rgba(27, 25, 24, 0.04);
+  height: 60px;
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .nav-inner {
@@ -1917,20 +1933,22 @@ p, .body-large, .body-regular {
 }
 
 .brand-lockup-vertical {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   text-decoration: none;
   color: var(--charcoal);
-  transition: gap 0.4s var(--easing-editorial);
+}
+
+/* Solo se ve el logo: nombre textual oculto */
+.brand-name-scroll {
+  display: none !important;
 }
 
 /* Isotipo grande a dos tintas centrado en reposo */
 .isotype-hero {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   overflow: visible;
   transition: width 0.4s var(--easing-editorial),
               height 0.4s var(--easing-editorial),
@@ -1939,134 +1957,122 @@ p, .body-large, .body-regular {
 
 .isotype-hero .iso-sun {
   fill: var(--granate);
-  transition: fill 0.3s ease;
+  transition: fill 0.35s ease;
 }
 
 .isotype-hero .iso-line-1,
 .isotype-hero .iso-line-2 {
   fill: var(--charcoal);
-  transition: fill 0.3s ease;
+  transition: fill 0.35s ease;
 }
 
-/* Nombre EIDOS RENDER centrado debajo */
-.brand-name-scroll {
-  font-family: var(--font-syncopate);
-  font-weight: 700;
-  font-size: 13.5px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--charcoal);
-  white-space: nowrap;
-  line-height: 1;
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-              max-height 0.4s ease;
-  max-height: 24px;
-}
-
-/* Al hacer scroll: el nombre se funde y solo queda el logo centrado sutil */
-.nav-header.scrolled .brand-name-scroll {
-  opacity: 0;
-  transform: translateY(-8px);
-  max-height: 0;
-  pointer-events: none;
-}
-
+/* Al scrollear: pasa a pequeño y a UNA SOLA TINTA: LA NEGRA (#1B1918) */
 .nav-header.scrolled .isotype-hero {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 
-.nav-header.scrolled .brand-lockup-vertical {
-  gap: 0;
+.nav-header.scrolled .isotype-hero .iso-sun,
+.nav-header.scrolled .isotype-hero .iso-line-1,
+.nav-header.scrolled .isotype-hero .iso-line-2,
+.nav-header.scrolled .iso-sun,
+.nav-header.scrolled .iso-line-1,
+.nav-header.scrolled .iso-line-2 {
+  fill: #1B1918 !important;
 }
 
 /* ==========================================================================
-   BOTÓN FLOTANTE DERECHO & MENÚ TIPO APP
+   BOTÓN FLOTANTE DERECHO: SOLO DOS LÍNEAS EN NEGRO, SIN TEXTO, SIN CÍRCULO
    ========================================================================== */
 .floating-menu-btn {
   position: fixed;
-  top: 24px;
-  right: 28px;
+  top: 32px;
+  right: 36px;
   z-index: 1200;
   pointer-events: auto;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  background-color: var(--charcoal);
-  color: var(--cream);
-  padding: 12px 22px;
-  border: 1px solid var(--charcoal);
-  border-radius: 30px !important; /* Píldora moderna tipo app */
-  font-family: var(--font-syncopate);
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  justify-content: center;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 8px !important;
+  box-shadow: none !important;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(27, 25, 24, 0.12);
-  transition: all 0.35s var(--easing-editorial);
+  transition: transform 0.3s ease;
 }
 
 .floating-menu-btn:hover {
-  background-color: var(--granate);
-  border-color: var(--granate);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(163, 26, 51, 0.25);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: scale(1.08);
+}
+
+.floating-menu-btn .menu-btn-label {
+  display: none !important;
 }
 
 .floating-menu-btn .menu-btn-icon {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  width: 16px;
+  gap: 6px;
+  width: 26px;
 }
 
 .floating-menu-btn .menu-btn-icon span {
   display: block;
-  height: 1.5px;
-  background-color: currentColor;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 26px;
+  height: 2px;
+  background-color: #1B1918 !important;
+  border-radius: 0 !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
 }
 
 .floating-menu-btn.active .line-top {
-  transform: translateY(2.75px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
 }
 
 .floating-menu-btn.active .line-bottom {
-  transform: translateY(-2.75px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
 }
 
-/* Modal / Isla Flotante Tipo App */
+@media (max-width: 768px) {
+  .floating-menu-btn {
+    top: 22px;
+    right: 20px;
+  }
+}
+
+/* Panel Desplegable Editorial (Cero radius, Cero sombras) */
 .floating-app-panel {
   position: fixed;
-  top: 78px;
-  right: 28px;
-  width: min(360px, calc(100vw - 32px));
+  top: 76px;
+  right: 32px;
+  width: min(340px, calc(100vw - 32px));
   background-color: rgba(241, 235, 223, 0.98);
   color: var(--charcoal);
   z-index: 1150;
-  border-radius: 20px !important;
+  border-radius: 0 !important;
   border: 1px solid var(--line);
-  box-shadow: 0 24px 60px rgba(27, 25, 24, 0.18), 0 4px 16px rgba(27, 25, 24, 0.05);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  box-shadow: none !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   opacity: 0;
-  transform: translateY(-12px) scale(0.96);
+  transform: translateY(-12px);
   pointer-events: none;
   transform-origin: top right;
-  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .floating-app-panel.open {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -2224,10 +2230,11 @@ p, .body-large, .body-regular {
 
 .hero-supporting-media {
   position: relative;
-  border: 1px solid var(--line);
-  background-color: var(--cream-2);
-  padding: 8px;
-  box-shadow: 0 16px 40px rgba(27, 25, 24, 0.08);
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  overflow: hidden;
 }
 
 .hero-supporting-media video,
@@ -2235,30 +2242,42 @@ p, .body-large, .body-regular {
   width: 100%;
   aspect-ratio: 16/10;
   object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Animaciones y Efectos Visuales en Textos */
-.text-reveal-flow {
+/* Animaciones y Efectos Visuales en Textos y Elementos (Bidireccional) */
+.text-reveal-flow,
+.reveal-on-scroll,
+.editorial-reveal {
   opacity: 0;
-  transform: translateY(28px);
-  filter: blur(6px);
-  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-              filter 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(32px);
+  filter: blur(4px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
 }
 
-.text-reveal-flow.revealed {
+.text-reveal-flow.revealed,
+.reveal-on-scroll.revealed,
+.editorial-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
 }
 
-/* Citas y Palabras Destacadas con Prata Italic y Granate Vivo */
-.text-prata-accent, .font-prata, em, .display-italic {
-  font-family: var(--font-prata) !important;
-  font-style: italic;
-  font-weight: 400;
+/* Citas y Palabras Destacadas con Newsreader: Cursiva, Bold 700 y Minúscula */
+.text-prata-accent, .font-prata, em, .display-italic, .newsreader-accent {
+  font-family: var(--font-newsreader) !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  text-transform: lowercase !important;
   color: var(--granate);
+}
+
+.bg-ink .text-prata-accent,
+.bg-ink em {
+  color: var(--cream) !important;
 }
 
 /* ==========================================================================
@@ -2359,44 +2378,53 @@ html, body {
 }
 
 /* ==========================================================================
-   ÁMBITO EUROPEO & FAQ (POTENCIA SEO 200%)
+   ÁMBITO EUROPEO & BRANDING — DISEÑO EDITORIAL TIPO REVISTA (Cero tarjetas, Cero sombras)
    ========================================================================== */
 .europe-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 48px;
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: 56px;
 }
 
 .europe-card {
-  background-color: var(--cream);
-  border: 1px solid var(--line);
-  border-radius: 12px !important;
-  padding: 32px 24px;
+  background-color: transparent !important;
+  border: none !important;
+  border-right: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.europe-card:last-child {
+  border-right: none !important;
 }
 
 .europe-card:hover {
-  border-color: var(--granate);
-  transform: translateY(-2px);
+  background-color: rgba(241, 235, 223, 0.5) !important;
+  transform: none;
 }
 
 .europe-card-region {
-  font-family: var(--font-syncopate);
+  font-family: var(--font-poiret);
   font-size: 11px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   color: var(--granate);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 14px;
 }
 
 .europe-card-hubs {
   font-family: var(--font-special);
   font-size: 1.35rem;
+  font-weight: 400;
   color: var(--charcoal);
   line-height: 1.2;
   margin-bottom: 16px;
@@ -2405,27 +2433,31 @@ html, body {
 .europe-card-desc {
   font-family: var(--font-special);
   font-size: 0.95rem;
+  font-weight: 400;
   line-height: 1.6;
   color: var(--warm-gray);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .europe-card-tag {
-  font-family: var(--font-syncopate);
-  font-size: 9.5px;
-  letter-spacing: 0.1em;
+  font-family: var(--font-poiret);
+  font-size: 10px;
+  letter-spacing: 0.06em;
   color: var(--charcoal);
   border-top: 1px solid var(--line);
   padding-top: 14px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .europe-tech-strip {
-  background-color: var(--cream);
-  border: 1px solid var(--line);
-  border-radius: 12px !important;
-  padding: 24px 32px;
-  margin-top: 36px;
+  background-color: transparent !important;
+  border: none !important;
+  border-top: 1px solid var(--line) !important;
+  border-bottom: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 24px 0;
+  margin-top: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2437,11 +2469,67 @@ html, body {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--font-syncopate);
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
-  color: var(--charcoal);
-  text-transform: uppercase;
+  font-family: var(--font-poiret);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+/* Feature Grid Editorial (Identidad & Branding) */
+.feature-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: 48px;
+}
+
+.feature-cards-grid > div {
+  background-color: transparent !important;
+  border: none !important;
+  border-right: 1px solid var(--line) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 36px 24px !important;
+}
+
+.feature-cards-grid > div:last-child {
+  border-right: none !important;
+}
+
+@media (max-width: 1024px) {
+  .europe-grid,
+  .feature-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .europe-card:nth-child(2),
+  .feature-cards-grid > div:nth-child(2) {
+    border-right: none !important;
+  }
+  .europe-card:nth-child(1),
+  .europe-card:nth-child(2),
+  .feature-cards-grid > div:nth-child(1),
+  .feature-cards-grid > div:nth-child(2) {
+    border-bottom: 1px solid var(--line) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .europe-grid,
+  .feature-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .europe-card,
+  .feature-cards-grid > div {
+    border-right: none !important;
+    border-bottom: 1px solid var(--line) !important;
+    padding: 28px 12px !important;
+  }
+  .europe-card:last-child,
+  .feature-cards-grid > div:last-child {
+    border-bottom: none !important;
+  }
 }
 
 .europe-tech-dot {
@@ -2607,30 +2695,40 @@ html, body {
     max-height: 20px;
   }
 
-  /* Botón Flotante Móvil */
+  /* Botón Flotante Móvil: solo dos líneas en negro, sin texto, sin círculo */
   .floating-menu-btn {
-    top: 16px;
-    right: 14px;
-    padding: 9px 15px;
-    gap: 8px;
-    font-size: 9.5px;
-    letter-spacing: 0.12em;
-    border-radius: 9999px !important;
+    top: 18px;
+    right: 18px;
+    padding: 6px !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
   .floating-menu-btn .menu-btn-icon {
-    width: 14px;
+    width: 24px;
+    gap: 5px;
   }
 
-  /* Isla Flotante Tipo App Móvil */
+  .floating-menu-btn .menu-btn-icon span {
+    width: 24px;
+    height: 2px;
+    background-color: #1B1918 !important;
+    border-radius: 0 !important;
+  }
+
+  /* Panel Flotante Móvil Editorial */
   .floating-app-panel {
     top: 66px;
     left: 12px;
     right: 12px;
     width: auto;
     max-width: calc(100vw - 24px);
-    padding: 20px;
-    border-radius: 18px !important;
+    padding: 24px 20px;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid var(--line);
     max-height: calc(100vh - 82px);
     overflow-y: auto;
     gap: 16px;

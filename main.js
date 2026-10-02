@@ -45,6 +45,7 @@
 
     // Detectar si ya están cargados
     if (window.Lenis && window.gsap && window.ScrollTrigger) {
+      window.gsap.registerPlugin(window.ScrollTrigger);
       return callback();
     }
 
@@ -308,16 +309,20 @@
       }
     });
 
-    const observer = new IntersectionObserver((entries, obs) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('line-mask-revealed', 'is-revealed');
-          obs.unobserve(entry.target);
+        } else {
+          const rect = entry.boundingClientRect;
+          if (rect.bottom < 0 || rect.top > window.innerHeight) {
+            entry.target.classList.remove('line-mask-revealed', 'is-revealed');
+          }
         }
       });
     }, {
-      threshold: 0.15,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.12,
+      rootMargin: '0px 0px -30px 0px'
     });
 
     document.querySelectorAll('.line-mask, .img-reveal-wrap, .reveal-on-scroll').forEach(el => {
@@ -688,33 +693,48 @@
   }
 
   /* ==========================================================================
-     SCROLL REVEAL TRANSITIONS (Aparición de textos al ir bajando)
+     SCROLL REVEAL TRANSITIONS — BIDIRECCIONALES (KATEGORA STYLE)
+     Animación fluida tanto al bajar como al subir el scroll en escritorio y móvil.
      ========================================================================== */
   function initScrollReveals() {
-    const elements = document.querySelectorAll('.text-reveal-flow, .scroll-reveal');
+    const elements = document.querySelectorAll(
+      '.text-reveal-flow, .scroll-reveal, .editorial-reveal, .europe-card, .feature-cards-grid > div, .service-item, .project-card, .faq-item'
+    );
     if (!elements.length) return;
 
     if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries, obs) => {
+      const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
-            obs.unobserve(entry.target);
+          } else {
+            // Fuera de vista: resetear si el elemento ha salido por arriba o por abajo
+            // para permitir que vuelva a animarse al scrollear hacia arriba o hacia abajo
+            const rect = entry.boundingClientRect;
+            if (rect.bottom < -40 || rect.top > window.innerHeight + 40) {
+              entry.target.classList.remove('revealed');
+            }
           }
         });
       }, {
-        threshold: 0.08,
+        threshold: 0.12,
         rootMargin: '0px 0px -20px 0px'
       });
 
       elements.forEach(el => {
-        // Revelar inmediatamente los que ya estén visibles en la carga inicial
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) {
-          el.classList.add('revealed');
-        } else {
-          observer.observe(el);
-        }
+        observer.observe(el);
+      });
+
+      // Animación suave de entrada inicial para los elementos del hero visibles en pantalla
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const heroElements = document.querySelectorAll('#hero .text-reveal-flow, #hero .line-mask');
+          heroElements.forEach((el, idx) => {
+            setTimeout(() => {
+              el.classList.add('revealed', 'line-mask-revealed');
+            }, idx * 90);
+          });
+        }, 120);
       });
     } else {
       elements.forEach(el => el.classList.add('revealed'));
