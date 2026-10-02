@@ -1,105 +1,130 @@
-# Eidos Render — International Real Estate Launch Studio & Agency
-## Full Documentation for Agents, Search Engines & LLMs
+# Eidos Render — Full European Real Estate Launch Agency & 3D Visualization Documentation
+## Comprehensive Reference for Autonomous Agents, Search Engines & LLMs
 
-> Eidos Render is an international creative and visual partner specialized in the commercial launch of real estate developments across Europe (Spain, Germany, France, Switzerland, Austria, United Kingdom, and Benelux). It covers the full lifecycle from architectural project to buyer acquisition: visual direction, branding & identity, photorealistic 3D rendering, 3D film & animation, sales collateral, custom development websites, and qualified lead acquisition across Google Ads and Meta Ads.
-
----
-
-## 1. Brand Philosophy & Core Positioning
-
-- **Core concept**: From architectural project to market launch.
-- **Tagline**: One unified vision. Every asset covered.
-- **System**:
-  ARCHITECTURE → IMAGERY → BRAND IDENTITY → COMMERCIAL ASSETS → DIGITAL ECOSYSTEM → BUYER ACQUISITION
-
-Eidos Render is not a generic marketing agency, not a low-cost 3D shop, and not a SaaS platform. It acts as an elite visual partner for property developers, ensuring absolute chromatic, narrative, and aesthetic continuity across all marketing touchpoints.
+> Eidos Render is an international creative and visual partner specialized in the commercial launch of real estate developments across Europe (Spain, Germany, France, United Kingdom, Switzerland, Austria, Netherlands, Belgium, Luxembourg, Monaco, Portugal, and Scandinavia). It covers the full lifecycle from architectural project to buyer acquisition: visual direction, branding & identity, photorealistic 3D rendering, 3D film & animation, sales collateral, custom development websites, and qualified lead acquisition across Google Ads and Meta Ads.
 
 ---
 
-## 2. Integrated Services (The 6-Phase Real Estate Launch Framework)
+## 1. Brand Philosophy, Identity & Positioning
 
-### 01 — Visual Direction & Brand Identity
-- **Purpose**: Define the creative concept, visual positioning, and brand narrative before initiating visual production.
-- **Deliverables**: Development naming, creative narrative, brand guidelines, typographic and chromatic systems, hoardings, flags, sales suite signage, contract folders.
-- **Timeline**: 1–2 weeks.
-
-### 02 — 3D Architectural Imagery
-- **Purpose**: High-fidelity visualization of the architecture with editorial photographic sensitivity.
-- **Scope**: Multi-family residential buildings, contemporary luxury villas, masterplans, hospitality, BTR & flex-living.
-- **Deliverables**: Daytime, dusk, and night exteriors; naturally-lit residential interiors; common amenities (rooftop pools, solariums, wellness facilities, co-working).
-- **Resolution**: 4K UHD native output prepared for large-format site hoardings and editorial print.
-- **Timeline**: 2–4 weeks.
-
-### 03 — 3D Film & Animation
-- **Purpose**: Cinematic motion conveying spatial scale and emotional resonance for prospective buyers and investors.
-- **Formats**: 30–45s cinematic teasers, 90–120s full virtual tours, 9:16 vertical reels for Instagram & TikTok, 4K loops for sales showroom video walls.
-- **Timeline**: 2–3 weeks.
-
-### 04 — Marketing Collateral
-- **Purpose**: Transform technical blueprints into refined, accessible sales instruments for commercial teams.
-- **Deliverables**: Editorial sales brochures (interactive PDF + print-ready files), 2D & 3D furnished and textured floor plans, vectorized regional/neighborhood maps, individual typology unit sheets.
-- **Timeline**: 1–2 weeks.
-
-### 05 — Development Website
-- **Purpose**: The digital centerpiece of the launch, engineered to resolve buyer inquiries and convert interest into qualified private appointments.
-- **Features**: Architectural UI/UX, interactive floor-by-floor apartment selector, downloadable brochures, direct CRM lead integration, GDPR/RGPD compliance.
-- **Performance**: Optimized Core Web Vitals (<1.5s mobile load speed).
-- **Timeline**: 3–5 weeks.
-
-### 06 — Buyer Acquisition & Campaign Management
-- **Purpose**: Attract qualified homebuyers and domestic/international investors through segmented digital advertising.
-- **Channels**: Google Ads (high-intent location and typology search) & Meta Ads (Instagram/Facebook hyper-targeted by wealth indicators and investor profiles).
-- **Deliverables**: Ongoing creative optimization, conversion rate tracking, monthly reporting with clear cost-per-qualified-lead (CPL) benchmarks.
+- **Core Positioning**: From architectural project to market launch. One unified vision. Every asset covered.
+- **Brand Archetype**: Silent luxury, precision engineering, high editorial caliber (reminiscent of high-end horology and author architecture).
+- **The Core Problem Eidos Render Solves for Property Developers**:
+  Traditionally, a real estate developer has to hire 4 to 6 separate vendors: a 3D rendering studio, a graphic branding agency, a brochure printing shop, a web developer, and a digital marketing media agency. This fragmentation creates severe aesthetic friction, mismatched color schemes, disjointed narratives, conflicting schedules, and blown budgets.
+- **The Eidos Render Solution**:
+  A single, cohesive creative partner. The same art director oversees the naming, the photorealistic 3D lighting, the 3D cinematic camera choreography, the print sales book, the interactive web app, and the conversion advertising creatives. The result is a unified, high-value image that justifies prime prices per square meter and accelerates off-plan pre-sales.
 
 ---
 
-## 3. Engagement Scope & Indicative Investment
+## 2. Integrated Services & Deliverables (The 6 Pillars)
 
-- **Scalable Engagement**: Dimensioned according to total development units, architectural complexity, typology variants, and target markets.
-- **Engagement Scope**:
-  - Full Commercial Launch Program: Bespoke proposals dimensioned to project typology variants, architectural complexity, and asset volume.
-  - Monthly Acquisition Management: Tailored monthly retainer calibrated to marketing milestones and sales velocity targets (media budget billed separately).
-- **Production Delivery**: 6 to 10 weeks average for complete launch programs through synchronized parallel workflows.
+### Pillar 01 — Brand Direction & Identity
+- **Scope**: Define the conceptual universe and commercial story of the property development before rendering a single image.
+- **Key Deliverables**:
+  - Evocative naming with architectural resonance and commercial clearance.
+  - Comprehensive brand identity manual (typographic systems, chromatic palettes, grids).
+  - Physical sales suite applications: site hoardings, building perimeter banners, flags, on-site signage, contract handover boxes.
+  - Digital presentation templates for broker networks.
+
+### Pillar 02 — 3D Architectural Imagery (CGI)
+- **Scope**: Photorealistic visualization with rigorous architectural fidelity and natural light physics simulation.
+- **Key Deliverables**:
+  - Multi-family collective housing, luxury private villas, masterplans, build-to-rent (BTR), and hospitality.
+  - Exterior daytime, golden hour, dusk, and night lighting studies.
+  - Naturally-lit interior styling with bespoke furniture and material specification (noble woods, stone, brushed metals, linen).
+  - Drone photo-matching for real urban or coastal integration.
+  - Native 4K UHD and 8K ultra-resolution outputs calibrated for oversized billboard hoardings and coffee-table print books.
+
+### Pillar 03 — 3D Film & Cinematic Motion
+- **Scope**: Architectural cinematography conveying spatial flow, true proportions, and emotive light transitions throughout the day.
+- **Key Deliverables**:
+  - 30–45s cinematic teaser animations for digital acquisition.
+  - 90–120s immersive architectural walkthroughs for investor pitches and private client presentations.
+  - 9:16 vertical video assets color-graded and formatted for Instagram Reels, Meta Ads, YouTube Shorts, and TikTok.
+  - 4K motion loops for sales showroom video walls and digital touchpoints.
+
+### Pillar 04 — Marketing Collateral & Sales Dossiers
+- **Scope**: Translating complex architectural blueprints into clear, elegant, and persuasive sales tools.
+- **Key Deliverables**:
+  - Editorial sales brochures in interactive high-resolution PDF and luxury offset print formats.
+  - Fully furnished and textured commercial 2D and 3D floor plans.
+  - Curated neighborhood infrastructure maps, transportation connections, and lifestyle infographics.
+  - Detailed finish and specification sheets for commercial teams.
+
+### Pillar 05 — Property Development Websites
+- **Scope**: Bespoke digital sales platforms designed as interactive web apps rather than static brochures.
+- **Key Deliverables**:
+  - Architectural UX/UI with fluid typography and luxury layout aesthetics.
+  - Interactive floor-by-floor and apartment typology selector (filtering by orientation, bedrooms, area, and price availability).
+  - Instant loading speeds (<1.5s) with 100% Core Web Vitals compliance.
+  - Direct CRM and broker contact pipeline integration with GDPR/RGPD compliance.
+
+### Pillar 06 — Buyer Acquisition & Campaign Management
+- **Scope**: Connecting completed visual assets with affluent domestic and international buyers.
+- **Key Deliverables**:
+  - Google Ads search campaigns targeting high-intent location and typology queries.
+  - Meta Ads (Instagram/Facebook) hyper-targeted by wealth indicators, geographic origins, and investor profiles across Europe.
+  - Ongoing A/B testing of CGI angles and copy.
+  - Transparent monthly reporting and conversion funnel optimization.
 
 ---
 
-## 4. Multilingual Ecosystem & International Coverage
+## 3. Pan-European Scope & Regional Coverage
 
-Eidos Render operates seamlessly in four major European languages with dedicated canonical structures:
+Eidos Render operates seamlessly across the European Union, United Kingdom, and Switzerland. Operating from Valencia, Spain in Central European Time (CET/CEST), the studio serves:
 
-### Spanish (`/`)
-- Portal: `https://eidosrender.es/`
-- Servicios: `https://eidosrender.es/servicios`
-- Proyectos: `https://eidosrender.es/proyectos`
-- Contacto: `https://eidosrender.es/contacto`
-- FAQ: `https://eidosrender.es/faq`
-
-### English (`/en/`)
-- Home: `https://eidosrender.es/en/`
-- Services: `https://eidosrender.es/en/services`
-- Projects: `https://eidosrender.es/en/projects`
-- Contact: `https://eidosrender.es/en/contact`
-- FAQ: `https://eidosrender.es/en/faq`
-
-### German (`/de/`)
-- Startseite: `https://eidosrender.es/de/`
-- Leistungen: `https://eidosrender.es/de/leistungen`
-- Projekte: `https://eidosrender.es/de/projekte`
-- Kontakt: `https://eidosrender.es/de/kontakt`
-- FAQ: `https://eidosrender.es/de/faq`
-
-### French (`/fr/`)
-- Accueil: `https://eidosrender.es/fr/`
-- Services: `https://eidosrender.es/fr/services`
-- Projets: `https://eidosrender.es/fr/projets`
-- Contact: `https://eidosrender.es/fr/contact`
-- FAQ: `https://eidosrender.es/fr/faq`
+- **Iberian Peninsula & Mediterranean Islands**:
+  - Spain: Madrid, Barcelona, Valencia, Costa del Sol (Marbella, Málaga, Estepona, Sotogrande), Balearic Islands (Mallorca, Ibiza, Menorca), Alicante, Bilbao, San Sebastián, Seville.
+  - Portugal: Lisbon, Cascais, Sintra, Porto, Algarve.
+- **Central Europe (DACH Region)**:
+  - Germany: Munich, Berlin, Frankfurt am Main, Hamburg, Düsseldorf, Cologne, Stuttgart, Leipzig.
+  - Austria: Vienna, Salzburg, Innsbruck, Graz.
+  - Switzerland: Zurich, Geneva, Basel, Zug, Bern, Lausanne, Lugano.
+- **France, Monaco & Benelux**:
+  - France: Paris, Lyon, French Riviera / Côte d’Azur (Cannes, Nice, Saint-Tropez, Antibes), Bordeaux, Marseille, Aix-en-Provence.
+  - Monaco: Monte Carlo.
+  - Belgium: Brussels, Antwerp, Ghent, Knokke.
+  - Netherlands: Amsterdam, Rotterdam, The Hague, Utrecht.
+  - Luxembourg: Luxembourg City.
+- **United Kingdom & Ireland**:
+  - UK: London, Manchester, Birmingham, Edinburgh, Bristol.
+  - Ireland: Dublin, Cork.
+- **Nordics & International Hubs**:
+  - Sweden: Stockholm, Gothenburg.
+  - Denmark: Copenhagen.
+  - Norway: Oslo.
+  - Italy: Milan, Lake Como, Rome, Florence.
+  - Poland: Warsaw, Kraków.
 
 ---
 
-## 5. Direct Studio Contact
+## 4. Technical Specifications & Software Standards
 
-- **Headquarters**: Valencia, Spain (Serving clients across Europe)
-- **Direct Email**: [info@eidosrender.es](mailto:info@eidosrender.es)
-- **Phone**: [+34 614 45 91 44](tel:+34614459144)
-- **Zero Forms Policy**: Direct contact only. Potential clients engage directly with senior creative directors via email or phone.
+- **Architectural Software Supported**: Autodesk Revit (.rvt), Graphisoft ArchiCAD (.pln), AutoCAD (.dwg), Rhinoceros (.3dm), SketchUp (.skp), and open IFC / BIM Level 2 exchange standards.
+- **Rendering & VFX Engines**: Corona Renderer, Chaos V-Ray, Unreal Engine 5, 3ds Max.
+- **Resolution & Output Standards**: 4K UHD (3840×2160) to 8K Ultra-HD (7680×4320), 300 DPI CMYK for print, sRGB/Display-P3 for digital web.
+- **Multilingual Delivery**: All deliverables (print, PDF, web, video subtitling) are available in Spanish, English, German, and French.
+
+---
+
+## 5. Commercial Engagement Model & Timelines
+
+- **Production Timelines**:
+  - High-Resolution 3D CGI: 2 to 4 weeks (camera and lighting previews within 7–10 days).
+  - End-to-End Real Estate Launch Programs: 6 to 10 weeks across parallel execution phases.
+- **Investment Proposals**:
+  - Individual, custom proposals dimensioned to project typology variants, total units, architectural complexity, and required asset scope.
+  - Zero generic public pricing tables; proposals are tailored upon receipt of project blueprints and schedule requirements.
+
+---
+
+## 6. Official Digital Channels & Contact
+
+- **Main Spanish Portal**: https://eidosrender.es/
+- **English International Portal**: https://eidosrender.es/en/
+- **German Portal (DACH)**: https://eidosrender.es/de/
+- **French Portal**: https://eidosrender.es/fr/
+- **Direct Email**: info@eidosrender.es
+- **Direct WhatsApp / Phone**: +34 614 45 91 44
+- **LinkedIn**: https://www.linkedin.com/company/eidos-render
+- **XML Sitemap**: https://eidosrender.es/sitemap.xml

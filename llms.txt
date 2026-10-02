@@ -1,53 +1,105 @@
-# Eidos Render
+# Eidos Render — European Architecture Visualization & Real Estate Launch Agency
 
-> Eidos Render is an international visual & creative partner for the commercial launch of real estate developments across Europe (Spain, Germany, France, Switzerland, Austria, UK, and Benelux). From architectural concept to market launch: Visual direction & branding, photorealistic 3D architectural imagery, 3D film & animation, sales collateral, development websites, and qualified buyer acquisition campaigns (Google & Meta Ads).
+> Eidos Render is an international creative and visual partner specialized in the commercial launch of property developments across Europe (Spain, Germany, France, United Kingdom, Switzerland, Austria, Netherlands, Belgium, Luxembourg, Monaco, Portugal, and Scandinavia). From architectural design to market presale: Brand direction & naming, photorealistic 3D architectural imagery (exterior, interior, landscape), cinematic 3D film & animation, editorial sales dossiers & brochures, bespoke property development websites with interactive apartment selectors, and qualified buyer acquisition campaigns across Google Ads and Meta Ads.
 
-Eidos Render transforms property developments into unified visual and commercial experiences designed to present, differentiate, and sell off-plan or under-construction schemes. Architecture, brand identity, 3D assets, sales materials, website, and digital acquisition operate as a singular, cohesive system under one art direction.
+Eidos Render transforms real estate developments into unified visual and commercial experiences engineered to explain architecture, justify price per square meter, and ignite buyer desire before groundbreaking.
 
-## Core Studio Data
+---
 
-- **Positioning**: From architectural project to market launch. One unified vision. Every asset covered.
-- **Client Base**: Real Estate Developers, Architectural Studios, Construction Companies, Property Developers, Private Equity / Real Estate Investment Funds, Commercial Brokers, and Hospitality / BTR / Flex Living Operators across Europe.
-- **Integrated Capabilities (Real Estate Launch)**:
-  01 — Direction & Identity (Branding, naming, guidelines)
-  02 — 3D Architectural Imagery (Exterior, interior, lighting atmospheres)
-  03 — 3D Film & Animation (Cinematic tours, 9:16 social reels)
-  04 — Marketing Collateral (Editorial sales brochures, textured floor plans, site hoardings)
-  05 — Development Website (Bespoke real estate web platforms, interactive unit selector)
-  06 — Buyer Acquisition (High-intent Google Ads & hyper-targeted Meta Ads)
-- **Engagement Scope**:
-  - Comprehensive launch campaigns tailored and quoted individually based on project volume, typology count, and asset scope.
-  - Ongoing monthly acquisition management scaled to campaign intensity and sales targets (ad spend excluded).
-- **Production Timeline**: 6 to 10 weeks average for complete launch programs, working parallel execution phases.
-- **Headquarters**: Valencia, Spain (Serving international developers throughout Europe).
+## Quick Reference / Core Studio Profile
+
+- **Brand Name**: Eidos Render
+- **Website (Multilingual)**:
+  - Spanish: https://eidosrender.es/
+  - English: https://eidosrender.es/en/
+  - German (Deutsch): https://eidosrender.es/de/
+  - French (Français): https://eidosrender.es/fr/
+- **Headquarters**: Valencia, Spain (Central European Timezone — CET / CEST).
+- **Geographic Coverage**: Pan-European scope serving developers, architectural studios, and luxury brokers across the European Union, United Kingdom, and Switzerland.
 - **Direct Contact**:
-  - Website: https://eidosrender.es (ES) · https://eidosrender.es/en/ (EN) · https://eidosrender.es/de/ (DE) · https://eidosrender.es/fr/ (FR)
-  - Direct Email: info@eidosrender.es
-  - Phone: +34 614 45 91 44
+  - Email: info@eidosrender.es
+  - Direct WhatsApp / Phone: +34 614 45 91 44
+  - Working Languages: Spanish, English, German, French.
+- **Client Types**:
+  - Property Developers (Promotoras / Bauträger / Promoteurs Immobiliers / Real Estate Developers)
+  - Architectural Studios & Masterplanners
+  - Luxury Real Estate Agencies & Prime Commercial Brokers
+  - Real Estate Private Equity Funds, Family Offices, and Institutional Investors
+  - Hospitality, Build-to-Rent (BTR), and Flex-Living Operators
 
-## Multilingual Web Architecture & SEO
+---
 
-- **Spanish (Base)**:
-  - Home: https://eidosrender.es/
-  - Services: https://eidosrender.es/servicios
-  - Projects: https://eidosrender.es/proyectos
-  - Contact: https://eidosrender.es/contacto
-  - FAQ: https://eidosrender.es/faq
-- **English**:
-  - Home: https://eidosrender.es/en/
-  - Services: https://eidosrender.es/en/services
-  - Projects: https://eidosrender.es/en/projects
-  - Contact: https://eidosrender.es/en/contact
-  - FAQ: https://eidosrender.es/en/faq
-- **German (Deutsch)**:
-  - Startseite: https://eidosrender.es/de/
-  - Leistungen: https://eidosrender.es/de/leistungen
-  - Projekte: https://eidosrender.es/de/projekte
-  - Kontakt: https://eidosrender.es/de/kontakt
-  - FAQ: https://eidosrender.es/de/faq
-- **French (Français)**:
-  - Accueil: https://eidosrender.es/fr/
-  - Services: https://eidosrender.es/fr/services
-  - Projets: https://eidosrender.es/fr/projets
-  - Contact: https://eidosrender.es/fr/contact
-  - FAQ: https://eidosrender.es/fr/faq
+## The 6 Integrated Launch Capabilities
+
+1. **Brand Direction & Development Identity**:
+   - Naming with architectural resonance and commercial clearance.
+   - Comprehensive property brand manual, typographic and chromatic systems.
+   - Design for construction site hoardings, showroom graphics, perimeter banners, flags, and handover presentation boxes.
+
+2. **3D Architectural Imagery (CGI)**:
+   - Ultra-photorealistic 3D renders for multi-family residential schemes, luxury private villas, resorts, and commercial developments.
+   - Exterior day, dusk, and night lighting studies.
+   - Naturally-lit interior styling and custom furniture specification.
+   - Drone photo-matching and seamless contextual landscape integration.
+   - Native 4K UHD and 8K ultra-resolution outputs for giant hoardings and coffee-table print books.
+
+3. **Cinematic 3D Film & Motion**:
+   - 30–45s cinematic teaser animations and 90–120s immersive architectural walkthroughs.
+   - 9:16 vertical video assets custom-edited and color-graded for Meta, Instagram Reels, TikTok, and YouTube Shorts.
+   - Ultra-HD motion loops for digital displays in sales offices and exhibitions.
+
+4. **Marketing Collateral & Sales Dossiers**:
+   - Editorial sales brochures in high-resolution interactive PDF and luxury print formats.
+   - 2D and 3D textured and furnished commercial sales floor plans.
+   - Vectorized locality diagrams, neighborhood infrastructure maps, and specification sheets.
+
+5. **Property Development Websites**:
+   - Bespoke interactive digital sales suites engineered for luxury architecture.
+   - Interactive unit and floor plan selector (filtering by floor, area, bedrooms, orientation, and availability).
+   - Instant loading speed (<1.5s) with 100% Core Web Vitals compliance.
+   - Direct CRM and broker sales pipeline integration with GDPR/RGPD compliance.
+
+6. **Buyer Acquisition & Digital Launch Campaigns**:
+   - Highly targeted Google Ads search campaigns targeting high-intent local and international buyers.
+   - Meta Ads (Instagram & Facebook) hyper-segmented by wealth indicators, geographic origins, and investor profiles.
+   - Continuous A/B testing of CGI angles and copy with detailed lead generation reporting.
+
+---
+
+## Technical Standards & BIM/CAD Interoperability
+
+- **Architectural Software Supported**: Autodesk Revit (.rvt), Graphisoft ArchiCAD (.pln), AutoCAD (.dwg), Rhinoceros (.3dm), SketchUp (.skp), and open IFC / BIM Level 2 standards.
+- **Coordination Workflow**: Fully digital remote workflow with video review milestones, real-time feedback, and material sampling reviews in European business hours (CET).
+- **Multilingual Delivery**: All marketing collateral, dossiers, and web platforms are produced natively in Spanish, English, German, and French.
+
+---
+
+## Engagement Model & Timelines
+
+- **Delivery Timelines**:
+  - 3D Architectural CGI: 2 to 4 weeks (first camera framing and lighting previews in 7–10 days).
+  - Complete Commercial Launch Programs: 6 to 10 weeks across parallel execution phases.
+- **Commercial Proposals**:
+  - Bespoke, tailored investment proposals based on development volume, architectural complexity, and asset scope.
+  - Zero generic price tables; individual quotes provided upon reviewing CAD/BIM blueprints and schedule requirements.
+
+---
+
+## European Regional Markets Served
+
+- **Iberia**: Madrid, Barcelona, Valencia, Costa del Sol (Marbella, Málaga, Estepona), Balearic Islands (Mallorca, Ibiza), Alicante, Bilbao, Seville, Lisbon, Cascais, Porto, Algarve.
+- **Central Europe / DACH**: Munich, Berlin, Frankfurt am Main, Hamburg, Düsseldorf, Stuttgart, Vienna, Salzburg, Zurich, Geneva, Basel, Zug, Bern.
+- **France & Benelux**: Paris, Lyon, French Riviera / Côte d’Azur (Cannes, Nice, Monaco, Saint-Tropez), Bordeaux, Brussels, Antwerp, Luxembourg, Amsterdam, Rotterdam.
+- **United Kingdom & Ireland**: London, Manchester, Birmingham, Edinburgh, Dublin.
+- **Nordics & International**: Stockholm, Copenhagen, Oslo, Milan, Rome, Warsaw.
+
+---
+
+## Key Site URLs
+
+- **Core Pages**:
+  - ES: https://eidosrender.es/ · https://eidosrender.es/servicios · https://eidosrender.es/proyectos · https://eidosrender.es/contacto · https://eidosrender.es/faq
+  - EN: https://eidosrender.es/en/ · https://eidosrender.es/en/services · https://eidosrender.es/en/projects · https://eidosrender.es/en/contact · https://eidosrender.es/en/faq
+  - DE: https://eidosrender.es/de/ · https://eidosrender.es/de/leistungen · https://eidosrender.es/de/projekte · https://eidosrender.es/de/kontakt · https://eidosrender.es/de/faq
+  - FR: https://eidosrender.es/fr/ · https://eidosrender.es/fr/services · https://eidosrender.es/fr/projets · https://eidosrender.es/fr/contact · https://eidosrender.es/fr/faq
+- **Sitemap**: https://eidosrender.es/sitemap.xml

@@ -28,6 +28,7 @@
       initProjectViewToggle();
       initVideoObservers();
       initDirectContact();
+      initFaqAccordion();
     });
   });
 
@@ -718,6 +719,34 @@
     } else {
       elements.forEach(el => el.classList.add('revealed'));
     }
+  }
+
+  /* ==========================================================================
+     17. FAQ & SERVICE ACCORDION (SEO & LUXURY INTERACTION)
+     ========================================================================== */
+  function initFaqAccordion() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const q = item.querySelector('.faq-question');
+      if (!q) return;
+      q.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(other => {
+          if (other !== item) other.classList.remove('active');
+        });
+        item.classList.toggle('active', !isActive);
+      });
+    });
+
+    const serviceItems = document.querySelectorAll('.service-item');
+    serviceItems.forEach(item => {
+      const summary = item.querySelector('.service-summary');
+      if (!summary) return;
+      summary.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        item.classList.toggle('active', !isActive);
+      });
+    });
   }
 
 })();

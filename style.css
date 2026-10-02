@@ -2359,6 +2359,165 @@ html, body {
 }
 
 /* ==========================================================================
+   ÁMBITO EUROPEO & FAQ (POTENCIA SEO 200%)
+   ========================================================================== */
+.europe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.europe-card {
+  background-color: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 12px !important;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.europe-card:hover {
+  border-color: var(--granate);
+  transform: translateY(-2px);
+}
+
+.europe-card-region {
+  font-family: var(--font-syncopate);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--granate);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.europe-card-hubs {
+  font-family: var(--font-special);
+  font-size: 1.35rem;
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.europe-card-desc {
+  font-family: var(--font-special);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--warm-gray);
+  margin-bottom: 20px;
+}
+
+.europe-card-tag {
+  font-family: var(--font-syncopate);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  color: var(--charcoal);
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  text-transform: uppercase;
+}
+
+.europe-tech-strip {
+  background-color: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 12px !important;
+  padding: 24px 32px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.europe-tech-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-syncopate);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--charcoal);
+  text-transform: uppercase;
+}
+
+.europe-tech-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50% !important;
+  background-color: var(--granate);
+  flex-shrink: 0;
+}
+
+.faq-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 60px;
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-special);
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  transition: color 0.25s ease;
+}
+
+.faq-question:hover {
+  color: var(--granate);
+}
+
+.faq-question .faq-icon {
+  font-family: var(--font-syncopate);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--granate);
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.faq-item.active .faq-question .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
+  font-family: var(--font-special);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--warm-gray);
+  padding: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding-bottom: 24px;
+}
+
+/* ==========================================================================
    BREAKPOINTS MÓVIL & TABLET
    ========================================================================== */
 @media (max-width: 900px) {
@@ -2563,6 +2722,29 @@ html, body {
     justify-content: center;
     padding: 16px 20px !important;
   }
+
+  /* Ámbito Europeo & FAQ Móvil */
+  .europe-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .europe-tech-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .faq-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .faq-question {
+    font-size: 1.15rem;
+    padding: 18px 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2573,5 +2755,10 @@ html, body {
   .reels-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .europe-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 }
