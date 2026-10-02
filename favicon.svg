@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
-  <rect width="64" height="64" fill="#1F1114"/>
-  <path fill="#C02A43" d="M 12,34 A 20,20 0 0,1 52,34 Z"/>
-  <rect fill="#EEE6DA" x="6" y="40" width="52" height="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fondo color crema -->
+  <rect width="64" height="64" fill="#F1EBDF"/>
+  <!-- Isotipo Eidos Render en rojo y negro -->
+  <path d="M 12,34 A 20,20 0 0,1 52,34 Z" fill="#A31A33"/>
+  <rect x="6" y="40" width="52" height="5" fill="#1B1918"/>
+  <rect x="18" y="50" width="28" height="3" fill="#1B1918"/>
 </svg>
