@@ -1,20 +1,22 @@
-# Permitir el acceso general a todos los crawlers y bots de IA con exclusión de dossiers privados
+# Permitir el acceso general a todos los motores de búsqueda y crawlers
 User-agent: *
-User-agent: Googlebot
-User-agent: GPTBot
-User-agent: OAI-SearchBot
-User-agent: PerplexityBot
-User-agent: ClaudeBot
-User-agent: Google-Extended
+Allow: /
 Disallow: /enviar.php
 Disallow: /real-estate-launch
 Disallow: /real-estate-launch.html
 Disallow: /img/dossier/
-Allow: /
 
-# Indicación de la ubicación exacta del sitemap para indexación
+# Reglas explícitas para Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /enviar.php
+Disallow: /real-estate-launch
+Disallow: /real-estate-launch.html
+Disallow: /img/dossier/
+
+# Ubicación del Sitemap oficial para indexación
 Sitemap: https://eidosrender.es/sitemap.xml
 
-# Especificación LLMs.txt para agentes autónomos y modelos de lenguaje (https://llmstxt.org)
+# Especificación LLMs.txt para agentes de IA y LLMs
 # LLMs: https://eidosrender.es/llms.txt
 # LLMs-Full: https://eidosrender.es/llms-full.txt

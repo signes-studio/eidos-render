@@ -67,57 +67,9 @@
     return /bot|googlebot|crawler|spider|robot|crawling|bingbot|yandex|slurp|duckduckgo|baiduspider|facebookexternalhit|whatsapp|linkedinbot/i.test(navigator.userAgent);
   }
 
-  // Perform one-time initial language detection on landing
-  function checkAndRoute() {
-    // 1. Never redirect bots/crawlers (essential for international SEO indexing)
-    if (isBot()) return;
-
-    // 2. Allow bypassing with URL param
-    if (window.location.search.indexOf('noredirect=true') !== -1) return;
-
-    // 3. Prevent redirect loops if already checked in this browsing session
-    var alreadyChecked = false;
-    try {
-      alreadyChecked = sessionStorage.getItem(ROUTED_KEY) === '1';
-    } catch(e) {}
-
-    // Check saved preference
-    var savedLang = null;
-    try {
-      savedLang = localStorage.getItem(STORAGE_KEY);
-    } catch(e) {}
-    if (!savedLang) {
-      savedLang = getCookie(STORAGE_KEY);
-    }
-
-    var currentLang = getCurrentLang();
-    var isRoot = (window.location.pathname === '/' || window.location.pathname === '/index.html');
-
-    // If user explicitly saved a language and we are at the root
-    if (savedLang && SUPPORTED_LANGS.indexOf(savedLang) !== -1) {
-      if (isRoot && savedLang !== 'es') {
-        window.location.replace('/' + savedLang + '/');
-        return;
-      }
-      return;
-    }
-
-    // Only auto-route once per session on the root entry
-    if (alreadyChecked) return;
-    try {
-      sessionStorage.setItem(ROUTED_KEY, '1');
-    } catch(e) {}
-
-    if (isRoot) {
-      var detected = detectBrowserLang();
-      if (detected !== 'es') {
-        window.location.replace('/' + detected + '/');
-      }
-    }
-  }
-
-  // Execute immediately before render to avoid FOUC/flash
-  checkAndRoute();
+  // Note: Automatic client-side redirect on landing is strictly disabled
+  // in compliance with Google Search Central multilingual guidelines.
+  // Each URL must serve its canonical version directly without JS redirects.
 
   // Attach event listener when DOM is ready to mark active switcher link
   document.addEventListener('DOMContentLoaded', function() {
