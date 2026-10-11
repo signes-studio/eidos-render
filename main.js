@@ -30,6 +30,8 @@
       initVideoObservers();
       initDirectContact();
       initFaqAccordion();
+      initCroTracking();
+      initStickyMobileCta();
     });
   });
 
@@ -764,6 +766,104 @@
         item.classList.toggle('active', !isActive);
       });
     });
+  }
+
+
+  /* ==========================================================================
+     18. CONVERSION TRACKING & CRO (GA4 / GTM DATA LAYER)
+     ========================================================================== */
+  function initCroTracking() {
+    window.dataLayer = window.dataLayer || [];
+
+    // Delegación de clics para llamadas, WhatsApp y Email
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href') || '';
+
+      // WhatsApp Click
+      if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+        window.dataLayer.push({
+          event: 'whatsapp_click',
+          click_url: href,
+          click_text: link.innerText.trim(),
+          page_location: window.location.href
+        });
+      }
+
+      // Tel Click
+      if (href.startsWith('tel:')) {
+        window.dataLayer.push({
+          event: 'tel_click',
+          phone_number: href.replace('tel:', ''),
+          click_text: link.innerText.trim(),
+          page_location: window.location.href
+        });
+      }
+
+      // Email Click
+      if (href.startsWith('mailto:')) {
+        window.dataLayer.push({
+          event: 'email_click',
+          email_address: href.replace('mailto:', ''),
+          click_text: link.innerText.trim(),
+          page_location: window.location.href
+        });
+      }
+    });
+
+    // Delegación de envío de formulario de presupuesto
+    document.addEventListener('submit', function(e) {
+      const form = e.target;
+      if (form.id === 'formPresupuesto' || form.classList.contains('form-presupuesto')) {
+        // Validación honeypot
+        const hp = form.querySelector('[name="website_url_hp"]');
+        if (hp && hp.value) {
+          e.preventDefault();
+          console.warn('Spam detected via honeypot.');
+          return;
+        }
+
+        window.dataLayer.push({
+          event: 'form_submit',
+          form_id: form.id || 'formPresupuesto',
+          form_name: 'presupuesto_promotora',
+          conversion: true,
+          page_location: window.location.href
+        });
+      }
+    });
+  }
+
+  /* ==========================================================================
+     19. STICKY MOBILE CTA (VISIBLE PERMANENTEMENTE EN DISPOSITIVOS MÓVILES)
+     ========================================================================== */
+  function initStickyMobileCta() {
+    const path = window.location.pathname;
+    if (path.includes('presupuesto') || path.includes('gracias')) {
+      return;
+    }
+
+    if (document.getElementById('stickyMobileCta')) {
+      return;
+    }
+
+    const aside = document.createElement('aside');
+    aside.className = 'sticky-mobile-cta';
+    aside.id = 'stickyMobileCta';
+    aside.setAttribute('aria-label', 'Solicitar presupuesto');
+    aside.innerHTML = `
+      <div class="sticky-mobile-inner">
+        <div class="sticky-mobile-info">
+          <span class="sticky-tag">Presupuesto en &lt;24h</span>
+          <span class="sticky-title">Renders &amp; Marketing de Obra Nueva</span>
+        </div>
+        <a href="/presupuesto" class="sticky-cta-btn" id="stickyMobileCtaBtn">
+          Solicitar &rarr;
+        </a>
+      </div>
+    `;
+    document.body.appendChild(aside);
   }
 
 })();

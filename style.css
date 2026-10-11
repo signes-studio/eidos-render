@@ -3005,3 +3005,236 @@ html, body {
     gap: 14px;
   }
 }
+
+
+/* ==========================================================================
+   CRO & CONVERSION ENHANCEMENTS (FASE 3)
+   ========================================================================== */
+
+/* Sticky Mobile CTA Bar */
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background: rgba(18, 18, 20, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(244, 243, 239, 0.15);
+  padding: 10px 16px;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.3);
+  pointer-events: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sticky-mobile-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sticky-mobile-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sticky-tag {
+  font-family: var(--font-poiret, 'Poiret One', sans-serif);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  color: #d9788e;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sticky-title {
+  font-family: var(--font-special, 'Josefin Sans', sans-serif);
+  font-size: 13px;
+  color: var(--cream, #f4f3ef);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.sticky-cta-btn {
+  background-color: var(--granate, #8b1e2d);
+  color: #ffffff !important;
+  font-family: var(--font-poiret, 'Poiret One', sans-serif);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 12px 18px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+@media (min-width: 769px) {
+  .sticky-mobile-cta {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body:not(.page-presupuesto):not(.page-gracias) {
+    padding-bottom: 64px;
+  }
+  body.page-presupuesto .sticky-mobile-cta,
+  body.page-gracias .sticky-mobile-cta {
+    display: none !important;
+  }
+}
+
+/* Quote Form Luxury Editorial Styling */
+.form-presupuesto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .form-presupuesto {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-poiret, 'Poiret One', sans-serif);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal, #121214);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-label span.req {
+  color: var(--granate, #8b1e2d);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border: 1px solid var(--line, rgba(18, 18, 20, 0.15));
+  border-radius: 0;
+  font-family: var(--font-special, 'Josefin Sans', sans-serif);
+  font-size: 15px;
+  color: var(--charcoal, #121214);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--granate, #8b1e2d);
+  box-shadow: 0 0 0 2px rgba(139, 30, 45, 0.15);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border: 1px solid var(--line, rgba(18, 18, 20, 0.15));
+  cursor: pointer;
+  min-height: 48px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.checkbox-card:hover {
+  border-color: var(--charcoal, #121214);
+}
+
+.checkbox-card input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--granate, #8b1e2d);
+  cursor: pointer;
+}
+
+.checkbox-card span {
+  font-family: var(--font-special, 'Josefin Sans', sans-serif);
+  font-size: 14px;
+  color: var(--charcoal, #121214);
+}
+
+.rgpd-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+  margin-top: 12px;
+}
+
+.rgpd-consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--granate, #8b1e2d);
+  cursor: pointer;
+}
+
+.btn-submit-presupuesto {
+  min-height: 52px;
+  background-color: var(--granate, #8b1e2d);
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 16px 36px;
+  font-family: var(--font-poiret, 'Poiret One', sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-submit-presupuesto:hover {
+  background-color: #6b1a2a;
+  transform: translateY(-2px);
+}
