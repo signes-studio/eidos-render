@@ -1,319 +1,447 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
+  <!-- Google Tag Manager (Diferido) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N6R4S8NC');
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGTM, { timeout: 3500 });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Material Comercial & Dossier de Ventas — Eidos Render</title>
-  <meta name="description" content="Diseño editorial de dossiers de venta inmobiliaria, planos comerciales 2D y 3D texturizados y fichas de tipología de viviendas.">
+  <title>Dossier y Material Comercial de Venta | Eidos</title>
+  <meta name="description" content="Dossiers de venta editoriales, planos comerciales 3D y material de marketing para casetas y comerciales de promociones de obra nueva en España.">
   <link rel="canonical" href="https://eidosrender.es/servicios/material-comercial">
-
-  <!-- International SEO / Hreflang -->
-
-  <!-- Multilingual & Geo-routing -->
-  <script src="../js/i18n.js"></script>
-
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Material Comercial & Dossier de Ventas — Eidos Render">
-  <meta property="og:description" content="Del proyecto a la herramienta comercial. Dossiers, planos y fichas para promotoras.">
-  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva-1600.jpg">
+  <meta property="og:title" content="Dossier y Material Comercial de Venta | Eidos Render">
+  <meta property="og:description" content="Diseño editorial de dossiers de venta, planos 3D y material publicitario para casetas de promociones inmobiliarias.">
+  <meta property="og:url" content="https://eidosrender.es/servicios/material-comercial">
+  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="shortcut icon" href="../favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/fonts.css">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="geo.region" content="ES">
-  <meta name="geo.placename" content="Valencia">
-  <meta name="geo.position" content="39.4699;-0.3763">
-  <meta name="ICBM" content="39.4699, -0.3763">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/fonts.css">
 
-  <!-- Schema.org Data (Zero Prices) -->
+  <link rel="preload" href="/assets/fonts/poiret-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/josefin-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Schema.org Data -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "@id": "https://eidosrender.es/servicios/material-comercial#service",
-      "name": "Material Comercial & Dossier de Ventas",
-      "description": "Diseño editorial de dossiers de venta inmobiliaria, planos comerciales 2D y 3D texturizados y fichas de tipología de viviendas.",
-      "provider": {
-        "@type": "ProfessionalService",
-        "@id": "https://eidosrender.es/#organization",
-        "name": "Eidos Render",
-        "url": "https://eidosrender.es/",
-        "telephone": "+34614459144",
-        "email": "info@eidosrender.es"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://eidosrender.es/servicios/material-comercial#service",
+        "name": "Dossiers Editoriales y Material Comercial para Venta de Promociones",
+        "description": "Diseño de dossiers de venta en alta resolución, memorias de calidades maquetadas, planos comerciales 2D/3D y vallas de obra para promociones inmobiliarias.",
+        "provider": {
+          "@type": "ProfessionalService",
+          "@id": "https://eidosrender.es/#organization",
+          "name": "Eidos Render",
+          "url": "https://eidosrender.es/",
+          "telephone": "+34614459144",
+          "email": "info@eidosrender.es",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Valencia",
+            "addressRegion": "Comunidad Valenciana",
+            "addressCountry": "ES"
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Valencia" },
+          { "@type": "City", "name": "Madrid" },
+          { "@type": "City", "name": "Alicante" },
+          { "@type": "City", "name": "Málaga" },
+          { "@type": "Country", "name": "España" }
+        ]
       },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "European Union"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Europe"
-        },
-        {
-          "@type": "Country",
-          "name": "Spain"
-        },
-        {
-          "@type": "Country",
-          "name": "Germany"
-        },
-        {
-          "@type": "Country",
-          "name": "France"
-        },
-        {
-          "@type": "Country",
-          "name": "United Kingdom"
-        },
-        {
-          "@type": "Country",
-          "name": "Switzerland"
-        },
-        {
-          "@type": "Country",
-          "name": "Austria"
-        },
-        {
-          "@type": "Country",
-          "name": "Netherlands"
-        },
-        {
-          "@type": "Country",
-          "name": "Belgium"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://eidosrender.es/servicios/material-comercial#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://eidosrender.es/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Servicios",
-          "item": "https://eidosrender.es/servicios"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Material Comercial & Dossier de Ventas",
-          "item": "https://eidosrender.es/servicios/material-comercial"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eidosrender.es/servicios/material-comercial#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://eidosrender.es/" },
+          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://eidosrender.es/servicios" },
+          { "@type": "ListItem", "position": 3, "name": "Material Comercial", "item": "https://eidosrender.es/servicios/material-comercial" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://eidosrender.es/servicios/material-comercial#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué formatos entregáis el dossier de venta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entregamos dos archivos principales: un PDF interactivo de bajo peso optimizado para envío instantáneo por WhatsApp y correo electrónico a interesados, y un archivo PDF en alta resolución con perfil de color CMYK, marcas de corte y sangrado listo para enviar directamente a imprenta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Diseñáis también los planos de venta comerciales amueblados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Redibujamos las plantas arquitectónicas CAD en planos comerciales estilizados en 2D y axonométricas 3D, incorporando pavimentos, mobiliario proporcional a escala, cotas principales y cuadro de superficies útiles y construidas de cada estancia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Os encargáis del diseño de vallas de obra y cartelería para la caseta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Diseñamos todo el material físico de punto de venta: vallas de obra de 8x3 metros, lonas de andamio, vinilos de caseta, roll-ups expositores y directorios de calidades, entregando artes finales vectoriales listos para el rotulista local."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son los plazos habituales de diseño y entrega de los catálogos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El diseño del dossier comercial y la planimetría suele completarse en 10 a 15 días laborables, sincronizándose con la fase final de renderizado para ensamblar textos legales, planos y visuales en un único documento coherente."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
-<body class="bg-paper">
+<body style="background-color: var(--cream); color: var(--charcoal);">
 
-    <!-- =====================================================
-       00. CABECERA DINÁMICA CENTRADA:
-       Isotipo grande a dos tintas + Nombre centrado debajo
-       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
-       ===================================================== -->
   <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
       <div class="nav-center-brand">
-        <a href="../index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+        <a href="/" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
           <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
             <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
             <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
             <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
           </svg>
-          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
+          <span class="brand-name-initial" id="brandNameInitial">EIDOS RENDER</span>
         </a>
       </div>
+
+      <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menú" aria-expanded="false">
+        <span class="menu-btn-icon">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </span>
+      </button>
     </div>
   </header>
 
-  <!-- =====================================================
-       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
-       ===================================================== -->
-  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
-    <span class="menu-btn-label">MENÚ</span>
-    <span class="menu-btn-icon">
-      <span class="line line-top"></span>
-      <span class="line line-bottom"></span>
-    </span>
-  </button>
-
-  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navegación" aria-hidden="true">
     <div class="app-panel-header">
-      <span class="app-panel-title">EIDOS RENDER · APP</span>
-      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
+      <span class="app-panel-title">Eidos Render</span>
     </div>
-
-    <nav aria-label="Navigation">
+    <nav aria-label="Menú principal">
       <ul class="app-nav-list">
-        <li class="app-nav-item">
-          <a href="../index.html" class="app-link">
-            <span><span class="app-nav-num">01</span>Inicio</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../servicios.html" class="app-link">
-            <span><span class="app-nav-num">02</span>Servicios & Capacidades</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../proyectos.html" class="app-link">
-            <span><span class="app-nav-num">03</span>Portfolio de Casos</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../index.html#branding" class="app-link">
-            <span><span class="app-nav-num">04</span>Identidad & Branding</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../index.html#proceso" class="app-link">
-            <span><span class="app-nav-num">05</span>Metodología</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../contacto.html" class="app-link">
-            <span><span class="app-nav-num">06</span>Contacto Directo</span>
-            <span>→</span>
-          </a>
-        </li>
+        <li class="app-nav-item"><a href="/" class="app-link"><span><span class="app-nav-num">01</span>Inicio</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/servicios" class="app-link"><span><span class="app-nav-num">02</span>Servicios</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/proyectos" class="app-link"><span><span class="app-nav-num">03</span>Proyectos</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/obra-nueva" class="app-link"><span><span class="app-nav-num">04</span>Obra Nueva</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/presupuesto" class="app-link"><span><span class="app-nav-num">05</span>Presupuesto</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/contacto" class="app-link"><span><span class="app-nav-num">06</span>Contacto</span><span>→</span></a></li>
       </ul>
     </nav>
-
-    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
-    <div class="app-lang-segmented" aria-label="Language selector">
-      <a href="../index.html" data-lang="es" class="active" onclick="window.setLang('es')">ES</a>
-      <a href="../en/" data-lang="en" class="" onclick="window.setLang('en')">EN</a>
-      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
-      <a href="../fr/" data-lang="fr" class="" onclick="window.setLang('fr')">FR</a>
-    </div>
-
     <div class="app-panel-footer">
-      <a href="../contacto.html" class="app-cta-btn">
-        HABLEMOS DEL PROYECTO →
-      </a>
-      <div class="app-contact-sub">Valencia · Servicio Nacional e Internacional</div>
+      <a href="/presupuesto" class="app-cta-btn">SOLICITAR PRESUPUESTO →</a>
+      <div class="app-contact-sub">Valencia · Madrid · Alicante · Málaga</div>
     </div>
   </div>
 
   <main style="padding-top: 140px;">
 
-    <section class="section-sm bg-paper" style="border-bottom: 1px solid var(--line);">
+    <!-- 01. HERO -->
+    <section class="section-sm bg-cream" style="border-bottom: 1px solid var(--line); padding-bottom: 60px;">
       <div class="container">
-        <div style="margin-bottom: 16px;">
-          <a href="../servicios.html" class="link-arrow" style="font-size: 0.72rem;">← VOLVER A SERVICIOS</a>
+        <div style="margin-bottom: 20px;">
+          <a href="/servicios" class="link-arrow" style="font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;">← Volver a Servicios de Promotoras</a>
         </div>
-        <div class="kicker crimson">Fase 04 · Herramientas de Venta</div>
-        <h1 class="display-title" style="margin-bottom: 24px;">
-          Del proyecto a la herramienta comercial.
+        <div class="kicker crimson">Herramientas de Venta Comercial</div>
+        <h1 class="display-title" style="margin-bottom: 24px; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1;">
+          Dossiers Editoriales y Material Comercial para Venta de Promociones
         </h1>
-        <p class="body-large body-muted" style="max-width: 760px;">
-          Transformamos información arquitectónica y técnica en herramientas comerciales claras, rigurosas y visuales para facilitar la labor del equipo de ventas y la comprensión del comprador.
+        <p class="body-large" style="max-width: 820px; font-size: 1.25rem; line-height: 1.6; color: #333; margin-bottom: 32px;">
+          El material que sostiene la decisión final de compra. Diseñamos catálogos de venta con encuadernación editorial, planos comerciales 3D comprensibles y soportes de publicidad exterior para vestir la caseta de ventas y dotar a tus comerciales de argumentos irrefutables.
         </p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+          <a href="/presupuesto" class="btn btn-crimson" style="padding: 16px 36px; font-size: 0.95rem; letter-spacing: 0.06em;">SOLICITAR PRESUPUESTO DE DOSSIER →</a>
+          <a href="#piezas" class="btn" style="border: 1px solid var(--charcoal); padding: 16px 28px; font-size: 0.95rem;">VER PIEZAS INCLUIDAS</a>
+        </div>
       </div>
     </section>
 
-    <!-- Secciones del Material -->
-    <section class="section bg-paper">
+    <!-- 02. IMAGEN DESTACADA -->
+    <section class="section-sm" style="padding: 40px 0;">
       <div class="container">
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px; margin-bottom: 60px;">
-          
-          <div class="feature-card">
-            <span class="kicker crimson">Editorial</span>
-            <h3 class="feature-card-title">Dossier de Ventas</h3>
-            <p class="feature-card-copy">
-              Documento central de la promoción. Formato horizontal con retícula limpia, tipografía cuidada y páginas dedicadas al concepto arquitectónico, renders a doble página, memoria de calidades y tablas de superficies.
+        <picture>
+          <source media="(max-width: 768px)" srcset="/img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp">
+          <source media="(min-width: 769px)" srcset="/img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+          <img src="/img/render-fachada-edificio-obra-nueva-800.webp" width="1600" height="2133" alt="Dossier comercial y material de venta para promotoras — Eidos Render" style="width: 100%; height: auto; max-height: 650px; object-fit: cover; display: block; border: 1px solid var(--line);" loading="eager" fetchpriority="high">
+        </picture>
+        <div style="display: flex; justify-content: space-between; padding-top: 12px; font-size: 0.85rem; color: #666; border-bottom: 1px solid var(--line); padding-bottom: 12px;">
+          <span>Catálogo Editorial de Venta · PDF Interactivo & Versión Imprenta</span>
+          <span>Tipografía Editorial · Planimetría Comercial Amueblada</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. POR QUÉ EL DOSSIER CIERRA LA VENTA EN EL HOGAR DEL COMPRADOR -->
+    <section class="section" style="padding: 70px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start;">
+          <div>
+            <div class="kicker crimson">El Objeto de Decisión</div>
+            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 20px; line-height: 1.2;">
+              La compra de una vivienda se medita en familia: el dossier es el embajador que permanece sobre la mesa.
+            </h2>
+          </div>
+          <div style="font-size: 1.05rem; line-height: 1.8; color: #2a2a2d;">
+            <p style="margin-bottom: 18px;">
+              Tras salir de la caseta de ventas o de una reunión con la comercializadora, el comprador regresa a su casa con dudas. Un folleto descuidado en papel fino o un PDF desorganizado transmiten desconfianza sobre una inversión de cientos de miles de euros.
+            </p>
+            <p>
+              En <strong>Eidos Render</strong> tratamos cada catálogo como una publicación de arquitectura de alta gama: tipografía Newsreader elegante, planos comerciales claros y limpios, memoria de calidades estructurada y renders a doble página. Diseñamos tanto el PDF ligero optimizado para envío instantáneo por WhatsApp como los archivos técnicos con sangrados y perfiles de color listos para encuadernación en tapa dura.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="feature-card">
-            <span class="kicker crimson">Planimetría</span>
-            <h3 class="feature-card-title">Planos 2D & 3D Texturizados</h3>
-            <p class="feature-card-copy">
-              Sustituimos el plano técnico de CAD por plantas limpias amuebladas a escala, con pavimentos cálidos, cotas principales legibles y representación intuitiva del espacio.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <span class="kicker crimson">Entorno</span>
-            <h3 class="feature-card-title">Mapas de Localización</h3>
-            <p class="feature-card-copy">
-              Infografías vectoriales que sitúan la promoción respecto al transporte público, conexiones de autovía, centros sanitarios, colegios y playas o parques cercanos.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <span class="kicker crimson">Tipologías</span>
-            <h3 class="feature-card-title">Fichas de Unidad Individual</h3>
-            <p class="feature-card-copy">
-              Hojas resumen por cada tipología (áticos, bajos con jardín, 2 y 3 dormitorios) que el comercial puede imprimir o enviar directamente por email a un cliente interesado.
-            </p>
-          </div>
-
+    <!-- 04. PIEZAS INCLUIDAS EN EL KIT COMERCIAL -->
+    <section class="section bg-paper" id="piezas" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 50px;">
+          <div class="kicker crimson">El Kit Comercial Integral</div>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 16px;">
+            Todas las herramientas necesarias para la red de ventas
+          </h2>
+          <p style="font-size: 1.1rem; color: #444; line-height: 1.7;">
+            Resolvemos de forma coordinada el soporte físico y digital de tu promoción:
+          </p>
         </div>
 
-        <div style="text-align: center;">
-          <a href="../contacto.html" class="btn btn-crimson">
-            HABLEMOS DEL PROYECTO →
-          </a>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">01 · CATÁLOGO CENTRAL</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Dossier Editorial de Preventa</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Documento de 20 a 48 páginas con presentación del concepto, ubicación con mapa ilustrado, renders de exteriores e interiores, planos de tipologías y cuadro de calidades.
+            </p>
+          </div>
+
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">02 · PLANIMETRÍA DE VENTA</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Planos Comerciales 2D & 3D</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Plantas coloreadas sin la confusión técnica de los planos de obra. Mobiliario proporcionado, orientación, cotas limpias y superficies útiles y construidas de cada estancia.
+            </p>
+          </div>
+
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">03 · VISIBILIDAD LOCAL</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Vallas de Obra & Lonas de Fachada</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Diseño de vallas publicitarias perimetrales en parcela (8x3m, 4x3m) y lonas de gran formato con número de teléfono de ventas y render principal de impacto para captar tráfico local.
+            </p>
+          </div>
+
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">04 · OFICINA DE VENTAS</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Rotulación de Caseta & Roll-ups</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Elementos decorativos y funcionales para el showroom: paneles expositores de calidades, vinilos decorativos para cristaleras y carpetas comerciales para entregar contratos de reserva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. PROCESO DE PRODUCCIÓN -->
+    <section class="section" id="proceso" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 50px;">
+          <div class="kicker crimson">Metodología de Trabajo</div>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 16px;">
+            Del proyecto técnico a la imprenta en 4 fases
+          </h2>
+          <p style="font-size: 1.1rem; color: #444; line-height: 1.7;">
+            Un proceso coordinado que garantiza coherencia entre planos, renders y textos comerciales:
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">01. Contenidos</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Revisión de Calidades</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Recopilamos memorias técnicas, marcas de proveedores (Porcelanosa, Cortizo, etc.) y cláusulas legales obligatorias para redactar los textos comerciales.
+            </p>
+          </div>
+
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">02. Retícula</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Diseño Editorial (Día 6)</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Maquetamos la estructura de páginas, jerarquía de titulares, mapa de localización y estilo de planos para aprobación del equipo comercial.
+            </p>
+          </div>
+
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">03. Integración</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Ensamblaje 3D (Día 10)</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Montamos los renders definitivos en alta resolución a sangre y a doble página, junto con el cuadro final de superficies y tipologías.
+            </p>
+          </div>
+
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">04. Artes Finales</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Exportación Técnica (Día 15)</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Generamos el PDF interactivo ligero para distribución digital y los archivos PDF certificados con perfiles Fogra para la imprenta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. ESPECIFICACIONES Y ENTREGABLES -->
+    <section class="section" style="padding: 70px 0; border-bottom: 1px solid var(--line); background: #faf9f6;">
+      <div class="container">
+        <div style="max-width: 820px; margin: 0 auto; text-align: center; margin-bottom: 40px;">
+          <div class="kicker crimson">Especificaciones de Entrega</div>
+          <h2 style="font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom: 16px;">
+            Materiales listos para uso inmediato
+          </h2>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; font-size: 1rem;">
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ PDF Interactivo para WhatsApp & Email</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Menos de 10 MB de peso con enlaces clicables a la web, WhatsApp comercial y ubicación en Google Maps.</p>
+          </div>
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ Archivos Certificados para Imprenta</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">PDF/X-1a o PDF/X-4 en CMYK con 3 mm de sangre y marcas de corte para producción en cualquier imprenta gráfica.</p>
+          </div>
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ Planimetría Comercial en Formato Abierto</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Fichas individuales de cada vivienda en JPG y PDF para adjuntar a presupuestos comerciales y contratos de arras.</p>
+          </div>
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ Versiones en Idiomas para Extranjeros</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Adaptación bilingüe o multilingüe (español, inglés, alemán, francés) para ventas internacionales en costa y capitales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. FAQ ESPECÍFICA -->
+    <section class="section" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container" style="max-width: 860px;">
+        <div class="kicker crimson">Preguntas Frecuentes</div>
+        <h2 style="font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom: 36px;">
+          Dudas sobre dossiers y material de venta
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿En qué formatos entregáis el dossier de venta?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              Entregamos dos archivos principales: un PDF interactivo de bajo peso optimizado para envío instantáneo por WhatsApp y correo electrónico a interesados, y un archivo PDF en alta resolución con perfil de color CMYK, marcas de corte y sangrado listo para enviar directamente a imprenta.
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Diseñáis también los planos de venta comerciales amueblados?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              Sí. Redibujamos las plantas arquitectónicas CAD en planos comerciales estilizados en 2D y axonométricas 3D, incorporando pavimentos, mobiliario proporcional a escala, cotas principales y cuadro de superficies útiles y construidas de cada estancia.
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Os encargáis del diseño de vallas de obra y cartelería para la caseta?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              Sí. Diseñamos todo el material físico de punto de venta: vallas de obra de 8x3 metros, lonas de andamio, vinilos de caseta, roll-ups expositores y directorios de calidades, entregando artes finales vectoriales listos para el rotulista local.
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Cuáles son los plazos habituales de diseño y entrega de los catálogos?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              El diseño del dossier comercial y la planimetría suele completarse en 10 a 15 días laborables, sincronizándose con la fase final de renderizado para ensamblar textos legales, planos y visuales en un único documento coherente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. CTA DIRECTO -->
+    <section class="section bg-ink" style="color: var(--paper); padding: 90px 0; text-align: center;">
+      <div class="container" style="max-width: 800px;">
+        <div class="kicker" style="color: #e27d88; font-family: 'Poiret One', sans-serif; letter-spacing: 0.15em; text-transform: uppercase;">Material Comercial de Alto Nivel</div>
+        <h2 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 20px; line-height: 1.15; color: #fff;">
+          Equipa a tu equipo comercial con el mejor dossier de venta
+        </h2>
+        <p style="font-size: 1.15rem; line-height: 1.7; color: #bbb; margin-bottom: 36px;">
+          Solicita presupuesto para el diseño del dossier y material comercial de tu promoción. Respuesta técnica garantizada en menos de 24 horas.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/presupuesto" class="btn btn-crimson" style="padding: 18px 40px; font-size: 1rem; letter-spacing: 0.08em;">SOLICITAR PRESUPUESTO DE DOSSIER →</a>
+          <a href="/contacto" class="btn" style="border: 1px solid #fff; color: #fff; padding: 18px 32px; font-size: 1rem;">HABLAR CON UN TÉCNICO</a>
+        </div>
+        <div style="margin-top: 24px; font-size: 0.85rem; color: #888;">
+          Respuesta técnica garantizada en menos de 24 horas · Presupuesto formal sin compromiso
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
-          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
-        </div>
-        <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Material Comercial.</div>
-                <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
-            <span style="color: var(--crimson); font-weight: 700;">ES</span> ·
-            <a href="../en/services/marketing-collateral.html" onclick="window.setLang('en')">EN</a> ·
-            <a href="../de/leistungen/vermarktungsunterlagen.html" onclick="window.setLang('de')">DE</a> ·
-            <a href="../fr/services/supports-commerciaux.html" onclick="window.setLang('fr')">FR</a>
-          </div>
-          <a href="../proyectos.html">Proyectos</a>
-          <a href="../servicios.html">Servicios</a>
-          <a href="../contacto.html">Contacto</a>
-          <a href="../aviso-legal.html">Aviso Legal</a>
-        </div>
+  <footer class="site-footer" role="contentinfo" style="border-top: 1px solid var(--line); padding: 50px 0; font-size: 0.9rem;">
+    <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+      <div>
+        <strong>EIDOS RENDER</strong> · Dossiers editoriales y material comercial de venta inmobiliaria.<br>
+        Valencia · Madrid · Alicante · Málaga · Servicio en toda España.
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <a href="/servicios" style="color: inherit;">Servicios</a>
+        <a href="/proyectos" style="color: inherit;">Proyectos</a>
+        <a href="/presupuesto" style="color: inherit;">Presupuesto</a>
+        <a href="/aviso-legal" style="color: inherit;">Aviso Legal</a>
+        <a href="/privacidad" style="color: inherit;">Privacidad</a>
       </div>
     </div>
   </footer>
 
-  <script src="../main.js" defer></script>
+  <script src="/main.js" defer></script>
 </body>
 </html>

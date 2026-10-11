@@ -1,337 +1,453 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
+  <!-- Google Tag Manager (Diferido) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N6R4S8NC');
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGTM, { timeout: 3500 });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Infografía 3D & Renders Arquitectónicos — Eidos Render</title>
-  <meta name="description" content="Visualización arquitectónica 3D fotorrealista para promociones inmobiliarias. Renders de fachadas, interiores, zonas comunes y lifestyle en resolución 4K.">
+  <title>Renders 3D para Promotoras de Obra Nueva | Eidos</title>
+  <meta name="description" content="Infografía 3D fotorrealista para comercialización de promociones de obra nueva. Renders de fachada, interiores y zonas comunes para vender sobre plano.">
   <link rel="canonical" href="https://eidosrender.es/servicios/infografia-3d">
-
-  <!-- International SEO / Hreflang -->
-
-  <!-- Multilingual & Geo-routing -->
-  <script src="../js/i18n.js"></script>
-
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Infografía 3D & Renders Arquitectónicos — Eidos Render">
-  <meta property="og:description" content="Visualización arquitectónica 3D fotorrealista para comercialización sobre plano.">
-  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva-1600.jpg">
+  <meta property="og:title" content="Renders 3D para Promotoras de Obra Nueva | Eidos Render">
+  <meta property="og:description" content="Infografía 3D de alta conversión para venta sobre plano de promociones inmobiliarias residenciales.">
+  <meta property="og:url" content="https://eidosrender.es/servicios/infografia-3d">
+  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="shortcut icon" href="../favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/fonts.css">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="geo.region" content="ES">
-  <meta name="geo.placename" content="Valencia">
-  <meta name="geo.position" content="39.4699;-0.3763">
-  <meta name="ICBM" content="39.4699, -0.3763">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/fonts.css">
 
-  <!-- Schema.org Data (Zero Prices) -->
+  <!-- Core Web Vitals Preloads -->
+  <link rel="preload" href="/assets/fonts/poiret-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/josefin-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Schema.org Data -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "@id": "https://eidosrender.es/servicios/infografia-3d#service",
-      "name": "Infografía 3D & Renders Arquitectónicos",
-      "description": "Visualización arquitectónica 3D fotorrealista para promociones inmobiliarias. Renders de fachadas, interiores, zonas comunes y lifestyle en resolución 4K.",
-      "provider": {
-        "@type": "ProfessionalService",
-        "@id": "https://eidosrender.es/#organization",
-        "name": "Eidos Render",
-        "url": "https://eidosrender.es/",
-        "telephone": "+34614459144",
-        "email": "info@eidosrender.es"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://eidosrender.es/servicios/infografia-3d#service",
+        "name": "Renders 3D e Infografía Arquitectónica para Promotoras de Obra Nueva",
+        "description": "Servicio especializado de infografía 3D fotorrealista para preventa inmobiliaria de edificios residenciales, urbanizaciones y villas de lujo.",
+        "provider": {
+          "@type": "ProfessionalService",
+          "@id": "https://eidosrender.es/#organization",
+          "name": "Eidos Render",
+          "url": "https://eidosrender.es/",
+          "telephone": "+34614459144",
+          "email": "info@eidosrender.es",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Valencia",
+            "addressRegion": "Comunidad Valenciana",
+            "addressCountry": "ES"
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Valencia" },
+          { "@type": "City", "name": "Madrid" },
+          { "@type": "City", "name": "Alicante" },
+          { "@type": "City", "name": "Málaga" },
+          { "@type": "Country", "name": "España" }
+        ]
       },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "European Union"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Europe"
-        },
-        {
-          "@type": "Country",
-          "name": "Spain"
-        },
-        {
-          "@type": "Country",
-          "name": "Germany"
-        },
-        {
-          "@type": "Country",
-          "name": "France"
-        },
-        {
-          "@type": "Country",
-          "name": "United Kingdom"
-        },
-        {
-          "@type": "Country",
-          "name": "Switzerland"
-        },
-        {
-          "@type": "Country",
-          "name": "Austria"
-        },
-        {
-          "@type": "Country",
-          "name": "Netherlands"
-        },
-        {
-          "@type": "Country",
-          "name": "Belgium"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://eidosrender.es/servicios/infografia-3d#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://eidosrender.es/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Servicios",
-          "item": "https://eidosrender.es/servicios"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Infografía 3D & Renders Arquitectónicos",
-          "item": "https://eidosrender.es/servicios/infografia-3d"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eidosrender.es/servicios/infografia-3d#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://eidosrender.es/" },
+          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://eidosrender.es/servicios" },
+          { "@type": "ListItem", "position": 3, "name": "Infografía 3D", "item": "https://eidosrender.es/servicios/infografia-3d" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://eidosrender.es/servicios/infografia-3d#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué información técnica necesitáis para presupuestar y arrancar los renders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para iniciar el trabajo requerimos los planos arquitectónicos en formato DWG, Revit o IFC (plantas, alzados y secciones), memoria de calidades de materiales, y si están definidas, referencias de paisajismo e interiorismo. Con estos archivos emitimos presupuesto formal en menos de 24 horas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son los plazos habituales de entrega para una promoción residencial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El plazo medio para una serie de 6 a 10 renders de obra nueva oscila entre 10 y 18 días laborables. Presentamos primeras propuestas de encuadre en 5 días y una ronda intermedia de texturizado antes de la entrega final en alta resolución."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué resolución se entregan las imágenes finales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entregamos de forma estándar en resolución 4K Ultra HD (3840×2160 px) para soportes web y catálogos, y en 6K/8K (hasta 8000 px de ancho) sin sobrecoste para vallas publicitarias de obra y lonas de fachada de gran formato."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas rondas de revisión incluye el encargo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cada proyecto incluye 2 rondas completas de revisión técnica y estética estructuradas en fases: validación geométrica de cámaras y corrección de acabados y mobiliario, garantizando que el resultado sea 100% fiel al proyecto de ejecución."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
-<body class="bg-paper">
+<body style="background-color: var(--cream); color: var(--charcoal);">
 
-    <!-- =====================================================
-       00. CABECERA DINÁMICA CENTRADA:
-       Isotipo grande a dos tintas + Nombre centrado debajo
-       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
-       ===================================================== -->
   <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
       <div class="nav-center-brand">
-        <a href="../index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+        <a href="/" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
           <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
             <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
             <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
             <rect class="iso-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
           </svg>
-          <span class="brand-name-scroll" id="brandName">EIDOS RENDER</span>
+          <span class="brand-name-initial" id="brandNameInitial">EIDOS RENDER</span>
         </a>
       </div>
+
+      <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menú" aria-expanded="false">
+        <span class="menu-btn-icon">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </span>
+      </button>
     </div>
   </header>
 
-  <!-- =====================================================
-       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
-       ===================================================== -->
-  <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menu" aria-expanded="false">
-    <span class="menu-btn-label">MENÚ</span>
-    <span class="menu-btn-icon">
-      <span class="line line-top"></span>
-      <span class="line line-bottom"></span>
-    </span>
-  </button>
-
-  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navigation" aria-hidden="true">
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navegación" aria-hidden="true">
     <div class="app-panel-header">
-      <span class="app-panel-title">EIDOS RENDER · APP</span>
-      <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
+      <span class="app-panel-title">Eidos Render</span>
     </div>
-
-    <nav aria-label="Navigation">
+    <nav aria-label="Menú principal">
       <ul class="app-nav-list">
-        <li class="app-nav-item">
-          <a href="../index.html" class="app-link">
-            <span><span class="app-nav-num">01</span>Inicio</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../servicios.html" class="app-link">
-            <span><span class="app-nav-num">02</span>Servicios & Capacidades</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../proyectos.html" class="app-link">
-            <span><span class="app-nav-num">03</span>Portfolio de Casos</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../index.html#branding" class="app-link">
-            <span><span class="app-nav-num">04</span>Identidad & Branding</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../index.html#proceso" class="app-link">
-            <span><span class="app-nav-num">05</span>Metodología</span>
-            <span>→</span>
-          </a>
-        </li>
-        <li class="app-nav-item">
-          <a href="../contacto.html" class="app-link">
-            <span><span class="app-nav-num">06</span>Contacto Directo</span>
-            <span>→</span>
-          </a>
-        </li>
+        <li class="app-nav-item"><a href="/" class="app-link"><span><span class="app-nav-num">01</span>Inicio</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/servicios" class="app-link"><span><span class="app-nav-num">02</span>Servicios</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/proyectos" class="app-link"><span><span class="app-nav-num">03</span>Proyectos</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/obra-nueva" class="app-link"><span><span class="app-nav-num">04</span>Obra Nueva</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/presupuesto" class="app-link"><span><span class="app-nav-num">05</span>Presupuesto</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/contacto" class="app-link"><span><span class="app-nav-num">06</span>Contacto</span><span>→</span></a></li>
       </ul>
     </nav>
-
-    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
-    <div class="app-lang-segmented" aria-label="Language selector">
-      <a href="../index.html" data-lang="es" class="active" onclick="window.setLang('es')">ES</a>
-      <a href="../en/" data-lang="en" class="" onclick="window.setLang('en')">EN</a>
-      <a href="../de/" data-lang="de" class="" onclick="window.setLang('de')">DE</a>
-      <a href="../fr/" data-lang="fr" class="" onclick="window.setLang('fr')">FR</a>
-    </div>
-
     <div class="app-panel-footer">
-      <a href="../contacto.html" class="app-cta-btn">
-        HABLEMOS DEL PROYECTO →
-      </a>
-      <div class="app-contact-sub">Valencia · Servicio Nacional e Internacional</div>
+      <a href="/presupuesto" class="app-cta-btn">SOLICITAR PRESUPUESTO →</a>
+      <div class="app-contact-sub">Valencia · Madrid · Alicante · Málaga</div>
     </div>
   </div>
 
   <main style="padding-top: 140px;">
 
-    <section class="section-sm bg-paper" style="border-bottom: 1px solid var(--line);">
+    <!-- 01. HERO EDITORIAL ORIENTADO A CONVERSIÓN -->
+    <section class="section-sm bg-cream" style="border-bottom: 1px solid var(--line); padding-bottom: 60px;">
       <div class="container">
-        <div style="margin-bottom: 16px;">
-          <a href="../servicios.html" class="link-arrow" style="font-size: 0.72rem;">← VOLVER A SERVICIOS</a>
+        <div style="margin-bottom: 20px;">
+          <a href="/servicios" class="link-arrow" style="font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;">← Volver a Servicios de Promotoras</a>
         </div>
-        <div class="kicker crimson">Fase 02 · Visualización 3D</div>
-        <h1 class="display-title" style="margin-bottom: 24px;">
-          La imagen antes de la obra.
+        <div class="kicker crimson">Visualización 3D Arquitectónica B2B</div>
+        <h1 class="display-title" style="margin-bottom: 24px; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1;">
+          Renders 3D e Infografía Arquitectónica para Promotoras de Obra Nueva
         </h1>
-        <p class="body-large body-muted" style="max-width: 760px;">
-          Visualizamos arquitectura antes de que exista. Imágenes capaces de explicar el proyecto, construir atmósfera y generar deseo de compra sobre plano.
+        <p class="body-large" style="max-width: 820px; font-size: 1.25rem; line-height: 1.6; color: #333; margin-bottom: 32px;">
+          Transformamos planos técnicos en imágenes hiperrealistas con dirección de arte editorial. Creamos la certeza visual que promotoras, comercializadoras y gestoras de cooperativas necesitan para abrir ventas sobre plano y cerrar reservas antes del inicio de obra.
         </p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+          <a href="/presupuesto" class="btn btn-crimson" style="padding: 16px 36px; font-size: 0.95rem; letter-spacing: 0.06em;">SOLICITAR PRESUPUESTO DE RENDERS →</a>
+          <a href="#proceso" class="btn" style="border: 1px solid var(--charcoal); padding: 16px 28px; font-size: 0.95rem;">VER METODOLOGÍA & PLAZOS</a>
+        </div>
       </div>
     </section>
 
-    <!-- Galería Destacada -->
-    <section class="section bg-ink" style="color: var(--paper);">
+    <!-- 02. IMAGEN DESTACADA RESPONSIVE -->
+    <section class="section-sm" style="padding: 40px 0;">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 48px;">
-          <div>
-            <picture>
-              <source srcset="../img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
-              <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Render de fachada residencial exterior" style="width: 100%; border: 1px solid var(--line-dark);">
-            </picture>
-            <div style="margin-top: 10px; font-family: var(--font-syncopate), sans-serif; letter-spacing: 0.12em; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; color: var(--signal);">
-              Exteriores Urbanos
-            </div>
-          </div>
-          <div>
-            <picture>
-              <source srcset="../img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
-              <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Render de salón interiorismo penthouse" style="width: 100%; border: 1px solid var(--line-dark);">
-            </picture>
-            <div style="margin-top: 10px; font-family: var(--font-syncopate), sans-serif; letter-spacing: 0.12em; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; color: var(--signal);">
-              Interiores & Atmósfera Lumínica
-            </div>
-          </div>
+        <picture>
+          <source media="(max-width: 768px)" srcset="/img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp">
+          <source media="(min-width: 769px)" srcset="/img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+          <img src="/img/render-fachada-edificio-obra-nueva-800.webp" width="1600" height="2133" alt="Render 3D de fachada de edificio residencial de obra nueva — Eidos Render" style="width: 100%; height: auto; max-height: 700px; object-fit: cover; display: block; border: 1px solid var(--line);" loading="eager" fetchpriority="high">
+        </picture>
+        <div style="display: flex; justify-content: space-between; padding-top: 12px; font-size: 0.85rem; color: #666; border-bottom: 1px solid var(--line); padding-bottom: 12px;">
+          <span>Proyecto Residencial Plurifamiliar · Fachada y Accesos</span>
+          <span>Resolución 4K UHD · Modelado BIM & Iluminación Natural</span>
         </div>
+      </div>
+    </section>
 
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-          <div class="feature-card">
-            <h3 class="feature-card-title">Exteriores</h3>
-            <p class="feature-card-copy">Fachadas diurnas, atardeceres y nocturnas con rigurosa integración fotográfica en la trama urbana o paisaje natural.</p>
+    <!-- 03. POR QUÉ LA INFOGRAFÍA COMERCIAL DECIDE EL RITMO DE PREVENTA -->
+    <section class="section" style="padding: 70px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start;">
+          <div>
+            <div class="kicker crimson">El Valor de la Certeza Visual</div>
+            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 20px; line-height: 1.2;">
+              El comprador final no adquiere metros cuadrados: compra un estilo de vida que debe visualizar.
+            </h2>
           </div>
-          <div class="feature-card">
-            <h3 class="feature-card-title">Interiores</h3>
-            <p class="feature-card-copy">Salones, cocinas, dormitorios principales y baños con dirección de arte en mobiliario, atrezo e iluminación cálida.</p>
-          </div>
-          <div class="feature-card">
-            <h3 class="feature-card-title">Zonas Comunes</h3>
-            <p class="feature-card-copy">Piscinas, terrazas comunitarias, soláriums, gimnasios, salas coworking y portales representativos.</p>
+          <div style="font-size: 1.05rem; line-height: 1.8; color: #2a2a2d;">
+            <p style="margin-bottom: 18px;">
+              En el mercado inmobiliario actual en Valencia, Madrid, Alicante o Málaga, el mayor freno para una decisión de compra sobre plano es la incertidumbre espacial. Un comprador particular no interpreta correctamente una sección o un plano CAD; necesita sentir la luz de la mañana entrando por el ventanal del salón, la amplitud de la terraza y la calidad de los acabados de porcelánico y carpintería.
+            </p>
+            <p>
+              En <strong>Eidos Render</strong> no generamos simples modelos tridimensionales estériles. Trabajamos con un enfoque de dirección visual publicitaria: estudiamos la orientación solar real de la parcela, vestimos las estancias con mobiliario de tendencia arquitectónica e integramos vegetación autóctona para que cada imagen funcione como el argumento de venta principal de la caseta de ventas y los portales inmobiliarios.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Metodología & CTA -->
-    <section class="section bg-paper">
-      <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-        <div>
-          <div class="kicker crimson">Rigor Técnico</div>
-          <h2 class="display-sub" style="margin-bottom: 20px;">
-            De planos CAD y modelos BIM a imágenes fotorrealistas.
+    <!-- 04. TIPOLOGÍAS DE RENDERS INCLUIDAS EN EL PAQUETE DE OBRA NUEVA -->
+    <section class="section bg-paper" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 50px;">
+          <div class="kicker crimson">Alcance Completo de Visualización</div>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 16px;">
+            El paquete esencial de infografía 3D para una promoción de éxito
           </h2>
-          <p class="body-regular body-muted" style="margin-bottom: 24px;">
-            Nuestro equipo parte de la planimetría arquitectónica real. Calibramos las texturas físicas exactas de carpinterías, revocos y piedras según la memoria de calidades para evitar inconsistencias técnicas durante la venta.
+          <p style="font-size: 1.1rem; color: #444; line-height: 1.7;">
+            Cada promoción exige una narrativa visual equilibrada que resuelva tanto la presencia urbana del edificio como el detalle íntimo de la vivienda.
           </p>
-          <a href="../contacto.html" class="btn btn-crimson">
-            HABLEMOS DEL PROYECTO →
-          </a>
         </div>
-        <div>
-          <picture>
-            <source srcset="../img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
-            <img src="../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Render de detalle arquitectónico" style="border: 1px solid var(--line);">
-          </picture>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+          <!-- Card 1 -->
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">01 · EXTERIOR & ENTORNO</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Fachada Principal e Integración Urbana</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Vistas peatonales y contrapicadas que realzan la volumetría del edificio, sus terrazas y la materialidad de la envolvente. Perfectas para valla de obra, cartelería de caseta y portada de catálogo.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">02 · AMENITIES & SOCIAL</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Zonas Comunes & Paisajismo</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Visualización de piscina infinity, solárium, gimnasio, gastroteca y jardines comunitarios. Las zonas comunes son el elemento diferenciador que justifica el precio por metro cuadrado frente a la competencia.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">03 · INTERIORISMO RESIDENCIAL</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Vivienda Piloto Virtual</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Infografías interiores de salón-comedor con cocina integrada, dormitorios principales con baño en suite y terrazas habitables. Generan el flechazo emocional que impulsa la reserva inmediata.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div style="padding: 32px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-size: 0.85rem; font-family: 'Poiret One', sans-serif; letter-spacing: 0.1em; color: var(--granate); margin-bottom: 12px; font-weight: bold;">04 · CLARIDAD ESPACIAL</div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 14px;">Planos Comerciales 3D Amueblados</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Plantas axonométricas en 3D con texturas de pavimento, cotas principales y distribución de mobiliario a escala. Permiten al cliente comprender de un vistazo la funcionalidad de cada tipología.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. METODOLOGÍA Y PROCESO EN 4 FASES -->
+    <section class="section" id="proceso" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 50px;">
+          <div class="kicker crimson">Metodología Transparente</div>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 16px;">
+            Flujo de trabajo en 4 hitos sin sorpresas ni retrasos
+          </h2>
+          <p style="font-size: 1.1rem; color: #444; line-height: 1.7;">
+            Diseñado para integrarse con los ritmos exigentes de lanzamiento de promotoras y comercializadoras:
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">01. Recepción & Chequeo</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Auditoría de Planos</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Revisamos archivos DWG/BIM, memoria de calidades y dossier de interiorismo. Confirmamos dudas técnicas antes de empezar a modelar.
+            </p>
+          </div>
+
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">02. Encuadres en Blanco</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Cámaras Comerciales (Día 5)</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Enviamos perspectivas volumétricas tipo arcilla (*clay render*) para seleccionar los mejores ángulos comerciales junto a tu equipo.
+            </p>
+          </div>
+
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">03. Texturizado & Luz</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Prueba de Materiales (Día 10)</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Aplicamos texturas fotorrealistas, iluminación solar calculada y atrezo de interiorismo. Ajustamos la primera ronda de feedback.
+            </p>
+          </div>
+
+          <div style="border-left: 2px solid var(--granate); padding-left: 20px;">
+            <div style="font-size: 1.8rem; font-family: 'Newsreader', serif; font-style: italic; color: var(--granate); margin-bottom: 6px;">04. Entrega en 4K / 8K</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Postproducción Final</h3>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Renderizado en alta definición con etalonaje de color e integración de vegetación real. Entrega de archivos finales listos para imprenta y web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. ENTREGABLES TANGIBLES Y ESPECIFICACIONES -->
+    <section class="section" style="padding: 70px 0; border-bottom: 1px solid var(--line); background: #faf9f6;">
+      <div class="container">
+        <div style="max-width: 820px; margin: 0 auto; text-align: center; margin-bottom: 40px;">
+          <div class="kicker crimson">Especificaciones Técnicas</div>
+          <h2 style="font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom: 16px;">
+            Qué incluye exactamente cada encargo
+          </h2>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; font-size: 1rem;">
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ Archivos en Resolución Máxima</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Imágenes en resolución nativa 4K (3840×2160 px) para pantallas y hasta 8K (8000 px) para lonas y vallas de obra.</p>
+          </div>
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ Formatos Abiertos & WebP</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Entregamos JPG en sRGB sin compresión, TIFF en AdobeRGB para imprenta y WebP ligero optimizado para la web de la promoción.</p>
+          </div>
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ Derechos de Explotación Plena</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Cesión total de derechos publicitarios sin royalties ni limitaciones territoriales para web, publicidad digital, prensa e imprenta.</p>
+          </div>
+          <div style="background: #fff; padding: 24px; border: 1px solid var(--line);">
+            <div style="font-weight: bold; margin-bottom: 8px;">✔ 2 Rondas de Ajustes Incluidas</div>
+            <p style="color: #666; font-size: 0.92rem; line-height: 1.5; margin: 0;">Dos fases completas de revisión técnica para asegurar que el render coincida al milímetro con el proyecto de ejecución.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. FAQ ESPECÍFICA PARA PROMOTORAS -->
+    <section class="section" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container" style="max-width: 860px;">
+        <div class="kicker crimson">Dudas Frecuentes</div>
+        <h2 style="font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom: 36px;">
+          Preguntas habituales de promotoras e inversores
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Qué información técnica necesitáis para presupuestar y arrancar los renders?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              Para iniciar el trabajo requerimos los planos arquitectónicos en formato DWG, Revit o IFC (plantas, alzados y secciones), memoria de calidades de materiales, y si están definidas, referencias de paisajismo e interiorismo. Con estos archivos emitimos presupuesto formal en menos de 24 horas.
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Cuáles son los plazos habituales de entrega para una promoción residencial?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              El plazo medio para una serie de 6 a 10 renders de obra nueva oscila entre 10 y 18 días laborables. Presentamos primeras propuestas de encuadre en 5 días y una ronda intermedia de texturizado antes de la entrega final en alta resolución.
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿En qué resolución se entregan las imágenes finales?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              Entregamos de forma estándar en resolución 4K Ultra HD (3840×2160 px) para soportes web y catálogos, y en 6K/8K (hasta 8000 px de ancho) sin sobrecoste para vallas publicitarias de obra y lonas de fachada de gran formato.
+            </p>
+          </div>
+
+          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Cuántas rondas de revisión incluye el encargo?</h3>
+            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
+              Cada proyecto incluye 2 rondas completas de revisión técnica y estética estructuradas en fases: validación geométrica de cámaras y corrección de acabados y mobiliario, garantizando que el resultado sea 100% fiel al proyecto de ejecución.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. CTA DIRECTO A PRESUPUESTO -->
+    <section class="section bg-ink" style="color: var(--paper); padding: 90px 0; text-align: center;">
+      <div class="container" style="max-width: 800px;">
+        <div class="kicker" style="color: #e27d88; font-family: 'Poiret One', sans-serif; letter-spacing: 0.15em; text-transform: uppercase;">Acelera tu Preventa Inmobiliaria</div>
+        <h2 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 20px; line-height: 1.15; color: #fff;">
+          ¿Tienes una promoción en fase de proyecto o preventa?
+        </h2>
+        <p style="font-size: 1.15rem; line-height: 1.7; color: #bbb; margin-bottom: 36px;">
+          Envíanos tus planos arquitectónicos o memoria básica y recibirás una propuesta técnica detallada con desglose de vistas, calendario de hitos y presupuesto cerrado en menos de 24 horas.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/presupuesto" class="btn btn-crimson" style="padding: 18px 40px; font-size: 1rem; letter-spacing: 0.08em;">SOLICITAR PRESUPUESTO DE RENDERS 3D →</a>
+          <a href="/contacto" class="btn" style="border: 1px solid #fff; color: #fff; padding: 18px 32px; font-size: 1rem;">HABLAR CON UN TÉCNICO</a>
+        </div>
+        <div style="margin-top: 24px; font-size: 0.85rem; color: #888;">
+          Respuesta técnica garantizada en menos de 24 horas · Presupuesto formal sin compromiso
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
-          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
-        </div>
-        <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Infografía 3D.</div>
-                <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
-            <span style="color: var(--crimson); font-weight: 700;">ES</span> ·
-            <a href="../en/services/3d-rendering.html" onclick="window.setLang('en')">EN</a> ·
-            <a href="../de/leistungen/3d-rendering.html" onclick="window.setLang('de')">DE</a> ·
-            <a href="../fr/services/rendu-3d.html" onclick="window.setLang('fr')">FR</a>
-          </div>
-          <a href="../proyectos.html">Proyectos</a>
-          <a href="../servicios.html">Servicios</a>
-          <a href="../contacto.html">Contacto</a>
-          <a href="../aviso-legal.html">Aviso Legal</a>
-        </div>
+  <!-- PIE DE PÁGINA EDITORIAL -->
+  <footer class="site-footer" role="contentinfo" style="border-top: 1px solid var(--line); padding: 50px 0; font-size: 0.9rem;">
+    <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+      <div>
+        <strong>EIDOS RENDER</strong> · Estudio de visualización y marketing para promotoras de obra nueva.<br>
+        Valencia · Madrid · Alicante · Málaga · Servicio en toda España.
+      </div>
+      <div style="display: flex; gap: 20px;">
+        <a href="/servicios" style="color: inherit;">Servicios</a>
+        <a href="/proyectos" style="color: inherit;">Proyectos</a>
+        <a href="/presupuesto" style="color: inherit;">Presupuesto</a>
+        <a href="/aviso-legal" style="color: inherit;">Aviso Legal</a>
+        <a href="/privacidad" style="color: inherit;">Privacidad</a>
       </div>
     </div>
   </footer>
 
-  <script src="../main.js" defer></script>
+  <script src="/main.js" defer></script>
 </body>
 </html>
