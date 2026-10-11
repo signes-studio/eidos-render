@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager (Diferido) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function loadGTM() {
+        if (window._gtmLoaded) return;
+        window._gtmLoaded = true;
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N6R4S8NC');
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGTM, { timeout: 3500 });
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+      }
+      ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+        window.addEventListener(e, loadGTM, { once: true, passive: true });
+      });
+    </script>
+    <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,6 +72,11 @@
 
   <!-- Typography & Stylesheets -->
   <link rel="stylesheet" href="assets/fonts.css">
+  <!-- Core Web Vitals Preloads -->
+  <link rel="preload" as="image" href="img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/render-fachada-edificio-obra-nueva.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+  <link rel="preload" href="assets/fonts/poiret-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/josefin-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 
   <!-- Schema.org Knowledge Graph (Zero Prices) -->
@@ -486,9 +506,10 @@
           <div class="text-reveal-flow">
             <div class="hero-supporting-media" style="border-radius: 0 !important; overflow: hidden;">
               <picture>
-                <source srcset="img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
-                <img src="img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Render arquitectura 3D obra nueva — Eidos Render" loading="eager" fetchpriority="high">
-              </picture>
+            <source media="(max-width: 768px)" srcset="img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+            <img src="img/render-fachada-edificio-obra-nueva-800.webp" width="1600" height="2133" alt="Renders 3D para promotoras de obra nueva — Eidos Render" loading="eager" fetchpriority="high" decoding="async">
+          </picture>
               <div style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-poiret); font-size: 10.5px; letter-spacing: 0.06em; color: var(--warm-gray); background-color: var(--cream); border-top: 1px solid var(--line);">
                 <span>01 · Obra nueva plurifamiliar</span>
                 <span style="color: var(--granate); font-weight: 400;">Valencia, ES</span>
@@ -776,9 +797,10 @@
             <div class="project-card-link">
               <div class="project-media-wrap" style="border-radius: 0 !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
-                  <source srcset="img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
-                  <img src="img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Zonas Comunes & Paisajismo — 3D CGI Landscape" loading="lazy">
-                </picture>
+            <source media="(max-width: 768px)" srcset="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
+            <img src="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" width="1600" height="2133" alt="Zonas Comunes y Paisajismo 3D — Eidos Render" loading="lazy" decoding="async">
+          </picture>
               </div>
               <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
@@ -795,9 +817,10 @@
             <div class="project-card-link">
               <div class="project-media-wrap" style="border-radius: 0 !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
-                  <source srcset="img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
-                  <img src="img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Villa Contemporánea — 3D CGI Luxury Villa" loading="lazy">
-                </picture>
+            <source media="(max-width: 768px)" srcset="img/render-exterior-vivienda-unifamiliar-piscina-800.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
+            <img src="img/render-exterior-vivienda-unifamiliar-piscina-800.webp" width="1600" height="2133" alt="Villa de Lujo y Piscina 3D — Eidos Render" loading="lazy" decoding="async">
+          </picture>
               </div>
               <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
@@ -814,9 +837,10 @@
             <div class="project-card-link">
               <div class="project-media-wrap" style="border-radius: 0 !important; overflow: hidden; border: 1px solid var(--line);">
                 <picture>
-                  <source srcset="img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
-                  <img src="img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Penthouse Doble Altura — 3D CGI Penthouse Interior" loading="lazy">
-                </picture>
+            <source media="(max-width: 768px)" srcset="img/infografia-3d-salon-moderno-doble-altura-800.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
+            <img src="img/infografia-3d-salon-moderno-doble-altura-800.webp" width="1600" height="2133" alt="Interior Penthouse Doble Altura 3D — Eidos Render" loading="lazy" decoding="async">
+          </picture>
               </div>
               <div class="project-info" style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line);">
                 <div>
@@ -856,13 +880,13 @@
 
           <div class="reels-grid text-reveal-flow">
             <div style="border-radius: 0 !important; overflow: hidden; border: 1px solid var(--line-on-granate); background-color: rgba(27,25,24,0.3);">
-              <video autoplay muted loop playsinline poster="img/infografia-exterior-zonas-comunes-obra-nueva.webp" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover;">
-                <source src="video/reel-vertical-render-arquitectura-residencial.mp4" type="video/mp4">
+              <video autoplay muted loop playsinline preload="none" poster="img/infografia-exterior-zonas-comunes-obra-nueva.webp" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover;">
+                <source src="img/video-reel-patio.mp4" type="video/mp4">
               </video>
             </div>
             <div style="border-radius: 0 !important; overflow: hidden; border: 1px solid var(--line-on-granate); background-color: rgba(27,25,24,0.3);">
-              <video autoplay muted loop playsinline poster="img/render-exterior-vivienda-unifamiliar-piscina.webp" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover;">
-                <source src="video/reel-vertical-animacion-villa-piscina.mp4" type="video/mp4">
+              <video autoplay muted loop playsinline preload="none" poster="img/render-exterior-vivienda-unifamiliar-piscina.webp" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover;">
+                <source src="img/video-recorrido-patio.mp4" type="video/mp4">
               </video>
             </div>
           </div>

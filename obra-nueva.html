@@ -30,48 +30,55 @@
   <link rel="shortcut icon" href="favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <!-- Schema.org: BreadcrumbList & VisualArtwork -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Inicio",
-              "item": "https://eidosrender.es/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Casos de Estudio",
-              "item": "https://eidosrender.es/portfolio"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Edificio de Obra Nueva",
-              "item": "https://eidosrender.es/obra-nueva"
-            }
-          ]
+      <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://eidosrender.es/obra-nueva#service",
+        "name": "Renders 3D para Edificios de Obra Nueva Residencial",
+        "description": "Infografías fotorrealistas de fachada, zonas comunes, terrazas y salones para preventa sobre plano de promociones plurifamiliares.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Eidos Render",
+          "url": "https://eidosrender.es"
         },
-        {
-          "@type": "VisualArtwork",
-          "name": "Renders de Edificio Residencial de Obra Nueva",
-          "artMedium": "CGI 3D Render",
-          "creator": {
-            "@type": "Corporation",
-            "name": "Eidos Render",
-            "url": "https://eidosrender.es/"
+        "areaServed": [
+          { "@type": "City", "name": "Valencia" },
+          { "@type": "City", "name": "Madrid" },
+          { "@type": "City", "name": "Alicante" },
+          { "@type": "City", "name": "Málaga" },
+          { "@type": "Country", "name": "España" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eidosrender.es/obra-nueva#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://eidosrender.es/"
           },
-          "image": "https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp",
-          "description": "Visualización fotorrealista de fachada y zonas exteriores de edificio residencial plurifamiliar para comercialización inmobiliaria."
-        }
-      ]
-    }
-    </script>
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Servicios",
+            "item": "https://eidosrender.es/servicios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Obra Nueva",
+            "item": "https://eidosrender.es/obra-nueva"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="assets/fonts.css">
 </head>
 <body>

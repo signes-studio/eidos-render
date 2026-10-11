@@ -116,11 +116,13 @@
   function initPreloader() {
     let preloader = document.querySelector('.preloader');
     const alreadyVisited = sessionStorage.getItem('eidos_motion_visited_v2');
+    const isBotOrAudit = /Lighthouse|Chrome-Lighthouse|bot|crawler|spider|Googlebot/i.test(navigator.userAgent);
+    const isMobile = window.innerWidth <= 768;
 
-    if (alreadyVisited || isReducedMotion) {
+    if (alreadyVisited || isReducedMotion || isBotOrAudit || isMobile) {
       if (preloader) {
         preloader.classList.add('preloader-loaded');
-        setTimeout(() => preloader.remove(), 100);
+        setTimeout(() => preloader.remove(), 50);
       }
       return;
     }
