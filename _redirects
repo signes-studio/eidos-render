@@ -1,0 +1,63 @@
+# ==============================================================================
+# Cloudflare Pages / Edge Redirects (301 Permanent)
+# ==============================================================================
+
+# Redirecciones de variantes .html a URLs canónicas limpias
+/index.html                     /                           301
+/servicios.html                 /servicios                  301
+/proyectos.html                 /proyectos                  301
+/contacto.html                  /contacto                   301
+/obra-nueva.html                /obra-nueva                 301
+/vivienda-unifamiliar.html      /vivienda-unifamiliar       301
+/reforma-de-piso.html           /reforma-de-piso            301
+/renders-para-house-flipping.html /renders-para-house-flipping 301
+/renders-valencia.html          /renders-valencia           301
+/renders-madrid.html            /renders-madrid             301
+/renders-alicante.html          /renders-alicante           301
+/renders-malaga.html            /renders-malaga             301
+/renders-bilbao.html            /renders-bilbao             301
+/renders-sevilla.html           /renders-sevilla            301
+/faq.html                       /faq                        301
+/aviso-legal.html               /aviso-legal                301
+/privacidad.html                /privacidad                 301
+/cookies.html                   /cookies                    301
+
+# Redirecciones de subdirectorios a URLs canónicas
+/servicios/                     /servicios                  301
+/servicios/index.html           /servicios                  301
+/contacto/                      /contacto                   301
+/contacto/index.html            /contacto                   301
+/proyectos/                     /proyectos                  301
+/proyectos/index.html           /proyectos                  301
+
+# Subpáginas de servicios
+/servicios/infografia-3d.html   /servicios/infografia-3d    301
+/servicios/video-3d.html        /servicios/video-3d         301
+/servicios/branding.html        /servicios/branding         301
+/servicios/material-comercial.html /servicios/material-comercial 301
+/servicios/web-real-estate.html /servicios/web-real-estate  301
+/servicios/captacion.html       /servicios/captacion        301
+
+# Redirección canónica de blog a /blog/
+/blog                           /blog/                      301
+/blog/index.html                /blog/                      301
+
+# Artículos de blog de .html a limpio
+/blog/promotoras-obra-nueva.html              /blog/promotoras-obra-nueva              301
+/blog/vender-pisos-sobre-plano.html           /blog/vender-pisos-sobre-plano           301
+/blog/house-flipping.html                     /blog/house-flipping                     301
+/blog/como-elegir-estudio-render.html         /blog/como-elegir-estudio-render         301
+/blog/estrategias-visuales-promociones.html   /blog/estrategias-visuales-promociones   301
+/blog/home-staging-virtual.html               /blog/home-staging-virtual               301
+/blog/agencias-inmobiliarias.html             /blog/agencias-inmobiliarias             301
+/blog/planos-3d-vs-planos-tecnicos.html       /blog/planos-3d-vs-planos-tecnicos       301
+/blog/renders-fotorealistas-vs-comerciales.html /blog/renders-fotorealistas-vs-comerciales 301
+/blog/reducir-stock-inmobiliario-visualizacion-3d.html /blog/reducir-stock-inmobiliario-visualizacion-3d 301
+
+# Legacy y casos
+/portfolio                      /proyectos                  301
+/portfolio.html                 /proyectos                  301
+/proyectos/rozafa               /proyectos                  301
+/proyectos/madbit               /proyectos                  301
+/proyectos/gare-des-mines       /proyectos                  301
+/proyectos/altea-hills          /proyectos                  301

@@ -20,11 +20,16 @@
     RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
     RewriteRule ^(.*)$ https://eidosrender.es/$1 [R=301,L]
 
-    # C. Eliminar barra final innecesaria en archivos estándar si existe
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)/$ /$1 [L,R=301]
+    # C. Forzar redirección externa 301 si se solicita un archivo con extensión .html
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+    RewriteRule ^([^.]+)\.html$ https://eidosrender.es/$1 [R=301,L]
 
-    # D. Redirección 301 de portfolio a proyectos
+    # D. Eliminar barra final innecesaria en rutas que no sean la raíz ni el blog
+    RewriteCond %{REQUEST_URI} !^/blog/
+    RewriteCond %{REQUEST_URI} ^/(.+)/$
+    RewriteRule ^ https://eidosrender.es/%1 [R=301,L]
+
+    # E. Redirección 301 de portfolio y casos legacy a proyectos
     RewriteRule ^portfolio/?$ /proyectos [R=301,L]
     RewriteRule ^proyectos/(rozafa|madbit|gare-des-mines|altea-hills)(\.html)?$ /proyectos [R=301,L]
 
