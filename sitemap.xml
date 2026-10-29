@@ -2,257 +2,245 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <!-- ================================================================== -->
-    <!-- 1. PÁGINAS PRINCIPALES Y NÚCLEO DE CONVERSIÓN                     -->
+    <!-- 1. PÁGINAS PRINCIPALES Y CONVERSIÓN DIRECTA                        -->
     <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/presupuesto</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/servicios</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/proyectos</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
+        <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/proyectos</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/presupuesto</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/contacto</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/tarifas-renders-3d</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/faq</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.60</priority>
+        <priority>0.70</priority>
     </url>
 
     <!-- ================================================================== -->
     <!-- 2. SERVICIOS ESPECIALIZADOS PARA PROMOTORAS                        -->
     <!-- ================================================================== -->
     <url>
-        <loc>https://eidosrender.es/obra-nueva</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/renders-promociones-inmobiliarias</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/infografia-3d-obra-nueva</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/infografia-3d</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/video-3d-promociones</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/landing-page-promocion-inmobiliaria</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/video-3d</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/dossier-y-flyer-venta-inmobiliario</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://eidosrender.es/servicios/web-real-estate</loc>
-        <lastmod>2026-10-10</lastmod>
+        <loc>https://eidosrender.es/captacion-digital-promociones</loc>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/servicios/material-comercial</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/servicios/branding</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/tarifas-renders-3d</loc>
-        <lastmod>2026-10-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/servicios/captacion</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/vivienda-unifamiliar</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/reforma-de-piso</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/renders-para-house-flipping</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.75</priority>
     </url>
 
     <!-- ================================================================== -->
-    <!-- 3. PÁGINAS GEOLOCALIZADAS (CIUDADES CLAVE)                        -->
+    <!-- 3. POSICIONAMIENTO GEOLOCALIZADO (CIUDADES CLAVE)                 -->
     <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/renders-valencia</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-madrid</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-alicante</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/renders-malaga</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <!-- ================================================================== -->
-    <!-- 4. BLOG Y GUÍAS DE CAPTACIÓN                                      -->
+    <!-- 4. PÁGINAS INDIVIDUALES DE PROYECTO (PORTFOLIO)                   -->
+    <!-- ================================================================== -->
+    <url>
+        <loc>https://eidosrender.es/proyectos/residencial-obra-nueva-valencia</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/proyectos/complejo-residencial-madbit</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/proyectos/villa-unifamiliar-altea</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/proyectos/reforma-integral-madrid</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://eidosrender.es/proyectos/regeneracion-urbana-gare-des-mines</loc>
+        <lastmod>2026-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <!-- ================================================================== -->
+    <!-- 5. BLOG Y GUÍAS EDITORIALES DE CAPTACIÓN                          -->
     <!-- ================================================================== -->
     <url>
         <loc>https://eidosrender.es/blog/</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.75</priority>
+        <priority>0.80</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/coste-render-promotoras</loc>
-        <lastmod>2026-10-11</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/renders-vs-fotos-venta-sobre-plano</loc>
-        <lastmod>2026-10-11</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/material-lanzamiento-preventa</loc>
-        <lastmod>2026-10-11</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/checklist-lanzamiento-inmobiliario</loc>
-        <lastmod>2026-10-11</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/promotoras-obra-nueva</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/vender-pisos-sobre-plano</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/house-flipping</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/como-elegir-estudio-render</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/estrategias-visuales-promociones</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/home-staging-virtual</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/agencias-inmobiliarias</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/planos-3d-vs-planos-tecnicos</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/renders-fotorealistas-vs-comerciales</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
     </url>
     <url>
         <loc>https://eidosrender.es/blog/reducir-stock-inmobiliario-visualizacion-3d</loc>
-        <lastmod>2026-10-10</lastmod>
+        <lastmod>2026-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.65</priority>
-    </url>
-
-    <!-- ================================================================== -->
-    <!-- 5. INFORMACIÓN LEGAL Y COMPLIANCE                                  -->
-    <!-- ================================================================== -->
-    <url>
-        <loc>https://eidosrender.es/aviso-legal</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.30</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/privacidad</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.30</priority>
-    </url>
-    <url>
-        <loc>https://eidosrender.es/cookies</loc>
-        <lastmod>2026-10-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.30</priority>
     </url>
 
 </urlset>

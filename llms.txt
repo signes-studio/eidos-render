@@ -1,105 +1,78 @@
-# Eidos Render — European Architecture Visualization & Real Estate Launch Agency
+# Eidos Render — Renders 3D y Visualización para Promociones Inmobiliarias
 
-> Eidos Render is an international creative and visual partner specialized in the commercial launch of property developments across Europe (Spain, Germany, France, United Kingdom, Switzerland, Austria, Netherlands, Belgium, Luxembourg, Monaco, Portugal, and Scandinavia). From architectural design to market presale: Brand direction & naming, photorealistic 3D architectural imagery (exterior, interior, landscape), cinematic 3D film & animation, editorial sales dossiers & brochures, bespoke property development websites with interactive apartment selectors, and qualified buyer acquisition campaigns across Google Ads and Meta Ads.
+> Eidos Render es un estudio especializado en renders 3D fotorrealistas, infografía de obra nueva, animación arquitectónica y material comercial para promotoras inmobiliarias, comercializadoras y estudios de arquitectura en España.
 
-Eidos Render transforms real estate developments into unified visual and commercial experiences engineered to explain architecture, justify price per square meter, and ignite buyer desire before groundbreaking.
-
----
-
-## Quick Reference / Core Studio Profile
-
-- **Brand Name**: Eidos Render
-- **Website (Multilingual)**:
-  - Spanish: https://eidosrender.es/
-  - English: https://eidosrender.es/en/
-  - German (Deutsch): https://eidosrender.es/de/
-  - French (Français): https://eidosrender.es/fr/
-- **Headquarters**: Valencia, Spain (Central European Timezone — CET / CEST).
-- **Geographic Coverage**: Pan-European scope serving developers, architectural studios, and luxury brokers across the European Union, United Kingdom, and Switzerland.
-- **Direct Contact**:
-  - Email: info@eidosrender.es
-  - Direct WhatsApp / Phone: +34 614 45 91 44
-  - Working Languages: Spanish, English, German, French.
-- **Client Types**:
-  - Property Developers (Promotoras / Bauträger / Promoteurs Immobiliers / Real Estate Developers)
-  - Architectural Studios & Masterplanners
-  - Luxury Real Estate Agencies & Prime Commercial Brokers
-  - Real Estate Private Equity Funds, Family Offices, and Institutional Investors
-  - Hospitality, Build-to-Rent (BTR), and Flex-Living Operators
+Sede central en Valencia con cobertura prioritaria en los principales polos de desarrollo inmobiliario: Valencia, Madrid, Alicante y Málaga (Costa del Sol), prestando servicio a proyectos residenciales en toda España.
 
 ---
 
-## The 6 Integrated Launch Capabilities
+## Perfil del Estudio y Contacto
 
-1. **Brand Direction & Development Identity**:
-   - Naming with architectural resonance and commercial clearance.
-   - Comprehensive property brand manual, typographic and chromatic systems.
-   - Design for construction site hoardings, showroom graphics, perimeter banners, flags, and handover presentation boxes.
-
-2. **3D Architectural Imagery (CGI)**:
-   - Ultra-photorealistic 3D renders for multi-family residential schemes, luxury private villas, resorts, and commercial developments.
-   - Exterior day, dusk, and night lighting studies.
-   - Naturally-lit interior styling and custom furniture specification.
-   - Drone photo-matching and seamless contextual landscape integration.
-   - Native 4K UHD and 8K ultra-resolution outputs for giant hoardings and coffee-table print books.
-
-3. **Cinematic 3D Film & Motion**:
-   - 30–45s cinematic teaser animations and 90–120s immersive architectural walkthroughs.
-   - 9:16 vertical video assets custom-edited and color-graded for Meta, Instagram Reels, TikTok, and YouTube Shorts.
-   - Ultra-HD motion loops for digital displays in sales offices and exhibitions.
-
-4. **Marketing Collateral & Sales Dossiers**:
-   - Editorial sales brochures in high-resolution interactive PDF and luxury print formats.
-   - 2D and 3D textured and furnished commercial sales floor plans.
-   - Vectorized locality diagrams, neighborhood infrastructure maps, and specification sheets.
-
-5. **Property Development Websites**:
-   - Bespoke interactive digital sales suites engineered for luxury architecture.
-   - Interactive unit and floor plan selector (filtering by floor, area, bedrooms, orientation, and availability).
-   - Instant loading speed (<1.5s) with 100% Core Web Vitals compliance.
-   - Direct CRM and broker sales pipeline integration with GDPR/RGPD compliance.
-
-6. **Buyer Acquisition & Digital Launch Campaigns**:
-   - Highly targeted Google Ads search campaigns targeting high-intent local and international buyers.
-   - Meta Ads (Instagram & Facebook) hyper-segmented by wealth indicators, geographic origins, and investor profiles.
-   - Continuous A/B testing of CGI angles and copy with detailed lead generation reporting.
+- **Nombre**: Eidos Render
+- **Sede**: Valencia, España
+- **Actividad**: Visualización 3D y material de preventa para promociones inmobiliarias sobre plano
+- **Teléfono directo**: +34 614 45 91 44
+- **WhatsApp directo**: https://wa.me/34614459144
+- **Email**: info@eidosrender.es
+- **Sitio web oficial**: https://eidosrender.es/
 
 ---
 
-## Technical Standards & BIM/CAD Interoperability
+## Servicios Especializados de Preventa
 
-- **Architectural Software Supported**: Autodesk Revit (.rvt), Graphisoft ArchiCAD (.pln), AutoCAD (.dwg), Rhinoceros (.3dm), SketchUp (.skp), and open IFC / BIM Level 2 standards.
-- **Coordination Workflow**: Fully digital remote workflow with video review milestones, real-time feedback, and material sampling reviews in European business hours (CET).
-- **Multilingual Delivery**: All marketing collateral, dossiers, and web platforms are produced natively in Spanish, English, German, and French.
+1. **Renders para Promociones Inmobiliarias**
+   - URL: https://eidosrender.es/renders-promociones-inmobiliarias
+   - Paquete integral de visualización para venta sobre plano: exteriores diurnos y crepusculares, inserción urbana y volumetría para vallas publicitarias y catálogos.
+
+2. **Infografía 3D de Obra Nueva**
+   - URL: https://eidosrender.es/infografia-3d-obra-nueva
+   - Renders 4K fotorrealistas de fachadas, interiores (salones, cocinas, master suites) y zonas comunes (piscinas infinity, solárium, gimnasios y jardines).
+
+3. **Vídeo 3D para Promociones**
+   - URL: https://eidosrender.es/video-3d-promociones
+   - Películas y animaciones 3D arquitectónicas, recorridos virtuales cinematográficos y formatos verticales (9:16) para redes sociales y pantallas en caseta de venta.
+
+4. **Landing Page de Promoción Inmobiliaria**
+   - URL: https://eidosrender.es/landing-page-promocion-inmobiliaria
+   - Webs comerciales a medida con selector interactivo de viviendas por planta, planos descargables y conexión con el CRM comercial.
+
+5. **Dossier y Flyer de Venta Inmobiliario**
+   - URL: https://eidosrender.es/dossier-y-flyer-venta-inmobiliario
+   - Catálogos comerciales en PDF interactivo y formato para imprenta, flyers de buzoneo y planos comerciales 2D y 3D amueblados y texturizados.
+
+6. **Captación Digital para Promociones**
+   - URL: https://eidosrender.es/captacion-digital-promociones
+   - Campañas publicitarias en Google Ads y Meta Ads utilizando creatividades de renders 3D para captar compradores e inversores cualificados.
 
 ---
 
-## Engagement Model & Timelines
+## Mercados Locales Estratégicos
 
-- **Delivery Timelines**:
-  - 3D Architectural CGI: 2 to 4 weeks (first camera framing and lighting previews in 7–10 days).
-  - Complete Commercial Launch Programs: 6 to 10 weeks across parallel execution phases.
-- **Commercial Proposals**:
-  - Bespoke, tailored investment proposals based on development volume, architectural complexity, and asset scope.
-  - Zero generic price tables; individual quotes provided upon reviewing CAD/BIM blueprints and schedule requirements.
-
----
-
-## European Regional Markets Served
-
-- **Iberia**: Madrid, Barcelona, Valencia, Costa del Sol (Marbella, Málaga, Estepona), Balearic Islands (Mallorca, Ibiza), Alicante, Bilbao, Seville, Lisbon, Cascais, Porto, Algarve.
-- **Central Europe / DACH**: Munich, Berlin, Frankfurt am Main, Hamburg, Düsseldorf, Stuttgart, Vienna, Salzburg, Zurich, Geneva, Basel, Zug, Bern.
-- **France & Benelux**: Paris, Lyon, French Riviera / Côte d’Azur (Cannes, Nice, Monaco, Saint-Tropez), Bordeaux, Brussels, Antwerp, Luxembourg, Amsterdam, Rotterdam.
-- **United Kingdom & Ireland**: London, Manchester, Birmingham, Edinburgh, Dublin.
-- **Nordics & International**: Stockholm, Copenhagen, Oslo, Milan, Rome, Warsaw.
+- **Valencia (Sede Central)**: https://eidosrender.es/renders-valencia
+  - Especialistas en el mercado residencial valenciano: Campanar, Turia Nova, Moreras, Malilla y área metropolitana.
+- **Madrid**: https://eidosrender.es/renders-madrid
+  - Desarrollos del sureste (Los Berrocales, Los Ahijones), Madbit, Madrid Nuevo Norte y proyectos prime en Barrio de Salamanca y Chamberí.
+- **Alicante y Costa Blanca**: https://eidosrender.es/renders-alicante
+  - Villas exclusivas y promociones en Altea Hills, Jávea, Moraira, Benidorm y Alicante ciudad.
+- **Málaga y Costa del Sol**: https://eidosrender.es/renders-malaga
+  - Residenciales de lujo en Marbella, Estepona, Benahavís, Sotogrande y Málaga capital.
 
 ---
 
-## Key Site URLs
+## Proyectos y Casos de Estudio
 
-- **Core Pages**:
-  - ES: https://eidosrender.es/ · https://eidosrender.es/servicios · https://eidosrender.es/proyectos · https://eidosrender.es/contacto · https://eidosrender.es/faq
-  - EN: https://eidosrender.es/en/ · https://eidosrender.es/en/services · https://eidosrender.es/en/projects · https://eidosrender.es/en/contact · https://eidosrender.es/en/faq
-  - DE: https://eidosrender.es/de/ · https://eidosrender.es/de/leistungen · https://eidosrender.es/de/projekte · https://eidosrender.es/de/kontakt · https://eidosrender.es/de/faq
-  - FR: https://eidosrender.es/fr/ · https://eidosrender.es/fr/services · https://eidosrender.es/fr/projets · https://eidosrender.es/fr/contact · https://eidosrender.es/fr/faq
-- **Sitemap**: https://eidosrender.es/sitemap.xml
+- **Portfolio General**: https://eidosrender.es/proyectos
+- **Residencial Obra Nueva Valencia**: https://eidosrender.es/proyectos/residencial-obra-nueva-valencia
+- **Complejo Residencial Madbit Madrid**: https://eidosrender.es/proyectos/complejo-residencial-madbit
+- **Villa Unifamiliar en Ladera Altea**: https://eidosrender.es/proyectos/villa-unifamiliar-altea
+- **Reforma Integral y Flipping Madrid**: https://eidosrender.es/proyectos/reforma-integral-madrid
+- **Regeneración Urbana Gare des Mines (Demostrativo)**: https://eidosrender.es/proyectos/regeneracion-urbana-gare-des-mines
+
+---
+
+## Solicitud de Presupuesto
+
+- **Calculadora y Solicitud Directa**: https://eidosrender.es/presupuesto
+- **Tarifas Orientativas**: https://eidosrender.es/tarifas-renders-3d
+- **Contacto Directo**: https://eidosrender.es/contacto
+- **Sitemap Oficial**: https://eidosrender.es/sitemap.xml
