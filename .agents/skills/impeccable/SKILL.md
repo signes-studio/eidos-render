@@ -33,3 +33,4 @@ Output format:
 
 ### 3. `/impeccable polish`
 Applies targeted visual fixes resolving P1–P3 critique findings while maintaining strict performance, zero CLS, and full accessibility.
+

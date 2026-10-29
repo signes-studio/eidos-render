@@ -8,8 +8,13 @@
   'use strict';
 
   // Forzar animaciones siempre activas en escritorio y móvil según especificación de diseño
-  const isReducedMotion = false;
+  const isReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const isTouchDevice = window.matchMedia('(hover: none) or (pointer: coarse)').matches;
+  const isHomePage = window.location.pathname === '/' || 
+                     window.location.pathname.endsWith('/index.html') || 
+                     window.location.pathname === '' || 
+                     window.location.pathname === '/eidos-render/' || 
+                     window.location.pathname.endsWith('/eidos-render/index.html');
 
   document.addEventListener('DOMContentLoaded', () => {
     initVendorScripts(() => {
@@ -38,6 +43,11 @@
      01. VENDOR SCRIPT LOADER (Autoalojado localmente en assets/vendor/)
      ========================================================================== */
   function initVendorScripts(callback) {
+    // Rendimiento y SEO: No cargar librerías de animación pesadas fuera de la portada
+    if (!isHomePage || isReducedMotion) {
+      return callback();
+    }
+
     let loaded = 0;
     const scripts = [
       'assets/vendor/lenis.min.js',
@@ -45,7 +55,6 @@
       'assets/vendor/ScrollTrigger.min.js'
     ];
 
-    // Detectar si ya están cargados
     if (window.Lenis && window.gsap && window.ScrollTrigger) {
       window.gsap.registerPlugin(window.ScrollTrigger);
       return callback();
@@ -62,16 +71,11 @@
     };
 
     scripts.forEach(src => {
-      // Ajustar ruta si estamos en subdirectorios
-      const depth = (window.location.pathname.match(/\//g) || []).length;
-      let prefix = '';
-      if (window.location.pathname.includes('/servicios/')) {
-        prefix = '../';
-      }
       const s = document.createElement('script');
-      s.src = prefix + src;
+      s.src = src;
+      s.defer = true;
       s.onload = checkComplete;
-      s.onerror = checkComplete; // Continuar aunque falle
+      s.onerror = checkComplete;
       document.head.appendChild(s);
     });
   }
@@ -621,23 +625,24 @@
     );
     if (!elements.length) return;
 
+    // Si el usuario prefiere movimiento reducido o no es la home, asegurar visibilidad inmediata
+    if (isReducedMotion || !isHomePage) {
+      elements.forEach(el => el.classList.add('revealed', 'line-mask-revealed', 'is-revealed'));
+      return;
+    }
+
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('revealed', 'line-mask-revealed', 'is-revealed');
-          } else {
-            // Fuera de vista: resetear si el elemento ha salido por arriba o por abajo
-            // para permitir que vuelva a animarse al scrollear hacia arriba o hacia abajo
-            const rect = entry.boundingClientRect;
-            if (rect.bottom < -30 || rect.top > window.innerHeight + 30) {
-              entry.target.classList.remove('revealed', 'line-mask-revealed', 'is-revealed');
-            }
+            // Una vez revelado, mantener visible para siempre (cero parpadeos al hacer scroll inverso)
+            observer.unobserve(entry.target);
           }
         });
       }, {
-        threshold: 0.08,
-        rootMargin: '0px 0px -15px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px -10px 0px'
       });
 
       elements.forEach(el => {

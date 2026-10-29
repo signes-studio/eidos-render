@@ -92,3 +92,4 @@ Evitar bordes planos negros (`border: 1px solid #000`) o sombras artificiales os
 4. **Propiedades aceleradas por hardware:** Solo se animan `transform` y `opacity`.
 5. **GSAP restringido:** GSAP y Lenis solo se ejecutan con `defer` y exclusivamente en la portada para efectos de sección específicos. Micro-interacciones (menú flotante, acordeón de FAQs, hover de tarjetas) se resuelven 100% con CSS nativo o selectores ultra-ligeros.
 6. **Accesibilidad Obligatoria:** Respetar la preferencia `prefers-reduced-motion: reduce`.
+

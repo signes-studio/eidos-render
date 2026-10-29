@@ -46,3 +46,4 @@ Avoid single harsh `border: 1px solid #ddd` without depth.
   ```
 - Use `text-wrap: balance` for headings and `text-wrap: pretty` for introductory lead paragraphs to eliminate orphans.
 - Tabular figures (`font-variant-numeric: tabular-nums;`) for metrics, prices, and numbers.
+

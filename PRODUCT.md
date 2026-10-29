@@ -48,3 +48,4 @@
 ## 5. Tono de Marca y Comunicación
 - **Tono:** Sobrio, arquitectónico, seguro, editorial y honesto.
 - **Prohibiciones:** Sin adjetivos vacíos ("somos los mejores"), sin falsear clientes ni premios ficticios, sin jerga publicitaria intrusiva.
+

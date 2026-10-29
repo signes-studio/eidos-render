@@ -89,3 +89,4 @@ Animate height smoothly without measuring pixel heights in JavaScript:
   }
 }
 ```
+

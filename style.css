@@ -20,7 +20,7 @@
   --cream-2: #E8E1D3;        /* Superficies secundarias y bandas sutiles */
   --granate: #A31A33;        /* Granate vivo ("rojo" de fondo para secciones y acento) */
   --granate-hover: #7F1428;  /* Hover y estados activos */
-  --warm-gray: #8C867B;      /* Gris cálido: metadatos y secundarios */
+  --warm-gray: #625D54;      /* Gris cálido: metadatos y secundarios */
   --line: #CFC6B6;           /* Línea divisoria */
   --line-strong: rgba(27, 25, 24, 0.35);
   --line-on-granate: rgba(241, 235, 223, 0.24);
@@ -86,6 +86,23 @@
   --easing-editorial: cubic-bezier(0.22, 1, 0.36, 1);
   --transition-slow: 0.9s cubic-bezier(0.22, 1, 0.36, 1);
   --transition-fast: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Transitions.dev Tokens (CSS-First Micro-Interactions) */
+  --t-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-duration-fast: 180ms;
+  --t-duration-base: 280ms;
+  --t-duration-slow: 450ms;
+
+  /* Make Interfaces Feel Better: Concentric Radii & Layered Shadows */
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-pill: 999px;
+  --shadow-subtle: 0 1px 2px rgba(27, 25, 24, 0.04), 0 4px 12px rgba(27, 25, 24, 0.05);
+  --shadow-card: 0 2px 4px rgba(27, 25, 24, 0.03), 0 10px 28px rgba(27, 25, 24, 0.06);
+  --shadow-hover: 0 4px 8px rgba(27, 25, 24, 0.04), 0 16px 36px rgba(27, 25, 24, 0.09);
+  --shadow-panel: 0 6px 16px rgba(27, 25, 24, 0.08), 0 24px 52px rgba(27, 25, 24, 0.14);
 }
 
 /* --------------------------------------------------------------------------
@@ -106,13 +123,15 @@ html {
 }
 
 body {
-  font-family: var(--font-jost);
-  font-weight: 300;
-  line-height: 1.65;
   background-color: var(--cream);
   color: var(--charcoal);
-  overflow-x: hidden;
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  line-height: 1.6;
   font-feature-settings: "cv01", "cv02", "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
@@ -824,6 +843,8 @@ p, .body-large, .body-regular {
   text-transform: none;
   padding: 16px 32px;
   border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-subtle);
   color: var(--charcoal);
   background-color: transparent;
   overflow: hidden;
@@ -856,6 +877,11 @@ p, .body-large, .body-regular {
 .btn-editorial:hover {
   color: var(--bone);
   border-color: var(--charcoal);
+}
+
+.btn-editorial:active, .btn-crimson:active, .btn:active, .app-cta-btn:active, .floating-menu-btn:active {
+  transform: scale(0.97) translateY(0) !important;
+  transition: transform 0.08s ease-out !important;
 }
 
 .bg-ink .btn-editorial {
@@ -950,6 +976,10 @@ p, .body-large, .body-regular {
    07. PROYECTOS & GALERÍA EDITORIAL
    -------------------------------------------------------------------------- */
 .project-card {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  transition: transform var(--t-duration-fast) var(--t-ease-out), box-shadow var(--t-duration-fast) var(--t-ease-out);
+  will-change: transform;
   position: relative;
   display: block;
   overflow: hidden;
@@ -958,6 +988,10 @@ p, .body-large, .body-regular {
 }
 
 .bg-ink .project-card {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  transition: transform var(--t-duration-fast) var(--t-ease-out), box-shadow var(--t-duration-fast) var(--t-ease-out);
+  will-change: transform;
   border-bottom: 1px solid var(--line-dark);
 }
 
@@ -1291,8 +1325,8 @@ p, .body-large, .body-regular {
    11. ANIMACIONES & REVELADOS EDITORIALES
    -------------------------------------------------------------------------- */
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(28px);
+  opacity: 1;
+  transform: none;
   transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
@@ -1351,6 +1385,8 @@ p, .body-large, .body-regular {
   transition: opacity 0.25s ease, transform 0.25s var(--easing-editorial);
   overflow: hidden;
   border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-subtle);
   background-color: var(--charcoal);
 }
 
@@ -2002,6 +2038,8 @@ p, .body-large, .body-regular {
   z-index: 1300;
   pointer-events: auto;
   display: inline-flex;
+  min-width: 48px;
+  min-height: 48px;
   align-items: center;
   justify-content: center;
   background: transparent !important;
@@ -2085,7 +2123,9 @@ p, .body-large, .body-regular {
   }
   .floating-menu-btn {
     right: 20px;
-    padding: 6px !important;
+    padding: 10px !important;
+    min-width: 48px;
+    min-height: 48px;
   }
   .floating-menu-btn .menu-btn-icon {
     width: 24px;
@@ -2117,9 +2157,9 @@ p, .body-large, .body-regular {
   background-color: rgba(241, 235, 223, 0.98);
   color: var(--charcoal);
   z-index: 1150;
-  border-radius: 0 !important;
+  border-radius: var(--radius-lg) !important;
   border: 1px solid var(--line);
-  box-shadow: none !important;
+  box-shadow: var(--shadow-panel) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 24px;
@@ -2127,10 +2167,11 @@ p, .body-large, .body-regular {
   flex-direction: column;
   gap: 20px;
   opacity: 0;
-  transform: translateY(-12px);
+  transform: scale(0.96) translateY(-8px);
   pointer-events: none;
   transform-origin: top right;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity var(--t-duration-fast) var(--t-ease-out),
+              transform var(--t-duration-fast) var(--t-ease-out);
 }
 
 .floating-app-panel.open {
@@ -2309,6 +2350,7 @@ p, .body-large, .body-regular {
 }
 
 /* Animaciones y Efectos Visuales en Textos y Elementos (Bidireccional) */
+/* Estado base 100% visible para SEO, rendimiento LCP y accesibilidad */
 .text-reveal-flow,
 .reveal-on-scroll,
 .editorial-reveal,
@@ -2317,13 +2359,10 @@ p, .body-large, .body-regular {
 .service-item,
 .project-card,
 .faq-item {
-  opacity: 0;
-  transform: translateY(32px);
-  filter: blur(4px);
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-              filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform, filter;
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: transform var(--t-duration-fast) var(--t-ease-out), box-shadow var(--t-duration-fast) var(--t-ease-out);
 }
 
 .text-reveal-flow.revealed,
@@ -2662,10 +2701,12 @@ html, body {
   transform: rotate(45deg);
 }
 
+/* FAQ Accordion (Transitions.dev CSS Grid Height Pattern) */
 .faq-answer {
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--t-duration-base) var(--t-ease-out);
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
   font-family: var(--font-special);
   font-size: 1.05rem;
   line-height: 1.65;
@@ -2674,8 +2715,28 @@ html, body {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 500px;
+  grid-template-rows: 1fr;
+}
+
+.faq-answer > * {
+  overflow: hidden;
+  min-height: 0;
   padding-bottom: 24px;
+  margin: 0;
+}
+
+.faq-question .faq-icon {
+  font-family: var(--font-syncopate);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--granate);
+  transition: transform var(--t-duration-base) var(--t-ease-out);
+  line-height: 1;
+  will-change: transform;
+}
+
+.faq-item.active .faq-question .faq-icon {
+  transform: rotate(45deg);
 }
 
 /* ==========================================================================
@@ -3006,6 +3067,8 @@ html, body {
   padding: 12px 18px;
   min-height: 44px;
   display: inline-flex;
+  min-width: 48px;
+  min-height: 48px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -3205,5 +3268,18 @@ html, body {
 @media (max-width: 768px) {
   body {
     padding-bottom: 60px !important;
+  }
+}
+
+
+/* ==========================================================================
+   PREFERS-REDUCED-MOTION (Transitions.dev Accessibility Guard)
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
