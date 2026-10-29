@@ -14,7 +14,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     initVendorScripts(() => {
       initLenis();
-      initPreloader();
       initFloatingMenu();
       initMaskedReveals();
       initScrollReveals();
@@ -113,90 +112,11 @@
   }
 
   /* ==========================================================================
-     03. PRELOADER EDITORIAL (Isotipo Trazo + Contador + Solo Primera Visita)
+     03. PRELOADER EDITORIAL — Eliminado para carga inmediata de página
      ========================================================================== */
   function initPreloader() {
-    let preloader = document.querySelector('.preloader');
-    const alreadyVisited = sessionStorage.getItem('eidos_motion_visited_v2');
-    const isBotOrAudit = /Lighthouse|Chrome-Lighthouse|bot|crawler|spider|Googlebot/i.test(navigator.userAgent);
-    const isMobile = window.innerWidth <= 768;
-
-    if (alreadyVisited || isReducedMotion || isBotOrAudit || isMobile) {
-      if (preloader) {
-        preloader.classList.add('preloader-loaded');
-        setTimeout(() => preloader.remove(), 50);
-      }
-      return;
-    }
-
-    // Inyectar preloader con el Isotipo a dos tintas + Nombre centrado
-    if (!preloader) {
-      preloader = document.createElement('div');
-      preloader.className = 'preloader';
-      preloader.innerHTML = `
-        <div class="preloader-header">
-          <span>EIDOS RENDER</span>
-          <span>ESTUDIO VISUAL</span>
-        </div>
-        <div class="preloader-center">
-          <svg class="preloader-iso" viewBox="0 0 64 64" width="88" height="88" style="overflow: visible;">
-            <defs>
-              <clipPath id="preloaderClip">
-                <rect x="0" y="0" width="64" height="40" />
-              </clipPath>
-            </defs>
-            <g clip-path="url(#preloaderClip)">
-              <path class="preloader-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
-            </g>
-            <rect class="preloader-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
-            <rect class="preloader-line-2" fill="var(--charcoal)" x="18" y="50" width="28" height="3" />
-          </svg>
-          <div class="preloader-wordmark">EIDOS RENDER</div>
-        </div>
-        <div class="preloader-footer">
-          <span>ARQUITECTURA & IMAGEN</span>
-          <span>VALENCIA · INTERNACIONAL</span>
-        </div>
-      `;
-      document.body.prepend(preloader);
-    }
-
-    const line1 = preloader.querySelector('.preloader-line-1');
-    const line2 = preloader.querySelector('.preloader-line-2');
-    const sun = preloader.querySelector('.preloader-sun');
-    const wordmark = preloader.querySelector('.preloader-wordmark');
-
-    if (window.gsap) {
-      const tl = window.gsap.timeline({
-        onComplete: () => {
-          setTimeout(() => {
-            preloader.classList.add('preloader-loaded');
-            sessionStorage.setItem('eidos_motion_visited_v2', 'true');
-            setTimeout(() => preloader.remove(), 900);
-          }, 400);
-        }
-      });
-
-      window.gsap.set(line1, { scaleX: 0, transformOrigin: 'left center' });
-      window.gsap.set(line2, { scaleX: 0, transformOrigin: 'left center' });
-      window.gsap.set(sun, { y: 22 });
-      window.gsap.set(wordmark, { opacity: 0, y: 8 });
-
-      // 1. línea 1 se dibuja de izquierda a derecha (0.8s)
-      tl.to(line1, { scaleX: 1, duration: 0.8, ease: 'cubic-bezier(.22,1,.36,1)' }, 0);
-      // 2. el sol asciende tras un clip en la línea 1 (1.1s, delay .3s)
-      tl.to(sun, { y: 0, duration: 1.1, ease: 'cubic-bezier(.22,1,.36,1)' }, 0.3);
-      // 3. línea 2 se dibuja (0.8s, delay .8s)
-      tl.to(line2, { scaleX: 1, duration: 0.8, ease: 'cubic-bezier(.22,1,.36,1)' }, 0.8);
-      // 4. Wordmark aparece con elegancia (0.7s, delay 1.1s)
-      tl.to(wordmark, { opacity: 1, y: 0, duration: 0.7, ease: 'cubic-bezier(.22,1,.36,1)' }, 1.1);
-    } else {
-      setTimeout(() => {
-        preloader.classList.add('preloader-loaded');
-        sessionStorage.setItem('eidos_motion_visited_v2', 'true');
-        setTimeout(() => preloader.remove(), 900);
-      }, 1500);
-    }
+    const p = document.querySelector('.preloader');
+    if (p) p.remove();
   }
 
   /* ==========================================================================
