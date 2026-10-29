@@ -3238,3 +3238,38 @@ html, body {
   background-color: #6b1a2a;
   transform: translateY(-2px);
 }
+
+/* ==========================================================================
+   MOBILE STICKY CONTACT BAR (FASE 9 CRO)
+   Visibilidad exclusiva en dispositivos móviles con targets táctiles >= 48px
+   ========================================================================== */
+.mobile-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #141416;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 9999;
+  display: flex;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.mobile-sticky-bar a {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .mobile-sticky-bar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 60px !important;
+  }
+}

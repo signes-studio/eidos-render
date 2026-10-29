@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
+  <!-- Google Tag Manager (Diferido) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N6R4S8NC');
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGTM, { timeout: 3500 });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
@@ -352,5 +367,16 @@
   </div>
 
   <script src="main.js" defer></script>
+
+  <!-- BARRA DE CONTACTO FIJA EN MÓVIL (FASE 9 CRO) -->
+  <aside class="mobile-sticky-bar" aria-label="Contacto urgente móvil" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #161616; border-top: 1px solid #333; z-index: 999; display: flex; box-shadow: 0 -4px 12px rgba(0,0,0,0.3);">
+    <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20renders%20para%20una%20promocion" data-track="whatsapp" target="_blank" rel="noopener" style="flex: 1; padding: 14px 10px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>WhatsApp Presupuesto</span>
+    </a>
+    <a href="tel:+34614459144" data-track="phone" style="flex: 1; padding: 14px 10px; background: var(--granate); color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>Llamar Ahora</span>
+    </a>
+  </aside>
+
 </body>
 </html>
