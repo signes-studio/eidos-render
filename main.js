@@ -844,7 +844,7 @@
       return;
     }
 
-    if (document.getElementById('stickyMobileCta')) {
+    if (document.querySelector('.mobile-sticky-bar') || document.getElementById('stickyMobileCta')) {
       return;
     }
 
