@@ -194,163 +194,97 @@
       </div>
     </section>
 
-    <!-- Formulario de Calificación -->
+    <!-- Sección de Solicitud de Presupuesto Directa (Cero Formularios) -->
     <section class="section" style="padding-top: 20px; padding-bottom: 80px;">
       <div class="container" style="max-width: 1000px;">
-        <div style="background-color: #ffffff; padding: clamp(24px, 5vw, 48px); border: 1px solid var(--line); box-shadow: 0 4px 24px rgba(0,0,0,0.03);">
+        <div style="background-color: #ffffff; padding: clamp(28px, 5vw, 56px); border: 1px solid var(--line); box-shadow: 0 4px 24px rgba(0,0,0,0.03);">
           
-          
-        <!-- Canales de Contacto Directo Ultra-Rápidos (FASE 9 CRO) -->
-        <div style="background: var(--cream); border: 2px solid var(--granate); padding: 24px; margin-bottom: 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-          <div>
-            <div style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: 700;">¿Prefieres contacto directo e inmediato?</div>
-            <div style="font-size: 1.15rem; font-weight: 600; color: var(--charcoal); margin-top: 4px;">Envíanos los planos o memoria directamente por WhatsApp o Email</div>
-            <div style="font-size: 0.9rem; color: #555; margin-top: 2px;">Respuesta técnica con valoración en menos de 24 horas</div>
+          <div style="margin-bottom: 36px;">
+            <span style="font-family: var(--font-poiret); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--granate); font-weight: 700; display: block; margin-bottom: 8px;">Contacto de Alta Agilidad</span>
+            <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.4rem); line-height: 1.1; margin-bottom: 12px; color: var(--charcoal);">
+              Canales directos para presupuestar su promoción
+            </h2>
+            <p style="font-size: 1.05rem; color: #555; line-height: 1.6; max-width: 65ch;">
+              No solicitamos formularios extensos. Para calcular una propuesta económica cerrada y un calendario de producción, seleccione su canal preferido y comparta los datos clave de la promoción:
+            </p>
           </div>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20para%20una%20promocion" data-track="whatsapp" target="_blank" rel="noopener" class="btn btn-editorial" style="background-color: #25D366; color: #fff; padding: 14px 24px; text-decoration: none; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
-              <span>WhatsApp Directo →</span>
-            </a>
-            <a href="tel:+34614459144" data-track="phone" class="btn btn-editorial" style="background-color: var(--granate); color: #fff; padding: 14px 20px; text-decoration: none; font-weight: 700; font-size: 0.9rem;">
-              <span>Llamar: +34 614 45 91 44</span>
-            </a>
-          </div>
-        </div>
-  
-          <form id="formPresupuesto" class="form-presupuesto" method="POST" action="/gracias" novalidate>
+
+          <!-- Grid de Canales Directos -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 48px;">
             
-            <!-- Honeypot Antispam (Invisible) -->
-            <div style="display: none !important;" aria-hidden="true">
-              <label for="website_url_hp">No rellenar:</label>
-              <input type="text" name="website_url_hp" id="website_url_hp" tabindex="-1" autocomplete="off">
-            </div>
-
-            <!-- 01. Datos de Contacto -->
-            <div>
-              <label class="form-label" for="nombre">Nombre y Apellidos <span class="req">*</span></label>
-              <input type="text" id="nombre" name="nombre" class="form-input" required placeholder="Ej. Carlos Martínez" autocomplete="name">
-            </div>
-
-            <div>
-              <label class="form-label" for="empresa">Empresa / Promotora / Estudio <span class="req">*</span></label>
-              <input type="text" id="empresa" name="empresa" class="form-input" required placeholder="Ej. Desarrollos Residenciales S.L." autocomplete="organization">
-            </div>
-
-            <div>
-              <label class="form-label" for="email">Email Corporativo <span class="req">*</span></label>
-              <input type="email" id="email" name="email" class="form-input" required placeholder="carlos@promotora.es" autocomplete="email">
-            </div>
-
-            <div>
-              <label class="form-label" for="telefono">Teléfono Directo <span class="req">*</span></label>
-              <input type="tel" id="telefono" name="telefono" class="form-input" required placeholder="+34 600 000 000" autocomplete="tel">
-            </div>
-
-            <!-- 02. Parámetros de la Promoción -->
-            <div>
-              <label class="form-label" for="ciudad">Ubicación / Ciudad de la Promoción <span class="req">*</span></label>
-              <input type="text" id="ciudad" name="ciudad" class="form-input" required placeholder="Ej. Valencia, Madrid, Alicante, Marbella...">
-            </div>
-
-            <div>
-              <label class="form-label" for="tipo_promocion">Tipo de Promoción <span class="req">*</span></label>
-              <select id="tipo_promocion" name="tipo_promocion" class="form-select" required>
-                <option value="" disabled selected>Seleccione tipología...</option>
-                <option value="plurifamiliar">Residencial Obra Nueva Plurifamiliar</option>
-                <option value="unifamiliar">Viviendas Unifamiliares / Villas de Lujo</option>
-                <option value="reforma">Rehabilitación Integral / House Flipping</option>
-                <option value="terciario">Terciario / Oficinas / Dotacional / Hotelero</option>
-                <option value="otro">Otro tipo de promoción</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="form-label" for="num_viviendas">Nº Aprox. de Viviendas / Unidades</label>
-              <input type="text" id="num_viviendas" name="num_viviendas" class="form-input" placeholder="Ej. 18 viviendas / 1 villa aislada">
-            </div>
-
-            <div>
-              <label class="form-label" for="fase_proyecto">Fase Actual del Proyecto <span class="req">*</span></label>
-              <select id="fase_proyecto" name="fase_proyecto" class="form-select" required>
-                <option value="" disabled selected>Seleccione fase...</option>
-                <option value="anteproyecto">Anteproyecto / Estudio de Viabilidad</option>
-                <option value="basico">Proyecto Básico redactado</option>
-                <option value="ejecucion">Proyecto de Ejecución / Licencia concedida</option>
-                <option value="preventa">En fase de Preventa / Lanzamiento comercial</option>
-                <option value="construccion">En fase de Construcción</option>
-              </select>
-            </div>
-
-            <!-- 03. Servicios Necesarios (Checkboxes) -->
-            <div class="form-group-full">
-              <label class="form-label">Servicios Necesarios para la Promoción <span class="req">*</span></label>
-              <div class="checkbox-grid">
-                <label class="checkbox-card">
-                  <input type="checkbox" name="servicios[]" value="renders_exteriores" checked>
-                  <span>Renders Exteriores de Fachada</span>
-                </label>
-                <label class="checkbox-card">
-                  <input type="checkbox" name="servicios[]" value="renders_interiores" checked>
-                  <span>Renders Interiores & Salón/Suite</span>
-                </label>
-                <label class="checkbox-card">
-                  <input type="checkbox" name="servicios[]" value="video_3d">
-                  <span>Vídeo & Animación 3D (Reels / Film)</span>
-                </label>
-                <label class="checkbox-card">
-                  <input type="checkbox" name="servicios[]" value="dossier_planos">
-                  <span>Dossier de Venta & Planos 2D/3D</span>
-                </label>
-                <label class="checkbox-card">
-                  <input type="checkbox" name="servicios[]" value="web_promocion">
-                  <span>Web de Promoción / Landing Page</span>
-                </label>
-                <label class="checkbox-card">
-                  <input type="checkbox" name="servicios[]" value="branding">
-                  <span>Branding, Naming e Identidad</span>
-                </label>
+            <!-- Tarjeta 1: WhatsApp Directo -->
+            <div style="background: #fdfdfd; border: 2px solid #25D366; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; position: relative;">
+              <div style="position: absolute; top: -11px; right: 20px; background: #25D366; color: #fff; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 2px;">
+                Canal más rápido
               </div>
+              <div>
+                <div style="font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">
+                  WhatsApp Directo
+                </div>
+                <p style="font-size: 0.92rem; color: #555; line-height: 1.55; margin: 0;">
+                  Indíquenos ubicación, tipología (plurifamiliar, villas o terciario) y adjunte enlace de planos. Respuesta técnica directa.
+                </p>
+              </div>
+              <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20solicitar%20presupuesto%20para%20una%20promoci%C3%B3n%20inmobiliaria" data-track="whatsapp" target="_blank" rel="noopener" class="btn" style="background-color: #25D366; color: #fff; padding: 15px 20px; text-decoration: none; font-weight: 700; font-size: 0.95rem; text-align: center; display: block; border-radius: 0;">
+                Abrir WhatsApp (+34 614 45 91 44) →
+              </a>
             </div>
 
-            <!-- 04. Plazos y Planimetría -->
-            <div>
-              <label class="form-label" for="plazo_deseado">Plazo Deseado de Entrega</label>
-              <select id="plazo_deseado" name="plazo_deseado" class="form-select">
-                <option value="estandar" selected>Estándar (3 a 4 semanas)</option>
-                <option value="urgente">Urgente (menos de 2 semanas)</option>
-                <option value="medio_plazo">Medio plazo (1 a 2 meses)</option>
-                <option value="solo_presupuesto">Solo estimación presupuestaria previa</option>
-              </select>
+            <!-- Tarjeta 2: Teléfono Directo -->
+            <div style="background: #fdfdfd; border: 2px solid var(--charcoal); padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+              <div>
+                <div style="font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">
+                  Llamada Telefónica
+                </div>
+                <p style="font-size: 0.92rem; color: #555; line-height: 1.55; margin: 0;">
+                  Hable directamente con la dirección técnica para comentar el calendario comercial, plazos de preventa y tipología de imágenes.
+                </p>
+              </div>
+              <a href="tel:+34614459144" data-track="phone" class="btn" style="background-color: var(--charcoal); color: #fff; padding: 15px 20px; text-decoration: none; font-weight: 700; font-size: 0.95rem; text-align: center; display: block; border-radius: 0;">
+                Llamar: +34 614 45 91 44 →
+              </a>
             </div>
 
-            <div>
-              <label class="form-label" for="enlace_planos">Enlace a Planos / WeTransfer / Drive</label>
-              <input type="url" id="enlace_planos" name="enlace_planos" class="form-input" placeholder="https://wetransfer.com/... o Dropbox / Drive">
+            <!-- Tarjeta 3: Correo Técnico -->
+            <div style="background: #fdfdfd; border: 2px solid var(--granate); padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; position: relative;">
+              <div style="position: absolute; top: -11px; right: 20px; background: var(--granate); color: #fff; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 2px;">
+                Para adjuntar planos
+              </div>
+              <div>
+                <div style="font-size: 1.35rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">
+                  Email Técnico
+                </div>
+                <p style="font-size: 0.92rem; color: #555; line-height: 1.55; margin: 0;">
+                  Envíe memoria, planos preliminares (DWG/PDF/BIM) o enlace a WeTransfer/Drive con los detalles de la promoción.
+                </p>
+              </div>
+              <a href="mailto:info@eidosrender.es?subject=Solicitud%20de%20Presupuesto%20-%20Promoci%C3%B3n%20Inmobiliaria&body=Hola%20Eidos%20Render,%0A%0AQuiero%20solicitar%20presupuesto%20para%20una%20promoci%C3%B3n%20inmobiliaria:%0A%0A- Ubicaci%C3%B3n%20de%20la%20promoci%C3%B3n:%20%0A- Tipolog%C3%ADa%20(residencial%20colectiva,%20villas,%20terciario):%20%0A- N%C2%BA%20aprox.%20de%20viviendas:%20%0A- Servicios%20necesarios%20(renders%20exteriores,%20interiores,%20v%C3%ADdeo%203D,%20dossier,%20web):%20%0A- Fecha%20estimada%20de%20lanzamiento%20comercial:%20%0A- Enlace%20a%20planos%20(WeTransfer%20/%20Drive%20/%20Dropbox):%20%0A%0AGracias." data-track="email" class="btn" style="background-color: var(--granate); color: #fff; padding: 15px 20px; text-decoration: none; font-weight: 700; font-size: 0.95rem; text-align: center; display: block; border-radius: 0;">
+                Enviar Email Técnico →
+              </a>
             </div>
 
-            <!-- 05. Mensaje / Especificaciones -->
-            <div class="form-group-full">
-              <label class="form-label" for="mensaje">Detalles Adicionales del Proyecto</label>
-              <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Describa particularidades de la promoción: número de tipologías a mostrar, materiales singulares, público objetivo o fecha prevista de inicio de comercialización..."></textarea>
-            </div>
+          </div>
 
-            <!-- 06. Consentimiento RGPD -->
-            <div class="form-group-full">
-              <label class="rgpd-consent">
-                <input type="checkbox" id="rgpd" name="rgpd" required>
-                <span>He leído y acepto la <a href="/privacidad" target="_blank" style="color: var(--granate); text-decoration: underline;">política de privacidad</a>. Los datos se utilizarán exclusivamente para elaborar la propuesta económica solicitada y no se cederán a terceros. <span class="req">*</span></span>
-              </label>
+          <!-- Caja Informativa de Planimetría -->
+          <div style="background-color: var(--cream-2); border: 1px solid var(--line); padding: 28px 32px; display: flex; flex-direction: column; gap: 14px;">
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: 700;">
+              Documentación recomendada para presupuestar:
             </div>
-
-            <!-- Submit Button (>= 44px) -->
-            <div class="form-group-full" style="margin-top: 16px;">
-              <button type="submit" class="btn-submit-presupuesto" id="btnSubmitPresupuesto" style="width: 100%; max-width: 400px;">
-                Enviar Solicitud de Presupuesto →
-              </button>
-              <div id="formStatusMsg" style="margin-top: 14px; font-size: 0.95rem; font-weight: 500; display: none;"></div>
-            </div>
-
-          </form>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; font-size: 0.95rem; color: var(--charcoal);">
+              <li style="display: flex; gap: 10px; align-items: baseline;">
+                <span style="color: var(--granate); font-weight: 700;">01.</span>
+                <span><strong>Planimetría preliminar:</strong> Plantas, alzados o modelo 3D en formato PDF, DWG o IFC/Revit.</span>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: baseline;">
+                <span style="color: var(--granate); font-weight: 700;">02.</span>
+                <span><strong>Alcance estimado:</strong> Número de escenas exteriores, interiores, zonas comunitarias o animación.</span>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: baseline;">
+                <span style="color: var(--granate); font-weight: 700;">03.</span>
+                <span><strong>Calendario de ventas:</strong> Fecha objetivo de salida a preventa o inicio de campaña publicitaria.</span>
+              </li>
+            </ul>
+          </div>
 
         </div>
       </div>
@@ -408,66 +342,7 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
-  <script>
-    // Manejo de envío directo del formulario de presupuesto
-    document.addEventListener('DOMContentLoaded', function() {
-      const form = document.getElementById('formPresupuesto');
-      const submitBtn = document.getElementById('btnSubmitPresupuesto');
-      const statusMsg = document.getElementById('formStatusMsg');
-
-      if (!form) return;
-
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // 1. Verificación Honeypot
-        const hp = document.getElementById('website_url_hp');
-        if (hp && hp.value) {
-          console.warn('Spam detectado.');
-          return;
-        }
-
-        // 2. Validación de campos requeridos
-        const requiredInputs = form.querySelectorAll('[required]');
-        let valid = true;
-        requiredInputs.forEach(input => {
-          if (input.type === 'checkbox') {
-            if (!input.checked) valid = false;
-          } else {
-            if (!input.value.trim()) valid = false;
-          }
-        });
-
-        if (!valid) {
-          statusMsg.style.display = 'block';
-          statusMsg.style.color = '#c53030';
-          statusMsg.innerText = 'Por favor, complete todos los campos obligatorios marcados con (*).';
-          return;
-        }
-
-        // 3. Desactivar botón para prevenir doble clic
-        submitBtn.disabled = true;
-        submitBtn.innerText = 'Enviando solicitud...';
-
-        // 4. Registrar evento de conversión en dataLayer para GTM / GA4
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'form_submit',
-          form_id: 'formPresupuesto',
-          form_name: 'presupuesto_promotora',
-          conversion: true,
-          lead_tipo: form.tipo_promocion.value,
-          lead_ciudad: form.ciudad.value
-        });
-
-        // 5. Redirección a la página de gracias con noindex
-        setTimeout(function() {
-          window.location.href = '/gracias';
-        }, 400);
-      });
-    });
-  </script>
+  <script src="main.js" defer></script>
 
   <!-- BARRA DE CONTACTO FIJA EN MÓVIL (FASE 9 CRO) -->
   <aside class="mobile-sticky-bar" aria-label="Contacto urgente móvil" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #161616; border-top: 1px solid #333; z-index: 999; display: flex; box-shadow: 0 -4px 12px rgba(0,0,0,0.3);">

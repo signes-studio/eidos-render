@@ -811,28 +811,6 @@
         });
       }
     });
-
-    // Delegación de envío de formulario de presupuesto
-    document.addEventListener('submit', function(e) {
-      const form = e.target;
-      if (form.id === 'formPresupuesto' || form.classList.contains('form-presupuesto')) {
-        // Validación honeypot
-        const hp = form.querySelector('[name="website_url_hp"]');
-        if (hp && hp.value) {
-          e.preventDefault();
-          console.warn('Spam detected via honeypot.');
-          return;
-        }
-
-        window.dataLayer.push({
-          event: 'form_submit',
-          form_id: form.id || 'formPresupuesto',
-          form_name: 'presupuesto_promotora',
-          conversion: true,
-          page_location: window.location.href
-        });
-      }
-    });
   }
 
   /* ==========================================================================

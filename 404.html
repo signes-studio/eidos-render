@@ -1,6 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- GitHub Pages Client-Side Redirect Router (FASE 1 SEO & GitHub Pages Compatibility) -->
+  <script>
+    (function() {
+      var p = window.location.pathname;
+      var redirects = {
+        '/index.html': '/',
+        '/portfolio': '/proyectos',
+        '/portfolio.html': '/proyectos',
+        '/obra-nueva': '/renders-promociones-inmobiliarias',
+        '/obra-nueva.html': '/renders-promociones-inmobiliarias',
+        '/vivienda-unifamiliar': '/infografia-3d-obra-nueva',
+        '/vivienda-unifamiliar.html': '/infografia-3d-obra-nueva',
+        '/reforma-de-piso': '/proyectos/reforma-integral-madrid',
+        '/reforma-de-piso.html': '/proyectos/reforma-integral-madrid',
+        '/renders-para-house-flipping': '/proyectos/reforma-integral-madrid',
+        '/renders-para-house-flipping.html': '/proyectos/reforma-integral-madrid',
+        '/servicios/obra-nueva': '/renders-promociones-inmobiliarias',
+        '/servicios/obra-nueva.html': '/renders-promociones-inmobiliarias',
+        '/servicios/vivienda-unifamiliar': '/infografia-3d-obra-nueva',
+        '/servicios/vivienda-unifamiliar.html': '/infografia-3d-obra-nueva',
+        '/servicios/reforma-de-piso': '/proyectos/reforma-integral-madrid',
+        '/servicios/reforma-de-piso.html': '/proyectos/reforma-integral-madrid',
+        '/servicios/renders-para-house-flipping': '/proyectos/reforma-integral-madrid',
+        '/servicios/renders-para-house-flipping.html': '/proyectos/reforma-integral-madrid',
+        '/servicios/branding-inmobiliario': '/dossier-y-flyer-venta-inmobiliario',
+        '/servicios/branding-inmobiliario.html': '/dossier-y-flyer-venta-inmobiliario',
+        '/servicios/landing-pages-inmobiliarias': '/landing-page-promocion-inmobiliaria',
+        '/servicios/landing-pages-inmobiliarias.html': '/landing-page-promocion-inmobiliaria',
+        '/servicios/meta-ads-inmobiliarias': '/captacion-digital-promociones',
+        '/servicios/meta-ads-inmobiliarias.html': '/captacion-digital-promociones',
+        '/servicios/renders-arquitectura': '/renders-promociones-inmobiliarias',
+        '/servicios/renders-arquitectura.html': '/renders-promociones-inmobiliarias',
+        '/servicios/renders-interiores': '/infografia-3d-obra-nueva',
+        '/servicios/renders-interiores.html': '/infografia-3d-obra-nueva',
+        '/servicios/video-inmobiliario-3d': '/video-3d-promociones',
+        '/servicios/video-inmobiliario-3d.html': '/video-3d-promociones',
+        '/servicios/infografia-3d': '/infografia-3d-obra-nueva',
+        '/servicios/infografia-3d.html': '/infografia-3d-obra-nueva',
+        '/servicios/video-3d': '/video-3d-promociones',
+        '/servicios/video-3d.html': '/video-3d-promociones',
+        '/servicios/web-real-estate': '/landing-page-promocion-inmobiliaria',
+        '/servicios/web-real-estate.html': '/landing-page-promocion-inmobiliaria',
+        '/servicios/material-comercial': '/dossier-y-flyer-venta-inmobiliario',
+        '/servicios/material-comercial.html': '/dossier-y-flyer-venta-inmobiliario',
+        '/servicios/captacion': '/captacion-digital-promociones',
+        '/servicios/captacion.html': '/captacion-digital-promociones',
+        '/servicios/branding': '/servicios',
+        '/servicios/branding.html': '/servicios',
+        '/proyectos/complejo-madbit': '/proyectos/complejo-residencial-madbit',
+        '/proyectos/complejo-madbit.html': '/proyectos/complejo-residencial-madbit',
+        '/proyectos/estudio-gare-des-mines': '/proyectos/regeneracion-urbana-gare-des-mines',
+        '/proyectos/estudio-gare-des-mines.html': '/proyectos/regeneracion-urbana-gare-des-mines',
+        '/proyectos/reforma-madrid': '/proyectos/reforma-integral-madrid',
+        '/proyectos/reforma-madrid.html': '/proyectos/reforma-integral-madrid',
+        '/proyectos/residencial-valencia': '/proyectos/residencial-obra-nueva-valencia',
+        '/proyectos/residencial-valencia.html': '/proyectos/residencial-obra-nueva-valencia',
+        '/proyectos/villa-altea': '/proyectos/villa-unifamiliar-altea',
+        '/proyectos/villa-altea.html': '/proyectos/villa-unifamiliar-altea',
+        '/renders-sevilla': '/servicios',
+        '/renders-sevilla.html': '/servicios',
+        '/renders-bilbao': '/servicios',
+        '/renders-bilbao.html': '/servicios'
+      };
+
+      var clean = (p.length > 1 && p.endsWith('/')) ? p.slice(0, -1) : p;
+
+      if (redirects[p] || redirects[clean]) {
+        var target = redirects[p] || redirects[clean];
+        window.location.replace(target + window.location.search + window.location.hash);
+        return;
+      }
+
+      if (p.endsWith('.html')) {
+        var targetWithoutHtml = p.slice(0, -5);
+        window.location.replace(targetWithoutHtml + window.location.search + window.location.hash);
+        return;
+      }
+
+      if (p.length > 1 && p.endsWith('/')) {
+        var targetWithoutSlash = p.slice(0, -1);
+        window.location.replace(targetWithoutSlash + window.location.search + window.location.hash);
+        return;
+      }
+    })();
+  </script>
+
   <!-- Google Tag Manager (Diferido) -->
   <script>
     window.dataLayer = window.dataLayer || [];
