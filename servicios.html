@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
+  <!-- Google Tag Manager (Diferido) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N6R4S8NC');
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGTM, { timeout: 3500 });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Servicios de Renders y Marketing Inmobiliario | Eidos</title>
-  <meta name="description" content="Infografía 3D, vídeo cinematográfico, branding, web y dossiers comerciales para promociones de obra nueva en Valencia, Madrid y toda España.">>
+  <title>Servicios de Renders 3D para Promotoras | Eidos Render</title>
+  <meta name="description" content="Servicios de renders 3D, infografía de obra nueva, vídeo arquitectónico, webs de promoción, dossiers y captación digital en Valencia, Madrid, Alicante y Málaga.">
   <link rel="canonical" href="https://eidosrender.es/servicios">
-
-  <!-- International SEO / Hreflang -->
-
-  <!-- Multilingual & Geo-routing -->
-  <script src="js/i18n.js"></script>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
-  <meta property="og:title" content="Servicios de Lanzamiento — Eidos Render">
-  <meta property="og:description" content="Propuesta integral de servicios para el lanzamiento comercial de promociones inmobiliarias.">
+  <meta property="og:title" content="Servicios de Renders 3D para Promotoras | Eidos Render">
+  <meta property="og:description" content="Propuesta integral de visualización 3D y material de preventa para promociones inmobiliarias de obra nueva.">
   <meta property="og:url" content="https://eidosrender.es/servicios">
-  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="shortcut icon" href="favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/fonts.css">
+
+  <!-- Preloads -->
+  <link rel="preload" href="/assets/fonts/poiret-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/josefin-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,12 +59,13 @@
       {
         "@type": "Service",
         "@id": "https://eidosrender.es/servicios#service",
-        "name": "Servicios de Renders 3D y Marketing Visual para Promotoras",
-        "description": "Solución integral de visualización 3D y marketing de ventas para obra nueva: renders fotorrealistas, vídeo 3D cinematográfico, branding, web de promoción y dossiers comerciales.",
+        "name": "Servicios de Renders 3D y Visualización para Promotoras Inmobiliarias",
+        "description": "Visualización 3D y material de preventa para promociones de obra nueva: renders de fachadas, interiores, vídeo 3D, webs de promoción con selector de viviendas y dossiers de venta.",
         "provider": {
-          "@type": "Organization",
+          "@type": "ProfessionalService",
+          "@id": "https://eidosrender.es/#organization",
           "name": "Eidos Render",
-          "url": "https://eidosrender.es",
+          "url": "https://eidosrender.es/",
           "telephone": "+34614459144",
           "email": "info@eidosrender.es"
         },
@@ -61,46 +78,54 @@
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Servicios de Visualización y Marketing Inmobiliario",
+          "name": "Servicios Especializados de Visualización Inmobiliaria",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
+                "name": "Renders para Promociones Inmobiliarias",
+                "url": "https://eidosrender.es/renders-promociones-inmobiliarias"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
                 "name": "Infografía 3D de Obra Nueva",
-                "description": "Renders exteriores, interiores y zonas comunes de alta resolución para comercialización sobre plano."
+                "url": "https://eidosrender.es/infografia-3d-obra-nueva"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Vídeo y Animación 3D",
-                "description": "Recorridos virtuales y películas 3D cinematográficas para casetas de venta y canales digitales."
+                "name": "Vídeo 3D para Promociones",
+                "url": "https://eidosrender.es/video-3d-promociones"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Dossier y Material Comercial de Venta",
-                "description": "Dossiers de venta en PDF editorial e impreso, planos comerciales amueblados y vallas publicitarias."
+                "name": "Landing Page de Promoción Inmobiliaria",
+                "url": "https://eidosrender.es/landing-page-promocion-inmobiliaria"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Branding de Promociones",
-                "description": "Naming, identidad corporativa, manual de estilo y narrativa comercial para lanzamientos inmobiliarios."
+                "name": "Dossier y Flyer de Venta Inmobiliario",
+                "url": "https://eidosrender.es/dossier-y-flyer-venta-inmobiliario"
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Landing Page y Web de Promoción",
-                "description": "Webs comerciales optimizadas para conversión con selector interactivo de tipologías y captación directa."
+                "name": "Captación Digital para Promociones",
+                "url": "https://eidosrender.es/captacion-digital-promociones"
               }
             }
           ]
@@ -130,16 +155,7 @@
 </head>
 <body class="bg-paper">
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- Header Fijo y Discreto -->
-    <!-- =====================================================
-       00. CABECERA DINÁMICA CENTRADA:
-       Isotipo grande a dos tintas + Nombre centrado debajo
-       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
-       ===================================================== -->
+  <!-- Header Fijo -->
   <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
       <div class="nav-center-brand">
@@ -155,9 +171,7 @@
     </div>
   </header>
 
-  <!-- =====================================================
-       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
-       ===================================================== -->
+  <!-- Botón Flotante y Panel -->
   <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Abrir menú" aria-expanded="false">
     <span class="menu-btn-label">MENÚ</span>
     <span class="menu-btn-icon">
@@ -168,7 +182,7 @@
 
   <div class="floating-app-panel" id="floatingAppPanel" aria-label="Menú de navegación" aria-hidden="true">
     <div class="app-panel-header">
-      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="app-panel-title">EIDOS RENDER</span>
       <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
 
@@ -188,19 +202,19 @@
         </li>
         <li class="app-nav-item">
           <a href="/proyectos" class="app-link">
-            <span><span class="app-nav-num">03</span>Portfolio de Casos</span>
+            <span><span class="app-nav-num">03</span>Portfolio de Proyectos</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="index.html#branding" class="app-link">
-            <span><span class="app-nav-num">04</span>Identidad & Branding</span>
+          <a href="/tarifas-renders-3d" class="app-link">
+            <span><span class="app-nav-num">04</span>Tarifas Orientativas</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="index.html#proceso" class="app-link">
-            <span><span class="app-nav-num">05</span>Metodología</span>
+          <a href="/faq" class="app-link">
+            <span><span class="app-nav-num">05</span>Preguntas Frecuentes</span>
             <span>→</span>
           </a>
         </li>
@@ -213,24 +227,11 @@
       </ul>
     </nav>
 
-    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
-    <div class="app-lang-segmented" aria-label="Selector de idioma">
-      <span class="active" data-lang="es">ES</span>
-      <a href="en/" data-lang="en" onclick="window.setLang('en')">EN</a>
-      <a href="de/" data-lang="de" onclick="window.setLang('de')">DE</a>
-      <a href="fr/" data-lang="fr" onclick="window.setLang('fr')">FR</a>
-    </div>
-
     <div class="app-panel-footer">
-      <a href="/contacto" class="app-cta-btn">
-        HABLEMOS DEL PROYECTO →
+      <a href="/presupuesto" class="app-cta-btn">
+        PEDIR PRESUPUESTO →
       </a>
-      <div class="app-contact-sub">Valencia · Servicio Nacional e Internacional</div>
-    </div>
-  </div>
-    <div class="mobile-nav-footer">
-      <div><strong>EIDOS RENDER</strong> — Visualización & Lanzamiento</div>
-      <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
+      <div class="app-contact-sub">Valencia · Madrid · Alicante · Málaga</div>
     </div>
   </div>
 
@@ -241,169 +242,169 @@
       <div class="container">
         <div class="kicker crimson">
           <span class="kicker-dot"></span>
-          Servicio Integral
+          Soluciones Comerciales para Obra Nueva
         </div>
-        <h1 class="display-title" style="margin-bottom: 20px;">Servicios de Renders 3D y Marketing para Promotoras</h1>
-        <p class="body-large body-muted" style="max-width: 720px;">
-          Desarrollamos el sistema visual y comercial completo que necesita una promoción para presentarse, diferenciarse y venderse. Dimensionamos nuestra intervención a la escala y el momento de cada proyecto.
+        <h1 class="display-title" style="margin-bottom: 20px;">Servicios de Renders 3D y Material de Venta para Promotoras</h1>
+        <p class="body-large body-muted" style="max-width: 780px;">
+          Desarrollamos el material gráfico y digital que una promoción residencial necesita para salir al mercado sobre plano: infografía fotorrealista 4K, animaciones cinemáticas, webs interactivas y dossiers de venta para comercializadoras e inversores.
         </p>
       </div>
     </section>
 
-    <!-- FASES DETALLADAS (Estructura con líneas finas de 1px) -->
+    <!-- FASES Y SERVICIOS DETALLADOS -->
     <section class="section bg-paper">
       <div class="container">
 
-        <!-- 01 Dirección & Identidad -->
-        <article class="service-block-row" id="direccion" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+        <!-- 01 Renders Promociones Inmobiliarias -->
+        <article class="service-block-row" id="renders-promociones" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
           <div class="display-num" style="color: var(--signal-text);">01</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px;">Dirección & Identidad</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Renders para Promociones</h2>
             <div style="margin-bottom: 16px;">
-              <a href="/servicios/branding" class="link-draw">VER PÁGINA ESPECÍFICA →</a>
+              <a href="/renders-promociones-inmobiliarias" class="link-draw" style="font-weight: 700; color: var(--granate);">VER SERVICIO COMPLETO →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Hacemos</span>
               <p class="body-regular body-muted">
-                Definimos el concepto creativo, el tono y la identidad visual de la promoción antes de iniciar la producción gráfica.
+                Paquete integral de visualización fotorrealista para el lanzamiento comercial de promociones de obra nueva plurifamiliar y complejos residenciales.
               </p>
             </div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Entregamos</span>
               <p class="body-regular body-muted">
-                Naming comercial, manual de identidad gráfica, sistemas tipográficos y cromáticos, y directrices visuales aplicables a showroom y vallas de obra.
+                Perspectivas exteriores de fachada principal, orientación solar real diurna y crepuscular, inserción urbana y volumetrías adaptadas a vallas y catálogos.
               </p>
             </div>
             <div>
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Para Qué Sirve</span>
               <p class="body-regular body-muted">
-                Construir una marca inmobiliaria que transmita el valor real del metro cuadrado y garantice coherencia en todos los soportes de comercialización.
+                Iniciar la comercialización en fase sobre plano antes de la licencia o durante la fase de cimentación, reduciendo el coste de adquisición de cliente.
               </p>
             </div>
           </div>
         </article>
 
-        <!-- 02 Imagen Arquitectónica -->
-        <article class="service-block-row" id="imagen" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+        <!-- 02 Infografía 3D de Obra Nueva -->
+        <article class="service-block-row" id="infografia-3d" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
           <div class="display-num" style="color: var(--signal-text);">02</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px;">Infografía Arquitectónica 3D</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Infografía 3D de Obra Nueva</h2>
             <div style="margin-bottom: 16px;">
-              <a href="/servicios/infografia-3d" class="link-draw">VER PÁGINA ESPECÍFICA →</a>
+              <a href="/infografia-3d-obra-nueva" class="link-draw" style="font-weight: 700; color: var(--granate);">VER SERVICIO COMPLETO →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Hacemos</span>
               <p class="body-regular body-muted">
-                Modelado y visualización fotorrealista a partir de documentación técnica y planos arquitectónicos (CAD/BIM). Realizamos tanto renders individuales como colecciones completas para promociones: fachadas exteriores diurnas y atardeceres, interiorismo diáfano, zonas comunitarias, piscinas y detalles constructivos.
+                Visualización detallada de exteriores, interiorismo fotorrealista de salones, cocinas, dormitorios principales y zonas comunitarias (piscinas, jardines, gimnasio).
               </p>
             </div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Entregamos</span>
               <p class="body-regular body-muted">
-                Renders de resolución nativa 4K para impresión editorial y gran formato, inserción en entorno fotográfico real y atmósferas lumínicas rigurosas.
+                Imágenes en 4K Ultra HD con texturizado riguroso de materiales según memoria de calidades (porcelánicos, carpinterías con RPT, roble natural).
               </p>
             </div>
             <div>
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Para Qué Sirve</span>
               <p class="body-regular body-muted">
-                Presentar la arquitectura antes de que comience la obra, validar volumetrías y generar convicción en el comprador particular y el inversor.
+                Resolver las dudas del comprador sobre luminosidad, acabados y distribución espacial, cerrando acuerdos de reserva con mayor rapidez.
               </p>
             </div>
           </div>
         </article>
 
-        <!-- 03 Vídeo & Animación -->
-        <article class="service-block-row" id="video" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+        <!-- 03 Vídeo & Animación 3D -->
+        <article class="service-block-row" id="video-3d" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
           <div class="display-num" style="color: var(--signal-text);">03</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px;">Vídeo & Animación 3D</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Vídeo 3D & Animación</h2>
             <div style="margin-bottom: 16px;">
-              <a href="/servicios/video-3d" class="link-draw">VER PÁGINA ESPECÍFICA →</a>
+              <a href="/video-3d-promociones" class="link-draw" style="font-weight: 700; color: var(--granate);">VER SERVICIO COMPLETO →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Hacemos</span>
               <p class="body-regular body-muted">
-                Animación arquitectónica cinematográfica, recorridos virtuales continuos y piezas dinámicas en ratio vertical 9:16 y horizontal 16:9.
+                Recorridos virtuales cinematográficos y animaciones arquitectónicas que muestran la experiencia de vivir en la futura vivienda.
               </p>
             </div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Entregamos</span>
               <p class="body-regular body-muted">
-                Archivos en alta definición con etalonaje cinematográfico, sonido ambiental y piezas optimizadas para presentaciones de venta y canales digitales.
+                Piezas editadas en 4K con banda sonora, diseño de sonido, motion graphics con hitos de localización y versiones adaptadas a caseta de venta y redes sociales (16:9 y 9:16).
               </p>
             </div>
             <div>
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Para Qué Sirve</span>
               <p class="body-regular body-muted">
-                Explicar la espacialidad de la promoción, elevar la emoción del cliente y multiplicar la retención en presentaciones comerciales.
+                Conectar emocionalmente con el comprador, enriquecer la presentación en el punto de venta e impulsar el rendimiento de anuncios en Meta y YouTube.
               </p>
             </div>
           </div>
         </article>
 
-        <!-- 04 Material Comercial -->
-        <article class="service-block-row" id="comercial" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+        <!-- 04 Landing Page de Promoción -->
+        <article class="service-block-row" id="landing-page" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
           <div class="display-num" style="color: var(--signal-text);">04</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px;">Material Comercial</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Landing Page de Promoción</h2>
             <div style="margin-bottom: 16px;">
-              <a href="/servicios/material-comercial" class="link-draw">VER PÁGINA ESPECÍFICA →</a>
+              <a href="/landing-page-promocion-inmobiliaria" class="link-draw" style="font-weight: 700; color: var(--granate);">VER SERVICIO COMPLETO →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Hacemos</span>
               <p class="body-regular body-muted">
-                Transformamos planos técnicos en herramientas comerciales claras y atractivas para la fuerza de ventas.
+                Desarrollo de páginas web específicas de alta conversión para comercializar promociones inmobiliarias con selector interactivo de tipologías y viviendas.
               </p>
             </div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Entregamos</span>
               <p class="body-regular body-muted">
-                Dossier de venta editorial (PDF interactivo y maquetación para imprenta), planos comerciales 2D y 3D amueblados y texturizados, mapas de entorno y fichas individuales por tipología.
+                Web ultrarrápida optimizada para móvil, visualizador de planos interactivo, memoria de calidades, botón de WhatsApp directo y enlace con el CRM de la comercializadora.
               </p>
             </div>
             <div>
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Para Qué Sirve</span>
               <p class="body-regular body-muted">
-                Facilitar el trabajo de la red comercial y entregar al comprador una documentación clara que refuerce su decisión de compra.
+                Canalizar todo el tráfico publicitario a un entorno propio donde el promotor controla los datos de contacto y la experiencia del comprador.
               </p>
             </div>
           </div>
         </article>
 
-        <!-- 05 Web de Promoción -->
-        <article class="service-block-row" id="web" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
+        <!-- 05 Dossiers y Flyers de Venta -->
+        <article class="service-block-row" id="dossiers" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
           <div class="display-num" style="color: var(--signal-text);">05</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px;">Web de Promoción</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Dossier Comercial & Planos</h2>
             <div style="margin-bottom: 16px;">
-              <a href="/servicios/web-real-estate" class="link-draw">VER PÁGINA ESPECÍFICA →</a>
+              <a href="/dossier-y-flyer-venta-inmobiliario" class="link-draw" style="font-weight: 700; color: var(--granate);">VER SERVICIO COMPLETO →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Hacemos</span>
               <p class="body-regular body-muted">
-                Diseño UX/UI y desarrollo a medida de la plataforma web de la promoción, optimizada para resolver dudas arquitectónicas y convertir tráfico en visitas cualificadas.
+                Diseño gráfico editorial de catálogos comerciales, flyers de buzoneo, planos de venta amueblados en 2D/3D y fichas de producto individualizadas por tipología.
               </p>
             </div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Entregamos</span>
               <p class="body-regular body-muted">
-                Web rápida con visualizador interactivo de viviendas por planta, planos descargables, medición analítica rigurosa y conexión al CRM de ventas.
+                Archivos en PDF de alta calidad para envío por correo o WhatsApp y archivos con artes finales listos para imprenta con perfiles de color calibrados.
               </p>
             </div>
             <div>
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Para Qué Sirve</span>
               <p class="body-regular body-muted">
-                Constituir el epicentro digital de la comercialización y centralizar todas las solicitudes de información del mercado nacional e internacional.
+                Entregar al comprador un soporte físico o digital memorable que estudie tranquilamente con su familia y que refuerce el prestigio de la promoción.
               </p>
             </div>
           </div>
@@ -413,28 +414,28 @@
         <article class="service-block-row" id="captacion" style="padding: 64px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 80px 1.2fr 1.6fr; gap: 40px; align-items: start;">
           <div class="display-num" style="color: var(--signal-text);">06</div>
           <div>
-            <h2 class="display-sub" style="margin-bottom: 12px;">Lanzamiento & Captación</h2>
+            <h2 class="display-sub" style="margin-bottom: 12px;">Captación Digital de Leads</h2>
             <div style="margin-bottom: 16px;">
-              <a href="/servicios/captacion" class="link-draw">VER PÁGINA ESPECÍFICA →</a>
+              <a href="/captacion-digital-promociones" class="link-draw" style="font-weight: 700; color: var(--granate);">VER SERVICIO COMPLETO →</a>
             </div>
           </div>
           <div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Hacemos</span>
               <p class="body-regular body-muted">
-                Atracción dirigida de compradores finales e inversores mediante publicidad segmentada en Google Ads y Meta Ads con creatividades basadas en los renders 3D.
+                Campañas de publicidad digital de pago en Google Ads (búsqueda orientada a compradores de obra nueva) y Meta Ads (Instagram/Facebook) utilizando los renders producidos.
               </p>
             </div>
             <div style="margin-bottom: 24px;">
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Qué Entregamos</span>
               <p class="body-regular body-muted">
-                Estrategia por zona e intención de compra, testeo dinámico de creatividades con material fotográfico y reporting transparente de contactos cualificados.
+                Segmentación geográfica precisa por ciudad y código postal, testeo dinámico de copys y creatividades visuales, y medición del coste por contacto cualificado.
               </p>
             </div>
             <div>
               <span class="kicker signal" style="margin-bottom: 6px; display: block;">Para Qué Sirve</span>
               <p class="body-regular body-muted">
-                Activar el flujo comercial desde el primer día de lanzamiento y acelerar el cumplimiento de los objetivos de reserva.
+                Generar un flujo constante de solicitudes comerciales para el equipo de ventas desde la primera semana de salida al mercado.
               </p>
             </div>
           </div>
@@ -443,7 +444,36 @@
       </div>
     </section>
 
-    <!-- Cierre Editorial -->
+    <!-- Cobertura Geográfica -->
+    <section class="section bg-cream" style="border-bottom: 1px solid var(--line); padding: 60px 0;">
+      <div class="container">
+        <div class="kicker crimson">Ámbito de Actuación</div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 20px;">Estudio especializado en plazas inmobiliarias clave</h2>
+        <p style="max-width: 700px; color: #555; margin-bottom: 30px; font-size: 1.05rem;">
+          Trabajamos de forma recurrente con promotores y comercializadoras en los mercados residenciales más dinámicos de España:
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+          <a href="/renders-valencia" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 700; color: var(--granate); margin-bottom: 4px;">Renders en Valencia →</div>
+            <div style="font-size: 0.88rem; color: #666;">Sede central y conocimiento del mercado local valenciano.</div>
+          </a>
+          <a href="/renders-madrid" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 700; color: var(--granate); margin-bottom: 4px;">Renders en Madrid →</div>
+            <div style="font-size: 0.88rem; color: #666;">Promociones plurifamiliares, Madbit y Barrio de Salamanca.</div>
+          </a>
+          <a href="/renders-alicante" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 700; color: var(--granate); margin-bottom: 4px;">Renders en Alicante →</div>
+            <div style="font-size: 0.88rem; color: #666;">Costa Blanca, Altea, Jávea y residential resort.</div>
+          </a>
+          <a href="/renders-malaga" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 700; color: var(--granate); margin-bottom: 4px;">Renders en Málaga →</div>
+            <div style="font-size: 0.88rem; color: #666;">Costa del Sol, Marbella, Estepona y residencial prime.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre Editorial y CTA -->
     <section class="section-sm bg-ink" style="color: var(--paper); border-top: 1px solid var(--line-dark);">
       <div class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap;">
         <div>
@@ -451,14 +481,17 @@
             <span class="kicker-dot"></span>
             Dimensión a Medida
           </span>
-          <h2 class="display-sub" style="margin-bottom: 8px;">Cada promoción tiene su propia escala.</h2>
+          <h2 class="display-sub" style="margin-bottom: 8px;">¿Preparando una promoción inmobiliaria?</h2>
           <p class="body-regular" style="color: rgba(244,243,239,0.7); max-width: 580px;">
-            Dimensionamos nuestra intervención según la escala arquitectónica, el volumen de producción y las necesidades comerciales de cada proyecto.
+            Dimensionamos nuestra propuesta según el número de viviendas, el calendario de comercialización y los soportes de venta requeridos.
           </p>
         </div>
-        <div>
-          <a href="/contacto" class="btn-editorial btn-crimson">
-            HABLEMOS DEL PROYECTO →
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20servicios%20para%20una%20promocion" class="btn-editorial btn-crimson" data-track="whatsapp" target="_blank" rel="noopener">
+            WHATSAPP DIRECTO →
+          </a>
+          <a href="/presupuesto" class="btn-editorial" style="background: transparent; border: 1px solid rgba(244,243,239,0.5); color: #fff;">
+            PEDIR PRESUPUESTO
           </a>
         </div>
       </div>
@@ -466,73 +499,81 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Estructurado -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="./" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
+          <a href="/" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
             <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
-          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
-          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
-          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
-        </svg>
+              <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" fill="var(--granate)"/>
+              <rect class="iso-line-1" x="6" y="40" width="52" height="5" fill="#fff"/>
+              <rect class="iso-line-2" x="18" y="50" width="28" height="3" fill="#fff"/>
+            </svg>
             <span class="logo-text">EIDOS RENDER</span>
           </a>
           <p class="body-regular" style="color: rgba(244,243,239,0.65); max-width: 380px;">
-            Partner visual y comercial para proyectos inmobiliarios. Del proyecto arquitectónico al lanzamiento comercial.
+            Estudio de visualización 3D arquitectónica e infografía fotorrealista para el lanzamiento de promociones inmobiliarias de obra nueva.
           </p>
         </div>
         <div>
-          <div class="footer-col-title">Navegación</div>
+          <div class="footer-col-title">Servicios Clave</div>
           <ul class="footer-links">
-            <li><a href="/proyectos">Proyectos</a></li>
-            <li><a href="/servicios">Servicios</a></li>
-            <li><a href="index.html#estudio">Estudio</a></li>
-            <li><a href="index.html#proceso">Proceso</a></li>
-            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/renders-promociones-inmobiliarias">Renders Promociones</a></li>
+            <li><a href="/infografia-3d-obra-nueva">Infografía 3D</a></li>
+            <li><a href="/video-3d-promociones">Vídeo 3D Promociones</a></li>
+            <li><a href="/landing-page-promocion-inmobiliaria">Landing de Promoción</a></li>
+            <li><a href="/dossier-y-flyer-venta-inmobiliario">Dossiers y Flyers</a></li>
+            <li><a href="/captacion-digital-promociones">Captación Digital</a></li>
           </ul>
         </div>
         <div>
-          <div class="footer-col-title">Servicios</div>
+          <div class="footer-col-title">Cobertura Local</div>
           <ul class="footer-links">
-            <li><a href="/servicios/infografia-3d">Infografía 3D</a></li>
-            <li><a href="/servicios/video-3d">Vídeo 3D</a></li>
-            <li><a href="/servicios/branding">Branding</a></li>
-            <li><a href="/servicios/material-comercial">Dossiers de Venta</a></li>
-            <li><a href="/servicios/web-real-estate">Web de Promoción</a></li>
-            <li><a href="/servicios/captacion">Captación Digital</a></li>
+            <li><a href="/renders-valencia">Renders en Valencia</a></li>
+            <li><a href="/renders-madrid">Renders en Madrid</a></li>
+            <li><a href="/renders-alicante">Renders en Alicante</a></li>
+            <li><a href="/renders-malaga">Renders en Málaga</a></li>
+            <li><a href="/proyectos">Portfolio de Proyectos</a></li>
+            <li><a href="/tarifas-renders-3d">Tarifas Orientativas</a></li>
           </ul>
         </div>
         <div>
-          <div class="footer-col-title">Contacto</div>
+          <div class="footer-col-title">Contacto Rápido</div>
           <ul class="footer-links">
-            <li><a href="mailto:info@eidosrender.es">info@eidosrender.es</a></li>
-            <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
-            <li>Valencia, España</li>
+            <li><a href="tel:+34614459144" data-track="phone">+34 614 45 91 44</a></li>
+            <li><a href="mailto:info@eidosrender.es?subject=Presupuesto%20Servicios" data-track="email">info@eidosrender.es</a></li>
+            <li><a href="https://wa.me/34614459144" data-track="whatsapp" target="_blank" rel="noopener">WhatsApp Directo</a></li>
+            <li>Valencia (Sede) · Madrid · Alicante · Málaga</li>
           </ul>
         </div>
       </div>
+
       <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
-          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
-        </div>
-        <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Todos los derechos reservados.</div>
-        <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
-            <span style="color: var(--crimson-on-dark); font-weight: 700;">ES</span> ·
-            <a href="en/services.html" onclick="window.setLang('en')">EN</a> ·
-            <a href="de/leistungen.html" onclick="window.setLang('de')">DE</a> ·
-            <a href="fr/services.html" onclick="window.setLang('fr')">FR</a>
-          </div>
-          <a href="/aviso-legal">Aviso Legal</a>
-          <a href="/privacidad">Privacidad</a>
-          <a href="/cookies">Cookies</a>
+        <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+      </div>
+
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: rgba(244,243,239,0.5);">
+        <div>© 2026 Eidos Render. Especialistas en visualización de promociones inmobiliarias.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="/aviso-legal" style="color: inherit; text-decoration: none;">Aviso Legal</a>
+          <a href="/privacidad" style="color: inherit; text-decoration: none;">Privacidad</a>
+          <a href="/cookies" style="color: inherit; text-decoration: none;">Cookies</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="main.js" defer></script>
+  <!-- BARRA DE CONTACTO FIJA EN MÓVIL (FASE 9 CRO) -->
+  <aside class="mobile-sticky-bar" aria-label="Contacto urgente móvil" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #161616; border-top: 1px solid #333; z-index: 999; display: flex; box-shadow: 0 -4px 12px rgba(0,0,0,0.3);">
+    <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20servicios%20para%20una%20promocion" data-track="whatsapp" target="_blank" rel="noopener" style="flex: 1; padding: 14px 10px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>WhatsApp Presupuesto</span>
+    </a>
+    <a href="tel:+34614459144" data-track="phone" style="flex: 1; padding: 14px 10px; background: var(--granate); color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>Llamar Ahora</span>
+    </a>
+  </aside>
+
+  <script src="/main.js" defer></script>
 </body>
 </html>

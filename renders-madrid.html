@@ -27,14 +27,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Renders 3D en Madrid para Promotoras | Eidos Render</title>
-  <meta name="description" content="Estudio de renders 3D para promociones inmobiliarias en Madrid. Infografías de alta conversión para preventa de obra nueva y residencial.">
+  <meta name="description" content="Renders 3D de arquitectura e infografía para promotoras en Madrid. Visualización de promociones de obra nueva, Build to Rent y residencial prime.">
   <link rel="canonical" href="https://eidosrender.es/renders-madrid">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="Renders 3D en Madrid para Promotoras | Eidos Render">
-  <meta property="og:description" content="Infografía 3D y visualización arquitectónica de alta gama para comercialización de obra nueva en Madrid.">
+  <meta property="og:description" content="Visualización 3D fotorrealista para comercialización de promociones inmobiliarias, residencial prime y proyectos Build to Rent en Madrid.">
   <meta property="og:url" content="https://eidosrender.es/renders-madrid">
   <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp">
 
@@ -45,6 +45,8 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/assets/fonts.css">
 
+  <!-- Core Web Vitals Preloads -->
+  <link rel="preload" as="image" href="/img/render-fachada-edificio-obra-nueva.webp" fetchpriority="high">
   <link rel="preload" href="/assets/fonts/poiret-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/josefin-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -56,14 +58,21 @@
       {
         "@type": "ProfessionalService",
         "@id": "https://eidosrender.es/renders-madrid#service",
-        "name": "Eidos Render Madrid — Infografía 3D de Obra Nueva",
-        "description": "Visualización arquitectónica 3D de alto impacto para promotoras, gestoras de cooperativas y fondos inmobiliarios en Madrid y Comunidad de Madrid.",
+        "name": "Eidos Render Madrid — Renders 3D y Visualización para Promotoras",
+        "description": "Estudio de visualización arquitectónica 3D, renders fotorrealistas e infografía para promotoras inmobiliarias, fondos de inversión y gestoras en Madrid.",
         "url": "https://eidosrender.es/renders-madrid",
         "telephone": "+34614459144",
         "email": "info@eidosrender.es",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Madrid",
+          "addressRegion": "Comunidad de Madrid",
+          "addressCountry": "ES"
+        },
         "areaServed": [
           { "@type": "City", "name": "Madrid" },
-          { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" }
+          { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" },
+          { "@type": "Country", "name": "España" }
         ]
       },
       {
@@ -80,18 +89,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Trabajáis con gestoras de cooperativas y grandes promociones en Madrid?",
+            "name": "¿Tenéis experiencia en desarrollos residenciales y nuevos barrios de Madrid?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Desarrollamos paquetes integrales de infografía para cooperativas de viviendas y promotoras en los principales desarrollos de Madrid: Los Berrocales, Los Ahijones, Valdebebas y grandes complejos residenciales en el arco noroeste (Pozuelo, Las Rozas, Majadahonda)."
+              "text": "Sí. Desarrollamos infografías 3D adaptadas a las normativas y tipologías de los grandes desarrollos urbanísticos madrileños: El Cañaveral, Los Berrocales, Los Ahijones, Valdebebas y la proyección de Madrid Nuevo Norte, así como promociones en municipios metropolitanos como Boadilla, Pozuelo, Las Rozas, Majadahonda y Alcobendas."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Cuáles son los plazos habituales de entrega para promociones en Madrid?",
+            "name": "¿Trabajáis proyectos de Build-to-Rent (BTR) y Private Rented Sector (PRS) en Madrid?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nos adaptamos a los estrictos ritmos de comercialización de Madrid: entregamos primeras vistas de encuadre en 5 días hábiles y el paquete completo listo para vallas publicitarias y caseta de ventas en 2 a 3 semanas."
+              "text": "Conocemos los estándares visuales que exigen los fondos institucionales en proyectos BTR: renders que priorizan la durabilidad y eficiencia de los materiales interiores, junto a un tratamiento exhaustivo de las zonas de amenities compartidas (salas de coworking, gimnasio, lavandería comunitaria, piscina y zonas verdes)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo abordáis la visualización de rehabilitaciones de fincas señoriales en distritos prime?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En barrios como Salamanca, Chamberí, Jerónimos o Justicia, modelamos con fidelidad quirúrgica molduras de escayola clásicas, tarimas de espiga, chimeneas de mármol y carpinterías originales protegidas, fusionándolas con interiorismo contemporáneo de alta gama para comercialización a compradores de alto patrimonio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo coordináis los proyectos con promotoras y comercializadoras con sede en Madrid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trabajamos con una metodología 100% sincronizada: reuniones periódicas por videoconferencia con los directores técnicos y comerciales, entregas intermedias en PDF con herramientas de anotación compartida y desplazamientos puntuales a Madrid para presentaciones ante comités de inversión."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son los plazos de entrega para una promoción residencial en Madrid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un paquete completo de preventa para una promoción madrileña (3 vistas de fachada y amenities y 3 vistas interiores de vivienda) se entrega en un plazo medio de 2 a 3 semanas, con entregas de encuadres y premateriales en los primeros 7 días."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Producís material publicitario adaptado a ferias como SIMA y casetas de venta en Madrid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Generamos másteres en ultra alta resolución (6K/8K) para lonas publicitarias y vallas en obra, junto a bucles de vídeo en 4K y reels verticales 9:16 diseñados para pantallas de showroom y casetas comerciales a pie de solar."
             }
           }
         ]
@@ -105,7 +146,7 @@
   <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
       <div class="nav-center-brand">
-        <a href="/" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render">
+        <a href="/" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render Inicio">
           <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
             <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
             <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
@@ -115,7 +156,7 @@
         </a>
       </div>
 
-      <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Menú" aria-expanded="false">
+      <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Abrir Menú" aria-expanded="false">
         <span class="menu-btn-icon">
           <span class="line line-1"></span>
           <span class="line line-2"></span>
@@ -125,119 +166,365 @@
     </div>
   </header>
 
-  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navegación" aria-hidden="true">
-    <div class="app-panel-header"><span class="app-panel-title">Eidos Render</span></div>
-    <nav aria-label="Menú principal">
+  <div class="floating-app-panel" id="floatingAppPanel" aria-label="Navegación principal" aria-hidden="true">
+    <div class="app-panel-header">
+      <span class="app-panel-title">Eidos Render</span>
+    </div>
+    <nav aria-label="Navegación del sitio">
       <ul class="app-nav-list">
         <li class="app-nav-item"><a href="/" class="app-link"><span><span class="app-nav-num">01</span>Inicio</span><span>→</span></a></li>
         <li class="app-nav-item"><a href="/servicios" class="app-link"><span><span class="app-nav-num">02</span>Servicios</span><span>→</span></a></li>
         <li class="app-nav-item"><a href="/proyectos" class="app-link"><span><span class="app-nav-num">03</span>Proyectos</span><span>→</span></a></li>
-        <li class="app-nav-item"><a href="/obra-nueva" class="app-link"><span><span class="app-nav-num">04</span>Obra Nueva</span><span>→</span></a></li>
-        <li class="app-nav-item"><a href="/presupuesto" class="app-link"><span><span class="app-nav-num">05</span>Presupuesto</span><span>→</span></a></li>
-        <li class="app-nav-item"><a href="/contacto" class="app-link"><span><span class="app-nav-num">06</span>Contacto</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/tarifas-renders-3d" class="app-link"><span><span class="app-nav-num">04</span>Tarifas Orientativas</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/faq" class="app-link"><span><span class="app-nav-num">05</span>Preguntas Frecuentes</span><span>→</span></a></li>
+        <li class="app-nav-item"><a href="/contacto" class="app-link"><span><span class="app-nav-num">06</span>Contacto Directo</span><span>→</span></a></li>
       </ul>
     </nav>
     <div class="app-panel-footer">
-      <a href="/presupuesto" class="app-cta-btn">SOLICITAR PRESUPUESTO →</a>
-      <div class="app-contact-sub">Madrid · Servicio Especializado Obra Nueva</div>
+      <a href="/presupuesto" class="app-cta-btn">PEDIR PRESUPUESTO EN MADRID →</a>
+      <div class="app-contact-sub">Madrid · Valencia · Alicante · Málaga</div>
     </div>
   </div>
 
   <main style="padding-top: 140px;">
 
-    <section class="section-sm bg-cream" style="border-bottom: 1px solid var(--line); padding-bottom: 60px;">
+    <!-- 01. BREADCRUMBS -->
+    <div class="container" style="padding-bottom: 16px;">
+      <nav aria-label="Migas de pan" style="font-size: 0.82rem; color: #777;">
+        <a href="/" style="color: inherit; text-decoration: none;">Inicio</a>
+        <span style="margin: 0 8px;">/</span>
+        <a href="/servicios" style="color: inherit; text-decoration: none;">Ciudades</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="color: var(--granate); font-weight: 500;">Renders Madrid</span>
+      </nav>
+    </div>
+
+    <!-- 02. HERO SECTION -->
+    <section class="section-sm bg-cream" style="border-bottom: 1px solid var(--line); padding-bottom: 50px;">
       <div class="container">
-        <div style="margin-bottom: 20px;">
-          <a href="/servicios" class="link-arrow" style="font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;">← Volver a Servicios</a>
-        </div>
-        <div class="kicker crimson">Mercado Promotor Madrid</div>
-        <h1 class="display-title" style="margin-bottom: 24px; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1;">
-          Renders 3D en Madrid para Promotoras e Inversores
+        <div class="kicker crimson">Visualización 3D para Promociones en Madrid</div>
+        <h1 class="display-title" style="margin-bottom: 24px; font-size: clamp(2.1rem, 4.8vw, 3.6rem); line-height: 1.12;">
+          Renders 3D y Visualización Arquitectónica en Madrid
         </h1>
-        <p class="body-large" style="max-width: 820px; font-size: 1.25rem; line-height: 1.6; color: #333; margin-bottom: 32px;">
-          Infografía de alta fidelidad para el mercado inmobiliario más competitivo de España. Desarrollamos la visualización estratégica para promociones en Madrid capital, los nuevos desarrollos urbanísticos del sureste y proyectos premium en el noroeste metropolitano.
+        <p class="body-large" style="max-width: 820px; font-size: 1.2rem; line-height: 1.65; color: #2d2d2d; margin-bottom: 32px;">
+          Infografía fotorrealista de alto impacto para promotoras, fondos de inversión y gestoras de cooperativas en Madrid. Desde residenciales plurifamiliares en los desarrollos del sureste y proyectos Build to Rent, hasta rehabilitación de fincas señoriales y unifamiliares de lujo.
         </p>
-        <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
-          <a href="/presupuesto" class="btn btn-crimson" style="padding: 16px 36px; font-size: 0.95rem;">SOLICITAR PRESUPUESTO EN MADRID →</a>
-          <a href="/proyectos" class="btn" style="border: 1px solid var(--charcoal); padding: 16px 28px; font-size: 0.95rem;">VER CASOS RESIDENCIALES</a>
+
+        <!-- CTA GROUP LOW FRICTION -->
+        <div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-bottom: 30px;">
+          <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20renders%20para%20una%20promoci%C3%B3n%20en%20Madrid" class="btn btn-crimson" data-track="whatsapp" target="_blank" rel="noopener" style="padding: 15px 30px; font-size: 0.95rem;">
+            WHATSAPP MADRID: 614 45 91 44 →
+          </a>
+          <a href="/presupuesto" class="btn" style="border: 1px solid var(--charcoal); padding: 15px 28px; font-size: 0.95rem; text-decoration: none; color: var(--charcoal);">
+            PEDIR PRESUPUESTO
+          </a>
+          <a href="tel:+34614459144" class="btn" data-track="phone" style="border: 1px solid #ccc; padding: 15px 22px; font-size: 0.9rem; text-decoration: none; color: #555;">
+            LLAMAR: +34 614 45 91 44
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- 03. HERO IMAGE -->
+    <section style="padding: 40px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="border: 1px solid var(--line); overflow: hidden; background: #eee;">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="/img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+            <img src="/img/render-fachada-edificio-obra-nueva.webp" alt="Renders 3D de edificio residencial de obra nueva en Madrid" width="1600" height="900" loading="eager" fetchpriority="high" style="width: 100%; height: auto; display: block; object-fit: cover;">
+          </picture>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding-top: 10px; font-size: 0.85rem; color: #666;">
+          <span>Promoción Residencial de Obra Nueva · Madrid</span>
+          <span>Resolución 4K UHD · Rigor Técnico & Iluminación Natural</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. CONTENIDO EDITORIAL DE VALOR: MERCADO DE MADRID -->
     <section class="section" style="padding: 70px 0; border-bottom: 1px solid var(--line);">
       <div class="container">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px;">
           <div>
-            <div class="kicker crimson">Exigencia & Competitividad</div>
-            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 20px; line-height: 1.2;">
-              En el mercado madrileño, la diferenciación visual decide la velocidad de preventa.
+            <div class="kicker crimson">El Mercado Residencial de Madrid</div>
+            <h2 style="font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom: 20px; line-height: 1.25;">
+              Soluciones visuales adaptadas a la complejidad del mercado madrileño
             </h2>
-          </div>
-          <div style="font-size: 1.05rem; line-height: 1.8; color: #2a2a2d;">
-            <p style="margin-bottom: 18px;">
-              Madrid exige una velocidad y un estándar de acabado de primer nivel internacional. Ya sea para promociones plurifamiliares de gran volumen en Los Berrocales o Valdebebas, o para rehabilitaciones de lujo en el Barrio de Salamanca o Chamberí, los inversores y compradores esperan imágenes impecables que reflejen la exclusividad del producto.
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+              Madrid es el mercado promotor más dinámico y competitivo de España. La diversidad de proyectos exige un lenguaje visual específico para cada tipología: en los grandes sectores de expansión como <strong>El Cañaveral, Los Berrocales, Los Ahijones o Valdebebas</strong>, el comprador familiar busca amplias zonas comunes ajardinadas, piscinas con solárium y pistas de pádel integradas en complejos plurifamiliares cerrados.
             </p>
-            <p>
-              En <strong>Eidos Render</strong> proporcionamos a las promotoras y comercializadoras de Madrid el paquete integral de preventa: renders de fachada integrados en fotografía aérea de dron, recorridos 3D cinematográficos para casetas de ventas de diseño y catálogos editoriales para presentar a comités de inversión.
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #444;">
+              Por su parte, en el mercado prime de la almendra central (<strong>Salamanca, Chamberí, Jerónimos, Retiro y Justicia</strong>), el foco se traslada al detalle constructivo noble: cerrajerías de forja restauradas, portalones señoriales, techos altos con molduras y una iluminación interior cálida que transmita exclusividad atemporal.
+            </p>
+          </div>
+
+          <div>
+            <div class="kicker crimson">Build to Rent & Fondos de Inversión</div>
+            <h2 style="font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom: 20px; line-height: 1.25;">
+              Rigor técnico para gestoras institucionales y SOCIMIs
+            </h2>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #444; margin-bottom: 20px;">
+              Trabajamos con fondos institucionales y promotoras especializadas en <strong>Build to Rent (BTR)</strong> en toda la Comunidad de Madrid. En estos desarrollos, el protagonismo recae en los espacios compartidos que aportan valor al inquilino: espacios de coworking, gimnasios equipados, gastrotecas y terrazas comunes en cubierta.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #444;">
+              Asimismo, damos soporte visual a arquitectos y promotoras de villas unifamiliares exclusivas en la corona noroeste de Madrid: <strong>Pozuelo de Alarcón (La Finca, Somosaguas), Boadilla del Monte, Majadahonda, Las Rozas y La Moraleja</strong>, donde la integración paisajística y la privacidad son los principales argumentos de cierre.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ MADRID -->
-    <section class="section" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
-      <div class="container" style="max-width: 860px;">
-        <div class="kicker crimson">Preguntas Frecuentes Madrid</div>
-        <h2 style="font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom: 36px;">
-          Dudas de promotores sobre proyectos en Madrid
-        </h2>
-        <div style="display: flex; flex-direction: column; gap: 24px;">
-          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Trabajáis con gestoras de cooperativas y grandes promociones en Madrid?</h3>
-            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
-              Sí. Desarrollamos paquetes integrales de infografía para cooperativas de viviendas y promotoras en los principales desarrollos de Madrid: Los Berrocales, Los Ahijones, Valdebebas y grandes complejos residenciales en el arco noroeste (Pozuelo, Las Rozas, Majadahonda).
+    <!-- 05. SERVICIOS LOCALES PARA PROMOTORAS EN MADRID -->
+    <section class="section bg-paper" style="padding: 80px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="max-width: 780px; margin-bottom: 50px;">
+          <div class="kicker crimson">Soluciones para Promociones en Madrid</div>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 16px;">
+            Material comercial para acelerar la preventa en Madrid
+          </h2>
+          <p style="font-size: 1.1rem; color: #555; line-height: 1.7;">
+            Herramientas visuales diseñadas para competir en un mercado con máxima exigencia:
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+          <div style="padding: 30px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-family: var(--font-condensed); font-size: 0.8rem; letter-spacing: 0.1em; color: var(--granate); font-weight: bold; margin-bottom: 10px;">01 · PLURIFAMILIAR & BTR</div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Renders de Edificio & Fachada</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Alzados en esquina y perspectivas urbanas fotorrealistas que muestran la escala real del edificio y la modulación de terrazas en el tejido madrileño.
             </p>
           </div>
-          <div style="border-bottom: 1px solid var(--line); padding-bottom: 20px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 10px;">¿Cuáles son los plazos habituales de entrega para promociones en Madrid?</h3>
-            <p style="font-size: 0.98rem; line-height: 1.7; color: #444;">
-              Nos adaptamos a los estrictos ritmos de comercialización de Madrid: entregamos primeras vistas de encuadre en 5 días hábiles y el paquete completo listo para vallas publicitarias y caseta de ventas en 2 a 3 semanas.
+
+          <div style="padding: 30px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-family: var(--font-condensed); font-size: 0.8rem; letter-spacing: 0.1em; color: var(--granate); font-weight: bold; margin-bottom: 10px;">02 · COMUNIDAD & AMENITIES</div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Espacios Comunes & Coworking</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Visualización de piscinas desbordantes comunitarias, solárium en azotea, áreas de coworking y pistas deportivas para conectar con el comprador joven e inversor.
+            </p>
+          </div>
+
+          <div style="padding: 30px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-family: var(--font-condensed); font-size: 0.8rem; letter-spacing: 0.1em; color: var(--granate); font-weight: bold; margin-bottom: 10px;">03 · INTERIORISMO RESIDENCIAL</div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Vivienda Tipo & Áticos Prime</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Interiores con doble altura, cocinas con isla de diseño y suites principales con vestidor, adaptados a la memoria de calidades de la promoción.
+            </p>
+          </div>
+
+          <div style="padding: 30px; background: #fff; border: 1px solid var(--line);">
+            <div style="font-family: var(--font-condensed); font-size: 0.8rem; letter-spacing: 0.1em; color: var(--granate); font-weight: bold; margin-bottom: 10px;">04 · VENTA A PIE DE OBRA</div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Lonas, Vallas & Dossier PDF</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+              Másteres en ultra alta resolución para vallas en obra, lonas de andamio en rehabilitación y catálogos comerciales interactivos listos para enviar por WhatsApp.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA MADRID -->
-    <section class="section bg-ink" style="color: var(--paper); padding: 90px 0; text-align: center;">
-      <div class="container" style="max-width: 800px;">
-        <h2 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 20px; line-height: 1.15; color: #fff;">
-          Impulsa tu promoción en Madrid con visualización líder
-        </h2>
-        <p style="font-size: 1.15rem; line-height: 1.7; color: #bbb; margin-bottom: 36px;">
-          Envíanos tus planos arquitectónicos y recibe una propuesta con desglose de vistas y presupuesto cerrado en 24 horas.
-        </p>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="/presupuesto" class="btn btn-crimson" style="padding: 18px 40px; font-size: 1rem;">SOLICITAR PRESUPUESTO EN MADRID →</a>
-          <a href="/contacto" class="btn" style="border: 1px solid #fff; color: #fff; padding: 18px 32px; font-size: 1rem;">HABLAR CON UN TÉCNICO</a>
+    <!-- 06. CASO DE ESTUDIO LOCAL DESTACADO -->
+    <section class="section" style="padding: 70px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center;">
+          <div>
+            <div class="kicker crimson">Proyecto Entregado en Madrid</div>
+            <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin-bottom: 16px;">
+              Reforma Integral & House Flipping en Barrio de Salamanca
+            </h2>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: #555; margin-bottom: 20px;">
+              Reconversión de vivienda señorial en piso de diseño contemporáneo para fondo inversor. Renders interiores fotorrealistas de salón con techos altos, cocina con isla y comparativa gráfica de planos estado actual frente a reformado.
+            </p>
+            <a href="/proyectos/reforma-integral-madrid" style="color: var(--granate); font-weight: 600; text-decoration: none;">Ver caso de estudio en Madrid →</a>
+          </div>
+          <div style="border: 1px solid var(--line); overflow: hidden;">
+            <img src="/img/infografia-3d-salon-moderno-doble-altura-800.webp" alt="Renders 3D de reforma integral y salón señorial en Madrid" width="800" height="450" loading="lazy" style="width: 100%; height: auto; display: block;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. FAQ MADRID VISIBLE EN HTML -->
+    <section class="section bg-paper" id="faq" style="padding: 70px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div style="max-width: 760px; margin-bottom: 40px;">
+          <div class="kicker crimson">Preguntas Frecuentes Madrid</div>
+          <h2 style="font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom: 16px;">
+            Dudas de promotores sobre proyectos en Madrid
+          </h2>
+          <p style="font-size: 1.05rem; color: #555;">
+            Atención profesional y respuesta técnica rápida para proyectos en la Comunidad de Madrid:
+          </p>
+        </div>
+
+        <div style="display: grid; gap: 24px; max-width: 880px;">
+          <div style="padding: 24px; background: #fff; border: 1px solid var(--line);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px; color: #111;">¿Tenéis experiencia en desarrollos residenciales y nuevos barrios de Madrid?</h3>
+            <p style="font-size: 0.95rem; color: #444; line-height: 1.6; margin: 0;">
+              Sí. Desarrollamos infografías 3D adaptadas a las normativas y tipologías de los grandes desarrollos urbanísticos madrileños: El Cañaveral, Los Berrocales, Los Ahijones, Valdebebas y la proyección de Madrid Nuevo Norte, así como promociones en municipios metropolitanos como Boadilla, Pozuelo, Las Rozas, Majadahonda y Alcobendas.
+            </p>
+          </div>
+
+          <div style="padding: 24px; background: #fff; border: 1px solid var(--line);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px; color: #111;">¿Trabajáis proyectos de Build-to-Rent (BTR) y Private Rented Sector (PRS) en Madrid?</h3>
+            <p style="font-size: 0.95rem; color: #444; line-height: 1.6; margin: 0;">
+              Conocemos los estándares visuales que exigen los fondos institucionales en proyectos BTR: renders que priorizan la durabilidad y eficiencia de los materiales interiores, junto a un tratamiento exhaustivo de las zonas de amenities compartidas (salas de coworking, gimnasio, lavandería comunitaria, piscina y zonas verdes).
+            </p>
+          </div>
+
+          <div style="padding: 24px; background: #fff; border: 1px solid var(--line);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px; color: #111;">¿Cómo abordáis la visualización de rehabilitaciones de fincas señoriales en distritos prime?</h3>
+            <p style="font-size: 0.95rem; color: #444; line-height: 1.6; margin: 0;">
+              En barrios como Salamanca, Chamberí, Jerónimos o Justicia, modelamos con fidelidad quirúrgica molduras de escayola clásicas, tarimas de espiga, chimeneas de mármol y carpinterías originales protegidas, fusionándolas con interiorismo contemporáneo de alta gama para comercialización a compradores de alto patrimonio.
+            </p>
+          </div>
+
+          <div style="padding: 24px; background: #fff; border: 1px solid var(--line);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px; color: #111;">¿Cómo coordináis los proyectos con promotoras y comercializadoras con sede en Madrid?</h3>
+            <p style="font-size: 0.95rem; color: #444; line-height: 1.6; margin: 0;">
+              Trabajamos con una metodología 100% sincronizada: reuniones periódicas por videoconferencia con los directores técnicos y comerciales, entregas intermedias en PDF con herramientas de anotación compartida y desplazamientos puntuales a Madrid para presentaciones ante comités de inversión.
+            </p>
+          </div>
+
+          <div style="padding: 24px; background: #fff; border: 1px solid var(--line);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px; color: #111;">¿Cuáles son los plazos de entrega para una promoción residencial en Madrid?</h3>
+            <p style="font-size: 0.95rem; color: #444; line-height: 1.6; margin: 0;">
+              Un paquete completo de preventa para una promoción madrileña (3 vistas de fachada y amenities y 3 vistas interiores de vivienda) se entrega en un plazo medio de 2 a 3 semanas, con entregas de encuadres y premateriales en los primeros 7 días.
+            </p>
+          </div>
+
+          <div style="padding: 24px; background: #fff; border: 1px solid var(--line);">
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px; color: #111;">¿Producís material publicitario adaptado a ferias como SIMA y casetas de venta en Madrid?</h3>
+            <p style="font-size: 0.95rem; color: #444; line-height: 1.6; margin: 0;">
+              Sí. Generamos másteres en ultra alta resolución (6K/8K) para lonas publicitarias y vallas en obra, junto a bucles de vídeo en 4K y reels verticales 9:16 diseñados para pantallas de showroom y casetas comerciales a pie de solar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. SERVICIOS Y OTRAS CIUDADES -->
+    <section class="section" style="padding: 60px 0; border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="kicker crimson">Cobertura Geográfica & Especialidades</div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 24px;">Servicios y otras ciudades destacadas</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+          <a href="/renders-promociones-inmobiliarias" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 600; color: var(--granate); margin-bottom: 6px;">Renders Promociones Inmobiliarias →</div>
+            <div style="font-size: 0.88rem; color: #666;">Infografía fotorrealista para obra nueva.</div>
+          </a>
+          <a href="/renders-valencia" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 600; color: var(--granate); margin-bottom: 6px;">Renders en Valencia →</div>
+            <div style="font-size: 0.88rem; color: #666;">Sede central y proyectos residenciales en la costa.</div>
+          </a>
+          <a href="/renders-alicante" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 600; color: var(--granate); margin-bottom: 6px;">Renders en Alicante y Costa Blanca →</div>
+            <div style="font-size: 0.88rem; color: #666;">Villas en ladera y residencial con vistas al mar.</div>
+          </a>
+          <a href="/renders-malaga" style="padding: 20px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: block;">
+            <div style="font-weight: 600; color: var(--granate); margin-bottom: 6px;">Renders en Málaga y Costa del Sol →</div>
+            <div style="font-size: 0.88rem; color: #666;">Marbella, Estepona y residencial de lujo.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. CIERRE Y CTA DE CONVERSIÓN -->
+    <section class="section bg-ink" style="color: var(--paper); padding: 70px 0;">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap;">
+        <div>
+          <span class="kicker crimson"><span class="kicker-dot"></span>Estudio Técnico Especializado</span>
+          <h2 class="display-sub" style="margin-bottom: 10px; font-size: clamp(1.8rem, 3.2vw, 2.5rem);">
+            Lanza tu promoción en Madrid con visualización fotorrealista
+          </h2>
+          <p class="body-regular" style="color: rgba(244,243,239,0.75); max-width: 600px; line-height: 1.6;">
+            Envíanos la planimetría de tu proyecto en Madrid (DWG o BIM). Te enviamos una propuesta detallada en menos de 24 horas.
+          </p>
+        </div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20renders%20para%20una%20promoci%C3%B3n%20en%20Madrid" class="btn-editorial btn-crimson" data-track="whatsapp" target="_blank" rel="noopener">
+            WHATSAPP DIRECTO →
+          </a>
+          <a href="/presupuesto" class="btn-editorial" style="background: transparent; border: 1px solid rgba(244,243,239,0.5); color: #fff;">
+            PEDIR PRESUPUESTO
+          </a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer" role="contentinfo" style="border-top: 1px solid var(--line); padding: 50px 0; font-size: 0.9rem;">
-    <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
-      <div><strong>EIDOS RENDER</strong> · Renders 3D en Madrid para Obra Nueva.</div>
-      <div style="display: flex; gap: 20px;">
-        <a href="/servicios" style="color: inherit;">Servicios</a>
-        <a href="/proyectos" style="color: inherit;">Proyectos</a>
-        <a href="/presupuesto" style="color: inherit;">Presupuesto</a>
-        <a href="/aviso-legal" style="color: inherit;">Aviso Legal</a>
+  <!-- FOOTER ESTRUCTURADO -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="/" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
+            <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
+              <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" fill="var(--granate)"/>
+              <rect class="iso-line-1" x="6" y="40" width="52" height="5" fill="#fff"/>
+              <rect class="iso-line-2" x="18" y="50" width="28" height="3" fill="#fff"/>
+            </svg>
+            <span class="logo-text">EIDOS RENDER</span>
+          </a>
+          <p class="body-regular" style="color: rgba(244,243,239,0.65); max-width: 380px;">
+            Estudio de visualización 3D arquitectónica e infografía fotorrealista para el lanzamiento de promociones inmobiliarias de obra nueva.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col-title">Servicios Clave</div>
+          <ul class="footer-links">
+            <li><a href="/renders-promociones-inmobiliarias">Renders Promociones</a></li>
+            <li><a href="/infografia-3d-obra-nueva">Infografía 3D</a></li>
+            <li><a href="/video-3d-promociones">Vídeo 3D Promociones</a></li>
+            <li><a href="/landing-page-promocion-inmobiliaria">Landing de Promoción</a></li>
+            <li><a href="/dossier-y-flyer-venta-inmobiliario">Dossiers y Flyers</a></li>
+            <li><a href="/captacion-digital-promociones">Captación Digital</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Cobertura Local</div>
+          <ul class="footer-links">
+            <li><a href="/renders-valencia">Renders en Valencia</a></li>
+            <li><a href="/renders-madrid">Renders en Madrid</a></li>
+            <li><a href="/renders-alicante">Renders en Alicante</a></li>
+            <li><a href="/renders-malaga">Renders en Málaga</a></li>
+            <li><a href="/proyectos">Portfolio de Proyectos</a></li>
+            <li><a href="/tarifas-renders-3d">Tarifas Orientativas</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contacto Rápido</div>
+          <ul class="footer-links">
+            <li><a href="tel:+34614459144" data-track="phone">+34 614 45 91 44</a></li>
+            <li><a href="mailto:info@eidosrender.es?subject=Presupuesto%20Renders%20Madrid" data-track="email">info@eidosrender.es</a></li>
+            <li><a href="https://wa.me/34614459144" data-track="whatsapp" target="_blank" rel="noopener">WhatsApp Directo</a></li>
+            <li>Valencia (Sede Central), España</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line-dark); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: rgba(244,243,239,0.5);">
+        <div>© 2026 Eidos Render. Especialistas en visualización de promociones inmobiliarias.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="/aviso-legal" style="color: inherit; text-decoration: none;">Aviso Legal</a>
+          <a href="/privacidad" style="color: inherit; text-decoration: none;">Privacidad</a>
+          <a href="/cookies" style="color: inherit; text-decoration: none;">Cookies</a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!-- BARRA DE CONTACTO FIJA EN MÓVIL (FASE 9 CRO) -->
+  <aside class="mobile-sticky-bar" aria-label="Contacto urgente móvil" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #161616; border-top: 1px solid #333; z-index: 999; display: flex; box-shadow: 0 -4px 12px rgba(0,0,0,0.3);">
+    <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20renders%20para%20una%20promoci%C3%B3n%20en%20Madrid" data-track="whatsapp" target="_blank" rel="noopener" style="flex: 1; padding: 14px 10px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>WhatsApp Presupuesto</span>
+    </a>
+    <a href="tel:+34614459144" data-track="phone" style="flex: 1; padding: 14px 10px; background: var(--granate); color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>Llamar Ahora</span>
+    </a>
+  </aside>
 
   <script src="/main.js" defer></script>
 </body>

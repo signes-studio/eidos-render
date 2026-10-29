@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N6R4S8NC');</script>
+  <!-- Google Tag Manager (Diferido) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N6R4S8NC');
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGTM, { timeout: 3500 });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+  </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Proyectos de Renders y Visualización 3D | Eidos Render</title>
-  <meta name="description" content="Casos reales y renders 3D para promociones residenciales, villas y edificios de obra nueva en Valencia, Madrid y Costa Blanca.">>
+  <meta name="description" content="Proyectos de renders 3D para promociones inmobiliarias, villas exclusivas y reformas en Valencia, Madrid, Alicante y Málaga. Casos de preventa.">
   <link rel="canonical" href="https://eidosrender.es/proyectos">
-
-  <!-- International SEO / Hreflang -->
-
-  <!-- Multilingual & Geo-routing -->
-  <script src="../js/i18n.js"></script>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eidos Render">
-  <meta property="og:title" content="Archivo de Proyectos — Eidos Render | Visualización Arquitectónica">
-  <meta property="og:description" content="Visualización 3D fotorrealista y dirección visual para promociones residenciales y singulares.">
+  <meta property="og:title" content="Proyectos de Renders y Visualización 3D | Eidos Render">
+  <meta property="og:description" content="Visualización 3D fotorrealista y material de preventa para promociones residenciales y singulares.">
   <meta property="og:url" content="https://eidosrender.es/proyectos">
-  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.jpg">
+  <meta property="og:image" content="https://eidosrender.es/img/render-fachada-edificio-obra-nueva.webp">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="shortcut icon" href="../favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../assets/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/fonts.css">
+
+  <!-- Preloads -->
+  <link rel="preload" href="/assets/fonts/poiret-one-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/josefin-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://eidosrender.es/proyectos#page",
+        "url": "https://eidosrender.es/proyectos",
+        "name": "Proyectos de Renders y Visualización 3D | Eidos Render",
+        "description": "Selección de proyectos de renders 3D arquitectónicos, infografía fotorrealista y material comercial para promociones inmobiliarias.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Eidos Render",
+          "url": "https://eidosrender.es/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eidosrender.es/proyectos#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://eidosrender.es/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Proyectos",
+            "item": "https://eidosrender.es/proyectos"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-paper">
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6R4S8NC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- Header Fijo y Discreto -->
-    <!-- =====================================================
-       00. CABECERA DINÁMICA CENTRADA:
-       Isotipo grande a dos tintas + Nombre centrado debajo
-       Al hacer scroll, el nombre se funde y queda solo el logo en navbar sutil
-       ===================================================== -->
+  <!-- Header Fijo -->
   <header class="nav-header" id="navHeader" role="banner">
     <div class="nav-inner">
       <div class="nav-center-brand">
-        <a href="../index.html" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render Inicio">
+        <a href="/" class="brand-lockup-vertical" id="brandLockup" aria-label="Eidos Render Inicio">
           <svg class="isotype-hero" id="headerIsotype" viewBox="0 0 64 64" aria-hidden="true">
             <path class="iso-sun" fill="var(--granate)" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
             <rect class="iso-line-1" fill="var(--charcoal)" x="6" y="40" width="52" height="5" />
@@ -64,9 +108,7 @@
     </div>
   </header>
 
-  <!-- =====================================================
-       00B. BOTÓN FLOTANTE DERECHO & PANEL FLOTANTE TIPO APP
-       ===================================================== -->
+  <!-- Botón Flotante y Panel -->
   <button class="floating-menu-btn" id="floatingMenuBtn" aria-label="Abrir menú" aria-expanded="false">
     <span class="menu-btn-label">MENÚ</span>
     <span class="menu-btn-icon">
@@ -77,44 +119,44 @@
 
   <div class="floating-app-panel" id="floatingAppPanel" aria-label="Menú de navegación" aria-hidden="true">
     <div class="app-panel-header">
-      <span class="app-panel-title">EIDOS RENDER · APP</span>
+      <span class="app-panel-title">EIDOS RENDER</span>
       <span class="kicker-dot" style="background-color: var(--granate); width: 6px; height: 6px;"></span>
     </div>
 
     <nav aria-label="Navegación principal">
       <ul class="app-nav-list">
         <li class="app-nav-item">
-          <a href="../index.html" class="app-link">
+          <a href="/" class="app-link">
             <span><span class="app-nav-num">01</span>Inicio</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="../servicios.html" class="app-link">
+          <a href="/servicios" class="app-link">
             <span><span class="app-nav-num">02</span>Servicios & Capacidades</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="../proyectos.html" class="app-link">
-            <span><span class="app-nav-num">03</span>Portfolio de Casos</span>
+          <a href="/proyectos" class="app-link">
+            <span><span class="app-nav-num">03</span>Portfolio de Proyectos</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="index.html#branding" class="app-link">
-            <span><span class="app-nav-num">04</span>Identidad & Branding</span>
+          <a href="/tarifas-renders-3d" class="app-link">
+            <span><span class="app-nav-num">04</span>Tarifas Orientativas</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="index.html#proceso" class="app-link">
-            <span><span class="app-nav-num">05</span>Metodología</span>
+          <a href="/faq" class="app-link">
+            <span><span class="app-nav-num">05</span>Preguntas Frecuentes</span>
             <span>→</span>
           </a>
         </li>
         <li class="app-nav-item">
-          <a href="../contacto.html" class="app-link">
+          <a href="/contacto" class="app-link">
             <span><span class="app-nav-num">06</span>Contacto Directo</span>
             <span>→</span>
           </a>
@@ -122,24 +164,11 @@
       </ul>
     </nav>
 
-    <!-- Selector de Idioma Elegante Tipo Segmented Control -->
-    <div class="app-lang-segmented" aria-label="Selector de idioma">
-      <span class="active" data-lang="es">ES</span>
-      <a href="../en/" data-lang="en" onclick="window.setLang('en')">EN</a>
-      <a href="../de/" data-lang="de" onclick="window.setLang('de')">DE</a>
-      <a href="../fr/" data-lang="fr" onclick="window.setLang('fr')">FR</a>
-    </div>
-
     <div class="app-panel-footer">
-      <a href="../contacto.html" class="app-cta-btn">
-        HABLEMOS DEL PROYECTO →
+      <a href="/presupuesto" class="app-cta-btn">
+        PEDIR PRESUPUESTO →
       </a>
-      <div class="app-contact-sub">Valencia · Servicio Nacional e Internacional</div>
-    </div>
-  </div>
-    <div class="mobile-nav-footer">
-      <div><strong>EIDOS RENDER</strong> — Visualización & Lanzamiento</div>
-      <div><a href="mailto:info@eidosrender.es">info@eidosrender.es</a> · <a href="tel:+34614459144">+34 614 45 91 44</a></div>
+      <div class="app-contact-sub">Valencia · Madrid · Alicante · Málaga</div>
     </div>
   </div>
 
@@ -157,11 +186,11 @@
           <div>
             <div class="kicker crimson">
               <span class="kicker-dot"></span>
-              Archivo de Producción
+              Archivo de Producción & Casos
             </div>
             <h1 class="display-title" style="margin-bottom: 16px;">Proyectos de Renders 3D para Promociones de Obra Nueva</h1>
             <p class="body-large body-muted" style="max-width: 680px;">
-              Una cuidada selección de obras residenciales, villas contemporáneas y espacios singulares. Cada encargo abordado desde el respeto riguroso a la arquitectura.
+              Selección de promociones residenciales plurifamiliares, villas unifamiliares contemporáneas y reformas singulares en Valencia, Madrid, Alicante y Costa del Sol.
             </p>
           </div>
 
@@ -183,92 +212,59 @@
         <div class="editorial-list">
 
           <!-- 01 -->
-          <div class="editorial-row" data-image="img/render-fachada-edificio-obra-nueva-800.webp">
+          <a href="/proyectos/residencial-obra-nueva-valencia" class="editorial-row" data-image="/img/render-fachada-edificio-obra-nueva-800.webp" style="text-decoration: none; color: inherit; display: grid;">
             <span class="row-num">01</span>
             <div>
               <h2 class="row-title">Edificio Residencial Urbano</h2>
             </div>
-            <div class="row-meta">Obra Nueva Plurifamiliar · Fachada Principal</div>
+            <div class="row-meta">Obra Nueva Plurifamiliar · Fachada Principal & Zonas Comunes</div>
             <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">VALENCIA, ES</div>
             <div class="row-arrow">↗</div>
-          </div>
+          </a>
 
           <!-- 02 -->
-          <div class="editorial-row" data-image="img/infografia-exterior-zonas-comunes-obra-nueva-800.webp">
+          <a href="/proyectos/complejo-residencial-madbit" class="editorial-row" data-image="/img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" style="text-decoration: none; color: inherit; display: grid;">
             <span class="row-num">02</span>
             <div>
-              <h2 class="row-title">Zonas Comunes & Piscina Infinity</h2>
+              <h2 class="row-title">Complejo Residencial Madbit</h2>
             </div>
-            <div class="row-meta">Paisajismo · Solárium · Luz de Atardecer</div>
+            <div class="row-meta">Zonas Comunes · Piscina Infinity en Azotea & Solárium</div>
             <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">MADRID, ES</div>
             <div class="row-arrow">↗</div>
-          </div>
+          </a>
 
           <!-- 03 -->
-          <div class="editorial-row" data-image="img/render-exterior-vivienda-unifamiliar-piscina-800.webp">
+          <a href="/proyectos/villa-unifamiliar-altea" class="editorial-row" data-image="/img/render-exterior-vivienda-unifamiliar-piscina-800.webp" style="text-decoration: none; color: inherit; display: grid;">
             <span class="row-num">03</span>
             <div>
-              <h2 class="row-title">Villa en Ladera Costera</h2>
+              <h2 class="row-title">Villa Contemporánea en Ladera</h2>
             </div>
-            <div class="row-meta">Arquitectura Unifamiliar · Integración Marina</div>
-            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">ALICANTE, ES</div>
+            <div class="row-meta">Vivienda Unifamiliar Aislada · Integración Paisajística Marina</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">ALTEA / ALICANTE, ES</div>
             <div class="row-arrow">↗</div>
-          </div>
+          </a>
 
           <!-- 04 -->
-          <div class="editorial-row" data-image="img/infografia-3d-salon-moderno-doble-altura-800.webp">
+          <a href="/proyectos/reforma-integral-madrid" class="editorial-row" data-image="/img/infografia-3d-salon-moderno-doble-altura-800.webp" style="text-decoration: none; color: inherit; display: grid;">
             <span class="row-num">04</span>
             <div>
-              <h2 class="row-title">Penthouse Doble Altura</h2>
+              <h2 class="row-title">Reforma Integral Señorial & Flipping</h2>
             </div>
-            <div class="row-meta">Interiorismo Residencial Prime · Luz Natural</div>
+            <div class="row-meta">Interiorismo Residencial Prime · Salón Doble Altura & Suite</div>
             <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">MADRID, ES</div>
             <div class="row-arrow">↗</div>
-          </div>
+          </a>
 
           <!-- 05 -->
-          <div class="editorial-row" data-image="img/render-cocina-moderna-isla-madera-800.webp">
+          <a href="/proyectos/regeneracion-urbana-gare-des-mines" class="editorial-row" data-image="/img/render-fachada-edificio-obra-nueva-800.webp" style="text-decoration: none; color: inherit; display: grid;">
             <span class="row-num">05</span>
             <div>
-              <h2 class="row-title">Cocina de Autor con Isla Central</h2>
+              <h2 class="row-title">Regeneración Urbana Gare des Mines</h2>
             </div>
-            <div class="row-meta">Materiales Nobles · Roble Natural · Microcemento</div>
-            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">VALENCIA, ES</div>
+            <div class="row-meta">Master Plan Conceptual · Corredor Ecológico & Ecobarrio</div>
+            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">DEMO / CONCEPT</div>
             <div class="row-arrow">↗</div>
-          </div>
-
-          <!-- 06 -->
-          <div class="editorial-row" data-image="img/infografia-dormitorio-principal-render-inmobiliario-800.webp">
-            <span class="row-num">06</span>
-            <div>
-              <h2 class="row-title">Master Suite & Vestidor</h2>
-            </div>
-            <div class="row-meta">Atmósfera Serena · Texturas Textiles · Noche y Día</div>
-            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">SUITE PRIME</div>
-            <div class="row-arrow">↗</div>
-          </div>
-
-          <!-- 07 -->
-          <div class="editorial-row" data-image="img/render-bano-moderno-ducha-minimalista-800.webp">
-            <span class="row-num">07</span>
-            <div>
-              <h2 class="row-title">Baño Principal Minimalista</h2>
-            </div>
-            <div class="row-meta">Ducha a Ras de Suelo · Grifería Empotrada</div>
-            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">DETALLE</div>
-            <div class="row-arrow">↗</div>
-          </div>
-
-          <!-- 08 -->
-          <div class="editorial-row" data-image="img/render-zona-estudio-armarios-empotrados-800.webp">
-            <span class="row-num">08</span>
-            <div>
-              <h2 class="row-title">Zona de Estudio & Lectura</h2>
-            </div>
-            <div class="row-meta">Mobiliario a Medida · Soluciones Integradas</div>
-            <div class="row-type" style="font-family: var(--font-condensed); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--signal-text);">INTERIOR</div>
-            <div class="row-arrow">↗</div>
-          </div>
+          </a>
 
         </div>
       </div>
@@ -277,130 +273,198 @@
     <!-- =====================================================
          02. VISTA REJILLA ARQUITECTÓNICA (Oculta por defecto)
          ===================================================== -->
-    <section class="section bg-paper projects-grid-view" style="display: none; padding-top: 60px;">
+    <section class="section bg-paper projects-grid-view" style="padding-top: 60px;">
       <div class="container">
-        
-        <div style="display: flex; flex-direction: column; gap: 80px;">
-
-          <!-- 01 Full Bleed 21:9 -->
-          <article class="project-card">
-            <div class="project-media-wrap ratio-21-9">
-              <picture>
-                <source srcset="img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
-                <img src="../img/render-fachada-edificio-obra-nueva-1600.jpg" alt="Render de fachada residencial urbana" loading="lazy">
-              </picture>
-            </div>
-            <div class="project-meta-row">
-              <div style="display: flex; gap: 20px; align-items: baseline;">
-                <span class="project-num">01</span>
-                <div>
-                  <h3 class="project-title">Edificio Residencial Urbano</h3>
-                  <div class="project-specs">Obra Nueva Plurifamiliar · Dirección Visual · Integración Urbana</div>
-                </div>
-              </div>
-              <div class="project-specs">Valencia, ES</div>
-            </div>
-          </article>
-
-          <!-- 02 & 03 Split Asimétrico -->
-          <div class="grid-12">
-            <article class="project-card" style="grid-column: span 5;">
-              <div class="project-media-wrap ratio-4-5">
-                <picture>
-                  <source srcset="img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
-                  <img src="../img/infografia-exterior-zonas-comunes-obra-nueva-1600.jpg" alt="Render de piscina comunitaria y solarium" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-meta-row">
-                <div style="display: flex; gap: 16px; align-items: baseline;">
-                  <span class="project-num">02</span>
-                  <div>
-                    <h3 class="project-title" style="font-size: 1.4rem;">Zonas Comunes & Piscina Infinity</h3>
-                    <div class="project-specs">Piscinas & Paisajismo</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card" style="grid-column: span 7; align-self: flex-end;">
-              <div class="project-media-wrap ratio-16-9">
-                <picture>
-                  <source srcset="img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
-                  <img src="../img/render-exterior-vivienda-unifamiliar-piscina-1600.jpg" alt="Vista exterior de villa con piscina" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-meta-row">
-                <div style="display: flex; gap: 16px; align-items: baseline;">
-                  <span class="project-num">03</span>
-                  <div>
-                    <h3 class="project-title" style="font-size: 1.4rem;">Villa en Ladera Costera</h3>
-                    <div class="project-specs">Arquitectura Unifamiliar · Costa Blanca</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- 04 Full Bleed 21:9 -->
-          <article class="project-card">
-            <div class="project-media-wrap ratio-21-9">
-              <picture>
-                <source srcset="img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
-                <img src="../img/infografia-3d-salon-moderno-doble-altura-1600.jpg" alt="Infografía 3D de salón moderno con doble altura" loading="lazy">
-              </picture>
-            </div>
-            <div class="project-meta-row">
-              <div style="display: flex; gap: 20px; align-items: baseline;">
-                <span class="project-num">04</span>
-                <div>
-                  <h3 class="project-title">Penthouse Doble Altura</h3>
-                  <div class="project-specs">Interiorismo Prime · Atmósfera Diurna</div>
-                </div>
-              </div>
-              <div class="project-specs">Madrid, ES</div>
-            </div>
-          </article>
-
-          <!-- 05 & 06 Split 6-6 -->
-          <div class="grid-12">
-            <article class="project-card" style="grid-column: span 6;">
-              <div class="project-media-wrap ratio-16-9">
-                <picture>
-                  <source srcset="img/render-cocina-moderna-isla-madera.webp" type="image/webp">
-                  <img src="../img/render-cocina-moderna-isla-madera-1600.jpg" alt="Render de cocina de autor con isla de madera" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-meta-row">
-                <div style="display: flex; gap: 16px; align-items: baseline;">
-                  <span class="project-num">05</span>
-                  <div>
-                    <h3 class="project-title" style="font-size: 1.4rem;">Cocina de Autor con Isla</h3>
-                    <div class="project-specs">Madera & Piedra Natural</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card" style="grid-column: span 6;">
-              <div class="project-media-wrap ratio-16-9">
-                <picture>
-                  <source srcset="img/infografia-dormitorio-principal-render-inmobiliario.webp" type="image/webp">
-                  <img src="../img/infografia-dormitorio-principal-render-inmobiliario-1600.jpg" alt="Dormitorio principal con grandes ventanales" loading="lazy">
-                </picture>
-              </div>
-              <div class="project-meta-row">
-                <div style="display: flex; gap: 16px; align-items: baseline;">
-                  <span class="project-num">06</span>
-                  <div>
-                    <h3 class="project-title" style="font-size: 1.4rem;">Master Suite Residencial</h3>
-                    <div class="project-specs">Atmósfera Serena · Texturas</div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
+        <div style="max-width: 760px; margin-bottom: 40px;">
+          <div class="kicker crimson">Casos de Estudio Detallados</div>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 16px;">Detalle técnico de promociones y encargos</h2>
+          <p style="font-size: 1.05rem; color: #555; line-height: 1.6;">Cada intervención abordada con rigor constructivo, especificaciones reales y entregables comerciales orientados a la preventa:</p>
         </div>
+
+        <!-- 01 Caso de Estudio Plurifamiliar Valencia -->
+        <article class="project-card" style="margin-bottom: 60px; border-bottom: 1px solid var(--line); padding-bottom: 40px;">
+          <div class="project-media-wrap ratio-21-9" style="margin-bottom: 24px;">
+            <a href="/proyectos/residencial-obra-nueva-valencia">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+                <img src="/img/render-fachada-edificio-obra-nueva-800.webp" alt="Renders 3D de edificio de obra nueva residencial en Valencia" width="1600" height="900" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="project-meta-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-size: 0.95rem;">
+            <div>
+              <span class="project-num" style="font-family: 'Newsreader', serif; font-style: italic; font-size: 1.5rem; color: var(--granate);">01</span>
+              <h3 class="project-title" style="font-size: 1.5rem; margin: 4px 0 8px;"><a href="/proyectos/residencial-obra-nueva-valencia" style="color: inherit; text-decoration: none;">Residencial Obra Nueva Plurifamiliar →</a></h3>
+              <p style="color: #666; font-size: 0.88rem; line-height: 1.5; margin: 0;">Lanzamiento comercial para edificio residencial de 24 viviendas sobre plano con terrazas escalonadas y zona comunitaria.</p>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Ubicación & Tipología</div>
+              <div style="margin-top: 4px; font-weight: 500;">Valencia, España</div>
+              <div style="color: #666; font-size: 0.88rem;">Obra Nueva Plurifamiliar (24 viviendas)</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Alcance del Encargo</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">Dirección visual, volumetría 3D, iluminación diurna mediterránea y ambientación exterior.</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Entregables</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">
+                ✔ 3 Renders de Fachada 4K<br>
+                ✔ 2 Renders Zonas Comunes<br>
+                ✔ Planos 3D comerciales de venta
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Caso de Estudio Madbit Madrid -->
+        <article class="project-card" style="margin-bottom: 60px; border-bottom: 1px solid var(--line); padding-bottom: 40px;">
+          <div class="project-media-wrap ratio-21-9" style="margin-bottom: 24px;">
+            <a href="/proyectos/complejo-residencial-madbit">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/img/infografia-exterior-zonas-comunes-obra-nueva.webp" type="image/webp">
+                <img src="/img/infografia-exterior-zonas-comunes-obra-nueva-800.webp" alt="Renders 3D de zonas comunes con piscina infinity en Madrid" width="1600" height="900" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="project-meta-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-size: 0.95rem;">
+            <div>
+              <span class="project-num" style="font-family: 'Newsreader', serif; font-style: italic; font-size: 1.5rem; color: var(--granate);">02</span>
+              <h3 class="project-title" style="font-size: 1.5rem; margin: 4px 0 8px;"><a href="/proyectos/complejo-residencial-madbit" style="color: inherit; text-decoration: none;">Residencial & Zonas Comunes Madbit →</a></h3>
+              <p style="color: #666; font-size: 0.88rem; line-height: 1.5; margin: 0;">Complejo plurifamiliar dotacional con piscina infinity en azotea, solárium ajardinado y teaser animado de preventa.</p>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Ubicación & Tipología</div>
+              <div style="margin-top: 4px; font-weight: 500;">Madrid, España</div>
+              <div style="color: #666; font-size: 0.88rem;">Distrito Madbit (86 viviendas)</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Alcance del Encargo</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">Visualización crepuscular (golden hour), animación 3D de amenidades y estilismo exterior.</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Entregables</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">
+                ✔ 4 Renders exteriores 4K<br>
+                ✔ Vídeo 3D animación teaser<br>
+                ✔ Material para Meta Ads y Vallas
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Caso de Estudio Villa Altea -->
+        <article class="project-card" style="margin-bottom: 60px; border-bottom: 1px solid var(--line); padding-bottom: 40px;">
+          <div class="project-media-wrap ratio-21-9" style="margin-bottom: 24px;">
+            <a href="/proyectos/villa-unifamiliar-altea">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/img/render-exterior-vivienda-unifamiliar-piscina-800.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/img/render-exterior-vivienda-unifamiliar-piscina.webp" type="image/webp">
+                <img src="/img/render-exterior-vivienda-unifamiliar-piscina-800.webp" alt="Render de villa unifamiliar contemporánea con piscina infinity" width="1600" height="900" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="project-meta-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-size: 0.95rem;">
+            <div>
+              <span class="project-num" style="font-family: 'Newsreader', serif; font-style: italic; font-size: 1.5rem; color: var(--granate);">03</span>
+              <h3 class="project-title" style="font-size: 1.5rem; margin: 4px 0 8px;"><a href="/proyectos/villa-unifamiliar-altea" style="color: inherit; text-decoration: none;">Villa Contemporánea en Ladera →</a></h3>
+              <p style="color: #666; font-size: 0.88rem; line-height: 1.5; margin: 0;">Vivienda unifamiliar aislada de alto standing diseñada con vistas panorámicas al mar mediterráneo.</p>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Ubicación & Tipología</div>
+              <div style="margin-top: 4px; font-weight: 500;">Altea / Costa Blanca, España</div>
+              <div style="color: #666; font-size: 0.88rem;">Chalet / Villa de Lujo Aislada</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Alcance del Encargo</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">Integración topográfica en ladera, agua en movimiento para piscina desbordante y paisajismo mediterráneo.</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Entregables</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">
+                ✔ 2 Renders exteriores crepusculares 4K<br>
+                ✔ 3 Renders interiores de salón y suite<br>
+                ✔ Dossier de venta editorial en PDF
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Caso de Estudio Reforma Madrid -->
+        <article class="project-card" style="margin-bottom: 60px; border-bottom: 1px solid var(--line); padding-bottom: 40px;">
+          <div class="project-media-wrap ratio-21-9" style="margin-bottom: 24px;">
+            <a href="/proyectos/reforma-integral-madrid">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/img/infografia-3d-salon-moderno-doble-altura-800.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/img/infografia-3d-salon-moderno-doble-altura.webp" type="image/webp">
+                <img src="/img/infografia-3d-salon-moderno-doble-altura-800.webp" alt="Renders 3D para reforma integral y house flipping en Madrid" width="1600" height="900" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="project-meta-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-size: 0.95rem;">
+            <div>
+              <span class="project-num" style="font-family: 'Newsreader', serif; font-style: italic; font-size: 1.5rem; color: var(--granate);">04</span>
+              <h3 class="project-title" style="font-size: 1.5rem; margin: 4px 0 8px;"><a href="/proyectos/reforma-integral-madrid" style="color: inherit; text-decoration: none;">Reforma Integral & House Flipping →</a></h3>
+              <p style="color: #666; font-size: 0.88rem; line-height: 1.5; margin: 0;">Reconversión de vivienda señorial en piso contemporáneo de 180 m² para inversor inmobiliario.</p>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Ubicación & Tipología</div>
+              <div style="margin-top: 4px; font-weight: 500;">Madrid / Salamanca, España</div>
+              <div style="color: #666; font-size: 0.88rem;">Reforma Integral / Flipping (180 m²)</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Alcance del Encargo</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">Interiorismo completo, iluminación indirecta, texturas de roble y mármol calacatta.</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Entregables</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">
+                ✔ 4 Renders interiores en 4K<br>
+                ✔ 1 Plano 3D amueblado de venta<br>
+                ✔ Material comercial para Idealista Prime
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 Caso Demostrativo Regeneración Gare des Mines -->
+        <article class="project-card" style="margin-bottom: 60px; border-bottom: 1px solid var(--line); padding-bottom: 40px;">
+          <div class="project-media-wrap ratio-21-9" style="margin-bottom: 24px;">
+            <a href="/proyectos/regeneracion-urbana-gare-des-mines">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/img/render-fachada-edificio-obra-nueva-800.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/img/render-fachada-edificio-obra-nueva.webp" type="image/webp">
+                <img src="/img/render-fachada-edificio-obra-nueva-800.webp" alt="Renders 3D conceptuales para master plan de regeneración urbana" width="1600" height="900" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="project-meta-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; font-size: 0.95rem;">
+            <div>
+              <span class="project-num" style="font-family: 'Newsreader', serif; font-style: italic; font-size: 1.5rem; color: var(--granate);">05</span>
+              <h3 class="project-title" style="font-size: 1.5rem; margin: 4px 0 8px;"><a href="/proyectos/regeneracion-urbana-gare-des-mines" style="color: inherit; text-decoration: none;">Regeneración Urbana Gare des Mines →</a></h3>
+              <p style="color: #666; font-size: 0.88rem; line-height: 1.5; margin: 0;">Estudio de visualización conceptual para reconversión urbana y corredor verde de gran escala.</p>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Carácter del Encargo</div>
+              <div style="margin-top: 4px; font-weight: 500;">Demostrativo / Conceptual</div>
+              <div style="color: #666; font-size: 0.88rem;">Investigación en Visualización Urbana</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Alcance del Encargo</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">Scattering masivo botánico, iluminación a escala urbana y simulación de tránsito peatonal.</div>
+            </div>
+            <div style="border-left: 1px solid var(--line); padding-left: 16px;">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--granate); font-weight: bold;">Capacidades</div>
+              <div style="margin-top: 4px; color: #555; font-size: 0.88rem;">
+                ✔ Volumetría y geometrías complejas<br>
+                ✔ Renderizado multicapa aéreo<br>
+                ✔ Inserción paisajística avanzada
+              </div>
+            </div>
+          </div>
+        </article>
 
       </div>
     </section>
@@ -411,16 +475,19 @@
         <div>
           <span class="kicker crimson">
             <span class="kicker-dot"></span>
-            Próximo Lanzamiento
+            Próximo Lanzamiento Inmobiliario
           </span>
           <h2 class="display-sub" style="margin-bottom: 8px;">¿Preparando una promoción inmobiliaria?</h2>
           <p class="body-regular" style="color: rgba(244,243,239,0.7); max-width: 580px;">
-            Revisemos la planimetría de su proyecto para dimensionar el alcance visual y comercial idóneo para su salida al mercado.
+            Revisemos la planimetría de tu proyecto para dimensionar el alcance visual y comercial idóneo para su salida al mercado.
           </p>
         </div>
-        <div>
-          <a href="../contacto.html" class="btn-editorial btn-crimson">
-            HABLEMOS DEL PROYECTO →
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20renders%20para%20una%20promocion" class="btn-editorial btn-crimson" data-track="whatsapp" target="_blank" rel="noopener">
+            WHATSAPP DIRECTO →
+          </a>
+          <a href="/presupuesto" class="btn-editorial" style="background: transparent; border: 1px solid rgba(244,243,239,0.5); color: #fff;">
+            PEDIR PRESUPUESTO
           </a>
         </div>
       </div>
@@ -428,73 +495,81 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Estructurado -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="./" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
+          <a href="/" class="logo" style="margin-bottom: 16px;" aria-label="Eidos Render">
             <svg class="isotype-icon" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
-          <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" />
-          <rect class="iso-line-1" x="6" y="40" width="52" height="5" />
-          <rect class="iso-line-2" x="18" y="50" width="28" height="3" />
-        </svg>
+              <path class="iso-sun" d="M 12,34 A 20,20 0 0,1 52,34 Z" fill="var(--granate)"/>
+              <rect class="iso-line-1" x="6" y="40" width="52" height="5" fill="#fff"/>
+              <rect class="iso-line-2" x="18" y="50" width="28" height="3" fill="#fff"/>
+            </svg>
             <span class="logo-text">EIDOS RENDER</span>
           </a>
           <p class="body-regular" style="color: rgba(244,243,239,0.65); max-width: 380px;">
-            Visualización arquitectónica de autor y partner visual para el lanzamiento de promociones inmobiliarias.
+            Estudio de visualización 3D arquitectónica e infografía fotorrealista para el lanzamiento de promociones inmobiliarias de obra nueva.
           </p>
         </div>
         <div>
-          <div class="footer-col-title">Navegación</div>
+          <div class="footer-col-title">Servicios Clave</div>
           <ul class="footer-links">
-            <li><a href="../proyectos.html">Proyectos</a></li>
-            <li><a href="../servicios.html">Servicios</a></li>
-            <li><a href="index.html#estudio">Estudio</a></li>
-            <li><a href="index.html#proceso">Proceso</a></li>
-            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="/renders-promociones-inmobiliarias">Renders Promociones</a></li>
+            <li><a href="/infografia-3d-obra-nueva">Infografía 3D</a></li>
+            <li><a href="/video-3d-promociones">Vídeo 3D Promociones</a></li>
+            <li><a href="/landing-page-promocion-inmobiliaria">Landing de Promoción</a></li>
+            <li><a href="/dossier-y-flyer-venta-inmobiliario">Dossiers y Flyers</a></li>
+            <li><a href="/captacion-digital-promociones">Captación Digital</a></li>
           </ul>
         </div>
         <div>
-          <div class="footer-col-title">Servicios</div>
+          <div class="footer-col-title">Cobertura Local</div>
           <ul class="footer-links">
-            <li><a href="../servicios/infografia-3d.html">Infografía 3D</a></li>
-            <li><a href="../servicios/video-3d.html">Vídeo 3D</a></li>
-            <li><a href="../servicios/branding.html">Branding</a></li>
-            <li><a href="../servicios/material-comercial.html">Dossier de Venta</a></li>
-            <li><a href="../servicios/web-real-estate.html">Web de Promoción</a></li>
-            <li><a href="../servicios/captacion.html">Captación Digital</a></li>
+            <li><a href="/renders-valencia">Renders en Valencia</a></li>
+            <li><a href="/renders-madrid">Renders en Madrid</a></li>
+            <li><a href="/renders-alicante">Renders en Alicante</a></li>
+            <li><a href="/renders-malaga">Renders en Málaga</a></li>
+            <li><a href="/proyectos">Portfolio de Proyectos</a></li>
+            <li><a href="/tarifas-renders-3d">Tarifas Orientativas</a></li>
           </ul>
         </div>
         <div>
-          <div class="footer-col-title">Contacto</div>
+          <div class="footer-col-title">Contacto Rápido</div>
           <ul class="footer-links">
-            <li><a href="mailto:info@eidosrender.es">info@eidosrender.es</a></li>
-            <li><a href="tel:+34614459144">+34 614 45 91 44</a></li>
-            <li>Valencia, España</li>
+            <li><a href="tel:+34614459144" data-track="phone">+34 614 45 91 44</a></li>
+            <li><a href="mailto:info@eidosrender.es?subject=Presupuesto%20Proyectos" data-track="email">info@eidosrender.es</a></li>
+            <li><a href="https://wa.me/34614459144" data-track="whatsapp" target="_blank" rel="noopener">WhatsApp Directo</a></li>
+            <li>Valencia (Sede) · Madrid · Alicante · Málaga</li>
           </ul>
         </div>
       </div>
+
       <div class="curtain-brand-banner" aria-hidden="true" style="padding: clamp(24px, 4vw, 48px) 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); margin: 32px 0;">
-          <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
-        </div>
-        <div class="footer-bottom">
-        <div>© 2026 Eidos Render. Todos los derechos reservados.</div>
-        <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
-          <div style="display: flex; gap: 8px; font-size: 0.78rem; text-transform: uppercase;">
-            <span style="color: var(--crimson-on-dark); font-weight: 700;">ES</span> ·
-            <a href="../en/projects.html" onclick="window.setLang('en')">EN</a> ·
-            <a href="../de/projekte.html" onclick="window.setLang('de')">DE</a> ·
-            <a href="../fr/projets.html" onclick="window.setLang('fr')">FR</a>
-          </div>
-          <a href="../aviso-legal.html">Aviso Legal</a>
-          <a href="../privacidad.html">Privacidad</a>
-          <a href="../cookies.html">Cookies</a>
+        <span style="font-family: var(--font-display); font-size: clamp(2.5rem, 8vw, 7.5rem); font-weight: 700; color: rgba(239, 233, 220, 0.08); letter-spacing: 0.08em; display: block; text-align: center; line-height: 1; user-select: none;">EIDOS RENDER</span>
+      </div>
+
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: rgba(244,243,239,0.5);">
+        <div>© 2026 Eidos Render. Especialistas en visualización de promociones inmobiliarias.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="/aviso-legal" style="color: inherit; text-decoration: none;">Aviso Legal</a>
+          <a href="/privacidad" style="color: inherit; text-decoration: none;">Privacidad</a>
+          <a href="/cookies" style="color: inherit; text-decoration: none;">Cookies</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="../main.js" defer></script>
+  <!-- BARRA DE CONTACTO FIJA EN MÓVIL (FASE 9 CRO) -->
+  <aside class="mobile-sticky-bar" aria-label="Contacto urgente móvil" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #161616; border-top: 1px solid #333; z-index: 999; display: flex; box-shadow: 0 -4px 12px rgba(0,0,0,0.3);">
+    <a href="https://wa.me/34614459144?text=Hola%2C%20quiero%20presupuesto%20de%20renders%20para%20una%20promocion" data-track="whatsapp" target="_blank" rel="noopener" style="flex: 1; padding: 14px 10px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>WhatsApp Presupuesto</span>
+    </a>
+    <a href="tel:+34614459144" data-track="phone" style="flex: 1; padding: 14px 10px; background: var(--granate); color: #fff; text-align: center; text-decoration: none; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 6px;">
+      <span>Llamar Ahora</span>
+    </a>
+  </aside>
+
+  <script src="/main.js" defer></script>
 </body>
 </html>
