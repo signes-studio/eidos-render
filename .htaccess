@@ -12,28 +12,43 @@
     RewriteRule ^(.*)$ https://eidosrender.es/$1 [R=301,L]
 
     # B. Forzado permanente 301: HTTP -> HTTPS (Directo a https://eidosrender.es)
-    # Cubre Apache nativo (%{HTTPS} off), proxies inversos (X-Forwarded-Proto),
-    # terminadores SSL (X-Forwarded-SSL) y Cloudflare (CF-Visitor)
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
     RewriteCond %{HTTP:X-Forwarded-SSL} =off [OR]
     RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
     RewriteRule ^(.*)$ https://eidosrender.es/$1 [R=301,L]
 
-    # C. Forzar redirección externa 301 si se solicita un archivo con extensión .html
+    # C. Redirección 301 de URLs de servicios antiguas a las nuevas canónicas
+    RewriteRule ^servicios/infografia-3d(\.html)?$ /infografia-3d-obra-nueva [R=301,L]
+    RewriteRule ^servicios/video-3d(\.html)?$ /video-3d-promociones [R=301,L]
+    RewriteRule ^servicios/web-real-estate(\.html)?$ /landing-page-promocion-inmobiliaria [R=301,L]
+    RewriteRule ^servicios/material-comercial(\.html)?$ /dossier-y-flyer-venta-inmobiliario [R=301,L]
+    RewriteRule ^servicios/captacion(\.html)?$ /captacion-digital-promociones [R=301,L]
+    RewriteRule ^servicios/branding(\.html)?$ /servicios [R=301,L]
+    RewriteRule ^obra-nueva(\.html)?$ /renders-promociones-inmobiliarias [R=301,L]
+    RewriteRule ^vivienda-unifamiliar(\.html)?$ /infografia-3d-obra-nueva [R=301,L]
+    RewriteRule ^reforma-de-piso(\.html)?$ /infografia-3d-obra-nueva [R=301,L]
+    RewriteRule ^renders-para-house-flipping(\.html)?$ /infografia-3d-obra-nueva [R=301,L]
+    RewriteRule ^renders-bilbao(\.html)?$ /servicios [R=301,L]
+    RewriteRule ^renders-sevilla(\.html)?$ /servicios [R=301,L]
+
+    # D. Redirecciones 301 de portfolio y casos legacy a proyectos individuales
+    RewriteRule ^portfolio(\.html)?$ /proyectos [R=301,L]
+    RewriteRule ^proyectos/madbit(\.html)?$ /proyectos/complejo-residencial-madbit [R=301,L]
+    RewriteRule ^proyectos/altea-hills(\.html)?$ /proyectos/villa-unifamiliar-altea [R=301,L]
+    RewriteRule ^proyectos/gare-des-mines(\.html)?$ /proyectos/regeneracion-urbana-gare-des-mines [R=301,L]
+    RewriteRule ^proyectos/rozafa(\.html)?$ /proyectos [R=301,L]
+
+    # E. Redirección externa 301 si se solicita un archivo con extensión .html
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
     RewriteRule ^([^.]+)\.html$ https://eidosrender.es/$1 [R=301,L]
 
-    # D. Eliminar barra final innecesaria en rutas que no sean la raíz ni el blog
+    # F. Eliminar barra final innecesaria en rutas que no sean la raíz ni el blog
     RewriteCond %{REQUEST_URI} !^/blog/
     RewriteCond %{REQUEST_URI} ^/(.+)/$
     RewriteRule ^ https://eidosrender.es/%1 [R=301,L]
 
-    # E. Redirección 301 de portfolio y casos legacy a proyectos
-    RewriteRule ^portfolio/?$ /proyectos [R=301,L]
-    RewriteRule ^proyectos/(rozafa|madbit|gare-des-mines|altea-hills)(\.html)?$ /proyectos [R=301,L]
-
-    # E. Reescribir URLs limpias sin .html (ej. /servicios/video-3d -> /servicios/video-3d.html)
+    # G. Reescribir URLs limpias sin .html (ej. /video-3d-promociones -> /video-3d-promociones.html)
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{DOCUMENT_ROOT}/$1.html -f [OR]
@@ -43,18 +58,12 @@
 
 # 2. CABECERAS DE SEGURIDAD HTTP
 <IfModule mod_headers.c>
-    # Forzar HTTPS durante 1 año (HSTS)
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
-    # Prevenir MIME-sniffing
     Header always set X-Content-Type-Options "nosniff"
-    # Prevenir Clickjacking
     Header always set X-Frame-Options "SAMEORIGIN"
-    # Política de Referrer para privacidad y analítica
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    # Prevenir ataques XSS reflejados
     Header always set X-XSS-Protection "1; mode=block"
 
-    # Prevenir indexación de dossier privado real-estate-launch
     <Files "real-estate-launch.html">
         Header always set X-Robots-Tag "noindex, nofollow"
     </Files>
@@ -97,6 +106,3 @@ AddCharset UTF-8 .txt
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
-
-# 5. PÁGINAS DE ERROR PERSONALIZADAS
-ErrorDocument 404 /404.html

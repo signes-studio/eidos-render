@@ -1,53 +1,81 @@
 # ==============================================================================
-# Cloudflare Pages / Edge Redirects (301 Permanent)
+# Cloudflare Pages / Edge Redirects (301 Permanent) — eidosrender.es
+# Convención Canónica: HTTPS sin www, sin extensión .html, sin barra final innecesaria
 # ==============================================================================
 
-# Redirecciones de variantes .html a URLs canónicas limpias
-/index.html                     /                           301
-/presupuesto.html               /presupuesto                301
-/gracias.html                   /gracias                    301
-/servicios.html                 /servicios                  301
-/proyectos.html                 /proyectos                  301
-/contacto.html                  /contacto                   301
-/obra-nueva.html                /obra-nueva                 301
-/vivienda-unifamiliar.html      /vivienda-unifamiliar       301
-/reforma-de-piso.html           /reforma-de-piso            301
-/renders-para-house-flipping.html /renders-para-house-flipping 301
-/tarifas-renders-3d.html        /tarifas-renders-3d         301
-/renders-valencia.html          /renders-valencia           301
-/renders-madrid.html            /renders-madrid             301
-/renders-alicante.html          /renders-alicante           301
-/renders-malaga.html            /renders-malaga             301
-/renders-bilbao.html            /servicios                  301
-/renders-bilbao                 /servicios                  301
-/renders-sevilla.html           /servicios                  301
-/renders-sevilla                /servicios                  301
-/faq.html                       /faq                        301
-/aviso-legal.html               /aviso-legal                301
-/privacidad.html                /privacidad                 301
-/cookies.html                   /cookies                    301
+# 1. Redirección de index.html a raíz
+/index.html                     /                                       301
 
-# Redirecciones de subdirectorios a URLs canónicas
-/servicios/                     /servicios                  301
-/servicios/index.html           /servicios                  301
-/contacto/                      /contacto                   301
-/contacto/index.html            /contacto                   301
-/proyectos/                     /proyectos                  301
-/proyectos/index.html           /proyectos                  301
+# 2. Redirección canónica de páginas principales de .html a ruta limpia
+/presupuesto.html               /presupuesto                            301
+/gracias.html                   /gracias                                301
+/servicios.html                 /servicios                              301
+/proyectos.html                 /proyectos                              301
+/contacto.html                  /contacto                               301
+/faq.html                       /faq                                    301
+/tarifas-renders-3d.html        /tarifas-renders-3d                     301
+/aviso-legal.html               /aviso-legal                            301
+/privacidad.html                /privacidad                             301
+/cookies.html                   /cookies                                301
 
-# Subpáginas de servicios
-/servicios/infografia-3d.html   /servicios/infografia-3d    301
-/servicios/video-3d.html        /servicios/video-3d         301
-/servicios/branding.html        /servicios/branding         301
-/servicios/material-comercial.html /servicios/material-comercial 301
-/servicios/web-real-estate.html /servicios/web-real-estate  301
-/servicios/captacion.html       /servicios/captacion        301
+# 3. Redirección de nuevas páginas prioritarias de servicios de .html a limpia
+/renders-promociones-inmobiliarias.html /renders-promociones-inmobiliarias 301
+/infografia-3d-obra-nueva.html         /infografia-3d-obra-nueva         301
+/video-3d-promociones.html              /video-3d-promociones            301
+/landing-page-promocion-inmobiliaria.html /landing-page-promocion-inmobiliaria 301
+/dossier-y-flyer-venta-inmobiliario.html /dossier-y-flyer-venta-inmobiliario 301
+/captacion-digital-promociones.html     /captacion-digital-promociones   301
 
-# Redirección canónica de blog a /blog/
-/blog                           /blog/                      301
-/blog/index.html                /blog/                      301
+# 4. Redirecciones 301 de URLs de servicios antiguas/fusionadas a las nuevas canónicas
+/servicios/infografia-3d        /infografia-3d-obra-nueva               301
+/servicios/infografia-3d.html   /infografia-3d-obra-nueva               301
+/servicios/video-3d             /video-3d-promociones                   301
+/servicios/video-3d.html        /video-3d-promociones                   301
+/servicios/web-real-estate      /landing-page-promocion-inmobiliaria    301
+/servicios/web-real-estate.html /landing-page-promocion-inmobiliaria    301
+/servicios/material-comercial   /dossier-y-flyer-venta-inmobiliario     301
+/servicios/material-comercial.html /dossier-y-flyer-venta-inmobiliario  301
+/servicios/captacion            /captacion-digital-promociones          301
+/servicios/captacion.html       /captacion-digital-promociones          301
+/servicios/branding             /servicios                              301
+/servicios/branding.html        /servicios                              301
+/obra-nueva                     /renders-promociones-inmobiliarias      301
+/obra-nueva.html                /renders-promociones-inmobiliarias      301
+/vivienda-unifamiliar           /infografia-3d-obra-nueva               301
+/vivienda-unifamiliar.html      /infografia-3d-obra-nueva               301
+/reforma-de-piso                /infografia-3d-obra-nueva               301
+/reforma-de-piso.html           /infografia-3d-obra-nueva               301
+/renders-para-house-flipping    /infografia-3d-obra-nueva               301
+/renders-para-house-flipping.html /infografia-3d-obra-nueva             301
 
-# Artículos de blog de .html a limpio
+# 5. Redirecciones de páginas locales de .html a limpio y ciudades secundarias
+/renders-valencia.html          /renders-valencia                       301
+/renders-madrid.html            /renders-madrid                         301
+/renders-alicante.html          /renders-alicante                       301
+/renders-malaga.html            /renders-malaga                         301
+/renders-bilbao                 /servicios                              301
+/renders-bilbao.html            /servicios                              301
+/renders-sevilla                /servicios                              301
+/renders-sevilla.html           /servicios                              301
+
+# 6. Redirecciones de subdirectorios
+/servicios/                     /servicios                              301
+/servicios/index.html           /servicios                              301
+/contacto/                      /contacto                               301
+/contacto/index.html            /contacto                               301
+/proyectos/                     /proyectos                              301
+/proyectos/index.html           /proyectos                              301
+
+# 7. Redirección de páginas de proyectos individuales de .html a limpio
+/proyectos/residencial-obra-nueva-valencia.html /proyectos/residencial-obra-nueva-valencia 301
+/proyectos/villa-unifamiliar-altea.html         /proyectos/villa-unifamiliar-altea         301
+/proyectos/reforma-integral-madrid.html         /proyectos/reforma-integral-madrid         301
+/proyectos/complejo-residencial-madbit.html     /proyectos/complejo-residencial-madbit     301
+/proyectos/regeneracion-urbana-gare-des-mines.html /proyectos/regeneracion-urbana-gare-des-mines 301
+
+# 8. Redirección canónica del blog y artículos
+/blog                           /blog/                                  301
+/blog/index.html                /blog/                                  301
 /blog/promotoras-obra-nueva.html              /blog/promotoras-obra-nueva              301
 /blog/vender-pisos-sobre-plano.html           /blog/vender-pisos-sobre-plano           301
 /blog/house-flipping.html                     /blog/house-flipping                     301
@@ -58,16 +86,15 @@
 /blog/planos-3d-vs-planos-tecnicos.html       /blog/planos-3d-vs-planos-tecnicos       301
 /blog/renders-fotorealistas-vs-comerciales.html /blog/renders-fotorealistas-vs-comerciales 301
 /blog/reducir-stock-inmobiliario-visualizacion-3d.html /blog/reducir-stock-inmobiliario-visualizacion-3d 301
-/blog/coste-render-promotoras.html              /blog/coste-render-promotoras              301
-/blog/renders-vs-fotos-venta-sobre-plano.html   /blog/renders-vs-fotos-venta-sobre-plano   301
-/blog/material-lanzamiento-preventa.html        /blog/material-lanzamiento-preventa        301
-/blog/checklist-lanzamiento-inmobiliario.html   /blog/checklist-lanzamiento-inmobiliario   301
+/blog/coste-render-promotoras.html            /blog/coste-render-promotoras            301
+/blog/renders-vs-fotos-venta-sobre-plano.html /blog/renders-vs-fotos-venta-sobre-plano 301
+/blog/material-lanzamiento-preventa.html      /blog/material-lanzamiento-preventa      301
+/blog/checklist-lanzamiento-inmobiliario.html /blog/checklist-lanzamiento-inmobiliario 301
 
-
-# Legacy y casos
-/portfolio                      /proyectos                  301
-/portfolio.html                 /proyectos                  301
-/proyectos/rozafa               /proyectos                  301
-/proyectos/madbit               /proyectos                  301
-/proyectos/gare-des-mines       /proyectos                  301
-/proyectos/altea-hills          /proyectos                  301
+# 9. Legacy y casos
+/portfolio                      /proyectos                              301
+/portfolio.html                 /proyectos                              301
+/proyectos/rozafa               /proyectos                              301
+/proyectos/madbit               /proyectos/complejo-residencial-madbit   301
+/proyectos/gare-des-mines       /proyectos/regeneracion-urbana-gare-des-mines 301
+/proyectos/altea-hills          /proyectos/villa-unifamiliar-altea      301
